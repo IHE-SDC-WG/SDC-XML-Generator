@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A261E5B-2245-4A56-A1EB-5C0BD89EA45F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SchemaGenTest</RootNamespace>
+    <AssemblyName>SchemaGenTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schema Test Generations\AcceptabilityType.cs" />
+    <Compile Include="Schema Test Generations\ActInjectType.cs" />
+    <Compile Include="Schema Test Generations\ActSaveResponsesType.cs" />
+    <Compile Include="Schema Test Generations\ActSendMessageType.cs" />
+    <Compile Include="Schema Test Generations\ActSendReportType.cs" />
+    <Compile Include="Schema Test Generations\ActSetValueType.cs" />
+    <Compile Include="Schema Test Generations\ActShowFormType.cs" />
+    <Compile Include="Schema Test Generations\ActShowMessageType.cs" />
+    <Compile Include="Schema Test Generations\ActShowReportType.cs" />
+    <Compile Include="Schema Test Generations\ActValidateFormType.cs" />
+    <Compile Include="Schema Test Generations\AddressType.cs" />
+    <Compile Include="Schema Test Generations\anyType_DEtype.cs" />
+    <Compile Include="Schema Test Generations\anyURI_DEtype.cs" />
+    <Compile Include="Schema Test Generations\anyURI_Stype.cs" />
+    <Compile Include="Schema Test Generations\ApprovalType.cs" />
+    <Compile Include="Schema Test Generations\AreaCodeType.cs" />
+    <Compile Include="Schema Test Generations\AssociatedFilesType.cs" />
+    <Compile Include="Schema Test Generations\base64Binary_DEtype.cs" />
+    <Compile Include="Schema Test Generations\base64Binary_Stype.cs" />
+    <Compile Include="Schema Test Generations\BaseType.cs" />
+    <Compile Include="Schema Test Generations\BlobType.cs" />
+    <Compile Include="Schema Test Generations\boolean_DEtype.cs" />
+    <Compile Include="Schema Test Generations\boolean_Stype.cs" />
+    <Compile Include="Schema Test Generations\ButtonItemType.cs" />
+    <Compile Include="Schema Test Generations\byte_DEtype.cs" />
+    <Compile Include="Schema Test Generations\byte_Stype.cs" />
+    <Compile Include="Schema Test Generations\ChangedFieldType.cs" />
+    <Compile Include="Schema Test Generations\ChangedListItemType.cs" />
+    <Compile Include="Schema Test Generations\ChangedSelectedItemsType.cs" />
+    <Compile Include="Schema Test Generations\ChangeLogType.cs" />
+    <Compile Include="Schema Test Generations\ChangeTrackingType.cs" />
+    <Compile Include="Schema Test Generations\ChangeType.cs" />
+    <Compile Include="Schema Test Generations\ChildItemsType.cs" />
+    <Compile Include="Schema Test Generations\CodeMatchType.cs" />
+    <Compile Include="Schema Test Generations\CodeMatchTypeCodeMatchEnum.cs" />
+    <Compile Include="Schema Test Generations\CodeSystemType.cs" />
+    <Compile Include="Schema Test Generations\CodingType.cs" />
+    <Compile Include="Schema Test Generations\CommentType.cs" />
+    <Compile Include="Schema Test Generations\ComplianceRuleType.cs" />
+    <Compile Include="Schema Test Generations\ContactsType.cs" />
+    <Compile Include="Schema Test Generations\ContactType.cs" />
+    <Compile Include="Schema Test Generations\CountryCodeType.cs" />
+    <Compile Include="Schema Test Generations\DataTypes_DEType.cs" />
+    <Compile Include="Schema Test Generations\DataTypes_SType.cs" />
+    <Compile Include="Schema Test Generations\dateTimeStamp_DEtype.cs" />
+    <Compile Include="Schema Test Generations\dateTimeStamp_Stype.cs" />
+    <Compile Include="Schema Test Generations\dateTime_DEtype.cs" />
+    <Compile Include="Schema Test Generations\dateTime_Stype.cs" />
+    <Compile Include="Schema Test Generations\date_DEtype.cs" />
+    <Compile Include="Schema Test Generations\date_Stype.cs" />
+    <Compile Include="Schema Test Generations\dayTimeDuration_DEtype.cs" />
+    <Compile Include="Schema Test Generations\dayTimeDuration_Stype.cs" />
+    <Compile Include="Schema Test Generations\decimal_DEtype.cs" />
+    <Compile Include="Schema Test Generations\decimal_Stype.cs" />
+    <Compile Include="Schema Test Generations\DestinationType.cs" />
+    <Compile Include="Schema Test Generations\DisplayedType.cs" />
+    <Compile Include="Schema Test Generations\double_DEtype.cs" />
+    <Compile Include="Schema Test Generations\double_Stype.cs" />
+    <Compile Include="Schema Test Generations\dt.cs" />
+    <Compile Include="Schema Test Generations\dtQuantEnum.cs" />
+    <Compile Include="Schema Test Generations\duration_DEtype.cs" />
+    <Compile Include="Schema Test Generations\duration_Stype.cs" />
+    <Compile Include="Schema Test Generations\EmailAddressType.cs" />
+    <Compile Include="Schema Test Generations\EmailType.cs" />
+    <Compile Include="Schema Test Generations\ExclusiveItemPairsType.cs" />
+    <Compile Include="Schema Test Generations\ExpressionType.cs" />
+    <Compile Include="Schema Test Generations\ExtensionBaseType.cs" />
+    <Compile Include="Schema Test Generations\ExtensionType.cs" />
+    <Compile Include="Schema Test Generations\FileDatesType.cs" />
+    <Compile Include="Schema Test Generations\FileHashType.cs" />
+    <Compile Include="Schema Test Generations\FileType.cs" />
+    <Compile Include="Schema Test Generations\FileUsageType.cs" />
+    <Compile Include="Schema Test Generations\float_DEtype.cs" />
+    <Compile Include="Schema Test Generations\float_Stype.cs" />
+    <Compile Include="Schema Test Generations\FormDesignType.cs" />
+    <Compile Include="Schema Test Generations\gDay_DEtype.cs" />
+    <Compile Include="Schema Test Generations\gDay_Stype.cs" />
+    <Compile Include="Schema Test Generations\GetCodeType.cs" />
+    <Compile Include="Schema Test Generations\GetPropertyValuesType.cs" />
+    <Compile Include="Schema Test Generations\GetPropertyValuesTypeBoolOpEnum.cs" />
+    <Compile Include="Schema Test Generations\gMonthDay_DEtype.cs" />
+    <Compile Include="Schema Test Generations\gMonthDay_Stype.cs" />
+    <Compile Include="Schema Test Generations\gMonth_DEtype.cs" />
+    <Compile Include="Schema Test Generations\gMonth_Stype.cs" />
+    <Compile Include="Schema Test Generations\gYearMonth_DEtype.cs" />
+    <Compile Include="Schema Test Generations\gYearMonth_Stype.cs" />
+    <Compile Include="Schema Test Generations\gYear_DEtype.cs" />
+    <Compile Include="Schema Test Generations\gYear_Stype.cs" />
+    <Compile Include="Schema Test Generations\HashType.cs" />
+    <Compile Include="Schema Test Generations\hexBinary_DEtype.cs" />
+    <Compile Include="Schema Test Generations\hexBinary_Stype.cs" />
+    <Compile Include="Schema Test Generations\HTML_DEtype.cs" />
+    <Compile Include="Schema Test Generations\HTML_Stype.cs" />
+    <Compile Include="Schema Test Generations\IdentifiedExtensionType.cs" />
+    <Compile Include="Schema Test Generations\IdentifierType.cs" />
+    <Compile Include="Schema Test Generations\IfBoolCompareType.cs" />
+    <Compile Include="Schema Test Generations\IfThenType.cs" />
+    <Compile Include="Schema Test Generations\IfType.cs" />
+    <Compile Include="Schema Test Generations\InjectFormType.cs" />
+    <Compile Include="Schema Test Generations\integer_DEtype.cs" />
+    <Compile Include="Schema Test Generations\integer_Stype.cs" />
+    <Compile Include="Schema Test Generations\int_DEtype.cs" />
+    <Compile Include="Schema Test Generations\int_Stype.cs" />
+    <Compile Include="Schema Test Generations\ItemChoiceType.cs" />
+    <Compile Include="Schema Test Generations\ItemChoiceType1.cs" />
+    <Compile Include="Schema Test Generations\ItemNameType.cs" />
+    <Compile Include="Schema Test Generations\JobType.cs" />
+    <Compile Include="Schema Test Generations\LanguageCodeISO6393_Type.cs" />
+    <Compile Include="Schema Test Generations\LanguageType.cs" />
+    <Compile Include="Schema Test Generations\LinkType.cs" />
+    <Compile Include="Schema Test Generations\ListFieldType.cs" />
+    <Compile Include="Schema Test Generations\ListItemBaseType.cs" />
+    <Compile Include="Schema Test Generations\ListItemResponseFieldType.cs" />
+    <Compile Include="Schema Test Generations\ListItemType.cs" />
+    <Compile Include="Schema Test Generations\ListType.cs" />
+    <Compile Include="Schema Test Generations\long_DEtype.cs" />
+    <Compile Include="Schema Test Generations\long_Stype.cs" />
+    <Compile Include="Schema Test Generations\LookupEndPointType.cs" />
+    <Compile Include="Schema Test Generations\MaxExclusiveType.cs" />
+    <Compile Include="Schema Test Generations\MaxInclusiveType.cs" />
+    <Compile Include="Schema Test Generations\MinExclusiveType.cs" />
+    <Compile Include="Schema Test Generations\MinInclusiveType.cs" />
+    <Compile Include="Schema Test Generations\NameType.cs" />
+    <Compile Include="Schema Test Generations\negativeInteger_DEtype.cs" />
+    <Compile Include="Schema Test Generations\negativeInteger_Stype.cs" />
+    <Compile Include="Schema Test Generations\nonNegativeInteger_DEtype.cs" />
+    <Compile Include="Schema Test Generations\nonNegativeInteger_Stype.cs" />
+    <Compile Include="Schema Test Generations\nonPositiveInteger_DEtype.cs" />
+    <Compile Include="Schema Test Generations\nonPositiveInteger_Stype.cs" />
+    <Compile Include="Schema Test Generations\NotifyTrackableCollectionChangedEventHandler.cs" />
+    <Compile Include="Schema Test Generations\ObjectChangeTracker.cs" />
+    <Compile Include="Schema Test Generations\ObjectList.cs" />
+    <Compile Include="Schema Test Generations\ObjectsAddedToCollectionProperties.cs" />
+    <Compile Include="Schema Test Generations\ObjectsOriginalFromCollectionProperties.cs" />
+    <Compile Include="Schema Test Generations\ObjectsRemovedFromCollectionProperties.cs" />
+    <Compile Include="Schema Test Generations\ObjectState.cs" />
+    <Compile Include="Schema Test Generations\ObjectStateChangingEventArgs.cs" />
+    <Compile Include="Schema Test Generations\OnEventType.cs" />
+    <Compile Include="Schema Test Generations\OrganizationType.cs" />
+    <Compile Include="Schema Test Generations\ParameterType.cs" />
+    <Compile Include="Schema Test Generations\PersonType.cs" />
+    <Compile Include="Schema Test Generations\PhoneNumberType.cs" />
+    <Compile Include="Schema Test Generations\PhoneType.cs" />
+    <Compile Include="Schema Test Generations\positiveInteger_DEtype.cs" />
+    <Compile Include="Schema Test Generations\positiveInteger_Stype.cs" />
+    <Compile Include="Schema Test Generations\PredicateBetweenType.cs" />
+    <Compile Include="Schema Test Generations\PredicateCompareType.cs" />
+    <Compile Include="Schema Test Generations\PredicateCompareTypeArithOpEnum.cs" />
+    <Compile Include="Schema Test Generations\PredicateInListType.cs" />
+    <Compile Include="Schema Test Generations\PredicateType.cs" />
+    <Compile Include="Schema Test Generations\PropertyValueState.cs" />
+    <Compile Include="Schema Test Generations\PropertyValueStatesDictionary.cs" />
+    <Compile Include="Schema Test Generations\ProvenanceType.cs" />
+    <Compile Include="Schema Test Generations\QuestionItemBaseType.cs" />
+    <Compile Include="Schema Test Generations\QuestionItemBaseTypeResponseStatusEnum.cs" />
+    <Compile Include="Schema Test Generations\QuestionItemBaseTypeResponseTypeEnum.cs" />
+    <Compile Include="Schema Test Generations\QuestionItemType.cs" />
+    <Compile Include="Schema Test Generations\RepeatingType.cs" />
+    <Compile Include="Schema Test Generations\ReplacedIDsType.cs" />
+    <Compile Include="Schema Test Generations\ReplacedResponseType.cs" />
+    <Compile Include="Schema Test Generations\ResponseChangeType.cs" />
+    <Compile Include="Schema Test Generations\ResponseFieldType.cs" />
+    <Compile Include="Schema Test Generations\RichTextType.cs" />
+    <Compile Include="Schema Test Generations\RulesType.cs" />
+    <Compile Include="Schema Test Generations\ScriptCodeType.cs" />
+    <Compile Include="Schema Test Generations\SDCFormDesign.Designer.cs" />
+    <Compile Include="Schema Test Generations\SectionBaseType.cs" />
+    <Compile Include="Schema Test Generations\SectionItemType.cs" />
+    <Compile Include="Schema Test Generations\SetPropertyType.cs" />
+    <Compile Include="Schema Test Generations\short_DEtype.cs" />
+    <Compile Include="Schema Test Generations\short_Stype.cs" />
+    <Compile Include="Schema Test Generations\string_DEtype.cs" />
+    <Compile Include="Schema Test Generations\string_Stype.cs" />
+    <Compile Include="Schema Test Generations\SubmissionRuleType.cs" />
+    <Compile Include="Schema Test Generations\TargetItemIDType.cs" />
+    <Compile Include="Schema Test Generations\TargetItemNameType.cs" />
+    <Compile Include="Schema Test Generations\TargetItemXPathType.cs" />
+    <Compile Include="Schema Test Generations\ThenType.cs" />
+    <Compile Include="Schema Test Generations\time_DEtype.cs" />
+    <Compile Include="Schema Test Generations\time_Stype.cs" />
+    <Compile Include="Schema Test Generations\TrackableCollection.cs" />
+    <Compile Include="Schema Test Generations\UnitsType.cs" />
+    <Compile Include="Schema Test Generations\unsignedByte_DEtype.cs" />
+    <Compile Include="Schema Test Generations\unsignedByte_Stype.cs" />
+    <Compile Include="Schema Test Generations\unsignedInt_DEtype.cs" />
+    <Compile Include="Schema Test Generations\unsignedInt_Stype.cs" />
+    <Compile Include="Schema Test Generations\unsignedLong_DEtype.cs" />
+    <Compile Include="Schema Test Generations\unsignedLong_Stype.cs" />
+    <Compile Include="Schema Test Generations\unsignedShort_DEtype.cs" />
+    <Compile Include="Schema Test Generations\unsignedShort_Stype.cs" />
+    <Compile Include="Schema Test Generations\VersionType.cs" />
+    <Compile Include="Schema Test Generations\VersionTypeChanges.cs" />
+    <Compile Include="Schema Test Generations\WatchedPropertyType.cs" />
+    <Compile Include="Schema Test Generations\WebServiceType.cs" />
+    <Compile Include="Schema Test Generations\XML_DEtype.cs" />
+    <Compile Include="Schema Test Generations\XML_Stype.cs" />
+    <Compile Include="Schema Test Generations\yearMonthDuration_DEtype.cs" />
+    <Compile Include="Schema Test Generations\yearMonthDuration_Stype.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Schema Test Generations\SDCBase.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schema Test Generations\SDCDataTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schema Test Generations\SDCFormDesign.xsd">
+      <SubType>Designer</SubType>
+      <LastGenOutput>SDCFormDesign.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schema Test Generations\SDCMapping.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schema Test Generations\SDCOverrides.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schema Test Generations\SDCResources.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schema Test Generations\SDCRetrieveForm.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schema Test Generations\SDCTemplateAdmin.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
