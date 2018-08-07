@@ -1,0 +1,801 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_ref_str_type" kind="class" prot="public">
+    <compoundname>SDC::RefStrType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_return_str_type" prot="public" virt="non-virtual">SDC.ReturnStrType</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_ref_str_type_1a6f982e61590947ad9ab1f2867edfab1b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_item_name_attribute_type" kindref="compound">ItemNameAttributeType</ref></type>
+        <definition>ItemNameAttributeType SDC.RefStrType._ref</definition>
+        <argsstring></argsstring>
+        <name>_ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="31" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_ref_str_type_1a530324452a0b24a5a2e8ddfad8d40776" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.RefStrType.serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="33" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_ref_str_type_1a991bcdd37de5e6b6b8ca90a4983328f7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_item_name_attribute_type" kindref="compound">ItemNameAttributeType</ref></type>
+        <definition>virtual ItemNameAttributeType SDC.RefStrType.Ref</definition>
+        <argsstring></argsstring>
+        <name>Ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="37" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_ref_str_type_1aa4fa24ba253fc0cd79561eb23e65b9c5" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.RefStrType.Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="49" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a19135c1ad2b899651429d353de0e26c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.RefStrType.ShouldSerializeRef</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeRef</name>
+        <briefdescription>
+<para>Test whether Ref should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="64" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="64" bodyend="67"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a91684a1612b90521a381ca58b7e9edd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.RefStrType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_return_str_type_1ac9382960075a482c80f1ca529d402daa">Serialize</reimplements>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="74" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="74" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a1bd79b8a70fa2fb1b8a108fd3b091bc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.RefStrType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_return_str_type_1af7e26e64450abc457285176c8c105bf0">Serialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="104" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a6255e86dfb1b6f40cc6759bfeb24c685" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.RefStrType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_str_type_1aa07a3b1cfbded1671c3d4052e9c010d6">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="167" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="167" bodyend="180"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1abede858017d11b89b41a268edb629b24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.RefStrType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_str_type_1ac1d3778e74324601ac819ee4dc76bbf7">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="182" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a7a60e91d456263e93ef65537a2c7ba79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.RefStrType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_str_type_1a1e12e6eda76b4b1737261037eec72fa8">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="187" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a79bf954c088c9c0bedd8bd03f8ba7b9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.RefStrType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_str_type_1ac5678c1a052642c7a0e79e96b84d855d">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="192" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="192" bodyend="209"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a7f8a43e52039d71adf1ab4f781ea192d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RefStrType.Deserialize</definition>
+        <argsstring>(string input, out RefStrType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="116" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="116" bodyend="130"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a2131fc6ae8c228013c8764c7bc404a2e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RefStrType.Deserialize</definition>
+        <argsstring>(string input, out RefStrType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="132" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="132" bodyend="136"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a454397c85553714a514754176f66ba13" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref></type>
+        <definition>static new RefStrType SDC.RefStrType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="138" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="138" bodyend="153"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a609c7c61eefca3fc101d13e956bcb752" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref></type>
+        <definition>static RefStrType SDC.RefStrType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="155" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a52d01ca3b310eb9b2b88ea994ed4079b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RefStrType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out RefStrType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="218" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="218" bodyend="232"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a14fda575a5fbec9fd6f80e73cd2de0d1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RefStrType.LoadFromFile</definition>
+        <argsstring>(string fileName, out RefStrType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="234" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a38a6a5edf7bee2dd56ac127fd95793bf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RefStrType.LoadFromFile</definition>
+        <argsstring>(string fileName, out RefStrType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="239" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="239" bodyend="243"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a059b85f752cf42a346d587a9543d19b2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref></type>
+        <definition>static RefStrType SDC.RefStrType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="245" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_ref_str_type_1a5d178e3d60f977d8b9ceb31587c6f037" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_ref_str_type" kindref="compound">RefStrType</ref></type>
+        <definition>static new RefStrType SDC.RefStrType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="250" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="250" bodyend="274"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7604">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="7605" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7605">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="7602">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="7603" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7603">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="7604" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7604" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7600">
+        <label>SDC.RefStrType</label>
+        <link refid="class_s_d_c_1_1_ref_str_type"/>
+        <childnode refid="7601" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7601">
+        <label>ReturnStrType</label>
+        <link refid="class_s_d_c_1_1_return_str_type"/>
+        <childnode refid="7602" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7610">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="7611" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7612" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="7620" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="7621" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="7622" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="7613" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7624">
+        <label>SDC.ItemNameAttributeType</label>
+        <link refid="class_s_d_c_1_1_item_name_attribute_type"/>
+        <childnode refid="7625" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7617">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="7615" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7611">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="7615">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="7614">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="7615" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7620">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="7625">
+        <label>ItemNameType</label>
+        <link refid="class_s_d_c_1_1_item_name_type"/>
+        <childnode refid="7610" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7609" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7613" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7623">
+        <label>SDC.ExceptionType</label>
+        <link refid="class_s_d_c_1_1_exception_type"/>
+        <childnode refid="7609" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7622" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="7608">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="7609" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7623" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="7619">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="7613">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="7611" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7614" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="7616" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="7617" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="7618" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="7622">
+        <label>System</label>
+      </node>
+      <node id="7616">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="7615" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7612">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="7609" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7609" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7613" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7609">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="7610" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7610" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7613" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7606">
+        <label>SDC.RefStrType</label>
+        <link refid="class_s_d_c_1_1_ref_str_type"/>
+        <childnode refid="7607" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7624" relation="usage">
+          <edgelabel>_ref</edgelabel>
+        </childnode>
+      </node>
+      <node id="7618">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="7619" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7607">
+        <label>ReturnStrType</label>
+        <link refid="class_s_d_c_1_1_return_str_type"/>
+        <childnode refid="7608" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7621">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="7611" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7612" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="7620" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="7621" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="7622" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="7613" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" line="27" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RefStrType.cs" bodystart="26" bodyend="275"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a6f982e61590947ad9ab1f2867edfab1b" prot="private" virt="non-virtual"><scope>SDC::RefStrType</scope><name>_ref</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::RefStrType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::RefStrType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a81264a5f695436f77432fc8e206a3a96" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a7f8a43e52039d71adf1ab4f781ea192d" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a2131fc6ae8c228013c8764c7bc404a2e" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a454397c85553714a514754176f66ba13" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a609c7c61eefca3fc101d13e956bcb752" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_str_type_1a32f01f90073eea91ec3e53a537a348d8" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnStrType."><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_str_type_1a610bf88ecb55bde91af2d43dcd9c6a64" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnStrType."><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1acd2a23b52dcbcbd31ebd413821adb5d5" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ab3750255b283fc0144a10ff76180ea53" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a00767451a5fc7e3d07bdd954a6b0a8ee" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RefStrType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1a6c2875cfa4b0c4bc818f34f70af1504e" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Item</name></member>
+      <member refid="class_s_d_c_1_1_return_str_type_1a8ae974cc5d70f45bd77aff0b4d013fdc" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Item1</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a52d01ca3b310eb9b2b88ea994ed4079b" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a14fda575a5fbec9fd6f80e73cd2de0d1" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a38a6a5edf7bee2dd56ac127fd95793bf" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a059b85f752cf42a346d587a9543d19b2" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a5d178e3d60f977d8b9ceb31587c6f037" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_str_type_1ab4cb78cfd9d3da59c7c440a989fe45e7" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnStrType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_str_type_1ac63f8732d6e3c0cfabf92dc41d11e320" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnStrType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_str_type_1a3e3eacec0ff934230976303c2c66eab5" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnStrType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae65d856375cc25a45498c3def0a600c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1aab3070073c4d1e10c51ca42ade495371" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1aff817c6fac01be7c19e7180e46b7da67" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RefStrType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a991bcdd37de5e6b6b8ca90a4983328f7" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Ref</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1a7c4d5c78fe10e9d5881fca2ef9282241" prot="protected" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ReturnBaseType</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae27b5ac45b833727fbf0360af8f2f192" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>ReturnBaseType</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a6255e86dfb1b6f40cc6759bfeb24c685" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1abede858017d11b89b41a268edb629b24" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a7a60e91d456263e93ef65537a2c7ba79" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a79bf954c088c9c0bedd8bd03f8ba7b9e" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RefStrType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::RefStrType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a91684a1612b90521a381ca58b7e9edd1" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a1bd79b8a70fa2fb1b8a108fd3b091bc0" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1aa4fa24ba253fc0cd79561eb23e65b9c5" prot="private" virt="non-virtual"><scope>SDC::RefStrType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a530324452a0b24a5a2e8ddfad8d40776" prot="private" virt="non-virtual"><scope>SDC::RefStrType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae1058587922d33ff78d3fa2a2eb84c20" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializeItem</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_ref_str_type_1a19135c1ad2b899651429d353de0e26c8" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializeRef</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::RefStrType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::RefStrType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

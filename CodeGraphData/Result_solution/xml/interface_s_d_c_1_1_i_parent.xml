@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_s_d_c_1_1_i_parent" kind="interface" prot="public">
+    <compoundname>SDC::IParent</compoundname>
+    <derivedcompoundref refid="class_s_d_c_1_1_list_item_type" prot="public" virt="non-virtual">SDC.ListItemType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_parent_type" prot="public" virt="non-virtual">SDC.ParentType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_question_item_type" prot="public" virt="non-virtual">SDC.QuestionItemType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_section_item_type" prot="public" virt="non-virtual">SDC.SectionItemType</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_s_d_c_1_1_i_parent_1a54357dd3c1b46cb44ea3b73aa8624c15" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_child_items_type" kindref="compound">ChildItemsType</ref></type>
+        <definition>ChildItemsType SDC.IParent.ChildItemsNode</definition>
+        <argsstring></argsstring>
+        <name>ChildItemsNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IParent.cs" line="15" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IParent.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_parent_1ac965e4135357ed2a57e57b0d664955fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_section_item_type" kindref="compound">SectionItemType</ref></type>
+        <definition>SectionItemType SDC.IParent.AddSection</definition>
+        <argsstring>(Boolean fillData=true, string id=null)</argsstring>
+        <name>AddSection</name>
+        <reimplementedby refid="class_s_d_c_1_1_parent_type_1a5bf32a3f10cf0c6e25d036f955302514">AddSection</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1afb562c6469a25daff4be25d1fbfcc736">AddSection</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a39ba64cd271280dedac52a6907b77622">AddSection</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1aae2b99a6af03f8dd6b85404bececfbaa">AddSection</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IParent.cs" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_parent_1acb717c2948fc94301949c6b45e081989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_question_item_type" kindref="compound">QuestionItemType</ref></type>
+        <definition>QuestionItemType SDC.IParent.AddQuestion</definition>
+        <argsstring>(QuestionEnum qType, Boolean fillData=true, string id=null)</argsstring>
+        <name>AddQuestion</name>
+        <reimplementedby refid="class_s_d_c_1_1_parent_type_1a2fdaed288490a25d904b2d730cff5ae9">AddQuestion</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1aa6a672b4ed268bbd085d26336be02128">AddQuestion</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1ae93be6f260013a5c9f66e214053ceec9">AddQuestion</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1a9eefe4471e1226cf5d430803005ee275">AddQuestion</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ad2700ab1d7d4dafbdc31f52ea1a175bb" kindref="member">QuestionEnum</ref></type>
+          <declname>qType</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IParent.cs" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_parent_1a540a14c1463d2909c14f733d5c1bb49d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_inject_form_type" kindref="compound">InjectFormType</ref></type>
+        <definition>InjectFormType SDC.IParent.AddInjectedForm</definition>
+        <argsstring>(Boolean fillData=true, string id=null)</argsstring>
+        <name>AddInjectedForm</name>
+        <reimplementedby refid="class_s_d_c_1_1_parent_type_1ad8408d63b22ea76f0890f385e350fcc8">AddInjectedForm</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1a97f3e7f56242abc21b92358459373dff">AddInjectedForm</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1aab2b2f810bbec2a30f576cdc2a8d9e6c">AddInjectedForm</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1a6a3b854992dd3312b7ded6be68820204">AddInjectedForm</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IParent.cs" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_parent_1a301b5855dc3f560bda3fb2c06464ad09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_button_item_type" kindref="compound">ButtonItemType</ref></type>
+        <definition>ButtonItemType SDC.IParent.AddButtonAction</definition>
+        <argsstring>(Boolean fillData=true, string id=null)</argsstring>
+        <name>AddButtonAction</name>
+        <reimplementedby refid="class_s_d_c_1_1_parent_type_1abf5972202148d148acff4a9587d394de">AddButtonAction</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1a872d68a65ebda9c04a55b0d01096324a">AddButtonAction</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a3bbde7fb4cda4c9e375ab35f865ae138">AddButtonAction</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1a8239c667372489614943107265bab1c8">AddButtonAction</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IParent.cs" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_parent_1a372d3c5345b1c4a19af3cc461ed313cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+        <definition>DisplayedType SDC.IParent.AddDisplayedItem</definition>
+        <argsstring>(Boolean fillData=true, string id=null)</argsstring>
+        <name>AddDisplayedItem</name>
+        <reimplementedby refid="class_s_d_c_1_1_parent_type_1ae62495cf82011b51e9c4b9766483a4ff">AddDisplayedItem</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1afde2b9c17c3528e06760f462036ceff6">AddDisplayedItem</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1ad27b4caffbe3a779f05c786bc4fd7d0b">AddDisplayedItem</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1a9a3d928f46374c5102fbd1096c1ab7af">AddDisplayedItem</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IParent.cs" line="20" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This interface is applied to the partial classes that must support the ChildItems element. These are Section, Question and ListItem. This interface is require to support generic classes that must handle the creation ofthe ChildItems element, which holds List of type IdentifiedItemType </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5206">
+        <label>SDC.ListItemType</label>
+        <link refid="class_s_d_c_1_1_list_item_type"/>
+        <childnode refid="5205" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5208">
+        <label>SDC.QuestionItemType</label>
+        <link refid="class_s_d_c_1_1_question_item_type"/>
+        <childnode refid="5205" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5205">
+        <label>SDC.IParent</label>
+        <link refid="interface_s_d_c_1_1_i_parent"/>
+      </node>
+      <node id="5207">
+        <label>SDC.ParentType</label>
+        <link refid="class_s_d_c_1_1_parent_type"/>
+        <childnode refid="5205" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5209">
+        <label>SDC.SectionItemType</label>
+        <link refid="class_s_d_c_1_1_section_item_type"/>
+        <childnode refid="5205" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IParent.cs" line="14" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IParent.cs" bodystart="13" bodyend="21"/>
+    <listofallmembers>
+      <member refid="interface_s_d_c_1_1_i_parent_1a301b5855dc3f560bda3fb2c06464ad09" prot="public" virt="non-virtual"><scope>SDC::IParent</scope><name>AddButtonAction</name></member>
+      <member refid="interface_s_d_c_1_1_i_parent_1a372d3c5345b1c4a19af3cc461ed313cf" prot="public" virt="non-virtual"><scope>SDC::IParent</scope><name>AddDisplayedItem</name></member>
+      <member refid="interface_s_d_c_1_1_i_parent_1a540a14c1463d2909c14f733d5c1bb49d" prot="public" virt="non-virtual"><scope>SDC::IParent</scope><name>AddInjectedForm</name></member>
+      <member refid="interface_s_d_c_1_1_i_parent_1acb717c2948fc94301949c6b45e081989" prot="public" virt="non-virtual"><scope>SDC::IParent</scope><name>AddQuestion</name></member>
+      <member refid="interface_s_d_c_1_1_i_parent_1ac965e4135357ed2a57e57b0d664955fa" prot="public" virt="non-virtual"><scope>SDC::IParent</scope><name>AddSection</name></member>
+      <member refid="interface_s_d_c_1_1_i_parent_1a54357dd3c1b46cb44ea3b73aa8624c15" prot="public" virt="non-virtual"><scope>SDC::IParent</scope><name>ChildItemsNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

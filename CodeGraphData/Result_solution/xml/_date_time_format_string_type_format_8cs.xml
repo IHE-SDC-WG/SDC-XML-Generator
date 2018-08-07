@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_date_time_format_string_type_format_8cs" kind="file">
+    <compoundname>DateTimeFormatStringTypeFormat.cs</compoundname>
+    <innernamespace refid="namespace_s_d_c">SDC</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>&lt;auto-generated&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Generated<sp/>by<sp/>Xsd2Code++.<sp/>Version<sp/>4.4.0.7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>&lt;/auto-generated&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning<sp/>disable</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">SDC</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Diagnostics;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml.Serialization;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml.Schema;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.ComponentModel;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.IO;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.ComponentModel.DataAnnotations;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">[System.CodeDom.Compiler.GeneratedCodeAttribute(</highlight><highlight class="stringliteral">&quot;System.Xml&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;4.7.2612.0&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">[System.SerializableAttribute()]</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>Namespace=</highlight><highlight class="stringliteral">&quot;urn:ihe:qrph:sdc:2016&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="24" refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6" kindref="member">DateTimeFormatStringTypeFormat</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Short<sp/>date<sp/>(d)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6ae59e460af4131aee85fad232bd43d406" kindref="member">Shortdated</ref>,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Long<sp/>date<sp/>(D)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6a4e36b8b9983b966d3c8ad1c64a357c91" kindref="member">LongdateD</ref>,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Full<sp/>date/time<sp/>(short<sp/>time)<sp/>(f)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6ababd5709597fb75e4bae6399602e108c" kindref="member">Fulldatetimeshorttimef</ref>,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Full<sp/>date/time<sp/>(long<sp/>time)<sp/>(F)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6a94210e47e583b8214d6d0e1fe9c2ac85" kindref="member">FulldatetimelongtimeF</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;General<sp/>date/time<sp/>(short<sp/>time)<sp/>(g)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6a657aa6f6ef15ed592fe46db442f9f4d5" kindref="member">Generaldatetimeshorttimeg</ref>,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;General<sp/>date/time<sp/>(long<sp/>time)<sp/>(G)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6a77b3d662fbbdadc7be132d7d71a0c509" kindref="member">GeneraldatetimelongtimeG</ref>,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Month/day<sp/>pattern<sp/>(M,<sp/>m))&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6aed5897212c9b35b8ce2a11d85e09fff1" kindref="member">MonthdaypatternMm</ref>,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Round-trip<sp/>date/time<sp/>(O,o)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6a2a3cf0b4ad6fd79fbe88aad9096c776c" kindref="member">RoundtripdatetimeOo</ref>,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;RFC1123<sp/>(R,r)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6a20d77606a29842ae95d662c26d2fe7de" kindref="member">RFC1123Rr</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Sortable<sp/>date/time<sp/>(s)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6acd9816467ddae85c2d8b36a5faeaf263" kindref="member">Sortabledatetimes</ref>,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Short<sp/>time<sp/>(t)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6a4eea9e1e6431f20882e3eb18b271fa96" kindref="member">Shorttimet</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Long<sp/>time<sp/>(T)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6a491e53b59130a773e57a190714142edd" kindref="member">LongtimeT</ref>,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Universal<sp/>sortable<sp/>date/time<sp/>(u)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6a0dd44d7f13f99813cbf5016fac33ecf3" kindref="member">Universalsortabledatetimeu</ref>,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Universal<sp/>full<sp/>date/time<sp/>(U)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6ad3877b6c60fdee4fafde9096a3d78b85" kindref="member">UniversalfulldatetimeU</ref>,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Year<sp/>month<sp/>(Y,y)&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6a55040dba49fa6ec3009f38dd9b60e710" kindref="member">YearmonthYy</ref>,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a414dfee7b3a26cfb4cdfee896fed21b6a8ba2aae6cad3f171a6c88ff93e4b970c" kindref="member">UsePattern</ref>,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">#pragma<sp/>warning<sp/>restore</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/DateTimeFormatStringTypeFormat.cs"/>
+  </compounddef>
+</doxygen>

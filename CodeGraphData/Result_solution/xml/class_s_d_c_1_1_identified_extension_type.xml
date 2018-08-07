@@ -1,0 +1,1569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_identified_extension_type" kind="class" prot="public">
+    <compoundname>SDC::IdentifiedExtensionType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_changed_list_item_type" prot="public" virt="non-virtual">SDC.ChangedListItemType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_data_element_type" prot="public" virt="non-virtual">SDC.DataElementType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_displayed_type" prot="public" virt="non-virtual">SDC.DisplayedType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_displayed_type" prot="public" virt="non-virtual">SDC.DisplayedType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_form_design_type" prot="public" virt="non-virtual">SDC.FormDesignType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_form_design_type" prot="public" virt="non-virtual">SDC.FormDesignType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_inject_form_type" prot="public" virt="non-virtual">SDC.InjectFormType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_parent_type" prot="public" virt="non-virtual">SDC.ParentType</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_identified_extension_type_1a63cc241892d95761b90b45d0f979f2c1" prot="public" static="yes" mutable="no">
+        <type>Dictionary&lt; String, <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> &gt;</type>
+        <definition>Dictionary&lt;String, IdentifiedExtensionType&gt; SDC.IdentifiedExtensionType.IdentExtNodes</definition>
+        <argsstring></argsstring>
+        <name>IdentExtNodes</name>
+        <initializer>= new Dictionary&lt;String, <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref>&gt;()</initializer>
+        <briefdescription>
+<para>Given an Item Node&apos;s URI, returns the Item&apos;s object reference as <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1141" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_identified_extension_type_1a8f3d61915b036c7c54415d127cf59fea" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.IdentifiedExtensionType::_id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="47" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_identified_extension_type_1a76fabee4b6e1a71bffed42a9465c5de3" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.IdentifiedExtensionType::_baseURI</definition>
+        <argsstring></argsstring>
+        <name>_baseURI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="50" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_identified_extension_type_1aace7331efa5996a7324d37791bc2e75b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.IdentifiedExtensionType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="57" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_identified_extension_type_1a916a76cd6c1baa492c9a783f1806690b" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.IdentifiedExtensionType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="52" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_identified_extension_type_1aec38ff3687d70ecb4132f26e5ac6e6ab" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.IdentifiedExtensionType::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="56" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a5a0d429a188a64ec03c30ae5d3be2425" compoundref="_s_d_c_8_schema_8_s_d_c_tree_builder_8cs" startline="351" endline="362">SDC.SDCTreeBuilder.AddBody</referencedby>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1ac758bcdad99c08e08829c824401d2636" compoundref="_s_d_c_8_schema_8_s_d_c_tree_builder_8cs" startline="377" endline="388">SDC.SDCTreeBuilder.AddFooter</referencedby>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a87aa1353c510454b691d99a1fc33e98a" compoundref="_s_d_c_8_schema_8_s_d_c_tree_builder_8cs" startline="364" endline="375">SDC.SDCTreeBuilder.AddHeader</referencedby>
+        <referencedby refid="class_s_d_c_1_1_identified_extension_type_1a28d90ae3b48c699f00faadbaa4908a57" compoundref="_s_d_c_8_schema_8_partial_classes_8cs" startline="1151" endline="1176">SDC.IdentifiedExtensionType.AddToIdentExtNodes</referencedby>
+        <referencedby refid="class_s_d_c_1_1_identified_extension_type_1ab14d9aff66939f8a1c5fe4e0570b563f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="96" endline="99">SDC.IdentifiedExtensionType.ShouldSerializeID</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_identified_extension_type_1a14e59e1eabccda686a73a95cbd50ef2c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.IdentifiedExtensionType::baseURI</definition>
+        <argsstring></argsstring>
+        <name>baseURI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="69" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_identified_extension_type_1a531c1d0860f5b496a249dc4fb8cc166b" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="104" endline="107">SDC.IdentifiedExtensionType.ShouldSerializebaseURI</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_identified_extension_type_1a8dc6648044e840246b3462f681ca1c16" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.IdentifiedExtensionType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="81" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="82" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_identified_extension_type_1ae58656c3cd94e16c69b70d40e1c9e152" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="195" endline="198">SDC.IdentifiedExtensionType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_identified_extension_type_1a4ffea3724bf79fb793611a5feb0c1d01" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.IdentifiedExtensionType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="118" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a1ebea3b2c6e2d7cbb19d58e2d8147f16" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.IdentifiedExtensionType.IdentifiedExtensionType</definition>
+        <argsstring>()</argsstring>
+        <name>IdentifiedExtensionType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1143" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1143" bodyend="1143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a2e14a8c36871a4845a275d38a8f8f681" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.IdentifiedExtensionType.IdentifiedExtensionType</definition>
+        <argsstring>(BaseType parentNode, bool fillData=true, string id=null)</argsstring>
+        <name>IdentifiedExtensionType</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1144" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1144" bodyend="1149"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1a28d90ae3b48c699f00faadbaa4908a57" compoundref="_s_d_c_8_schema_8_partial_classes_8cs" startline="1151" endline="1176">SDC.IdentifiedExtensionType.AddToIdentExtNodes</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a28d90ae3b48c699f00faadbaa4908a57" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.IdentifiedExtensionType.AddToIdentExtNodes</definition>
+        <argsstring>(string id=null)</argsstring>
+        <name>AddToIdentExtNodes</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1151" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1151" bodyend="1176"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1aec38ff3687d70ecb4132f26e5ac6e6ab" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="57">SDC.IdentifiedExtensionType.ID</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" compoundref="_s_d_c_8_schema_8_partial_classes_8cs" startline="654">SDC.BaseType.ObjectGUID</references>
+        <referencedby refid="class_s_d_c_1_1_identified_extension_type_1a2e14a8c36871a4845a275d38a8f8f681" compoundref="_s_d_c_8_schema_8_partial_classes_8cs" startline="1144" endline="1149">SDC.IdentifiedExtensionType.IdentifiedExtensionType</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a1ebea3b2c6e2d7cbb19d58e2d8147f16" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.IdentifiedExtensionType.IdentifiedExtensionType</definition>
+        <argsstring>()</argsstring>
+        <name>IdentifiedExtensionType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="189" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="189" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1aea7c6c02897d9c63669adfd19ab99344" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+        <definition>IdentifiedExtensionType SDC.IdentifiedExtensionType.FillIdentifiedExtensionType</definition>
+        <argsstring>()</argsstring>
+        <name>FillIdentifiedExtensionType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="191" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="191" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1ab14d9aff66939f8a1c5fe4e0570b563f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.IdentifiedExtensionType.ShouldSerializeID</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeID</name>
+        <briefdescription>
+<para>Test whether ID should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="96" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="96" bodyend="99"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1aec38ff3687d70ecb4132f26e5ac6e6ab" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="57">SDC.IdentifiedExtensionType.ID</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a531c1d0860f5b496a249dc4fb8cc166b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.IdentifiedExtensionType.ShouldSerializebaseURI</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializebaseURI</name>
+        <briefdescription>
+<para>Test whether baseURI should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="104" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="104" bodyend="107"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1a14e59e1eabccda686a73a95cbd50ef2c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="70">SDC.IdentifiedExtensionType.baseURI</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a83366b7c347ba094ada7d8dc8913daf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.IdentifiedExtensionType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a9ac9c6d560ffe2c300d7796951c22395">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1a67cb32021e5d254d60d88c2983567701">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a45c545c17f86d23c0933938d97480829">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1a44e60f647228ad7abf5f2aa3df4b4ca9">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1a9f781d46c51ac82d1ff592075c8a069e">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1aeabc9ef5de2c0787d1c2c4491d85af2e">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1ac8f02477d7d9ce863f26af1272f370ce">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1a81879b806555bb8f878a7c2f7daac7a6">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_data_element_type_1a5419b19a696ded6b46d3757ee87812d6">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1a365d12752d58a0f5baf7033ab96622d3">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1a08eb04809274087ec44532b093e85c72">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a61af0f7e8d4bcdbb041cbbe9eeeb9ba0">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1aa548c5535747653375d132328b40d283">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1aacfd3b90d769190d904bc81e9dc8ce49">Serialize</reimplementedby>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="114" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="114" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1ac5890d47810aede6e4addb5bea3d8155" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.IdentifiedExtensionType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1aff06fd6e8107ae53fb99e24d1b759777">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a35d4a321c254baa11c611f8cd0c8299a">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1aa616469c77d61f7fbc89bea433e17525">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_changed_list_item_type_1af2febaa625f2bb8786303f500ec90572">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1ae57d665f58e97dc25eb48d33dd954064">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1a1d390ae6db03ce5d8a2a648541df6a49">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1aff06fd6e8107ae53fb99e24d1b759777">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a35d4a321c254baa11c611f8cd0c8299a">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1aa616469c77d61f7fbc89bea433e17525">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1ae57d665f58e97dc25eb48d33dd954064">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1a1d390ae6db03ce5d8a2a648541df6a49">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1aeab2426818c7ac8768abf302cc34bf67">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1a09c3f5a9b049b230f961ff3974945794">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1a09c3f5a9b049b230f961ff3974945794">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1aeab2426818c7ac8768abf302cc34bf67">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_data_element_type_1a7aef0bd7723ae0cc7a395d4efaa8c179">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1adb0f2d9d1e4e26f9cb4d3138568298e2">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1a37a9a43882da3d7850c6fdfc4c0201f4">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1adb0f2d9d1e4e26f9cb4d3138568298e2">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1a37a9a43882da3d7850c6fdfc4c0201f4">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1a4fa604757687969d43fb5f9ff366c410">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a7408359430f6b902ff9b8727013fa78c">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1a1728f01b23fe3048af2b131ed85274ea">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1a1728f01b23fe3048af2b131ed85274ea">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a7408359430f6b902ff9b8727013fa78c">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1a4fa604757687969d43fb5f9ff366c410">Serialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="144" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="144" bodyend="147"/>
+        <referencedby refid="class_s_d_c_1_1_identified_extension_type_1a7094d5aa0b57bccf92afd9b8e2bf1ae6" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="232" endline="249">SDC.IdentifiedExtensionType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a91d783e02c6dc85f0799a8c41ab0e732" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.IdentifiedExtensionType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1ab1514379cd9bd547d5569548274fceb1">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1ab4bb1a45ac77acbb44f61d099f3ab1f3">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a6908888189fd3b9cdc9ade18c0379b0e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1af6a2b5ca856925338c804c5f262415fa">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1ab25ebb7ed2b218592f5c479d678dfdd3">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1a7e425d1114873ab7341a0baf45f8dc13">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1a3708ea11582b64b105546ccfefc91319">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1a0712dec888c2e2b56f7191288eba12d4">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_data_element_type_1a35533ef7625dfe02d211997e4a3b7559">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1adbc5b9a3de0d45ae2f6d0e13a39a7eec">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1a1bd6140a49fc6fcbcc2b9327a2af94cf">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1acd50c5955f4e0ce1fe4fa515dc4a217e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1a9771350a3f4c321c5c4df9d148d8dfb5">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1a0fbc5ecaf6fa82233723a0d8dc4d2569">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="207" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="207" bodyend="220"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_identified_extension_type_1a1fc00a8bd8c9144c09e7a41c788890d2" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="222" endline="225">SDC.IdentifiedExtensionType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a1fc00a8bd8c9144c09e7a41c788890d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.IdentifiedExtensionType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1af03b919560cd67ffe1373d8cef3bb9b8">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1ac54af49ab8264ccc64e672abb4cbfa9c">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a080135fda25fe260f26f6992a7e552e4">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1a8df9a0d7f135a5aa58f6dc299a6614f9">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1a191350e3209f6c78d66ce6ddb5218401">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1abf18ea8edcfcadbae59fa07f161421f7">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1a3b7ae5eb9885a30fdeb81b1a7aece344">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1a879bf7e419a44ff65300a824c00f4d51">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_data_element_type_1a45274b8feb00682bc39073d4f786a15d">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1a351dc9ea62d55b702d7620e6a3d88482">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1a0b6e1525c32ad0cd3155d9e74c547e5a">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1abb4e3b07e043e55704f823ed9da7425e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1a0a0dbc5e48f9cc06ff8710e6ef877709">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1ab70351f5190a8a743cd100c4b47367a6">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="222" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="222" bodyend="225"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1a91d783e02c6dc85f0799a8c41ab0e732" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="207" endline="220">SDC.IdentifiedExtensionType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a23fe998e38df83ec7f7a29068772f6a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.IdentifiedExtensionType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1aac4a54fb2d362bd078d083baa81b7604">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a6ff8fafd2f90adaedf4a439ad572e73b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1a7288c6a16165a49f6ee5ec9da4ac5e0e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1a05584f3b2a4d872e45745cac66265742">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1aff3aee643ddea6e779a800f0d822ef5a">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1aac4a54fb2d362bd078d083baa81b7604">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a6ff8fafd2f90adaedf4a439ad572e73b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1a7288c6a16165a49f6ee5ec9da4ac5e0e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_changed_list_item_type_1a479cca8e794bc7a5f3657ad24dbdcf58">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1a05584f3b2a4d872e45745cac66265742">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1aff3aee643ddea6e779a800f0d822ef5a">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1a4096156150af812bf06ca69231dd99db">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1ac2c045605bea3309a100e30e6c66905b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1ac2c045605bea3309a100e30e6c66905b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1a4096156150af812bf06ca69231dd99db">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_data_element_type_1a06d3a664862a0d11f3f3d5a8b90397c3">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1a96680921de746072dbffbc4aa15cb8fc">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1ab793c4339f84451d232799ee58c80f2d">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1a96680921de746072dbffbc4aa15cb8fc">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1ab793c4339f84451d232799ee58c80f2d">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1a23190b7952fd5672a041fd8b5a02c480">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a2635f95d8e8073a9612e5c9c71047421">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1a1ea465098dfe26141491aa814b4f735c">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1a1ea465098dfe26141491aa814b4f735c">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a2635f95d8e8073a9612e5c9c71047421">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1a23190b7952fd5672a041fd8b5a02c480">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="227" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="227" bodyend="230"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1a91d783e02c6dc85f0799a8c41ab0e732" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="207" endline="220">SDC.IdentifiedExtensionType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a7094d5aa0b57bccf92afd9b8e2bf1ae6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.IdentifiedExtensionType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5c619ed0e36571d6f4bd992faa3ad282">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1a3c16149bff88e299e2bda0c6b58e8c17">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1ab938eff760b03b9a24ee8012f06527e0">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1a604811ab4b16a1e4f4e2048377f05881">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1ab85112544178b55f8e944730ce068a9e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1a2c2b4b09eea080bc86f233465ea52653">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1a1d35106c11aca50895534dc89d8acf98">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1a19cdde98b8620786b4ed3cb7027aa362">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_data_element_type_1aa860ce90e8a2abf64f1949ca11d31847">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1a46e384a06a31c8febc536203668a6320">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1afdc186fe310b87cdb50f957af29327c7">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1aa11e9fc99dc22f8f2f948e9e68fd5e81">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1a3a820e936e1167ec8182da8f04acad5a">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1a923c90011aae16a63eea85dd87d78270">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="232" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="232" bodyend="249"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1ac5890d47810aede6e4addb5bea3d8155" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="144" endline="147">SDC.IdentifiedExtensionType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1ab14d9aff66939f8a1c5fe4e0570b563f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.IdentifiedExtensionType.ShouldSerializeID</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeID</name>
+        <briefdescription>
+<para>Test whether ID should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="133" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="133" bodyend="136"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1aec38ff3687d70ecb4132f26e5ac6e6ab" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="57">SDC.IdentifiedExtensionType.ID</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a531c1d0860f5b496a249dc4fb8cc166b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.IdentifiedExtensionType.ShouldSerializebaseURI</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializebaseURI</name>
+        <briefdescription>
+<para>Test whether baseURI should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="141" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="141" bodyend="144"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1a14e59e1eabccda686a73a95cbd50ef2c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="70">SDC.IdentifiedExtensionType.baseURI</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1ac5890d47810aede6e4addb5bea3d8155" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.IdentifiedExtensionType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1aff06fd6e8107ae53fb99e24d1b759777">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a35d4a321c254baa11c611f8cd0c8299a">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1aa616469c77d61f7fbc89bea433e17525">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_changed_list_item_type_1af2febaa625f2bb8786303f500ec90572">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1ae57d665f58e97dc25eb48d33dd954064">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1a1d390ae6db03ce5d8a2a648541df6a49">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1aff06fd6e8107ae53fb99e24d1b759777">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a35d4a321c254baa11c611f8cd0c8299a">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1aa616469c77d61f7fbc89bea433e17525">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1ae57d665f58e97dc25eb48d33dd954064">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1a1d390ae6db03ce5d8a2a648541df6a49">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1aeab2426818c7ac8768abf302cc34bf67">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1a09c3f5a9b049b230f961ff3974945794">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1a09c3f5a9b049b230f961ff3974945794">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1aeab2426818c7ac8768abf302cc34bf67">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_data_element_type_1a7aef0bd7723ae0cc7a395d4efaa8c179">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1adb0f2d9d1e4e26f9cb4d3138568298e2">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1a37a9a43882da3d7850c6fdfc4c0201f4">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1adb0f2d9d1e4e26f9cb4d3138568298e2">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1a37a9a43882da3d7850c6fdfc4c0201f4">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1a4fa604757687969d43fb5f9ff366c410">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a7408359430f6b902ff9b8727013fa78c">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1a1728f01b23fe3048af2b131ed85274ea">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1a1728f01b23fe3048af2b131ed85274ea">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a7408359430f6b902ff9b8727013fa78c">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1a4fa604757687969d43fb5f9ff366c410">Serialize</reimplementedby>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="151" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="151" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a40f2cf2e451d78dbfd060ea1f9471a7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.IdentifiedExtensionType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1a914d45bf222b92427bcc8651e2c40ec3">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a1da1e75bcbc80e58f8811481c7cf0fb4">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1aded977b17e3112422bd5bf6065f276bf">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_changed_list_item_type_1a7eaae755fe93dc729860b3ef79545db1">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1af095f97057754f7c30fe908a7fa05e50">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1a3930bde77666cfb6c0c20bafd72522a2">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1aaf0ffa82dbf5680a2ee1252bd9244547">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1ab27c22dffce868ea8bdfa32d20ffd49e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1a19979d0785bcb8eb85099529153eef9d">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1a12742b4ffadd1578e622bdd2b9adc367">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1a09673ea4941bae764bb1c28cdf20325e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1afbc817d8012bc3d40b212ae8f164978c">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a0567134bdd5b760a24e0f4ee300b9e76">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="237" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="237" bodyend="250"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1a91d783e02c6dc85f0799a8c41ab0e732" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="207" endline="220">SDC.IdentifiedExtensionType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a23fe998e38df83ec7f7a29068772f6a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.IdentifiedExtensionType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1aac4a54fb2d362bd078d083baa81b7604">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a6ff8fafd2f90adaedf4a439ad572e73b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1a7288c6a16165a49f6ee5ec9da4ac5e0e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1a05584f3b2a4d872e45745cac66265742">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1aff3aee643ddea6e779a800f0d822ef5a">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1aac4a54fb2d362bd078d083baa81b7604">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a6ff8fafd2f90adaedf4a439ad572e73b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1a7288c6a16165a49f6ee5ec9da4ac5e0e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_changed_list_item_type_1a479cca8e794bc7a5f3657ad24dbdcf58">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1a05584f3b2a4d872e45745cac66265742">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1aff3aee643ddea6e779a800f0d822ef5a">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1a4096156150af812bf06ca69231dd99db">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1ac2c045605bea3309a100e30e6c66905b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1ac2c045605bea3309a100e30e6c66905b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1a4096156150af812bf06ca69231dd99db">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_data_element_type_1a06d3a664862a0d11f3f3d5a8b90397c3">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1a96680921de746072dbffbc4aa15cb8fc">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1ab793c4339f84451d232799ee58c80f2d">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1a96680921de746072dbffbc4aa15cb8fc">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1ab793c4339f84451d232799ee58c80f2d">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1a23190b7952fd5672a041fd8b5a02c480">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a2635f95d8e8073a9612e5c9c71047421">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1a1ea465098dfe26141491aa814b4f735c">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1a1ea465098dfe26141491aa814b4f735c">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a2635f95d8e8073a9612e5c9c71047421">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1a23190b7952fd5672a041fd8b5a02c480">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="252" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="252" bodyend="270"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1ac5890d47810aede6e4addb5bea3d8155" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="144" endline="147">SDC.IdentifiedExtensionType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a33a37145de8631803c167a7b3e91255e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+        <definition>virtual IdentifiedExtensionType SDC.IdentifiedExtensionType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3">Clone</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_section_item_type_1ac6c1bf15a2e5ef60250fc8a7f2a85e85">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1ae0d86f7fe6de4c8410c1b05d9be77c46">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_type_1ac4bd85819d799979dffb7b44b4dba94c">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_changed_list_item_type_1ac65526b2b7b3d2b12345d46c5e97939f">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_button_item_type_1a4261182e9815f6465cc549e5a9c9179e">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_inject_type_1a005ebe237b730b09abdb44ca426aaaf3">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_section_base_type_1aeeb9f1cb523cd1bc338004a0d4d31737">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_inject_form_type_1ac71bdd0a1797820543684884a8f9f4f0">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_base_type_1a09ffb1562a432246b4816a81af36aaa6">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_repeating_type_1a57f4103d0b362fdc3626dbeae04275f3">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_form_design_type_1a5139c2c30a92dfe2c786ee6890c129ae">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_base_type_1a5b67a2a5128f223c6c239a734c94aba2">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a768e58c560271b4e0d91709a8586384e">Clone</reimplementedby>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="331" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="331" bodyend="334"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1af1c3c0092861d44e9d9bcc621b4b530e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IdentifiedExtensionType.Deserialize</definition>
+        <argsstring>(string input, out IdentifiedExtensionType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="156" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="156" bodyend="170"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_identified_extension_type_1a91854b7e5833915cd74a1353a0a71363" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="172" endline="176">SDC.IdentifiedExtensionType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_identified_extension_type_1a78ef59652df5c6b4cef48b424d29b0da" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="290" endline="314">SDC.IdentifiedExtensionType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a91854b7e5833915cd74a1353a0a71363" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IdentifiedExtensionType.Deserialize</definition>
+        <argsstring>(string input, out IdentifiedExtensionType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="172" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="172" bodyend="176"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1af1c3c0092861d44e9d9bcc621b4b530e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="156" endline="170">SDC.IdentifiedExtensionType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a83845c0933ba09d4edc5af43d1c8948c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+        <definition>static new IdentifiedExtensionType SDC.IdentifiedExtensionType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="178" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="178" bodyend="193"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1ae58656c3cd94e16c69b70d40e1c9e152" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+        <definition>static IdentifiedExtensionType SDC.IdentifiedExtensionType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="195" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="195" bodyend="198"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1a8dc6648044e840246b3462f681ca1c16" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="82">SDC.IdentifiedExtensionType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1aa6f5c53d9fecc7eabdb09e2e98a54edc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IdentifiedExtensionType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out IdentifiedExtensionType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="258" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="258" bodyend="272"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_identified_extension_type_1ac1bbe4827f3f7103b155d502e8604878" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="274" endline="277">SDC.IdentifiedExtensionType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1ac1bbe4827f3f7103b155d502e8604878" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IdentifiedExtensionType.LoadFromFile</definition>
+        <argsstring>(string fileName, out IdentifiedExtensionType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="274" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="274" bodyend="277"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1aa6f5c53d9fecc7eabdb09e2e98a54edc" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="258" endline="272">SDC.IdentifiedExtensionType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1abdcccaf607de139ef8991b66ec2a1b34" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IdentifiedExtensionType.LoadFromFile</definition>
+        <argsstring>(string fileName, out IdentifiedExtensionType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="279" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="279" bodyend="283"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1aa6f5c53d9fecc7eabdb09e2e98a54edc" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="258" endline="272">SDC.IdentifiedExtensionType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a5210b583d99f00a50734f34728999697" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+        <definition>static IdentifiedExtensionType SDC.IdentifiedExtensionType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="285" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="285" bodyend="288"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1aa6f5c53d9fecc7eabdb09e2e98a54edc" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="258" endline="272">SDC.IdentifiedExtensionType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a78ef59652df5c6b4cef48b424d29b0da" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+        <definition>static new IdentifiedExtensionType SDC.IdentifiedExtensionType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" line="290" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IdentifiedExtensionType.cs" bodystart="290" bodyend="314"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1af1c3c0092861d44e9d9bcc621b4b530e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="156" endline="170">SDC.IdentifiedExtensionType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1ae73b41119462fa46d0fa9593f66944a1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IdentifiedExtensionType.Deserialize</definition>
+        <argsstring>(string input, out IdentifiedExtensionType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="186" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="186" bodyend="200"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1af1c3c0092861d44e9d9bcc621b4b530e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="156" endline="170">SDC.IdentifiedExtensionType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a91854b7e5833915cd74a1353a0a71363" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IdentifiedExtensionType.Deserialize</definition>
+        <argsstring>(string input, out IdentifiedExtensionType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="202" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="202" bodyend="206"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1af1c3c0092861d44e9d9bcc621b4b530e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="156" endline="170">SDC.IdentifiedExtensionType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a83845c0933ba09d4edc5af43d1c8948c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+        <definition>static new IdentifiedExtensionType SDC.IdentifiedExtensionType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="208" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="208" bodyend="223"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1a8dc6648044e840246b3462f681ca1c16" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="82">SDC.IdentifiedExtensionType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a59f08a6fee56e9641dc7b3b0b1f10309" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+        <definition>static IdentifiedExtensionType SDC.IdentifiedExtensionType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="225" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="225" bodyend="228"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1a8dc6648044e840246b3462f681ca1c16" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="82">SDC.IdentifiedExtensionType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a318ef98ae92606615be68b487ed5bb3f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IdentifiedExtensionType.LoadFromFile</definition>
+        <argsstring>(string fileName, out IdentifiedExtensionType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="279" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="279" bodyend="293"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1aa6f5c53d9fecc7eabdb09e2e98a54edc" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="258" endline="272">SDC.IdentifiedExtensionType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1abdcccaf607de139ef8991b66ec2a1b34" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IdentifiedExtensionType.LoadFromFile</definition>
+        <argsstring>(string fileName, out IdentifiedExtensionType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="295" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="295" bodyend="299"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1aa6f5c53d9fecc7eabdb09e2e98a54edc" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="258" endline="272">SDC.IdentifiedExtensionType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_identified_extension_type_1a096271356fb97ffd375b4cf1181a468c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+        <definition>static new IdentifiedExtensionType SDC.IdentifiedExtensionType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" line="301" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IdentifiedExtensionType.cs" bodystart="301" bodyend="325"/>
+        <references refid="class_s_d_c_1_1_identified_extension_type_1af1c3c0092861d44e9d9bcc621b4b530e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_identified_extension_type_8cs" startline="156" endline="170">SDC.IdentifiedExtensionType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the base type for all subtypes that require a unique URI identifier. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4321">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4322" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4329">
+        <label>SDC.RepeatingType</label>
+        <link refid="class_s_d_c_1_1_repeating_type"/>
+        <childnode refid="4325" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4325" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4322">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="4335">
+        <label>SDC.InjectFormType</label>
+        <link refid="class_s_d_c_1_1_inject_form_type"/>
+        <childnode refid="4334" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4319" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4328">
+        <label>SDC.ListItemType</label>
+        <link refid="class_s_d_c_1_1_list_item_type"/>
+        <childnode refid="4327" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4327" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4331">
+        <label>SDC.QuestionItemType</label>
+        <link refid="class_s_d_c_1_1_question_item_type"/>
+        <childnode refid="4330" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4330" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4330">
+        <label>SDC.QuestionItemBaseType</label>
+        <link refid="class_s_d_c_1_1_question_item_base_type"/>
+        <childnode refid="4329" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4329" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4327">
+        <label>SDC.ListItemBaseType</label>
+        <link refid="class_s_d_c_1_1_list_item_base_type"/>
+        <childnode refid="4325" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4325" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4336">
+        <label>SDC.ActInjectType</label>
+        <link refid="class_s_d_c_1_1_act_inject_type"/>
+        <childnode refid="4335" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4335" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4325">
+        <label>SDC.DisplayedType</label>
+        <link refid="class_s_d_c_1_1_displayed_type"/>
+        <childnode refid="4319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4319" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4319">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="4320" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4320" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4320">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="4321" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4321" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4337">
+        <label>SDC.ParentType</label>
+        <link refid="class_s_d_c_1_1_parent_type"/>
+        <childnode refid="4319" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4333">
+        <label>SDC.SectionItemType</label>
+        <link refid="class_s_d_c_1_1_section_item_type"/>
+        <childnode refid="4332" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4332" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4324">
+        <label>SDC.DataElementType</label>
+        <link refid="class_s_d_c_1_1_data_element_type"/>
+        <childnode refid="4319" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4332">
+        <label>SDC.SectionBaseType</label>
+        <link refid="class_s_d_c_1_1_section_base_type"/>
+        <childnode refid="4329" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4329" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4326">
+        <label>SDC.ButtonItemType</label>
+        <link refid="class_s_d_c_1_1_button_item_type"/>
+        <childnode refid="4325" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4325" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4323">
+        <label>SDC.ChangedListItemType</label>
+        <link refid="class_s_d_c_1_1_changed_list_item_type"/>
+        <childnode refid="4319" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4334">
+        <label>SDC.FormDesignType</label>
+        <link refid="class_s_d_c_1_1_form_design_type"/>
+        <childnode refid="4319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4319" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4340">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4341" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4338" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="4342" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="4343" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="4344" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="4345" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4349">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="4347" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4341">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="4347">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="4346">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="4347" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4342">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="4351">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="4345">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="4341" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4346" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4348" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4349" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4350" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="4344">
+        <label>System</label>
+      </node>
+      <node id="4348">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="4347" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4338">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="4339" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4339" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4345" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4339">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="4340" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4340" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4345" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4350">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="4351" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4343">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4341" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4338" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="4342" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="4343" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="4344" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="4345" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1135" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1134" bodyend="1188"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a76fabee4b6e1a71bffed42a9465c5de3" prot="private" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>_baseURI</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a8f3d61915b036c7c54415d127cf59fea" prot="private" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>_id</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a28d90ae3b48c699f00faadbaa4908a57" prot="private" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>AddToIdentExtNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a14e59e1eabccda686a73a95cbd50ef2c" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>baseURI</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a4ffea3724bf79fb793611a5feb0c1d01" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aace7331efa5996a7324d37791bc2e75b" prot="private" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a33a37145de8631803c167a7b3e91255e" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1af1c3c0092861d44e9d9bcc621b4b530e" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a91854b7e5833915cd74a1353a0a71363" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a83845c0933ba09d4edc5af43d1c8948c" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ae58656c3cd94e16c69b70d40e1c9e152" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ae73b41119462fa46d0fa9593f66944a1" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a91854b7e5833915cd74a1353a0a71363" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a83845c0933ba09d4edc5af43d1c8948c" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a59f08a6fee56e9641dc7b3b0b1f10309" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IdentifiedExtensionType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aea7c6c02897d9c63669adfd19ab99344" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>FillIdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aec38ff3687d70ecb4132f26e5ac6e6ab" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ID</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a63cc241892d95761b90b45d0f979f2c1" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>IdentExtNodes</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a1ebea3b2c6e2d7cbb19d58e2d8147f16" prot="protected" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a2e14a8c36871a4845a275d38a8f8f681" prot="protected" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a1ebea3b2c6e2d7cbb19d58e2d8147f16" prot="package" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aa6f5c53d9fecc7eabdb09e2e98a54edc" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ac1bbe4827f3f7103b155d502e8604878" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1abdcccaf607de139ef8991b66ec2a1b34" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a5210b583d99f00a50734f34728999697" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a78ef59652df5c6b4cef48b424d29b0da" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a318ef98ae92606615be68b487ed5bb3f" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1abdcccaf607de139ef8991b66ec2a1b34" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a096271356fb97ffd375b4cf1181a468c" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IdentifiedExtensionType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a91d783e02c6dc85f0799a8c41ab0e732" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a1fc00a8bd8c9144c09e7a41c788890d2" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a23fe998e38df83ec7f7a29068772f6a8" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a7094d5aa0b57bccf92afd9b8e2bf1ae6" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a40f2cf2e451d78dbfd060ea1f9471a7e" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a23fe998e38df83ec7f7a29068772f6a8" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a83366b7c347ba094ada7d8dc8913daf3" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ac5890d47810aede6e4addb5bea3d8155" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ac5890d47810aede6e4addb5bea3d8155" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a916a76cd6c1baa492c9a783f1806690b" prot="private" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a8dc6648044e840246b3462f681ca1c16" prot="private" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a531c1d0860f5b496a249dc4fb8cc166b" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializebaseURI</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a531c1d0860f5b496a249dc4fb8cc166b" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializebaseURI</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ab14d9aff66939f8a1c5fe4e0570b563f" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializeID</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ab14d9aff66939f8a1c5fe4e0570b563f" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::IdentifiedExtensionType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::IdentifiedExtensionType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C071543-1E33-4CA3-97FB-808B82D37B5C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDC.Schema</RootNamespace>
+    <AssemblyName>SDC.Schema</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ITreeBuilder.cs" />
+    <Compile Include="IParent.cs" />
+    <Compile Include="IDisplayedType.cs" />
+    <Compile Include="M3 Schema Classes\AcceptabilityType.cs" />
+    <Compile Include="M3 Schema Classes\ActActionType.cs" />
+    <Compile Include="M3 Schema Classes\ActAddCodeType.cs" />
+    <Compile Include="M3 Schema Classes\ActInjectType.cs" />
+    <Compile Include="M3 Schema Classes\ActPreviewReportType.cs" />
+    <Compile Include="M3 Schema Classes\ActSaveResponsesType.cs" />
+    <Compile Include="M3 Schema Classes\ActSendMessageType.cs" />
+    <Compile Include="M3 Schema Classes\ActSendReportType.cs" />
+    <Compile Include="M3 Schema Classes\ActSetAttrValueType.cs" />
+    <Compile Include="M3 Schema Classes\ActSetItemAttributeType.cs" />
+    <Compile Include="M3 Schema Classes\ActSetValueBoolType.cs" />
+    <Compile Include="M3 Schema Classes\ActShowFormType.cs" />
+    <Compile Include="M3 Schema Classes\ActShowMessageType.cs" />
+    <Compile Include="M3 Schema Classes\ActShowReportType.cs" />
+    <Compile Include="M3 Schema Classes\ActValidateFormType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\AddressType.cs" />
+    <Compile Include="M3 Schema Classes\AnyConvertBoolType.cs" />
+    <Compile Include="M3 Schema Classes\AnyConvertNumType.cs" />
+    <Compile Include="M3 Schema Classes\AnyConvertStrType.cs" />
+    <Compile Include="M3 Schema Classes\AnyFunctionsAnyType.cs" />
+    <Compile Include="M3 Schema Classes\AnyFunctionsAtomicType.cs" />
+    <Compile Include="M3 Schema Classes\AnyFunctionsBoolType.cs" />
+    <Compile Include="M3 Schema Classes\AnyFunctionsDateTimeType.cs" />
+    <Compile Include="M3 Schema Classes\AnyFunctionsListType.cs" />
+    <Compile Include="M3 Schema Classes\AnyFunctionsNumListOrNumType111.cs" />
+    <Compile Include="M3 Schema Classes\AnyFunctionsNumType.cs" />
+    <Compile Include="M3 Schema Classes\AnyFunctionsStrType.cs" />
+    <Compile Include="M3 Schema Classes\AnyListSetFunctionsListType111.cs" />
+    <Compile Include="M3 Schema Classes\AnyListSetFunctionsListType111OpListSet.cs" />
+    <Compile Include="M3 Schema Classes\AnyListType.cs" />
+    <Compile Include="M3 Schema Classes\AnyListTypeSortDirection.cs" />
+    <Compile Include="M3 Schema Classes\anyType_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\anyURI_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\anyURI_Stype.cs" />
+    <Compile Include="M3 Schema Classes\ApprovalType.cs" />
+    <Compile Include="M3 Schema Classes\AreaCodeType.cs" />
+    <Compile Include="M3 Schema Classes\AssociatedFilesType.cs" />
+    <Compile Include="M3 Schema Classes\base64Binary_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\base64Binary_Stype.cs" />
+    <Compile Include="M3 Schema Classes\BaseType.cs" />
+    <Compile Include="M3 Schema Classes\BetweenType.cs" />
+    <Compile Include="M3 Schema Classes\BlobType.cs" />
+    <Compile Include="M3 Schema Classes\boolean_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\boolean_Stype.cs" />
+    <Compile Include="M3 Schema Classes\BoolListType.cs" />
+    <Compile Include="M3 Schema Classes\BoolListTypeBoolOp.cs" />
+    <Compile Include="M3 Schema Classes\BoolType000.cs" />
+    <Compile Include="M3 Schema Classes\ButtonItemType.cs" />
+    <Compile Include="M3 Schema Classes\byte_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\byte_Stype.cs" />
+    <Compile Include="M3 Schema Classes\CaseBaseType.cs" />
+    <Compile Include="M3 Schema Classes\CaseBlockType.cs" />
+    <Compile Include="M3 Schema Classes\ChangedFieldType.cs" />
+    <Compile Include="M3 Schema Classes\ChangeLogType.cs" />
+    <Compile Include="M3 Schema Classes\ChangeTrackingType.cs" />
+    <Compile Include="M3 Schema Classes\ChangeType.cs" />
+    <Compile Include="M3 Schema Classes\ChildItemsType.cs" />
+    <Compile Include="M3 Schema Classes\CodeMatchType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\CodeMatchTypeCodeMatchEnum.cs" />
+    <Compile Include="M3 Schema Classes\CodeSystemType.cs" />
+    <Compile Include="M3 Schema Classes\CodingType.cs" />
+    <Compile Include="M3 Schema Classes\CommentType.cs" />
+    <Compile Include="M3 Schema Classes\CompareToType.cs" />
+    <Compile Include="M3 Schema Classes\CompareType.cs" />
+    <Compile Include="M3 Schema Classes\CompareTypeCompareOpEnum.cs" />
+    <Compile Include="M3 Schema Classes\ComplianceRuleType.cs" />
+    <Compile Include="M3 Schema Classes\ContactsType.cs" />
+    <Compile Include="M3 Schema Classes\ContactType.cs" />
+    <Compile Include="M3 Schema Classes\ConversionFunctions.cs" />
+    <Compile Include="M3 Schema Classes\CountryCodeType.cs" />
+    <Compile Include="M3 Schema Classes\DataElementType.cs" />
+    <Compile Include="M3 Schema Classes\DataTypeDateTime_StypeEnum.cs" />
+    <Compile Include="M3 Schema Classes\DataTypeInteger_StypeEnum.cs" />
+    <Compile Include="M3 Schema Classes\DataTypesDateTime_DEType.cs" />
+    <Compile Include="M3 Schema Classes\DataTypesDateTime_SType.cs" />
+    <Compile Include="M3 Schema Classes\DataTypesNumeric_DEType.cs" />
+    <Compile Include="M3 Schema Classes\DataTypesNumeric_SType.cs" />
+    <Compile Include="M3 Schema Classes\DataTypeString_StypeEnum.cs" />
+    <Compile Include="M3 Schema Classes\DataTypes_DEType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\DataTypes_SType.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeAddFunctionsDateTimeType.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeAddFunctionsDateTimeTypeFunction.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeAddFunctionsDateTimeTypeOperator.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeCompareIntegerType111.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeDiffFunctionsDateTimeType.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeDiffFunctionsDateTimeTypeFunction.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeFormatStringType.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeFormatStringTypeFormat.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeFunctionsAnyType.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeListType.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeMonadicFunctionsBooleanType.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeMonadicFunctionsBooleanTypeFunction.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeMonadicFunctionsDateTimeType.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeMonadicFunctionsDateTimeTypeFunction.cs" />
+    <Compile Include="M3 Schema Classes\dateTimeStamp_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\dateTimeStamp_Stype.cs" />
+    <Compile Include="M3 Schema Classes\DateTimeType.cs" />
+    <Compile Include="M3 Schema Classes\dateTime_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\dateTime_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\date_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\date_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\dayTimeDuration_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\dayTimeDuration_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\decimal_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\decimal_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\DestinationType.cs" />
+    <Compile Include="M3 Schema Classes\DisplayedType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\DisplayedTypeShowInReport.cs" />
+    <Compile Include="M3 Schema Classes\double_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\double_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\dt.cs" />
+    <Compile Include="M3 Schema Classes\dtQuantEnum.cs" />
+    <Compile Include="M3 Schema Classes\duration_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\duration_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\EmailAddressType.cs" />
+    <Compile Include="M3 Schema Classes\EmailType.cs" />
+    <Compile Include="M3 Schema Classes\EventType.cs" />
+    <Compile Include="M3 Schema Classes\EventTypeAction.cs" />
+    <Compile Include="M3 Schema Classes\ExceptionType.cs" />
+    <Compile Include="M3 Schema Classes\ExceptionTypeExceptionType.cs" />
+    <Compile Include="M3 Schema Classes\ExtensionBaseType.cs" />
+    <Compile Include="M3 Schema Classes\ExtensionType.cs" />
+    <Compile Include="M3 Schema Classes\FileDatesType.cs" />
+    <Compile Include="M3 Schema Classes\FileHashType.cs" />
+    <Compile Include="M3 Schema Classes\FileType.cs" />
+    <Compile Include="M3 Schema Classes\FileUsageType.cs" />
+    <Compile Include="M3 Schema Classes\FilterPredicateType.cs" />
+    <Compile Include="M3 Schema Classes\float_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\float_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\ForEachInList.cs" />
+    <Compile Include="M3 Schema Classes\FormDesignType.cs" />
+    <Compile Include="M3 Schema Classes\FuncBoolListType000.cs" />
+    <Compile Include="M3 Schema Classes\FuncBoolType.cs" />
+    <Compile Include="M3 Schema Classes\FuncDateTimeListType000.cs" />
+    <Compile Include="M3 Schema Classes\FuncDateTimeType000.cs" />
+    <Compile Include="M3 Schema Classes\FuncIntegerListType000.cs" />
+    <Compile Include="M3 Schema Classes\FuncIntegerType000.cs" />
+    <Compile Include="M3 Schema Classes\FuncListType00000.cs" />
+    <Compile Include="M3 Schema Classes\FuncNumListType000.cs" />
+    <Compile Include="M3 Schema Classes\FuncNumType.cs" />
+    <Compile Include="M3 Schema Classes\FuncStrListType000.cs" />
+    <Compile Include="M3 Schema Classes\FuncStrType.cs" />
+    <Compile Include="M3 Schema Classes\FuncType.cs" />
+    <Compile Include="M3 Schema Classes\gDay_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\gDay_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\GetAttrValueType.cs" />
+    <Compile Include="M3 Schema Classes\GetItemAttribValuesType.cs" />
+    <Compile Include="M3 Schema Classes\GetNumAttrValueType.cs" />
+    <Compile Include="M3 Schema Classes\GetStrAttrValueType.cs" />
+    <Compile Include="M3 Schema Classes\gMonthDay_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\gMonthDay_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\gMonth_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\gMonth_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\gYearMonth_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\gYearMonth_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\gYear_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\gYear_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\HashType.cs" />
+    <Compile Include="M3 Schema Classes\hexBinary_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\hexBinary_Stype.cs" />
+    <Compile Include="M3 Schema Classes\HTML_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\HTML_Stype.cs" />
+    <Compile Include="M3 Schema Classes\IdentifiedExtensionType.cs" />
+    <Compile Include="M3 Schema Classes\IdentifierType.cs" />
+    <Compile Include="M3 Schema Classes\IfThenType.cs" />
+    <Compile Include="M3 Schema Classes\IfType.cs" />
+    <Compile Include="M3 Schema Classes\InjectFormType.cs" />
+    <Compile Include="M3 Schema Classes\InListType.cs" />
+    <Compile Include="M3 Schema Classes\InputList_ReturnAnyType.cs" />
+    <Compile Include="M3 Schema Classes\InputList_ReturnBoolType.cs" />
+    <Compile Include="M3 Schema Classes\InputList_ReturnDateTimeType.cs" />
+    <Compile Include="M3 Schema Classes\InputList_ReturnIntegerType.cs" />
+    <Compile Include="M3 Schema Classes\InputList_ReturnListType.cs" />
+    <Compile Include="M3 Schema Classes\InputList_ReturnNumType.cs" />
+    <Compile Include="M3 Schema Classes\InputList_ReturnStrType111.cs" />
+    <Compile Include="M3 Schema Classes\InputStr_ReturnBoolListType.cs" />
+    <Compile Include="M3 Schema Classes\InputStr_ReturnBoolType.cs" />
+    <Compile Include="M3 Schema Classes\InputStr_ReturnDateTimeListType.cs" />
+    <Compile Include="M3 Schema Classes\InputStr_ReturnIntegerListType.cs" />
+    <Compile Include="M3 Schema Classes\InputStr_ReturnIntegerType.cs" />
+    <Compile Include="M3 Schema Classes\InputStr_ReturnListType.cs" />
+    <Compile Include="M3 Schema Classes\InputStr_ReturnNumListType.cs" />
+    <Compile Include="M3 Schema Classes\InputStr_ReturnStrListType.cs" />
+    <Compile Include="M3 Schema Classes\InputStr_ReturnStrListTypeDelimiter.cs" />
+    <Compile Include="M3 Schema Classes\InputStr_ReturnStrType.cs" />
+    <Compile Include="M3 Schema Classes\InputStr_ReturnType000.cs" />
+    <Compile Include="M3 Schema Classes\IntegerFunctionInteger111.cs" />
+    <Compile Include="M3 Schema Classes\IntegerListType.cs" />
+    <Compile Include="M3 Schema Classes\IntegerListTypeQuantEnum.cs" />
+    <Compile Include="M3 Schema Classes\IntegerType.cs" />
+    <Compile Include="M3 Schema Classes\integer_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\integer_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\int_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\int_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\IsBetweenType.cs" />
+    <Compile Include="M3 Schema Classes\IsBetweenTypeMax_Expression.cs" />
+    <Compile Include="M3 Schema Classes\IsBetweenTypeMax_ExpressionBoundry.cs" />
+    <Compile Include="M3 Schema Classes\IsBetweenTypeMin_Expression.cs" />
+    <Compile Include="M3 Schema Classes\IsBetweenTypeMin_ExpressionBoundry.cs" />
+    <Compile Include="M3 Schema Classes\Item2ChoiceType.cs" />
+    <Compile Include="M3 Schema Classes\Item2ChoiceType1.cs" />
+    <Compile Include="M3 Schema Classes\Item2ChoiceType2.cs" />
+    <Compile Include="M3 Schema Classes\ItemChoiceType.cs" />
+    <Compile Include="M3 Schema Classes\ItemChoiceType1.cs" />
+    <Compile Include="M3 Schema Classes\ItemChoiceType2.cs" />
+    <Compile Include="M3 Schema Classes\ItemNameAttributeType.cs" />
+    <Compile Include="M3 Schema Classes\ItemNameType.cs" />
+    <Compile Include="M3 Schema Classes\ItemsChoiceType.cs" />
+    <Compile Include="M3 Schema Classes\ItemsChoiceType1.cs" />
+    <Compile Include="M3 Schema Classes\ItemsChoiceType2.cs" />
+    <Compile Include="M3 Schema Classes\ItemsChoiceType3.cs" />
+    <Compile Include="M3 Schema Classes\ItemsChoiceType4.cs" />
+    <Compile Include="M3 Schema Classes\JobType.cs" />
+    <Compile Include="M3 Schema Classes\LanguageCodeISO6393_Type.cs" />
+    <Compile Include="M3 Schema Classes\LanguageType.cs" />
+    <Compile Include="M3 Schema Classes\LinkType.cs" />
+    <Compile Include="M3 Schema Classes\ListAggregateNumType.cs" />
+    <Compile Include="M3 Schema Classes\ListAggregateNumTypeOP.cs" />
+    <Compile Include="M3 Schema Classes\ListAggregateStrType.cs" />
+    <Compile Include="M3 Schema Classes\ListAggregateStrTypeOpStringList.cs" />
+    <Compile Include="M3 Schema Classes\ListConvertListType.cs" />
+    <Compile Include="M3 Schema Classes\ListConvertListTypeTruncation.cs" />
+    <Compile Include="M3 Schema Classes\ListConvertStringType.cs" />
+    <Compile Include="M3 Schema Classes\ListFieldType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\ListFilterListType000.cs" />
+    <Compile Include="M3 Schema Classes\ListFilterListType000X_flags.cs" />
+    <Compile Include="M3 Schema Classes\ListFilterType.cs" />
+    <Compile Include="M3 Schema Classes\ListGetItemAtIndexAnyType000.cs" />
+    <Compile Include="M3 Schema Classes\ListGetItemAtIndexBoolType000.cs" />
+    <Compile Include="M3 Schema Classes\ListGetItemAtIndexDateTimeType000.cs" />
+    <Compile Include="M3 Schema Classes\ListGetItemAtIndexNumType000.cs" />
+    <Compile Include="M3 Schema Classes\ListGetItemAtIndexStrType.cs" />
+    <Compile Include="M3 Schema Classes\ListInsertAtIndexListType.cs" />
+    <Compile Include="M3 Schema Classes\ListInsertAtIndexListTypeDateTimes.cs" />
+    <Compile Include="M3 Schema Classes\ListInsertAtIndexListTypeInsertType.cs" />
+    <Compile Include="M3 Schema Classes\ListInsertAtIndexListTypeStrings.cs" />
+    <Compile Include="M3 Schema Classes\ListInsertAtIndexListTypeStringsStrListFunctions.cs" />
+    <Compile Include="M3 Schema Classes\ListItemBaseType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\ListItemResponseFieldType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\ListItemType.cs" />
+    <Compile Include="M3 Schema Classes\ListMonadicFunctionsBoolType111.cs" />
+    <Compile Include="M3 Schema Classes\ListMonadicFunctionsBoolType111Function.cs" />
+    <Compile Include="M3 Schema Classes\ListMonadicFunctionsNumType111.cs" />
+    <Compile Include="M3 Schema Classes\ListMonadicFunctionsNumType111Function.cs" />
+    <Compile Include="M3 Schema Classes\ListRemoveAtIndexListType.cs" />
+    <Compile Include="M3 Schema Classes\ListType.cs" />
+    <Compile Include="M3 Schema Classes\long_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\long_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\LookupEndPointType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\MultiSelectionSetBoolType.cs" />
+    <Compile Include="M3 Schema Classes\MultiSelectionSetBoolTypeBoolOp.cs" />
+    <Compile Include="M3 Schema Classes\NameType.cs" />
+    <Compile Include="M3 Schema Classes\negativeInteger_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\negativeInteger_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\NiladicFunctionsDateTimeType.cs" />
+    <Compile Include="M3 Schema Classes\NiladicFunctionsDateTimeTypeFunction.cs" />
+    <Compile Include="M3 Schema Classes\NiladicFunctionsDateTimeTypeTimeZone.cs" />
+    <Compile Include="M3 Schema Classes\nonNegativeInteger_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\nonNegativeInteger_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\nonPositiveInteger_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\nonPositiveInteger_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\NumericConstantsType111.cs" />
+    <Compile Include="M3 Schema Classes\NumericConstantsType111Constant.cs" />
+    <Compile Include="M3 Schema Classes\NumFunctionBoolType111.cs" />
+    <Compile Include="M3 Schema Classes\NumListType.cs" />
+    <Compile Include="M3 Schema Classes\NumListTypeQuantEnum.cs" />
+    <Compile Include="M3 Schema Classes\NumNumFunctionNumType.cs" />
+    <Compile Include="M3 Schema Classes\NumNumFunctionNumTypeOpMathList.cs" />
+    <Compile Include="M3 Schema Classes\NumTrigNumType111.cs" />
+    <Compile Include="M3 Schema Classes\NumTrigNumType111ConvertAngle.cs" />
+    <Compile Include="M3 Schema Classes\NumTrigNumType111ConvertAngleFunction.cs" />
+    <Compile Include="M3 Schema Classes\NumTrigNumType111TrigRadians.cs" />
+    <Compile Include="M3 Schema Classes\NumTrigNumType111TrigRadiansFunction.cs" />
+    <Compile Include="M3 Schema Classes\NumType.cs" />
+    <Compile Include="M3 Schema Classes\OnEventType.cs" />
+    <Compile Include="M3 Schema Classes\OrganizationType.cs" />
+    <Compile Include="M3 Schema Classes\ParameterItemType111.cs" />
+    <Compile Include="M3 Schema Classes\ParameterValueType.cs" />
+    <Compile Include="M3 Schema Classes\ParamNumType000.cs" />
+    <Compile Include="M3 Schema Classes\PersonType.cs" />
+    <Compile Include="M3 Schema Classes\PhoneNumberType.cs" />
+    <Compile Include="M3 Schema Classes\PhoneType.cs" />
+    <Compile Include="M3 Schema Classes\positiveInteger_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\positiveInteger_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\PredicateType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\PredicateType2.cs" />
+    <Compile Include="M3 Schema Classes\PropertyType.cs" />
+    <Compile Include="M3 Schema Classes\PropertyType1.cs" />
+    <Compile Include="M3 Schema Classes\ProvenanceType.cs" />
+    <Compile Include="M3 Schema Classes\QuestionItemBaseType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\QuestionItemType.cs" />
+    <Compile Include="M3 Schema Classes\RefBaseType.cs" />
+    <Compile Include="M3 Schema Classes\RefBoolListType.cs" />
+    <Compile Include="M3 Schema Classes\RefBoolType.cs" />
+    <Compile Include="M3 Schema Classes\RefDateTimeListType.cs" />
+    <Compile Include="M3 Schema Classes\RefDateTimeType000.cs" />
+    <Compile Include="M3 Schema Classes\RefIntegerListType.cs" />
+    <Compile Include="M3 Schema Classes\RefIntegerType000.cs" />
+    <Compile Include="M3 Schema Classes\RefListType.cs" />
+    <Compile Include="M3 Schema Classes\RefNumListType.cs" />
+    <Compile Include="M3 Schema Classes\RefNumType.cs" />
+    <Compile Include="M3 Schema Classes\RefRuleBoolType000.cs" />
+    <Compile Include="M3 Schema Classes\RefRuleDateTimeType000.cs" />
+    <Compile Include="M3 Schema Classes\RefRuleIntegerType000.cs" />
+    <Compile Include="M3 Schema Classes\RefRuleNumType000.cs" />
+    <Compile Include="M3 Schema Classes\RefRuleStrType000.cs" />
+    <Compile Include="M3 Schema Classes\RefRuleType.cs" />
+    <Compile Include="M3 Schema Classes\RefStrListType.cs" />
+    <Compile Include="M3 Schema Classes\RefStrType.cs" />
+    <Compile Include="M3 Schema Classes\RefType.cs" />
+    <Compile Include="M3 Schema Classes\RepeatingType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\RepeatsBoolListType.cs" />
+    <Compile Include="M3 Schema Classes\RepeatsDateTimeListType.cs" />
+    <Compile Include="M3 Schema Classes\RepeatsIntegerListType.cs" />
+    <Compile Include="M3 Schema Classes\RepeatsNumListType.cs" />
+    <Compile Include="M3 Schema Classes\RepeatsStrListType.cs" />
+    <Compile Include="M3 Schema Classes\ReplacedIDsType.cs" />
+    <Compile Include="M3 Schema Classes\ResponseFieldType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnAtomicOrListType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnAtomicType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnBaseType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnBoolListType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnBoolType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnDateTimeListType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnDateTimeType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnIntegerListType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnIntegerType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnListBaseType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnListType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnNumListType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnNumType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnStrListType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnStrType.cs" />
+    <Compile Include="M3 Schema Classes\ReturnType.cs" />
+    <Compile Include="M3 Schema Classes\RichTextType.cs" />
+    <Compile Include="M3 Schema Classes\RuleAutoSelectType.cs" />
+    <Compile Include="M3 Schema Classes\RulesCollectionType.cs" />
+    <Compile Include="M3 Schema Classes\RuleSelectionTestType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\RuleSingleSelectionSetsType.cs" />
+    <Compile Include="M3 Schema Classes\RulesType.cs" />
+    <Compile Include="M3 Schema Classes\ScriptCodeAnyType.cs" />
+    <Compile Include="M3 Schema Classes\ScriptCodeBoolType.cs" />
+    <Compile Include="M3 Schema Classes\ScriptCodeDateTimeType.cs" />
+    <Compile Include="M3 Schema Classes\ScriptCodeNumType.cs" />
+    <Compile Include="M3 Schema Classes\ScriptCodeStrType.cs" />
+    <Compile Include="M3 Schema Classes\SDCFormDesign - Simplified.Designer.cs" />
+    <Compile Include="M3 Schema Classes\SectionBaseType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\SectionBaseTypeResponseStatusEnum.cs" />
+    <Compile Include="M3 Schema Classes\SectionBaseTypeResponseTypeEnum.cs" />
+    <Compile Include="M3 Schema Classes\SectionItemType.cs" />
+    <Compile Include="M3 Schema Classes\SetAttrValueType.cs" />
+    <Compile Include="M3 Schema Classes\SetFunctionNumListType.cs" />
+    <Compile Include="M3 Schema Classes\SetFunctionNumListTypeOpListNumeric.cs" />
+    <Compile Include="M3 Schema Classes\short_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\short_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\StringCompareIntegerType.cs" />
+    <Compile Include="M3 Schema Classes\StringContainsBoolType.cs" />
+    <Compile Include="M3 Schema Classes\StringContainsIntegerType.cs" />
+    <Compile Include="M3 Schema Classes\StringConvertDateTimeType.cs" />
+    <Compile Include="M3 Schema Classes\StringEndsWithBoolType.cs" />
+    <Compile Include="M3 Schema Classes\StringFunctionsBoolType.cs" />
+    <Compile Include="M3 Schema Classes\StringFunctionsStrType.cs" />
+    <Compile Include="M3 Schema Classes\StringIsEmptyBoolType.cs" />
+    <Compile Include="M3 Schema Classes\StringIsNullBoolType.cs" />
+    <Compile Include="M3 Schema Classes\StringIsNullOrEmptyBoolType.cs" />
+    <Compile Include="M3 Schema Classes\StringLengthIntegerType.cs" />
+    <Compile Include="M3 Schema Classes\StringLikeBoolType.cs" />
+    <Compile Include="M3 Schema Classes\StringPatternMatchListType000.cs" />
+    <Compile Include="M3 Schema Classes\StringPatternMatchListType000X_flags.cs" />
+    <Compile Include="M3 Schema Classes\StringReplaceAtIndexStrType.cs" />
+    <Compile Include="M3 Schema Classes\StringReplacePatternStrType.cs" />
+    <Compile Include="M3 Schema Classes\StringReplacePatternStrTypeFlags.cs" />
+    <Compile Include="M3 Schema Classes\StringSplitBoolListType000.cs" />
+    <Compile Include="M3 Schema Classes\StringSplitDateTimeListType.cs" />
+    <Compile Include="M3 Schema Classes\StringSplitIntegerListType000.cs" />
+    <Compile Include="M3 Schema Classes\StringSplitListType.cs" />
+    <Compile Include="M3 Schema Classes\StringSplitNumListType.cs" />
+    <Compile Include="M3 Schema Classes\StringSplitStrListType.cs" />
+    <Compile Include="M3 Schema Classes\StringStartsWithBoolType.cs" />
+    <Compile Include="M3 Schema Classes\StringSubstringStrType.cs" />
+    <Compile Include="M3 Schema Classes\StringToLowerStrType.cs" />
+    <Compile Include="M3 Schema Classes\StringToUpperStrType.cs" />
+    <Compile Include="M3 Schema Classes\StringTrimStrType.cs" />
+    <Compile Include="M3 Schema Classes\StringTrimStrTypeTrimType.cs" />
+    <Compile Include="M3 Schema Classes\string_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\string_Stype.cs" />
+    <Compile Include="M3 Schema Classes\StrListCountIntegerType.cs" />
+    <Compile Include="M3 Schema Classes\StrListIndexOfIntegerType.cs" />
+    <Compile Include="M3 Schema Classes\StrListIndexOfIntegerTypeMatchType.cs" />
+    <Compile Include="M3 Schema Classes\StrListType.cs" />
+    <Compile Include="M3 Schema Classes\StrType.cs" />
+    <Compile Include="M3 Schema Classes\SubmissionRuleType.cs" />
+    <Compile Include="M3 Schema Classes\TargetItemIDType.cs" />
+    <Compile Include="M3 Schema Classes\TargetItemNameType.cs" />
+    <Compile Include="M3 Schema Classes\TargetItemXPathType.cs" />
+    <Compile Include="M3 Schema Classes\ThenType.cs" />
+    <Compile Include="M3 Schema Classes\time_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\time_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\UnitsType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\unsignedByte_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\unsignedByte_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\unsignedInt_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\unsignedInt_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\unsignedLong_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\unsignedLong_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\unsignedShort_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\unsignedShort_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\VersionType.cs" />
+    <Compile Include="M3 Schema Classes\VersionTypeChanges.cs" />
+    <Compile Include="M3 Schema Classes\WatchedPropertyType.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\XML_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\XML_Stype.cs" />
+    <Compile Include="M3 Schema Classes\yearMonthDuration_DEtype.cs" />
+    <Compile Include="M3 Schema Classes\yearMonthDuration_Stype.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="M3 Schema Classes\___ConversionFunctions___.cs" />
+    <Compile Include="M3 Schema Classes\___FunctionGroupers___.cs" />
+    <Compile Include="M3 Schema Classes\___ScriptCode___.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SDC.Schema.Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SDC.Schema.PartialClasses.cs" />
+    <Compile Include="SDCHelpers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="M3 Schema Classes\SDCBase.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="M3 Schema Classes\SDCDataTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="M3 Schema Classes\SDCExpressions.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="M3 Schema Classes\SDCFormDesign - Simplified.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="M3 Schema Classes\SDCFormDesign.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="M3 Schema Classes\SDCResources.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="M3 Schema Classes\SDCTemplateAdmin.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="M3 Schema Classes\xsd2code.config" />
+    <None Include="SDCFormDesign.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

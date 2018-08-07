@@ -1,0 +1,841 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_web_service_type" kind="class" prot="public">
+    <compoundname>SDC::WebServiceType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_lookup_end_point_type" prot="public" virt="non-virtual">SDC.LookupEndPointType</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_web_service_type_1aa92c9264beab00b49ebca7f5764de459" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> &gt;</type>
+        <definition>BindingList&lt;RichTextType&gt; SDC.WebServiceType._otherText</definition>
+        <argsstring></argsstring>
+        <name>_otherText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_web_service_type_1aab288c9a6cb9996862b57ca35c84ab52" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+        <definition>anyURI_Stype SDC.WebServiceType._uRI</definition>
+        <argsstring></argsstring>
+        <name>_uRI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="41" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_web_service_type_1a9e71075ce64e8597e78d1c11b84da047" compoundref="_web_service_type_8cs" startline="192" endline="195">SDC.WebServiceType.ShouldSerializeURI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_web_service_type_1a94116632a3d272b27eff57a802209ab6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>RichTextType SDC.WebServiceType._security</definition>
+        <argsstring></argsstring>
+        <name>_security</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="44" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_web_service_type_1a16eeea4a2a4704d9578123e29fc9409e" compoundref="_web_service_type_8cs" startline="200" endline="203">SDC.WebServiceType.ShouldSerializeSecurity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_web_service_type_1acd5905b4db67e62d74709f8f2b325172" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_parameter_type" kindref="compound">ParameterType</ref> &gt;</type>
+        <definition>BindingList&lt;ParameterType&gt; SDC.WebServiceType._parameter</definition>
+        <argsstring></argsstring>
+        <name>_parameter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="47" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_web_service_type_1a2fce01962cf6a94e741a15aa9f8a0320" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.WebServiceType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="51" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_web_service_type_1a085691f564451c36b6ade241b4127be1" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.WebServiceType.serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="49" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_web_service_type_1a998d90f8bf4ce45a1284fd433ece905d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;RichTextType&gt; SDC.WebServiceType.OtherText</definition>
+        <argsstring></argsstring>
+        <name>OtherText</name>
+        <briefdescription>
+<para>OtherText is any type of secondary text that is associated with any form item (e.g., section, question, list item) in any context. The Description context is specified by the  attribute. Examples of Description  values may include: -alternate language representations, -explanations for the user of the form, -tooltips, -pop-up help, -outlining (such as question numbering) </para>        </briefdescription>
+        <detaileddescription>
+<para>The  enumerations must be defined and documented for the particular use case, and are currently out of scope in this schema definition. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="65" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_web_service_type_1a10bd0b9042ce6f7d8790e1633b974238" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+        <definition>virtual anyURI_Stype SDC.WebServiceType.URI</definition>
+        <argsstring></argsstring>
+        <name>URI</name>
+        <briefdescription>
+<para>THe URI/URL may use the parameter list and transmit the item name, property and value for each parameter. The URI must understand the parameters and return an appropriate repsonse of the correct data type. Guidelines for URI/URI construction syntax will be defined external to this Schema. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="91" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_web_service_type_1a65a6849cbce3e0fff2f6e4bf75cbb51b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>virtual RichTextType SDC.WebServiceType.Security</definition>
+        <argsstring></argsstring>
+        <name>Security</name>
+        <briefdescription>
+<para>Information about securly accessing the web service. More detailed service patterns may be required. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="117" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_web_service_type_1a0f89e21c488c6163989a89116e8560c2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_parameter_type" kindref="compound">ParameterType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;ParameterType&gt; SDC.WebServiceType.Parameter</definition>
+        <argsstring></argsstring>
+        <name>Parameter</name>
+        <briefdescription>
+<para>Parameters are named FormDesign items which have property values that need to be supplied to a scripted function or a web service URI. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="143" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_web_service_type_1a2db295ace1982338748b2d7becc9bae4" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.WebServiceType.Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="164" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="165" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_web_service_type_1a336363fa57e5dcc97831b1ec7129638d" compoundref="_web_service_type_8cs" startline="267" endline="282">SDC.WebServiceType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_web_service_type_1a3b14eda192cc27de99ef724894aa8ce9" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.WebServiceType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="177" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a38e2c4d7e0a1a3125fa78c3c73c9ea57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.WebServiceType.WebServiceType</definition>
+        <argsstring>()</argsstring>
+        <name>WebServiceType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="984" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="984" bodyend="984"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a9e71075ce64e8597e78d1c11b84da047" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.WebServiceType.ShouldSerializeURI</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeURI</name>
+        <briefdescription>
+<para>Test whether URI should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="192" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="192" bodyend="195"/>
+        <references refid="class_s_d_c_1_1_web_service_type_1aab288c9a6cb9996862b57ca35c84ab52" compoundref="_web_service_type_8cs" startline="41">SDC.WebServiceType._uRI</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a16eeea4a2a4704d9578123e29fc9409e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.WebServiceType.ShouldSerializeSecurity</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeSecurity</name>
+        <briefdescription>
+<para>Test whether Security should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="200" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="200" bodyend="203"/>
+        <references refid="class_s_d_c_1_1_web_service_type_1a94116632a3d272b27eff57a802209ab6" compoundref="_web_service_type_8cs" startline="44">SDC.WebServiceType._security</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a7d0830e0ea35d148d41ca02eae858838" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.WebServiceType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_lookup_end_point_type_1a7870cbf30b08d78611cead97d611fcba">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_lookup_end_point_type_1a7870cbf30b08d78611cead97d611fcba">Serialize</reimplementedby>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="210" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="210" bodyend="236"/>
+        <referencedby refid="class_s_d_c_1_1_web_service_type_1a774d03b7dc94c9c70031cc136ed84ec1" compoundref="_web_service_type_8cs" startline="311" endline="329">SDC.WebServiceType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a32eee72fd3cfc5c3aedcf879c61cc39a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.WebServiceType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_lookup_end_point_type_1a513937b0433d8643da5e2edfa6ffd50d">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="296" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="296" bodyend="309"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a774d03b7dc94c9c70031cc136ed84ec1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.WebServiceType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_lookup_end_point_type_1aa8140a778fb0825592408225203b7272">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_lookup_end_point_type_1aa8140a778fb0825592408225203b7272">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="311" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="311" bodyend="329"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_web_service_type_1a7d0830e0ea35d148d41ca02eae858838" compoundref="_web_service_type_8cs" startline="210" endline="236">SDC.WebServiceType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a9bd5cca83dfbbdfc95c33ecafae50309" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref></type>
+        <definition>virtual WebServiceType SDC.WebServiceType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3">Clone</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_lookup_end_point_type_1a3f53baace33f53df7a175b821588a0b1">Clone</reimplementedby>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="390" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="390" bodyend="393"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a439660fe496760be9e3ab0a7e2ee9491" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.WebServiceType.Deserialize</definition>
+        <argsstring>(string input, out WebServiceType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="245" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="245" bodyend="259"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_web_service_type_1a983e150e7402745292193a470601f8fa" compoundref="_web_service_type_8cs" startline="261" endline="265">SDC.WebServiceType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_web_service_type_1aff84344bfb2e15636a3af31a4f711b07" compoundref="_web_service_type_8cs" startline="360" endline="384">SDC.WebServiceType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a983e150e7402745292193a470601f8fa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.WebServiceType.Deserialize</definition>
+        <argsstring>(string input, out WebServiceType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="261" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="261" bodyend="265"/>
+        <references refid="class_s_d_c_1_1_web_service_type_1a439660fe496760be9e3ab0a7e2ee9491" compoundref="_web_service_type_8cs" startline="245" endline="259">SDC.WebServiceType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a336363fa57e5dcc97831b1ec7129638d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref></type>
+        <definition>static new WebServiceType SDC.WebServiceType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="267" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="267" bodyend="282"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_web_service_type_1a2db295ace1982338748b2d7becc9bae4" compoundref="_web_service_type_8cs" startline="165">SDC.WebServiceType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a40c8e6acc8eb66eace244d3484e89dba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref></type>
+        <definition>static WebServiceType SDC.WebServiceType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="284" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="284" bodyend="287"/>
+        <references refid="class_s_d_c_1_1_web_service_type_1a2db295ace1982338748b2d7becc9bae4" compoundref="_web_service_type_8cs" startline="165">SDC.WebServiceType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a0fa60caa12bed91c89ba13b1739ee26a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.WebServiceType.LoadFromFile</definition>
+        <argsstring>(string fileName, out WebServiceType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="338" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="338" bodyend="352"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_web_service_type_1a56efe04a6254c8f962b51dd9f6038e68" compoundref="_web_service_type_8cs" startline="354" endline="358">SDC.WebServiceType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1a56efe04a6254c8f962b51dd9f6038e68" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.WebServiceType.LoadFromFile</definition>
+        <argsstring>(string fileName, out WebServiceType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="354" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="354" bodyend="358"/>
+        <references refid="class_s_d_c_1_1_web_service_type_1a0fa60caa12bed91c89ba13b1739ee26a" compoundref="_web_service_type_8cs" startline="338" endline="352">SDC.WebServiceType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_web_service_type_1aff84344bfb2e15636a3af31a4f711b07" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_web_service_type" kindref="compound">WebServiceType</ref></type>
+        <definition>static new WebServiceType SDC.WebServiceType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" line="360" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/WebServiceType.cs" bodystart="360" bodyend="384"/>
+        <references refid="class_s_d_c_1_1_web_service_type_1a439660fe496760be9e3ab0a7e2ee9491" compoundref="_web_service_type_8cs" startline="245" endline="259">SDC.WebServiceType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Web service that returns a value using the data type required by the parent Response field. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10441">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="10442" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10442">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="10440">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="10441" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10441" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10443">
+        <label>SDC.LookupEndPointType</label>
+        <link refid="class_s_d_c_1_1_lookup_end_point_type"/>
+        <childnode refid="10439" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10439">
+        <label>SDC.WebServiceType</label>
+        <link refid="class_s_d_c_1_1_web_service_type"/>
+        <childnode refid="10440" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10446">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="10447" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10448" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="10456" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="10457" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="10458" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="10449" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="10453">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="10451" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10447">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="10459">
+        <label>SDC.anyURI_Stype</label>
+        <link refid="class_s_d_c_1_1any_u_r_i___stype"/>
+        <childnode refid="10446" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10446" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10449" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="10451">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="10450">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="10451" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10456">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="10455">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="10449">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="10447" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10450" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="10452" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="10453" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="10454" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="10458">
+        <label>System</label>
+      </node>
+      <node id="10452">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="10451" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10448">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="10445" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10445" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10449" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="10445">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="10446" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10446" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10449" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="10460">
+        <label>SDC.RichTextType</label>
+        <link refid="class_s_d_c_1_1_rich_text_type"/>
+        <childnode refid="10445" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10445" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10461" relation="usage">
+          <edgelabel>_hTML</edgelabel>
+          <edgelabel>_richText</edgelabel>
+        </childnode>
+        <childnode refid="10449" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="10461">
+        <label>SDC.HTML_Stype</label>
+        <link refid="class_s_d_c_1_1_h_t_m_l___stype"/>
+        <childnode refid="10446" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10446" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10449" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="10454">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="10455" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10444">
+        <label>SDC.WebServiceType</label>
+        <link refid="class_s_d_c_1_1_web_service_type"/>
+        <childnode refid="10445" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10459" relation="usage">
+          <edgelabel>_uRI</edgelabel>
+        </childnode>
+        <childnode refid="10460" relation="usage">
+          <edgelabel>_security</edgelabel>
+        </childnode>
+        <childnode refid="10449" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="10457">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="10447" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10448" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="10456" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="10457" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="10458" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="10449" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="983" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="982" bodyend="985"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_web_service_type_1aa92c9264beab00b49ebca7f5764de459" prot="private" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>_otherText</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1acd5905b4db67e62d74709f8f2b325172" prot="private" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>_parameter</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a94116632a3d272b27eff57a802209ab6" prot="private" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>_security</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1aab288c9a6cb9996862b57ca35c84ab52" prot="private" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>_uRI</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a3b14eda192cc27de99ef724894aa8ce9" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a2fce01962cf6a94e741a15aa9f8a0320" prot="private" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a9bd5cca83dfbbdfc95c33ecafae50309" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a439660fe496760be9e3ab0a7e2ee9491" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a983e150e7402745292193a470601f8fa" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a336363fa57e5dcc97831b1ec7129638d" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a40c8e6acc8eb66eace244d3484e89dba" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab77e0ded299c1479c3c7f593c00d2081" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::WebServiceType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::WebServiceType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::WebServiceType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a0fa60caa12bed91c89ba13b1739ee26a" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a56efe04a6254c8f962b51dd9f6038e68" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1aff84344bfb2e15636a3af31a4f711b07" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09ee61d6d4b513b7b22d89056250c87b" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::WebServiceType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::WebServiceType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::WebServiceType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::WebServiceType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a998d90f8bf4ce45a1284fd433ece905d" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>OtherText</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a0f89e21c488c6163989a89116e8560c2" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Parameter</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a32eee72fd3cfc5c3aedcf879c61cc39a" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a774d03b7dc94c9c70031cc136ed84ec1" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab1514379cd9bd547d5569548274fceb1" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af03b919560cd67ffe1373d8cef3bb9b8" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a5c619ed0e36571d6f4bd992faa3ad282" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a65a6849cbce3e0fff2f6e4bf75cbb51b" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Security</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a7d0830e0ea35d148d41ca02eae858838" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a9ac9c6d560ffe2c300d7796951c22395" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::WebServiceType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a085691f564451c36b6ade241b4127be1" prot="private" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a2db295ace1982338748b2d7becc9bae4" prot="private" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a16eeea4a2a4704d9578123e29fc9409e" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializeSecurity</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a9e71075ce64e8597e78d1c11b84da047" prot="public" virt="virtual"><scope>SDC::WebServiceType</scope><name>ShouldSerializeURI</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a10bd0b9042ce6f7d8790e1633b974238" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>URI</name></member>
+      <member refid="class_s_d_c_1_1_web_service_type_1a38e2c4d7e0a1a3125fa78c3c73c9ea57" prot="public" virt="non-virtual"><scope>SDC::WebServiceType</scope><name>WebServiceType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1any_u_r_i___stype" kind="class" prot="public">
+    <compoundname>SDC::anyURI_Stype</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_base_type" prot="public" virt="non-virtual">SDC.BaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_base_type" prot="public" virt="non-virtual">SDC.BaseType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1any_u_r_i___d_etype" prot="public" virt="non-virtual">SDC.anyURI_DEtype</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1any_u_r_i___d_etype" prot="public" virt="non-virtual">SDC.anyURI_DEtype</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_target_item_i_d_type" prot="public" virt="non-virtual">SDC.TargetItemIDType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_target_item_i_d_type" prot="public" virt="non-virtual">SDC.TargetItemIDType</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1any_u_r_i___stype_1a699f1089e5fde20c1bae36df9e80765e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.anyURI_Stype::_val</definition>
+        <argsstring></argsstring>
+        <name>_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="33" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1any_u_r_i___stype_1a7a8df143052c2dd84b732053006b0fc4" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.anyURI_Stype.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1any_u_r_i___stype_1af4f848476e1ea3879b569094e2075f4b" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.anyURI_Stype::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="35" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1any_u_r_i___stype_1acb940aa5abfe8c0f8c416d7530d8c9d9" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.anyURI_Stype::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="39" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1any_u_r_i___stype_1adb316e64bfffb4a58deb33841d967418" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2any_u_r_i___stype_8cs" startline="93" endline="96">SDC.anyURI_Stype.ShouldSerializeval</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1any_u_r_i___stype_1a804ac72c9963d85a36e6046811fe6fb9" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.anyURI_Stype::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="51" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="52" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1any_u_r_i___stype_1aa5cc540777dc16bc401dade47d200600" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2any_u_r_i___stype_8cs" startline="160" endline="175">SDC.anyURI_Stype.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1any_u_r_i___stype_1aabb09017919aba6f71c65f572b67686f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.anyURI_Stype.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="78" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1abeddec5091c7f5f5641af712b33a77fd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.anyURI_Stype.anyURI_Stype</definition>
+        <argsstring>()</argsstring>
+        <name>anyURI_Stype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1411" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1411" bodyend="1411"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1ab4ad58bfdc1d09f92da7a2661b5c82ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.anyURI_Stype.anyURI_Stype</definition>
+        <argsstring>(BaseType parentNode)</argsstring>
+        <name>anyURI_Stype</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1412" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1412" bodyend="1412"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1adb316e64bfffb4a58deb33841d967418" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.anyURI_Stype.ShouldSerializeval</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeval</name>
+        <briefdescription>
+<para>Test whether val should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="66" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1afa5550b04a176fa53e1670e8071b95be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.anyURI_Stype.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1afde3077d8077d664ce856b276e024e29">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1af740694105400330aa9658a8079416f4">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1ab5ca4bed6c8c862d98c0aa1167ea5b5a">Serialize</reimplementedby>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="76" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="76" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a1e5386570e83b5e4670af851b1c66858" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.anyURI_Stype.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a3400ee9db358cbcae3cc79dc197da12d">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1a43527f0c0c0e928373a2942247145a4e">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1a43527f0c0c0e928373a2942247145a4e">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1a7837beb47ceff96afd178017ae1aef36">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1a7837beb47ceff96afd178017ae1aef36">Serialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="106" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="106" bodyend="109"/>
+        <referencedby refid="class_s_d_c_1_1any_u_r_i___stype_1ae12000df063f8d4583dabac56aecd4d6" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2any_u_r_i___stype_8cs" startline="204" endline="222">SDC.anyURI_Stype.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a05176ad3efca412b9567030a354c838e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.anyURI_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a8b46ba76827429d75d24ce3789a4fff6">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1a0ec513c9279d3b306a9ed758df4487f3">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1ad0beb51fd78f6a5898a8c08682ded815">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="169" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="169" bodyend="182"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1any_u_r_i___stype_1a59fffdcdf6b66fdcbafc213c478e8423" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2any_u_r_i___stype_8cs" startline="189" endline="202">SDC.anyURI_Stype.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a2a944b85506db4d4229d7e1bd6de9584" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.anyURI_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a64d428388608b02f234edc5c4dfd34fd">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1a73b1d172b8793bedfd4c888ffce08c75">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1a993cdd7101148240581bba4cb5fd6b9a">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="184" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="184" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1ae12000df063f8d4583dabac56aecd4d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.anyURI_Stype.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a9bee814584762ae3959b96763a9b835f">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1a6ec3422c99ed33f69fbb081f88181d2f">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1a6ec3422c99ed33f69fbb081f88181d2f">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1a4fdc66e4d8edf8bd05ce55f7589547ac">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1a4fdc66e4d8edf8bd05ce55f7589547ac">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="189" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a99ba5570551569c12e8117a43d2e273f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.anyURI_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1af3e0b63e6bd50eaa6e371588209dda31">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1aac94698ed7c133f21075779fb8d39055">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1ae7b6662e24a83d63c9b797e1558730a7">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="194" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="194" bodyend="211"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1adb316e64bfffb4a58deb33841d967418" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.anyURI_Stype.ShouldSerializeval</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeval</name>
+        <briefdescription>
+<para>Test whether val should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="93" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="93" bodyend="96"/>
+        <references refid="class_s_d_c_1_1any_u_r_i___stype_1acb940aa5abfe8c0f8c416d7530d8c9d9" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2any_u_r_i___stype_8cs" startline="40">SDC.anyURI_Stype.val</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a1e5386570e83b5e4670af851b1c66858" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.anyURI_Stype.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a3400ee9db358cbcae3cc79dc197da12d">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1a43527f0c0c0e928373a2942247145a4e">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1a43527f0c0c0e928373a2942247145a4e">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1a7837beb47ceff96afd178017ae1aef36">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1a7837beb47ceff96afd178017ae1aef36">Serialize</reimplementedby>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="103" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="103" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a59fffdcdf6b66fdcbafc213c478e8423" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.anyURI_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a274de1f799bf72dd9b7967048cb08d7b">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1a3ce0ea6ec176a2f4a3a67428f67566e7">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1a172322b0ded483c409ceb2d67725dabb">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="189" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="189" bodyend="202"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1any_u_r_i___stype_1a05176ad3efca412b9567030a354c838e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2any_u_r_i___stype_8cs" startline="169" endline="182">SDC.anyURI_Stype.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1ae12000df063f8d4583dabac56aecd4d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.anyURI_Stype.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a9bee814584762ae3959b96763a9b835f">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1a6ec3422c99ed33f69fbb081f88181d2f">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1a6ec3422c99ed33f69fbb081f88181d2f">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1a4fdc66e4d8edf8bd05ce55f7589547ac">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1a4fdc66e4d8edf8bd05ce55f7589547ac">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="204" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="204" bodyend="222"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1any_u_r_i___stype_1a1e5386570e83b5e4670af851b1c66858" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2any_u_r_i___stype_8cs" startline="106" endline="109">SDC.anyURI_Stype.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a0d4e485040e33ce64d1f22e70d13df31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+        <definition>virtual anyURI_Stype SDC.anyURI_Stype.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a5a537a522c921d03c9d4c55a79c000ab">Clone</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_target_item_i_d_type_1a495d59a01807fd22347d0b3ec7c6f5b1">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1any_u_r_i___d_etype_1af3aad5937bc8e59b82517ca228f70cce">Clone</reimplementedby>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="283" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="283" bodyend="286"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a4ec95f4fdf36263bb421ee24ab04ca7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.anyURI_Stype.Deserialize</definition>
+        <argsstring>(string input, out anyURI_Stype obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="118" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="118" bodyend="132"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1any_u_r_i___stype_1a6a8eebb39e9c9d71e1ec7c5d57b6269a" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2any_u_r_i___stype_8cs" startline="138" endline="152">SDC.anyURI_Stype.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1any_u_r_i___stype_1a4de060e0efd022a25302b5ea2503cfd5" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2any_u_r_i___stype_8cs" startline="253" endline="277">SDC.anyURI_Stype.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1ac1788808ca823741534f78b7099a644f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.anyURI_Stype.Deserialize</definition>
+        <argsstring>(string input, out anyURI_Stype obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="134" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="134" bodyend="138"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1aa5cc540777dc16bc401dade47d200600" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+        <definition>static new anyURI_Stype SDC.anyURI_Stype.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="140" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="140" bodyend="155"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1ab04eef9c0d80c771aed3e27b8bb8e715" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+        <definition>static anyURI_Stype SDC.anyURI_Stype.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="157" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a11c76a8b3625bf99a9a030d1bbe8ebd8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.anyURI_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out anyURI_Stype obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="220" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="220" bodyend="234"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1any_u_r_i___stype_1a226dae52861540a9a48a91688514315c" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2any_u_r_i___stype_8cs" startline="231" endline="245">SDC.anyURI_Stype.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1af10aa2d614021c48c2142675098d4780" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.anyURI_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out anyURI_Stype obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="236" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="236" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a469cc7ae4e8defb81aa73d031c877172" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.anyURI_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out anyURI_Stype obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="241" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="241" bodyend="245"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a42cd36e12627913616574f36642c674f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+        <definition>static anyURI_Stype SDC.anyURI_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="247" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1afef774c592af5feb1097f0e3d0c40283" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+        <definition>static new anyURI_Stype SDC.anyURI_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" line="252" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/anyURI_Stype.cs" bodystart="252" bodyend="276"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a6a8eebb39e9c9d71e1ec7c5d57b6269a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.anyURI_Stype.Deserialize</definition>
+        <argsstring>(string input, out anyURI_Stype obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="138" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="138" bodyend="152"/>
+        <references refid="class_s_d_c_1_1any_u_r_i___stype_1a4ec95f4fdf36263bb421ee24ab04ca7d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2any_u_r_i___stype_8cs" startline="118" endline="132">SDC.anyURI_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1ac1788808ca823741534f78b7099a644f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.anyURI_Stype.Deserialize</definition>
+        <argsstring>(string input, out anyURI_Stype obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="154" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="154" bodyend="158"/>
+        <references refid="class_s_d_c_1_1any_u_r_i___stype_1a4ec95f4fdf36263bb421ee24ab04ca7d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2any_u_r_i___stype_8cs" startline="118" endline="132">SDC.anyURI_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1aa5cc540777dc16bc401dade47d200600" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+        <definition>static new anyURI_Stype SDC.anyURI_Stype.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="160" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="160" bodyend="175"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1any_u_r_i___stype_1a804ac72c9963d85a36e6046811fe6fb9" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2any_u_r_i___stype_8cs" startline="52">SDC.anyURI_Stype.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a1d474346d79ecf7db1c1ffb8e967a73c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+        <definition>static anyURI_Stype SDC.anyURI_Stype.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="177" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="177" bodyend="180"/>
+        <references refid="class_s_d_c_1_1any_u_r_i___stype_1a804ac72c9963d85a36e6046811fe6fb9" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2any_u_r_i___stype_8cs" startline="52">SDC.anyURI_Stype.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a226dae52861540a9a48a91688514315c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.anyURI_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out anyURI_Stype obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="231" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="231" bodyend="245"/>
+        <references refid="class_s_d_c_1_1any_u_r_i___stype_1a11c76a8b3625bf99a9a030d1bbe8ebd8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2any_u_r_i___stype_8cs" startline="220" endline="234">SDC.anyURI_Stype.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a469cc7ae4e8defb81aa73d031c877172" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.anyURI_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out anyURI_Stype obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="247" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="247" bodyend="251"/>
+        <references refid="class_s_d_c_1_1any_u_r_i___stype_1a11c76a8b3625bf99a9a030d1bbe8ebd8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2any_u_r_i___stype_8cs" startline="220" endline="234">SDC.anyURI_Stype.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1any_u_r_i___stype_1a4de060e0efd022a25302b5ea2503cfd5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref></type>
+        <definition>static new anyURI_Stype SDC.anyURI_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" line="253" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/anyURI_Stype.cs" bodystart="253" bodyend="277"/>
+        <references refid="class_s_d_c_1_1any_u_r_i___stype_1a4ec95f4fdf36263bb421ee24ab04ca7d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2any_u_r_i___stype_8cs" startline="118" endline="132">SDC.anyURI_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="779">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="780" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="780">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="778">
+        <label>SDC.anyURI_Stype</label>
+        <link refid="class_s_d_c_1_1any_u_r_i___stype"/>
+        <childnode refid="779" relation="public-inheritance">
+        </childnode>
+        <childnode refid="779" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="782">
+        <label>SDC.TargetItemIDType</label>
+        <link refid="class_s_d_c_1_1_target_item_i_d_type"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="781">
+        <label>SDC.anyURI_DEtype</label>
+        <link refid="class_s_d_c_1_1any_u_r_i___d_etype"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="784">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="785" relation="public-inheritance">
+        </childnode>
+        <childnode refid="786" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="795" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="796" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="797" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="788" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="792">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="790" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="785">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="783">
+        <label>SDC.anyURI_Stype</label>
+        <link refid="class_s_d_c_1_1any_u_r_i___stype"/>
+        <childnode refid="784" relation="public-inheritance">
+        </childnode>
+        <childnode refid="784" relation="public-inheritance">
+        </childnode>
+        <childnode refid="788" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="790">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="789">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="790" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="795">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="794">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="788">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="785" relation="public-inheritance">
+        </childnode>
+        <childnode refid="789" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="791" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="792" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="793" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="797">
+        <label>System</label>
+      </node>
+      <node id="791">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="790" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="786">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="787" relation="public-inheritance">
+        </childnode>
+        <childnode refid="787" relation="public-inheritance">
+        </childnode>
+        <childnode refid="788" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="787">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="784" relation="public-inheritance">
+        </childnode>
+        <childnode refid="784" relation="public-inheritance">
+        </childnode>
+        <childnode refid="788" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="793">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="794" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="796">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="785" relation="public-inheritance">
+        </childnode>
+        <childnode refid="786" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="795" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="796" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="797" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="788" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1410" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1409" bodyend="1413"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a699f1089e5fde20c1bae36df9e80765e" prot="private" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>_val</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1abeddec5091c7f5f5641af712b33a77fd" prot="protected" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>anyURI_Stype</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1ab4ad58bfdc1d09f92da7a2661b5c82ac" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>anyURI_Stype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1aabb09017919aba6f71c65f572b67686f" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a7a8df143052c2dd84b732053006b0fc4" prot="private" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a0d4e485040e33ce64d1f22e70d13df31" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a4ec95f4fdf36263bb421ee24ab04ca7d" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1ac1788808ca823741534f78b7099a644f" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1aa5cc540777dc16bc401dade47d200600" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1ab04eef9c0d80c771aed3e27b8bb8e715" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a6a8eebb39e9c9d71e1ec7c5d57b6269a" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1ac1788808ca823741534f78b7099a644f" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1aa5cc540777dc16bc401dade47d200600" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a1d474346d79ecf7db1c1ffb8e967a73c" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::anyURI_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::anyURI_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::anyURI_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a11c76a8b3625bf99a9a030d1bbe8ebd8" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1af10aa2d614021c48c2142675098d4780" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a469cc7ae4e8defb81aa73d031c877172" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a42cd36e12627913616574f36642c674f" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1afef774c592af5feb1097f0e3d0c40283" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a226dae52861540a9a48a91688514315c" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a469cc7ae4e8defb81aa73d031c877172" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a4de060e0efd022a25302b5ea2503cfd5" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::anyURI_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::anyURI_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::anyURI_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::anyURI_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a05176ad3efca412b9567030a354c838e" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a2a944b85506db4d4229d7e1bd6de9584" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1ae12000df063f8d4583dabac56aecd4d6" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a99ba5570551569c12e8117a43d2e273f" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a59fffdcdf6b66fdcbafc213c478e8423" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1ae12000df063f8d4583dabac56aecd4d6" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1afa5550b04a176fa53e1670e8071b95be" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a1e5386570e83b5e4670af851b1c66858" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a1e5386570e83b5e4670af851b1c66858" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1a804ac72c9963d85a36e6046811fe6fb9" prot="private" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1af4f848476e1ea3879b569094e2075f4b" prot="private" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1adb316e64bfffb4a58deb33841d967418" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>ShouldSerializeval</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1adb316e64bfffb4a58deb33841d967418" prot="public" virt="virtual"><scope>SDC::anyURI_Stype</scope><name>ShouldSerializeval</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1any_u_r_i___stype_1acb940aa5abfe8c0f8c416d7530d8c9d9" prot="public" virt="non-virtual"><scope>SDC::anyURI_Stype</scope><name>val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

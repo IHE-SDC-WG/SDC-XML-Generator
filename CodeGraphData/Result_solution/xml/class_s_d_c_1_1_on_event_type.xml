@@ -1,0 +1,1393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_on_event_type" kind="class" prot="public">
+    <compoundname>SDC::OnEventType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_if_then_type" prot="public" virt="non-virtual">SDC.IfThenType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_event_type" prot="public" virt="non-virtual">SDC.EventType</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_on_event_type_1a5c5c3a46edfd4a5ae693936402758968" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.OnEventType::_eventName</definition>
+        <argsstring></argsstring>
+        <name>_eventName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="34" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_on_event_type_1a9c5e2f106cb460a9a02818e4fc77ef98" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.OnEventType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_on_event_type_1a3442af960630f44d1596b15c6dbdb3ac" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.OnEventType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="36" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_on_event_type_1a3447fb0a41b1eedf054182400c7910f0" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.OnEventType::eventName</definition>
+        <argsstring></argsstring>
+        <name>eventName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_on_event_type_1a792bd6ad6a33e3b137ecadccce59bd8e" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_on_event_type_8cs" startline="91" endline="94">SDC.OnEventType.ShouldSerializeeventName</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_on_event_type_1a694d93c9e172cf3a0749acd8650551a9" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.OnEventType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="52" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_on_event_type_1a0eb3db9a13f48dc24f9a70e2f7076be8" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_on_event_type_8cs" startline="158" endline="173">SDC.OnEventType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_on_event_type_1a7ab26e724f221bc6f35830bd95097611" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.OnEventType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="76" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a2f0ab817a20c9896ed7dea83a941e283" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.OnEventType.OnEventType</definition>
+        <argsstring>(BaseType parentNode)</argsstring>
+        <name>OnEventType</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2163" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2163" bodyend="2163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a861d0873ebf24e99055a2d30d4f35878" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.OnEventType.OnEventType</definition>
+        <argsstring>()</argsstring>
+        <name>OnEventType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="593" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="593" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a792bd6ad6a33e3b137ecadccce59bd8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OnEventType.ShouldSerializeeventName</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeeventName</name>
+        <briefdescription>
+<para>Test whether eventName should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="67" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1ada962d6f7571d8e1196da3a82f04bc90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.OnEventType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_event_type_1aabc1d998ad191dc35c4b924f72cd7446">Serialize</reimplements>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="77" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="77" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1aaad651c3b09441943cb87df44e5c3ebe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.OnEventType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_event_type_1a532eef110adb3d4da2f0631dbcbe7333">Serialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="107" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="107" bodyend="110"/>
+        <referencedby refid="class_s_d_c_1_1_on_event_type_1a4a35f8c3219c2eaeff4d889126057529" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_on_event_type_8cs" startline="202" endline="220">SDC.OnEventType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a399ff623e21328853cf281691307914d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OnEventType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_event_type_1ab339a2db28247a970540c976356add8b">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="170" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="170" bodyend="183"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_on_event_type_1ac83b665c0de302f070d60ab9c38db1e5" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_on_event_type_8cs" startline="187" endline="200">SDC.OnEventType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a20212ba1205a4d18e8145e127546ca1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OnEventType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_event_type_1ac6955ce0cfecb6bf45d2996c81999b2a">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="185" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a4a35f8c3219c2eaeff4d889126057529" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.OnEventType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_event_type_1a533366a0e4b346df79e23ea13c326e91">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="190" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a9775bbf340c98fa74d8fc8c63c2d5257" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.OnEventType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_event_type_1af61221bd0a45867f0caa391d237f5086">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="195" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="195" bodyend="212"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a792bd6ad6a33e3b137ecadccce59bd8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OnEventType.ShouldSerializeeventName</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeeventName</name>
+        <briefdescription>
+<para>Test whether eventName should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="91" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="91" bodyend="94"/>
+        <references refid="class_s_d_c_1_1_on_event_type_1a3447fb0a41b1eedf054182400c7910f0" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_on_event_type_8cs" startline="41">SDC.OnEventType.eventName</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1aaad651c3b09441943cb87df44e5c3ebe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.OnEventType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_event_type_1a532eef110adb3d4da2f0631dbcbe7333">Serialize</reimplements>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="101" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="101" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1ac83b665c0de302f070d60ab9c38db1e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OnEventType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_if_then_type_1a8ce755d1092dd655c4bd9daa53202b24">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="187" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="187" bodyend="200"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_on_event_type_1a399ff623e21328853cf281691307914d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_on_event_type_8cs" startline="170" endline="183">SDC.OnEventType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a4a35f8c3219c2eaeff4d889126057529" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.OnEventType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_event_type_1a533366a0e4b346df79e23ea13c326e91">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="202" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="202" bodyend="220"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_on_event_type_1aaad651c3b09441943cb87df44e5c3ebe" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_on_event_type_8cs" startline="107" endline="110">SDC.OnEventType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1aadb913b0f0bec1c6b6858f4dfef23302" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+        <definition>virtual OnEventType SDC.OnEventType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_if_then_type_1a1f8e28fabb04331bba227d7b80e1343f">Clone</reimplements>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="281" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="281" bodyend="284"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a861d0873ebf24e99055a2d30d4f35878" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.OnEventType.OnEventType</definition>
+        <argsstring>()</argsstring>
+        <name>OnEventType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2164" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2164" bodyend="2164"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a5246e640dd451ce787066cfa3cf2ac64" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OnEventType.Deserialize</definition>
+        <argsstring>(string input, out OnEventType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="119" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="119" bodyend="133"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_on_event_type_1a756b52b38a4ef14c45d07b0decf2c8db" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_on_event_type_8cs" startline="136" endline="150">SDC.OnEventType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_on_event_type_1aee4e09d2fdbe0ad732d6c119358d19b0" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_on_event_type_8cs" startline="251" endline="275">SDC.OnEventType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1addab6b26b5825db32fdde62b65882660" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OnEventType.Deserialize</definition>
+        <argsstring>(string input, out OnEventType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="135" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="135" bodyend="139"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a0eb3db9a13f48dc24f9a70e2f7076be8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+        <definition>static new OnEventType SDC.OnEventType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="141" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="141" bodyend="156"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1aa617eb0c7429799ee060a8fe88a1ac0a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+        <definition>static OnEventType SDC.OnEventType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="158" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a7b9f8210cd99e95b9f38c074b5e46bbc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OnEventType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out OnEventType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="221" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="221" bodyend="235"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_on_event_type_1af3ee8360f723279681a7cc56ceb84a7f" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_on_event_type_8cs" startline="229" endline="243">SDC.OnEventType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1aa89b78c3203dc5a64710bf1937980960" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OnEventType.LoadFromFile</definition>
+        <argsstring>(string fileName, out OnEventType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="237" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="237" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a47550bbb5f5869196c6ab1e1ef6b2c9d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OnEventType.LoadFromFile</definition>
+        <argsstring>(string fileName, out OnEventType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="242" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="242" bodyend="246"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a70f842598b832612449bdf875f5a2847" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+        <definition>static OnEventType SDC.OnEventType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="248" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="248" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a6892ece5cec6ceb9f6a3cc1c0bb51849" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+        <definition>static new OnEventType SDC.OnEventType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" line="253" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OnEventType.cs" bodystart="253" bodyend="277"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a756b52b38a4ef14c45d07b0decf2c8db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OnEventType.Deserialize</definition>
+        <argsstring>(string input, out OnEventType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="136" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="136" bodyend="150"/>
+        <references refid="class_s_d_c_1_1_on_event_type_1a5246e640dd451ce787066cfa3cf2ac64" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_on_event_type_8cs" startline="119" endline="133">SDC.OnEventType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1addab6b26b5825db32fdde62b65882660" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OnEventType.Deserialize</definition>
+        <argsstring>(string input, out OnEventType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="152" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="152" bodyend="156"/>
+        <references refid="class_s_d_c_1_1_on_event_type_1a5246e640dd451ce787066cfa3cf2ac64" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_on_event_type_8cs" startline="119" endline="133">SDC.OnEventType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a0eb3db9a13f48dc24f9a70e2f7076be8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+        <definition>static new OnEventType SDC.OnEventType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="158" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="158" bodyend="173"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_on_event_type_1a694d93c9e172cf3a0749acd8650551a9" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_on_event_type_8cs" startline="53">SDC.OnEventType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a7b50a1b595d066dc506fe4c4c1cec142" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+        <definition>static OnEventType SDC.OnEventType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="175" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="175" bodyend="178"/>
+        <references refid="class_s_d_c_1_1_on_event_type_1a694d93c9e172cf3a0749acd8650551a9" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_on_event_type_8cs" startline="53">SDC.OnEventType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1af3ee8360f723279681a7cc56ceb84a7f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OnEventType.LoadFromFile</definition>
+        <argsstring>(string fileName, out OnEventType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="229" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="229" bodyend="243"/>
+        <references refid="class_s_d_c_1_1_on_event_type_1a7b9f8210cd99e95b9f38c074b5e46bbc" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_on_event_type_8cs" startline="221" endline="235">SDC.OnEventType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1a47550bbb5f5869196c6ab1e1ef6b2c9d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OnEventType.LoadFromFile</definition>
+        <argsstring>(string fileName, out OnEventType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="245" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="245" bodyend="249"/>
+        <references refid="class_s_d_c_1_1_on_event_type_1a7b9f8210cd99e95b9f38c074b5e46bbc" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_on_event_type_8cs" startline="221" endline="235">SDC.OnEventType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_on_event_type_1aee4e09d2fdbe0ad732d6c119358d19b0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+        <definition>static new OnEventType SDC.OnEventType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" line="251" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OnEventType.cs" bodystart="251" bodyend="275"/>
+        <references refid="class_s_d_c_1_1_on_event_type_1a5246e640dd451ce787066cfa3cf2ac64" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_on_event_type_8cs" startline="119" endline="133">SDC.OnEventType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Add a custom event handler to a form item such as a question, section or list item. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6628">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="6629" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6625">
+        <label>SDC.OnEventType</label>
+        <link refid="class_s_d_c_1_1_on_event_type"/>
+        <childnode refid="6626" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6630" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6629">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="6626">
+        <label>IfThenType</label>
+        <link refid="class_s_d_c_1_1_if_then_type"/>
+        <childnode refid="6627" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6627" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6630">
+        <label>EventType</label>
+        <link refid="class_s_d_c_1_1_event_type"/>
+        <childnode refid="6627" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6627" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6627">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="6628" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6628" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6648">
+        <label>PredicateType</label>
+        <link refid="class_s_d_c_1_1_predicate_type"/>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6649" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6645" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="6646" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="6654" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="6634">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="6635" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6636" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="6644" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="6645" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="6646" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6641">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="6639" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6631">
+        <label>SDC.OnEventType</label>
+        <link refid="class_s_d_c_1_1_on_event_type"/>
+        <childnode refid="6632" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6657" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6635">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="6639">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="6638">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="6639" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6644">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="6656">
+        <label>SDC.ThenType</label>
+        <link refid="class_s_d_c_1_1_then_type"/>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="6654" relation="usage">
+          <edgelabel>_items</edgelabel>
+        </childnode>
+      </node>
+      <node id="6651">
+        <label>SDC.ExceptionType</label>
+        <link refid="class_s_d_c_1_1_exception_type"/>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6646" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="6649">
+        <label>ReturnBoolType</label>
+        <link refid="class_s_d_c_1_1_return_bool_type"/>
+        <childnode refid="6650" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6652" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="6650">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6651" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="6643">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="6653">
+        <label>boolean_Stype</label>
+        <link refid="class_s_d_c_1_1boolean___stype"/>
+        <childnode refid="6634" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6634" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6646" relation="usage">
+          <edgelabel>_val</edgelabel>
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6637">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="6635" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6638" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="6640" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="6641" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="6642" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="6632">
+        <label>IfThenType</label>
+        <link refid="class_s_d_c_1_1_if_then_type"/>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6647" relation="usage">
+          <edgelabel>_if</edgelabel>
+        </childnode>
+        <childnode refid="6655" relation="usage">
+          <edgelabel>_if</edgelabel>
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="6656" relation="usage">
+          <edgelabel>_else</edgelabel>
+          <edgelabel>_then</edgelabel>
+        </childnode>
+      </node>
+      <node id="6647">
+        <label>SDC.IfType</label>
+        <link refid="class_s_d_c_1_1_if_type"/>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6648" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="6654" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="6646">
+        <label>System</label>
+      </node>
+      <node id="6654">
+        <label>SDC.ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="6634" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6634" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6657">
+        <label>EventType</label>
+        <link refid="class_s_d_c_1_1_event_type"/>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6640">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="6639" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6636">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6633">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="6634" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6634" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6642">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="6643" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6655">
+        <label>SDC.PredicateType</label>
+        <link refid="class_s_d_c_1_1_predicate_type"/>
+        <childnode refid="6633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6649" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6645" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="6646" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="6654" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="6652">
+        <label>SDC.boolean_DEtype</label>
+        <link refid="class_s_d_c_1_1boolean___d_etype"/>
+        <childnode refid="6653" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6653" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6645">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="6635" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6636" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="6644" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="6645" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="6646" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="6637" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2162" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2161" bodyend="2165"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_on_event_type_1a5c5c3a46edfd4a5ae693936402758968" prot="private" virt="non-virtual"><scope>SDC::OnEventType</scope><name>_eventName</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a7ab26e724f221bc6f35830bd95097611" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a9c5e2f106cb460a9a02818e4fc77ef98" prot="private" virt="non-virtual"><scope>SDC::OnEventType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1aadb913b0f0bec1c6b6858f4dfef23302" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a5246e640dd451ce787066cfa3cf2ac64" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1addab6b26b5825db32fdde62b65882660" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a0eb3db9a13f48dc24f9a70e2f7076be8" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1aa617eb0c7429799ee060a8fe88a1ac0a" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a756b52b38a4ef14c45d07b0decf2c8db" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1addab6b26b5825db32fdde62b65882660" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a0eb3db9a13f48dc24f9a70e2f7076be8" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a7b50a1b595d066dc506fe4c4c1cec142" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1abf91f0d8397fdb1012c70594d22c03ac" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1a74ca6d12992087bac61a23526917eb0b" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1a3c34cb58860fdd38c4ebb62c1d9142f4" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::BaseType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::BaseType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::BaseType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_event_type_1a53e4930b866be5bf32dcb31001f7f9d2" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_event_type_1a51d4943375015f4c110f6a18b70dbf33" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OnEventType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1a4cc07d54c0a65363ab356f6d558d2c18" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Else</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a3447fb0a41b1eedf054182400c7910f0" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>eventName</name></member>
+      <member refid="class_s_d_c_1_1_event_type_1ac9ec88bd88bcb0995529aefc1c824620" prot="protected" virt="non-virtual"><scope>SDC::OnEventType</scope><name>EventType</name></member>
+      <member refid="class_s_d_c_1_1_event_type_1ade641768aa9dc4798bac900e9bdf7309" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>EventType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1aed899b723f95fa978d91e0395fe486ee" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>If</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1a20368527aff170837816029acc80f65d" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>If</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1a41bc10e18c85825e10b836b8bcf471c4" prot="protected" virt="non-virtual"><scope>SDC::OnEventType</scope><name>IfThenType</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1acd3e33d3c6ec3cc157c73e8ad72c4b0a" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>IfThenType</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1a41bc10e18c85825e10b836b8bcf471c4" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>IfThenType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_event_type_1a542f19901087135038da658e6d06d488" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Items</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a7b9f8210cd99e95b9f38c074b5e46bbc" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1aa89b78c3203dc5a64710bf1937980960" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a47550bbb5f5869196c6ab1e1ef6b2c9d" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a70f842598b832612449bdf875f5a2847" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a6892ece5cec6ceb9f6a3cc1c0bb51849" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1af3ee8360f723279681a7cc56ceb84a7f" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a47550bbb5f5869196c6ab1e1ef6b2c9d" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1aee4e09d2fdbe0ad732d6c119358d19b0" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1aea49e19592665b0ad30b7651b758b2b7" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1a3e9047614acafcff85182a2c93cb8114" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1af7814879dfd4400fc63bc0bac71c107d" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1a6fa04ab3a40d8d275d82a0dd45de461d" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::BaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::BaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::BaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType.SDC::BaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_event_type_1a1daaa23ae508de56f80946fe67890936" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_event_type_1ae84bbab6a5863a9d121e4558171fd94b" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_event_type_1a9d48e21d5c0820fd0d9c9cc66088b5d0" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OnEventType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a2f0ab817a20c9896ed7dea83a941e283" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>OnEventType</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a861d0873ebf24e99055a2d30d4f35878" prot="protected" virt="non-virtual"><scope>SDC::OnEventType</scope><name>OnEventType</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a861d0873ebf24e99055a2d30d4f35878" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>OnEventType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a399ff623e21328853cf281691307914d" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a20212ba1205a4d18e8145e127546ca1f" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a4a35f8c3219c2eaeff4d889126057529" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a9775bbf340c98fa74d8fc8c63c2d5257" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1ac83b665c0de302f070d60ab9c38db1e5" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a4a35f8c3219c2eaeff4d889126057529" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1ada962d6f7571d8e1196da3a82f04bc90" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1aaad651c3b09441943cb87df44e5c3ebe" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1aaad651c3b09441943cb87df44e5c3ebe" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a694d93c9e172cf3a0749acd8650551a9" prot="private" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a3442af960630f44d1596b15c6dbdb3ac" prot="private" virt="non-virtual"><scope>SDC::OnEventType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1aeed15243dde217f15a695f2a5039be95" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeElse</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1aeed15243dde217f15a695f2a5039be95" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeElse</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a792bd6ad6a33e3b137ecadccce59bd8e" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeeventName</name></member>
+      <member refid="class_s_d_c_1_1_on_event_type_1a792bd6ad6a33e3b137ecadccce59bd8e" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeeventName</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1af37b925f7de86bdb6377f8245c18befb" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeIf</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1af37b925f7de86bdb6377f8245c18befb" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeIf</name></member>
+      <member refid="class_s_d_c_1_1_event_type_1a75fc7a9a2e07206a6b884f6c7ecf3b53" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1af7ffab7d1c3f6fef6b644cddcacdc283" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeThen</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1af7ffab7d1c3f6fef6b644cddcacdc283" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializeThen</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::OnEventType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_if_then_type_1a6a5d508f374b72bc478192a14cead641" prot="public" virt="non-virtual"><scope>SDC::OnEventType</scope><name>Then</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual" ambiguityscope="SDC::IfThenType."><scope>SDC::OnEventType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual" ambiguityscope="SDC::EventType."><scope>SDC::OnEventType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

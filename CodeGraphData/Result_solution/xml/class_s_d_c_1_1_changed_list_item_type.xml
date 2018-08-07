@@ -1,0 +1,724 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_changed_list_item_type" kind="class" prot="public">
+    <compoundname>SDC::ChangedListItemType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_identified_extension_type" prot="public" virt="non-virtual">SDC.IdentifiedExtensionType</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_changed_list_item_type_1a1aa9ef284154724225540ea993872342" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_data_types___s_type" kindref="compound">DataTypes_SType</ref></type>
+        <definition>DataTypes_SType SDC.ChangedListItemType._listItemResponse</definition>
+        <argsstring></argsstring>
+        <name>_listItemResponse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="34" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_changed_list_item_type_1a30dbe98a8898478eb3e8502e94014818" compoundref="_changed_list_item_type_8cs" startline="94" endline="97">SDC.ChangedListItemType.ShouldSerializeListItemResponse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_changed_list_item_type_1a7da43e8bfb72c37b0b8f377d32a3fed7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.ChangedListItemType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_changed_list_item_type_1ab1217b1e6ecf15126ace7c1e5202ca0a" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.ChangedListItemType.serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="36" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_changed_list_item_type_1ab58a2044ed891f6a62c616180e5ad782" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_data_types___s_type" kindref="compound">DataTypes_SType</ref></type>
+        <definition>virtual DataTypes_SType SDC.ChangedListItemType.ListItemResponse</definition>
+        <argsstring></argsstring>
+        <name>ListItemResponse</name>
+        <briefdescription>
+<para>If the selected ListItem contained a fill-in Response, then the value is recorded here. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="45" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_changed_list_item_type_1a1941679139590ad514b5a2a15850c16a" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.ChangedListItemType.Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="66" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="67" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_changed_list_item_type_1a46fd3bb2ff2cd8dae5220efeba88a2b5" compoundref="_changed_list_item_type_8cs" startline="161" endline="176">SDC.ChangedListItemType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_changed_list_item_type_1a2bef499088854576f590aa5d6a8b4210" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.ChangedListItemType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="79" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_changed_list_item_type_1a30dbe98a8898478eb3e8502e94014818" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangedListItemType.ShouldSerializeListItemResponse</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeListItemResponse</name>
+        <briefdescription>
+<para>Test whether ListItemResponse should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="94" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="94" bodyend="97"/>
+        <references refid="class_s_d_c_1_1_changed_list_item_type_1a1aa9ef284154724225540ea993872342" compoundref="_changed_list_item_type_8cs" startline="34">SDC.ChangedListItemType._listItemResponse</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_changed_list_item_type_1af2febaa625f2bb8786303f500ec90572" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ChangedListItemType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_identified_extension_type_1ac5890d47810aede6e4addb5bea3d8155">Serialize</reimplements>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="104" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="104" bodyend="130"/>
+        <referencedby refid="class_s_d_c_1_1_changed_list_item_type_1a479cca8e794bc7a5f3657ad24dbdcf58" compoundref="_changed_list_item_type_8cs" startline="205" endline="223">SDC.ChangedListItemType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_changed_list_item_type_1a7eaae755fe93dc729860b3ef79545db1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangedListItemType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_identified_extension_type_1a40f2cf2e451d78dbfd060ea1f9471a7e">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="190" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="190" bodyend="203"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_changed_list_item_type_1a479cca8e794bc7a5f3657ad24dbdcf58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ChangedListItemType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_identified_extension_type_1a23fe998e38df83ec7f7a29068772f6a8">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="205" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="205" bodyend="223"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_changed_list_item_type_1af2febaa625f2bb8786303f500ec90572" compoundref="_changed_list_item_type_8cs" startline="104" endline="130">SDC.ChangedListItemType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_changed_list_item_type_1ac65526b2b7b3d2b12345d46c5e97939f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref></type>
+        <definition>virtual ChangedListItemType SDC.ChangedListItemType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_identified_extension_type_1a33a37145de8631803c167a7b3e91255e">Clone</reimplements>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="284" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="284" bodyend="287"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_changed_list_item_type_1a1c1c210ff2b07f1ecc2d412a011df7a2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangedListItemType.Deserialize</definition>
+        <argsstring>(string input, out ChangedListItemType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="139" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="139" bodyend="153"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_changed_list_item_type_1a2b28bf7dea3bf36e590ca1bf94fa10c2" compoundref="_changed_list_item_type_8cs" startline="155" endline="159">SDC.ChangedListItemType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_changed_list_item_type_1a097cb74b05ea4450ea82d32bc4394cca" compoundref="_changed_list_item_type_8cs" startline="254" endline="278">SDC.ChangedListItemType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_changed_list_item_type_1a2b28bf7dea3bf36e590ca1bf94fa10c2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangedListItemType.Deserialize</definition>
+        <argsstring>(string input, out ChangedListItemType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="155" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="155" bodyend="159"/>
+        <references refid="class_s_d_c_1_1_changed_list_item_type_1a1c1c210ff2b07f1ecc2d412a011df7a2" compoundref="_changed_list_item_type_8cs" startline="139" endline="153">SDC.ChangedListItemType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_changed_list_item_type_1a46fd3bb2ff2cd8dae5220efeba88a2b5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref></type>
+        <definition>static new ChangedListItemType SDC.ChangedListItemType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="161" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="161" bodyend="176"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_changed_list_item_type_1a1941679139590ad514b5a2a15850c16a" compoundref="_changed_list_item_type_8cs" startline="67">SDC.ChangedListItemType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_changed_list_item_type_1a93fd606e48c29bc396aba2425effd14b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref></type>
+        <definition>static ChangedListItemType SDC.ChangedListItemType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="178" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="178" bodyend="181"/>
+        <references refid="class_s_d_c_1_1_changed_list_item_type_1a1941679139590ad514b5a2a15850c16a" compoundref="_changed_list_item_type_8cs" startline="67">SDC.ChangedListItemType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_changed_list_item_type_1a3b2104ef06feeecd42b2b160e26447b0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangedListItemType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ChangedListItemType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="232" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="232" bodyend="246"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_changed_list_item_type_1aba833496a4b84688e20bda67835a1c92" compoundref="_changed_list_item_type_8cs" startline="248" endline="252">SDC.ChangedListItemType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_changed_list_item_type_1aba833496a4b84688e20bda67835a1c92" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangedListItemType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ChangedListItemType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="248" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="248" bodyend="252"/>
+        <references refid="class_s_d_c_1_1_changed_list_item_type_1a3b2104ef06feeecd42b2b160e26447b0" compoundref="_changed_list_item_type_8cs" startline="232" endline="246">SDC.ChangedListItemType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_changed_list_item_type_1a097cb74b05ea4450ea82d32bc4394cca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_changed_list_item_type" kindref="compound">ChangedListItemType</ref></type>
+        <definition>static new ChangedListItemType SDC.ChangedListItemType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="254" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="254" bodyend="278"/>
+        <references refid="class_s_d_c_1_1_changed_list_item_type_1a1c1c210ff2b07f1ecc2d412a011df7a2" compoundref="_changed_list_item_type_8cs" startline="139" endline="153">SDC.ChangedListItemType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1570">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="1571" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1571">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="1568">
+        <label>IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="1569" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1569" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1569">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="1570" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1570" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1567">
+        <label>SDC.ChangedListItemType</label>
+        <link refid="class_s_d_c_1_1_changed_list_item_type"/>
+        <childnode refid="1568" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1575">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="1576" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1577" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="1585" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="1586" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="1587" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="1578" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1588">
+        <label>SDC.DataTypes_SType</label>
+        <link refid="class_s_d_c_1_1_data_types___s_type"/>
+        <childnode refid="1574" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1574" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1586" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="1578" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1582">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="1580" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1576">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="1580">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="1579">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="1580" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1585">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="1573">
+        <label>IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="1574" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1574" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1578" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1584">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="1578">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="1576" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1579" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="1581" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="1582" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="1583" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="1587">
+        <label>System</label>
+      </node>
+      <node id="1581">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="1580" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1577">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="1574" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1574" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1578" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1574">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="1575" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1575" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1578" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1583">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="1584" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1572">
+        <label>SDC.ChangedListItemType</label>
+        <link refid="class_s_d_c_1_1_changed_list_item_type"/>
+        <childnode refid="1573" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1588" relation="usage">
+          <edgelabel>_listItemResponse</edgelabel>
+        </childnode>
+        <childnode refid="1578" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1586">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="1576" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1577" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="1585" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="1586" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="1587" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="1578" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" line="31" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangedListItemType.cs" bodystart="30" bodyend="289"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a1aa9ef284154724225540ea993872342" prot="private" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>_listItemResponse</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a14e59e1eabccda686a73a95cbd50ef2c" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>baseURI</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a2bef499088854576f590aa5d6a8b4210" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a7da43e8bfb72c37b0b8f377d32a3fed7" prot="private" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1ac65526b2b7b3d2b12345d46c5e97939f" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a1c1c210ff2b07f1ecc2d412a011df7a2" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a2b28bf7dea3bf36e590ca1bf94fa10c2" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a46fd3bb2ff2cd8dae5220efeba88a2b5" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a93fd606e48c29bc396aba2425effd14b" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1af1c3c0092861d44e9d9bcc621b4b530e" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a91854b7e5833915cd74a1353a0a71363" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ae58656c3cd94e16c69b70d40e1c9e152" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ae73b41119462fa46d0fa9593f66944a1" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangedListItemType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aea7c6c02897d9c63669adfd19ab99344" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>FillIdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aec38ff3687d70ecb4132f26e5ac6e6ab" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ID</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a63cc241892d95761b90b45d0f979f2c1" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>IdentExtNodes</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a1ebea3b2c6e2d7cbb19d58e2d8147f16" prot="protected" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a2e14a8c36871a4845a275d38a8f8f681" prot="protected" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a1ebea3b2c6e2d7cbb19d58e2d8147f16" prot="package" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1ab58a2044ed891f6a62c616180e5ad782" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ListItemResponse</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a3b2104ef06feeecd42b2b160e26447b0" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1aba833496a4b84688e20bda67835a1c92" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a097cb74b05ea4450ea82d32bc4394cca" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aa6f5c53d9fecc7eabdb09e2e98a54edc" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ac1bbe4827f3f7103b155d502e8604878" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1abdcccaf607de139ef8991b66ec2a1b34" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a78ef59652df5c6b4cef48b424d29b0da" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a318ef98ae92606615be68b487ed5bb3f" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangedListItemType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a7eaae755fe93dc729860b3ef79545db1" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a479cca8e794bc7a5f3657ad24dbdcf58" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a91d783e02c6dc85f0799a8c41ab0e732" prot="public" virt="virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a1fc00a8bd8c9144c09e7a41c788890d2" prot="public" virt="virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a7094d5aa0b57bccf92afd9b8e2bf1ae6" prot="public" virt="virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1af2febaa625f2bb8786303f500ec90572" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a83366b7c347ba094ada7d8dc8913daf3" prot="public" virt="virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ChangedListItemType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1ab1217b1e6ecf15126ace7c1e5202ca0a" prot="private" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a1941679139590ad514b5a2a15850c16a" prot="private" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a531c1d0860f5b496a249dc4fb8cc166b" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializebaseURI</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a531c1d0860f5b496a249dc4fb8cc166b" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializebaseURI</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ab14d9aff66939f8a1c5fe4e0570b563f" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializeID</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ab14d9aff66939f8a1c5fe4e0570b563f" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializeID</name></member>
+      <member refid="class_s_d_c_1_1_changed_list_item_type_1a30dbe98a8898478eb3e8502e94014818" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializeListItemResponse</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ChangedListItemType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::ChangedListItemType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

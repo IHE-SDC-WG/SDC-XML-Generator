@@ -1,0 +1,2091 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_list_field_type" kind="class" prot="public">
+    <compoundname>SDC::ListFieldType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1ae4eb29aef23da7b013470cf36e740a27" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_list_type" kindref="compound">ListType</ref></type>
+        <definition>ListType SDC.ListFieldType::List_Item</definition>
+        <argsstring></argsstring>
+        <name>List_Item</name>
+        <briefdescription>
+<para>+Replaced in original class: protected <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> (){} </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_d_c_1_1_list_type" kindref="compound">ListType</ref> to group ListItems </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="332" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="333" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a2b1bcb094eaedeb0f1a0b87f81a0acb6" compoundref="_s_d_c_8_schema_8_s_d_c_tree_builder_8cs" startline="1349" endline="1365">SDC.SDCTreeBuilder.AddListToListField</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1a0efee49ff9421c3b36b9018efcfd5a94" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_lookup_end_point_type" kindref="compound">LookupEndPointType</ref></type>
+        <definition>LookupEndPointType SDC.ListFieldType::LookupEndpoint_Item</definition>
+        <argsstring></argsstring>
+        <name>LookupEndpoint_Item</name>
+        <briefdescription>
+<para>Replaces Item </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="341" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1a61afcb072294f28b74360b8fd9f962e2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>RichTextType SDC.ListFieldType::ListHeaderText</definition>
+        <argsstring></argsstring>
+        <name>ListHeaderText</name>
+        <briefdescription>
+<para><ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> class constructor </para>        </briefdescription>
+        <detaileddescription>
+<para>The header row for a set of list items. If the list has more than one column, the column text is separated by the colTextDelimiter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="101" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1a7332d5a072c68b378c4f949d06d264fb" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_data_types___d_e_type" kindref="compound">DataTypes_DEType</ref></type>
+        <definition>DataTypes_DEType SDC.ListFieldType::DefaultListItemDataType</definition>
+        <argsstring></argsstring>
+        <name>DefaultListItemDataType</name>
+        <briefdescription>
+<para>Data type enumeration derived from W3C XML Schema. This element is used only if the ListItems are all associated with coded values from a single coding system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="117" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1a8bad146ddcff4ccd254adbdf18b0edc5" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_code_system_type" kindref="compound">CodeSystemType</ref></type>
+        <definition>CodeSystemType SDC.ListFieldType::DefaultCodeSystem</definition>
+        <argsstring></argsstring>
+        <name>DefaultCodeSystem</name>
+        <briefdescription>
+<para>If coded values are used for items in a List (including ListItem and LookupEndPoint lists), then the default coding system should be specified here. For ListItem nodes, any exceptions to the coding system may be specified on the individual ListItem nodes. For LookupEndPoints, the endpoint data can optionally specify any exceptions in a dedicated CodeSystem column in the returned list data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="133" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1a220962f5e5cd2cca1a128ce628b1dea7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_extension_base_type" kindref="compound">ExtensionBaseType</ref></type>
+        <definition>ExtensionBaseType SDC.ListFieldType::Item</definition>
+        <argsstring></argsstring>
+        <name>Item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="147" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1ada03c4c0bf817815e8f9f31a486ec009" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_rule_selection_test_type" kindref="compound">RuleSelectionTestType</ref> &gt;</type>
+        <definition>virtual List&lt;RuleSelectionTestType&gt; SDC.ListFieldType.IllegalListItemPairings</definition>
+        <argsstring></argsstring>
+        <name>IllegalListItemPairings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="160" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1af333d3340d0d221bbf30abd971b2f6c2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_rule_single_selection_sets_type" kindref="compound">RuleSingleSelectionSetsType</ref> &gt;</type>
+        <definition>virtual List&lt;RuleSingleSelectionSetsType&gt; SDC.ListFieldType.IllegalCoSelectedListItems</definition>
+        <argsstring></argsstring>
+        <name>IllegalCoSelectedListItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="173" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1ac87d1f2754db83c891cc55306a3373e7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_event_type" kindref="compound">EventType</ref> &gt;</type>
+        <definition>virtual List&lt;EventType&gt; SDC.ListFieldType.AfterChange</definition>
+        <argsstring></argsstring>
+        <name>AfterChange</name>
+        <briefdescription>
+<para>Event that occurs after List Field selections are changed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="189" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1ab41f14ef14f5eab07e45120412478920" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> &gt;</type>
+        <definition>virtual List&lt;OnEventType&gt; SDC.ListFieldType.OnEvent</definition>
+        <argsstring></argsstring>
+        <name>OnEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="202" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1a4042e10fc73ebdb14e39ec1aa2c667b5" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.ListFieldType::colTextDelimiter</definition>
+        <argsstring></argsstring>
+        <name>colTextDelimiter</name>
+        <briefdescription>
+<para>Character in the DisplayText that separates the columns and rows in a single or multi-column list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="219" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="220" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1a4ea4d46052b442ee3fd16eb661f756df" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="532" endline="535">SDC.ListFieldType.ShouldSerializecolTextDelimiter</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1a435a5ccb853f4f0041c748ce904de45d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa40ea57d3ee3c07bf1c102b466e1c3091" kindref="member">byte</ref></type>
+        <definition>byte SDC.ListFieldType::numCols</definition>
+        <argsstring></argsstring>
+        <name>numCols</name>
+        <briefdescription>
+<para>Number of columns in the list </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="236" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1ab3db8f93788da45f46cb7c376689511e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa40ea57d3ee3c07bf1c102b466e1c3091" kindref="member">byte</ref></type>
+        <definition>byte SDC.ListFieldType::storedCol</definition>
+        <argsstring></argsstring>
+        <name>storedCol</name>
+        <briefdescription>
+<para>Determines which column of the list is stored in a database. This list is one-based. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="253" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1a711bfe710e54984995840f7b98f098e1" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>ushort</type>
+        <definition>ushort SDC.ListFieldType::minSelections</definition>
+        <argsstring></argsstring>
+        <name>minSelections</name>
+        <briefdescription>
+<para>Minimum number of answer choices (list items) that must be selected by the user. Default value is 1. </para>        </briefdescription>
+        <detaileddescription>
+<para>Minimum number of answer choices (list items) that must be selected by the user. If set to 0, then this question need not be answered by the user. </para><para>NEW: changed minimum value to 1. Removed: If set to 0, then this question need not be answered by the user. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="273" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1af8b3798217fa304228a5bf2e213cbf4c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>ushort</type>
+        <definition>ushort SDC.ListFieldType::maxSelections</definition>
+        <argsstring></argsstring>
+        <name>maxSelections</name>
+        <briefdescription>
+<para>Maximum number of answer choices (list items) that can be selected by the user. Must be greater than or equal to minSelections, and no larger than the total number of list items. </para>        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of answer choices (list items) that can be selected by the user. Must be greater than or equal to minSelections, and no larger than the total number of list itmes.</para><para>A value of 0 indicates no limit to the number of selected list items (answers). This effectively means that the question is multi-select. (Abbreviated as QM)</para><para>A value of 1 (the default) indicates that the question list is single-select. (Abbreviated as QS) </para><para>A value of 0 indicates no limit to the number of selected list items (answers). This effectively means that the question is multi-select. (Abbreviated as QM)</para><para>A value of 1 indicates that the question list is single-select. (Abbreviated as QS) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="295" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1aaa69a74ce9b58575ca6fb1ac036a545a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SDC.ListFieldType::ordered</definition>
+        <argsstring></argsstring>
+        <name>ordered</name>
+        <briefdescription>
+<para>If false, then the form implementation may change the order of items in the list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="313" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1a01a62c425311d0ddc52e4c3319a0cbb8" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.ListFieldType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="326" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="327" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1a92fc745d392c50ce1e7f79e37ee718e0" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="599" endline="614">SDC.ListFieldType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1a447d585a3336fdbf10b2f6bf489c886e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_exclusive_item_pairs_type" kindref="compound">ExclusiveItemPairsType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;ExclusiveItemPairsType&gt; SDC.ListFieldType.IllegalListItemPairings</definition>
+        <argsstring></argsstring>
+        <name>IllegalListItemPairings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="202" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1abb6bbb60d7493d885131c7233173ecc8" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_if_then_type" kindref="compound">IfThenType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;IfThenType&gt; SDC.ListFieldType.AfterChange</definition>
+        <argsstring></argsstring>
+        <name>AfterChange</name>
+        <briefdescription>
+<para>Event that occurs after List Field selections are changed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="228" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1a9d53dce63e2f1399fb5b5aea0da79b8d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;OnEventType&gt; SDC.ListFieldType.OnEvent</definition>
+        <argsstring></argsstring>
+        <name>OnEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="251" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_field_type_1a8ee8c03de6096df55ee6f7db6924d830" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.ListFieldType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="449" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1aa963fa3c58109536ba55ab5b7b507efe" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDC.ListFieldType::_shouldSerializeordered</definition>
+        <argsstring></argsstring>
+        <name>_shouldSerializeordered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="33" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1a4d90b8d88aaab97cd1d652ec4aa487fa" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="488" endline="495">SDC.ListFieldType.ShouldSerializeordered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a3c5696037711ba3175c6af0489d57c08" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDC.ListFieldType::_shouldSerializemaxSelections</definition>
+        <argsstring></argsstring>
+        <name>_shouldSerializemaxSelections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="35" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1a43bd29ece3c98ea61481cb5a2ca86ce1" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="476" endline="483">SDC.ListFieldType.ShouldSerializemaxSelections</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1ac1ee3138d76612e706f026c662e61b17" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDC.ListFieldType::_shouldSerializeminSelections</definition>
+        <argsstring></argsstring>
+        <name>_shouldSerializeminSelections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="37" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1add11db1e1e4d02ca18f16533ff7730af" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="464" endline="471">SDC.ListFieldType.ShouldSerializeminSelections</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a92c15ded5ca053acf0156cf6f13003c5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>RichTextType SDC.ListFieldType::_listHeaderText</definition>
+        <argsstring></argsstring>
+        <name>_listHeaderText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1a30f2bb3cbfb06f8b2d7a826406870116" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="500" endline="503">SDC.ListFieldType.ShouldSerializeListHeaderText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1aece9a83611aaa4de9a27f200b4519e49" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_data_types___d_e_type" kindref="compound">DataTypes_DEType</ref></type>
+        <definition>DataTypes_DEType SDC.ListFieldType::_defaultListItemDataType</definition>
+        <argsstring></argsstring>
+        <name>_defaultListItemDataType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="43" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1aca8027e3cbd54d367dbf8aec249ab248" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="508" endline="511">SDC.ListFieldType.ShouldSerializeDefaultListItemDataType</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a83bb1ed1f877b3686d931b4af0266d1d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_code_system_type" kindref="compound">CodeSystemType</ref></type>
+        <definition>CodeSystemType SDC.ListFieldType::_defaultCodeSystem</definition>
+        <argsstring></argsstring>
+        <name>_defaultCodeSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="46" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1a43657967849c4b5e50058fda2798bb03" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="516" endline="519">SDC.ListFieldType.ShouldSerializeDefaultCodeSystem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a807e147c35166ace21c7f62d686f1b25" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_extension_base_type" kindref="compound">ExtensionBaseType</ref></type>
+        <definition>ExtensionBaseType SDC.ListFieldType::_item</definition>
+        <argsstring></argsstring>
+        <name>_item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="49" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1a151a93b45cce94d163bc7883306e60e5" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="524" endline="527">SDC.ListFieldType.ShouldSerializeItem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1aa994d45dce8af24208de3416f63f5bbf" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_rule_selection_test_type" kindref="compound">RuleSelectionTestType</ref> &gt;</type>
+        <definition>List&lt;RuleSelectionTestType&gt; SDC.ListFieldType._illegalListItemPairings</definition>
+        <argsstring></argsstring>
+        <name>_illegalListItemPairings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="52" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1afbf94979b8a6f8cacd806b0e8b69c2a9" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_rule_single_selection_sets_type" kindref="compound">RuleSingleSelectionSetsType</ref> &gt;</type>
+        <definition>List&lt;RuleSingleSelectionSetsType&gt; SDC.ListFieldType._illegalCoSelectedListItems</definition>
+        <argsstring></argsstring>
+        <name>_illegalCoSelectedListItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="55" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a5779bd9b8069698c439ebb48c8258eca" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_event_type" kindref="compound">EventType</ref> &gt;</type>
+        <definition>List&lt;EventType&gt; SDC.ListFieldType._afterChange</definition>
+        <argsstring></argsstring>
+        <name>_afterChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="58" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a5926420c6826ec67a935444f6980e38c" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> &gt;</type>
+        <definition>List&lt;OnEventType&gt; SDC.ListFieldType._onEvent</definition>
+        <argsstring></argsstring>
+        <name>_onEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="61" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a8d70da2faf38f281d3ce724c81c212a6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.ListFieldType::_colTextDelimiter</definition>
+        <argsstring></argsstring>
+        <name>_colTextDelimiter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="64" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="64" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1ac8c07f5f93c9da520d1865bd2d389342" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="88" endline="96">SDC.ListFieldType.ListFieldType</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a0881d25bee41666182edbdfbfd5d4777" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa40ea57d3ee3c07bf1c102b466e1c3091" kindref="member">byte</ref></type>
+        <definition>byte SDC.ListFieldType::_numCols</definition>
+        <argsstring></argsstring>
+        <name>_numCols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="67" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="67" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1ac8c07f5f93c9da520d1865bd2d389342" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="88" endline="96">SDC.ListFieldType.ListFieldType</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a7a4faf6729fd55bd536ef99bab371094" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa40ea57d3ee3c07bf1c102b466e1c3091" kindref="member">byte</ref></type>
+        <definition>byte SDC.ListFieldType::_storedCol</definition>
+        <argsstring></argsstring>
+        <name>_storedCol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="70" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1ac8c07f5f93c9da520d1865bd2d389342" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="88" endline="96">SDC.ListFieldType.ListFieldType</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a0ddff91a94d8044496bc96af2746255f" prot="private" static="no" mutable="no">
+        <type>ushort</type>
+        <definition>ushort SDC.ListFieldType::_minSelections</definition>
+        <argsstring></argsstring>
+        <name>_minSelections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="73" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="73" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1ac8c07f5f93c9da520d1865bd2d389342" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="88" endline="96">SDC.ListFieldType.ListFieldType</referencedby>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1add11db1e1e4d02ca18f16533ff7730af" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="464" endline="471">SDC.ListFieldType.ShouldSerializeminSelections</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a1ae22e0987ad8f9274b0ef817e8723dc" prot="private" static="no" mutable="no">
+        <type>ushort</type>
+        <definition>ushort SDC.ListFieldType::_maxSelections</definition>
+        <argsstring></argsstring>
+        <name>_maxSelections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="76" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="76" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1ac8c07f5f93c9da520d1865bd2d389342" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="88" endline="96">SDC.ListFieldType.ListFieldType</referencedby>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1a43bd29ece3c98ea61481cb5a2ca86ce1" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="476" endline="483">SDC.ListFieldType.ShouldSerializemaxSelections</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1ae3fa869181fd392d62b156ec3723ebd8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDC.ListFieldType::_ordered</definition>
+        <argsstring></argsstring>
+        <name>_ordered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="79" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="79" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1ac8c07f5f93c9da520d1865bd2d389342" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="88" endline="96">SDC.ListFieldType.ListFieldType</referencedby>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1a4d90b8d88aaab97cd1d652ec4aa487fa" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="488" endline="495">SDC.ListFieldType.ShouldSerializeordered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a61901d96774a09fb4429282cd829cdd0" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_exclusive_item_pairs_type" kindref="compound">ExclusiveItemPairsType</ref> &gt;</type>
+        <definition>BindingList&lt;ExclusiveItemPairsType&gt; SDC.ListFieldType._illegalListItemPairings</definition>
+        <argsstring></argsstring>
+        <name>_illegalListItemPairings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="55" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1ab78892f6284bd22ddb1be75a964fab68" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_if_then_type" kindref="compound">IfThenType</ref> &gt;</type>
+        <definition>BindingList&lt;IfThenType&gt; SDC.ListFieldType._afterChange</definition>
+        <argsstring></argsstring>
+        <name>_afterChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="58" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a030d2007d99f71df20851dcb2341ecf7" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> &gt;</type>
+        <definition>BindingList&lt;OnEventType&gt; SDC.ListFieldType._onEvent</definition>
+        <argsstring></argsstring>
+        <name>_onEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="61" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1abd7c8ad6ecfcab09db9e47e0263734bb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.ListFieldType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="83" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_field_type_1a2241b9d9270a48d5ee480f678893bd94" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.ListFieldType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="81" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1ac8c07f5f93c9da520d1865bd2d389342" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.ListFieldType.ListFieldType</definition>
+        <argsstring>()</argsstring>
+        <name>ListFieldType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="312" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="312" bodyend="312"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1abd706a236420ff6f35d202fd199d10b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.ListFieldType.ListFieldType</definition>
+        <argsstring>(BaseType parentNode, bool fillData=true)</argsstring>
+        <name>ListFieldType</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="313" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="313" bodyend="322"/>
+        <references refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa40ea57d3ee3c07bf1c102b466e1c3091" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="44">SDC.byte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a8fecdbc80115dfc526e2d615f7da6417" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ListFieldType.Fill_ListFieldType</definition>
+        <argsstring>()</argsstring>
+        <name>Fill_ListFieldType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="487" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="487" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1aa0255a44ecc0fbca8c26218790bd767c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeIllegalListItemPairings</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeIllegalListItemPairings</name>
+        <briefdescription>
+<para>Test whether IllegalListItemPairings should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="341" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="341" bodyend="344"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a2f355d793af458c887fdd49adc7a24f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeIllegalCoSelectedListItems</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeIllegalCoSelectedListItems</name>
+        <briefdescription>
+<para>Test whether IllegalCoSelectedListItems should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="349" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="349" bodyend="352"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1abd91a0e9d2418d8984d214b971156f13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeAfterChange</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeAfterChange</name>
+        <briefdescription>
+<para>Test whether AfterChange should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="357" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="357" bodyend="360"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a83d5e4588ecc313feb2ff38fbd65ca7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeOnEvent</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeOnEvent</name>
+        <briefdescription>
+<para>Test whether OnEvent should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="365" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="365" bodyend="368"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1add11db1e1e4d02ca18f16533ff7730af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeminSelections</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeminSelections</name>
+        <briefdescription>
+<para>Test whether minSelections should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="373" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="373" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a43bd29ece3c98ea61481cb5a2ca86ce1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializemaxSelections</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializemaxSelections</name>
+        <briefdescription>
+<para>Test whether maxSelections should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="385" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="385" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a4d90b8d88aaab97cd1d652ec4aa487fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeordered</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeordered</name>
+        <briefdescription>
+<para>Test whether ordered should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="397" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="397" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a30f2bb3cbfb06f8b2d7a826406870116" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeListHeaderText</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeListHeaderText</name>
+        <briefdescription>
+<para>Test whether ListHeaderText should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="409" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="409" bodyend="412"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1aca8027e3cbd54d367dbf8aec249ab248" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeDefaultListItemDataType</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeDefaultListItemDataType</name>
+        <briefdescription>
+<para>Test whether DefaultListItemDataType should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="417" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="417" bodyend="420"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a43657967849c4b5e50058fda2798bb03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeDefaultCodeSystem</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeDefaultCodeSystem</name>
+        <briefdescription>
+<para>Test whether DefaultCodeSystem should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="425" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="425" bodyend="428"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a151a93b45cce94d163bc7883306e60e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeItem</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeItem</name>
+        <briefdescription>
+<para>Test whether Item should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="433" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="433" bodyend="436"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a4ea4d46052b442ee3fd16eb661f756df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializecolTextDelimiter</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializecolTextDelimiter</name>
+        <briefdescription>
+<para>Test whether colTextDelimiter should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="441" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="441" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1ac4563d2f7ee2bc44c647fb59a158e2e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ListFieldType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a9ac9c6d560ffe2c300d7796951c22395">Serialize</reimplements>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="451" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="451" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1aeb57a2624d737ffe2af4208c4e9fce75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ListFieldType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="481" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="481" bodyend="484"/>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1af0f318f5d3043bdbd5e35a4c49e7b737" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="643" endline="661">SDC.ListFieldType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a3046815ef62ef4e0ab3dfb23fe01e72c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1ab1514379cd9bd547d5569548274fceb1">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="544" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="544" bodyend="557"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1a2874807f8f20e99e728f5bc286c4cbfa" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="628" endline="641">SDC.ListFieldType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a423589585e4b83bb03d448ad730b15f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1af03b919560cd67ffe1373d8cef3bb9b8">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="559" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="559" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1af0f318f5d3043bdbd5e35a4c49e7b737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ListFieldType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="564" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="564" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a0a3f2484fd659ff8ceec7b6a2b152430" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ListFieldType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5c619ed0e36571d6f4bd992faa3ad282">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="569" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="569" bodyend="586"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1ac8c07f5f93c9da520d1865bd2d389342" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.ListFieldType.ListFieldType</definition>
+        <argsstring>()</argsstring>
+        <name>ListFieldType</name>
+        <briefdescription>
+<para><ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> class constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="88" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="88" bodyend="96"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1a8d70da2faf38f281d3ce724c81c212a6" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="64">SDC.ListFieldType._colTextDelimiter</references>
+        <references refid="class_s_d_c_1_1_list_field_type_1a1ae22e0987ad8f9274b0ef817e8723dc" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="76">SDC.ListFieldType._maxSelections</references>
+        <references refid="class_s_d_c_1_1_list_field_type_1a0ddff91a94d8044496bc96af2746255f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="73">SDC.ListFieldType._minSelections</references>
+        <references refid="class_s_d_c_1_1_list_field_type_1a0881d25bee41666182edbdfbfd5d4777" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="67">SDC.ListFieldType._numCols</references>
+        <references refid="class_s_d_c_1_1_list_field_type_1ae3fa869181fd392d62b156ec3723ebd8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="79">SDC.ListFieldType._ordered</references>
+        <references refid="class_s_d_c_1_1_list_field_type_1a7a4faf6729fd55bd536ef99bab371094" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="70">SDC.ListFieldType._storedCol</references>
+        <references refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa40ea57d3ee3c07bf1c102b466e1c3091" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="44">SDC.byte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1add11db1e1e4d02ca18f16533ff7730af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeminSelections</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeminSelections</name>
+        <briefdescription>
+<para>Test whether minSelections should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="464" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="464" bodyend="471"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1a0ddff91a94d8044496bc96af2746255f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="73">SDC.ListFieldType._minSelections</references>
+        <references refid="class_s_d_c_1_1_list_field_type_1ac1ee3138d76612e706f026c662e61b17" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="37">SDC.ListFieldType._shouldSerializeminSelections</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a43bd29ece3c98ea61481cb5a2ca86ce1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializemaxSelections</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializemaxSelections</name>
+        <briefdescription>
+<para>Test whether maxSelections should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="476" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="476" bodyend="483"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1a1ae22e0987ad8f9274b0ef817e8723dc" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="76">SDC.ListFieldType._maxSelections</references>
+        <references refid="class_s_d_c_1_1_list_field_type_1a3c5696037711ba3175c6af0489d57c08" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="35">SDC.ListFieldType._shouldSerializemaxSelections</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a4d90b8d88aaab97cd1d652ec4aa487fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeordered</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeordered</name>
+        <briefdescription>
+<para>Test whether ordered should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="488" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="488" bodyend="495"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1ae3fa869181fd392d62b156ec3723ebd8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="79">SDC.ListFieldType._ordered</references>
+        <references refid="class_s_d_c_1_1_list_field_type_1aa963fa3c58109536ba55ab5b7b507efe" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="33">SDC.ListFieldType._shouldSerializeordered</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a30f2bb3cbfb06f8b2d7a826406870116" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeListHeaderText</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeListHeaderText</name>
+        <briefdescription>
+<para>Test whether ListHeaderText should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="500" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="500" bodyend="503"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1a92c15ded5ca053acf0156cf6f13003c5" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="40">SDC.ListFieldType._listHeaderText</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1aca8027e3cbd54d367dbf8aec249ab248" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeDefaultListItemDataType</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeDefaultListItemDataType</name>
+        <briefdescription>
+<para>Test whether DefaultListItemDataType should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="508" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="508" bodyend="511"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1aece9a83611aaa4de9a27f200b4519e49" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="43">SDC.ListFieldType._defaultListItemDataType</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a43657967849c4b5e50058fda2798bb03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeDefaultCodeSystem</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeDefaultCodeSystem</name>
+        <briefdescription>
+<para>Test whether DefaultCodeSystem should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="516" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="516" bodyend="519"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1a83bb1ed1f877b3686d931b4af0266d1d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="46">SDC.ListFieldType._defaultCodeSystem</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a151a93b45cce94d163bc7883306e60e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializeItem</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeItem</name>
+        <briefdescription>
+<para>Test whether Item should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="524" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="524" bodyend="527"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1a807e147c35166ace21c7f62d686f1b25" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="49">SDC.ListFieldType._item</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a4ea4d46052b442ee3fd16eb661f756df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.ShouldSerializecolTextDelimiter</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializecolTextDelimiter</name>
+        <briefdescription>
+<para>Test whether colTextDelimiter should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="532" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="532" bodyend="535"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1a4042e10fc73ebdb14e39ec1aa2c667b5" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="220">SDC.ListFieldType.colTextDelimiter</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1aeb57a2624d737ffe2af4208c4e9fce75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ListFieldType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="542" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="542" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a2874807f8f20e99e728f5bc286c4cbfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListFieldType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="628" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="628" bodyend="641"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_list_field_type_1a3046815ef62ef4e0ab3dfb23fe01e72c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="544" endline="557">SDC.ListFieldType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1af0f318f5d3043bdbd5e35a4c49e7b737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ListFieldType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="643" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="643" bodyend="661"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_list_field_type_1aeb57a2624d737ffe2af4208c4e9fce75" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="481" endline="484">SDC.ListFieldType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a1d5803a1ef1b6bd03e6278d607fa4ed5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+        <definition>virtual ListFieldType SDC.ListFieldType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3">Clone</reimplements>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="722" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="722" bodyend="725"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a9ba96668b29f6978f1a28ef19c750863" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListFieldType.Deserialize</definition>
+        <argsstring>(string input, out ListFieldType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="493" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="493" bodyend="507"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1abb6e7ee5a05f64dc81f830692918e4af" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="577" endline="591">SDC.ListFieldType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1ab7c3ae4f7cde018ff16487b73d6099c7" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="692" endline="716">SDC.ListFieldType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1afb51518221174b85c2cca2c4d6791174" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListFieldType.Deserialize</definition>
+        <argsstring>(string input, out ListFieldType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="509" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="509" bodyend="513"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a92fc745d392c50ce1e7f79e37ee718e0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+        <definition>static new ListFieldType SDC.ListFieldType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="515" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="515" bodyend="530"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a12703aa5f1128d0fc2dd5ceb0f1794cd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+        <definition>static ListFieldType SDC.ListFieldType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="532" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="532" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1ae51010659488d4b1897cabd771860bf5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out ListFieldType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="595" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="595" bodyend="609"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_list_field_type_1a343cf0cb37d0476023a9d56edec7de04" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_list_field_type_8cs" startline="670" endline="684">SDC.ListFieldType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1ab12e16742af56d7cc8cdce83ded41d84" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ListFieldType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="611" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="611" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1aef8363a15cd015320abac3eedd6ff635" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ListFieldType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="616" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="616" bodyend="620"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1acf2ebc897c72e448a00ec354e4c1a83d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+        <definition>static ListFieldType SDC.ListFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="622" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="622" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a741ef61c502f1844e1faa0ae41fae1df" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+        <definition>static new ListFieldType SDC.ListFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" line="627" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListFieldType.cs" bodystart="627" bodyend="651"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1abb6e7ee5a05f64dc81f830692918e4af" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListFieldType.Deserialize</definition>
+        <argsstring>(string input, out ListFieldType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="577" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="577" bodyend="591"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1a9ba96668b29f6978f1a28ef19c750863" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="493" endline="507">SDC.ListFieldType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1afb51518221174b85c2cca2c4d6791174" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListFieldType.Deserialize</definition>
+        <argsstring>(string input, out ListFieldType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="593" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="593" bodyend="597"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1a9ba96668b29f6978f1a28ef19c750863" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="493" endline="507">SDC.ListFieldType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a92fc745d392c50ce1e7f79e37ee718e0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+        <definition>static new ListFieldType SDC.ListFieldType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="599" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="599" bodyend="614"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_list_field_type_1a01a62c425311d0ddc52e4c3319a0cbb8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="327">SDC.ListFieldType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a753cdccd1349b32997c33667452c7905" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+        <definition>static ListFieldType SDC.ListFieldType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="616" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="616" bodyend="619"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1a01a62c425311d0ddc52e4c3319a0cbb8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="327">SDC.ListFieldType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1a343cf0cb37d0476023a9d56edec7de04" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ListFieldType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="670" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="670" bodyend="684"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1ae51010659488d4b1897cabd771860bf5" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="595" endline="609">SDC.ListFieldType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1aef8363a15cd015320abac3eedd6ff635" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ListFieldType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="686" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="686" bodyend="690"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1ae51010659488d4b1897cabd771860bf5" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="595" endline="609">SDC.ListFieldType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_field_type_1ab7c3ae4f7cde018ff16487b73d6099c7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+        <definition>static new ListFieldType SDC.ListFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" line="692" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ListFieldType.cs" bodystart="692" bodyend="716"/>
+        <references refid="class_s_d_c_1_1_list_field_type_1a9ba96668b29f6978f1a28ef19c750863" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_list_field_type_8cs" startline="493" endline="507">SDC.ListFieldType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ListField is a grouper for list-like answer choices, which may be derived from either a set of answer choice lists (a List composed of ListItems) or or a list obtained from a LookupEndpoint URI. </para>    </briefdescription>
+    <detaileddescription>
+<para>This type represents a grouper for the list-like answer choices,which may be derived from either a set of answer choice lists (a List composed of ListItems) or or a list obtained from a LookupEndpoint URI. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5541">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="5542" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5542">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="5540">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="5541" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5541" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5539">
+        <label>SDC.ListFieldType</label>
+        <link refid="class_s_d_c_1_1_list_field_type"/>
+        <childnode refid="5540" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5540" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5562">
+        <label>SDC.string_Stype</label>
+        <link refid="class_s_d_c_1_1string___stype"/>
+        <childnode refid="5545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5545">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="5546" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5547" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="5555" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="5556" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="5557" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5558">
+        <label>SDC.DataTypes_DEType</label>
+        <link refid="class_s_d_c_1_1_data_types___d_e_type"/>
+        <childnode refid="5544" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5544" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5556" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5552">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="5550" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5546">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="5564">
+        <label>SDC.anyURI_Stype</label>
+        <link refid="class_s_d_c_1_1any_u_r_i___stype"/>
+        <childnode refid="5545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5550">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="5561">
+        <label>SDC.CodeSystemType</label>
+        <link refid="class_s_d_c_1_1_code_system_type"/>
+        <childnode refid="5544" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5544" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5562" relation="usage">
+          <edgelabel>_version</edgelabel>
+          <edgelabel>_codeSystemName</edgelabel>
+          <edgelabel>_oID</edgelabel>
+        </childnode>
+        <childnode refid="5563" relation="usage">
+          <edgelabel>_releaseDate</edgelabel>
+        </childnode>
+        <childnode refid="5564" relation="usage">
+          <edgelabel>_codeSystemURI</edgelabel>
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5549">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="5550" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5555">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="5554">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="5548">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="5546" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5549" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="5551" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="5552" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="5553" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="5557">
+        <label>System</label>
+      </node>
+      <node id="5565">
+        <label>SDC.ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="5545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5551">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="5550" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5547">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="5544" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5544" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5544">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="5545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5559">
+        <label>SDC.RichTextType</label>
+        <link refid="class_s_d_c_1_1_rich_text_type"/>
+        <childnode refid="5544" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5544" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5560" relation="usage">
+          <edgelabel>_hTML</edgelabel>
+          <edgelabel>_richText</edgelabel>
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5560">
+        <label>SDC.HTML_Stype</label>
+        <link refid="class_s_d_c_1_1_h_t_m_l___stype"/>
+        <childnode refid="5545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5553">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="5554" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5543">
+        <label>SDC.ListFieldType</label>
+        <link refid="class_s_d_c_1_1_list_field_type"/>
+        <childnode refid="5544" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5544" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5558" relation="usage">
+          <edgelabel>_defaultListItemDataType</edgelabel>
+        </childnode>
+        <childnode refid="5559" relation="usage">
+          <edgelabel>_listHeaderText</edgelabel>
+        </childnode>
+        <childnode refid="5561" relation="usage">
+          <edgelabel>_defaultCodeSystem</edgelabel>
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="5565" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="5563">
+        <label>SDC.dateTime_Stype</label>
+        <link refid="class_s_d_c_1_1date_time___stype"/>
+        <childnode refid="5545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5545" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5557" relation="usage">
+          <edgelabel>_val</edgelabel>
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5556">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="5546" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5547" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="5555" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="5556" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="5557" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="5548" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="311" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="310" bodyend="347"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_list_field_type_1a5779bd9b8069698c439ebb48c8258eca" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_afterChange</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ab78892f6284bd22ddb1be75a964fab68" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_afterChange</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a8d70da2faf38f281d3ce724c81c212a6" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_colTextDelimiter</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a83bb1ed1f877b3686d931b4af0266d1d" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_defaultCodeSystem</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1aece9a83611aaa4de9a27f200b4519e49" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_defaultListItemDataType</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1afbf94979b8a6f8cacd806b0e8b69c2a9" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_illegalCoSelectedListItems</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1aa994d45dce8af24208de3416f63f5bbf" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_illegalListItemPairings</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a61901d96774a09fb4429282cd829cdd0" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_illegalListItemPairings</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a807e147c35166ace21c7f62d686f1b25" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_item</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a92c15ded5ca053acf0156cf6f13003c5" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_listHeaderText</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a1ae22e0987ad8f9274b0ef817e8723dc" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_maxSelections</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a0ddff91a94d8044496bc96af2746255f" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_minSelections</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a0881d25bee41666182edbdfbfd5d4777" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_numCols</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a5926420c6826ec67a935444f6980e38c" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_onEvent</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a030d2007d99f71df20851dcb2341ecf7" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_onEvent</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ae3fa869181fd392d62b156ec3723ebd8" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_ordered</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a3c5696037711ba3175c6af0489d57c08" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_shouldSerializemaxSelections</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ac1ee3138d76612e706f026c662e61b17" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_shouldSerializeminSelections</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1aa963fa3c58109536ba55ab5b7b507efe" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_shouldSerializeordered</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a7a4faf6729fd55bd536ef99bab371094" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>_storedCol</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ac87d1f2754db83c891cc55306a3373e7" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>AfterChange</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1abb6bbb60d7493d885131c7233173ecc8" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>AfterChange</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a8ee8c03de6096df55ee6f7db6924d830" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1abd7c8ad6ecfcab09db9e47e0263734bb" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a1d5803a1ef1b6bd03e6278d607fa4ed5" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a4042e10fc73ebdb14e39ec1aa2c667b5" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>colTextDelimiter</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a8bad146ddcff4ccd254adbdf18b0edc5" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>DefaultCodeSystem</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a7332d5a072c68b378c4f949d06d264fb" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>DefaultListItemDataType</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a9ba96668b29f6978f1a28ef19c750863" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1afb51518221174b85c2cca2c4d6791174" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a92fc745d392c50ce1e7f79e37ee718e0" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a12703aa5f1128d0fc2dd5ceb0f1794cd" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1abb6e7ee5a05f64dc81f830692918e4af" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1afb51518221174b85c2cca2c4d6791174" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a92fc745d392c50ce1e7f79e37ee718e0" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a753cdccd1349b32997c33667452c7905" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ListFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a8fecdbc80115dfc526e2d615f7da6417" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Fill_ListFieldType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1af333d3340d0d221bbf30abd971b2f6c2" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>IllegalCoSelectedListItems</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ada03c4c0bf817815e8f9f31a486ec009" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>IllegalListItemPairings</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a447d585a3336fdbf10b2f6bf489c886e" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>IllegalListItemPairings</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a220962f5e5cd2cca1a128ce628b1dea7" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Item</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ae4eb29aef23da7b013470cf36e740a27" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>List_Item</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ac8c07f5f93c9da520d1865bd2d389342" prot="protected" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ListFieldType</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1abd706a236420ff6f35d202fd199d10b9" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ListFieldType</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ac8c07f5f93c9da520d1865bd2d389342" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ListFieldType</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a61afcb072294f28b74360b8fd9f962e2" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ListHeaderText</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ae51010659488d4b1897cabd771860bf5" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ab12e16742af56d7cc8cdce83ded41d84" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1aef8363a15cd015320abac3eedd6ff635" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1acf2ebc897c72e448a00ec354e4c1a83d" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a741ef61c502f1844e1faa0ae41fae1df" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a343cf0cb37d0476023a9d56edec7de04" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1aef8363a15cd015320abac3eedd6ff635" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ab7c3ae4f7cde018ff16487b73d6099c7" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ListFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a0efee49ff9421c3b36b9018efcfd5a94" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>LookupEndpoint_Item</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1af8b3798217fa304228a5bf2e213cbf4c" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>maxSelections</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a711bfe710e54984995840f7b98f098e1" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>minSelections</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a435a5ccb853f4f0041c748ce904de45d" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>numCols</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ab41f14ef14f5eab07e45120412478920" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>OnEvent</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a9d53dce63e2f1399fb5b5aea0da79b8d" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>OnEvent</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1aaa69a74ce9b58575ca6fb1ac036a545a" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ordered</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a3046815ef62ef4e0ab3dfb23fe01e72c" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a423589585e4b83bb03d448ad730b15f7" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1af0f318f5d3043bdbd5e35a4c49e7b737" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a0a3f2484fd659ff8ceec7b6a2b152430" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a2874807f8f20e99e728f5bc286c4cbfa" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1af0f318f5d3043bdbd5e35a4c49e7b737" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ac4563d2f7ee2bc44c647fb59a158e2e0" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1aeb57a2624d737ffe2af4208c4e9fce75" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1aeb57a2624d737ffe2af4208c4e9fce75" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a01a62c425311d0ddc52e4c3319a0cbb8" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a2241b9d9270a48d5ee480f678893bd94" prot="private" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1abd91a0e9d2418d8984d214b971156f13" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeAfterChange</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a4ea4d46052b442ee3fd16eb661f756df" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializecolTextDelimiter</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a4ea4d46052b442ee3fd16eb661f756df" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializecolTextDelimiter</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a43657967849c4b5e50058fda2798bb03" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeDefaultCodeSystem</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a43657967849c4b5e50058fda2798bb03" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeDefaultCodeSystem</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1aca8027e3cbd54d367dbf8aec249ab248" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeDefaultListItemDataType</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1aca8027e3cbd54d367dbf8aec249ab248" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeDefaultListItemDataType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a2f355d793af458c887fdd49adc7a24f2" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeIllegalCoSelectedListItems</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1aa0255a44ecc0fbca8c26218790bd767c" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeIllegalListItemPairings</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a151a93b45cce94d163bc7883306e60e5" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeItem</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a151a93b45cce94d163bc7883306e60e5" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeItem</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a30f2bb3cbfb06f8b2d7a826406870116" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeListHeaderText</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a30f2bb3cbfb06f8b2d7a826406870116" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeListHeaderText</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a43bd29ece3c98ea61481cb5a2ca86ce1" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializemaxSelections</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a43bd29ece3c98ea61481cb5a2ca86ce1" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializemaxSelections</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1add11db1e1e4d02ca18f16533ff7730af" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeminSelections</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1add11db1e1e4d02ca18f16533ff7730af" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeminSelections</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a83d5e4588ecc313feb2ff38fbd65ca7a" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeOnEvent</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a4d90b8d88aaab97cd1d652ec4aa487fa" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeordered</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1a4d90b8d88aaab97cd1d652ec4aa487fa" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeordered</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ListFieldType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_list_field_type_1ab3db8f93788da45f46cb7c376689511e" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>storedCol</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::ListFieldType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

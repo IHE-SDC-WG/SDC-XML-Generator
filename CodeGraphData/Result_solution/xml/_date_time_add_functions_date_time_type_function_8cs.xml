@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_date_time_add_functions_date_time_type_function_8cs" kind="file">
+    <compoundname>DateTimeAddFunctionsDateTimeTypeFunction.cs</compoundname>
+    <innernamespace refid="namespace_s_d_c">SDC</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>&lt;auto-generated&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Generated<sp/>by<sp/>Xsd2Code++.<sp/>Version<sp/>4.4.0.7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>&lt;/auto-generated&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning<sp/>disable</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">SDC</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Diagnostics;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml.Serialization;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml.Schema;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.ComponentModel;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.IO;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.ComponentModel.DataAnnotations;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">[System.CodeDom.Compiler.GeneratedCodeAttribute(</highlight><highlight class="stringliteral">&quot;System.Xml&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;4.7.2612.0&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">[System.SerializableAttribute()]</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>Namespace=</highlight><highlight class="stringliteral">&quot;urn:ihe:qrph:sdc:2016&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="24" refid="namespace_s_d_c_1a0d11d09d0803b4cbc85ac0ec837a3d04" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_s_d_c_1a0d11d09d0803b4cbc85ac0ec837a3d04" kindref="member">DateTimeAddFunctionsDateTimeTypeFunction</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a0d11d09d0803b4cbc85ac0ec837a3d04a2503a3dcfa0fbf9a61642a13590c46cc" kindref="member">AddYears</ref>,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a0d11d09d0803b4cbc85ac0ec837a3d04a9d0ab897a63c5651f9ae1b4eea9669e2" kindref="member">AddMonths</ref>,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a0d11d09d0803b4cbc85ac0ec837a3d04acc73726d47e97837920b1437fe371c1f" kindref="member">AddWeeks</ref>,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a0d11d09d0803b4cbc85ac0ec837a3d04af7ebceab2531d789862717f9312364f6" kindref="member">AddDays</ref>,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a0d11d09d0803b4cbc85ac0ec837a3d04a712ca2f9fd03a187ca0c4fa379508559" kindref="member">AddHours</ref>,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a0d11d09d0803b4cbc85ac0ec837a3d04a9cbd3e04000c9375987591b3a37a7f41" kindref="member">AddMinutes</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a0d11d09d0803b4cbc85ac0ec837a3d04a3c729747086e92628d45cfc87b045c85" kindref="member">AddSeconds</ref>,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a0d11d09d0803b4cbc85ac0ec837a3d04afd7813ab0608ba69f52d7f5be3032b9d" kindref="member">AddMilliSeconds</ref>,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a0d11d09d0803b4cbc85ac0ec837a3d04a566058c72a67f3bc778ff269f317d204" kindref="member">AddTicks</ref>,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning<sp/>restore</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/DateTimeAddFunctionsDateTimeTypeFunction.cs"/>
+  </compounddef>
+</doxygen>

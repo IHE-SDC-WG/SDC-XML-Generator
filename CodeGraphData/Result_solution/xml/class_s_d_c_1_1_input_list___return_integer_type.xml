@@ -1,0 +1,854 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_input_list___return_integer_type" kind="class" prot="public">
+    <compoundname>SDC::InputList_ReturnIntegerType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_return_integer_type" prot="public" virt="non-virtual">SDC.ReturnIntegerType</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_input_list___return_integer_type_1ad101ec5e66df6879f6c1b21ba9201b98" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_any_functions_list_type" kindref="compound">AnyFunctionsListType</ref></type>
+        <definition>AnyFunctionsListType SDC.InputList_ReturnIntegerType._inputList</definition>
+        <argsstring></argsstring>
+        <name>_inputList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="31" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_input_list___return_integer_type_1a9de73854fe598411fad20be1312864f2" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.InputList_ReturnIntegerType.serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="33" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_input_list___return_integer_type_1a3f864587a188b0f265c90538f10ccad1" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_any_functions_list_type" kindref="compound">AnyFunctionsListType</ref></type>
+        <definition>virtual AnyFunctionsListType SDC.InputList_ReturnIntegerType.InputList</definition>
+        <argsstring></argsstring>
+        <name>InputList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="37" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_input_list___return_integer_type_1a79b76ce0715b12e9017e0d618f6b14d6" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.InputList_ReturnIntegerType.Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="49" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1acf85d390dcd20b0bb118d19c1da0c81a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.InputList_ReturnIntegerType.ShouldSerializeInputList</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeInputList</name>
+        <briefdescription>
+<para>Test whether InputList should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="64" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="64" bodyend="67"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1a55b5fb49fefaebab0053269539cc1c05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.InputList_ReturnIntegerType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_return_integer_type_1ae3b46fbe5421496f6e151f067b7ea6d5">Serialize</reimplements>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="74" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="74" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1a202de630c39539f9cd415cf5b786eacf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.InputList_ReturnIntegerType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_return_integer_type_1a8afcb0a6616ddb9f0bb3bad79748e5f1">Serialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="104" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1abfaa9f811807a6c9d2df1730c895b47d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.InputList_ReturnIntegerType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_integer_type_1a0bbc20fa934922e9ffc606b3bf294b2f">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="167" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="167" bodyend="180"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1aa39ed8632059ffb2f6bb6079dd8da3b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.InputList_ReturnIntegerType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_integer_type_1a8601856dd7598ddf871e0e72f1cb09cb">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="182" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1a43245d029ac34957cfb6b806636a77a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.InputList_ReturnIntegerType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_integer_type_1ac2eb4df78fc19e206b66e89c19187d31">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="187" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1ac80799e252a2d1c670efad50db76f425" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.InputList_ReturnIntegerType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_integer_type_1ade0af27f2edc65c31b70f826e650c888">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="192" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="192" bodyend="209"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1a65cfb939368016f2a069d391ffcf55e3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.InputList_ReturnIntegerType.Deserialize</definition>
+        <argsstring>(string input, out InputList_ReturnIntegerType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="116" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="116" bodyend="130"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1a42a69105d96b2ea75f01be2cd70f4643" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.InputList_ReturnIntegerType.Deserialize</definition>
+        <argsstring>(string input, out InputList_ReturnIntegerType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="132" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="132" bodyend="136"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1ae7e458af19956acc57197049751772f9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref></type>
+        <definition>static new InputList_ReturnIntegerType SDC.InputList_ReturnIntegerType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="138" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="138" bodyend="153"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1a3cc3681b49e7be80baba147d2fdb999b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref></type>
+        <definition>static InputList_ReturnIntegerType SDC.InputList_ReturnIntegerType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="155" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1ace61751043d0ec2c686a9373e367872b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.InputList_ReturnIntegerType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out InputList_ReturnIntegerType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="218" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="218" bodyend="232"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1a7089b81adecbbba1132e79e7a45ae356" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.InputList_ReturnIntegerType.LoadFromFile</definition>
+        <argsstring>(string fileName, out InputList_ReturnIntegerType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="234" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1abc4bc42d8440a21da6d142272ce09853" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.InputList_ReturnIntegerType.LoadFromFile</definition>
+        <argsstring>(string fileName, out InputList_ReturnIntegerType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="239" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="239" bodyend="243"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1ac7ef8ad584a310980a885b9241a28a8a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref></type>
+        <definition>static InputList_ReturnIntegerType SDC.InputList_ReturnIntegerType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="245" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_list___return_integer_type_1a3947d3dd27b9d845c3dc3f4786da251c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_input_list___return_integer_type" kindref="compound">InputList_ReturnIntegerType</ref></type>
+        <definition>static new InputList_ReturnIntegerType SDC.InputList_ReturnIntegerType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="250" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="250" bodyend="274"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4645">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4646" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4646">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="4642">
+        <label>ReturnIntegerType</label>
+        <link refid="class_s_d_c_1_1_return_integer_type"/>
+        <childnode refid="4643" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4643">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="4644" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4644">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="4645" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4645" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4641">
+        <label>SDC.InputList_ReturnIntegerType</label>
+        <link refid="class_s_d_c_1_1_input_list___return_integer_type"/>
+        <childnode refid="4642" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4651">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4652" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4653" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="4661" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="4662" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="4663" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="4654" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4658">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="4656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4652">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="4668">
+        <label>ReturnListType</label>
+        <link refid="class_s_d_c_1_1_return_list_type"/>
+        <childnode refid="4669" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4670" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="4656">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="4655">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="4656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4661">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="4664">
+        <label>SDC.ExceptionType</label>
+        <link refid="class_s_d_c_1_1_exception_type"/>
+        <childnode refid="4650" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4663" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="4648">
+        <label>ReturnIntegerType</label>
+        <link refid="class_s_d_c_1_1_return_integer_type"/>
+        <childnode refid="4649" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4665" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="4665">
+        <label>SDC.long_DEtype</label>
+        <link refid="class_s_d_c_1_1long___d_etype"/>
+        <childnode refid="4666" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4666" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4663" relation="usage">
+          <edgelabel>_minInclusive</edgelabel>
+          <edgelabel>_minExclusive</edgelabel>
+          <edgelabel>_maxInclusive</edgelabel>
+          <edgelabel>_maxExclusive</edgelabel>
+          <edgelabel>_totalDigits</edgelabel>
+        </childnode>
+        <childnode refid="4654" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4649">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="4650" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4664" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="4660">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="4654">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="4652" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4655" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4657" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4658" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4659" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="4663">
+        <label>System</label>
+      </node>
+      <node id="4667">
+        <label>SDC.AnyFunctionsListType</label>
+        <link refid="class_s_d_c_1_1_any_functions_list_type"/>
+        <childnode refid="4668" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4657">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="4656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4653">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="4650" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4650" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4654" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4650">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="4651" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4651" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4654" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4666">
+        <label>long_Stype</label>
+        <link refid="class_s_d_c_1_1long___stype"/>
+        <childnode refid="4651" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4651" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4663" relation="usage">
+          <edgelabel>_val</edgelabel>
+        </childnode>
+        <childnode refid="4654" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4659">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="4660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4670">
+        <label>SDC.AnyListType</label>
+        <link refid="class_s_d_c_1_1_any_list_type"/>
+        <childnode refid="4650" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4663" relation="usage">
+          <edgelabel>_maxCount</edgelabel>
+          <edgelabel>_minCount</edgelabel>
+        </childnode>
+      </node>
+      <node id="4647">
+        <label>SDC.InputList_ReturnIntegerType</label>
+        <link refid="class_s_d_c_1_1_input_list___return_integer_type"/>
+        <childnode refid="4648" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4667" relation="usage">
+          <edgelabel>_inputList</edgelabel>
+        </childnode>
+      </node>
+      <node id="4669">
+        <label>ReturnListBaseType</label>
+        <link refid="class_s_d_c_1_1_return_list_base_type"/>
+        <childnode refid="4650" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4664" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="4662">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4652" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4653" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="4661" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="4662" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="4663" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="4654" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" line="27" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputList_ReturnIntegerType.cs" bodystart="26" bodyend="275"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1ad101ec5e66df6879f6c1b21ba9201b98" prot="private" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>_inputList</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a81264a5f695436f77432fc8e206a3a96" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1a65cfb939368016f2a069d391ffcf55e3" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1a42a69105d96b2ea75f01be2cd70f4643" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1ae7e458af19956acc57197049751772f9" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1a3cc3681b49e7be80baba147d2fdb999b" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_integer_type_1a84617cbc1b0b17341f58a4cc2c9e0900" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnIntegerType."><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_integer_type_1af4630d3796763e6add5450176c07f239" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnIntegerType."><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1acd2a23b52dcbcbd31ebd413821adb5d5" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ab3750255b283fc0144a10ff76180ea53" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a00767451a5fc7e3d07bdd954a6b0a8ee" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1a3f864587a188b0f265c90538f10ccad1" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>InputList</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1a6c2875cfa4b0c4bc818f34f70af1504e" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Item</name></member>
+      <member refid="class_s_d_c_1_1_return_integer_type_1a5850f271cc46b3bd03b8d4babaa70da8" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Item1</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1ace61751043d0ec2c686a9373e367872b" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1a7089b81adecbbba1132e79e7a45ae356" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1abc4bc42d8440a21da6d142272ce09853" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1ac7ef8ad584a310980a885b9241a28a8a" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1a3947d3dd27b9d845c3dc3f4786da251c" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_integer_type_1a08db2459b71e34f6c43f831d789a9040" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnIntegerType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_integer_type_1aa3b6a7fa0ed0e4f7c44011fb5f5ec2e7" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnIntegerType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_integer_type_1aca120ab008c46ad9ec42ad29d588c7d4" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnIntegerType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae65d856375cc25a45498c3def0a600c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1aab3070073c4d1e10c51ca42ade495371" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1aff817c6fac01be7c19e7180e46b7da67" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1a7c4d5c78fe10e9d5881fca2ef9282241" prot="protected" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ReturnBaseType</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae27b5ac45b833727fbf0360af8f2f192" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ReturnBaseType</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1abfaa9f811807a6c9d2df1730c895b47d" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1aa39ed8632059ffb2f6bb6079dd8da3b3" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1a43245d029ac34957cfb6b806636a77a9" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1ac80799e252a2d1c670efad50db76f425" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputList_ReturnIntegerType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1a55b5fb49fefaebab0053269539cc1c05" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1a202de630c39539f9cd415cf5b786eacf" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1a79b76ce0715b12e9017e0d618f6b14d6" prot="private" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1a9de73854fe598411fad20be1312864f2" prot="private" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_input_list___return_integer_type_1acf85d390dcd20b0bb118d19c1da0c81a" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializeInputList</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae1058587922d33ff78d3fa2a2eb84c20" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializeItem</name></member>
+      <member refid="class_s_d_c_1_1_return_integer_type_1a253852f19f0e050f58f57d45e0e703d6" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializeItem1</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::InputList_ReturnIntegerType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

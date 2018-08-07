@@ -1,0 +1,1496 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_if_type" kind="class" prot="public">
+    <compoundname>SDC::IfType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_predicate_type" prot="public" virt="non-virtual">SDC.PredicateType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_watched_property_type" prot="public" virt="non-virtual">SDC.WatchedPropertyType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_watched_property_type" prot="public" virt="non-virtual">SDC.WatchedPropertyType</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_if_type_1aeabb103ca0aa32dc68de93d3067900f0" prot="package" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_predicate_type" kindref="compound">PredicateType</ref></type>
+        <definition>PredicateType SDC.IfType.Predicate_Item</definition>
+        <argsstring></argsstring>
+        <name>Predicate_Item</name>
+        <briefdescription>
+<para>Predicate (<ref refid="class_s_d_c_1_1_predicate_type" kindref="compound">PredicateType</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="421" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_if_type_1ab51a28df8c225fea46ff5e1707cd202e" prot="package" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_exclusive_item_pairs_type" kindref="compound">ExclusiveItemPairsType</ref></type>
+        <definition>ExclusiveItemPairsType SDC.IfType.ExclusiveSelectedItems_Item</definition>
+        <argsstring></argsstring>
+        <name>ExclusiveSelectedItems_Item</name>
+        <briefdescription>
+<para>ExclusiveSelectedItems (<ref refid="class_s_d_c_1_1_exclusive_item_pairs_type" kindref="compound">ExclusiveItemPairsType</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="430" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_if_type_1a970ee8770c3b71d666f980af08dd835d" prot="package" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_get_property_values_type" kindref="compound">GetPropertyValuesType</ref></type>
+        <definition>GetPropertyValuesType SDC.IfType.PropertyValues_Item</definition>
+        <argsstring></argsstring>
+        <name>PropertyValues_Item</name>
+        <briefdescription>
+<para>PropertyValues (<ref refid="class_s_d_c_1_1_get_property_values_type" kindref="compound">GetPropertyValuesType</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="439" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_if_type_1a40a4bbf639150b11361dbb665f2c5238" prot="package" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_if_bool_compare_type" kindref="compound">IfBoolCompareType</ref> &gt;</type>
+        <definition>List&lt;IfBoolCompareType&gt; SDC.IfType.BoolCompare_ItemList</definition>
+        <argsstring></argsstring>
+        <name>BoolCompare_ItemList</name>
+        <briefdescription>
+<para>Replaces Items: BoolCompare (If blocks) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="448" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_if_type_1a91c630b24a91d2e575bd6aadc3b20006" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.IfType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_if_type_1a65d61e6207b35aa5a6d049f9bc00e050" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="136" endline="139">SDC.IfType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_if_type_1a0b04b20d9540718f78319651a06f39da" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_extension_base_type" kindref="compound">ExtensionBaseType</ref></type>
+        <definition>virtual ExtensionBaseType SDC.IfType.Item</definition>
+        <argsstring></argsstring>
+        <name>Item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="51" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_if_type_1a84542f81f07550b355ea01eff4520d90" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_if_bool_compare_type" kindref="compound">IfBoolCompareType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;IfBoolCompareType&gt; SDC.IfType.Items</definition>
+        <argsstring></argsstring>
+        <name>Items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="74" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_if_type_1a769a95934978728661c03dabdc43db1f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.IfType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="108" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_if_type_1a80c180f0b2f30f4e18114fef172f6687" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.IfType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="35" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_if_type_1af3bb0ab07a42964fdd8acdb985e69ccf" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_extension_base_type" kindref="compound">ExtensionBaseType</ref></type>
+        <definition>ExtensionBaseType SDC.IfType._item</definition>
+        <argsstring></argsstring>
+        <name>_item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_if_type_1a3753061ad217ca1362ce836904d9ea1a" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_if_type_8cs" startline="123" endline="126">SDC.IfType.ShouldSerializeItem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_if_type_1a43e3c072a8cc7bd888a95a0df5a2af3b" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_if_bool_compare_type" kindref="compound">IfBoolCompareType</ref> &gt;</type>
+        <definition>BindingList&lt;IfBoolCompareType&gt; SDC.IfType._items</definition>
+        <argsstring></argsstring>
+        <name>_items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="41" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_if_type_1afebe682f54a1a4ad04f3114972d24441" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.IfType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="45" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1adde53ebca328cdbff57bd6e414a1ecc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.IfType.IfType</definition>
+        <argsstring>(BaseType parentNode, bool fillData=true)</argsstring>
+        <name>IfType</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2055" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2055" bodyend="2055"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1ab0fdf1d55b5b8758ed8d7433ebf21f19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.IfType.IfType</definition>
+        <argsstring>()</argsstring>
+        <name>IfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="415" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="415" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a4c9c384fe3eb4f8d236ed54068ca97b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.IfType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a9ac9c6d560ffe2c300d7796951c22395">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1a2fd6d5ef9d69f1a3795d658b4d22e575">Serialize</reimplementedby>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="55" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="55" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1af107403fb8fca5395f52603ca5997d10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.IfType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1acea330e85a4a78938e8691fff8e65724">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1acea330e85a4a78938e8691fff8e65724">Serialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="85" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="85" bodyend="88"/>
+        <referencedby refid="class_s_d_c_1_1_if_type_1a33c6e500ca8aaa263f9d84ff41eb203b" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="173" endline="190">SDC.IfType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a82f6d10381cd62f4605942cff95d23d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.IfType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1ab1514379cd9bd547d5569548274fceb1">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1a5eb89177b8c95dce1e1b6eccef33961d">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="148" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="148" bodyend="161"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_if_type_1a2f1ef99fa2c3ed4d2f730543cd68cdea" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="163" endline="166">SDC.IfType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a2f1ef99fa2c3ed4d2f730543cd68cdea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.IfType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1af03b919560cd67ffe1373d8cef3bb9b8">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1af397a5e2a53bb9474500d2a3b5969922">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="163" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="163" bodyend="166"/>
+        <references refid="class_s_d_c_1_1_if_type_1a82f6d10381cd62f4605942cff95d23d1" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="148" endline="161">SDC.IfType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1ae94fa47c284e8553a3b3159067388d2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.IfType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1a204ff35aaccb5af925905dbb44145dc8">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1a204ff35aaccb5af925905dbb44145dc8">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="168" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="168" bodyend="171"/>
+        <references refid="class_s_d_c_1_1_if_type_1a82f6d10381cd62f4605942cff95d23d1" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="148" endline="161">SDC.IfType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a33c6e500ca8aaa263f9d84ff41eb203b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.IfType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5c619ed0e36571d6f4bd992faa3ad282">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1acf7f6cd55883a5f40107aad9c66c53f8">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="173" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="173" bodyend="190"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_if_type_1af107403fb8fca5395f52603ca5997d10" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="85" endline="88">SDC.IfType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a3753061ad217ca1362ce836904d9ea1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.IfType.ShouldSerializeItem</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeItem</name>
+        <reimplements refid="class_s_d_c_1_1_predicate_type_1a1a747e6a2956f41ad3152d8e5ae92eec">ShouldSerializeItem</reimplements>
+        <briefdescription>
+<para>Test whether Item should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="123" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="123" bodyend="126"/>
+        <references refid="class_s_d_c_1_1_if_type_1af3bb0ab07a42964fdd8acdb985e69ccf" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_if_type_8cs" startline="38">SDC.IfType._item</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1af107403fb8fca5395f52603ca5997d10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.IfType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1acea330e85a4a78938e8691fff8e65724">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1acea330e85a4a78938e8691fff8e65724">Serialize</reimplementedby>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="133" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="133" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a1fbcd9f4d54f578ba2ececf1f2b6d79c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.IfType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1a18b73652a6b3a625d363a966c41257e6">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="219" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="219" bodyend="232"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_if_type_1a82f6d10381cd62f4605942cff95d23d1" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="148" endline="161">SDC.IfType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1ae94fa47c284e8553a3b3159067388d2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.IfType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1a204ff35aaccb5af925905dbb44145dc8">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1a204ff35aaccb5af925905dbb44145dc8">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="234" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="234" bodyend="252"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_if_type_1af107403fb8fca5395f52603ca5997d10" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="85" endline="88">SDC.IfType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1ad7f8474fcc8b6415509b05ac89ca5149" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+        <definition>virtual IfType SDC.IfType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3">Clone</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_watched_property_type_1af647189efcdb1d15ecba04e604d0aae7">Clone</reimplementedby>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="313" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="313" bodyend="316"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1ab0fdf1d55b5b8758ed8d7433ebf21f19" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.IfType.IfType</definition>
+        <argsstring>()</argsstring>
+        <name>IfType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2056" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2056" bodyend="2056"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a65beed69427ee16241b302cccb377218" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IfType.Deserialize</definition>
+        <argsstring>(string input, out IfType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="97" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="97" bodyend="111"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_if_type_1aee74eb26ebb696b209bb954a458758b5" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="113" endline="117">SDC.IfType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_if_type_1ab10526b96a109632eb169bee4f44fdb3" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="231" endline="255">SDC.IfType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1aee74eb26ebb696b209bb954a458758b5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IfType.Deserialize</definition>
+        <argsstring>(string input, out IfType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="113" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="113" bodyend="117"/>
+        <references refid="class_s_d_c_1_1_if_type_1a65beed69427ee16241b302cccb377218" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="97" endline="111">SDC.IfType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1abce39699f3ba5fae6f684e0d69b38d51" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+        <definition>static new IfType SDC.IfType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="119" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="119" bodyend="134"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a65d61e6207b35aa5a6d049f9bc00e050" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+        <definition>static IfType SDC.IfType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="136" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="136" bodyend="139"/>
+        <references refid="class_s_d_c_1_1_if_type_1a91c630b24a91d2e575bd6aadc3b20006" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="39">SDC.IfType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a40374298469a3bfe95dee616184cb04c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IfType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out IfType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="199" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="199" bodyend="213"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_if_type_1aec64b1d4d6be3febba3475f243a246e3" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="215" endline="218">SDC.IfType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1aec64b1d4d6be3febba3475f243a246e3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IfType.LoadFromFile</definition>
+        <argsstring>(string fileName, out IfType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="215" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="215" bodyend="218"/>
+        <references refid="class_s_d_c_1_1_if_type_1a40374298469a3bfe95dee616184cb04c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="199" endline="213">SDC.IfType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a39594dac0f76d63da30dff3022f04e6e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IfType.LoadFromFile</definition>
+        <argsstring>(string fileName, out IfType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="220" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="220" bodyend="224"/>
+        <references refid="class_s_d_c_1_1_if_type_1a40374298469a3bfe95dee616184cb04c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="199" endline="213">SDC.IfType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a1025d6f4ffe2dbdd91a58f3d3a98e0fa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+        <definition>static IfType SDC.IfType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="226" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="226" bodyend="229"/>
+        <references refid="class_s_d_c_1_1_if_type_1a40374298469a3bfe95dee616184cb04c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="199" endline="213">SDC.IfType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1ab10526b96a109632eb169bee4f44fdb3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+        <definition>static new IfType SDC.IfType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" line="231" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/IfType.cs" bodystart="231" bodyend="255"/>
+        <references refid="class_s_d_c_1_1_if_type_1a65beed69427ee16241b302cccb377218" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="97" endline="111">SDC.IfType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1aa48c9ce977ac1c0619dcb3f205dde4b7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IfType.Deserialize</definition>
+        <argsstring>(string input, out IfType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="168" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="168" bodyend="182"/>
+        <references refid="class_s_d_c_1_1_if_type_1a65beed69427ee16241b302cccb377218" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="97" endline="111">SDC.IfType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1aee74eb26ebb696b209bb954a458758b5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IfType.Deserialize</definition>
+        <argsstring>(string input, out IfType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="184" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="184" bodyend="188"/>
+        <references refid="class_s_d_c_1_1_if_type_1a65beed69427ee16241b302cccb377218" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="97" endline="111">SDC.IfType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1abce39699f3ba5fae6f684e0d69b38d51" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+        <definition>static new IfType SDC.IfType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="190" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="190" bodyend="205"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_if_type_1a91c630b24a91d2e575bd6aadc3b20006" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="39">SDC.IfType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a779c7eb8c06147a9f3b9ef15e649e7f9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+        <definition>static IfType SDC.IfType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="207" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="207" bodyend="210"/>
+        <references refid="class_s_d_c_1_1_if_type_1a91c630b24a91d2e575bd6aadc3b20006" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="39">SDC.IfType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1ad2467ab49e3149f8c8209d25a8ea04a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IfType.LoadFromFile</definition>
+        <argsstring>(string fileName, out IfType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="261" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="261" bodyend="275"/>
+        <references refid="class_s_d_c_1_1_if_type_1a40374298469a3bfe95dee616184cb04c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="199" endline="213">SDC.IfType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1a39594dac0f76d63da30dff3022f04e6e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.IfType.LoadFromFile</definition>
+        <argsstring>(string fileName, out IfType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="277" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="277" bodyend="281"/>
+        <references refid="class_s_d_c_1_1_if_type_1a40374298469a3bfe95dee616184cb04c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="199" endline="213">SDC.IfType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_if_type_1adbe34dc716e6b1c03934177684ad4a27" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_if_type" kindref="compound">IfType</ref></type>
+        <definition>static new IfType SDC.IfType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" line="283" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/IfType.cs" bodystart="283" bodyend="307"/>
+        <references refid="class_s_d_c_1_1_if_type_1a65beed69427ee16241b302cccb377218" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_if_type_8cs" startline="97" endline="111">SDC.IfType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CHANGED - Major Improvements Expressions that return a Boolean value. Part of the IfThen type. If the &quot;If&quot; element is missing in an &quot;IfThen&quot; structure, its Boolean value defaults to &quot;true&quot;, meaning that the &quot;Then&quot; part of the &quot;IfThen&quot; structure is automatically executed. </para>    </briefdescription>
+    <detaileddescription>
+<para>Expressions that return a Boolean value. Part of the IfThen type. If the &quot;If&quot; element is missing in an &quot;IfThen&quot; structure, its Boolean value defaults to &quot;true&quot;, meaning that the &quot;Then&quot; part of the &quot;IfThen&quot; structure is automatically executed. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4446">
+        <label>PredicateType</label>
+        <link refid="class_s_d_c_1_1_predicate_type"/>
+        <childnode refid="4443" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4447" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4444">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4445">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="4447">
+        <label>ReturnBoolType</label>
+        <link refid="class_s_d_c_1_1_return_bool_type"/>
+        <childnode refid="4448" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4448">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="4443" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4449">
+        <label>SDC.WatchedPropertyType</label>
+        <link refid="class_s_d_c_1_1_watched_property_type"/>
+        <childnode refid="4442" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4442" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4442">
+        <label>SDC.IfType</label>
+        <link refid="class_s_d_c_1_1_if_type"/>
+        <childnode refid="4443" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4446" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4443">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="4444" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4444" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4465">
+        <label>PredicateType</label>
+        <link refid="class_s_d_c_1_1_predicate_type"/>
+        <childnode refid="4451" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4466" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4463" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="4464" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+        <childnode refid="4455" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="4471" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="4452">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4453" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4454" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="4462" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="4463" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="4464" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="4455" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4459">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="4457" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4453">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="4457">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="4456">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="4457" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4462">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="4468">
+        <label>SDC.ExceptionType</label>
+        <link refid="class_s_d_c_1_1_exception_type"/>
+        <childnode refid="4451" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4464" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="4466">
+        <label>ReturnBoolType</label>
+        <link refid="class_s_d_c_1_1_return_bool_type"/>
+        <childnode refid="4467" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4469" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="4467">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="4451" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4468" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="4461">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="4470">
+        <label>boolean_Stype</label>
+        <link refid="class_s_d_c_1_1boolean___stype"/>
+        <childnode refid="4452" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4452" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4464" relation="usage">
+          <edgelabel>_val</edgelabel>
+        </childnode>
+        <childnode refid="4455" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4455">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="4453" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4456" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4458" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4459" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4460" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="4450">
+        <label>SDC.IfType</label>
+        <link refid="class_s_d_c_1_1_if_type"/>
+        <childnode refid="4451" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4465" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4455" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="4471" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="4464">
+        <label>System</label>
+      </node>
+      <node id="4471">
+        <label>SDC.ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="4452" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4452" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4455" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4458">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="4457" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4454">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="4451" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4451" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4455" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4451">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="4452" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4452" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4455" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4460">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="4461" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4469">
+        <label>SDC.boolean_DEtype</label>
+        <link refid="class_s_d_c_1_1boolean___d_etype"/>
+        <childnode refid="4470" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4470" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4455" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4463">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4453" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4454" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="4462" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="4463" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="4464" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="4455" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2054" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2053" bodyend="2093"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_if_type_1af3bb0ab07a42964fdd8acdb985e69ccf" prot="private" virt="non-virtual"><scope>SDC::IfType</scope><name>_item</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a43e3c072a8cc7bd888a95a0df5a2af3b" prot="private" virt="non-virtual"><scope>SDC::IfType</scope><name>_items</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::IfType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a6f8701cf4acf8747c016e185e850ce94" prot="package" virt="non-virtual"><scope>SDC::IfType</scope><name>Between_Item</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a40a4bbf639150b11361dbb665f2c5238" prot="package" virt="non-virtual"><scope>SDC::IfType</scope><name>BoolCompare_ItemList</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a9b27e79f090eac1338d18fd09dedcf5e" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>boolOp</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a769a95934978728661c03dabdc43db1f" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1afebe682f54a1a4ad04f3114972d24441" prot="private" virt="non-virtual"><scope>SDC::IfType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1ad7f8474fcc8b6415509b05ac89ca5149" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a37d309d649255b5562400e36c231cbbe" prot="package" virt="non-virtual"><scope>SDC::IfType</scope><name>Compare_Item</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a65beed69427ee16241b302cccb377218" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1aee74eb26ebb696b209bb954a458758b5" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1abce39699f3ba5fae6f684e0d69b38d51" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a65d61e6207b35aa5a6d049f9bc00e050" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1aa48c9ce977ac1c0619dcb3f205dde4b7" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1aee74eb26ebb696b209bb954a458758b5" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1abce39699f3ba5fae6f684e0d69b38d51" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a779c7eb8c06147a9f3b9ef15e649e7f9" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType.SDC::BaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType.SDC::BaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType.SDC::BaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a5726a9ef6eb0cfbb8af53a5549e92375" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a336a57f767c14e2606951cff8e283330" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1ac1a8ac35a285e22761f6d03d50c967e2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a8c44202bc23e7eaee0a53ece9ec4acf9" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a97d6e10eb9d48cf07d6bd898efe1605e" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1acd2a23b52dcbcbd31ebd413821adb5d5" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ab3750255b283fc0144a10ff76180ea53" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IfType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1ab51a28df8c225fea46ff5e1707cd202e" prot="package" virt="non-virtual"><scope>SDC::IfType</scope><name>ExclusiveSelectedItems_Item</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::IfType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::IfType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::IfType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1adde53ebca328cdbff57bd6e414a1ecc7" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>IfType</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1ab0fdf1d55b5b8758ed8d7433ebf21f19" prot="protected" virt="non-virtual"><scope>SDC::IfType</scope><name>IfType</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1ab0fdf1d55b5b8758ed8d7433ebf21f19" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>IfType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1aedc9a0510bfd1dd20f8ee8533f0699ab" prot="package" virt="non-virtual"><scope>SDC::IfType</scope><name>InList_Item</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a0b04b20d9540718f78319651a06f39da" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Item</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1ac6fae5b7125637d7040a18f43af9ab97" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Item1</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a84542f81f07550b355ea01eff4520d90" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>Items</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a3e3120cd231c5db4e6a645fa185fa3fa" prot="package" virt="non-virtual"><scope>SDC::IfType</scope><name>LHS_Expression_Item</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a384339a39c8f942b00eeacc3e125d0e8" prot="package" virt="non-virtual"><scope>SDC::IfType</scope><name>LHS_Extension_Item</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a020bdb5e913da3d41c5db64c71c6a51c" prot="package" virt="non-virtual"><scope>SDC::IfType</scope><name>LHS_GetCode_Item</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a1b2feb03070e623ea183bdc48d5a1078" prot="package" virt="non-virtual"><scope>SDC::IfType</scope><name>LHS_GetResponse_Item</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a40374298469a3bfe95dee616184cb04c" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1aec64b1d4d6be3febba3475f243a246e3" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a39594dac0f76d63da30dff3022f04e6e" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a1025d6f4ffe2dbdd91a58f3d3a98e0fa" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1ab10526b96a109632eb169bee4f44fdb3" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1ad2467ab49e3149f8c8209d25a8ea04a7" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a39594dac0f76d63da30dff3022f04e6e" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1adbe34dc716e6b1c03934177684ad4a27" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType.SDC::BaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType.SDC::BaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType.SDC::BaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType.SDC::BaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a7c421cbede83468e0a1b01679a640b0b" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1ae252ffb70c6249c7d73187b6352c3644" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a73f7311d82abdf2bbf288a8ef3c5e712" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1ae2d96b012593b962f4963a214a73c115" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a9f94daaeb01b4a91130b671dd670050c" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1abd716659d3b9c14b40203c5f78afd0f4" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a0a521ece3b1ba41c3dea430b08fd86ef" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae65d856375cc25a45498c3def0a600c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1aab3070073c4d1e10c51ca42ade495371" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1aff817c6fac01be7c19e7180e46b7da67" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::IfType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a3630ade0ebe61bb4a4078a9f2fc6219e" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>not</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a5e936414f9b633139b32725297d8f663" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>notSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1aeabb103ca0aa32dc68de93d3067900f0" prot="package" virt="non-virtual"><scope>SDC::IfType</scope><name>Predicate_Item</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a36cee9d439372648560308cfc7d25ead" prot="protected" virt="non-virtual"><scope>SDC::IfType</scope><name>PredicateType</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a9bbf18a2bfce53435dc15a497bfd9b65" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>PredicateType</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a36cee9d439372648560308cfc7d25ead" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>PredicateType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a970ee8770c3b71d666f980af08dd835d" prot="package" virt="non-virtual"><scope>SDC::IfType</scope><name>PropertyValues_Item</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1a7c4d5c78fe10e9d5881fca2ef9282241" prot="protected" virt="non-virtual"><scope>SDC::IfType</scope><name>ReturnBaseType</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae27b5ac45b833727fbf0360af8f2f192" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>ReturnBaseType</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a6e028f6e391aaf355968737e933abd51" prot="public" virt="non-virtual"><scope>SDC::IfType</scope><name>ReturnBoolType</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a118ff4a6ed27895b466d42247ef6543f" prot="protected" virt="non-virtual"><scope>SDC::IfType</scope><name>ReturnBoolType</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a82f6d10381cd62f4605942cff95d23d1" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a2f1ef99fa2c3ed4d2f730543cd68cdea" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1ae94fa47c284e8553a3b3159067388d2f" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a33c6e500ca8aaa263f9d84ff41eb203b" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a1fbcd9f4d54f578ba2ececf1f2b6d79c" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1ae94fa47c284e8553a3b3159067388d2f" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a4c9c384fe3eb4f8d236ed54068ca97b0" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1af107403fb8fca5395f52603ca5997d10" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1af107403fb8fca5395f52603ca5997d10" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a91c630b24a91d2e575bd6aadc3b20006" prot="private" virt="non-virtual"><scope>SDC::IfType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a80c180f0b2f30f4e18114fef172f6687" prot="private" virt="non-virtual"><scope>SDC::IfType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_if_type_1a3753061ad217ca1362ce836904d9ea1a" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializeItem</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a70778c21608f2722b752c7c7c952fa4b" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializeItem1</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1add4781aa9e9217e3d2626201275a328f" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializeItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a00a033eed0f22b2f44f3a8c947885f0d" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializenot</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::IfType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::IfType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ReturnBoolType."><scope>SDC::IfType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

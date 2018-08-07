@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_s_d_c_1_1_i_displayed_type" kind="interface" prot="public">
+    <compoundname>SDC::IDisplayedType</compoundname>
+    <derivedcompoundref refid="class_s_d_c_1_1_displayed_type" prot="public" virt="non-virtual">SDC.DisplayedType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_displayed_type" prot="public" virt="non-virtual">SDC.DisplayedType</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_displayed_type_1acfde0ae06f33afb5981550c792fc4853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_property_type" kindref="compound">PropertyType</ref></type>
+        <definition>PropertyType SDC.IDisplayedType.AddProperty</definition>
+        <argsstring>(Boolean fillData=true)</argsstring>
+        <name>AddProperty</name>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1ad33a4a63a1cdefb1445801bcd55cb746">AddProperty</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs" line="6" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_displayed_type_1a86dd7c7d9a3a81a57126d393a05d04d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_link_type" kindref="compound">LinkType</ref></type>
+        <definition>LinkType SDC.IDisplayedType.AddLink</definition>
+        <argsstring>(Boolean fillData=true)</argsstring>
+        <name>AddLink</name>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1aaa673650f1576338905af4b7fae27337">AddLink</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs" line="7" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_displayed_type_1a64bfb715fa0f655e33d0ac001bc5bb3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_blob_type" kindref="compound">BlobType</ref></type>
+        <definition>BlobType SDC.IDisplayedType.AddBlob</definition>
+        <argsstring>(Boolean fillData=true)</argsstring>
+        <name>AddBlob</name>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1ab86db8a2a2a60f2136f97ac1fe25e997">AddBlob</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs" line="8" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_displayed_type_1a7b24857ed1e54a573b1dd862854c7314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_contact_type" kindref="compound">ContactType</ref></type>
+        <definition>ContactType SDC.IDisplayedType.AddContact</definition>
+        <argsstring>(Boolean fillData=true)</argsstring>
+        <name>AddContact</name>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1aff89a8ecf2fe7ccfdb71844d916e5b7e">AddContact</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_displayed_type_1a417be70c30e5c3c168143b07bc105d30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_coding_type" kindref="compound">CodingType</ref></type>
+        <definition>CodingType SDC.IDisplayedType.AddCoding</definition>
+        <argsstring>(Boolean fillData=true)</argsstring>
+        <name>AddCoding</name>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a3129a24c0749cd5f182bc68d926b1743">AddCoding</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_displayed_type_1a8fb9a021c59b93519535e682775bbac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_watched_property_type" kindref="compound">WatchedPropertyType</ref></type>
+        <definition>WatchedPropertyType SDC.IDisplayedType.AddActivateIf</definition>
+        <argsstring>(Boolean fillData=true)</argsstring>
+        <name>AddActivateIf</name>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1adba3ddaf21ffd25018f9ab7fbbce014d">AddActivateIf</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_displayed_type_1aaafe8eb68cca1d7753e936c862c9a022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_watched_property_type" kindref="compound">WatchedPropertyType</ref></type>
+        <definition>WatchedPropertyType SDC.IDisplayedType.AddDeActivateIf</definition>
+        <argsstring>(Boolean fillData=true)</argsstring>
+        <name>AddDeActivateIf</name>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a8ca75e5b7104df0a4ef5c178de1295ec">AddDeActivateIf</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_displayed_type_1a1d834c6fcb74b29e275207e88f54f111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_if_then_type" kindref="compound">IfThenType</ref></type>
+        <definition>IfThenType SDC.IDisplayedType.AddOnEnter</definition>
+        <argsstring>(Boolean fillData=true)</argsstring>
+        <name>AddOnEnter</name>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a5d5d768e1df630eadbdb55417ad49e23">AddOnEnter</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_displayed_type_1afce981117a2a615ea030063bd47ac840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_if_then_type" kindref="compound">IfThenType</ref></type>
+        <definition>IfThenType SDC.IDisplayedType.AddOnEvent</definition>
+        <argsstring>(Boolean fillData=true)</argsstring>
+        <name>AddOnEvent</name>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a8f1f256ae4f344aff4da3ab10d6063af">AddOnEvent</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_displayed_type_1a0760813f08bd3dd37378504e279dd893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+        <definition>OnEventType SDC.IDisplayedType.AddOnExit</definition>
+        <argsstring>(Boolean fillData=true)</argsstring>
+        <name>AddOnExit</name>
+        <reimplementedby refid="class_s_d_c_1_1_displayed_type_1a378ecc7aebd2f5b0b989b521b05387fa">AddOnExit</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs" line="15" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4376">
+        <label>SDC.RepeatingType</label>
+        <link refid="class_s_d_c_1_1_repeating_type"/>
+        <childnode refid="4372" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4371">
+        <label>SDC.IDisplayedType</label>
+        <link refid="interface_s_d_c_1_1_i_displayed_type"/>
+      </node>
+      <node id="4375">
+        <label>SDC.ListItemType</label>
+        <link refid="class_s_d_c_1_1_list_item_type"/>
+        <childnode refid="4374" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4374" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4378">
+        <label>SDC.QuestionItemType</label>
+        <link refid="class_s_d_c_1_1_question_item_type"/>
+        <childnode refid="4377" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4377">
+        <label>SDC.QuestionItemBaseType</label>
+        <link refid="class_s_d_c_1_1_question_item_base_type"/>
+        <childnode refid="4376" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4376" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4374">
+        <label>SDC.ListItemBaseType</label>
+        <link refid="class_s_d_c_1_1_list_item_base_type"/>
+        <childnode refid="4372" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4372">
+        <label>SDC.DisplayedType</label>
+        <link refid="class_s_d_c_1_1_displayed_type"/>
+        <childnode refid="4371" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4371" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4380">
+        <label>SDC.SectionItemType</label>
+        <link refid="class_s_d_c_1_1_section_item_type"/>
+        <childnode refid="4379" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4379" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4379">
+        <label>SDC.SectionBaseType</label>
+        <link refid="class_s_d_c_1_1_section_base_type"/>
+        <childnode refid="4376" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4376" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4373">
+        <label>SDC.ButtonItemType</label>
+        <link refid="class_s_d_c_1_1_button_item_type"/>
+        <childnode refid="4372" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4372" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs" line="5" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs" bodystart="4" bodyend="17"/>
+    <listofallmembers>
+      <member refid="interface_s_d_c_1_1_i_displayed_type_1a8fb9a021c59b93519535e682775bbac0" prot="public" virt="non-virtual"><scope>SDC::IDisplayedType</scope><name>AddActivateIf</name></member>
+      <member refid="interface_s_d_c_1_1_i_displayed_type_1a64bfb715fa0f655e33d0ac001bc5bb3d" prot="public" virt="non-virtual"><scope>SDC::IDisplayedType</scope><name>AddBlob</name></member>
+      <member refid="interface_s_d_c_1_1_i_displayed_type_1a417be70c30e5c3c168143b07bc105d30" prot="public" virt="non-virtual"><scope>SDC::IDisplayedType</scope><name>AddCoding</name></member>
+      <member refid="interface_s_d_c_1_1_i_displayed_type_1a7b24857ed1e54a573b1dd862854c7314" prot="public" virt="non-virtual"><scope>SDC::IDisplayedType</scope><name>AddContact</name></member>
+      <member refid="interface_s_d_c_1_1_i_displayed_type_1aaafe8eb68cca1d7753e936c862c9a022" prot="public" virt="non-virtual"><scope>SDC::IDisplayedType</scope><name>AddDeActivateIf</name></member>
+      <member refid="interface_s_d_c_1_1_i_displayed_type_1a86dd7c7d9a3a81a57126d393a05d04d6" prot="public" virt="non-virtual"><scope>SDC::IDisplayedType</scope><name>AddLink</name></member>
+      <member refid="interface_s_d_c_1_1_i_displayed_type_1a1d834c6fcb74b29e275207e88f54f111" prot="public" virt="non-virtual"><scope>SDC::IDisplayedType</scope><name>AddOnEnter</name></member>
+      <member refid="interface_s_d_c_1_1_i_displayed_type_1afce981117a2a615ea030063bd47ac840" prot="public" virt="non-virtual"><scope>SDC::IDisplayedType</scope><name>AddOnEvent</name></member>
+      <member refid="interface_s_d_c_1_1_i_displayed_type_1a0760813f08bd3dd37378504e279dd893" prot="public" virt="non-virtual"><scope>SDC::IDisplayedType</scope><name>AddOnExit</name></member>
+      <member refid="interface_s_d_c_1_1_i_displayed_type_1acfde0ae06f33afb5981550c792fc4853" prot="public" virt="non-virtual"><scope>SDC::IDisplayedType</scope><name>AddProperty</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

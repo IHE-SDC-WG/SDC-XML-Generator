@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_exception_type_exception_type_8cs" kind="file">
+    <compoundname>ExceptionTypeExceptionType.cs</compoundname>
+    <innernamespace refid="namespace_s_d_c">SDC</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>&lt;auto-generated&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Generated<sp/>by<sp/>Xsd2Code++.<sp/>Version<sp/>4.4.0.7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>&lt;/auto-generated&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning<sp/>disable</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">SDC</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Diagnostics;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml.Serialization;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml.Schema;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.ComponentModel;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.IO;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.ComponentModel.DataAnnotations;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">[System.CodeDom.Compiler.GeneratedCodeAttribute(</highlight><highlight class="stringliteral">&quot;System.Xml&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;4.7.2612.0&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">[System.SerializableAttribute()]</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>Namespace=</highlight><highlight class="stringliteral">&quot;urn:ihe:qrph:sdc:2016&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="24" refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98" kindref="member">ExceptionTypeExceptionType</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98ace2c8aed9c2fa0cfbed56cbda4d8bf07" kindref="member">Empty</ref>,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98a2aee0be2678ee90fd327cc186826438e" kindref="member">Missing</ref>,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98a065cd61b27199e7633b51e58b749a29d" kindref="member">EmptyOrMissing</ref>,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98a7ecfb3bf076a6a9635f975fe96ac97fd" kindref="member">NaN</ref>,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98a902b0d55fddef6f8d651fe1035b7d4bd" kindref="member">Error</ref>,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98abfbc18110053c3b737087a7d2d754869" kindref="member">EmptyMissingOrNaN</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98a5fe409c103096dc56d17b29b114313ae" kindref="member">IncompatibleDataType</ref>,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;Other<sp/>Exception&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98a89d9c926c684bc5ba337650a19c912df" kindref="member">OtherException</ref>,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98ad31ce95ce97fd6c0c3da20594ad5ef5c" kindref="member">ExceedsBounds</ref>,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98a129e8109f319870e328cc7a1d5b5cae3" kindref="member">Overflow</ref>,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98a07f6a565e17a0b5f7341422b6f9101cc" kindref="member">Underflow</ref>,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98a840f6cc54e8e3ffea2fd503523fe3cb2" kindref="member">BadPointerToFormItem</ref>,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98ab4ed91e35aefd387f879ede6b8f5e879" kindref="member">ExpectedList</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98a8f3fd39ff65bebd2b416e79260b1cde8" kindref="member">ExpectedAtomicDataType</ref>,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">#pragma<sp/>warning<sp/>restore</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ExceptionTypeExceptionType.cs"/>
+  </compounddef>
+</doxygen>

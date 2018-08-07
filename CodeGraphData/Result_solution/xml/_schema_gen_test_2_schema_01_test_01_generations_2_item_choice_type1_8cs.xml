@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_schema_gen_test_2_schema_01_test_01_generations_2_item_choice_type1_8cs" kind="file">
+    <compoundname>ItemChoiceType1.cs</compoundname>
+    <innernamespace refid="namespace_s_d_c">SDC</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>&lt;auto-generated&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Generated<sp/>by<sp/>Xsd2Code++.<sp/>Version<sp/>4.2.0.15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>&lt;/auto-generated&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning<sp/>disable</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">SDC</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Diagnostics;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml.Serialization;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml.Schema;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.ComponentModel;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Specialized;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Runtime.Serialization;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.ObjectModel;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Reflection;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.IO;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.ComponentModel.DataAnnotations;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">[System.CodeDom.Compiler.GeneratedCodeAttribute(</highlight><highlight class="stringliteral">&quot;System.Xml&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;4.6.1067.0&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">[Serializable]</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">[XmlTypeAttribute(Namespace=</highlight><highlight class="stringliteral">&quot;http://healthIT.gov/sdc&quot;</highlight><highlight class="normal">,<sp/>IncludeInSchema=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="27" refid="namespace_s_d_c_1afd5c1ae0633cc27b3a613906126ef59c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_s_d_c_1afd5c1ae0633cc27b3a613906126ef59c" kindref="member">ItemChoiceType1</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2a4c4ad5fca2e7a3f74dbb1ced00381aa4" kindref="member">HTML</ref>,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2a3501bb093d363810b671059b9cfed3f8" kindref="member">XML</ref>,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2a18471502c6ca284c8b81bcdfd249cce0" kindref="member">anyType</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2a503a504210050cda293d941a5a2fa496" kindref="member">anyURI</ref>,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2a0316a9e69de8a1dc71400c11981caf31" kindref="member">base64Binary</ref>,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2a84e2c64f38f78ba3ea5c905ab5a2da27" kindref="member">boolean</ref>,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>@<ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa40ea57d3ee3c07bf1c102b466e1c3091" kindref="member">byte</ref>,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2a5fc732311905cb27e82d67f4f6511f7f" kindref="member">date</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1af48799bdd5dda536a298f221696217a2adcf569ee792f42313127137ca01badc2" kindref="member">dateTime</ref>,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2a8c161c228d2bf7c0eaac90cc7b5981ff" kindref="member">dateTimeStamp</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>@<ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2abdaa3c20a3e3851599514f7c6be5f62f" kindref="member">decimal</ref>,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>@<ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ae8cd7da078a86726031ad64f35f5a6c0" kindref="member">double</ref>,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1af48799bdd5dda536a298f221696217a2ab85ec314bf443b797ef8a66b3b03f8a4" kindref="member">duration</ref>,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>@<ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2a546ade640b6edfbc8a086ef31347e768" kindref="member">float</ref>,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2a13ba896e67be93b7ec06aa6c6cfa7856" kindref="member">gDay</ref>,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2aed199d0c9c118e041f0ea35e56f91cfe" kindref="member">gMonth</ref>,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1af48799bdd5dda536a298f221696217a2a202d1ada0e36236a21b7da8dfbd29edf" kindref="member">gMonthDay</ref>,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1af48799bdd5dda536a298f221696217a2aff71268bc86777f4c0be82e9bcb4c1d0" kindref="member">gYear</ref>,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1af48799bdd5dda536a298f221696217a2a44bf74a4c2e6cc74e1a5362447c2642d" kindref="member">gYearMonth</ref>,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2a8915b87d0ccc4b16756d3cd87369b4a5" kindref="member">hexBinary</ref>,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>@<ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aafa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref>,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa157db7df530023575515d366c9b672e8" kindref="member">integer</ref>,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>@<ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa0f5264038205edfb1ac05fbb0e8c5e94" kindref="member">long</ref>,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa283202c263e6a7e105aa862009f6a13a" kindref="member">negativeInteger</ref>,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aad88e9130d5047f2378e7eb646b80845d" kindref="member">nonNegativeInteger</ref>,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aac740afe71e736576a3cbbe9b1f5edc48" kindref="member">nonPositiveInteger</ref>,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa04914914b9fc923660cc0eaa2436bd41" kindref="member">positiveInteger</ref>,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>@<ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa4f09daa9d95bcb166a302407a0e0babe" kindref="member">short</ref>,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>@<ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref>,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1af48799bdd5dda536a298f221696217a2a07cc694b9b3fc636710fa08b6922c42b" kindref="member">time</ref>,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa72f907dda8e769b90a97dc7cfc8a3bf3" kindref="member">unsignedByte</ref>,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa227f975f69d7fc46d7373613cbe3a50e" kindref="member">unsignedInt</ref>,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa409a5b4db9860682660622f64788eb45" kindref="member">unsignedLong</ref>,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1af48799bdd5dda536a298f221696217a2a416cb3e434d5aa620d5ad8084fcf5766" kindref="member">unsignedShort</ref>,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1af48799bdd5dda536a298f221696217a2a5818d94c063bc15b21714252dca24e03" kindref="member">yearMonthDuration</ref>,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning<sp/>restore</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ItemChoiceType1.cs"/>
+  </compounddef>
+</doxygen>

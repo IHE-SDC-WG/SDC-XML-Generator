@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_build_s_d_c_tree" kind="class" prot="public">
+    <compoundname>BuildSDCTree</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_build_s_d_c_tree_1a49f574c3dfa012c2e423e4b540b1fd78" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets" kindref="compound">FormDesignDataSets</ref></type>
+        <definition>FormDesignDataSets BuildSDCTree.fdd</definition>
+        <argsstring></argsstring>
+        <name>fdd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.NUnit.SchemaTests/FormDesignTests.cs" line="76" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.NUnit.SchemaTests/FormDesignTests.cs" bodystart="76" bodyend="-1"/>
+        <referencedby refid="class_build_s_d_c_tree_1a962247a321d4d159ab8278c4cefd25f4" compoundref="_form_design_tests_8cs" startline="83" endline="102">SerializationTest</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_build_s_d_c_tree_1a063acdcd02ddb0fb918435ec8e82f589" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BuildSDCTree.SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.NUnit.SchemaTests/FormDesignTests.cs" line="78" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.NUnit.SchemaTests/FormDesignTests.cs" bodystart="78" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_build_s_d_c_tree_1a962247a321d4d159ab8278c4cefd25f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BuildSDCTree.SerializationTest</definition>
+        <argsstring>()</argsstring>
+        <name>SerializationTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.NUnit.SchemaTests/FormDesignTests.cs" line="83" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.NUnit.SchemaTests/FormDesignTests.cs" bodystart="83" bodyend="102"/>
+        <references refid="class_build_s_d_c_tree_1a49f574c3dfa012c2e423e4b540b1fd78" compoundref="_form_design_tests_8cs" startline="76">fdd</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1418">
+        <label>SDC.DAL.DataSets.FormDesignDataSets</label>
+        <link refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets"/>
+        <childnode refid="1419" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1419" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1419">
+        <label>IFormDesignDataSets</label>
+        <link refid="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets"/>
+      </node>
+      <node id="1417">
+        <label>BuildSDCTree</label>
+        <link refid="class_build_s_d_c_tree"/>
+        <childnode refid="1418" relation="usage">
+          <edgelabel>fdd</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.NUnit.SchemaTests/FormDesignTests.cs" line="75" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.NUnit.SchemaTests/FormDesignTests.cs" bodystart="74" bodyend="103"/>
+    <listofallmembers>
+      <member refid="class_build_s_d_c_tree_1a49f574c3dfa012c2e423e4b540b1fd78" prot="protected" virt="non-virtual"><scope>BuildSDCTree</scope><name>fdd</name></member>
+      <member refid="class_build_s_d_c_tree_1a962247a321d4d159ab8278c4cefd25f4" prot="public" virt="non-virtual"><scope>BuildSDCTree</scope><name>SerializationTest</name></member>
+      <member refid="class_build_s_d_c_tree_1a063acdcd02ddb0fb918435ec8e82f589" prot="public" virt="non-virtual"><scope>BuildSDCTree</scope><name>SetUp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

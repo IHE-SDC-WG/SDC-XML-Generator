@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets" kind="interface" prot="public">
+    <compoundname>SDC::DAL::DataSets::IFormDesignDataSets</compoundname>
+    <derivedcompoundref refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets" prot="public" virt="non-virtual">SDC.DAL.DataSets.FormDesignDataSets</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets" prot="public" virt="non-virtual">SDC.DAL.DataSets.FormDesignDataSets</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets_1a0aec8758a61e44749e95589bcacdbe9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.IFormDesignDataSets.dtGetFormDesign</definition>
+        <argsstring>(decimal versionCkey)</argsstring>
+        <name>dtGetFormDesign</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2abdaa3c20a3e3851599514f7c6be5f62f" kindref="member">decimal</ref></type>
+          <declname>versionCkey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/IFormDesignDataSets.cs" line="8" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets_1a9747a8691777383e569795500cfc7bd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.IFormDesignDataSets.dtGetFormDesignMetadata</definition>
+        <argsstring>(decimal versionCkey)</argsstring>
+        <name>dtGetFormDesignMetadata</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2abdaa3c20a3e3851599514f7c6be5f62f" kindref="member">decimal</ref></type>
+          <declname>versionCkey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/IFormDesignDataSets.cs" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets_1af5f547fdefd5ffc79aa37726743ad0e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.IFormDesignDataSets.dtGetTemplateList</definition>
+        <argsstring>(decimal versionCkey)</argsstring>
+        <name>dtGetTemplateList</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2abdaa3c20a3e3851599514f7c6be5f62f" kindref="member">decimal</ref></type>
+          <declname>versionCkey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/IFormDesignDataSets.cs" line="10" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4409">
+        <label>SDC.DAL.DataSets.FormDesignDataSets</label>
+        <link refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets"/>
+        <childnode refid="4408" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4408" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4408">
+        <label>SDC.DAL.DataSets.IFormDesignDataSets</label>
+        <link refid="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/IFormDesignDataSets.cs" line="7" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/IFormDesignDataSets.cs" bodystart="6" bodyend="15"/>
+    <listofallmembers>
+      <member refid="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets_1a0aec8758a61e44749e95589bcacdbe9a" prot="public" virt="non-virtual"><scope>SDC::DAL::DataSets::IFormDesignDataSets</scope><name>dtGetFormDesign</name></member>
+      <member refid="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets_1a9747a8691777383e569795500cfc7bd5" prot="public" virt="non-virtual"><scope>SDC::DAL::DataSets::IFormDesignDataSets</scope><name>dtGetFormDesignMetadata</name></member>
+      <member refid="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets_1af5f547fdefd5ffc79aa37726743ad0e1" prot="public" virt="non-virtual"><scope>SDC::DAL::DataSets::IFormDesignDataSets</scope><name>dtGetTemplateList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

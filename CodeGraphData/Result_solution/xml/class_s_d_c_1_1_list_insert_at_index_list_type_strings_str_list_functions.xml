@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kind="class" prot="public">
+    <compoundname>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a7424a70b4250c49d328ed12c91e6d61f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_return_str_list_type" kindref="compound">ReturnStrListType</ref></type>
+        <definition>ReturnStrListType SDC.ListInsertAtIndexListTypeStringsStrListFunctions._item</definition>
+        <argsstring></argsstring>
+        <name>_item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="31" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1acefc5ade51d73d71cfd775f8948853e8" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.ListInsertAtIndexListTypeStringsStrListFunctions.serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="33" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1aa17dd744b1744616595c0a8773b717a4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_return_str_list_type" kindref="compound">ReturnStrListType</ref></type>
+        <definition>virtual ReturnStrListType SDC.ListInsertAtIndexListTypeStringsStrListFunctions.Item</definition>
+        <argsstring></argsstring>
+        <name>Item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="39" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a405ecc101cfcace0bc0b23fc2e47d478" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.ListInsertAtIndexListTypeStringsStrListFunctions.Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="51" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a99e3d1891c51f0227c46ed48aa4ad6d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListInsertAtIndexListTypeStringsStrListFunctions.ShouldSerializeItem</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeItem</name>
+        <briefdescription>
+<para>Test whether Item should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="66" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="66" bodyend="69"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a9949677dddb5eaa350a66f83597089d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ListInsertAtIndexListTypeStringsStrListFunctions.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="76" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="76" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a25e2a6df571069449223a80d232f2fac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ListInsertAtIndexListTypeStringsStrListFunctions.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="106" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a060d30aefd2d4677c8ca965703f254e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListInsertAtIndexListTypeStringsStrListFunctions.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="169" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="169" bodyend="182"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a7e938cb755828ae364414b6de683c8f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ListInsertAtIndexListTypeStringsStrListFunctions.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="184" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="184" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a238daaf79be50ed7e9ac7d000c730acf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ListInsertAtIndexListTypeStringsStrListFunctions.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="189" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1ab98b7d670bbb719ba74caa940780e69f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ListInsertAtIndexListTypeStringsStrListFunctions.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="194" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="194" bodyend="211"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a2e0fdaf5cff8b80ba2b0524264bb20f8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListInsertAtIndexListTypeStringsStrListFunctions.Deserialize</definition>
+        <argsstring>(string input, out ListInsertAtIndexListTypeStringsStrListFunctions obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="118" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="118" bodyend="132"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a55d3c6d5b5583228e431b94036f9c694" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListInsertAtIndexListTypeStringsStrListFunctions.Deserialize</definition>
+        <argsstring>(string input, out ListInsertAtIndexListTypeStringsStrListFunctions obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="134" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="134" bodyend="138"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a15f82f857f0201b61e1172b65382583b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref></type>
+        <definition>static ListInsertAtIndexListTypeStringsStrListFunctions SDC.ListInsertAtIndexListTypeStringsStrListFunctions.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="140" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="140" bodyend="155"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1ac299962a419cc547886fefcea615e766" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref></type>
+        <definition>static ListInsertAtIndexListTypeStringsStrListFunctions SDC.ListInsertAtIndexListTypeStringsStrListFunctions.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="157" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1ad6a99715287069ac75f734e4dc24a824" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListInsertAtIndexListTypeStringsStrListFunctions.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out ListInsertAtIndexListTypeStringsStrListFunctions obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="220" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="220" bodyend="234"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a798bd70951d948f478eea128b205f5f7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListInsertAtIndexListTypeStringsStrListFunctions.LoadFromFile</definition>
+        <argsstring>(string fileName, out ListInsertAtIndexListTypeStringsStrListFunctions obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="236" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="236" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a9a0300d9ca0cdc64bd04cecf12a80e90" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ListInsertAtIndexListTypeStringsStrListFunctions.LoadFromFile</definition>
+        <argsstring>(string fileName, out ListInsertAtIndexListTypeStringsStrListFunctions obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="241" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="241" bodyend="245"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a3aac9c44fc384c2a5e731a869d64098d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref></type>
+        <definition>static ListInsertAtIndexListTypeStringsStrListFunctions SDC.ListInsertAtIndexListTypeStringsStrListFunctions.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="247" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a5f4866530fb256f80e10bcfae63834e6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions" kindref="compound">ListInsertAtIndexListTypeStringsStrListFunctions</ref></type>
+        <definition>static ListInsertAtIndexListTypeStringsStrListFunctions SDC.ListInsertAtIndexListTypeStringsStrListFunctions.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="252" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="252" bodyend="276"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5866">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="5867" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5868" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="5876" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="5877" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="5878" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="5869" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5873">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="5871" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5862">
+        <label>SDC.ListInsertAtIndexListTypeStringsStrListFunctions</label>
+        <link refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions"/>
+        <childnode refid="5863" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="5867">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="5871">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="5870">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="5871" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5880">
+        <label>SDC.StrListType</label>
+        <link refid="class_s_d_c_1_1_str_list_type"/>
+        <childnode refid="5865" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5878" relation="usage">
+          <edgelabel>_maxCount</edgelabel>
+          <edgelabel>_dataTypeString</edgelabel>
+          <edgelabel>_minLength</edgelabel>
+          <edgelabel>_minCount</edgelabel>
+          <edgelabel>_maxLength</edgelabel>
+        </childnode>
+      </node>
+      <node id="5876">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="5879">
+        <label>SDC.ExceptionType</label>
+        <link refid="class_s_d_c_1_1_exception_type"/>
+        <childnode refid="5865" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5878" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="5875">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="5869">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="5867" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5870" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="5872" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="5873" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="5874" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="5878">
+        <label>System</label>
+      </node>
+      <node id="5863">
+        <label>SDC.ReturnStrListType</label>
+        <link refid="class_s_d_c_1_1_return_str_list_type"/>
+        <childnode refid="5864" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5880" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="5872">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="5871" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5868">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="5865" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5865" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5869" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5865">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="5866" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5866" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5869" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5874">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="5875" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5864">
+        <label>ReturnListBaseType</label>
+        <link refid="class_s_d_c_1_1_return_list_base_type"/>
+        <childnode refid="5865" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5879" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="5877">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="5867" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5868" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="5876" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="5877" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="5878" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="5869" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" line="27" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ListInsertAtIndexListTypeStringsStrListFunctions.cs" bodystart="26" bodyend="277"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a7424a70b4250c49d328ed12c91e6d61f" prot="private" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>_item</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a2e0fdaf5cff8b80ba2b0524264bb20f8" prot="public" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a55d3c6d5b5583228e431b94036f9c694" prot="public" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a15f82f857f0201b61e1172b65382583b" prot="public" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1ac299962a419cc547886fefcea615e766" prot="public" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1aa17dd744b1744616595c0a8773b717a4" prot="public" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>Item</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1ad6a99715287069ac75f734e4dc24a824" prot="public" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a798bd70951d948f478eea128b205f5f7" prot="public" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a9a0300d9ca0cdc64bd04cecf12a80e90" prot="public" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a3aac9c44fc384c2a5e731a869d64098d" prot="public" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a5f4866530fb256f80e10bcfae63834e6" prot="public" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a060d30aefd2d4677c8ca965703f254e1" prot="public" virt="virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a7e938cb755828ae364414b6de683c8f3" prot="public" virt="virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a238daaf79be50ed7e9ac7d000c730acf" prot="public" virt="virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1ab98b7d670bbb719ba74caa940780e69f" prot="public" virt="virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a9949677dddb5eaa350a66f83597089d2" prot="public" virt="virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a25e2a6df571069449223a80d232f2fac" prot="public" virt="virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1acefc5ade51d73d71cfd775f8948853e8" prot="private" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a405ecc101cfcace0bc0b23fc2e47d478" prot="private" virt="non-virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_list_insert_at_index_list_type_strings_str_list_functions_1a99e3d1891c51f0227c46ed48aa4ad6d1" prot="public" virt="virtual"><scope>SDC::ListInsertAtIndexListTypeStringsStrListFunctions</scope><name>ShouldSerializeItem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

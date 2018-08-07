@@ -1,0 +1,1121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_area_code_type" kind="class" prot="public">
+    <compoundname>SDC::AreaCodeType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_base_type" prot="public" virt="non-virtual">SDC.BaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_base_type" prot="public" virt="non-virtual">SDC.BaseType</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_area_code_type_1acd216bbafd04fa246e63193f6c8648df" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDC.AreaCodeType::_shouldSerializeval</definition>
+        <argsstring></argsstring>
+        <name>_shouldSerializeval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="30" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_area_code_type_1a0cf85a85e9c20f731e6d8640a8d03e0c" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_area_code_type_8cs" startline="118" endline="125">SDC.AreaCodeType.ShouldSerializeval</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_area_code_type_1a469fd7ca7141951f60257cc576322238" prot="private" static="no" mutable="no">
+        <type>System.Nullable&lt; ushort &gt;</type>
+        <definition>System Nullable&lt; ushort &gt; SDC.AreaCodeType::_val</definition>
+        <argsstring></argsstring>
+        <name>_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="33" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_area_code_type_1a0cf85a85e9c20f731e6d8640a8d03e0c" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_area_code_type_8cs" startline="118" endline="125">SDC.AreaCodeType.ShouldSerializeval</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_area_code_type_1af254e050566fc917ac8ec531a1922b9a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.AreaCodeType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_area_code_type_1a41cab093427406b10f2be31069d463e4" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.AreaCodeType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="35" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_area_code_type_1a0a21de101fba930c480410038e89cf7d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>ushort</type>
+        <definition>ushort SDC.AreaCodeType::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="39" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_area_code_type_1ad0f291482cf27462e109983148d85858" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SDC.AreaCodeType::valSpecified</definition>
+        <argsstring></argsstring>
+        <name>valSpecified</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="60" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_area_code_type_1ac372a2f755788300504271da7f963f84" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.AreaCodeType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="75" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="76" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_area_code_type_1a2460c6fe81839f30d93339ca19076071" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_area_code_type_8cs" startline="189" endline="204">SDC.AreaCodeType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_area_code_type_1a31616ca6e2312c12a65e121632e4a3ec" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.AreaCodeType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="103" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a36e757d21578b96d10035ad6253d0584" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.AreaCodeType.AreaCodeType</definition>
+        <argsstring>()</argsstring>
+        <name>AreaCodeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2503" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2503" bodyend="2503"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a1048ba7a9c9e9acd19aad7eb97349696" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.AreaCodeType.AreaCodeType</definition>
+        <argsstring>(BaseType parentNode)</argsstring>
+        <name>AreaCodeType</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2504" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2504" bodyend="2504"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a0cf85a85e9c20f731e6d8640a8d03e0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.AreaCodeType.ShouldSerializeval</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeval</name>
+        <briefdescription>
+<para>Test whether val should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="90" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="90" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1ac871035d7ac0c6fa9d1a0fb6943c4d07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.AreaCodeType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1afde3077d8077d664ce856b276e024e29">Serialize</reimplements>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="104" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="104" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1af4fa6c2d752434cb494b10c75d3025c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.AreaCodeType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a3400ee9db358cbcae3cc79dc197da12d">Serialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="134" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="134" bodyend="137"/>
+        <referencedby refid="class_s_d_c_1_1_area_code_type_1aa91c52ecbc04300b767f37ce83429a07" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_area_code_type_8cs" startline="233" endline="251">SDC.AreaCodeType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a1baae4683ba8ecc4dcc1736eeb1b0d72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.AreaCodeType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a8b46ba76827429d75d24ce3789a4fff6">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="197" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="197" bodyend="210"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_area_code_type_1a61bcd2ae4c6b3de47cb0bd4a5de3baac" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_area_code_type_8cs" startline="218" endline="231">SDC.AreaCodeType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1ad023dc44eaf97b511140c96809b9e853" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.AreaCodeType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a64d428388608b02f234edc5c4dfd34fd">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="212" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1aa91c52ecbc04300b767f37ce83429a07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.AreaCodeType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a9bee814584762ae3959b96763a9b835f">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="217" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a765cd93887e8b4a2118577ad05049141" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.AreaCodeType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1af3e0b63e6bd50eaa6e371588209dda31">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="222" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="222" bodyend="239"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a0cf85a85e9c20f731e6d8640a8d03e0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.AreaCodeType.ShouldSerializeval</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeval</name>
+        <briefdescription>
+<para>Test whether val should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="118" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="118" bodyend="125"/>
+        <references refid="class_s_d_c_1_1_area_code_type_1acd216bbafd04fa246e63193f6c8648df" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_area_code_type_8cs" startline="30">SDC.AreaCodeType._shouldSerializeval</references>
+        <references refid="class_s_d_c_1_1_area_code_type_1a469fd7ca7141951f60257cc576322238" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_area_code_type_8cs" startline="33">SDC.AreaCodeType._val</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1af4fa6c2d752434cb494b10c75d3025c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.AreaCodeType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a3400ee9db358cbcae3cc79dc197da12d">Serialize</reimplements>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="132" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="132" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a61bcd2ae4c6b3de47cb0bd4a5de3baac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.AreaCodeType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a274de1f799bf72dd9b7967048cb08d7b">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="218" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="218" bodyend="231"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_area_code_type_1a1baae4683ba8ecc4dcc1736eeb1b0d72" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_area_code_type_8cs" startline="197" endline="210">SDC.AreaCodeType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1aa91c52ecbc04300b767f37ce83429a07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.AreaCodeType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a9bee814584762ae3959b96763a9b835f">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="233" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="233" bodyend="251"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_area_code_type_1af4fa6c2d752434cb494b10c75d3025c5" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_area_code_type_8cs" startline="134" endline="137">SDC.AreaCodeType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1af4500a660c940cec4fe56cf7895c353a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+        <definition>virtual AreaCodeType SDC.AreaCodeType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a5a537a522c921d03c9d4c55a79c000ab">Clone</reimplements>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="312" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="312" bodyend="315"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a64444c6f69848991c9c8a1a8ec4abffa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.AreaCodeType.Deserialize</definition>
+        <argsstring>(string input, out AreaCodeType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="146" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="146" bodyend="160"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_area_code_type_1add1dd57a72e9ba51fffd360019f91c9b" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_area_code_type_8cs" startline="167" endline="181">SDC.AreaCodeType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_area_code_type_1aadb44420bd3caa6f2af85281fc2a0c97" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_area_code_type_8cs" startline="282" endline="306">SDC.AreaCodeType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a20891e5650e93fd8a4362e25384e9acc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.AreaCodeType.Deserialize</definition>
+        <argsstring>(string input, out AreaCodeType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="162" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="162" bodyend="166"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a2460c6fe81839f30d93339ca19076071" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+        <definition>static new AreaCodeType SDC.AreaCodeType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="168" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="168" bodyend="183"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a2c680c7239881411b0e5b9e49ea92d65" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+        <definition>static AreaCodeType SDC.AreaCodeType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="185" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a467366f10aaebff5534b6e97f602b519" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.AreaCodeType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out AreaCodeType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="248" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="248" bodyend="262"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_area_code_type_1ace8579929e0f2bda412af17123b57653" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_area_code_type_8cs" startline="260" endline="274">SDC.AreaCodeType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1aef67962923426c3df24d9943bd2c92b8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.AreaCodeType.LoadFromFile</definition>
+        <argsstring>(string fileName, out AreaCodeType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="264" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="264" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a391ce80563293ac082d4f2759194bb5b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.AreaCodeType.LoadFromFile</definition>
+        <argsstring>(string fileName, out AreaCodeType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="269" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="269" bodyend="273"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a712f32656514e77b4d98f293ddd1d4f4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+        <definition>static AreaCodeType SDC.AreaCodeType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="275" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="275" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a19cfa5987ff570d4260461c44232a5d3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+        <definition>static new AreaCodeType SDC.AreaCodeType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" line="280" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/AreaCodeType.cs" bodystart="280" bodyend="304"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1add1dd57a72e9ba51fffd360019f91c9b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.AreaCodeType.Deserialize</definition>
+        <argsstring>(string input, out AreaCodeType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="167" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="167" bodyend="181"/>
+        <references refid="class_s_d_c_1_1_area_code_type_1a64444c6f69848991c9c8a1a8ec4abffa" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_area_code_type_8cs" startline="146" endline="160">SDC.AreaCodeType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a20891e5650e93fd8a4362e25384e9acc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.AreaCodeType.Deserialize</definition>
+        <argsstring>(string input, out AreaCodeType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="183" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="183" bodyend="187"/>
+        <references refid="class_s_d_c_1_1_area_code_type_1a64444c6f69848991c9c8a1a8ec4abffa" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_area_code_type_8cs" startline="146" endline="160">SDC.AreaCodeType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a2460c6fe81839f30d93339ca19076071" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+        <definition>static new AreaCodeType SDC.AreaCodeType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="189" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="189" bodyend="204"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_area_code_type_1ac372a2f755788300504271da7f963f84" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_area_code_type_8cs" startline="76">SDC.AreaCodeType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a4169ce7ac560796292b980acd1c70608" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+        <definition>static AreaCodeType SDC.AreaCodeType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="206" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="206" bodyend="209"/>
+        <references refid="class_s_d_c_1_1_area_code_type_1ac372a2f755788300504271da7f963f84" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_area_code_type_8cs" startline="76">SDC.AreaCodeType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1ace8579929e0f2bda412af17123b57653" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.AreaCodeType.LoadFromFile</definition>
+        <argsstring>(string fileName, out AreaCodeType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="260" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="260" bodyend="274"/>
+        <references refid="class_s_d_c_1_1_area_code_type_1a467366f10aaebff5534b6e97f602b519" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_area_code_type_8cs" startline="248" endline="262">SDC.AreaCodeType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1a391ce80563293ac082d4f2759194bb5b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.AreaCodeType.LoadFromFile</definition>
+        <argsstring>(string fileName, out AreaCodeType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="276" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="276" bodyend="280"/>
+        <references refid="class_s_d_c_1_1_area_code_type_1a467366f10aaebff5534b6e97f602b519" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_area_code_type_8cs" startline="248" endline="262">SDC.AreaCodeType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_area_code_type_1aadb44420bd3caa6f2af85281fc2a0c97" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_area_code_type" kindref="compound">AreaCodeType</ref></type>
+        <definition>static new AreaCodeType SDC.AreaCodeType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" line="282" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/AreaCodeType.cs" bodystart="282" bodyend="306"/>
+        <references refid="class_s_d_c_1_1_area_code_type_1a64444c6f69848991c9c8a1a8ec4abffa" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_area_code_type_8cs" startline="146" endline="160">SDC.AreaCodeType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="818">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="819" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="819">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="817">
+        <label>SDC.AreaCodeType</label>
+        <link refid="class_s_d_c_1_1_area_code_type"/>
+        <childnode refid="818" relation="public-inheritance">
+        </childnode>
+        <childnode refid="818" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="821">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="822" relation="public-inheritance">
+        </childnode>
+        <childnode refid="823" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="832" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="833" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="834" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="825" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="829">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="827" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="822">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="820">
+        <label>SDC.AreaCodeType</label>
+        <link refid="class_s_d_c_1_1_area_code_type"/>
+        <childnode refid="821" relation="public-inheritance">
+        </childnode>
+        <childnode refid="821" relation="public-inheritance">
+        </childnode>
+        <childnode refid="834" relation="usage">
+          <edgelabel>_val</edgelabel>
+        </childnode>
+        <childnode refid="825" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="827">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="826">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="827" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="832">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="831">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="825">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="822" relation="public-inheritance">
+        </childnode>
+        <childnode refid="826" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="828" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="829" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="830" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="834">
+        <label>System</label>
+      </node>
+      <node id="828">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="827" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="823">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="824" relation="public-inheritance">
+        </childnode>
+        <childnode refid="824" relation="public-inheritance">
+        </childnode>
+        <childnode refid="825" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="824">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="821" relation="public-inheritance">
+        </childnode>
+        <childnode refid="821" relation="public-inheritance">
+        </childnode>
+        <childnode refid="825" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="830">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="831" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="833">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="822" relation="public-inheritance">
+        </childnode>
+        <childnode refid="823" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="832" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="833" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="834" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="825" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2502" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2501" bodyend="2505"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_area_code_type_1acd216bbafd04fa246e63193f6c8648df" prot="private" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>_shouldSerializeval</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a469fd7ca7141951f60257cc576322238" prot="private" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>_val</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a36e757d21578b96d10035ad6253d0584" prot="protected" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>AreaCodeType</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a1048ba7a9c9e9acd19aad7eb97349696" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>AreaCodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a31616ca6e2312c12a65e121632e4a3ec" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1af254e050566fc917ac8ec531a1922b9a" prot="private" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1af4500a660c940cec4fe56cf7895c353a" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a64444c6f69848991c9c8a1a8ec4abffa" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a20891e5650e93fd8a4362e25384e9acc" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a2460c6fe81839f30d93339ca19076071" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a2c680c7239881411b0e5b9e49ea92d65" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1add1dd57a72e9ba51fffd360019f91c9b" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a20891e5650e93fd8a4362e25384e9acc" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a2460c6fe81839f30d93339ca19076071" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a4169ce7ac560796292b980acd1c70608" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::AreaCodeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::AreaCodeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::AreaCodeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a467366f10aaebff5534b6e97f602b519" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1aef67962923426c3df24d9943bd2c92b8" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a391ce80563293ac082d4f2759194bb5b" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a712f32656514e77b4d98f293ddd1d4f4" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a19cfa5987ff570d4260461c44232a5d3" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1ace8579929e0f2bda412af17123b57653" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a391ce80563293ac082d4f2759194bb5b" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1aadb44420bd3caa6f2af85281fc2a0c97" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::AreaCodeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::AreaCodeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::AreaCodeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::AreaCodeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a1baae4683ba8ecc4dcc1736eeb1b0d72" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1ad023dc44eaf97b511140c96809b9e853" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1aa91c52ecbc04300b767f37ce83429a07" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a765cd93887e8b4a2118577ad05049141" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a61bcd2ae4c6b3de47cb0bd4a5de3baac" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1aa91c52ecbc04300b767f37ce83429a07" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1ac871035d7ac0c6fa9d1a0fb6943c4d07" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1af4fa6c2d752434cb494b10c75d3025c5" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1af4fa6c2d752434cb494b10c75d3025c5" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1ac372a2f755788300504271da7f963f84" prot="private" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a41cab093427406b10f2be31069d463e4" prot="private" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a0cf85a85e9c20f731e6d8640a8d03e0c" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>ShouldSerializeval</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a0cf85a85e9c20f731e6d8640a8d03e0c" prot="public" virt="virtual"><scope>SDC::AreaCodeType</scope><name>ShouldSerializeval</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1a0a21de101fba930c480410038e89cf7d" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>val</name></member>
+      <member refid="class_s_d_c_1_1_area_code_type_1ad0f291482cf27462e109983148d85858" prot="public" virt="non-virtual"><scope>SDC::AreaCodeType</scope><name>valSpecified</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

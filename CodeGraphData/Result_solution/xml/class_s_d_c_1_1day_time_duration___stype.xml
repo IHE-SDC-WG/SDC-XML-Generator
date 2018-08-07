@@ -1,0 +1,1166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1day_time_duration___stype" kind="class" prot="public">
+    <compoundname>SDC::dayTimeDuration_Stype</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_base_type" prot="public" virt="non-virtual">SDC.BaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_base_type" prot="public" virt="non-virtual">SDC.BaseType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1day_time_duration___d_etype" prot="public" virt="non-virtual">SDC.dayTimeDuration_DEtype</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1day_time_duration___d_etype" prot="public" virt="non-virtual">SDC.dayTimeDuration_DEtype</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1day_time_duration___stype_1a79d3683db9301861b08b5dac102603fa" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.dayTimeDuration_Stype::_val</definition>
+        <argsstring></argsstring>
+        <name>_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="31" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1day_time_duration___stype_1af07cb1eff242873c35ff5bf7ccb76351" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1acbe496935750dc699d260afd0c9fe0ca" kindref="member">dtQuantEnum</ref></type>
+        <definition>dtQuantEnum SDC.dayTimeDuration_Stype::_quantEnum</definition>
+        <argsstring></argsstring>
+        <name>_quantEnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="34" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1day_time_duration___stype_1a8a3b5527f578087b7a9bc8dced41acaa" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2day_time_duration___stype_8cs" startline="47" endline="50">SDC.dayTimeDuration_Stype.dayTimeDuration_Stype</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1day_time_duration___stype_1abc3a7ad7d473c13de7c73a002e1894bd" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.dayTimeDuration_Stype.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="42" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1day_time_duration___stype_1abf88a2196bcb9e02972c0291b698365b" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.dayTimeDuration_Stype::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="36" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1day_time_duration___stype_1a0019d8e3557564bf6ab7fcf28ccee344" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.dayTimeDuration_Stype::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="47" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1day_time_duration___stype_1ad7a026c3a8c1bd6f015abe8d932ef13d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="88" endline="91">SDC.dayTimeDuration_Stype.ShouldSerializeval</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1day_time_duration___stype_1a92f27cbc60c432d463ddf3c62ff407f4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1acbe496935750dc699d260afd0c9fe0ca" kindref="member">dtQuantEnum</ref></type>
+        <definition>dtQuantEnum SDC.dayTimeDuration_Stype::quantEnum</definition>
+        <argsstring></argsstring>
+        <name>quantEnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="61" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1day_time_duration___stype_1a9750bc96549ee6b4a6118b48aac6d041" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.dayTimeDuration_Stype::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="73" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1day_time_duration___stype_1a10675bfee7b65a1dd0e89b43af2b412b" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="178" endline="181">SDC.dayTimeDuration_Stype.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1day_time_duration___stype_1a1ec573b8f47deffac3f1c2021236b69c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.dayTimeDuration_Stype.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="107" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a8a3b5527f578087b7a9bc8dced41acaa" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.dayTimeDuration_Stype.dayTimeDuration_Stype</definition>
+        <argsstring>()</argsstring>
+        <name>dayTimeDuration_Stype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1514" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1514" bodyend="1514"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a589fcb0f88727be11818e0ab076fd08e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.dayTimeDuration_Stype.dayTimeDuration_Stype</definition>
+        <argsstring>(BaseType parentNode)</argsstring>
+        <name>dayTimeDuration_Stype</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1515" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1515" bodyend="1519"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1ad7a026c3a8c1bd6f015abe8d932ef13d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.dayTimeDuration_Stype.ShouldSerializeval</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeval</name>
+        <briefdescription>
+<para>Test whether val should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="88" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="88" bodyend="91"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a0019d8e3557564bf6ab7fcf28ccee344" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="48">SDC.dayTimeDuration_Stype.val</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1af978352cd767f9c1806bb07e7cc87255" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.dayTimeDuration_Stype.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1afde3077d8077d664ce856b276e024e29">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1a0aa99aabf126957128e902619f506e33">Serialize</reimplementedby>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="98" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="98" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1ab81690168f912a5a2b1838bb06645ad5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.dayTimeDuration_Stype.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a3400ee9db358cbcae3cc79dc197da12d">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1a21d6977bc480cf35fc8941733a8f7c2c">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1a21d6977bc480cf35fc8941733a8f7c2c">Serialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="127" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="127" bodyend="130"/>
+        <referencedby refid="class_s_d_c_1_1day_time_duration___stype_1a52935ba4dbb9e2edfe3e1f2ffa29d94b" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="215" endline="232">SDC.dayTimeDuration_Stype.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1aaceb1f4b077cfef4dbf8250af87eb353" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.dayTimeDuration_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a8b46ba76827429d75d24ce3789a4fff6">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1ac5c17af77304bd087764c94aceb888af">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="190" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="190" bodyend="203"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1day_time_duration___stype_1a90c0f3542c40cdebb2f62e6be57a4c45" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="205" endline="208">SDC.dayTimeDuration_Stype.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a90c0f3542c40cdebb2f62e6be57a4c45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.dayTimeDuration_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a64d428388608b02f234edc5c4dfd34fd">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1a3a7f3e099ed51f5312f1ab57f1216669">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="205" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="205" bodyend="208"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1aaceb1f4b077cfef4dbf8250af87eb353" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="190" endline="203">SDC.dayTimeDuration_Stype.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1ab4fb7b9b565609098a9dc6cf8bbbbd2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.dayTimeDuration_Stype.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a9bee814584762ae3959b96763a9b835f">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1a41503614e1b567f46b1c39de24cbbbde">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1a41503614e1b567f46b1c39de24cbbbde">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="210" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="210" bodyend="213"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1aaceb1f4b077cfef4dbf8250af87eb353" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="190" endline="203">SDC.dayTimeDuration_Stype.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a52935ba4dbb9e2edfe3e1f2ffa29d94b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.dayTimeDuration_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1af3e0b63e6bd50eaa6e371588209dda31">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1aeb2a038d556948808d8e6b23ef283215">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="215" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="215" bodyend="232"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1ab81690168f912a5a2b1838bb06645ad5" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="127" endline="130">SDC.dayTimeDuration_Stype.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a8a3b5527f578087b7a9bc8dced41acaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.dayTimeDuration_Stype.dayTimeDuration_Stype</definition>
+        <argsstring>()</argsstring>
+        <name>dayTimeDuration_Stype</name>
+        <briefdescription>
+<para><ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> class constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="47" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="47" bodyend="50"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1af07cb1eff242873c35ff5bf7ccb76351" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="34">SDC.dayTimeDuration_Stype._quantEnum</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1ad7a026c3a8c1bd6f015abe8d932ef13d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.dayTimeDuration_Stype.ShouldSerializeval</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeval</name>
+        <briefdescription>
+<para>Test whether val should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="122" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="122" bodyend="125"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a0019d8e3557564bf6ab7fcf28ccee344" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="48">SDC.dayTimeDuration_Stype.val</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1ab81690168f912a5a2b1838bb06645ad5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.dayTimeDuration_Stype.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a3400ee9db358cbcae3cc79dc197da12d">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1a21d6977bc480cf35fc8941733a8f7c2c">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1a21d6977bc480cf35fc8941733a8f7c2c">Serialize</reimplementedby>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="132" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="132" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a7a5903a7796f6c44659b43d92f3ee1fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.dayTimeDuration_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a274de1f799bf72dd9b7967048cb08d7b">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1a6abc41ce24447e6552972dadfc866b72">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="218" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="218" bodyend="231"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1aaceb1f4b077cfef4dbf8250af87eb353" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="190" endline="203">SDC.dayTimeDuration_Stype.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1ab4fb7b9b565609098a9dc6cf8bbbbd2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.dayTimeDuration_Stype.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a9bee814584762ae3959b96763a9b835f">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1a41503614e1b567f46b1c39de24cbbbde">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1a41503614e1b567f46b1c39de24cbbbde">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="233" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="233" bodyend="251"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1ab81690168f912a5a2b1838bb06645ad5" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="127" endline="130">SDC.dayTimeDuration_Stype.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1aaf849aec8cbc609e8b536fee94f54412" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+        <definition>virtual dayTimeDuration_Stype SDC.dayTimeDuration_Stype.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a5a537a522c921d03c9d4c55a79c000ab">Clone</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1day_time_duration___d_etype_1a9b930f7797652ab4e2b366dcc4d8c583">Clone</reimplementedby>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="312" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="312" bodyend="315"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a75924a9694c5ea3a5dac7b6542193ed8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.dayTimeDuration_Stype.Deserialize</definition>
+        <argsstring>(string input, out dayTimeDuration_Stype obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="139" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="139" bodyend="153"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1day_time_duration___stype_1a6bd36d0d5b85084d424a9cca98a8b8c9" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="155" endline="159">SDC.dayTimeDuration_Stype.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1day_time_duration___stype_1aea5019f96d2ecb9ae8181cc9760e6b69" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="273" endline="297">SDC.dayTimeDuration_Stype.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a6bd36d0d5b85084d424a9cca98a8b8c9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.dayTimeDuration_Stype.Deserialize</definition>
+        <argsstring>(string input, out dayTimeDuration_Stype obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="155" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="155" bodyend="159"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a75924a9694c5ea3a5dac7b6542193ed8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="139" endline="153">SDC.dayTimeDuration_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1ae4d7a838161efc7f40860064559c8c0b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+        <definition>static new dayTimeDuration_Stype SDC.dayTimeDuration_Stype.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="161" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="161" bodyend="176"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a10675bfee7b65a1dd0e89b43af2b412b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+        <definition>static dayTimeDuration_Stype SDC.dayTimeDuration_Stype.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="178" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="178" bodyend="181"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a9750bc96549ee6b4a6118b48aac6d041" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="74">SDC.dayTimeDuration_Stype.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a6f3fb9cc045b37581d7301b71d0d40fe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.dayTimeDuration_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out dayTimeDuration_Stype obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="241" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="241" bodyend="255"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1day_time_duration___stype_1a682885482080b74e5617e34f9d225523" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="257" endline="260">SDC.dayTimeDuration_Stype.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a682885482080b74e5617e34f9d225523" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.dayTimeDuration_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out dayTimeDuration_Stype obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="257" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="257" bodyend="260"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a6f3fb9cc045b37581d7301b71d0d40fe" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="241" endline="255">SDC.dayTimeDuration_Stype.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1accce140a9a13103094de4197d3f66cf6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.dayTimeDuration_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out dayTimeDuration_Stype obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="262" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="262" bodyend="266"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a6f3fb9cc045b37581d7301b71d0d40fe" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="241" endline="255">SDC.dayTimeDuration_Stype.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1abcb5efa85276e22f7bdb1ec4012e61e2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+        <definition>static dayTimeDuration_Stype SDC.dayTimeDuration_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="268" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="268" bodyend="271"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a6f3fb9cc045b37581d7301b71d0d40fe" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="241" endline="255">SDC.dayTimeDuration_Stype.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1aea5019f96d2ecb9ae8181cc9760e6b69" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+        <definition>static new dayTimeDuration_Stype SDC.dayTimeDuration_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" line="273" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/dayTimeDuration_Stype.cs" bodystart="273" bodyend="297"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a75924a9694c5ea3a5dac7b6542193ed8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="139" endline="153">SDC.dayTimeDuration_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1ab95891b5bd00c205e8a97db942f9bf7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.dayTimeDuration_Stype.Deserialize</definition>
+        <argsstring>(string input, out dayTimeDuration_Stype obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="167" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="167" bodyend="181"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a75924a9694c5ea3a5dac7b6542193ed8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="139" endline="153">SDC.dayTimeDuration_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a6bd36d0d5b85084d424a9cca98a8b8c9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.dayTimeDuration_Stype.Deserialize</definition>
+        <argsstring>(string input, out dayTimeDuration_Stype obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="183" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="183" bodyend="187"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a75924a9694c5ea3a5dac7b6542193ed8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="139" endline="153">SDC.dayTimeDuration_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1ae4d7a838161efc7f40860064559c8c0b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+        <definition>static new dayTimeDuration_Stype SDC.dayTimeDuration_Stype.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="189" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="189" bodyend="204"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a9750bc96549ee6b4a6118b48aac6d041" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="74">SDC.dayTimeDuration_Stype.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1ab92a93e8ef4a8d21c4cfd7f2d001dc26" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+        <definition>static dayTimeDuration_Stype SDC.dayTimeDuration_Stype.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="206" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="206" bodyend="209"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a9750bc96549ee6b4a6118b48aac6d041" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="74">SDC.dayTimeDuration_Stype.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a1cf2d817faf403780e9d0cff06082570" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.dayTimeDuration_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out dayTimeDuration_Stype obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="260" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="260" bodyend="274"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a6f3fb9cc045b37581d7301b71d0d40fe" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="241" endline="255">SDC.dayTimeDuration_Stype.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1accce140a9a13103094de4197d3f66cf6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.dayTimeDuration_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out dayTimeDuration_Stype obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="276" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="276" bodyend="280"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a6f3fb9cc045b37581d7301b71d0d40fe" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="241" endline="255">SDC.dayTimeDuration_Stype.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1day_time_duration___stype_1a7461799bab688b406eb79968c628807a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1day_time_duration___stype" kindref="compound">dayTimeDuration_Stype</ref></type>
+        <definition>static new dayTimeDuration_Stype SDC.dayTimeDuration_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" line="282" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/dayTimeDuration_Stype.cs" bodystart="282" bodyend="306"/>
+        <references refid="class_s_d_c_1_1day_time_duration___stype_1a75924a9694c5ea3a5dac7b6542193ed8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2day_time_duration___stype_8cs" startline="139" endline="153">SDC.dayTimeDuration_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2640">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="2641" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2641">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="2639">
+        <label>SDC.dayTimeDuration_Stype</label>
+        <link refid="class_s_d_c_1_1day_time_duration___stype"/>
+        <childnode refid="2640" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2640" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2642">
+        <label>SDC.dayTimeDuration_DEtype</label>
+        <link refid="class_s_d_c_1_1day_time_duration___d_etype"/>
+        <childnode refid="2639" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2639" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2644">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="2645" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2646" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="2655" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="2656" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="2657" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="2648" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="2652">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="2650" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2645">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="2650">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="2649">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="2650" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2655">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="2643">
+        <label>SDC.dayTimeDuration_Stype</label>
+        <link refid="class_s_d_c_1_1day_time_duration___stype"/>
+        <childnode refid="2644" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2644" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2648" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="2654">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="2648">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="2645" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2649" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="2651" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="2652" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="2653" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="2657">
+        <label>System</label>
+      </node>
+      <node id="2651">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="2650" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2646">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="2647" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2647" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2648" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="2647">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="2644" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2644" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2648" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="2653">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="2654" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2656">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="2645" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2646" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="2655" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="2656" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="2657" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="2648" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1513" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1512" bodyend="1521"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1af07cb1eff242873c35ff5bf7ccb76351" prot="private" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>_quantEnum</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a79d3683db9301861b08b5dac102603fa" prot="private" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>_val</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a1ec573b8f47deffac3f1c2021236b69c" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1abc3a7ad7d473c13de7c73a002e1894bd" prot="private" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1aaf849aec8cbc609e8b536fee94f54412" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a8a3b5527f578087b7a9bc8dced41acaa" prot="protected" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>dayTimeDuration_Stype</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a589fcb0f88727be11818e0ab076fd08e" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>dayTimeDuration_Stype</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a8a3b5527f578087b7a9bc8dced41acaa" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>dayTimeDuration_Stype</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a75924a9694c5ea3a5dac7b6542193ed8" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a6bd36d0d5b85084d424a9cca98a8b8c9" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1ae4d7a838161efc7f40860064559c8c0b" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a10675bfee7b65a1dd0e89b43af2b412b" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1ab95891b5bd00c205e8a97db942f9bf7d" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a6bd36d0d5b85084d424a9cca98a8b8c9" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1ae4d7a838161efc7f40860064559c8c0b" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1ab92a93e8ef4a8d21c4cfd7f2d001dc26" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::dayTimeDuration_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::dayTimeDuration_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::dayTimeDuration_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a6f3fb9cc045b37581d7301b71d0d40fe" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a682885482080b74e5617e34f9d225523" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1accce140a9a13103094de4197d3f66cf6" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1abcb5efa85276e22f7bdb1ec4012e61e2" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1aea5019f96d2ecb9ae8181cc9760e6b69" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a1cf2d817faf403780e9d0cff06082570" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1accce140a9a13103094de4197d3f66cf6" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a7461799bab688b406eb79968c628807a" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::dayTimeDuration_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::dayTimeDuration_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::dayTimeDuration_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::dayTimeDuration_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a92f27cbc60c432d463ddf3c62ff407f4" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>quantEnum</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1aaceb1f4b077cfef4dbf8250af87eb353" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a90c0f3542c40cdebb2f62e6be57a4c45" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1ab4fb7b9b565609098a9dc6cf8bbbbd2e" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a52935ba4dbb9e2edfe3e1f2ffa29d94b" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a7a5903a7796f6c44659b43d92f3ee1fa" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1ab4fb7b9b565609098a9dc6cf8bbbbd2e" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1af978352cd767f9c1806bb07e7cc87255" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1ab81690168f912a5a2b1838bb06645ad5" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1ab81690168f912a5a2b1838bb06645ad5" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a9750bc96549ee6b4a6118b48aac6d041" prot="private" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1abf88a2196bcb9e02972c0291b698365b" prot="private" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1ad7a026c3a8c1bd6f015abe8d932ef13d" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ShouldSerializeval</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1ad7a026c3a8c1bd6f015abe8d932ef13d" prot="public" virt="virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>ShouldSerializeval</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1day_time_duration___stype_1a0019d8e3557564bf6ab7fcf28ccee344" prot="public" virt="non-virtual"><scope>SDC::dayTimeDuration_Stype</scope><name>val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

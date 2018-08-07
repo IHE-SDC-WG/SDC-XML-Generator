@@ -1,0 +1,1129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_hash_type" kind="class" prot="public">
+    <compoundname>SDC::HashType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1base64_binary___stype" prot="public" virt="non-virtual">SDC.base64Binary_Stype</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1base64_binary___stype" prot="public" virt="non-virtual">SDC.base64Binary_Stype</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_hash_type_1a8b5aa826f8a225497fba2d418bd4a160" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.HashType::_hashAlgorithm</definition>
+        <argsstring></argsstring>
+        <name>_hashAlgorithm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="31" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_hash_type_1a752ba2ac9e7bc313c26be873cf48d87d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.HashType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_hash_type_1a876049752945e7b0eedd554f00b17bbd" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.HashType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="33" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_hash_type_1a8f54a2aaf4a2856b0bf4210fb0e77b0b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.HashType::hashAlgorithm</definition>
+        <argsstring></argsstring>
+        <name>hashAlgorithm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="37" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_hash_type_1aacc969d75012d800de4deadb731b8593" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_hash_type_8cs" startline="91" endline="94">SDC.HashType.ShouldSerializehashAlgorithm</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_hash_type_1a1f385a4bd66d0b7793a3b0834e4b360f" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.HashType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="49" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_hash_type_1a9152f96df9b5e18c1afc8c261a56ba7c" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_hash_type_8cs" startline="158" endline="173">SDC.HashType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_hash_type_1a259fd3bcd87072494b481fad071b4438" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.HashType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="76" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a393e77ba86283d083a09b457fbe352ef" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.HashType.HashType</definition>
+        <argsstring>()</argsstring>
+        <name>HashType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2581" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2581" bodyend="2581"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a9266cdbd8146495723f24b2c931ec0bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.HashType.HashType</definition>
+        <argsstring>(BaseType parentNode)</argsstring>
+        <name>HashType</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2582" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2582" bodyend="2582"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1aacc969d75012d800de4deadb731b8593" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.HashType.ShouldSerializehashAlgorithm</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializehashAlgorithm</name>
+        <briefdescription>
+<para>Test whether hashAlgorithm should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="64" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a7b4bc9f67a462d2d886201d2ac420efa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.HashType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1base64_binary___stype_1a3280fcee4728eaaf1d62cdc20cb48412">Serialize</reimplements>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="74" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="74" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a2b852023dabed89d656748df399024a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.HashType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1base64_binary___stype_1a1e6564ab6d094725227d2ff7803faf19">Serialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="104" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="104" bodyend="107"/>
+        <referencedby refid="class_s_d_c_1_1_hash_type_1a416e39c685363d729b3d3c50591c181e" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_hash_type_8cs" startline="202" endline="220">SDC.HashType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a3dd3299707030bcf0fc82aa15ea7d58f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.HashType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1base64_binary___stype_1a7190e63929252054f63a62e7edb06b2c">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="167" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="167" bodyend="180"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_hash_type_1a2e814c3658561826dac8541155797fca" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_hash_type_8cs" startline="187" endline="200">SDC.HashType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a54f1f4d3199921a147ae70bba347f94c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.HashType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1base64_binary___stype_1a9d5c699ab433672d14ce130c28cd4765">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="182" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a416e39c685363d729b3d3c50591c181e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.HashType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1base64_binary___stype_1ab3206eaf64d10d376fc93c4bd5ee4a57">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="187" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1af5eb06aeb20a7b8c89587d730f5071db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.HashType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1base64_binary___stype_1ac508fbffb9727181e4112d33b974f434">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="192" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="192" bodyend="209"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1aacc969d75012d800de4deadb731b8593" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.HashType.ShouldSerializehashAlgorithm</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializehashAlgorithm</name>
+        <briefdescription>
+<para>Test whether hashAlgorithm should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="91" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="91" bodyend="94"/>
+        <references refid="class_s_d_c_1_1_hash_type_1a8f54a2aaf4a2856b0bf4210fb0e77b0b" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_hash_type_8cs" startline="38">SDC.HashType.hashAlgorithm</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a2b852023dabed89d656748df399024a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.HashType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1base64_binary___stype_1a1e6564ab6d094725227d2ff7803faf19">Serialize</reimplements>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="101" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="101" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a2e814c3658561826dac8541155797fca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.HashType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1base64_binary___stype_1aae22f4c849bd20b26e0286c32451cf49">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="187" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="187" bodyend="200"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_hash_type_1a3dd3299707030bcf0fc82aa15ea7d58f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_hash_type_8cs" startline="167" endline="180">SDC.HashType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a416e39c685363d729b3d3c50591c181e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.HashType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1base64_binary___stype_1ab3206eaf64d10d376fc93c4bd5ee4a57">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="202" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="202" bodyend="220"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_hash_type_1a2b852023dabed89d656748df399024a4" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_hash_type_8cs" startline="104" endline="107">SDC.HashType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a4d9315e98fa126cfc764f52c82bb3bf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+        <definition>virtual HashType SDC.HashType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1base64_binary___stype_1a4fcd1479fed20e9c0173c3a7cd23b6b6">Clone</reimplements>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="281" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="281" bodyend="284"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a26ca72489974f78f2ed84000b2d3dffe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.HashType.Deserialize</definition>
+        <argsstring>(string input, out HashType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="116" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="116" bodyend="130"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_hash_type_1adb518cab4fc864726cdc55d5ef997edd" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_hash_type_8cs" startline="136" endline="150">SDC.HashType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_hash_type_1a7c4da065ab74e21a71e2641129eeceb8" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_hash_type_8cs" startline="251" endline="275">SDC.HashType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a21632205fe54d9b32576f626a0e00f83" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.HashType.Deserialize</definition>
+        <argsstring>(string input, out HashType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="132" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="132" bodyend="136"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a9152f96df9b5e18c1afc8c261a56ba7c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+        <definition>static new HashType SDC.HashType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="138" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="138" bodyend="153"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a6c4de6c6652d4eed47437a1c2b9d61e8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+        <definition>static HashType SDC.HashType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="155" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1aedb4af2004155f173680ede075f4543e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.HashType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out HashType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="218" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="218" bodyend="232"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_hash_type_1aeae4f2f131e664e17482d481a158bbcf" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_hash_type_8cs" startline="229" endline="243">SDC.HashType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a426b857ba8aec35a807b9a07507ef938" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.HashType.LoadFromFile</definition>
+        <argsstring>(string fileName, out HashType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="234" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1ad518bbdf923ba36c002cec00529a388b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.HashType.LoadFromFile</definition>
+        <argsstring>(string fileName, out HashType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="239" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="239" bodyend="243"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a1796ab359a2b99a2ac0c36f09423fe81" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+        <definition>static HashType SDC.HashType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="245" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a744fc60e0f6f48f30b33542ee9c443ee" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+        <definition>static new HashType SDC.HashType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" line="250" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/HashType.cs" bodystart="250" bodyend="274"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1adb518cab4fc864726cdc55d5ef997edd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.HashType.Deserialize</definition>
+        <argsstring>(string input, out HashType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="136" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="136" bodyend="150"/>
+        <references refid="class_s_d_c_1_1_hash_type_1a26ca72489974f78f2ed84000b2d3dffe" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_hash_type_8cs" startline="116" endline="130">SDC.HashType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a21632205fe54d9b32576f626a0e00f83" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.HashType.Deserialize</definition>
+        <argsstring>(string input, out HashType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="152" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="152" bodyend="156"/>
+        <references refid="class_s_d_c_1_1_hash_type_1a26ca72489974f78f2ed84000b2d3dffe" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_hash_type_8cs" startline="116" endline="130">SDC.HashType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a9152f96df9b5e18c1afc8c261a56ba7c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+        <definition>static new HashType SDC.HashType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="158" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="158" bodyend="173"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_hash_type_1a1f385a4bd66d0b7793a3b0834e4b360f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_hash_type_8cs" startline="50">SDC.HashType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a534fc727d148986c53ce1516572eac4b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+        <definition>static HashType SDC.HashType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="175" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="175" bodyend="178"/>
+        <references refid="class_s_d_c_1_1_hash_type_1a1f385a4bd66d0b7793a3b0834e4b360f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_hash_type_8cs" startline="50">SDC.HashType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1aeae4f2f131e664e17482d481a158bbcf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.HashType.LoadFromFile</definition>
+        <argsstring>(string fileName, out HashType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="229" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="229" bodyend="243"/>
+        <references refid="class_s_d_c_1_1_hash_type_1aedb4af2004155f173680ede075f4543e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_hash_type_8cs" startline="218" endline="232">SDC.HashType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1ad518bbdf923ba36c002cec00529a388b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.HashType.LoadFromFile</definition>
+        <argsstring>(string fileName, out HashType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="245" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="245" bodyend="249"/>
+        <references refid="class_s_d_c_1_1_hash_type_1aedb4af2004155f173680ede075f4543e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_hash_type_8cs" startline="218" endline="232">SDC.HashType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_hash_type_1a7c4da065ab74e21a71e2641129eeceb8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_hash_type" kindref="compound">HashType</ref></type>
+        <definition>static new HashType SDC.HashType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" line="251" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/HashType.cs" bodystart="251" bodyend="275"/>
+        <references refid="class_s_d_c_1_1_hash_type_1a26ca72489974f78f2ed84000b2d3dffe" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_hash_type_8cs" startline="116" endline="130">SDC.HashType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4223">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4224" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4224">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="4221">
+        <label>SDC.HashType</label>
+        <link refid="class_s_d_c_1_1_hash_type"/>
+        <childnode refid="4222" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4222">
+        <label>base64Binary_Stype</label>
+        <link refid="class_s_d_c_1_1base64_binary___stype"/>
+        <childnode refid="4223" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4223" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4227">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4228" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4229" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="4238" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="4239" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="4240" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="4231" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4235">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="4233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4228">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="4233">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="4232">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="4233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4238">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="4237">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="4231">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="4228" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4232" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4234" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4235" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4236" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="4240">
+        <label>System</label>
+      </node>
+      <node id="4234">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="4233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4229">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="4230" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4230" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4231" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4230">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="4227" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4227" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4231" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4225">
+        <label>SDC.HashType</label>
+        <link refid="class_s_d_c_1_1_hash_type"/>
+        <childnode refid="4226" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4226" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4231" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4236">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="4237" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4226">
+        <label>base64Binary_Stype</label>
+        <link refid="class_s_d_c_1_1base64_binary___stype"/>
+        <childnode refid="4227" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4227" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4240" relation="usage">
+          <edgelabel>_length</edgelabel>
+        </childnode>
+        <childnode refid="4231" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4239">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4228" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4229" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="4238" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="4239" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="4240" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="4231" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2580" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2579" bodyend="2583"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_hash_type_1a8b5aa826f8a225497fba2d418bd4a160" prot="private" virt="non-virtual"><scope>SDC::HashType</scope><name>_hashAlgorithm</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1afd23ef3a1e3d8d90db2093a4c30024a7" prot="protected" virt="non-virtual"><scope>SDC::HashType</scope><name>base64Binary_Stype</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1af5d33eb469ab3296a8f9db40ecaaa62a" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>base64Binary_Stype</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1afd23ef3a1e3d8d90db2093a4c30024a7" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>base64Binary_Stype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::HashType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::HashType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a259fd3bcd87072494b481fad071b4438" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a752ba2ac9e7bc313c26be873cf48d87d" prot="private" virt="non-virtual"><scope>SDC::HashType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a4d9315e98fa126cfc764f52c82bb3bf0" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a26ca72489974f78f2ed84000b2d3dffe" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a21632205fe54d9b32576f626a0e00f83" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a9152f96df9b5e18c1afc8c261a56ba7c" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a6c4de6c6652d4eed47437a1c2b9d61e8" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1adb518cab4fc864726cdc55d5ef997edd" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a21632205fe54d9b32576f626a0e00f83" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a9152f96df9b5e18c1afc8c261a56ba7c" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a534fc727d148986c53ce1516572eac4b" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a35ecc4066702d5e3f260143d4a653212" prot="public" virt="non-virtual" ambiguityscope="SDC::base64Binary_Stype."><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1aa061ba6d16c53a711568edaf3861faef" prot="public" virt="non-virtual" ambiguityscope="SDC::base64Binary_Stype."><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a9c043b766f822bd358646c71db8194ac" prot="public" virt="non-virtual" ambiguityscope="SDC::base64Binary_Stype."><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::HashType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a8f54a2aaf4a2856b0bf4210fb0e77b0b" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>hashAlgorithm</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a393e77ba86283d083a09b457fbe352ef" prot="protected" virt="non-virtual"><scope>SDC::HashType</scope><name>HashType</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a9266cdbd8146495723f24b2c931ec0bf" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>HashType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1aeb0c8a8e7c27365f3be59829381ee87a" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>length</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a0f25842eb72083840502a2ea59128366" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>lengthSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1aedb4af2004155f173680ede075f4543e" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a426b857ba8aec35a807b9a07507ef938" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1ad518bbdf923ba36c002cec00529a388b" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a1796ab359a2b99a2ac0c36f09423fe81" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a744fc60e0f6f48f30b33542ee9c443ee" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1aeae4f2f131e664e17482d481a158bbcf" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1ad518bbdf923ba36c002cec00529a388b" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a7c4da065ab74e21a71e2641129eeceb8" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1ab5659b7b554a4d81fd49741e41786f27" prot="public" virt="non-virtual" ambiguityscope="SDC::base64Binary_Stype."><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a2268453d721df2b379482a0b6d72be09" prot="public" virt="non-virtual" ambiguityscope="SDC::base64Binary_Stype."><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a958178d1aa3b1da16e4e643d696d2c61" prot="public" virt="non-virtual" ambiguityscope="SDC::base64Binary_Stype."><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1ab397c750a6ef224c7dc2ea9a6a57e519" prot="public" virt="non-virtual" ambiguityscope="SDC::base64Binary_Stype."><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::HashType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a91b184aa5f878c580f001cfe765dac67" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>mimeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a3dd3299707030bcf0fc82aa15ea7d58f" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a54f1f4d3199921a147ae70bba347f94c" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a416e39c685363d729b3d3c50591c181e" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1af5eb06aeb20a7b8c89587d730f5071db" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a2e814c3658561826dac8541155797fca" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a416e39c685363d729b3d3c50591c181e" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::HashType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a7b4bc9f67a462d2d886201d2ac420efa" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a2b852023dabed89d656748df399024a4" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a2b852023dabed89d656748df399024a4" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a876049752945e7b0eedd554f00b17bbd" prot="private" virt="non-virtual"><scope>SDC::HashType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1a1f385a4bd66d0b7793a3b0834e4b360f" prot="private" virt="non-virtual"><scope>SDC::HashType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1aacc969d75012d800de4deadb731b8593" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializehashAlgorithm</name></member>
+      <member refid="class_s_d_c_1_1_hash_type_1aacc969d75012d800de4deadb731b8593" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializehashAlgorithm</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a586f318d6223fc8b08e940a9a4d98a8a" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializelength</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a586f318d6223fc8b08e940a9a4d98a8a" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializelength</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1aa8501775f5a5b624c1a0d4478f3a3346" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializemimeType</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1aa8501775f5a5b624c1a0d4478f3a3346" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializemimeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::HashType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1ab22163a782ab291423ef85ae415c3653" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>val</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a385dd30385e4b6894a78169335c75133" prot="public" virt="non-virtual"><scope>SDC::HashType</scope><name>valBase64</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

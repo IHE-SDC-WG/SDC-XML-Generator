@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_trackable_collection_3_01_t_01_4" kind="class" prot="public">
+    <compoundname>SDC::TrackableCollection&lt; T &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObservableCollection&lt; T &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_trackable_collection_3_01_t_01_4_1a1a0cbf4fb001ee8485f6eaf5cdce2291" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.TrackableCollection&lt; T &gt;.propertyNameField</definition>
+        <argsstring></argsstring>
+        <name>propertyNameField</name>
+        <briefdescription>
+<para>Name of property </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/TrackableCollection.cs" line="32" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/TrackableCollection.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_s_d_c_1_1_trackable_collection_3_01_t_01_4_1ac443974cb470a8606e453e08377875c3" prot="public" static="no" add="no" remove="no" raise="no">
+        <type><ref refid="namespace_s_d_c_1a43ec9b80ea1e4dae7b671002a0d91a25" kindref="member">NotifyTrackableCollectionChangedEventHandler</ref></type>
+        <definition>virtual NotifyTrackableCollectionChangedEventHandler SDC.TrackableCollection&lt; T &gt;.TrackableCollectionChanged</definition>
+        <argsstring></argsstring>
+        <name>TrackableCollectionChanged</name>
+        <briefdescription>
+<para>Occurs when [trackable collection changed]. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/TrackableCollection.cs" line="37" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/TrackableCollection.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_trackable_collection_3_01_t_01_4_1acfc8bcebf4fbd5e4a6eeed96b825ff31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.TrackableCollection&lt; T &gt;.TrackableCollection</definition>
+        <argsstring>(string propertyName)</argsstring>
+        <name>TrackableCollection</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>propertyName</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the TrackableCollection&amp;lt;T&amp;gt; class. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>propertyName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/TrackableCollection.cs" line="43" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/TrackableCollection.cs" bodystart="43" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_trackable_collection_3_01_t_01_4_1ae77dafc06938fe05a9618485b758560b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.TrackableCollection&lt; T &gt;.TrackableCollection_CollectionChanged</definition>
+        <argsstring>(object sender, NotifyCollectionChangedEventArgs e)</argsstring>
+        <name>TrackableCollection_CollectionChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>NotifyCollectionChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Handles the CollectionChanged event of the TrackableCollection control. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The System.Collections.Specialized.NotifyCollectionChangedEventArgs instance containing the event data.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/TrackableCollection.cs" line="54" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/TrackableCollection.cs" bodystart="54" bodyend="60"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10174">
+        <label>ObservableCollection&lt; T &gt;</label>
+      </node>
+      <node id="10173">
+        <label>SDC.TrackableCollection&lt; T &gt;</label>
+        <link refid="class_s_d_c_1_1_trackable_collection_3_01_t_01_4"/>
+        <childnode refid="10174" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10176">
+        <label>ObservableCollection&lt; T &gt;</label>
+      </node>
+      <node id="10175">
+        <label>SDC.TrackableCollection&lt; T &gt;</label>
+        <link refid="class_s_d_c_1_1_trackable_collection_3_01_t_01_4"/>
+        <childnode refid="10176" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/TrackableCollection.cs" line="27" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/TrackableCollection.cs" bodystart="25" bodyend="63"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_trackable_collection_3_01_t_01_4_1a1a0cbf4fb001ee8485f6eaf5cdce2291" prot="private" virt="non-virtual"><scope>SDC::TrackableCollection&lt; T &gt;</scope><name>propertyNameField</name></member>
+      <member refid="class_s_d_c_1_1_trackable_collection_3_01_t_01_4_1acfc8bcebf4fbd5e4a6eeed96b825ff31" prot="public" virt="non-virtual"><scope>SDC::TrackableCollection&lt; T &gt;</scope><name>TrackableCollection</name></member>
+      <member refid="class_s_d_c_1_1_trackable_collection_3_01_t_01_4_1ae77dafc06938fe05a9618485b758560b" prot="private" virt="non-virtual"><scope>SDC::TrackableCollection&lt; T &gt;</scope><name>TrackableCollection_CollectionChanged</name></member>
+      <member refid="class_s_d_c_1_1_trackable_collection_3_01_t_01_4_1ac443974cb470a8606e453e08377875c3" prot="public" virt="non-virtual"><scope>SDC::TrackableCollection&lt; T &gt;</scope><name>TrackableCollectionChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

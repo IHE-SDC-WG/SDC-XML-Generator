@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_niladic_functions_date_time_type_function_8cs" kind="file">
+    <compoundname>NiladicFunctionsDateTimeTypeFunction.cs</compoundname>
+    <innernamespace refid="namespace_s_d_c">SDC</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>&lt;auto-generated&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Generated<sp/>by<sp/>Xsd2Code++.<sp/>Version<sp/>4.4.0.7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>&lt;/auto-generated&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning<sp/>disable</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">SDC</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Diagnostics;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml.Serialization;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml.Schema;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.ComponentModel;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.IO;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.ComponentModel.DataAnnotations;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Xml;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">[System.CodeDom.Compiler.GeneratedCodeAttribute(</highlight><highlight class="stringliteral">&quot;System.Xml&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;4.7.2612.0&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">[System.SerializableAttribute()]</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>Namespace=</highlight><highlight class="stringliteral">&quot;urn:ihe:qrph:sdc:2016&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="24" refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4" kindref="member">NiladicFunctionsDateTimeTypeFunction</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a1e1cc9bdeb2f29f5480106aec7e9bc48" kindref="member">Now</ref>,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a28d966bf69234556641d197315891ba0" kindref="member">CurrentTime</ref>,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a5bf4286d7aec626249e5f7893a76b00f" kindref="member">CurrentDate</ref>,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a458933c71657252c84c5842681a879d0" kindref="member">CurrentMonthStart</ref>,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4aa9505db8bff57940de5e7e0e292b1ed0" kindref="member">CurrentWeekStart</ref>,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>[System.Xml.Serialization.XmlEnumAttribute(</highlight><highlight class="stringliteral">&quot;CurrentWeekStart&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a86df000bf5f2034d70230920cddda775" kindref="member">CurrentWeekStart1</ref>,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a31c475ba24a955b086b86ec4f1203cff" kindref="member">CurrentYearStart</ref>,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4aff9eb8bd8c927da073cea632f294e23b" kindref="member">Tomorrow</ref>,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a787e30165ede478a50c14b0152479e7c" kindref="member">DayAfterTomorrow</ref>,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a6058b897e744e695ecc342f5c6a92377a1b340d035de8e19ffd931d132cfeb618" kindref="member">NextMon</ref>,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a6058b897e744e695ecc342f5c6a92377a9a091280171f8ab2e9780b9e0453bdf3" kindref="member">NextTues</ref>,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a6058b897e744e695ecc342f5c6a92377a2c8e0dd935dc3d486d7651e66fa1af6a" kindref="member">NextWed</ref>,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a6058b897e744e695ecc342f5c6a92377ae3435e060185a1b0fb1dd7214fc16824" kindref="member">NextThurs</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a6058b897e744e695ecc342f5c6a92377a69c28098e5840a1f94e695a635f04e56" kindref="member">NextFri</ref>,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a6058b897e744e695ecc342f5c6a92377a75294989a7b483717d2e8cb4371e591b" kindref="member">NextSat</ref>,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1a6058b897e744e695ecc342f5c6a92377a9d18e9b702284b04931dfdba89d7786e" kindref="member">NextSun</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a3eab97d40e87aeee47446e2bcb61015b" kindref="member">NextWeek</ref>,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a0ab6dace0ed469b39dc0ab3954b8bed1" kindref="member">NextTwoWeeks</ref>,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a3f03b9b2db093b2978380240d2584370" kindref="member">NextThreeWeeks</ref>,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4ab8dfc6a1af25aceb7470e8d138865c4a" kindref="member">NextMonth</ref>,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4aa3858487351c244cab9ff986c7499d19" kindref="member">NextYear</ref>,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4aebfe9ce86e6e9fb953aa7a25b59c1956" kindref="member">Yesterday</ref>,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a9673e4f78f302680ba73b20c2196eb03" kindref="member">LastMon</ref>,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4ae3b1f939f6f9dc58153a16400142310e" kindref="member">LastTues</ref>,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a8d7491bcb43ba6045ac04c4d8a97594e" kindref="member">LastWed</ref>,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4aa6500d4ff37c50d031f1f90b889f6d0f" kindref="member">LastThurs</ref>,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a4ba64e8812cdf6ae60dc7005ac5957de" kindref="member">LastFri</ref>,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a0a7ad4a99f95c980bc6ac4b7ae8b6f87" kindref="member">LastSat</ref>,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a87ff79555a6148cfff7a9b5681a20768" kindref="member">LastSun</ref>,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a702e97487c31fee5bf11b7c5c44a65cc" kindref="member">LastWeek</ref>,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4af361c6c7fcbda7345129c3eb14896cee" kindref="member">TwoWeeksAgo</ref>,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4ab1799072a292f018d0707f3b25f522b3" kindref="member">ThreeWeeksAgo</ref>,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4a41eeb970a31e7ca35dbe1003b3694156" kindref="member">LastMonth</ref>,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_s_d_c_1ae6e709b0f8d6d3e1bbd9379f59f4cab4adc9d798e395ece6f3e4a86cac1ee3c46" kindref="member">LastYear</ref>,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">#pragma<sp/>warning<sp/>restore</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/NiladicFunctionsDateTimeTypeFunction.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1770 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_organization_type" kind="class" prot="public">
+    <compoundname>SDC::OrganizationType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1ae2bd5eaabbae730e839bcc32f26a05ba" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.OrganizationType::_orgName</definition>
+        <argsstring></argsstring>
+        <name>_orgName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="34" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_organization_type_1aaef7bd5387fd54c5c3fed63c22d469ee" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_organization_type_8cs" startline="336" endline="339">SDC.OrganizationType.ShouldSerializeOrgName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1a4110feb937658eb76ba9c5979a2faa22" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.OrganizationType::_department</definition>
+        <argsstring></argsstring>
+        <name>_department</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="37" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_organization_type_1a24fd97afcef5b27836478f85faf6a229" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_organization_type_8cs" startline="344" endline="347">SDC.OrganizationType.ShouldSerializeDepartment</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1ad2f33ce0ea104e540b5d7a77d0c7c4b6" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_address_type" kindref="compound">AddressType</ref> &gt;</type>
+        <definition>List&lt;AddressType&gt; SDC.OrganizationType._streetAddress</definition>
+        <argsstring></argsstring>
+        <name>_streetAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1aa09c3762e73b5cf2a9c2323e49189dc9" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_email_type" kindref="compound">EmailType</ref> &gt;</type>
+        <definition>List&lt;EmailType&gt; SDC.OrganizationType._email</definition>
+        <argsstring></argsstring>
+        <name>_email</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="43" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1aac0e826aba8768f47f1257dd137c006f" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_phone_type" kindref="compound">PhoneType</ref> &gt;</type>
+        <definition>List&lt;PhoneType&gt; SDC.OrganizationType._phone</definition>
+        <argsstring></argsstring>
+        <name>_phone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="46" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1a2d57724739fd7d2af25129b6e695c2ad" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> &gt;</type>
+        <definition>List&lt;anyURI_Stype&gt; SDC.OrganizationType._webURL</definition>
+        <argsstring></argsstring>
+        <name>_webURL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="49" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1a1c68b35099d574eaf83fdebcbc5d0894" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref> &gt;</type>
+        <definition>List&lt;string_Stype&gt; SDC.OrganizationType._role</definition>
+        <argsstring></argsstring>
+        <name>_role</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="52" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1a1884946ae82f2895d204f902e7bcceb3" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> &gt;</type>
+        <definition>List&lt;PersonType&gt; SDC.OrganizationType._contactPerson</definition>
+        <argsstring></argsstring>
+        <name>_contactPerson</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="55" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1a2758e00f811340c7b6b0570301f57a26" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_identifier_type" kindref="compound">IdentifierType</ref> &gt;</type>
+        <definition>List&lt;IdentifierType&gt; SDC.OrganizationType._identifier</definition>
+        <argsstring></argsstring>
+        <name>_identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="58" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1a7cf1768775164a9e4b4dc6a501043099" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.OrganizationType::_usage</definition>
+        <argsstring></argsstring>
+        <name>_usage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="61" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="61" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_organization_type_1aeaa81163d3d8375cd50a5a1388fa675b" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_organization_type_8cs" startline="352" endline="355">SDC.OrganizationType.ShouldSerializeUsage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1af0284d3da0ec1a93a1e6a81bfd64b890" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_address_type" kindref="compound">AddressType</ref> &gt;</type>
+        <definition>BindingList&lt;AddressType&gt; SDC.OrganizationType._streetAddress</definition>
+        <argsstring></argsstring>
+        <name>_streetAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="43" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1a9e0278c49781c2716cda78b39fa6f09c" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_email_type" kindref="compound">EmailType</ref> &gt;</type>
+        <definition>BindingList&lt;EmailType&gt; SDC.OrganizationType._email</definition>
+        <argsstring></argsstring>
+        <name>_email</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="46" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1a2db60375d8abf5a7dbe958c5328a2773" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_phone_type" kindref="compound">PhoneType</ref> &gt;</type>
+        <definition>BindingList&lt;PhoneType&gt; SDC.OrganizationType._phone</definition>
+        <argsstring></argsstring>
+        <name>_phone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="49" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1a9745919a334c1061fd1d601a95aa081d" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> &gt;</type>
+        <definition>BindingList&lt;anyURI_Stype&gt; SDC.OrganizationType._webURL</definition>
+        <argsstring></argsstring>
+        <name>_webURL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="52" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1a5c9cbb4e32d85d27ef4cb33185bbdef4" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref> &gt;</type>
+        <definition>BindingList&lt;string_Stype&gt; SDC.OrganizationType._role</definition>
+        <argsstring></argsstring>
+        <name>_role</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="55" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1af3e7a3541574e4bdaadc44c9362cf1a5" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> &gt;</type>
+        <definition>BindingList&lt;PersonType&gt; SDC.OrganizationType._contactPerson</definition>
+        <argsstring></argsstring>
+        <name>_contactPerson</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="58" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1aa05ef54ec6f4a22b92edd94bf15773d6" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_identifier_type" kindref="compound">IdentifierType</ref> &gt;</type>
+        <definition>BindingList&lt;IdentifierType&gt; SDC.OrganizationType._identifier</definition>
+        <argsstring></argsstring>
+        <name>_identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="61" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1ab61dcf85ce8136277e05ab29b44d12a6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.OrganizationType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="68" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_organization_type_1af7d4dcfa587cd89d307c5f1bc4bb3124" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.OrganizationType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="63" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1a1b65fa200a8ee675829fa88ccbff34e4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.OrganizationType::OrgName</definition>
+        <argsstring></argsstring>
+        <name>OrgName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="67" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1ab66777ce03dd6075c406a5a85f5ea283" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.OrganizationType::Department</definition>
+        <argsstring></argsstring>
+        <name>Department</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="80" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1a370fb539b0b1e691f43375211097e588" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_address_type" kindref="compound">AddressType</ref> &gt;</type>
+        <definition>virtual List&lt;AddressType&gt; SDC.OrganizationType.StreetAddress</definition>
+        <argsstring></argsstring>
+        <name>StreetAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="93" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1a7c79732baac9bc66eb16844c593e7797" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_email_type" kindref="compound">EmailType</ref> &gt;</type>
+        <definition>virtual List&lt;EmailType&gt; SDC.OrganizationType.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="106" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1a15872a9d9a2a15fd66354cfc153d89f7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_phone_type" kindref="compound">PhoneType</ref> &gt;</type>
+        <definition>virtual List&lt;PhoneType&gt; SDC.OrganizationType.Phone</definition>
+        <argsstring></argsstring>
+        <name>Phone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="119" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1a7ae938c67ddad98788fd339fea602416" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> &gt;</type>
+        <definition>virtual List&lt;anyURI_Stype&gt; SDC.OrganizationType.WebURL</definition>
+        <argsstring></argsstring>
+        <name>WebURL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="132" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1a96e21f4f9d274a4f29c2b5654a5df98d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref> &gt;</type>
+        <definition>virtual List&lt;string_Stype&gt; SDC.OrganizationType.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <briefdescription>
+<para>Role of the organization, e.g., creator, copyright holder, accreditor, certifier, curator, etc. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="149" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1a6c995c91499438bffe38abfc81af4d8e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> &gt;</type>
+        <definition>virtual List&lt;PersonType&gt; SDC.OrganizationType.ContactPerson</definition>
+        <argsstring></argsstring>
+        <name>ContactPerson</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="162" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="163" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a6d97fc723e1be532b52893784eb32229" compoundref="_s_d_c_8_schema_8_s_d_c_tree_builder_8cs" startline="952" endline="968">SDC.SDCTreeBuilder.AddContactPerson</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1af0834a3abe7e40344cada7373d8827b2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_identifier_type" kindref="compound">IdentifierType</ref> &gt;</type>
+        <definition>virtual List&lt;IdentifierType&gt; SDC.OrganizationType.Identifier</definition>
+        <argsstring></argsstring>
+        <name>Identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="175" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1ac8c6791f04fb539796e7a454f13d76e4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.OrganizationType::Usage</definition>
+        <argsstring></argsstring>
+        <name>Usage</name>
+        <briefdescription>
+<para>When this organization should be contacted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="192" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1a3c11f46018b7a71b8eaa1e9e2bb2202d" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.OrganizationType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="204" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="205" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_organization_type_1a2c48fb55023ab3cc01fa7ce5950ad301" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_organization_type_8cs" startline="419" endline="434">SDC.OrganizationType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1a1f92c9f747e7052772db538bbe9ece38" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_address_type" kindref="compound">AddressType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;AddressType&gt; SDC.OrganizationType.StreetAddress</definition>
+        <argsstring></argsstring>
+        <name>StreetAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="118" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1add71cda1a300215963d8f71d13a84411" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_email_type" kindref="compound">EmailType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;EmailType&gt; SDC.OrganizationType.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="141" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1ae8e9a7e7bb62db0f9078bff871e0b957" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_phone_type" kindref="compound">PhoneType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;PhoneType&gt; SDC.OrganizationType.Phone</definition>
+        <argsstring></argsstring>
+        <name>Phone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="164" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1a816854b8695b89543a373e9e98474348" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> &gt;</type>
+        <definition>virtual BindingList&lt;anyURI_Stype&gt; SDC.OrganizationType.WebURL</definition>
+        <argsstring></argsstring>
+        <name>WebURL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="187" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1aade68f1af9c0e0dd90939c597584dcf7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref> &gt;</type>
+        <definition>virtual BindingList&lt;string_Stype&gt; SDC.OrganizationType.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <briefdescription>
+<para>Role of the organization, e.g., creator, copyright holder, accreditor, certifier, curator, etc. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="214" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1a0cfa9338181f007a38af40934b40f33a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;PersonType&gt; SDC.OrganizationType.ContactPerson</definition>
+        <argsstring></argsstring>
+        <name>ContactPerson</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="237" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1af98466c8c630b4accaefdc185c2044c2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_identifier_type" kindref="compound">IdentifierType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;IdentifierType&gt; SDC.OrganizationType.Identifier</definition>
+        <argsstring></argsstring>
+        <name>Identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="260" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_organization_type_1a9841031b19e9c9ae6818170ecb5fb255" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.OrganizationType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="321" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1afb5bdf31497d26a6bbb3296c8ad71c0e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.OrganizationType.OrganizationType</definition>
+        <argsstring>()</argsstring>
+        <name>OrganizationType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2485" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2485" bodyend="2485"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a04977afae059a601d215aa1c449e2c67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.OrganizationType.OrganizationType</definition>
+        <argsstring>(BaseType parentNode)</argsstring>
+        <name>OrganizationType</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2486" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2486" bodyend="2486"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1afb5bdf31497d26a6bbb3296c8ad71c0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.OrganizationType.OrganizationType</definition>
+        <argsstring>()</argsstring>
+        <name>OrganizationType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="598" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="598" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a1de93f4ace026d4a1f18d4ccb95fd1e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializeStreetAddress</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeStreetAddress</name>
+        <briefdescription>
+<para>Test whether StreetAddress should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="219" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="219" bodyend="222"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1ae2671da89b11d44b09a3af4ca3a903cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializeEmail</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeEmail</name>
+        <briefdescription>
+<para>Test whether Email should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="227" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="227" bodyend="230"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a0b71a6d00f9eb7b70feb8ec94ff8d701" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializePhone</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializePhone</name>
+        <briefdescription>
+<para>Test whether Phone should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="235" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="235" bodyend="238"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1ac335159079dc4b14b582ded12a6f8f7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializeWebURL</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeWebURL</name>
+        <briefdescription>
+<para>Test whether WebURL should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="243" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="243" bodyend="246"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a7a8ba8d87345cf9ec6a33805b2fc978a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializeRole</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeRole</name>
+        <briefdescription>
+<para>Test whether Role should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="251" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="251" bodyend="254"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1acaf915cd7355d217b0ba2ef17072079c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializeContactPerson</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeContactPerson</name>
+        <briefdescription>
+<para>Test whether ContactPerson should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="259" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="259" bodyend="262"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a0ad5ff0e45d82a7c9af24fffe87933e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializeIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeIdentifier</name>
+        <briefdescription>
+<para>Test whether Identifier should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="267" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="267" bodyend="270"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1aaef7bd5387fd54c5c3fed63c22d469ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializeOrgName</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeOrgName</name>
+        <briefdescription>
+<para>Test whether OrgName should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="275" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="275" bodyend="278"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a24fd97afcef5b27836478f85faf6a229" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializeDepartment</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeDepartment</name>
+        <briefdescription>
+<para>Test whether Department should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="283" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="283" bodyend="286"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1aeaa81163d3d8375cd50a5a1388fa675b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializeUsage</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeUsage</name>
+        <briefdescription>
+<para>Test whether Usage should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="291" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="291" bodyend="294"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a44677a29a18f2c90fd1f1433eb641913" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.OrganizationType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a9ac9c6d560ffe2c300d7796951c22395">Serialize</reimplements>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="301" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="301" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1afc4e77bbfd3c4bd7cb7f44da7af7466f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.OrganizationType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="331" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="331" bodyend="334"/>
+        <referencedby refid="class_s_d_c_1_1_organization_type_1a9def304eb253b916b326cb6819bbe946" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_organization_type_8cs" startline="463" endline="481">SDC.OrganizationType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a87d032a2f52eac9fd52247ee32e9c024" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1ab1514379cd9bd547d5569548274fceb1">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="394" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="394" bodyend="407"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_organization_type_1a3bdda1c9842ce0ebe72a456cf1bd0139" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_organization_type_8cs" startline="448" endline="461">SDC.OrganizationType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1ac9d548a66d43f1d6554d0a2888848fd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1af03b919560cd67ffe1373d8cef3bb9b8">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="409" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="409" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a9def304eb253b916b326cb6819bbe946" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.OrganizationType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="414" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="414" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a56e128aee6abb98c6f2c59fb6ca9229c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.OrganizationType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5c619ed0e36571d6f4bd992faa3ad282">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="419" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="419" bodyend="436"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1aaef7bd5387fd54c5c3fed63c22d469ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializeOrgName</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeOrgName</name>
+        <briefdescription>
+<para>Test whether OrgName should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="336" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="336" bodyend="339"/>
+        <references refid="class_s_d_c_1_1_organization_type_1ae2bd5eaabbae730e839bcc32f26a05ba" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_organization_type_8cs" startline="34">SDC.OrganizationType._orgName</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a24fd97afcef5b27836478f85faf6a229" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializeDepartment</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeDepartment</name>
+        <briefdescription>
+<para>Test whether Department should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="344" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="344" bodyend="347"/>
+        <references refid="class_s_d_c_1_1_organization_type_1a4110feb937658eb76ba9c5979a2faa22" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_organization_type_8cs" startline="37">SDC.OrganizationType._department</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1aeaa81163d3d8375cd50a5a1388fa675b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.ShouldSerializeUsage</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeUsage</name>
+        <briefdescription>
+<para>Test whether Usage should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="352" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="352" bodyend="355"/>
+        <references refid="class_s_d_c_1_1_organization_type_1a7cf1768775164a9e4b4dc6a501043099" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_organization_type_8cs" startline="61">SDC.OrganizationType._usage</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1afc4e77bbfd3c4bd7cb7f44da7af7466f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.OrganizationType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="362" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="362" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a3bdda1c9842ce0ebe72a456cf1bd0139" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.OrganizationType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="448" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="448" bodyend="461"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_organization_type_1a87d032a2f52eac9fd52247ee32e9c024" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_organization_type_8cs" startline="394" endline="407">SDC.OrganizationType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a9def304eb253b916b326cb6819bbe946" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.OrganizationType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="463" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="463" bodyend="481"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_organization_type_1afc4e77bbfd3c4bd7cb7f44da7af7466f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_organization_type_8cs" startline="331" endline="334">SDC.OrganizationType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1abe1e498ebbc4ca7d07f2e1f96348b6f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+        <definition>virtual OrganizationType SDC.OrganizationType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3">Clone</reimplements>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="542" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="542" bodyend="545"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1af2103b162bd2892c790bf2150695fefb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OrganizationType.Deserialize</definition>
+        <argsstring>(string input, out OrganizationType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="343" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="343" bodyend="357"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_organization_type_1a99db951f6558675be12a934e0baec917" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_organization_type_8cs" startline="397" endline="411">SDC.OrganizationType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_organization_type_1a6e7315f14c9aaa7b0f68c784d1ca6427" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_organization_type_8cs" startline="512" endline="536">SDC.OrganizationType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a67a86040934230be00d762d790142e47" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OrganizationType.Deserialize</definition>
+        <argsstring>(string input, out OrganizationType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="359" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="359" bodyend="363"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a2c48fb55023ab3cc01fa7ce5950ad301" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+        <definition>static new OrganizationType SDC.OrganizationType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="365" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="365" bodyend="380"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1ad9808f214b9c2d168282138b03efdbdd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+        <definition>static OrganizationType SDC.OrganizationType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="382" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="382" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a00ccf1a3ed198a2785db7c62bfba4867" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OrganizationType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out OrganizationType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="445" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="445" bodyend="459"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_organization_type_1a1a12db190bee36ddcacc28b7d3c8addd" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_organization_type_8cs" startline="490" endline="504">SDC.OrganizationType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a2f0e0ef87b0549aed9b281f40ab39bc4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OrganizationType.LoadFromFile</definition>
+        <argsstring>(string fileName, out OrganizationType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="461" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="461" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a03623e918881b6b499ac44433981384e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OrganizationType.LoadFromFile</definition>
+        <argsstring>(string fileName, out OrganizationType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="466" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="466" bodyend="470"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a9f7f4ae6d1af2d41e96c7db1a328f9c5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+        <definition>static OrganizationType SDC.OrganizationType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="472" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="472" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1ac04c952ccb4a8ec5821c0e58c5dee177" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+        <definition>static new OrganizationType SDC.OrganizationType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" line="477" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/OrganizationType.cs" bodystart="477" bodyend="501"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a99db951f6558675be12a934e0baec917" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OrganizationType.Deserialize</definition>
+        <argsstring>(string input, out OrganizationType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="397" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="397" bodyend="411"/>
+        <references refid="class_s_d_c_1_1_organization_type_1af2103b162bd2892c790bf2150695fefb" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_organization_type_8cs" startline="343" endline="357">SDC.OrganizationType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a67a86040934230be00d762d790142e47" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OrganizationType.Deserialize</definition>
+        <argsstring>(string input, out OrganizationType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="413" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="413" bodyend="417"/>
+        <references refid="class_s_d_c_1_1_organization_type_1af2103b162bd2892c790bf2150695fefb" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_organization_type_8cs" startline="343" endline="357">SDC.OrganizationType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a2c48fb55023ab3cc01fa7ce5950ad301" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+        <definition>static new OrganizationType SDC.OrganizationType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="419" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="419" bodyend="434"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_organization_type_1a3c11f46018b7a71b8eaa1e9e2bb2202d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_organization_type_8cs" startline="205">SDC.OrganizationType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a35f84c30d99e040f301a1cac9f338dc1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+        <definition>static OrganizationType SDC.OrganizationType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="436" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="436" bodyend="439"/>
+        <references refid="class_s_d_c_1_1_organization_type_1a3c11f46018b7a71b8eaa1e9e2bb2202d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_organization_type_8cs" startline="205">SDC.OrganizationType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a1a12db190bee36ddcacc28b7d3c8addd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OrganizationType.LoadFromFile</definition>
+        <argsstring>(string fileName, out OrganizationType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="490" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="490" bodyend="504"/>
+        <references refid="class_s_d_c_1_1_organization_type_1a00ccf1a3ed198a2785db7c62bfba4867" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_organization_type_8cs" startline="445" endline="459">SDC.OrganizationType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a03623e918881b6b499ac44433981384e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.OrganizationType.LoadFromFile</definition>
+        <argsstring>(string fileName, out OrganizationType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="506" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="506" bodyend="510"/>
+        <references refid="class_s_d_c_1_1_organization_type_1a00ccf1a3ed198a2785db7c62bfba4867" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_organization_type_8cs" startline="445" endline="459">SDC.OrganizationType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_organization_type_1a6e7315f14c9aaa7b0f68c784d1ca6427" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+        <definition>static new OrganizationType SDC.OrganizationType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" line="512" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/OrganizationType.cs" bodystart="512" bodyend="536"/>
+        <references refid="class_s_d_c_1_1_organization_type_1af2103b162bd2892c790bf2150695fefb" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_organization_type_8cs" startline="343" endline="357">SDC.OrganizationType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A model structure for an Organization object. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6660">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="6661" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6661">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="6658">
+        <label>SDC.OrganizationType</label>
+        <link refid="class_s_d_c_1_1_organization_type"/>
+        <childnode refid="6659" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6659" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6659">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="6660" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6660" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6677">
+        <label>SDC.string_Stype</label>
+        <link refid="class_s_d_c_1_1string___stype"/>
+        <childnode refid="6664" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6664" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6667" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6664">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="6665" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6666" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="6674" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="6675" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="6676" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="6667" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6671">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="6669" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6665">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="6669">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="6668">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="6669" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6674">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="6662">
+        <label>SDC.OrganizationType</label>
+        <link refid="class_s_d_c_1_1_organization_type"/>
+        <childnode refid="6663" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6663" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6677" relation="usage">
+          <edgelabel>_usage</edgelabel>
+          <edgelabel>_orgName</edgelabel>
+          <edgelabel>_department</edgelabel>
+        </childnode>
+        <childnode refid="6667" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6673">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="6667">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="6665" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6668" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="6670" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="6671" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="6672" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="6676">
+        <label>System</label>
+      </node>
+      <node id="6670">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="6669" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6666">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="6663" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6663" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6667" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6663">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="6664" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6664" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6667" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6672">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="6673" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6675">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="6665" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6666" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="6674" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="6675" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="6676" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="6667" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2484" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2483" bodyend="2487"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_organization_type_1a1884946ae82f2895d204f902e7bcceb3" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_contactPerson</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1af3e7a3541574e4bdaadc44c9362cf1a5" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_contactPerson</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a4110feb937658eb76ba9c5979a2faa22" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_department</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1aa09c3762e73b5cf2a9c2323e49189dc9" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_email</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a9e0278c49781c2716cda78b39fa6f09c" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_email</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a2758e00f811340c7b6b0570301f57a26" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_identifier</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1aa05ef54ec6f4a22b92edd94bf15773d6" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_identifier</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1ae2bd5eaabbae730e839bcc32f26a05ba" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_orgName</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1aac0e826aba8768f47f1257dd137c006f" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_phone</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a2db60375d8abf5a7dbe958c5328a2773" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_phone</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a1c68b35099d574eaf83fdebcbc5d0894" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_role</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a5c9cbb4e32d85d27ef4cb33185bbdef4" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_role</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1ad2f33ce0ea104e540b5d7a77d0c7c4b6" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_streetAddress</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1af0284d3da0ec1a93a1e6a81bfd64b890" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_streetAddress</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a7cf1768775164a9e4b4dc6a501043099" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_usage</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a2d57724739fd7d2af25129b6e695c2ad" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_webURL</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a9745919a334c1061fd1d601a95aa081d" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>_webURL</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a9841031b19e9c9ae6818170ecb5fb255" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1ab61dcf85ce8136277e05ab29b44d12a6" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1abe1e498ebbc4ca7d07f2e1f96348b6f6" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a6c995c91499438bffe38abfc81af4d8e" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ContactPerson</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a0cfa9338181f007a38af40934b40f33a" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ContactPerson</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1ab66777ce03dd6075c406a5a85f5ea283" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Department</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1af2103b162bd2892c790bf2150695fefb" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a67a86040934230be00d762d790142e47" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a2c48fb55023ab3cc01fa7ce5950ad301" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1ad9808f214b9c2d168282138b03efdbdd" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a99db951f6558675be12a934e0baec917" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a67a86040934230be00d762d790142e47" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a2c48fb55023ab3cc01fa7ce5950ad301" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a35f84c30d99e040f301a1cac9f338dc1" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OrganizationType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a7c79732baac9bc66eb16844c593e7797" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Email</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1add71cda1a300215963d8f71d13a84411" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Email</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1af0834a3abe7e40344cada7373d8827b2" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Identifier</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1af98466c8c630b4accaefdc185c2044c2" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Identifier</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a00ccf1a3ed198a2785db7c62bfba4867" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a2f0e0ef87b0549aed9b281f40ab39bc4" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a03623e918881b6b499ac44433981384e" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a9f7f4ae6d1af2d41e96c7db1a328f9c5" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1ac04c952ccb4a8ec5821c0e58c5dee177" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a1a12db190bee36ddcacc28b7d3c8addd" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a03623e918881b6b499ac44433981384e" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a6e7315f14c9aaa7b0f68c784d1ca6427" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::OrganizationType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1afb5bdf31497d26a6bbb3296c8ad71c0e" prot="protected" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>OrganizationType</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a04977afae059a601d215aa1c449e2c67" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>OrganizationType</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1afb5bdf31497d26a6bbb3296c8ad71c0e" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>OrganizationType</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a1b65fa200a8ee675829fa88ccbff34e4" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>OrgName</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a15872a9d9a2a15fd66354cfc153d89f7" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Phone</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1ae8e9a7e7bb62db0f9078bff871e0b957" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Phone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a96e21f4f9d274a4f29c2b5654a5df98d" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Role</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1aade68f1af9c0e0dd90939c597584dcf7" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Role</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a87d032a2f52eac9fd52247ee32e9c024" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1ac9d548a66d43f1d6554d0a2888848fd6" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a9def304eb253b916b326cb6819bbe946" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a56e128aee6abb98c6f2c59fb6ca9229c" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a3bdda1c9842ce0ebe72a456cf1bd0139" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a9def304eb253b916b326cb6819bbe946" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a44677a29a18f2c90fd1f1433eb641913" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1afc4e77bbfd3c4bd7cb7f44da7af7466f" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1afc4e77bbfd3c4bd7cb7f44da7af7466f" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a3c11f46018b7a71b8eaa1e9e2bb2202d" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1af7d4dcfa587cd89d307c5f1bc4bb3124" prot="private" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1acaf915cd7355d217b0ba2ef17072079c" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeContactPerson</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a24fd97afcef5b27836478f85faf6a229" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeDepartment</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a24fd97afcef5b27836478f85faf6a229" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeDepartment</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1ae2671da89b11d44b09a3af4ca3a903cd" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeEmail</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a0ad5ff0e45d82a7c9af24fffe87933e3" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeIdentifier</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1aaef7bd5387fd54c5c3fed63c22d469ee" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeOrgName</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1aaef7bd5387fd54c5c3fed63c22d469ee" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeOrgName</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a0b71a6d00f9eb7b70feb8ec94ff8d701" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializePhone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a7a8ba8d87345cf9ec6a33805b2fc978a" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeRole</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a1de93f4ace026d4a1f18d4ccb95fd1e8" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeStreetAddress</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1aeaa81163d3d8375cd50a5a1388fa675b" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeUsage</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1aeaa81163d3d8375cd50a5a1388fa675b" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeUsage</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1ac335159079dc4b14b582ded12a6f8f7a" prot="public" virt="virtual"><scope>SDC::OrganizationType</scope><name>ShouldSerializeWebURL</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a370fb539b0b1e691f43375211097e588" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>StreetAddress</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a1f92c9f747e7052772db538bbe9ece38" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>StreetAddress</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1ac8c6791f04fb539796e7a454f13d76e4" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>Usage</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a7ae938c67ddad98788fd339fea602416" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>WebURL</name></member>
+      <member refid="class_s_d_c_1_1_organization_type_1a816854b8695b89543a373e9e98474348" prot="public" virt="non-virtual"><scope>SDC::OrganizationType</scope><name>WebURL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1762 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_person_type" kind="class" prot="public">
+    <compoundname>SDC::PersonType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a200de3e33718d6d1b5f0df1fe1cb7d42" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_name_type" kindref="compound">NameType</ref></type>
+        <definition>NameType SDC.PersonType::_personName</definition>
+        <argsstring></argsstring>
+        <name>_personName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="34" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_person_type_1a7dbe8acfdfaccfa7b9e12437469b8804" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_person_type_8cs" startline="308" endline="311">SDC.PersonType.ShouldSerializePersonName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a8c938a68d0b9a4cd3eaa3ab30a17683d" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_name_type" kindref="compound">NameType</ref> &gt;</type>
+        <definition>List&lt;NameType&gt; SDC.PersonType._aliasName</definition>
+        <argsstring></argsstring>
+        <name>_aliasName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="37" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a3336599a534fd7600f82db198382f6d3" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_job_type" kindref="compound">JobType</ref> &gt;</type>
+        <definition>List&lt;JobType&gt; SDC.PersonType._job</definition>
+        <argsstring></argsstring>
+        <name>_job</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a62d9ae48676c9dc7d204649cde033510" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_address_type" kindref="compound">AddressType</ref> &gt;</type>
+        <definition>List&lt;AddressType&gt; SDC.PersonType._streetAddress</definition>
+        <argsstring></argsstring>
+        <name>_streetAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="43" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1ac0ca994b8e86cacd1d3f157aa48cc082" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_email_type" kindref="compound">EmailType</ref> &gt;</type>
+        <definition>List&lt;EmailType&gt; SDC.PersonType._email</definition>
+        <argsstring></argsstring>
+        <name>_email</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="46" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a80dca7d1d5a8a65cd2e72c0d08619eaf" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_phone_type" kindref="compound">PhoneType</ref> &gt;</type>
+        <definition>List&lt;PhoneType&gt; SDC.PersonType._phone</definition>
+        <argsstring></argsstring>
+        <name>_phone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="49" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1ad90db24c5c762da2f83b50750dd6d67c" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> &gt;</type>
+        <definition>List&lt;anyURI_Stype&gt; SDC.PersonType._webURL</definition>
+        <argsstring></argsstring>
+        <name>_webURL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="52" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a9a291afb23f4778d64939059c17fb4e4" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.PersonType::_role</definition>
+        <argsstring></argsstring>
+        <name>_role</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="55" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_person_type_1aa72a32a52f31d000e57c614f69783d81" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_person_type_8cs" startline="316" endline="319">SDC.PersonType.ShouldSerializeRole</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a00b2fbee7d29126f0dae8112e9b399ca" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_identifier_type" kindref="compound">IdentifierType</ref> &gt;</type>
+        <definition>List&lt;IdentifierType&gt; SDC.PersonType._identifier</definition>
+        <argsstring></argsstring>
+        <name>_identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="58" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a16487347d911f4485329d42dac2d466e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.PersonType::_usage</definition>
+        <argsstring></argsstring>
+        <name>_usage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="61" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="61" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_person_type_1ab021cc5cf8ae060a39c7b1f40a8048a7" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_person_type_8cs" startline="324" endline="327">SDC.PersonType.ShouldSerializeUsage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a81dad4c8fcc65ba022eeaf99af50a600" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_job_type" kindref="compound">JobType</ref> &gt;</type>
+        <definition>BindingList&lt;JobType&gt; SDC.PersonType._job</definition>
+        <argsstring></argsstring>
+        <name>_job</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1aaf8e9c52ef0405eef669737d36a703ac" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_address_type" kindref="compound">AddressType</ref> &gt;</type>
+        <definition>BindingList&lt;AddressType&gt; SDC.PersonType._streetAddress</definition>
+        <argsstring></argsstring>
+        <name>_streetAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="43" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a1803717cc17514b4d63f3a87bdf1e83e" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_email_type" kindref="compound">EmailType</ref> &gt;</type>
+        <definition>BindingList&lt;EmailType&gt; SDC.PersonType._email</definition>
+        <argsstring></argsstring>
+        <name>_email</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="46" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a7fd60c355a1dc802971e9757fcf32599" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_phone_type" kindref="compound">PhoneType</ref> &gt;</type>
+        <definition>BindingList&lt;PhoneType&gt; SDC.PersonType._phone</definition>
+        <argsstring></argsstring>
+        <name>_phone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="49" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a0b6b5e7dc637c70494fb95caf8a8668b" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> &gt;</type>
+        <definition>BindingList&lt;anyURI_Stype&gt; SDC.PersonType._webURL</definition>
+        <argsstring></argsstring>
+        <name>_webURL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="52" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1a16852d6c7f1f968961c6142375305763" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_identifier_type" kindref="compound">IdentifierType</ref> &gt;</type>
+        <definition>BindingList&lt;IdentifierType&gt; SDC.PersonType._identifier</definition>
+        <argsstring></argsstring>
+        <name>_identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="58" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1abeb9ec32b7527e466dc738555b582d82" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.PersonType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="65" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_person_type_1afab5d1efe0baaa1c433aad4ac96e0ecb" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.PersonType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="63" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a28d56803c27fec3058b1bb569449ec28" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_name_type" kindref="compound">NameType</ref></type>
+        <definition>NameType SDC.PersonType::PersonName</definition>
+        <argsstring></argsstring>
+        <name>PersonName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="67" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1ac75f7756a7f860391400b9ab9e230018" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_name_type" kindref="compound">NameType</ref> &gt;</type>
+        <definition>virtual List&lt;NameType&gt; SDC.PersonType.AliasName</definition>
+        <argsstring></argsstring>
+        <name>AliasName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="80" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1ae712e5d0f9e979299972171081d7d78d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_job_type" kindref="compound">JobType</ref> &gt;</type>
+        <definition>virtual List&lt;JobType&gt; SDC.PersonType.Job</definition>
+        <argsstring></argsstring>
+        <name>Job</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="93" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a81a15049aece50bfb717b15ce56d62bb" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_address_type" kindref="compound">AddressType</ref> &gt;</type>
+        <definition>virtual List&lt;AddressType&gt; SDC.PersonType.StreetAddress</definition>
+        <argsstring></argsstring>
+        <name>StreetAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="106" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a7d66a2a87c57c121e611569b3b5aa5d4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_email_type" kindref="compound">EmailType</ref> &gt;</type>
+        <definition>virtual List&lt;EmailType&gt; SDC.PersonType.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="119" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a619cbf78fa2ab436e5326bd140d0e95f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_phone_type" kindref="compound">PhoneType</ref> &gt;</type>
+        <definition>virtual List&lt;PhoneType&gt; SDC.PersonType.Phone</definition>
+        <argsstring></argsstring>
+        <name>Phone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="132" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a108ae6b7a9218d9d9d30a73d6961027a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> &gt;</type>
+        <definition>virtual List&lt;anyURI_Stype&gt; SDC.PersonType.WebURL</definition>
+        <argsstring></argsstring>
+        <name>WebURL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="145" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1aea28014bcd9ba9bca030d97da9f8ad2a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.PersonType::Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <briefdescription>
+<para>Role of the person, e.g., creator, copyright holder, accreditor, certifier, curator, etc. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="161" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1ad4bbc6e6e1c0dfbede4393e9fa17bcb2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_identifier_type" kindref="compound">IdentifierType</ref> &gt;</type>
+        <definition>virtual List&lt;IdentifierType&gt; SDC.PersonType.Identifier</definition>
+        <argsstring></argsstring>
+        <name>Identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="174" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a1d279d352bc4c15bf7b4f764edb328f4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.PersonType::Usage</definition>
+        <argsstring></argsstring>
+        <name>Usage</name>
+        <briefdescription>
+<para>When this person should be contacted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="190" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a39140553e5f33f29a904e2a5d8f9c3b0" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.PersonType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="202" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="203" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_person_type_1a2a2e25e04f31e568be57aff9f99a30f7" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_person_type_8cs" startline="391" endline="406">SDC.PersonType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a29c10d0e0d4169728f469068c335b8fc" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_job_type" kindref="compound">JobType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;JobType&gt; SDC.PersonType.Job</definition>
+        <argsstring></argsstring>
+        <name>Job</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="92" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a3552fc48090f791e3df93e96fd6fa356" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_address_type" kindref="compound">AddressType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;AddressType&gt; SDC.PersonType.StreetAddress</definition>
+        <argsstring></argsstring>
+        <name>StreetAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="115" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1aa45e32f4e43db684968d63549a12b1ff" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_email_type" kindref="compound">EmailType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;EmailType&gt; SDC.PersonType.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="138" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a856041d9aaf405c38958476ce778887c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_phone_type" kindref="compound">PhoneType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;PhoneType&gt; SDC.PersonType.Phone</definition>
+        <argsstring></argsstring>
+        <name>Phone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="161" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a6a1a1169370a29f3dc928c59c8385136" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1any_u_r_i___stype" kindref="compound">anyURI_Stype</ref> &gt;</type>
+        <definition>virtual BindingList&lt;anyURI_Stype&gt; SDC.PersonType.WebURL</definition>
+        <argsstring></argsstring>
+        <name>WebURL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="184" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a558f4c0393a28f232ba80ae495f71b1b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_identifier_type" kindref="compound">IdentifierType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;IdentifierType&gt; SDC.PersonType.Identifier</definition>
+        <argsstring></argsstring>
+        <name>Identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="233" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_person_type_1a5269f931404b853f9ab5eea965cf619c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.PersonType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="293" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a177df1578e2c0dcd06867c586a3a52fc" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.PersonType.PersonType</definition>
+        <argsstring>()</argsstring>
+        <name>PersonType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2491" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2491" bodyend="2491"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a822e3d8a624425518cdfd0aa12cc2b10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.PersonType.PersonType</definition>
+        <argsstring>(BaseType parentNode)</argsstring>
+        <name>PersonType</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2492" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2492" bodyend="2492"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a177df1578e2c0dcd06867c586a3a52fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.PersonType.PersonType</definition>
+        <argsstring>()</argsstring>
+        <name>PersonType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="608" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="608" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a8632390338fd252a2b16180aae8d2590" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializeAliasName</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeAliasName</name>
+        <briefdescription>
+<para>Test whether AliasName should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="217" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="217" bodyend="220"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a214372e02b86bb76a0d91e16fe98a7a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializeJob</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeJob</name>
+        <briefdescription>
+<para>Test whether Job should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="225" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="225" bodyend="228"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a43307ef5389bf638207e7d26f409c1ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializeStreetAddress</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeStreetAddress</name>
+        <briefdescription>
+<para>Test whether StreetAddress should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="233" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="233" bodyend="236"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1ac9cfa696b1b2d6094000ae48500c7826" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializeEmail</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeEmail</name>
+        <briefdescription>
+<para>Test whether Email should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="241" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="241" bodyend="244"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a04ad9057630d7ec98beaafb1bafea764" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializePhone</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializePhone</name>
+        <briefdescription>
+<para>Test whether Phone should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="249" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="249" bodyend="252"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1af8a88d4ee52edc85a7d54693e374c56c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializeWebURL</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeWebURL</name>
+        <briefdescription>
+<para>Test whether WebURL should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="257" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="257" bodyend="260"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1acd757cdc3e13b3915a024da8670135d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializeIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeIdentifier</name>
+        <briefdescription>
+<para>Test whether Identifier should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="265" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="265" bodyend="268"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a7dbe8acfdfaccfa7b9e12437469b8804" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializePersonName</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializePersonName</name>
+        <briefdescription>
+<para>Test whether PersonName should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="273" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="273" bodyend="276"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1aa72a32a52f31d000e57c614f69783d81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializeRole</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeRole</name>
+        <briefdescription>
+<para>Test whether Role should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="281" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="281" bodyend="284"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1ab021cc5cf8ae060a39c7b1f40a8048a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializeUsage</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeUsage</name>
+        <briefdescription>
+<para>Test whether Usage should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="289" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="289" bodyend="292"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a1af82dd2330b98f900632bad8fc24fb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.PersonType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a9ac9c6d560ffe2c300d7796951c22395">Serialize</reimplements>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="299" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="299" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a0ec0bdb94558b3780a3254ad07ab75c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.PersonType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="329" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="329" bodyend="332"/>
+        <referencedby refid="class_s_d_c_1_1_person_type_1ab580f1bddefc1c206b0585ba2049ce17" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_person_type_8cs" startline="435" endline="453">SDC.PersonType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1af562442f98d2c0d108eb6e7a7e15f217" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1ab1514379cd9bd547d5569548274fceb1">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="392" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="392" bodyend="405"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_person_type_1a061688b64526a62c5ee5d8656f8211d4" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_person_type_8cs" startline="420" endline="433">SDC.PersonType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a82a2c258c4245e1093e5a3a038662a8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1af03b919560cd67ffe1373d8cef3bb9b8">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="407" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="407" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1ab580f1bddefc1c206b0585ba2049ce17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.PersonType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="412" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="412" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1aa48f92bcf44349c03d04f26efb149b14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.PersonType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5c619ed0e36571d6f4bd992faa3ad282">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="417" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="417" bodyend="434"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a7dbe8acfdfaccfa7b9e12437469b8804" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializePersonName</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializePersonName</name>
+        <briefdescription>
+<para>Test whether PersonName should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="308" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="308" bodyend="311"/>
+        <references refid="class_s_d_c_1_1_person_type_1a200de3e33718d6d1b5f0df1fe1cb7d42" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_person_type_8cs" startline="34">SDC.PersonType._personName</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1aa72a32a52f31d000e57c614f69783d81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializeRole</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeRole</name>
+        <briefdescription>
+<para>Test whether Role should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="316" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="316" bodyend="319"/>
+        <references refid="class_s_d_c_1_1_person_type_1a9a291afb23f4778d64939059c17fb4e4" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_person_type_8cs" startline="55">SDC.PersonType._role</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1ab021cc5cf8ae060a39c7b1f40a8048a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.ShouldSerializeUsage</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeUsage</name>
+        <briefdescription>
+<para>Test whether Usage should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="324" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="324" bodyend="327"/>
+        <references refid="class_s_d_c_1_1_person_type_1a16487347d911f4485329d42dac2d466e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_person_type_8cs" startline="61">SDC.PersonType._usage</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a0ec0bdb94558b3780a3254ad07ab75c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.PersonType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="334" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="334" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a061688b64526a62c5ee5d8656f8211d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.PersonType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="420" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="420" bodyend="433"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_person_type_1af562442f98d2c0d108eb6e7a7e15f217" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_person_type_8cs" startline="392" endline="405">SDC.PersonType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1ab580f1bddefc1c206b0585ba2049ce17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.PersonType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="435" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="435" bodyend="453"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_person_type_1a0ec0bdb94558b3780a3254ad07ab75c2" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_person_type_8cs" startline="329" endline="332">SDC.PersonType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a02dfcdb911de3b7040750adf517c5ffc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+        <definition>virtual PersonType SDC.PersonType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3">Clone</reimplements>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="514" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="514" bodyend="517"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a8c1993b43096fb2c80c285770846513f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.PersonType.Deserialize</definition>
+        <argsstring>(string input, out PersonType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="341" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="341" bodyend="355"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_person_type_1ae428a30f4179a2456d2d6214807990db" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_person_type_8cs" startline="369" endline="383">SDC.PersonType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_person_type_1a9ebff22cb10539b43b429ce37a18ae0f" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_person_type_8cs" startline="484" endline="508">SDC.PersonType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a7c4838eb5e36caf2b5ad76815169f993" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.PersonType.Deserialize</definition>
+        <argsstring>(string input, out PersonType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="357" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="357" bodyend="361"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a2a2e25e04f31e568be57aff9f99a30f7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+        <definition>static new PersonType SDC.PersonType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="363" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="363" bodyend="378"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a4c9594a48fd36bfcbbd2451305f6a8ec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+        <definition>static PersonType SDC.PersonType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="380" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="380" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a4da4c352ace9a6cae515f40539246a1c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.PersonType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out PersonType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="443" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="443" bodyend="457"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_person_type_1ac8cbf767f12e5eac6beeffa1d1725480" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_person_type_8cs" startline="462" endline="476">SDC.PersonType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a68ca1c9659463dc5be6c8bfc8b7dbf81" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.PersonType.LoadFromFile</definition>
+        <argsstring>(string fileName, out PersonType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="459" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="459" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1afb1323061cfc50d7da2952daf82e32d9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.PersonType.LoadFromFile</definition>
+        <argsstring>(string fileName, out PersonType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="464" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="464" bodyend="468"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1add4787265436df3f261bdc4ad166ba8d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+        <definition>static PersonType SDC.PersonType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="470" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="470" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1ae11ba0002f3e8b7ff04c0755630be909" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+        <definition>static new PersonType SDC.PersonType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" line="475" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/PersonType.cs" bodystart="475" bodyend="499"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1ae428a30f4179a2456d2d6214807990db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.PersonType.Deserialize</definition>
+        <argsstring>(string input, out PersonType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="369" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="369" bodyend="383"/>
+        <references refid="class_s_d_c_1_1_person_type_1a8c1993b43096fb2c80c285770846513f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_person_type_8cs" startline="341" endline="355">SDC.PersonType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a7c4838eb5e36caf2b5ad76815169f993" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.PersonType.Deserialize</definition>
+        <argsstring>(string input, out PersonType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="385" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="385" bodyend="389"/>
+        <references refid="class_s_d_c_1_1_person_type_1a8c1993b43096fb2c80c285770846513f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_person_type_8cs" startline="341" endline="355">SDC.PersonType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a2a2e25e04f31e568be57aff9f99a30f7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+        <definition>static new PersonType SDC.PersonType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="391" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="391" bodyend="406"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_person_type_1a39140553e5f33f29a904e2a5d8f9c3b0" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_person_type_8cs" startline="203">SDC.PersonType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1aa4af705cedaa2a5049ff180302d3644a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+        <definition>static PersonType SDC.PersonType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="408" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="408" bodyend="411"/>
+        <references refid="class_s_d_c_1_1_person_type_1a39140553e5f33f29a904e2a5d8f9c3b0" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_person_type_8cs" startline="203">SDC.PersonType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1ac8cbf767f12e5eac6beeffa1d1725480" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.PersonType.LoadFromFile</definition>
+        <argsstring>(string fileName, out PersonType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="462" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="462" bodyend="476"/>
+        <references refid="class_s_d_c_1_1_person_type_1a4da4c352ace9a6cae515f40539246a1c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_person_type_8cs" startline="443" endline="457">SDC.PersonType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1afb1323061cfc50d7da2952daf82e32d9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.PersonType.LoadFromFile</definition>
+        <argsstring>(string fileName, out PersonType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="478" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="478" bodyend="482"/>
+        <references refid="class_s_d_c_1_1_person_type_1a4da4c352ace9a6cae515f40539246a1c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_person_type_8cs" startline="443" endline="457">SDC.PersonType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_person_type_1a9ebff22cb10539b43b429ce37a18ae0f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+        <definition>static new PersonType SDC.PersonType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" line="484" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/PersonType.cs" bodystart="484" bodyend="508"/>
+        <references refid="class_s_d_c_1_1_person_type_1a8c1993b43096fb2c80c285770846513f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_person_type_8cs" startline="341" endline="355">SDC.PersonType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A model structure for a Person object. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6788">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="6789" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6789">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="6786">
+        <label>SDC.PersonType</label>
+        <link refid="class_s_d_c_1_1_person_type"/>
+        <childnode refid="6787" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6787" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6787">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="6788" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6788" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6805">
+        <label>SDC.string_Stype</label>
+        <link refid="class_s_d_c_1_1string___stype"/>
+        <childnode refid="6792" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6792" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6795" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6792">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="6793" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6794" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="6802" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="6803" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="6804" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="6795" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6799">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="6797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6806">
+        <label>SDC.NameType</label>
+        <link refid="class_s_d_c_1_1_name_type"/>
+        <childnode refid="6791" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6791" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6805" relation="usage">
+          <edgelabel>_namePrefix</edgelabel>
+          <edgelabel>_middleName</edgelabel>
+          <edgelabel>_title</edgelabel>
+          <edgelabel>_firstName</edgelabel>
+          <edgelabel>_lastName</edgelabel>
+          <edgelabel>_nameSuffix</edgelabel>
+        </childnode>
+        <childnode refid="6795" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6793">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="6797">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="6790">
+        <label>SDC.PersonType</label>
+        <link refid="class_s_d_c_1_1_person_type"/>
+        <childnode refid="6791" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6791" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6805" relation="usage">
+          <edgelabel>_role</edgelabel>
+          <edgelabel>_usage</edgelabel>
+        </childnode>
+        <childnode refid="6806" relation="usage">
+          <edgelabel>_personName</edgelabel>
+        </childnode>
+        <childnode refid="6795" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6796">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="6797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6802">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="6801">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="6795">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="6793" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6796" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="6798" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="6799" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="6800" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="6804">
+        <label>System</label>
+      </node>
+      <node id="6798">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="6797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6794">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="6791" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6791" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6795" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6791">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="6792" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6792" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6795" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="6800">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="6801" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6803">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="6793" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6794" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="6802" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="6803" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="6804" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="6795" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2490" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2489" bodyend="2493"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_person_type_1a8c938a68d0b9a4cd3eaa3ab30a17683d" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_aliasName</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ac0ca994b8e86cacd1d3f157aa48cc082" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_email</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a1803717cc17514b4d63f3a87bdf1e83e" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_email</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a00b2fbee7d29126f0dae8112e9b399ca" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_identifier</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a16852d6c7f1f968961c6142375305763" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_identifier</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a3336599a534fd7600f82db198382f6d3" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_job</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a81dad4c8fcc65ba022eeaf99af50a600" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_job</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a200de3e33718d6d1b5f0df1fe1cb7d42" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_personName</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a80dca7d1d5a8a65cd2e72c0d08619eaf" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_phone</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a7fd60c355a1dc802971e9757fcf32599" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_phone</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a9a291afb23f4778d64939059c17fb4e4" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_role</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a62d9ae48676c9dc7d204649cde033510" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_streetAddress</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1aaf8e9c52ef0405eef669737d36a703ac" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_streetAddress</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a16487347d911f4485329d42dac2d466e" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_usage</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ad90db24c5c762da2f83b50750dd6d67c" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_webURL</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a0b6b5e7dc637c70494fb95caf8a8668b" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>_webURL</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ac75f7756a7f860391400b9ab9e230018" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>AliasName</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::PersonType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::PersonType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a5269f931404b853f9ab5eea965cf619c" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1abeb9ec32b7527e466dc738555b582d82" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a02dfcdb911de3b7040750adf517c5ffc" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a8c1993b43096fb2c80c285770846513f" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a7c4838eb5e36caf2b5ad76815169f993" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a2a2e25e04f31e568be57aff9f99a30f7" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a4c9594a48fd36bfcbbd2451305f6a8ec" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ae428a30f4179a2456d2d6214807990db" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a7c4838eb5e36caf2b5ad76815169f993" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a2a2e25e04f31e568be57aff9f99a30f7" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1aa4af705cedaa2a5049ff180302d3644a" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::PersonType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a7d66a2a87c57c121e611569b3b5aa5d4" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Email</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1aa45e32f4e43db684968d63549a12b1ff" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Email</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::PersonType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::PersonType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ad4bbc6e6e1c0dfbede4393e9fa17bcb2" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Identifier</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a558f4c0393a28f232ba80ae495f71b1b" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Identifier</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ae712e5d0f9e979299972171081d7d78d" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Job</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a29c10d0e0d4169728f469068c335b8fc" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Job</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a4da4c352ace9a6cae515f40539246a1c" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a68ca1c9659463dc5be6c8bfc8b7dbf81" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1afb1323061cfc50d7da2952daf82e32d9" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1add4787265436df3f261bdc4ad166ba8d" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ae11ba0002f3e8b7ff04c0755630be909" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ac8cbf767f12e5eac6beeffa1d1725480" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1afb1323061cfc50d7da2952daf82e32d9" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a9ebff22cb10539b43b429ce37a18ae0f" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::PersonType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a28d56803c27fec3058b1bb569449ec28" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>PersonName</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a177df1578e2c0dcd06867c586a3a52fc" prot="protected" virt="non-virtual"><scope>SDC::PersonType</scope><name>PersonType</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a822e3d8a624425518cdfd0aa12cc2b10" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>PersonType</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a177df1578e2c0dcd06867c586a3a52fc" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>PersonType</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a619cbf78fa2ab436e5326bd140d0e95f" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Phone</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a856041d9aaf405c38958476ce778887c" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Phone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1aea28014bcd9ba9bca030d97da9f8ad2a" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Role</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1af562442f98d2c0d108eb6e7a7e15f217" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a82a2c258c4245e1093e5a3a038662a8a" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ab580f1bddefc1c206b0585ba2049ce17" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1aa48f92bcf44349c03d04f26efb149b14" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a061688b64526a62c5ee5d8656f8211d4" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ab580f1bddefc1c206b0585ba2049ce17" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::PersonType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a1af82dd2330b98f900632bad8fc24fb9" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a0ec0bdb94558b3780a3254ad07ab75c2" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a0ec0bdb94558b3780a3254ad07ab75c2" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1afab5d1efe0baaa1c433aad4ac96e0ecb" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a39140553e5f33f29a904e2a5d8f9c3b0" prot="private" virt="non-virtual"><scope>SDC::PersonType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a8632390338fd252a2b16180aae8d2590" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeAliasName</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ac9cfa696b1b2d6094000ae48500c7826" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeEmail</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1acd757cdc3e13b3915a024da8670135d2" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeIdentifier</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a214372e02b86bb76a0d91e16fe98a7a9" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeJob</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a7dbe8acfdfaccfa7b9e12437469b8804" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializePersonName</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a7dbe8acfdfaccfa7b9e12437469b8804" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializePersonName</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a04ad9057630d7ec98beaafb1bafea764" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializePhone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1aa72a32a52f31d000e57c614f69783d81" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeRole</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1aa72a32a52f31d000e57c614f69783d81" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeRole</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a43307ef5389bf638207e7d26f409c1ca" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeStreetAddress</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ab021cc5cf8ae060a39c7b1f40a8048a7" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeUsage</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1ab021cc5cf8ae060a39c7b1f40a8048a7" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeUsage</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1af8a88d4ee52edc85a7d54693e374c56c" prot="public" virt="virtual"><scope>SDC::PersonType</scope><name>ShouldSerializeWebURL</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a81a15049aece50bfb717b15ce56d62bb" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>StreetAddress</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a3552fc48090f791e3df93e96fd6fa356" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>StreetAddress</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a1d279d352bc4c15bf7b4f764edb328f4" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>Usage</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a108ae6b7a9218d9d9d30a73d6961027a" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>WebURL</name></member>
+      <member refid="class_s_d_c_1_1_person_type_1a6a1a1169370a29f3dc928c59c8385136" prot="public" virt="non-virtual"><scope>SDC::PersonType</scope><name>WebURL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
