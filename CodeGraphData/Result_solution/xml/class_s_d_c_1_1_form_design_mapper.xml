@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_form_design_mapper" kind="class" prot="public">
+    <compoundname>SDC::FormDesignMapper</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_form_design_mapper_1a5a0683919de57579a84f979abab90fde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>object SDC.FormDesignMapper.rowToNodeMapper</definition>
+        <argsstring>(DataRow dr, out ItemType qType)</argsstring>
+        <name>rowToNodeMapper</name>
+        <param>
+          <type>DataRow</type>
+          <declname>dr</declname>
+        </param>
+        <param>
+          <type>out ItemType</type>
+          <declname>qType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes a new instance of the <ref refid="namespace_s_d_c_1a3d8e0c00bc202033f2b350f126471d3aa490e08962e6404757d13f87b42ee4819" kindref="member">FormDesign</ref> class. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fD</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>QF, QM, QS, List, ListItem, Section or Note</para><para>Base item metadata</para><para>Displayed items: Q, S, N (DI), A (LI)</para><para>All Displayed Items</para><para>Response items QF and AF</para><para>A, AF</para><para>AF only</para><para>List Items</para><para>Sections and Questions are repeatable items</para><para>Base item metadata</para><para>All Displayed Items</para><para>eCC Special handling Conditional Reporting with &quot;?&quot;: Q and S only</para><para>eCC Special handling for Authority Required: Q, A and S only</para><para>Sections and Questions are repeatable items//</para><para>Questions: QF, QM or QS</para><para>List Wrapper</para><para>QM</para><para>QM</para><para>List Items Only</para><para>+QF; AF is similar, but should be handled seperately</para><para>+!eCC Special handling for QF; handle AF seperately</para><para>liRF.responseRequired = true; //for AF </para>        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.DataSetMapper.cs" line="22" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.DataSetMapper.cs" bodystart="22" bodyend="307"/>
+        <references refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa40ea57d3ee3c07bf1c102b466e1c3091" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="44">SDC.byte</references>
+        <references refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98ace2c8aed9c2fa0cfbed56cbda4d8bf07">SDC.Empty</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6a5aa79f9e9daea3a21129aa6cf82d4a36">SDC.ListFieldType</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6a00d9ce5695b0ed86da7e6d1c74ef8227">SDC.ListItemResponseFieldType</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6a56fd96a02814503f375279f752053434">SDC.ListItemType</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6a44b435c783c1d4d4d4a7172a9bc0f609">SDC.ListType</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6a1b36739f309283e9a1b1efb89e625f64">SDC.QuestionItemType</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6ac3251c3df6eb30442ee1290346397a79">SDC.ResponseFieldType</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6ae02618ed0d2438f1be23f404acf665b1">SDC.UnitsType</references>
+        <references refid="namespace_s_d_c_1af2209f66af49f85f2c41565b139f8efbab2145aac704ce76dbe1ac7adac535b23">SDC.var</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_form_design_mapper_1a335b20ca45b3831e9f19ef28eb135d20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>object SDC.FormDesignMapper.rowToNodeMapper</definition>
+        <argsstring>(DataRow dr, out EccItemType qType)</argsstring>
+        <name>rowToNodeMapper</name>
+        <param>
+          <type>DataRow</type>
+          <declname>dr</declname>
+        </param>
+        <param>
+          <type>out <ref refid="namespace_s_d_c_1aecb03934860715dc0b2aea10b47e02ec" kindref="member">EccItemType</ref></type>
+          <declname>qType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes a new instance of the <ref refid="namespace_s_d_c_1a3d8e0c00bc202033f2b350f126471d3aa490e08962e6404757d13f87b42ee4819" kindref="member">FormDesign</ref> class. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fD</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>QF, QM, QS, List, ListItem, Section or Note</para><para>Base item metadata</para><para>Displayed items: Q, S, N (DI), A (LI)</para><para>All Displayed Items</para><para>Response items QF and AF</para><para>A, AF</para><para>AF only</para><para>List Items</para><para>Sections and Questions are repeatable items</para><para>Base item metadata</para><para>All Displayed Items</para><para>eCC Special handling Conditional Reporting with &quot;?&quot;: Q and S only</para><para>eCC Special handling for Authority Required: Q, A and S only</para><para>Sections and Questions are repeatable items//</para><para>Questions: QF, QM or QS</para><para>List Wrapper</para><para>QM</para><para>QM</para><para>List Items Only</para><para>+QF; AF is similar, but should be handled seperately</para><para>+!eCC Special handling for QF; handle AF seperately</para><para>liRF.responseRequired = true; //for AF </para>        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema.Adaptor/FormDesignMapper.cs" line="14" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema.Adaptor/FormDesignMapper.cs" bodystart="14" bodyend="299"/>
+        <references refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa40ea57d3ee3c07bf1c102b466e1c3091" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="44">SDC.byte</references>
+        <references refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98ace2c8aed9c2fa0cfbed56cbda4d8bf07">SDC.Empty</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6a5aa79f9e9daea3a21129aa6cf82d4a36">SDC.ListFieldType</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6a00d9ce5695b0ed86da7e6d1c74ef8227">SDC.ListItemResponseFieldType</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6a56fd96a02814503f375279f752053434">SDC.ListItemType</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6a44b435c783c1d4d4d4a7172a9bc0f609">SDC.ListType</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6a1b36739f309283e9a1b1efb89e625f64">SDC.QuestionItemType</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6ac3251c3df6eb30442ee1290346397a79">SDC.ResponseFieldType</references>
+        <references refid="namespace_s_d_c_1ad5552ac835ff67d5012e7278a3a7adf6ae02618ed0d2438f1be23f404acf665b1">SDC.UnitsType</references>
+        <references refid="namespace_s_d_c_1af2209f66af49f85f2c41565b139f8efbab2145aac704ce76dbe1ac7adac535b23">SDC.var</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_form_design_mapper_1a51961fb3a9c9d9eeaf053b847f1e2a1e" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.FormDesignMapper.AddTemplateMetadataToForm</definition>
+        <argsstring>(BaseType n, DisplayedType parentNode)</argsstring>
+        <name>AddTemplateMetadataToForm</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.DataSetMapper.cs" line="309" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.DataSetMapper.cs" bodystart="309" bodyend="312"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.DataSetMapper.cs" line="16" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.DataSetMapper.cs" bodystart="15" bodyend="313"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_form_design_mapper_1a51961fb3a9c9d9eeaf053b847f1e2a1e" prot="package" virt="non-virtual"><scope>SDC::FormDesignMapper</scope><name>AddTemplateMetadataToForm</name></member>
+      <member refid="class_s_d_c_1_1_form_design_mapper_1a5a0683919de57579a84f979abab90fde" prot="public" virt="non-virtual"><scope>SDC::FormDesignMapper</scope><name>rowToNodeMapper</name></member>
+      <member refid="class_s_d_c_1_1_form_design_mapper_1a335b20ca45b3831e9f19ef28eb135d20" prot="public" virt="non-virtual"><scope>SDC::FormDesignMapper</scope><name>rowToNodeMapper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

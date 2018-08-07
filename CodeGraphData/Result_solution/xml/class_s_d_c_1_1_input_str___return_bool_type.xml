@@ -1,0 +1,932 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_input_str___return_bool_type" kind="class" prot="public">
+    <compoundname>SDC::InputStr_ReturnBoolType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_return_bool_type" prot="public" virt="non-virtual">SDC.ReturnBoolType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_string_contains_bool_type" prot="public" virt="non-virtual">SDC.StringContainsBoolType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_string_ends_with_bool_type" prot="public" virt="non-virtual">SDC.StringEndsWithBoolType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_string_is_empty_bool_type" prot="public" virt="non-virtual">SDC.StringIsEmptyBoolType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_string_is_null_bool_type" prot="public" virt="non-virtual">SDC.StringIsNullBoolType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_string_is_null_or_empty_bool_type" prot="public" virt="non-virtual">SDC.StringIsNullOrEmptyBoolType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_string_like_bool_type" prot="public" virt="non-virtual">SDC.StringLikeBoolType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_string_starts_with_bool_type" prot="public" virt="non-virtual">SDC.StringStartsWithBoolType</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_input_str___return_bool_type_1a9c14022c60057f626f476dbc9a588907" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_string_functions_bool_type" kindref="compound">StringFunctionsBoolType</ref></type>
+        <definition>StringFunctionsBoolType SDC.InputStr_ReturnBoolType._stringPredicate</definition>
+        <argsstring></argsstring>
+        <name>_stringPredicate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_input_str___return_bool_type_1a7156ec74b36cbb0a29f8ed39179c0fb1" compoundref="_input_str___return_bool_type_8cs" startline="71" endline="74">SDC.InputStr_ReturnBoolType.ShouldSerializeStringPredicate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_input_str___return_bool_type_1a061b5d6fb37b8f96f762b78f7e5cee0b" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.InputStr_ReturnBoolType.serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_input_str___return_bool_type_1a1d3c770cba3881bb663fb31d7532e00d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_string_functions_bool_type" kindref="compound">StringFunctionsBoolType</ref></type>
+        <definition>virtual StringFunctionsBoolType SDC.InputStr_ReturnBoolType.StringPredicate</definition>
+        <argsstring></argsstring>
+        <name>StringPredicate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="44" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_input_str___return_bool_type_1a22d6bb6b7575e972ba6ce7a66d7f9c49" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.InputStr_ReturnBoolType.Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="56" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_input_str___return_bool_type_1a472405ce4a9b6ceab9632ce2f5a975a8" compoundref="_input_str___return_bool_type_8cs" startline="162" endline="165">SDC.InputStr_ReturnBoolType.Deserialize</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a7156ec74b36cbb0a29f8ed39179c0fb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.InputStr_ReturnBoolType.ShouldSerializeStringPredicate</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeStringPredicate</name>
+        <briefdescription>
+<para>Test whether StringPredicate should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="71" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="71" bodyend="74"/>
+        <references refid="class_s_d_c_1_1_input_str___return_bool_type_1a9c14022c60057f626f476dbc9a588907" compoundref="_input_str___return_bool_type_8cs" startline="38">SDC.InputStr_ReturnBoolType._stringPredicate</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1ad56ff17911873a4aad918f93802d44a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.InputStr_ReturnBoolType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_return_bool_type_1a575b41b70352322924179fdef6bd0446">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_null_or_empty_bool_type_1a0a3bb91830039e73876daf305bd222dc">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_null_bool_type_1a9d48e9d203fa1e6bf9db7d8cbd1da4db">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_empty_bool_type_1a2ef35967d24db25a782b6317aa8389bd">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_starts_with_bool_type_1a6b98c3af3b75bedcf4a69a73f47bd5c5">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_ends_with_bool_type_1a21bb13c7dc565e255cc7fc51438887af">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_like_bool_type_1a2ca9e58260af10cadc377273ba442193">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_contains_bool_type_1a79c687fd12927ec6df4ef65cb6470a44">Serialize</reimplementedby>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="81" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="81" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a150ab16fbabd9ba85700a1acff436726" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.InputStr_ReturnBoolType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_return_bool_type_1a165edcadbfcb35e9c8dad34c7612594e">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_null_or_empty_bool_type_1a179de99e073bc7b99a07b1348b216e26">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_null_bool_type_1a87065a16379265a21968e16bbd9512b6">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_empty_bool_type_1af82f23cd3202dd33a95e12cfe48f1762">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_starts_with_bool_type_1a09bdcd80e79bf588160240b348540303">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_ends_with_bool_type_1af08fc1876d6c573244ecc540d8f362b1">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_like_bool_type_1ac4055396fac39e4b5d09293c6e01583d">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_contains_bool_type_1a449bd5720c998363086f861d1e41c59b">Serialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="111" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="111" bodyend="114"/>
+        <referencedby refid="class_s_d_c_1_1_input_str___return_bool_type_1ab532c984068e646339b40797ca227de3" compoundref="_input_str___return_bool_type_8cs" startline="199" endline="216">SDC.InputStr_ReturnBoolType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a1121308a92c4005b614a0882c027b8ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.InputStr_ReturnBoolType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_bool_type_1a17e6093c9f8ff0d4ce36d3cdc7747d02">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_null_or_empty_bool_type_1a54b731b518a40631bb4e247b702cc7ea">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_null_bool_type_1ab58d629a7d8903dd59cfca8f4f5e9728">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_empty_bool_type_1a347b294bedf8b981127bcef4ebfe754b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_starts_with_bool_type_1ab929d7c8605770822fe6a98299f407b8">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_ends_with_bool_type_1aac6033985871cd36cd27ce573033173a">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_like_bool_type_1a1a3a97abd4203d7a149784e423341b36">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_contains_bool_type_1a8f3d2e2c2c35c8942b8f8c3c9c7903e0">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="174" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="174" bodyend="187"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_input_str___return_bool_type_1a12b32f27289c51d8aac14d4f338d9a81" compoundref="_input_str___return_bool_type_8cs" startline="189" endline="192">SDC.InputStr_ReturnBoolType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a12b32f27289c51d8aac14d4f338d9a81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.InputStr_ReturnBoolType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_bool_type_1aa7f585ac0dd666e5f8f432860b55f845">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_null_or_empty_bool_type_1a6983a01e386f0023fbd62467c559ed0d">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_null_bool_type_1af3802cf2ae90b62f511a47ae98b18612">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_empty_bool_type_1adc3c0e8dc7ce7ba3159b3b067724b2ef">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_starts_with_bool_type_1a1ba69ede396f13872caa5eb71fdae70f">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_ends_with_bool_type_1ad876730c3e1b1bfcec1c48d063895904">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_like_bool_type_1a894cdba0d16f1f7d7f05138f3f89e5d2">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_contains_bool_type_1af7662639529d023341185b7d8fdb5416">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="189" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="189" bodyend="192"/>
+        <references refid="class_s_d_c_1_1_input_str___return_bool_type_1a1121308a92c4005b614a0882c027b8ef" compoundref="_input_str___return_bool_type_8cs" startline="174" endline="187">SDC.InputStr_ReturnBoolType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a94b27a497fc3967a33ab31c11eef2e29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.InputStr_ReturnBoolType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_bool_type_1a5e94493fe089703511db5abde56eb5f4">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_null_or_empty_bool_type_1a0c46641df21104dd167ec59fe84af828">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_null_bool_type_1a7d2aa12c8249bb42813947ce6bfa0b36">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_empty_bool_type_1ac15933c850ed95d880f39f583a430014">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_starts_with_bool_type_1ac48164bac807ae87695b94a276690e47">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_ends_with_bool_type_1a1b2a8a2183a750924c42d2bcaa0f83aa">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_like_bool_type_1ad4612c89bcfe557fc8fc31b1f27c667f">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_contains_bool_type_1a8fd6802a4782aa2b7dac1a63f6c606db">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="194" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="194" bodyend="197"/>
+        <references refid="class_s_d_c_1_1_input_str___return_bool_type_1a1121308a92c4005b614a0882c027b8ef" compoundref="_input_str___return_bool_type_8cs" startline="174" endline="187">SDC.InputStr_ReturnBoolType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1ab532c984068e646339b40797ca227de3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.InputStr_ReturnBoolType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_bool_type_1ab49356eef1d53fa549b2295ceca01d5c">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_null_or_empty_bool_type_1a2ff4c92b5497bc9de2b021031f4d8ece">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_null_bool_type_1a1558931ec9c96b3efa28e167bba6dd16">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_is_empty_bool_type_1a1c9cc47c24b9fa052806b7477c7f84b6">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_starts_with_bool_type_1a720d065a2a3886c9a0868836e3b82f00">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_ends_with_bool_type_1a35b2948da2f05777b7cee5e4ec133af0">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_like_bool_type_1a50e8aaaa2bb795e42d5f7febb55d23dc">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_contains_bool_type_1af832fcd860628804eec27924d5062b0f">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="199" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="199" bodyend="216"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_input_str___return_bool_type_1a150ab16fbabd9ba85700a1acff436726" compoundref="_input_str___return_bool_type_8cs" startline="111" endline="114">SDC.InputStr_ReturnBoolType.Serialize</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a5f1aaa1964f2efd9aa358999ee71b5fa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.InputStr_ReturnBoolType.Deserialize</definition>
+        <argsstring>(string input, out InputStr_ReturnBoolType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="123" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="123" bodyend="137"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_input_str___return_bool_type_1a023539bc3bb8f798ca996298c7c62da4" compoundref="_input_str___return_bool_type_8cs" startline="139" endline="143">SDC.InputStr_ReturnBoolType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_input_str___return_bool_type_1ae3711c81eb9d79b58de7d9a1fa569e36" compoundref="_input_str___return_bool_type_8cs" startline="257" endline="281">SDC.InputStr_ReturnBoolType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a023539bc3bb8f798ca996298c7c62da4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.InputStr_ReturnBoolType.Deserialize</definition>
+        <argsstring>(string input, out InputStr_ReturnBoolType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="139" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="139" bodyend="143"/>
+        <references refid="class_s_d_c_1_1_input_str___return_bool_type_1a5f1aaa1964f2efd9aa358999ee71b5fa" compoundref="_input_str___return_bool_type_8cs" startline="123" endline="137">SDC.InputStr_ReturnBoolType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a774af692e380cabd4568d60a369f6881" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref></type>
+        <definition>static new InputStr_ReturnBoolType SDC.InputStr_ReturnBoolType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="145" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="145" bodyend="160"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a472405ce4a9b6ceab9632ce2f5a975a8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref></type>
+        <definition>static InputStr_ReturnBoolType SDC.InputStr_ReturnBoolType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="162" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="162" bodyend="165"/>
+        <references refid="class_s_d_c_1_1_input_str___return_bool_type_1a22d6bb6b7575e972ba6ce7a66d7f9c49" compoundref="_input_str___return_bool_type_8cs" startline="57">SDC.InputStr_ReturnBoolType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a5ac3f0ffffbaaec7ffb77cb1b60e6e27" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.InputStr_ReturnBoolType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out InputStr_ReturnBoolType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="225" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="225" bodyend="239"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_input_str___return_bool_type_1a700bb2bf9b4b173af5f648e772e973c2" compoundref="_input_str___return_bool_type_8cs" startline="241" endline="244">SDC.InputStr_ReturnBoolType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a700bb2bf9b4b173af5f648e772e973c2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.InputStr_ReturnBoolType.LoadFromFile</definition>
+        <argsstring>(string fileName, out InputStr_ReturnBoolType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="241" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="241" bodyend="244"/>
+        <references refid="class_s_d_c_1_1_input_str___return_bool_type_1a5ac3f0ffffbaaec7ffb77cb1b60e6e27" compoundref="_input_str___return_bool_type_8cs" startline="225" endline="239">SDC.InputStr_ReturnBoolType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a90e2a08b31b56b2e40b0ecaef9deb98d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.InputStr_ReturnBoolType.LoadFromFile</definition>
+        <argsstring>(string fileName, out InputStr_ReturnBoolType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="246" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="246" bodyend="250"/>
+        <references refid="class_s_d_c_1_1_input_str___return_bool_type_1a5ac3f0ffffbaaec7ffb77cb1b60e6e27" compoundref="_input_str___return_bool_type_8cs" startline="225" endline="239">SDC.InputStr_ReturnBoolType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1a1e78d6096073509bd52539280126b9b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref></type>
+        <definition>static InputStr_ReturnBoolType SDC.InputStr_ReturnBoolType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="252" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="252" bodyend="255"/>
+        <references refid="class_s_d_c_1_1_input_str___return_bool_type_1a5ac3f0ffffbaaec7ffb77cb1b60e6e27" compoundref="_input_str___return_bool_type_8cs" startline="225" endline="239">SDC.InputStr_ReturnBoolType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_input_str___return_bool_type_1ae3711c81eb9d79b58de7d9a1fa569e36" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_input_str___return_bool_type" kindref="compound">InputStr_ReturnBoolType</ref></type>
+        <definition>static new InputStr_ReturnBoolType SDC.InputStr_ReturnBoolType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="257" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="257" bodyend="281"/>
+        <references refid="class_s_d_c_1_1_input_str___return_bool_type_1a5f1aaa1964f2efd9aa358999ee71b5fa" compoundref="_input_str___return_bool_type_8cs" startline="123" endline="137">SDC.InputStr_ReturnBoolType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4796">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4800">
+        <label>SDC.StringIsEmptyBoolType</label>
+        <link refid="class_s_d_c_1_1_string_is_empty_bool_type"/>
+        <childnode refid="4792" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4803">
+        <label>SDC.StringLikeBoolType</label>
+        <link refid="class_s_d_c_1_1_string_like_bool_type"/>
+        <childnode refid="4792" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4797">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="4801">
+        <label>SDC.StringIsNullBoolType</label>
+        <link refid="class_s_d_c_1_1_string_is_null_bool_type"/>
+        <childnode refid="4792" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4793">
+        <label>ReturnBoolType</label>
+        <link refid="class_s_d_c_1_1_return_bool_type"/>
+        <childnode refid="4794" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4794">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="4795" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4802">
+        <label>SDC.StringIsNullOrEmptyBoolType</label>
+        <link refid="class_s_d_c_1_1_string_is_null_or_empty_bool_type"/>
+        <childnode refid="4792" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4799">
+        <label>SDC.StringEndsWithBoolType</label>
+        <link refid="class_s_d_c_1_1_string_ends_with_bool_type"/>
+        <childnode refid="4792" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4792">
+        <label>SDC.InputStr_ReturnBoolType</label>
+        <link refid="class_s_d_c_1_1_input_str___return_bool_type"/>
+        <childnode refid="4793" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4795">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="4796" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4796" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4798">
+        <label>SDC.StringContainsBoolType</label>
+        <link refid="class_s_d_c_1_1_string_contains_bool_type"/>
+        <childnode refid="4792" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4804">
+        <label>SDC.StringStartsWithBoolType</label>
+        <link refid="class_s_d_c_1_1_string_starts_with_bool_type"/>
+        <childnode refid="4792" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4809">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4810" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4811" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="4819" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="4820" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="4821" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="4812" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4816">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="4814" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4810">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="4814">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="4813">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="4814" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4819">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="4822">
+        <label>SDC.ExceptionType</label>
+        <link refid="class_s_d_c_1_1_exception_type"/>
+        <childnode refid="4808" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4821" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="4806">
+        <label>ReturnBoolType</label>
+        <link refid="class_s_d_c_1_1_return_bool_type"/>
+        <childnode refid="4807" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4823" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="4807">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="4808" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4822" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="4818">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="4824">
+        <label>boolean_Stype</label>
+        <link refid="class_s_d_c_1_1boolean___stype"/>
+        <childnode refid="4809" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4809" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4821" relation="usage">
+          <edgelabel>_val</edgelabel>
+        </childnode>
+        <childnode refid="4812" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4812">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="4810" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4813" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4815" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4816" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="4817" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="4821">
+        <label>System</label>
+      </node>
+      <node id="4815">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="4814" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4805">
+        <label>SDC.InputStr_ReturnBoolType</label>
+        <link refid="class_s_d_c_1_1_input_str___return_bool_type"/>
+        <childnode refid="4806" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4825" relation="usage">
+          <edgelabel>_stringPredicate</edgelabel>
+        </childnode>
+      </node>
+      <node id="4811">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="4808" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4808" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4812" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4808">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="4809" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4809" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4812" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4825">
+        <label>SDC.StringFunctionsBoolType</label>
+        <link refid="class_s_d_c_1_1_string_functions_bool_type"/>
+        <childnode refid="4806" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4821" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="4817">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="4818" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4823">
+        <label>SDC.boolean_DEtype</label>
+        <link refid="class_s_d_c_1_1boolean___d_etype"/>
+        <childnode refid="4824" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4824" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4812" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4820">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="4810" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4811" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="4819" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="4820" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="4821" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="4812" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" line="34" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/InputStr_ReturnBoolType.cs" bodystart="33" bodyend="282"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a9c14022c60057f626f476dbc9a588907" prot="private" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>_stringPredicate</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a81264a5f695436f77432fc8e206a3a96" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a5f1aaa1964f2efd9aa358999ee71b5fa" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a023539bc3bb8f798ca996298c7c62da4" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a774af692e380cabd4568d60a369f6881" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a472405ce4a9b6ceab9632ce2f5a975a8" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a8c44202bc23e7eaee0a53ece9ec4acf9" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a97d6e10eb9d48cf07d6bd898efe1605e" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1acd2a23b52dcbcbd31ebd413821adb5d5" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ab3750255b283fc0144a10ff76180ea53" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a00767451a5fc7e3d07bdd954a6b0a8ee" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1a6c2875cfa4b0c4bc818f34f70af1504e" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Item</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a002a4226fa3a5169580deb5898418eef" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Item1</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a5ac3f0ffffbaaec7ffb77cb1b60e6e27" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a700bb2bf9b4b173af5f648e772e973c2" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a90e2a08b31b56b2e40b0ecaef9deb98d" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a1e78d6096073509bd52539280126b9b1" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1ae3711c81eb9d79b58de7d9a1fa569e36" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a9f94daaeb01b4a91130b671dd670050c" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1abd716659d3b9c14b40203c5f78afd0f4" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a0a521ece3b1ba41c3dea430b08fd86ef" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae65d856375cc25a45498c3def0a600c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1aab3070073c4d1e10c51ca42ade495371" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1aff817c6fac01be7c19e7180e46b7da67" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1a7c4d5c78fe10e9d5881fca2ef9282241" prot="protected" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ReturnBaseType</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae27b5ac45b833727fbf0360af8f2f192" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ReturnBaseType</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a6e028f6e391aaf355968737e933abd51" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ReturnBoolType</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a118ff4a6ed27895b466d42247ef6543f" prot="protected" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ReturnBoolType</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a1121308a92c4005b614a0882c027b8ef" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a12b32f27289c51d8aac14d4f338d9a81" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a94b27a497fc3967a33ab31c11eef2e29" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1ab532c984068e646339b40797ca227de3" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::InputStr_ReturnBoolType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1ad56ff17911873a4aad918f93802d44a5" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a150ab16fbabd9ba85700a1acff436726" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a061b5d6fb37b8f96f762b78f7e5cee0b" prot="private" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a22d6bb6b7575e972ba6ce7a66d7f9c49" prot="private" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae1058587922d33ff78d3fa2a2eb84c20" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializeItem</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a231cf4f6d56decbe0089ec0c68d65bce" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializeItem1</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a7156ec74b36cbb0a29f8ed39179c0fb1" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializeStringPredicate</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_input_str___return_bool_type_1a1d3c770cba3881bb663fb31d7532e00d" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>StringPredicate</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::InputStr_ReturnBoolType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_i_displayed_type_8cs" kind="file">
+    <compoundname>IDisplayedType.cs</compoundname>
+    <innerclass refid="interface_s_d_c_1_1_i_displayed_type" prot="public">SDC::IDisplayedType</innerclass>
+    <innernamespace refid="namespace_s_d_c">SDC</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">SDC</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="4" refid="interface_s_d_c_1_1_i_displayed_type" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_s_d_c_1_1_i_displayed_type" kindref="compound">IDisplayedType</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_d_c_1_1_property_type" kindref="compound">PropertyType</ref><sp/><ref refid="interface_s_d_c_1_1_i_displayed_type_1acfde0ae06f33afb5981550c792fc4853" kindref="member">AddProperty</ref>(Boolean<sp/>fillData<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_d_c_1_1_link_type" kindref="compound">LinkType</ref><sp/><ref refid="interface_s_d_c_1_1_i_displayed_type_1a86dd7c7d9a3a81a57126d393a05d04d6" kindref="member">AddLink</ref>(Boolean<sp/>fillData<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_d_c_1_1_blob_type" kindref="compound">BlobType</ref><sp/><ref refid="interface_s_d_c_1_1_i_displayed_type_1a64bfb715fa0f655e33d0ac001bc5bb3d" kindref="member">AddBlob</ref>(Boolean<sp/>fillData<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_d_c_1_1_contact_type" kindref="compound">ContactType</ref><sp/><ref refid="interface_s_d_c_1_1_i_displayed_type_1a7b24857ed1e54a573b1dd862854c7314" kindref="member">AddContact</ref>(Boolean<sp/>fillData<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_d_c_1_1_coding_type" kindref="compound">CodingType</ref><sp/><ref refid="interface_s_d_c_1_1_i_displayed_type_1a417be70c30e5c3c168143b07bc105d30" kindref="member">AddCoding</ref>(Boolean<sp/>fillData<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_d_c_1_1_watched_property_type" kindref="compound">WatchedPropertyType</ref><sp/><ref refid="interface_s_d_c_1_1_i_displayed_type_1a8fb9a021c59b93519535e682775bbac0" kindref="member">AddActivateIf</ref>(Boolean<sp/>fillData<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_d_c_1_1_watched_property_type" kindref="compound">WatchedPropertyType</ref><sp/><ref refid="interface_s_d_c_1_1_i_displayed_type_1aaafe8eb68cca1d7753e936c862c9a022" kindref="member">AddDeActivateIf</ref>(Boolean<sp/>fillData<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_d_c_1_1_if_then_type" kindref="compound">IfThenType</ref><sp/><ref refid="interface_s_d_c_1_1_i_displayed_type_1a1d834c6fcb74b29e275207e88f54f111" kindref="member">AddOnEnter</ref>(Boolean<sp/>fillData<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_d_c_1_1_if_then_type" kindref="compound">IfThenType</ref><sp/><ref refid="interface_s_d_c_1_1_i_displayed_type_1afce981117a2a615ea030063bd47ac840" kindref="member">AddOnEvent</ref>(Boolean<sp/>fillData<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref><sp/><ref refid="interface_s_d_c_1_1_i_displayed_type_1a0760813f08bd3dd37378504e279dd893" kindref="member">AddOnExit</ref>(Boolean<sp/>fillData<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/IDisplayedType.cs"/>
+  </compounddef>
+</doxygen>

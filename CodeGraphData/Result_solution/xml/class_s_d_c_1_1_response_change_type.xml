@@ -1,0 +1,955 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_response_change_type" kind="class" prot="public">
+    <compoundname>SDC::ResponseChangeType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_change_type_1ac2edfdee6843ab9b2c6bfbf9594a304a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+        <definition>PersonType SDC.ResponseChangeType._changeEditor</definition>
+        <argsstring></argsstring>
+        <name>_changeEditor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="37" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_change_type_1ae7aeeff76dda95cf8ab5cc3e350cc5c2" compoundref="_response_change_type_8cs" startline="210" endline="213">SDC.ResponseChangeType.ShouldSerializeChangeEditor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_change_type_1acffdf4a232c61bbdb7cf89333c6e136b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1date_time___stype" kindref="compound">dateTime_Stype</ref></type>
+        <definition>dateTime_Stype SDC.ResponseChangeType._changeDateTime</definition>
+        <argsstring></argsstring>
+        <name>_changeDateTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_change_type_1a2af0a1ff3322be013521d8de1cf251a2" compoundref="_response_change_type_8cs" startline="218" endline="221">SDC.ResponseChangeType.ShouldSerializeChangeDateTime</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_change_type_1ae25a21cf1e82a455e66d53dcd58db747" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.ResponseChangeType._changeComment</definition>
+        <argsstring></argsstring>
+        <name>_changeComment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="43" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_change_type_1a6d2346dcc2d65850a967ef8b3eaa3f9a" compoundref="_response_change_type_8cs" startline="226" endline="229">SDC.ResponseChangeType.ShouldSerializeChangeComment</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_change_type_1a50f28895ecd006faef4f590d96943858" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_replaced_response_type" kindref="compound">ReplacedResponseType</ref></type>
+        <definition>ReplacedResponseType SDC.ResponseChangeType._replacedResponse</definition>
+        <argsstring></argsstring>
+        <name>_replacedResponse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="46" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_change_type_1af748859925d57ffe70380b82dd687bd3" compoundref="_response_change_type_8cs" startline="234" endline="237">SDC.ResponseChangeType.ShouldSerializeReplacedResponse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_change_type_1a88d180d4f4579a6c1637dc59e309198c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.ResponseChangeType._changeID</definition>
+        <argsstring></argsstring>
+        <name>_changeID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="49" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_change_type_1a6e7f1323fdc35ee5f45bc975ea33166b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.ResponseChangeType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="53" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_change_type_1a5f58c7eaaa492647534698a2eef40f94" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.ResponseChangeType.serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="51" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_response_change_type_1a95c529163bbe82214581574ed9fa8994" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+        <definition>virtual PersonType SDC.ResponseChangeType.ChangeEditor</definition>
+        <argsstring></argsstring>
+        <name>ChangeEditor</name>
+        <briefdescription>
+<para>The person who changed the previous response to the new response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="60" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_change_type_1a2a23d68547b56349b48def4b7d440fb7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1date_time___stype" kindref="compound">dateTime_Stype</ref></type>
+        <definition>virtual dateTime_Stype SDC.ResponseChangeType.ChangeDateTime</definition>
+        <argsstring></argsstring>
+        <name>ChangeDateTime</name>
+        <briefdescription>
+<para>The time when the previous response was changed to the new response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="86" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_change_type_1ac64b88c372de310ec876dda2f55ac605" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>virtual string_Stype SDC.ResponseChangeType.ChangeComment</definition>
+        <argsstring></argsstring>
+        <name>ChangeComment</name>
+        <briefdescription>
+<para>A comment describing the change from the previous response to the new response. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="112" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_change_type_1a9a9d7f07f6b896816940775ff478354b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_replaced_response_type" kindref="compound">ReplacedResponseType</ref></type>
+        <definition>virtual ReplacedResponseType SDC.ResponseChangeType.ReplacedResponse</definition>
+        <argsstring></argsstring>
+        <name>ReplacedResponse</name>
+        <briefdescription>
+<para>A single unit of changes (taking place at the same time) to the question response(s). This section records the person who made the change, the DateTime of the change, and the change details. This includes each answer selection or fill-in response to the question at the time the change was submitted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="138" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_change_type_1adc03c83105a2a865da71f2682530dbeb" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ResponseChangeType.changeID</definition>
+        <argsstring></argsstring>
+        <name>changeID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="161" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="162" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_change_type_1a24558f045965fc6d4b157ab03e8e8231" compoundref="_response_change_type_8cs" startline="242" endline="245">SDC.ResponseChangeType.ShouldSerializechangeID</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_change_type_1a6f95e1995f70ea481f1bd1b17ebf684d" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.ResponseChangeType.Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="182" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="183" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_change_type_1a1b3956b4d7506e2d5759d18508672365" compoundref="_response_change_type_8cs" startline="309" endline="324">SDC.ResponseChangeType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_change_type_1aca14c52fa6abc4f57afc611b73929f5a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.ResponseChangeType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="195" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1ae7aeeff76dda95cf8ab5cc3e350cc5c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseChangeType.ShouldSerializeChangeEditor</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangeEditor</name>
+        <briefdescription>
+<para>Test whether ChangeEditor should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="210" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="210" bodyend="213"/>
+        <references refid="class_s_d_c_1_1_response_change_type_1ac2edfdee6843ab9b2c6bfbf9594a304a" compoundref="_response_change_type_8cs" startline="37">SDC.ResponseChangeType._changeEditor</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1a2af0a1ff3322be013521d8de1cf251a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseChangeType.ShouldSerializeChangeDateTime</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangeDateTime</name>
+        <briefdescription>
+<para>Test whether ChangeDateTime should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="218" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="218" bodyend="221"/>
+        <references refid="class_s_d_c_1_1_response_change_type_1acffdf4a232c61bbdb7cf89333c6e136b" compoundref="_response_change_type_8cs" startline="40">SDC.ResponseChangeType._changeDateTime</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1a6d2346dcc2d65850a967ef8b3eaa3f9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseChangeType.ShouldSerializeChangeComment</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangeComment</name>
+        <briefdescription>
+<para>Test whether ChangeComment should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="226" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="226" bodyend="229"/>
+        <references refid="class_s_d_c_1_1_response_change_type_1ae25a21cf1e82a455e66d53dcd58db747" compoundref="_response_change_type_8cs" startline="43">SDC.ResponseChangeType._changeComment</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1af748859925d57ffe70380b82dd687bd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseChangeType.ShouldSerializeReplacedResponse</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeReplacedResponse</name>
+        <briefdescription>
+<para>Test whether ReplacedResponse should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="234" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="234" bodyend="237"/>
+        <references refid="class_s_d_c_1_1_response_change_type_1a50f28895ecd006faef4f590d96943858" compoundref="_response_change_type_8cs" startline="46">SDC.ResponseChangeType._replacedResponse</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1a24558f045965fc6d4b157ab03e8e8231" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseChangeType.ShouldSerializechangeID</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializechangeID</name>
+        <briefdescription>
+<para>Test whether changeID should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="242" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="242" bodyend="245"/>
+        <references refid="class_s_d_c_1_1_response_change_type_1adc03c83105a2a865da71f2682530dbeb" compoundref="_response_change_type_8cs" startline="162">SDC.ResponseChangeType.changeID</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1a93256682d5c23e5177ec98b2d2dcf8d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ResponseChangeType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="252" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="252" bodyend="278"/>
+        <referencedby refid="class_s_d_c_1_1_response_change_type_1a71da9259fffe050882b2c8e80b9d681b" compoundref="_response_change_type_8cs" startline="353" endline="371">SDC.ResponseChangeType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1a8ab3dd1a61fc113d4b2aa2d17cbd4b5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseChangeType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="338" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="338" bodyend="351"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1a71da9259fffe050882b2c8e80b9d681b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ResponseChangeType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="353" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="353" bodyend="371"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_response_change_type_1a93256682d5c23e5177ec98b2d2dcf8d3" compoundref="_response_change_type_8cs" startline="252" endline="278">SDC.ResponseChangeType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1a3101aee6938e823e684c1469f9ace09e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref></type>
+        <definition>virtual ResponseChangeType SDC.ResponseChangeType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3">Clone</reimplements>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="432" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="432" bodyend="435"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1a636ca48753526c99f1c6c961f882f7f2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseChangeType.Deserialize</definition>
+        <argsstring>(string input, out ResponseChangeType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="287" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="287" bodyend="301"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_response_change_type_1acd24d8cc4262c00eaea7613c3f2fd22d" compoundref="_response_change_type_8cs" startline="303" endline="307">SDC.ResponseChangeType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_response_change_type_1ab152f0c560c07baa7c7a3c01e8797586" compoundref="_response_change_type_8cs" startline="402" endline="426">SDC.ResponseChangeType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1acd24d8cc4262c00eaea7613c3f2fd22d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseChangeType.Deserialize</definition>
+        <argsstring>(string input, out ResponseChangeType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="303" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="303" bodyend="307"/>
+        <references refid="class_s_d_c_1_1_response_change_type_1a636ca48753526c99f1c6c961f882f7f2" compoundref="_response_change_type_8cs" startline="287" endline="301">SDC.ResponseChangeType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1a1b3956b4d7506e2d5759d18508672365" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref></type>
+        <definition>static new ResponseChangeType SDC.ResponseChangeType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="309" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="309" bodyend="324"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_response_change_type_1a6f95e1995f70ea481f1bd1b17ebf684d" compoundref="_response_change_type_8cs" startline="183">SDC.ResponseChangeType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1a3d4ad9f2ac9286c4a52f3c5a313e2e76" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref></type>
+        <definition>static ResponseChangeType SDC.ResponseChangeType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="326" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="326" bodyend="329"/>
+        <references refid="class_s_d_c_1_1_response_change_type_1a6f95e1995f70ea481f1bd1b17ebf684d" compoundref="_response_change_type_8cs" startline="183">SDC.ResponseChangeType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1a5eb9fb664d22071f21a44cfd0ab514c4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseChangeType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ResponseChangeType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="380" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="380" bodyend="394"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_response_change_type_1a3443ef49edd9611bd44f48c17c0ff917" compoundref="_response_change_type_8cs" startline="396" endline="400">SDC.ResponseChangeType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1a3443ef49edd9611bd44f48c17c0ff917" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseChangeType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ResponseChangeType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="396" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="396" bodyend="400"/>
+        <references refid="class_s_d_c_1_1_response_change_type_1a5eb9fb664d22071f21a44cfd0ab514c4" compoundref="_response_change_type_8cs" startline="380" endline="394">SDC.ResponseChangeType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_change_type_1ab152f0c560c07baa7c7a3c01e8797586" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref></type>
+        <definition>static new ResponseChangeType SDC.ResponseChangeType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="402" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="402" bodyend="426"/>
+        <references refid="class_s_d_c_1_1_response_change_type_1a636ca48753526c99f1c6c961f882f7f2" compoundref="_response_change_type_8cs" startline="287" endline="301">SDC.ResponseChangeType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Supports addenda and ammendments to reports </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7865">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="7866" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7866">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="7863">
+        <label>SDC.ResponseChangeType</label>
+        <link refid="class_s_d_c_1_1_response_change_type"/>
+        <childnode refid="7864" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7864">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="7865" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7865" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7882">
+        <label>SDC.string_Stype</label>
+        <link refid="class_s_d_c_1_1string___stype"/>
+        <childnode refid="7869" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7869" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7872" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7869">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="7870" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7871" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="7879" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="7880" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="7881" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="7872" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7876">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="7874" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7886">
+        <label>SDC.NameType</label>
+        <link refid="class_s_d_c_1_1_name_type"/>
+        <childnode refid="7868" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7868" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7882" relation="usage">
+          <edgelabel>_namePrefix</edgelabel>
+          <edgelabel>_middleName</edgelabel>
+          <edgelabel>_title</edgelabel>
+          <edgelabel>_firstName</edgelabel>
+          <edgelabel>_lastName</edgelabel>
+          <edgelabel>_nameSuffix</edgelabel>
+        </childnode>
+        <childnode refid="7872" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7870">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="7874">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="7885">
+        <label>SDC.PersonType</label>
+        <link refid="class_s_d_c_1_1_person_type"/>
+        <childnode refid="7868" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7868" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7882" relation="usage">
+          <edgelabel>_role</edgelabel>
+          <edgelabel>_usage</edgelabel>
+        </childnode>
+        <childnode refid="7886" relation="usage">
+          <edgelabel>_personName</edgelabel>
+        </childnode>
+        <childnode refid="7872" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7884">
+        <label>SDC.ReplacedResponseType</label>
+        <link refid="class_s_d_c_1_1_replaced_response_type"/>
+        <childnode refid="7868" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7882" relation="usage">
+          <edgelabel>_responseComment</edgelabel>
+        </childnode>
+        <childnode refid="7883" relation="usage">
+          <edgelabel>_responseDateTime</edgelabel>
+        </childnode>
+        <childnode refid="7885" relation="usage">
+          <edgelabel>_responseEditor</edgelabel>
+        </childnode>
+        <childnode refid="7872" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="7887" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="7873">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="7874" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7879">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="7878">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="7872">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="7870" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7873" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="7875" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="7876" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="7877" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="7867">
+        <label>SDC.ResponseChangeType</label>
+        <link refid="class_s_d_c_1_1_response_change_type"/>
+        <childnode refid="7868" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7882" relation="usage">
+          <edgelabel>_changeComment</edgelabel>
+        </childnode>
+        <childnode refid="7883" relation="usage">
+          <edgelabel>_changeDateTime</edgelabel>
+        </childnode>
+        <childnode refid="7884" relation="usage">
+          <edgelabel>_replacedResponse</edgelabel>
+        </childnode>
+        <childnode refid="7885" relation="usage">
+          <edgelabel>_changeEditor</edgelabel>
+        </childnode>
+        <childnode refid="7872" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7881">
+        <label>System</label>
+      </node>
+      <node id="7887">
+        <label>SDC.ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="7869" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7869" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7872" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7875">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="7874" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7871">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="7868" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7868" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7872" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7868">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="7869" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7869" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7872" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7877">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="7878" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7883">
+        <label>SDC.dateTime_Stype</label>
+        <link refid="class_s_d_c_1_1date_time___stype"/>
+        <childnode refid="7869" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7869" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7881" relation="usage">
+          <edgelabel>_val</edgelabel>
+        </childnode>
+        <childnode refid="7872" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7880">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="7870" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7871" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="7879" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="7880" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="7881" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="7872" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" line="34" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseChangeType.cs" bodystart="33" bodyend="437"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_response_change_type_1ae25a21cf1e82a455e66d53dcd58db747" prot="private" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>_changeComment</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1acffdf4a232c61bbdb7cf89333c6e136b" prot="private" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>_changeDateTime</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1ac2edfdee6843ab9b2c6bfbf9594a304a" prot="private" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>_changeEditor</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a88d180d4f4579a6c1637dc59e309198c" prot="private" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>_changeID</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a50f28895ecd006faef4f590d96943858" prot="private" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>_replacedResponse</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1ac64b88c372de310ec876dda2f55ac605" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ChangeComment</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a2a23d68547b56349b48def4b7d440fb7" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ChangeDateTime</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a95c529163bbe82214581574ed9fa8994" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ChangeEditor</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1adc03c83105a2a865da71f2682530dbeb" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>changeID</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1aca14c52fa6abc4f57afc611b73929f5a" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a6e7f1323fdc35ee5f45bc975ea33166b" prot="private" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a3101aee6938e823e684c1469f9ace09e" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a636ca48753526c99f1c6c961f882f7f2" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1acd24d8cc4262c00eaea7613c3f2fd22d" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a1b3956b4d7506e2d5759d18508672365" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a3d4ad9f2ac9286c4a52f3c5a313e2e76" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab77e0ded299c1479c3c7f593c00d2081" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseChangeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseChangeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseChangeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a5eb9fb664d22071f21a44cfd0ab514c4" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a3443ef49edd9611bd44f48c17c0ff917" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1ab152f0c560c07baa7c7a3c01e8797586" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09ee61d6d4b513b7b22d89056250c87b" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseChangeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseChangeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseChangeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseChangeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a9a9d7f07f6b896816940775ff478354b" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>ReplacedResponse</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a8ab3dd1a61fc113d4b2aa2d17cbd4b5a" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a71da9259fffe050882b2c8e80b9d681b" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab1514379cd9bd547d5569548274fceb1" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af03b919560cd67ffe1373d8cef3bb9b8" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a5c619ed0e36571d6f4bd992faa3ad282" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a93256682d5c23e5177ec98b2d2dcf8d3" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a9ac9c6d560ffe2c300d7796951c22395" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseChangeType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a6f95e1995f70ea481f1bd1b17ebf684d" prot="private" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a5f58c7eaaa492647534698a2eef40f94" prot="private" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a6d2346dcc2d65850a967ef8b3eaa3f9a" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializeChangeComment</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a2af0a1ff3322be013521d8de1cf251a2" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializeChangeDateTime</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1ae7aeeff76dda95cf8ab5cc3e350cc5c2" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializeChangeEditor</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1a24558f045965fc6d4b157ab03e8e8231" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializechangeID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_response_change_type_1af748859925d57ffe70380b82dd687bd3" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializeReplacedResponse</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ResponseChangeType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::ResponseChangeType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

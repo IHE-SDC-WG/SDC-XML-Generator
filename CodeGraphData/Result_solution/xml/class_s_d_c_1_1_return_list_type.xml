@@ -1,0 +1,954 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_return_list_type" kind="class" prot="public">
+    <compoundname>SDC::ReturnListType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_return_list_base_type" prot="public" virt="non-virtual">SDC.ReturnListBaseType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_any_functions_list_type" prot="public" virt="non-virtual">SDC.AnyFunctionsListType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_any_list_set_functions_list_type111" prot="public" virt="non-virtual">SDC.AnyListSetFunctionsListType111</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_for_each_in_list" prot="public" virt="non-virtual">SDC.ForEachInList</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_func_list_type00000" prot="public" virt="non-virtual">SDC.FuncListType00000</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_input_list___return_list_type" prot="public" virt="non-virtual">SDC.InputList_ReturnListType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_input_str___return_list_type" prot="public" virt="non-virtual">SDC.InputStr_ReturnListType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_ref_list_type" prot="public" virt="non-virtual">SDC.RefListType</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_return_list_type_1a85d5f231424fb9badddac3478b310588" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_any_list_type" kindref="compound">AnyListType</ref></type>
+        <definition>AnyListType SDC.ReturnListType._item1</definition>
+        <argsstring></argsstring>
+        <name>_item1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="44" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_return_list_type_1a3e6a306084488a51a632aecd6e81e891" compoundref="_return_list_type_8cs" startline="77" endline="80">SDC.ReturnListType.ShouldSerializeItem1</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_return_list_type_1ad0abd8e7cf04b9a0d67d310cedd047da" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.ReturnListType.serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="46" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_return_list_type_1a2827d92b18b15a3b29f3cb45deef77be" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_any_list_type" kindref="compound">AnyListType</ref></type>
+        <definition>virtual AnyListType SDC.ReturnListType.Item1</definition>
+        <argsstring></argsstring>
+        <name>Item1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="50" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_return_list_type_1aa37968b9900be65907f62b8a08b62473" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.ReturnListType.Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="62" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="63" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_return_list_type_1ad8f3a948b7e1dfa9d4b51a243f049701" compoundref="_return_list_type_8cs" startline="168" endline="171">SDC.ReturnListType.Deserialize</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1a3e6a306084488a51a632aecd6e81e891" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ReturnListType.ShouldSerializeItem1</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeItem1</name>
+        <briefdescription>
+<para>Test whether Item1 should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="77" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="77" bodyend="80"/>
+        <references refid="class_s_d_c_1_1_return_list_type_1a85d5f231424fb9badddac3478b310588" compoundref="_return_list_type_8cs" startline="44">SDC.ReturnListType._item1</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1a78cfe36fc7a2ab1c2cd411e7350d0a6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ReturnListType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_return_list_base_type_1a4a46f0b7f6ce564b24d694edee2b5fe6">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_string_split_list_type_1aed0ca28fb578eeedf6b2bd4d623ab968">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_ref_list_type_1a70b040b347e049e5a4ab3a769955e46f">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_convert_list_type_1af4c6c40d26d28ea9aee495b803155f4b">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_list___return_list_type_1a0906810291bfb4d68ad277175dc8fb2e">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_remove_at_index_list_type_1a362aa4fe8e863c7da3f42e768484d4bb">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_for_each_in_list_1ac1a7132d0f6ce5711e686c0f5dac01cf">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_list_set_functions_list_type111_1a4e21b88b1803cc65672056861b72560e">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_func_list_type00000_1abb593af65bf0dfae1b4edd6bbc5cc151">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_functions_list_type_1a5827531f20239cc3fa310cc62bbb4f9f">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_insert_at_index_list_type_1af403cf3abedc5689891cc633b5574073">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_str___return_list_type_1af69ede4206f2edfc11374b9e22f9bf56">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_pattern_match_list_type000_1a828aa26b4f09b148634d20672329e1e8">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_filter_list_type000_1a3662ed7963d3f7f22401acbc5bf8e829">Serialize</reimplementedby>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="87" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="87" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1ac7db340f2d61ac20d56982d21024c3f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ReturnListType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_return_list_base_type_1adb976b0917e04cf98e73ec7c813d7652">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_string_split_list_type_1a95bd3b94b8cf493a2f5e1fefbd46a902">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_ref_list_type_1a0a70ff7afed4c675231aad0cfaa97a82">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_convert_list_type_1a65bd777755d46138efc24f3fac588fc0">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_list___return_list_type_1a761f3d9aa3c89b680369ba23f1481698">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_remove_at_index_list_type_1adcab5e5f80690a9c02edb5d8d0ba291b">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_for_each_in_list_1a0e311373a353a86bbc46530d2dabbb9d">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_list_set_functions_list_type111_1a39b4c3e31aa8fc42d8ccb07445596323">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_func_list_type00000_1a13002a20f2c55b432377003e3b091ef3">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_functions_list_type_1a4ea92dce52a6883dd3d9768b05a7c2f8">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_insert_at_index_list_type_1a9b62bd4dc38278aae751dd1c9cb130b7">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_str___return_list_type_1a78853a7bb80a53b032086fed00af0ccd">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_pattern_match_list_type000_1a812b0f347efd382fe9ed72f95fe6be14">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_filter_list_type000_1ad1e241df9680e0cc27159c5b61e72d3c">Serialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="117" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="117" bodyend="120"/>
+        <referencedby refid="class_s_d_c_1_1_return_list_type_1add9750a80e779fe66c54c83c96ddc42c" compoundref="_return_list_type_8cs" startline="205" endline="222">SDC.ReturnListType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1a014d2307be27e71e494912ca63e5dc51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ReturnListType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_list_base_type_1ac41309250a18c9434af916bfe2cea62f">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_string_split_list_type_1a570e4a28c6a4aabfa3269ef67967339e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_ref_list_type_1abb6e6cb3fb4461dd39ad1173affbf104">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_convert_list_type_1a8d556f5e45648634384be2d8a5e962b6">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_list___return_list_type_1a656536cda22265a567e22bd2a664faca">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_remove_at_index_list_type_1a90fe659618418390a2d47cecc12c7a60">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_for_each_in_list_1a5ff910574c9adddc31c368f55f7322d8">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_list_set_functions_list_type111_1a82dd4410a774b96b3dfb7ed27a444824">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_func_list_type00000_1aa55a5c6d1b78baa94826e998c211d7dc">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_functions_list_type_1a3a9a68bfee9a3b796927f425d60a3c45">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_insert_at_index_list_type_1a32c11d14b883b78bbe9826039bd1fad7">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_str___return_list_type_1ae36b10730d8164a6de309a9bc88a82e9">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_pattern_match_list_type000_1a92aabdccb7b6f7ee00ee824ce1daca59">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_filter_list_type000_1a95b3807439ce384e48b39ec2fe8b570e">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="180" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="180" bodyend="193"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_return_list_type_1a4a060a642238b7a51ec52acb95098fd9" compoundref="_return_list_type_8cs" startline="195" endline="198">SDC.ReturnListType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1a4a060a642238b7a51ec52acb95098fd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ReturnListType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_list_base_type_1ab4b84471249da39afc29259f67eaf02f">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_string_split_list_type_1a340e2605017682cbf8a2ff84e95054df">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_ref_list_type_1addf1d5b87cd4b7e12bca30b6ae7a83f5">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_convert_list_type_1a8ac77f610037881b5ea0c8f5d2711f49">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_list___return_list_type_1a9f00ce860ad9aed49b4a0829783a20f4">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_remove_at_index_list_type_1ac8ce91848037c10f196d452d99af9fad">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_for_each_in_list_1ac7c2d8a6340ba28e4d2099abf0b4ded7">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_list_set_functions_list_type111_1a8b1c1f61316fb98ba9c86707046bbbb6">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_func_list_type00000_1a6ec9c81dd747600f0d17b5a4a8b69609">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_functions_list_type_1ac5492a15f247aff3ff2c619cecb6b1b0">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_insert_at_index_list_type_1a4f53feb5d0a2b2a9ff3c30e925d2d363">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_str___return_list_type_1ad738cdb16790b60d993a999d119751d0">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_pattern_match_list_type000_1a539864f5df327cc5d33bd6f55cabaff4">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_filter_list_type000_1a6ebffbf54d9fb8cc117cd008cac2415c">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="195" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="195" bodyend="198"/>
+        <references refid="class_s_d_c_1_1_return_list_type_1a014d2307be27e71e494912ca63e5dc51" compoundref="_return_list_type_8cs" startline="180" endline="193">SDC.ReturnListType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1a5678819b86b8f3ada9f02eec71ba6958" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ReturnListType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_list_base_type_1a8f3bc13833d15c83a5ce24ee96f5291c">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_string_split_list_type_1a3a52da11aff9f3e125ccb818ab66784d">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_ref_list_type_1a1b2434c027312104ddd378902f86fc66">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_convert_list_type_1a1ec2c528dcffad68e936f650b462f457">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_list___return_list_type_1a4ea96df76dd4f5cb0f07e10f0364a189">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_remove_at_index_list_type_1a728ec07a2bda5ce486a3d03f8667db65">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_for_each_in_list_1ab9f02d28f92275dc5a5a01494962e6a2">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_list_set_functions_list_type111_1a1020e788c5acbbc81e4dfcf262abfb46">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_func_list_type00000_1af69a6053dd46832aec073bf39cc0d5e2">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_functions_list_type_1a44a648f8d32da20cad8d79df9bac007a">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_insert_at_index_list_type_1a1561359948251424584445b195bcdfb1">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_str___return_list_type_1ab60f20b03b3ff2253663ab31b549e21b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_pattern_match_list_type000_1a8d84672f6be53619d6e98cda00c157a5">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_filter_list_type000_1a1f404f2d1f65b96ea0a701ae33728ef5">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="200" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="200" bodyend="203"/>
+        <references refid="class_s_d_c_1_1_return_list_type_1a014d2307be27e71e494912ca63e5dc51" compoundref="_return_list_type_8cs" startline="180" endline="193">SDC.ReturnListType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1add9750a80e779fe66c54c83c96ddc42c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ReturnListType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_list_base_type_1a0771bc0810c6d313f1484b6feb5070be">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_string_split_list_type_1a536dbfd83e716cfbd47eaa9f0e979a77">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_ref_list_type_1af24da824fc0a1339de9b683422f9ab24">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_convert_list_type_1a50faf110c8f9d9618fe289def87431a4">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_list___return_list_type_1aafe5e7db62e0969d542097ad3e75292d">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_remove_at_index_list_type_1ae812ab2c7ae70617b3530c17b3cecd97">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_for_each_in_list_1aeecca29ea0e417569dcece8007f53692">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_list_set_functions_list_type111_1a02ee89a2ef50bf027c46a77e7592777b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_func_list_type00000_1ac482514f3b09dec62731db3e13ba0b82">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_functions_list_type_1af5a1444c92f5307526fd08c263ebf412">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_insert_at_index_list_type_1a9517d80609b7c997ffdbea778137c480">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_str___return_list_type_1abf9b5737df970c039d2b144fc283987c">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_pattern_match_list_type000_1a96e89e2d7983c5ccbffdbb0729190371">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_filter_list_type000_1aaeb8f257ba91d6808b35ed3dbc3dece3">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="205" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="205" bodyend="222"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_return_list_type_1ac7db340f2d61ac20d56982d21024c3f4" compoundref="_return_list_type_8cs" startline="117" endline="120">SDC.ReturnListType.Serialize</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1af4809baf548f86606596dba0391141b0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ReturnListType.Deserialize</definition>
+        <argsstring>(string input, out ReturnListType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="129" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="129" bodyend="143"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_return_list_type_1aabf3e5899a2300e9ce432c15b65729eb" compoundref="_return_list_type_8cs" startline="145" endline="149">SDC.ReturnListType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_return_list_type_1aaf4ec6bc02f8eedc1465d921bd356e32" compoundref="_return_list_type_8cs" startline="263" endline="287">SDC.ReturnListType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1aabf3e5899a2300e9ce432c15b65729eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ReturnListType.Deserialize</definition>
+        <argsstring>(string input, out ReturnListType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="145" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="145" bodyend="149"/>
+        <references refid="class_s_d_c_1_1_return_list_type_1af4809baf548f86606596dba0391141b0" compoundref="_return_list_type_8cs" startline="129" endline="143">SDC.ReturnListType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1a9560aea8f23e34ff878584605e96bcc3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref></type>
+        <definition>static new ReturnListType SDC.ReturnListType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="151" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="151" bodyend="166"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1ad8f3a948b7e1dfa9d4b51a243f049701" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref></type>
+        <definition>static ReturnListType SDC.ReturnListType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="168" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="168" bodyend="171"/>
+        <references refid="class_s_d_c_1_1_return_list_type_1aa37968b9900be65907f62b8a08b62473" compoundref="_return_list_type_8cs" startline="63">SDC.ReturnListType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1a98b18e55c74aa28e39cd9d376cecb0cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ReturnListType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out ReturnListType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="231" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="231" bodyend="245"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_return_list_type_1a9ce88c50d53c37737c62293020a2b47b" compoundref="_return_list_type_8cs" startline="247" endline="250">SDC.ReturnListType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1a9ce88c50d53c37737c62293020a2b47b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ReturnListType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ReturnListType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="247" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="247" bodyend="250"/>
+        <references refid="class_s_d_c_1_1_return_list_type_1a98b18e55c74aa28e39cd9d376cecb0cc" compoundref="_return_list_type_8cs" startline="231" endline="245">SDC.ReturnListType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1a98facbd9086d4f43d47f3b29bed22d0a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ReturnListType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ReturnListType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="252" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="252" bodyend="256"/>
+        <references refid="class_s_d_c_1_1_return_list_type_1a98b18e55c74aa28e39cd9d376cecb0cc" compoundref="_return_list_type_8cs" startline="231" endline="245">SDC.ReturnListType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1aa1588c69460758b95770d9b0bba38654" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref></type>
+        <definition>static ReturnListType SDC.ReturnListType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="258" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="258" bodyend="261"/>
+        <references refid="class_s_d_c_1_1_return_list_type_1a98b18e55c74aa28e39cd9d376cecb0cc" compoundref="_return_list_type_8cs" startline="231" endline="245">SDC.ReturnListType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_list_type_1aaf4ec6bc02f8eedc1465d921bd356e32" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_return_list_type" kindref="compound">ReturnListType</ref></type>
+        <definition>static new ReturnListType SDC.ReturnListType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="263" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="263" bodyend="287"/>
+        <references refid="class_s_d_c_1_1_return_list_type_1af4809baf548f86606596dba0391141b0" compoundref="_return_list_type_8cs" startline="129" endline="143">SDC.ReturnListType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8390">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="8391" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8400">
+        <label>SDC.ListRemoveAtIndexListType</label>
+        <link refid="class_s_d_c_1_1_list_remove_at_index_list_type"/>
+        <childnode refid="8396" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8402">
+        <label>SDC.StringPatternMatchListType000</label>
+        <link refid="class_s_d_c_1_1_string_pattern_match_list_type000"/>
+        <childnode refid="8401" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8391">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="8397">
+        <label>SDC.ListConvertListType</label>
+        <link refid="class_s_d_c_1_1_list_convert_list_type"/>
+        <childnode refid="8396" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8401">
+        <label>SDC.InputStr_ReturnListType</label>
+        <link refid="class_s_d_c_1_1_input_str___return_list_type"/>
+        <childnode refid="8387" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8404">
+        <label>SDC.RefListType</label>
+        <link refid="class_s_d_c_1_1_ref_list_type"/>
+        <childnode refid="8387" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8403">
+        <label>SDC.StringSplitListType</label>
+        <link refid="class_s_d_c_1_1_string_split_list_type"/>
+        <childnode refid="8401" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8399">
+        <label>SDC.ListInsertAtIndexListType</label>
+        <link refid="class_s_d_c_1_1_list_insert_at_index_list_type"/>
+        <childnode refid="8396" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8392">
+        <label>SDC.AnyFunctionsListType</label>
+        <link refid="class_s_d_c_1_1_any_functions_list_type"/>
+        <childnode refid="8387" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8394">
+        <label>SDC.ForEachInList</label>
+        <link refid="class_s_d_c_1_1_for_each_in_list"/>
+        <childnode refid="8387" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8389">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="8390" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8390" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8398">
+        <label>SDC.ListFilterListType000</label>
+        <link refid="class_s_d_c_1_1_list_filter_list_type000"/>
+        <childnode refid="8396" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8396">
+        <label>SDC.InputList_ReturnListType</label>
+        <link refid="class_s_d_c_1_1_input_list___return_list_type"/>
+        <childnode refid="8387" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8395">
+        <label>SDC.FuncListType00000</label>
+        <link refid="class_s_d_c_1_1_func_list_type00000"/>
+        <childnode refid="8387" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8393">
+        <label>SDC.AnyListSetFunctionsListType111</label>
+        <link refid="class_s_d_c_1_1_any_list_set_functions_list_type111"/>
+        <childnode refid="8387" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8387">
+        <label>SDC.ReturnListType</label>
+        <link refid="class_s_d_c_1_1_return_list_type"/>
+        <childnode refid="8388" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8388">
+        <label>ReturnListBaseType</label>
+        <link refid="class_s_d_c_1_1_return_list_base_type"/>
+        <childnode refid="8389" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8408">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="8409" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8410" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="8418" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="8419" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="8420" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="8411" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="8415">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="8413" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8409">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="8413">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="8412">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="8413" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8418">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="8421">
+        <label>SDC.ExceptionType</label>
+        <link refid="class_s_d_c_1_1_exception_type"/>
+        <childnode refid="8407" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8420" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="8417">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="8411">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="8409" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8412" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="8414" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="8415" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="8416" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="8420">
+        <label>System</label>
+      </node>
+      <node id="8414">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="8413" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8410">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="8407" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8407" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8411" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="8407">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="8408" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8408" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8411" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="8416">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="8417" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8405">
+        <label>SDC.ReturnListType</label>
+        <link refid="class_s_d_c_1_1_return_list_type"/>
+        <childnode refid="8406" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8422" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="8422">
+        <label>SDC.AnyListType</label>
+        <link refid="class_s_d_c_1_1_any_list_type"/>
+        <childnode refid="8407" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8420" relation="usage">
+          <edgelabel>_maxCount</edgelabel>
+          <edgelabel>_minCount</edgelabel>
+        </childnode>
+      </node>
+      <node id="8406">
+        <label>ReturnListBaseType</label>
+        <link refid="class_s_d_c_1_1_return_list_base_type"/>
+        <childnode refid="8407" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8421" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="8419">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="8409" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8410" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="8418" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="8419" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="8420" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="8411" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnListType.cs" bodystart="39" bodyend="288"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_return_list_type_1a85d5f231424fb9badddac3478b310588" prot="private" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>_item1</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a81264a5f695436f77432fc8e206a3a96" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1af4809baf548f86606596dba0391141b0" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1aabf3e5899a2300e9ce432c15b65729eb" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1a9560aea8f23e34ff878584605e96bcc3" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1ad8f3a948b7e1dfa9d4b51a243f049701" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_list_base_type_1a5597789b9145fa3c036cdd5436216f86" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnListBaseType."><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_list_base_type_1a6c3fab45b3e49f11d4d3ab60b47eed30" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnListBaseType."><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a00767451a5fc7e3d07bdd954a6b0a8ee" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnListType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_return_list_base_type_1a8c5a47c7fe6b2c6e376ad6ad940697f0" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Item</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1a2827d92b18b15a3b29f3cb45deef77be" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Item1</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1a98b18e55c74aa28e39cd9d376cecb0cc" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1a9ce88c50d53c37737c62293020a2b47b" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1a98facbd9086d4f43d47f3b29bed22d0a" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1aa1588c69460758b95770d9b0bba38654" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1aaf4ec6bc02f8eedc1465d921bd356e32" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_list_base_type_1a7c90a3697bfe04a37951dc0bf700c64d" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnListBaseType."><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_list_base_type_1add23e5abaf6574d09d55f168b7551b1e" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnListBaseType."><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_list_base_type_1ab7247271bac2362642e29c74136563ae" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnListBaseType."><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnListType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1a014d2307be27e71e494912ca63e5dc51" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1a4a060a642238b7a51ec52acb95098fd9" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1a5678819b86b8f3ada9f02eec71ba6958" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1add9750a80e779fe66c54c83c96ddc42c" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnListType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1a78cfe36fc7a2ab1c2cd411e7350d0a6a" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1ac7db340f2d61ac20d56982d21024c3f4" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1aa37968b9900be65907f62b8a08b62473" prot="private" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1ad0abd8e7cf04b9a0d67d310cedd047da" prot="private" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_return_list_base_type_1ad491f9e6971e81e638810615e6e34409" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializeItem</name></member>
+      <member refid="class_s_d_c_1_1_return_list_type_1a3e6a306084488a51a632aecd6e81e891" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializeItem1</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ReturnListType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::ReturnListType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

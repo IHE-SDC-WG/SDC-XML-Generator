@@ -1,0 +1,1687 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_change_log_type" kind="class" prot="public">
+    <compoundname>SDC::ChangeLogType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_change_log_type_1ac2b847e5c404e63063b346e111a26350" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_changed_field_type" kindref="compound">ChangedFieldType</ref></type>
+        <definition>ChangedFieldType SDC.ChangeLogType::_changedField</definition>
+        <argsstring></argsstring>
+        <name>_changedField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="35" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1a892ac0e1b95ee51d6ef718f452a8b5f3" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="306" endline="309">SDC.ChangeLogType.ShouldSerializeChangedField</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_change_log_type_1a2b789151eafe470b0832542367705338" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_data_types___s_type" kindref="compound">DataTypes_SType</ref></type>
+        <definition>DataTypes_SType SDC.ChangeLogType::_changedTo</definition>
+        <argsstring></argsstring>
+        <name>_changedTo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1a1a3726a75989f46eaf1562ab87d9eee9" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="314" endline="317">SDC.ChangeLogType.ShouldSerializeChangedTo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_change_log_type_1abc5b43b23e248c0bf541e35567f19102" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_data_types___s_type" kindref="compound">DataTypes_SType</ref></type>
+        <definition>DataTypes_SType SDC.ChangeLogType::_changedFrom</definition>
+        <argsstring></argsstring>
+        <name>_changedFrom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="41" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1a8558ec2c81bcb6d72cde43b1d6ebc2e7" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="322" endline="325">SDC.ChangeLogType.ShouldSerializeChangedFrom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_change_log_type_1abc8784245abb3d32e3379868ce08341d" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref> &gt;</type>
+        <definition>List&lt;string_Stype&gt; SDC.ChangeLogType._changeType</definition>
+        <argsstring></argsstring>
+        <name>_changeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="44" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_change_log_type_1a11cbb8f160687242d9084f268bcb1d73" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_replaced_i_ds_type" kindref="compound">ReplacedIDsType</ref></type>
+        <definition>ReplacedIDsType SDC.ChangeLogType::_replaces</definition>
+        <argsstring></argsstring>
+        <name>_replaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="47" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1ae5291daf906ab348b99f87cf3bbbc500" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="330" endline="333">SDC.ChangeLogType.ShouldSerializeReplaces</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_change_log_type_1ad0326bb15191a3bbe389a0cc4c672b65" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1date_time___stype" kindref="compound">dateTime_Stype</ref></type>
+        <definition>dateTime_Stype SDC.ChangeLogType::_changeDate</definition>
+        <argsstring></argsstring>
+        <name>_changeDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="50" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1a1a289e6a64a8815c58c97e5537ef1e50" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="338" endline="341">SDC.ChangeLogType.ShouldSerializeChangeDate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_change_log_type_1a2e2b7470df37b9b93c10cf92036094b5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.ChangeLogType::_changeDescription</definition>
+        <argsstring></argsstring>
+        <name>_changeDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="53" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1a6ea7ef6c83d75ae461c7ec4520cc7a18" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="346" endline="349">SDC.ChangeLogType.ShouldSerializeChangeDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_change_log_type_1a36d9a4a99a0cf885160446eeda3ca5ea" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_contacts_type" kindref="compound">ContactsType</ref></type>
+        <definition>ContactsType SDC.ChangeLogType::_editors</definition>
+        <argsstring></argsstring>
+        <name>_editors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="56" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1a93477c6755d9dc3b22070bb6038133b0" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="354" endline="357">SDC.ChangeLogType.ShouldSerializeEditors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_change_log_type_1aa8a850ba69b12e1c6dce2d47d3bc693e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_change_tracking_type" kindref="compound">ChangeTrackingType</ref></type>
+        <definition>ChangeTrackingType SDC.ChangeLogType::_changeTracking</definition>
+        <argsstring></argsstring>
+        <name>_changeTracking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="59" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1a6eb4f4989461f0b7ef1cb9e177182daa" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="362" endline="365">SDC.ChangeLogType.ShouldSerializeChangeTracking</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_change_log_type_1ac9f6acb06ee3ac1db4ade03597c100f7" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref> &gt;</type>
+        <definition>BindingList&lt;string_Stype&gt; SDC.ChangeLogType._changeType</definition>
+        <argsstring></argsstring>
+        <name>_changeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="47" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_change_log_type_1ae599d72bf6442ffaceaf01b9a2709b7f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.ChangeLogType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="66" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_change_log_type_1a9de457972749bde04626553e1faaf199" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.ChangeLogType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="61" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_change_log_type_1a3c8f06f515e9658827131c50c004c1d3" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_changed_field_type" kindref="compound">ChangedFieldType</ref></type>
+        <definition>ChangedFieldType SDC.ChangeLogType::ChangedField</definition>
+        <argsstring></argsstring>
+        <name>ChangedField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="65" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_change_log_type_1a939f82606901c7c5a41b40783c5bc97f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_data_types___s_type" kindref="compound">DataTypes_SType</ref></type>
+        <definition>DataTypes_SType SDC.ChangeLogType::ChangedTo</definition>
+        <argsstring></argsstring>
+        <name>ChangedTo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="78" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_change_log_type_1ae65fcbc3398dfb63c26bf5f92c3b4e66" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_data_types___s_type" kindref="compound">DataTypes_SType</ref></type>
+        <definition>DataTypes_SType SDC.ChangeLogType::ChangedFrom</definition>
+        <argsstring></argsstring>
+        <name>ChangedFrom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="91" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_change_log_type_1afccc829dc6d5a71adced2dbbffa1c441" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref> &gt;</type>
+        <definition>virtual List&lt;string_Stype&gt; SDC.ChangeLogType.ChangeType</definition>
+        <argsstring></argsstring>
+        <name>ChangeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="104" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_change_log_type_1a5c8cae4e2a201fe2c8865625cec2feba" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_replaced_i_ds_type" kindref="compound">ReplacedIDsType</ref></type>
+        <definition>ReplacedIDsType SDC.ChangeLogType::Replaces</definition>
+        <argsstring></argsstring>
+        <name>Replaces</name>
+        <briefdescription>
+<para>The retired/deprecated item that is being replaced. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="120" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_change_log_type_1a01c7e789f527f2f3743e95847a5be74b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1date_time___stype" kindref="compound">dateTime_Stype</ref></type>
+        <definition>dateTime_Stype SDC.ChangeLogType::ChangeDate</definition>
+        <argsstring></argsstring>
+        <name>ChangeDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="133" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_change_log_type_1a675d9ad4567a680eb38ed75f779c5448" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref></type>
+        <definition>string_Stype SDC.ChangeLogType::ChangeDescription</definition>
+        <argsstring></argsstring>
+        <name>ChangeDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="146" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_change_log_type_1a5db81149635adb2e4655ddaf2db6e58b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_contacts_type" kindref="compound">ContactsType</ref></type>
+        <definition>ContactsType SDC.ChangeLogType::Editors</definition>
+        <argsstring></argsstring>
+        <name>Editors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="159" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_change_log_type_1a7a341175ff45499cf193e923e47f3db1" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_change_tracking_type" kindref="compound">ChangeTrackingType</ref></type>
+        <definition>ChangeTrackingType SDC.ChangeLogType::ChangeTracking</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="172" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_change_log_type_1a06f4dfd9f860f5aaac0e9626802a5a8e" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.ChangeLogType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="184" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="185" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1aa423e6b6233e1819fcc5a73255a97356" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="429" endline="444">SDC.ChangeLogType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_change_log_type_1aeea515989fe715b9206c8ebcd972b193" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1string___stype" kindref="compound">string_Stype</ref> &gt;</type>
+        <definition>virtual BindingList&lt;string_Stype&gt; SDC.ChangeLogType.ChangeType</definition>
+        <argsstring></argsstring>
+        <name>ChangeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="139" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_change_log_type_1a4bf0d5e834ecb004eb8afaa71a696aab" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.ChangeLogType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="291" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a170485624833955e30190478f1a32b9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangeType</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangeType</name>
+        <briefdescription>
+<para>Test whether <ref refid="class_s_d_c_1_1_change_type" kindref="compound">ChangeType</ref> should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="199" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="199" bodyend="202"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a892ac0e1b95ee51d6ef718f452a8b5f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangedField</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangedField</name>
+        <briefdescription>
+<para>Test whether ChangedField should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="207" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="207" bodyend="210"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a1a3726a75989f46eaf1562ab87d9eee9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangedTo</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangedTo</name>
+        <briefdescription>
+<para>Test whether ChangedTo should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="215" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="215" bodyend="218"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a8558ec2c81bcb6d72cde43b1d6ebc2e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangedFrom</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangedFrom</name>
+        <briefdescription>
+<para>Test whether ChangedFrom should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="223" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="223" bodyend="226"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1ae5291daf906ab348b99f87cf3bbbc500" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeReplaces</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeReplaces</name>
+        <briefdescription>
+<para>Test whether Replaces should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="231" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="231" bodyend="234"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a1a289e6a64a8815c58c97e5537ef1e50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangeDate</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangeDate</name>
+        <briefdescription>
+<para>Test whether ChangeDate should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="239" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="239" bodyend="242"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a6ea7ef6c83d75ae461c7ec4520cc7a18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangeDescription</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangeDescription</name>
+        <briefdescription>
+<para>Test whether ChangeDescription should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="247" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="247" bodyend="250"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a93477c6755d9dc3b22070bb6038133b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeEditors</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeEditors</name>
+        <briefdescription>
+<para>Test whether Editors should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="255" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="255" bodyend="258"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a6eb4f4989461f0b7ef1cb9e177182daa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangeTracking</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangeTracking</name>
+        <briefdescription>
+<para>Test whether ChangeTracking should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="263" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="263" bodyend="266"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a2d1f2063d4e3e4304f19e09597a0495c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ChangeLogType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a9ac9c6d560ffe2c300d7796951c22395">Serialize</reimplements>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="273" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="273" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a634cd73fffd5adbef3377983e6a6b8dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ChangeLogType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="303" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="303" bodyend="306"/>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1a0d959f3ffb1e0946f00b4d9d3f178a06" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="473" endline="491">SDC.ChangeLogType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a620c4356fb5651bf439831d9f8bbbf37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1ab1514379cd9bd547d5569548274fceb1">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="366" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="366" bodyend="379"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1a6532996e5317f753ba6888c54d7f6203" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="458" endline="471">SDC.ChangeLogType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a0e2ea907ee265acf1ae1193f5381d3ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1af03b919560cd67ffe1373d8cef3bb9b8">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="381" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="381" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a0d959f3ffb1e0946f00b4d9d3f178a06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ChangeLogType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="386" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="386" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1add357e6620ab10b7f5a653729f756e14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ChangeLogType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5c619ed0e36571d6f4bd992faa3ad282">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="391" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="391" bodyend="408"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a892ac0e1b95ee51d6ef718f452a8b5f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangedField</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangedField</name>
+        <briefdescription>
+<para>Test whether ChangedField should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="306" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="306" bodyend="309"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1ac2b847e5c404e63063b346e111a26350" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="35">SDC.ChangeLogType._changedField</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a1a3726a75989f46eaf1562ab87d9eee9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangedTo</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangedTo</name>
+        <briefdescription>
+<para>Test whether ChangedTo should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="314" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="314" bodyend="317"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1a2b789151eafe470b0832542367705338" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="38">SDC.ChangeLogType._changedTo</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a8558ec2c81bcb6d72cde43b1d6ebc2e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangedFrom</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangedFrom</name>
+        <briefdescription>
+<para>Test whether ChangedFrom should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="322" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="322" bodyend="325"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1abc5b43b23e248c0bf541e35567f19102" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="41">SDC.ChangeLogType._changedFrom</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1ae5291daf906ab348b99f87cf3bbbc500" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeReplaces</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeReplaces</name>
+        <briefdescription>
+<para>Test whether Replaces should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="330" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="330" bodyend="333"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1a11cbb8f160687242d9084f268bcb1d73" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="47">SDC.ChangeLogType._replaces</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a1a289e6a64a8815c58c97e5537ef1e50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangeDate</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangeDate</name>
+        <briefdescription>
+<para>Test whether ChangeDate should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="338" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="338" bodyend="341"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1ad0326bb15191a3bbe389a0cc4c672b65" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="50">SDC.ChangeLogType._changeDate</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a6ea7ef6c83d75ae461c7ec4520cc7a18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangeDescription</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangeDescription</name>
+        <briefdescription>
+<para>Test whether ChangeDescription should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="346" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="346" bodyend="349"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1a2e2b7470df37b9b93c10cf92036094b5" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="53">SDC.ChangeLogType._changeDescription</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a93477c6755d9dc3b22070bb6038133b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeEditors</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeEditors</name>
+        <briefdescription>
+<para>Test whether Editors should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="354" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="354" bodyend="357"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1a36d9a4a99a0cf885160446eeda3ca5ea" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="56">SDC.ChangeLogType._editors</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a6eb4f4989461f0b7ef1cb9e177182daa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.ShouldSerializeChangeTracking</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeChangeTracking</name>
+        <briefdescription>
+<para>Test whether ChangeTracking should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="362" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="362" bodyend="365"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1aa8a850ba69b12e1c6dce2d47d3bc693e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="59">SDC.ChangeLogType._changeTracking</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a634cd73fffd5adbef3377983e6a6b8dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ChangeLogType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="372" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="372" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a6532996e5317f753ba6888c54d7f6203" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ChangeLogType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="458" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="458" bodyend="471"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_change_log_type_1a620c4356fb5651bf439831d9f8bbbf37" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="366" endline="379">SDC.ChangeLogType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a0d959f3ffb1e0946f00b4d9d3f178a06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ChangeLogType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="473" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="473" bodyend="491"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_change_log_type_1a634cd73fffd5adbef3377983e6a6b8dc" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="303" endline="306">SDC.ChangeLogType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a8678055179a2338c6bbb6650c56e1f94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+        <definition>virtual ChangeLogType SDC.ChangeLogType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3">Clone</reimplements>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="552" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="552" bodyend="555"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a5c949eb9bcaa66a67b53c2f96e908689" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangeLogType.Deserialize</definition>
+        <argsstring>(string input, out ChangeLogType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="315" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="315" bodyend="329"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1a8b6f1ba8627b1e5881c6df94383a8fa3" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="407" endline="421">SDC.ChangeLogType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1a00840687a34248878b541ccb18282e6f" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="522" endline="546">SDC.ChangeLogType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a9000cc9e41b974cf11127798c8a89d9e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangeLogType.Deserialize</definition>
+        <argsstring>(string input, out ChangeLogType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="331" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="331" bodyend="335"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1aa423e6b6233e1819fcc5a73255a97356" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+        <definition>static new ChangeLogType SDC.ChangeLogType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="337" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="337" bodyend="352"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1aeb9ab79b9e1b48f72aabad8af74534f2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+        <definition>static ChangeLogType SDC.ChangeLogType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="354" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="354" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a7cad5f1f073ab37a2d2bd812133ceb6f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangeLogType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out ChangeLogType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="417" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="417" bodyend="431"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_change_log_type_1a7039757cae7a823a8a574beb2c8407c6" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_change_log_type_8cs" startline="500" endline="514">SDC.ChangeLogType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1afe5bbc41bc83f02ed260b408b8738e99" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangeLogType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ChangeLogType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="433" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="433" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a4c01751e7ed68db4cafcdb3dcbfcbc45" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangeLogType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ChangeLogType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="438" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="438" bodyend="442"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a51249af6c77a4fd7948972da29987053" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+        <definition>static ChangeLogType SDC.ChangeLogType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="444" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="444" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a55339386567ded293abe2f24ae336c91" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+        <definition>static new ChangeLogType SDC.ChangeLogType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="449" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="449" bodyend="473"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a8b6f1ba8627b1e5881c6df94383a8fa3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangeLogType.Deserialize</definition>
+        <argsstring>(string input, out ChangeLogType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="407" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="407" bodyend="421"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1a5c949eb9bcaa66a67b53c2f96e908689" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="315" endline="329">SDC.ChangeLogType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a9000cc9e41b974cf11127798c8a89d9e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangeLogType.Deserialize</definition>
+        <argsstring>(string input, out ChangeLogType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="423" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="423" bodyend="427"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1a5c949eb9bcaa66a67b53c2f96e908689" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="315" endline="329">SDC.ChangeLogType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1aa423e6b6233e1819fcc5a73255a97356" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+        <definition>static new ChangeLogType SDC.ChangeLogType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="429" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="429" bodyend="444"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_change_log_type_1a06f4dfd9f860f5aaac0e9626802a5a8e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="185">SDC.ChangeLogType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a994b8ea0ef7b13728d725a47beea3ea8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+        <definition>static ChangeLogType SDC.ChangeLogType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="446" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="446" bodyend="449"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1a06f4dfd9f860f5aaac0e9626802a5a8e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="185">SDC.ChangeLogType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a7039757cae7a823a8a574beb2c8407c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangeLogType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ChangeLogType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="500" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="500" bodyend="514"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1a7cad5f1f073ab37a2d2bd812133ceb6f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="417" endline="431">SDC.ChangeLogType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a4c01751e7ed68db4cafcdb3dcbfcbc45" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ChangeLogType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ChangeLogType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="516" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="516" bodyend="520"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1a7cad5f1f073ab37a2d2bd812133ceb6f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="417" endline="431">SDC.ChangeLogType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_change_log_type_1a00840687a34248878b541ccb18282e6f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_change_log_type" kindref="compound">ChangeLogType</ref></type>
+        <definition>static new ChangeLogType SDC.ChangeLogType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" line="522" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ChangeLogType.cs" bodystart="522" bodyend="546"/>
+        <references refid="class_s_d_c_1_1_change_log_type_1a5c949eb9bcaa66a67b53c2f96e908689" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_change_log_type_8cs" startline="315" endline="329">SDC.ChangeLogType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Inforamtion about changes to file or part of a file. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1610">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="1611" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1611">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="1609">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="1610" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1610" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1608">
+        <label>SDC.ChangeLogType</label>
+        <link refid="class_s_d_c_1_1_change_log_type"/>
+        <childnode refid="1609" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1609" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1627">
+        <label>SDC.string_Stype</label>
+        <link refid="class_s_d_c_1_1string___stype"/>
+        <childnode refid="1614" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1614" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1617" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1614">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="1615" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1616" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="1624" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="1625" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="1626" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="1617" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1632">
+        <label>SDC.DataTypes_SType</label>
+        <link refid="class_s_d_c_1_1_data_types___s_type"/>
+        <childnode refid="1613" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1613" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1625" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="1617" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1630">
+        <label>SDC.ChangedFieldType</label>
+        <link refid="class_s_d_c_1_1_changed_field_type"/>
+        <childnode refid="1613" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1613" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1625" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="1617" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1621">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="1619" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1615">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="1619">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="1633">
+        <label>SDC.ReplacedIDsType</label>
+        <link refid="class_s_d_c_1_1_replaced_i_ds_type"/>
+        <childnode refid="1614" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1614" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1617" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1618">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="1619" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1624">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="1623">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="1631">
+        <label>SDC.ContactsType</label>
+        <link refid="class_s_d_c_1_1_contacts_type"/>
+        <childnode refid="1613" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1613" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1617" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1617">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="1615" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1618" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="1620" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="1621" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="1622" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="1626">
+        <label>System</label>
+      </node>
+      <node id="1620">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="1619" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1628">
+        <label>SDC.ChangeTrackingType</label>
+        <link refid="class_s_d_c_1_1_change_tracking_type"/>
+        <childnode refid="1614" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1614" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1617" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1616">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="1613" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1613" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1617" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1613">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="1614" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1614" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1617" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1612">
+        <label>SDC.ChangeLogType</label>
+        <link refid="class_s_d_c_1_1_change_log_type"/>
+        <childnode refid="1613" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1613" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1627" relation="usage">
+          <edgelabel>_changeDescription</edgelabel>
+        </childnode>
+        <childnode refid="1628" relation="usage">
+          <edgelabel>_changeTracking</edgelabel>
+        </childnode>
+        <childnode refid="1629" relation="usage">
+          <edgelabel>_changeDate</edgelabel>
+        </childnode>
+        <childnode refid="1630" relation="usage">
+          <edgelabel>_changedField</edgelabel>
+        </childnode>
+        <childnode refid="1631" relation="usage">
+          <edgelabel>_editors</edgelabel>
+        </childnode>
+        <childnode refid="1632" relation="usage">
+          <edgelabel>_changedFrom</edgelabel>
+          <edgelabel>_changedTo</edgelabel>
+        </childnode>
+        <childnode refid="1617" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="1633" relation="usage">
+          <edgelabel>_replaces</edgelabel>
+        </childnode>
+      </node>
+      <node id="1622">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="1623" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1629">
+        <label>SDC.dateTime_Stype</label>
+        <link refid="class_s_d_c_1_1date_time___stype"/>
+        <childnode refid="1614" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1614" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1626" relation="usage">
+          <edgelabel>_val</edgelabel>
+        </childnode>
+        <childnode refid="1617" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1625">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="1615" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1616" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="1624" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="1625" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="1626" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="1617" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" line="31" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ChangeLogType.cs" bodystart="30" bodyend="474"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_change_log_type_1ad0326bb15191a3bbe389a0cc4c672b65" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>_changeDate</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a2e2b7470df37b9b93c10cf92036094b5" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>_changeDescription</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1ac2b847e5c404e63063b346e111a26350" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>_changedField</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1abc5b43b23e248c0bf541e35567f19102" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>_changedFrom</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a2b789151eafe470b0832542367705338" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>_changedTo</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1aa8a850ba69b12e1c6dce2d47d3bc693e" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>_changeTracking</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1abc8784245abb3d32e3379868ce08341d" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>_changeType</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1ac9f6acb06ee3ac1db4ade03597c100f7" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>_changeType</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a36d9a4a99a0cf885160446eeda3ca5ea" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>_editors</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a11cbb8f160687242d9084f268bcb1d73" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>_replaces</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a01c7e789f527f2f3743e95847a5be74b" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ChangeDate</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a675d9ad4567a680eb38ed75f779c5448" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ChangeDescription</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a3c8f06f515e9658827131c50c004c1d3" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ChangedField</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1ae65fcbc3398dfb63c26bf5f92c3b4e66" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ChangedFrom</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a939f82606901c7c5a41b40783c5bc97f" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ChangedTo</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a4bf0d5e834ecb004eb8afaa71a696aab" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1ae599d72bf6442ffaceaf01b9a2709b7f" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a7a341175ff45499cf193e923e47f3db1" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ChangeTracking</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1afccc829dc6d5a71adced2dbbffa1c441" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ChangeType</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1aeea515989fe715b9206c8ebcd972b193" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ChangeType</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a8678055179a2338c6bbb6650c56e1f94" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a5c949eb9bcaa66a67b53c2f96e908689" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a9000cc9e41b974cf11127798c8a89d9e" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1aa423e6b6233e1819fcc5a73255a97356" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1aeb9ab79b9e1b48f72aabad8af74534f2" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a8b6f1ba8627b1e5881c6df94383a8fa3" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a9000cc9e41b974cf11127798c8a89d9e" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1aa423e6b6233e1819fcc5a73255a97356" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a994b8ea0ef7b13728d725a47beea3ea8" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangeLogType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a5db81149635adb2e4655ddaf2db6e58b" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Editors</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a7cad5f1f073ab37a2d2bd812133ceb6f" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1afe5bbc41bc83f02ed260b408b8738e99" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a4c01751e7ed68db4cafcdb3dcbfcbc45" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a51249af6c77a4fd7948972da29987053" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a55339386567ded293abe2f24ae336c91" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a7039757cae7a823a8a574beb2c8407c6" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a4c01751e7ed68db4cafcdb3dcbfcbc45" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a00840687a34248878b541ccb18282e6f" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ChangeLogType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a5c8cae4e2a201fe2c8865625cec2feba" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Replaces</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a620c4356fb5651bf439831d9f8bbbf37" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a0e2ea907ee265acf1ae1193f5381d3ef" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a0d959f3ffb1e0946f00b4d9d3f178a06" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1add357e6620ab10b7f5a653729f756e14" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a6532996e5317f753ba6888c54d7f6203" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a0d959f3ffb1e0946f00b4d9d3f178a06" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a2d1f2063d4e3e4304f19e09597a0495c" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a634cd73fffd5adbef3377983e6a6b8dc" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a634cd73fffd5adbef3377983e6a6b8dc" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a9de457972749bde04626553e1faaf199" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a06f4dfd9f860f5aaac0e9626802a5a8e" prot="private" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a1a289e6a64a8815c58c97e5537ef1e50" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangeDate</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a1a289e6a64a8815c58c97e5537ef1e50" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangeDate</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a6ea7ef6c83d75ae461c7ec4520cc7a18" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangeDescription</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a6ea7ef6c83d75ae461c7ec4520cc7a18" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangeDescription</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a892ac0e1b95ee51d6ef718f452a8b5f3" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangedField</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a892ac0e1b95ee51d6ef718f452a8b5f3" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangedField</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a8558ec2c81bcb6d72cde43b1d6ebc2e7" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangedFrom</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a8558ec2c81bcb6d72cde43b1d6ebc2e7" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangedFrom</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a1a3726a75989f46eaf1562ab87d9eee9" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangedTo</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a1a3726a75989f46eaf1562ab87d9eee9" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangedTo</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a6eb4f4989461f0b7ef1cb9e177182daa" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangeTracking</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a6eb4f4989461f0b7ef1cb9e177182daa" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangeTracking</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a170485624833955e30190478f1a32b9b" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeChangeType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a93477c6755d9dc3b22070bb6038133b0" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeEditors</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1a93477c6755d9dc3b22070bb6038133b0" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeEditors</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1ae5291daf906ab348b99f87cf3bbbc500" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeReplaces</name></member>
+      <member refid="class_s_d_c_1_1_change_log_type_1ae5291daf906ab348b99f87cf3bbbc500" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializeReplaces</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ChangeLogType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::ChangeLogType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

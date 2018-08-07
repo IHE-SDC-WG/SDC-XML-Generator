@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+          xmlns:db="http://www.springframework.net/database">
+
+  <object name="formDesignDataSets"
+          type="SDC.DAL.DataSets.FormDesignDataSets, SDC.DAL.DataSets">
+    <property name="AdoTemplate" ref="adoTemplate"/>
+  </object>
+
+  <object id="adoTemplate" type="Spring.Data.Core.AdoTemplate, Spring.Data">
+    <property name="DbProvider" ref="dbProvider"/>
+    <property name="DataReaderWrapperType" value="Spring.Data.Support.NullMappingDataReader, Spring.Data"/>
+  </object>
+
+  <db:provider id="dbProvider" connectionString="Data Source=PappeCC; Initial Catalog=PERC_eCC; Integrated Security=SSPI" provider="System.Data.SqlClient" />
+</objects>

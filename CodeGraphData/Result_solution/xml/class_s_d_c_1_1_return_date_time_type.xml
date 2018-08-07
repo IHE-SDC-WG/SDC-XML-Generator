@@ -1,0 +1,965 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_return_date_time_type" kind="class" prot="public">
+    <compoundname>SDC::ReturnDateTimeType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_return_base_type" prot="public" virt="non-virtual">SDC.ReturnBaseType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_any_functions_date_time_type" prot="public" virt="non-virtual">SDC.AnyFunctionsDateTimeType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_date_time_add_functions_date_time_type" prot="public" virt="non-virtual">SDC.DateTimeAddFunctionsDateTimeType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_date_time_diff_functions_date_time_type" prot="public" virt="non-virtual">SDC.DateTimeDiffFunctionsDateTimeType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_date_time_functions_any_type" prot="public" virt="non-virtual">SDC.DateTimeFunctionsAnyType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_date_time_monadic_functions_date_time_type" prot="public" virt="non-virtual">SDC.DateTimeMonadicFunctionsDateTimeType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_func_date_time_type000" prot="public" virt="non-virtual">SDC.FuncDateTimeType000</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_input_list___return_date_time_type" prot="public" virt="non-virtual">SDC.InputList_ReturnDateTimeType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_niladic_functions_date_time_type" prot="public" virt="non-virtual">SDC.NiladicFunctionsDateTimeType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_ref_date_time_type000" prot="public" virt="non-virtual">SDC.RefDateTimeType000</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_ref_rule_date_time_type000" prot="public" virt="non-virtual">SDC.RefRuleDateTimeType000</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_script_code_date_time_type" prot="public" virt="non-virtual">SDC.ScriptCodeDateTimeType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_string_convert_date_time_type" prot="public" virt="non-virtual">SDC.StringConvertDateTimeType</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_return_date_time_type_1a3481ddb8c38d53cf89d4da19cf9a3b29" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_data_types___d_e_type" kindref="compound">DataTypes_DEType</ref></type>
+        <definition>DataTypes_DEType SDC.ReturnDateTimeType._item1</definition>
+        <argsstring></argsstring>
+        <name>_item1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="44" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_return_date_time_type_1ac78a44358dcdee334bd9a04901c0e898" compoundref="_return_date_time_type_8cs" startline="77" endline="80">SDC.ReturnDateTimeType.ShouldSerializeItem1</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_return_date_time_type_1aeab7a3b2c97accc22cd0145de8bee5d7" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.ReturnDateTimeType.serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="46" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_return_date_time_type_1a375a97b1b5351b35ebd1df6fe762350a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_data_types___d_e_type" kindref="compound">DataTypes_DEType</ref></type>
+        <definition>virtual DataTypes_DEType SDC.ReturnDateTimeType.Item1</definition>
+        <argsstring></argsstring>
+        <name>Item1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="50" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_return_date_time_type_1abe14cf6f8ddd8de18488dc7eb6685bc3" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.ReturnDateTimeType.Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="62" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="63" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_return_date_time_type_1abed955e4734f60be2ed91972710251ee" compoundref="_return_date_time_type_8cs" startline="168" endline="171">SDC.ReturnDateTimeType.Deserialize</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1ac78a44358dcdee334bd9a04901c0e898" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ReturnDateTimeType.ShouldSerializeItem1</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeItem1</name>
+        <briefdescription>
+<para>Test whether Item1 should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="77" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="77" bodyend="80"/>
+        <references refid="class_s_d_c_1_1_return_date_time_type_1a3481ddb8c38d53cf89d4da19cf9a3b29" compoundref="_return_date_time_type_8cs" startline="44">SDC.ReturnDateTimeType._item1</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1a907d8f817aea43f480e93afb69597768" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ReturnDateTimeType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_return_base_type_1a4920ec68965f945e21605cea92ce660c">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_ref_rule_date_time_type000_1afb711295e46930c1281fb68e238540bd">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_ref_date_time_type000_1a7d4b1b0b1f6fd0557e722a9bd639ab58">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_get_item_at_index_date_time_type000_1a88731b505507ea6dba120f86e39ca613">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_list___return_date_time_type_1a87c58bda166a5b606bed367f61eb6583">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_functions_date_time_type_1a2f1a95a242f7cf8edb0f2608daa64053">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_niladic_functions_date_time_type_1a872f0abb59a2797880cc3beaa5d6eaf9">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_script_code_date_time_type_1a11355fdc031823117b54d70f80270acd">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_func_date_time_type000_1a4f6e748b1d0b6fc78df64d439c14c8e6">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_monadic_functions_date_time_type_1a030fe5285472b0473ab316cc1fb44155">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_convert_date_time_type_1ab2012fde6eca8376371900a7ee8a5367">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_diff_functions_date_time_type_1ac80e7683997763d5c4cc3903062b2b59">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_add_functions_date_time_type_1a6b120c89a252b6891481725ce65e704c">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_functions_any_type_1ad58c5997b1394e710c70580f940a0616">Serialize</reimplementedby>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="87" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="87" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1ac30def0c3f20c7c7d370c7e0bf7312c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ReturnDateTimeType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_return_base_type_1aca6296d794d4f69f09d88a6a88b6465d">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_ref_rule_date_time_type000_1aac531e65f420a3bf4e58c89a53f34c77">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_ref_date_time_type000_1a16f5ea76bf85765a818c0d17c8519527">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_get_item_at_index_date_time_type000_1a8721cfb70f959d989511bb786056f627">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_list___return_date_time_type_1af08991b1480a47a024c5f6a3cddadf2d">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_functions_date_time_type_1a57a3d3d91a7f49fb4210dbbc3165fdac">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_niladic_functions_date_time_type_1ac252565d7ac5ad12f02ad4eb1676ffd9">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_script_code_date_time_type_1a5c48fa6d6ba0ef238c4cea3fad9a67f3">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_func_date_time_type000_1a0ec888fdd8e890ee41740f7e22015797">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_monadic_functions_date_time_type_1a64c90367fdbad257690ee6be3afb76a4">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_convert_date_time_type_1a4f7a0c1bc030975d1ec44dd34f21e6c9">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_diff_functions_date_time_type_1aa949f7ed2ae613ae58f8f7b2c045e623">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_add_functions_date_time_type_1a1731d957c49c40a4a5f758035eb3031e">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_functions_any_type_1a630a1e9cf769a0862c008395648f7320">Serialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="117" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="117" bodyend="120"/>
+        <referencedby refid="class_s_d_c_1_1_return_date_time_type_1aa09abe9aab9ddf721974a428ddb95dd0" compoundref="_return_date_time_type_8cs" startline="205" endline="222">SDC.ReturnDateTimeType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1a0dfbb24f93ba1f36f5ae7d5658c22ef4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ReturnDateTimeType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_base_type_1a45dafbac5170735bf0bd05ee2bc5e5da">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_ref_rule_date_time_type000_1a341d16aed6f688d0cf199db3a208a84c">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_ref_date_time_type000_1acb478e2e33873c9a3b7b0df4380fea38">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_get_item_at_index_date_time_type000_1a019b490be6917b31790766526f2de847">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_list___return_date_time_type_1ae2c0ccfdd85940f83fea1bcfa3cef200">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_functions_date_time_type_1a82c3392f273cd80cce14e718e675f868">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_niladic_functions_date_time_type_1a7f2b0975c105808377fbf09a6d5ae057">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_script_code_date_time_type_1a47f294315d977ba44fde766b18e9f094">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_func_date_time_type000_1ade8dd81ea00ef5dc43ca394581bda3c8">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_monadic_functions_date_time_type_1a13389aba332f1c0fb115eb3a9a0bde56">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_convert_date_time_type_1afbd320528d0c816d89fd58d13a1be960">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_diff_functions_date_time_type_1ac11f0682f722f9925b6f1cf406dd9ded">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_add_functions_date_time_type_1a0499dd6716aec53972a2865aa8c8cfee">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_functions_any_type_1abc4cccebd71438b54e484ddd2656b147">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="180" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="180" bodyend="193"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_return_date_time_type_1aa1a006b5ad19665b188f43e554dc1637" compoundref="_return_date_time_type_8cs" startline="195" endline="198">SDC.ReturnDateTimeType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1aa1a006b5ad19665b188f43e554dc1637" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ReturnDateTimeType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_base_type_1af617cc8b912ae86cbe19d4e36ce8a7c6">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_ref_rule_date_time_type000_1af2fefb2b02a79ebb191b0224bc4d95dc">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_ref_date_time_type000_1a3745f418170371bc769719e40f7570f8">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_get_item_at_index_date_time_type000_1a7174735ec086e8d4107915a0b8c44881">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_list___return_date_time_type_1a0a6c122c06e620f1ecac55ba7a1fc712">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_functions_date_time_type_1adc9b277f2c0d99314bcd597ddfc09454">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_niladic_functions_date_time_type_1aa7af87f8db5f91e6ff73107e100f8639">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_script_code_date_time_type_1a5bfcfe979aee8fd0a5c7702b0cca2e2a">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_func_date_time_type000_1accf01a9537bd369b77d6807eea541c9b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_monadic_functions_date_time_type_1a97a8e26c3ae7b37bbe30c8b58c407243">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_convert_date_time_type_1a383c56bb68ffb453eb775f301f75e722">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_diff_functions_date_time_type_1a71d22430ea63f92a942d84a2e0300d00">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_add_functions_date_time_type_1a510bd188877caaea458e7877419172f2">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_functions_any_type_1a23648ff0a58cf2521a62a2d874dff63c">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="195" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="195" bodyend="198"/>
+        <references refid="class_s_d_c_1_1_return_date_time_type_1a0dfbb24f93ba1f36f5ae7d5658c22ef4" compoundref="_return_date_time_type_8cs" startline="180" endline="193">SDC.ReturnDateTimeType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1a64d666106fb38dce721471e45387c205" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ReturnDateTimeType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_base_type_1a9f5c2c0efb6fa28e33d92cc3c7ce25f5">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_ref_rule_date_time_type000_1a8e3eabe8f87b32e0d87d52bdb3a97dd5">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_ref_date_time_type000_1a73493c04811174bab2a8f0527c988753">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_get_item_at_index_date_time_type000_1a642e21bd32e1f111a51009a42636173c">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_list___return_date_time_type_1ab64e363d06613aa3853a0c8a0b539e78">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_functions_date_time_type_1ad6d028b0464e62e84de2fe551dedcb38">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_niladic_functions_date_time_type_1add740f12efa4131863d322c63fd98a6a">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_script_code_date_time_type_1af9aee0dd77a53f043e5cbe87671f8f4d">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_func_date_time_type000_1a83b9dfe35b9722417504781617679028">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_monadic_functions_date_time_type_1a04b317493aebea6947fe36a090436840">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_convert_date_time_type_1a5cc1fc070dc14ee54732218195580a75">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_diff_functions_date_time_type_1abd309c3393c4c43984377e918f2fb542">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_add_functions_date_time_type_1af7586a8e8606ddf9a85ebc6d5fe720be">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_functions_any_type_1aca23da3a27243500b836028b6b659c08">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="200" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="200" bodyend="203"/>
+        <references refid="class_s_d_c_1_1_return_date_time_type_1a0dfbb24f93ba1f36f5ae7d5658c22ef4" compoundref="_return_date_time_type_8cs" startline="180" endline="193">SDC.ReturnDateTimeType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1aa09abe9aab9ddf721974a428ddb95dd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ReturnDateTimeType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_return_base_type_1ac4a3171f0603aaeea08da3fb69cf0a14">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_ref_rule_date_time_type000_1a1cdf9821cca625ca8900d2bf373275de">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_ref_date_time_type000_1a42ae0649a039244ab273f1690706dad3">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_get_item_at_index_date_time_type000_1a1863ebc0b970d654a3b51320248772ce">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_input_list___return_date_time_type_1a5698e60921c177836e742e0d5b1788aa">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_any_functions_date_time_type_1ac677d32cfa9e06c1a7a1e16b90d64084">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_niladic_functions_date_time_type_1a727da758311c01dd21a98abab66d4791">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_script_code_date_time_type_1a76b33aa8166124dd762091e2fe295b77">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_func_date_time_type000_1ad5ba25dc0fafeebf17898ffa029b56a4">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_monadic_functions_date_time_type_1a51f2be6354be08ef68758a62735d676f">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_string_convert_date_time_type_1abaca2439efb1e8b81d64cb4c2f99ad05">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_diff_functions_date_time_type_1ac3d690552b4c7c78579bdd7ef0cc52ae">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_add_functions_date_time_type_1a63af3b224b5007998627cd0dd94f4d9e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_date_time_functions_any_type_1aad34524b28c873b7f0c63c46cc949784">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="205" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="205" bodyend="222"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_return_date_time_type_1ac30def0c3f20c7c7d370c7e0bf7312c9" compoundref="_return_date_time_type_8cs" startline="117" endline="120">SDC.ReturnDateTimeType.Serialize</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1ac9594fddbabcb475628fd3842199ff4b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ReturnDateTimeType.Deserialize</definition>
+        <argsstring>(string input, out ReturnDateTimeType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="129" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="129" bodyend="143"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_return_date_time_type_1ad3f795e2e335f9e44fcdd8af55e94bc0" compoundref="_return_date_time_type_8cs" startline="145" endline="149">SDC.ReturnDateTimeType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_return_date_time_type_1aa1d06c89ccc91956cd5c3b91be2dee37" compoundref="_return_date_time_type_8cs" startline="263" endline="287">SDC.ReturnDateTimeType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1ad3f795e2e335f9e44fcdd8af55e94bc0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ReturnDateTimeType.Deserialize</definition>
+        <argsstring>(string input, out ReturnDateTimeType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="145" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="145" bodyend="149"/>
+        <references refid="class_s_d_c_1_1_return_date_time_type_1ac9594fddbabcb475628fd3842199ff4b" compoundref="_return_date_time_type_8cs" startline="129" endline="143">SDC.ReturnDateTimeType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1ad29ce324fcc265b846f56dabc7a66481" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref></type>
+        <definition>static new ReturnDateTimeType SDC.ReturnDateTimeType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="151" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="151" bodyend="166"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1abed955e4734f60be2ed91972710251ee" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref></type>
+        <definition>static ReturnDateTimeType SDC.ReturnDateTimeType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="168" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="168" bodyend="171"/>
+        <references refid="class_s_d_c_1_1_return_date_time_type_1abe14cf6f8ddd8de18488dc7eb6685bc3" compoundref="_return_date_time_type_8cs" startline="63">SDC.ReturnDateTimeType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1ac25b33681fb18f1e1e87fa833575b6a8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ReturnDateTimeType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out ReturnDateTimeType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="231" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="231" bodyend="245"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_return_date_time_type_1a27d1d8ce8b4a5c25a54b589dbe24425d" compoundref="_return_date_time_type_8cs" startline="247" endline="250">SDC.ReturnDateTimeType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1a27d1d8ce8b4a5c25a54b589dbe24425d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ReturnDateTimeType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ReturnDateTimeType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="247" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="247" bodyend="250"/>
+        <references refid="class_s_d_c_1_1_return_date_time_type_1ac25b33681fb18f1e1e87fa833575b6a8" compoundref="_return_date_time_type_8cs" startline="231" endline="245">SDC.ReturnDateTimeType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1ae0806d7cf285727466ec8af0cb8ae0d8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ReturnDateTimeType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ReturnDateTimeType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="252" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="252" bodyend="256"/>
+        <references refid="class_s_d_c_1_1_return_date_time_type_1ac25b33681fb18f1e1e87fa833575b6a8" compoundref="_return_date_time_type_8cs" startline="231" endline="245">SDC.ReturnDateTimeType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1ad080514907e96d92de8d9a12955a4a51" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref></type>
+        <definition>static ReturnDateTimeType SDC.ReturnDateTimeType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="258" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="258" bodyend="261"/>
+        <references refid="class_s_d_c_1_1_return_date_time_type_1ac25b33681fb18f1e1e87fa833575b6a8" compoundref="_return_date_time_type_8cs" startline="231" endline="245">SDC.ReturnDateTimeType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_return_date_time_type_1aa1d06c89ccc91956cd5c3b91be2dee37" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_return_date_time_type" kindref="compound">ReturnDateTimeType</ref></type>
+        <definition>static new ReturnDateTimeType SDC.ReturnDateTimeType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="263" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="263" bodyend="287"/>
+        <references refid="class_s_d_c_1_1_return_date_time_type_1ac9594fddbabcb475628fd3842199ff4b" compoundref="_return_date_time_type_8cs" startline="129" endline="143">SDC.ReturnDateTimeType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8225">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="8226" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8238">
+        <label>SDC.ScriptCodeDateTimeType</label>
+        <link refid="class_s_d_c_1_1_script_code_date_time_type"/>
+        <childnode refid="8222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8226">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="8230">
+        <label>SDC.DateTimeFunctionsAnyType</label>
+        <link refid="class_s_d_c_1_1_date_time_functions_any_type"/>
+        <childnode refid="8222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8229">
+        <label>SDC.DateTimeDiffFunctionsDateTimeType</label>
+        <link refid="class_s_d_c_1_1_date_time_diff_functions_date_time_type"/>
+        <childnode refid="8222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8236">
+        <label>SDC.RefDateTimeType000</label>
+        <link refid="class_s_d_c_1_1_ref_date_time_type000"/>
+        <childnode refid="8222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8234">
+        <label>SDC.ListGetItemAtIndexDateTimeType000</label>
+        <link refid="class_s_d_c_1_1_list_get_item_at_index_date_time_type000"/>
+        <childnode refid="8233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8232">
+        <label>SDC.FuncDateTimeType000</label>
+        <link refid="class_s_d_c_1_1_func_date_time_type000"/>
+        <childnode refid="8222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8228">
+        <label>SDC.DateTimeAddFunctionsDateTimeType</label>
+        <link refid="class_s_d_c_1_1_date_time_add_functions_date_time_type"/>
+        <childnode refid="8222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8233">
+        <label>SDC.InputList_ReturnDateTimeType</label>
+        <link refid="class_s_d_c_1_1_input_list___return_date_time_type"/>
+        <childnode refid="8222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8237">
+        <label>SDC.RefRuleDateTimeType000</label>
+        <link refid="class_s_d_c_1_1_ref_rule_date_time_type000"/>
+        <childnode refid="8222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8223">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="8224" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8239">
+        <label>SDC.StringConvertDateTimeType</label>
+        <link refid="class_s_d_c_1_1_string_convert_date_time_type"/>
+        <childnode refid="8222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8222">
+        <label>SDC.ReturnDateTimeType</label>
+        <link refid="class_s_d_c_1_1_return_date_time_type"/>
+        <childnode refid="8223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8224">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="8225" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8235">
+        <label>SDC.NiladicFunctionsDateTimeType</label>
+        <link refid="class_s_d_c_1_1_niladic_functions_date_time_type"/>
+        <childnode refid="8222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8231">
+        <label>SDC.DateTimeMonadicFunctionsDateTimeType</label>
+        <link refid="class_s_d_c_1_1_date_time_monadic_functions_date_time_type"/>
+        <childnode refid="8222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8227">
+        <label>SDC.AnyFunctionsDateTimeType</label>
+        <link refid="class_s_d_c_1_1_any_functions_date_time_type"/>
+        <childnode refid="8222" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8243">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="8244" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8245" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="8253" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="8254" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="8255" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="8246" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="8257">
+        <label>SDC.DataTypes_DEType</label>
+        <link refid="class_s_d_c_1_1_data_types___d_e_type"/>
+        <childnode refid="8242" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8242" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8254" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="8246" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="8250">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="8248" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8244">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="8248">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="8247">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="8248" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8253">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="8256">
+        <label>SDC.ExceptionType</label>
+        <link refid="class_s_d_c_1_1_exception_type"/>
+        <childnode refid="8242" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8255" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="8241">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="8242" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8256" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="8252">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="8246">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="8244" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8247" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="8249" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="8250" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="8251" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="8255">
+        <label>System</label>
+      </node>
+      <node id="8240">
+        <label>SDC.ReturnDateTimeType</label>
+        <link refid="class_s_d_c_1_1_return_date_time_type"/>
+        <childnode refid="8241" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8257" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="8249">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="8248" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8245">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="8242" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8242" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8246" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="8242">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="8243" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8243" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8246" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="8251">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="8252" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8254">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="8244" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8245" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="8253" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="8254" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="8255" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="8246" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ReturnDateTimeType.cs" bodystart="39" bodyend="288"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1a3481ddb8c38d53cf89d4da19cf9a3b29" prot="private" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>_item1</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a81264a5f695436f77432fc8e206a3a96" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1ac9594fddbabcb475628fd3842199ff4b" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1ad3f795e2e335f9e44fcdd8af55e94bc0" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1ad29ce324fcc265b846f56dabc7a66481" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1abed955e4734f60be2ed91972710251ee" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1acd2a23b52dcbcbd31ebd413821adb5d5" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ab3750255b283fc0144a10ff76180ea53" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a00767451a5fc7e3d07bdd954a6b0a8ee" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnDateTimeType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1a6c2875cfa4b0c4bc818f34f70af1504e" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Item</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1a375a97b1b5351b35ebd1df6fe762350a" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Item1</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1ac25b33681fb18f1e1e87fa833575b6a8" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1a27d1d8ce8b4a5c25a54b589dbe24425d" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1ae0806d7cf285727466ec8af0cb8ae0d8" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1ad080514907e96d92de8d9a12955a4a51" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1aa1d06c89ccc91956cd5c3b91be2dee37" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae65d856375cc25a45498c3def0a600c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1aab3070073c4d1e10c51ca42ade495371" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1aff817c6fac01be7c19e7180e46b7da67" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ReturnDateTimeType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1a7c4d5c78fe10e9d5881fca2ef9282241" prot="protected" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ReturnBaseType</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae27b5ac45b833727fbf0360af8f2f192" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>ReturnBaseType</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1a0dfbb24f93ba1f36f5ae7d5658c22ef4" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1aa1a006b5ad19665b188f43e554dc1637" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1a64d666106fb38dce721471e45387c205" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1aa09abe9aab9ddf721974a428ddb95dd0" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636" prot="public" virt="virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ReturnDateTimeType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1a907d8f817aea43f480e93afb69597768" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1ac30def0c3f20c7c7d370c7e0bf7312c9" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1aeab7a3b2c97accc22cd0145de8bee5d7" prot="private" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1abe14cf6f8ddd8de18488dc7eb6685bc3" prot="private" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae1058587922d33ff78d3fa2a2eb84c20" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializeItem</name></member>
+      <member refid="class_s_d_c_1_1_return_date_time_type_1ac78a44358dcdee334bd9a04901c0e898" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializeItem1</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ReturnDateTimeType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::ReturnDateTimeType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

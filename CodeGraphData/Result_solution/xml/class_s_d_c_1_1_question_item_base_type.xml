@@ -1,0 +1,1812 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_question_item_base_type" kind="class" prot="public">
+    <compoundname>SDC::QuestionItemBaseType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_repeating_type" prot="public" virt="non-virtual">SDC.RepeatingType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_repeating_type" prot="public" virt="non-virtual">SDC.RepeatingType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_question_item_type" prot="public" virt="non-virtual">SDC.QuestionItemType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_question_item_type" prot="public" virt="non-virtual">SDC.QuestionItemType</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1a52647be3ac3b6400f42c46fe6a7c87da" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+        <definition>ListFieldType SDC.QuestionItemBaseType::ListField_Item</definition>
+        <argsstring></argsstring>
+        <name>ListField_Item</name>
+        <briefdescription>
+<para>ListField (<ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="269" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="270" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a1f1e9e311e1ab4d05c5e66b8ad0794d6" compoundref="_x___s_d_c_8_schema_8_tree_builder_8_ecc_8cs" startline="1232" endline="1257">SDC.SDCTreeBuilderEcc.AddListMemberToQuestion</referencedby>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a58b7862ccdca64ad512dad91c8a54bda" compoundref="_x___s_d_c_8_schema_8_tree_builder_8cs" startline="1681" endline="1706">SDC.SDCTreeBuilder.AddListMemberToQuestion</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1a70b5d5a81565fac5e720fd5455d7ed18" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ad2700ab1d7d4dafbdc31f52ea1a175bb" kindref="member">QuestionEnum</ref></type>
+        <definition>QuestionEnum SDC.QuestionItemBaseType.QuestionType</definition>
+        <argsstring></argsstring>
+        <name>QuestionType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="276" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1a148fdd24c0f0ffd2233b1853882ab360" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+        <definition>ResponseFieldType SDC.QuestionItemBaseType::ResponseField_Item</definition>
+        <argsstring></argsstring>
+        <name>ResponseField_Item</name>
+        <briefdescription>
+<para>ResponseField (<ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="278" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1ad34656baf870d5bf557511c1f8c8fdfa" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_extension_base_type" kindref="compound">ExtensionBaseType</ref></type>
+        <definition>ExtensionBaseType SDC.QuestionItemBaseType::Item</definition>
+        <argsstring></argsstring>
+        <name>Item</name>
+        <briefdescription>
+<para><ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> class constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="61" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1a31889c88b7c222e422587624f30bf139" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SDC.QuestionItemBaseType::readOnly</definition>
+        <argsstring></argsstring>
+        <name>readOnly</name>
+        <briefdescription>
+<para>If  is set to true, the this field may not be edited by the user, and any default values set by template should be considered part of the stored data set responses, and transmitted by the SubmitForm transaction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="78" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1a85ef27cdcf662120c2688d2322aa7745" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1aeae62de520e44970d1e3138fefc85d83" kindref="member">SectionBaseTypeResponseTypeEnum</ref></type>
+        <definition>virtual SectionBaseTypeResponseTypeEnum SDC.QuestionItemBaseType.responseTypeEnum</definition>
+        <argsstring></argsstring>
+        <name>responseTypeEnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="92" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1af73771cb271cb52e9ba0fea9e2d9ddeb" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SDC.QuestionItemBaseType::responseTypeEnumSpecified</definition>
+        <argsstring></argsstring>
+        <name>responseTypeEnumSpecified</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="112" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1aff48aaf95d71818c397bce47bac614e2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1a171ded5394d6f85a44569feec8d13cbb" kindref="member">SectionBaseTypeResponseStatusEnum</ref></type>
+        <definition>virtual SectionBaseTypeResponseStatusEnum SDC.QuestionItemBaseType.responseStatusEnum</definition>
+        <argsstring></argsstring>
+        <name>responseStatusEnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="128" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1aeadc68452e1b3d83a2496785eff5bcb3" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SDC.QuestionItemBaseType::responseStatusEnumSpecified</definition>
+        <argsstring></argsstring>
+        <name>responseStatusEnumSpecified</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="148" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1a375876d95a58c05abe39ac6ed82732df" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.QuestionItemBaseType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="163" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="164" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_question_item_base_type_1a1e89902a969f3330a7c0e25cf2e60981" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="281" endline="284">SDC.QuestionItemBaseType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1a015de17d58a3a7a9cb3ad60664c09e33" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;ResponseChangeType&gt; SDC.QuestionItemBaseType.ResponseHistory</definition>
+        <argsstring></argsstring>
+        <name>ResponseHistory</name>
+        <briefdescription>
+<para>For recording metadata and changes about the current answer and any previous (replaced) answers to the current question. Each ResponseHistory element is single unit of response(s), taking place at the same time, to the question. It records the person who made the change, the DateTime of the change, and the the previous ReplacedResponse. ReplacedResponse includes each answer selection or fill-in response to the question at the time the change was submitted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="95" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="96" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1abc5c0e4aa2e12db99afaa217040c75c7" compoundref="_x___s_d_c_8_schema_8_tree_builder_8_ecc_8cs" startline="1302" endline="1306">SDC.SDCTreeBuilderEcc.AddResponseHistoryToQuestion</referencedby>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a0f8ed012468db6cce761f213ca299733" compoundref="_x___s_d_c_8_schema_8_tree_builder_8cs" startline="1785" endline="1789">SDC.SDCTreeBuilder.AddResponseHistoryToQuestion</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1a25d3b1c8b073b42b6bc2bf3d11af770f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1a853c9db1517ede6073c56db3e76afc3e" kindref="member">QuestionItemBaseTypeResponseTypeEnum</ref></type>
+        <definition>virtual QuestionItemBaseTypeResponseTypeEnum SDC.QuestionItemBaseType.responseTypeEnum</definition>
+        <argsstring></argsstring>
+        <name>responseTypeEnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="141" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1aa6a78d47be410d0b9b535f605dcd8a1d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1a52d77bec89f3aa6cf8518a3fe26fa193" kindref="member">QuestionItemBaseTypeResponseStatusEnum</ref></type>
+        <definition>virtual QuestionItemBaseTypeResponseStatusEnum SDC.QuestionItemBaseType.responseStatusEnum</definition>
+        <argsstring></argsstring>
+        <name>responseStatusEnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="183" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_question_item_base_type_1acffa5b32485287f5a4d47beb8574e72f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.QuestionItemBaseType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="236" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_question_item_base_type_1aa82fc2d8c030c990402e6383b636df69" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDC.QuestionItemBaseType::_shouldSerializereadOnly</definition>
+        <argsstring></argsstring>
+        <name>_shouldSerializereadOnly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="34" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_question_item_base_type_1a51d2ee756c55b48987094d5d9112cead" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="178" endline="185">SDC.QuestionItemBaseType.ShouldSerializereadOnly</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_question_item_base_type_1a818e8689a36726a6e1e438f7fb2c23f8" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_extension_base_type" kindref="compound">ExtensionBaseType</ref></type>
+        <definition>ExtensionBaseType SDC.QuestionItemBaseType::_item</definition>
+        <argsstring></argsstring>
+        <name>_item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="37" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_question_item_base_type_1a7edb0552cd5f6caca2224af956176378" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="190" endline="193">SDC.QuestionItemBaseType.ShouldSerializeItem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_question_item_base_type_1aba98fb0774e13ee822bd393941f76665" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDC.QuestionItemBaseType::_readOnly</definition>
+        <argsstring></argsstring>
+        <name>_readOnly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_question_item_base_type_1a3d3b1bfcce85d1096dedd11786445f1d" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_question_item_base_type_8cs" startline="61" endline="64">SDC.QuestionItemBaseType.QuestionItemBaseType</referencedby>
+        <referencedby refid="class_s_d_c_1_1_question_item_base_type_1a51d2ee756c55b48987094d5d9112cead" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="178" endline="185">SDC.QuestionItemBaseType.ShouldSerializereadOnly</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_question_item_base_type_1a227c50c39ed880d77c6ecc9ac9cf2425" prot="private" static="no" mutable="no">
+        <type>System.Nullable&lt; <ref refid="namespace_s_d_c_1aeae62de520e44970d1e3138fefc85d83" kindref="member">SectionBaseTypeResponseTypeEnum</ref> &gt;</type>
+        <definition>System.Nullable&lt;SectionBaseTypeResponseTypeEnum&gt; SDC.QuestionItemBaseType._responseTypeEnum</definition>
+        <argsstring></argsstring>
+        <name>_responseTypeEnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="43" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_question_item_base_type_1a2cb2f76d7b5d6ec98ea8dd7eb3929bbb" prot="private" static="no" mutable="no">
+        <type>System.Nullable&lt; <ref refid="namespace_s_d_c_1a171ded5394d6f85a44569feec8d13cbb" kindref="member">SectionBaseTypeResponseStatusEnum</ref> &gt;</type>
+        <definition>System.Nullable&lt;SectionBaseTypeResponseStatusEnum&gt; SDC.QuestionItemBaseType._responseStatusEnum</definition>
+        <argsstring></argsstring>
+        <name>_responseStatusEnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="46" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_question_item_base_type_1ad3d00b5ab96c993ede238f75f51edf4b" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_response_change_type" kindref="compound">ResponseChangeType</ref> &gt;</type>
+        <definition>BindingList&lt;ResponseChangeType&gt; SDC.QuestionItemBaseType._responseHistory</definition>
+        <argsstring></argsstring>
+        <name>_responseHistory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="43" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_question_item_base_type_1a7f9e16ab98aff20c6ae7806565d61163" prot="private" static="no" mutable="no">
+        <type>System.Nullable&lt; <ref refid="namespace_s_d_c_1a853c9db1517ede6073c56db3e76afc3e" kindref="member">QuestionItemBaseTypeResponseTypeEnum</ref> &gt;</type>
+        <definition>System.Nullable&lt;QuestionItemBaseTypeResponseTypeEnum&gt; SDC.QuestionItemBaseType._responseTypeEnum</definition>
+        <argsstring></argsstring>
+        <name>_responseTypeEnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="49" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_question_item_base_type_1a3f747d31f6a85d29769378d293fd74e3" prot="private" static="no" mutable="no">
+        <type>System.Nullable&lt; <ref refid="namespace_s_d_c_1a52d77bec89f3aa6cf8518a3fe26fa193" kindref="member">QuestionItemBaseTypeResponseStatusEnum</ref> &gt;</type>
+        <definition>System.Nullable&lt;QuestionItemBaseTypeResponseStatusEnum&gt; SDC.QuestionItemBaseType._responseStatusEnum</definition>
+        <argsstring></argsstring>
+        <name>_responseStatusEnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="52" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_question_item_base_type_1a9ec5e267b01b55011d4d61f8e8f39079" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.QuestionItemBaseType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="56" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_question_item_base_type_1a125a7f2182ac56a3d264a525cda287cf" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.QuestionItemBaseType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="48" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a3d3b1bfcce85d1096dedd11786445f1d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.QuestionItemBaseType.QuestionItemBaseType</definition>
+        <argsstring>()</argsstring>
+        <name>QuestionItemBaseType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="257" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="257" bodyend="257"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1ac0b6cb4e209bb898434165ad2910e936" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.QuestionItemBaseType.QuestionItemBaseType</definition>
+        <argsstring>(BaseType parentNode, bool fillData=true, string id=null)</argsstring>
+        <name>QuestionItemBaseType</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="258" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="258" bodyend="262"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1af85e7c722ad794b8d76786dd92069cc9" compoundref="_s_d_c_8_schema_8_partial_classes_8cs" startline="265" endline="266">SDC.QuestionItemBaseType.FillQuestionItemBase</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1af85e7c722ad794b8d76786dd92069cc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+        <definition>QuestionItemBaseType SDC.QuestionItemBaseType.FillQuestionItemBase</definition>
+        <argsstring>()</argsstring>
+        <name>FillQuestionItemBase</name>
+        <briefdescription>
+<para>+Replaced in original class: protected <ref refid="class_s_d_c_1_1_question_item_base_type_1a3d3b1bfcce85d1096dedd11786445f1d" kindref="member">QuestionItemBaseType()</ref> { } </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="265" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="265" bodyend="266"/>
+        <referencedby refid="class_s_d_c_1_1_question_item_base_type_1ac0b6cb4e209bb898434165ad2910e936" compoundref="_s_d_c_8_schema_8_partial_classes_8cs" startline="258" endline="262">SDC.QuestionItemBaseType.QuestionItemBaseType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1ae8343adbec8de322188e4042a78e4031" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.QuestionItemBaseType.Fill_QuestionItemBaseType</definition>
+        <argsstring>()</argsstring>
+        <name>Fill_QuestionItemBaseType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="818" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="818" bodyend="819"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a51d2ee756c55b48987094d5d9112cead" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.QuestionItemBaseType.ShouldSerializereadOnly</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializereadOnly</name>
+        <briefdescription>
+<para>Test whether readOnly should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="178" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="178" bodyend="185"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1aba98fb0774e13ee822bd393941f76665" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="40">SDC.QuestionItemBaseType._readOnly</references>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1aa82fc2d8c030c990402e6383b636df69" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="34">SDC.QuestionItemBaseType._shouldSerializereadOnly</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a7edb0552cd5f6caca2224af956176378" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.QuestionItemBaseType.ShouldSerializeItem</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeItem</name>
+        <briefdescription>
+<para>Test whether Item should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="190" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="190" bodyend="193"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1a818e8689a36726a6e1e438f7fb2c23f8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="37">SDC.QuestionItemBaseType._item</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a365d12752d58a0f5baf7033ab96622d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.QuestionItemBaseType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_repeating_type_1a08eb04809274087ec44532b093e85c72">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a45c545c17f86d23c0933938d97480829">Serialize</reimplementedby>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="200" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="200" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1adb0f2d9d1e4e26f9cb4d3138568298e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.QuestionItemBaseType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_repeating_type_1a37a9a43882da3d7850c6fdfc4c0201f4">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a35d4a321c254baa11c611f8cd0c8299a">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a35d4a321c254baa11c611f8cd0c8299a">Serialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="230" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="230" bodyend="233"/>
+        <referencedby refid="class_s_d_c_1_1_question_item_base_type_1a46e384a06a31c8febc536203668a6320" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="318" endline="335">SDC.QuestionItemBaseType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1adbc5b9a3de0d45ae2f6d0e13a39a7eec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.QuestionItemBaseType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_repeating_type_1a1bd6140a49fc6fcbcc2b9327a2af94cf">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a6908888189fd3b9cdc9ade18c0379b0e">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="293" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="293" bodyend="306"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_question_item_base_type_1a351dc9ea62d55b702d7620e6a3d88482" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="308" endline="311">SDC.QuestionItemBaseType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a351dc9ea62d55b702d7620e6a3d88482" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.QuestionItemBaseType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_repeating_type_1a0b6e1525c32ad0cd3155d9e74c547e5a">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a080135fda25fe260f26f6992a7e552e4">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="308" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="308" bodyend="311"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1adbc5b9a3de0d45ae2f6d0e13a39a7eec" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="293" endline="306">SDC.QuestionItemBaseType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a96680921de746072dbffbc4aa15cb8fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.QuestionItemBaseType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_repeating_type_1ab793c4339f84451d232799ee58c80f2d">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a6ff8fafd2f90adaedf4a439ad572e73b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a6ff8fafd2f90adaedf4a439ad572e73b">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="313" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="313" bodyend="316"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1adbc5b9a3de0d45ae2f6d0e13a39a7eec" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="293" endline="306">SDC.QuestionItemBaseType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a46e384a06a31c8febc536203668a6320" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.QuestionItemBaseType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_repeating_type_1afdc186fe310b87cdb50f957af29327c7">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1ab938eff760b03b9a24ee8012f06527e0">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="318" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="318" bodyend="335"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1adb0f2d9d1e4e26f9cb4d3138568298e2" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="230" endline="233">SDC.QuestionItemBaseType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a3d3b1bfcce85d1096dedd11786445f1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.QuestionItemBaseType.QuestionItemBaseType</definition>
+        <argsstring>()</argsstring>
+        <name>QuestionItemBaseType</name>
+        <briefdescription>
+<para><ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> class constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="61" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="61" bodyend="64"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1aba98fb0774e13ee822bd393941f76665" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="40">SDC.QuestionItemBaseType._readOnly</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a51d2ee756c55b48987094d5d9112cead" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.QuestionItemBaseType.ShouldSerializereadOnly</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializereadOnly</name>
+        <briefdescription>
+<para>Test whether readOnly should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="251" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="251" bodyend="258"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1aba98fb0774e13ee822bd393941f76665" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="40">SDC.QuestionItemBaseType._readOnly</references>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1aa82fc2d8c030c990402e6383b636df69" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="34">SDC.QuestionItemBaseType._shouldSerializereadOnly</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a7edb0552cd5f6caca2224af956176378" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.QuestionItemBaseType.ShouldSerializeItem</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeItem</name>
+        <briefdescription>
+<para>Test whether Item should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="263" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="263" bodyend="266"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1a818e8689a36726a6e1e438f7fb2c23f8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="37">SDC.QuestionItemBaseType._item</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1adb0f2d9d1e4e26f9cb4d3138568298e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.QuestionItemBaseType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_repeating_type_1a37a9a43882da3d7850c6fdfc4c0201f4">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a35d4a321c254baa11c611f8cd0c8299a">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a35d4a321c254baa11c611f8cd0c8299a">Serialize</reimplementedby>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="273" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="273" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a19979d0785bcb8eb85099529153eef9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.QuestionItemBaseType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_repeating_type_1a12742b4ffadd1578e622bdd2b9adc367">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a1da1e75bcbc80e58f8811481c7cf0fb4">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="359" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="359" bodyend="372"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1adbc5b9a3de0d45ae2f6d0e13a39a7eec" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="293" endline="306">SDC.QuestionItemBaseType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a96680921de746072dbffbc4aa15cb8fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.QuestionItemBaseType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_repeating_type_1ab793c4339f84451d232799ee58c80f2d">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a6ff8fafd2f90adaedf4a439ad572e73b">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1a6ff8fafd2f90adaedf4a439ad572e73b">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="374" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="374" bodyend="392"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1adb0f2d9d1e4e26f9cb4d3138568298e2" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="230" endline="233">SDC.QuestionItemBaseType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a09ffb1562a432246b4816a81af36aaa6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+        <definition>virtual QuestionItemBaseType SDC.QuestionItemBaseType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_repeating_type_1a57f4103d0b362fdc3626dbeae04275f3">Clone</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_question_item_type_1ae0d86f7fe6de4c8410c1b05d9be77c46">Clone</reimplementedby>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="453" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="453" bodyend="456"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1aed4a64e83d5b8059bb6cc7d3c49ef748" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.QuestionItemBaseType.Deserialize</definition>
+        <argsstring>(string input, out QuestionItemBaseType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="242" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="242" bodyend="256"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_question_item_base_type_1a89b7c066ed770fc258e02e7e5796f8a6" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="258" endline="262">SDC.QuestionItemBaseType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_question_item_base_type_1a4551345c03916a317207d683fc0ae10d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="376" endline="400">SDC.QuestionItemBaseType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a89b7c066ed770fc258e02e7e5796f8a6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.QuestionItemBaseType.Deserialize</definition>
+        <argsstring>(string input, out QuestionItemBaseType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="258" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="258" bodyend="262"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1aed4a64e83d5b8059bb6cc7d3c49ef748" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="242" endline="256">SDC.QuestionItemBaseType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a56026924bd19dbd3ae0f72c62af4ba80" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+        <definition>static new QuestionItemBaseType SDC.QuestionItemBaseType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="264" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="264" bodyend="279"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a1e89902a969f3330a7c0e25cf2e60981" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+        <definition>static QuestionItemBaseType SDC.QuestionItemBaseType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="281" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="281" bodyend="284"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1a375876d95a58c05abe39ac6ed82732df" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="164">SDC.QuestionItemBaseType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a75d5213bd6bfc5f4f47dec782c81d309" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.QuestionItemBaseType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out QuestionItemBaseType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="344" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="344" bodyend="358"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_question_item_base_type_1ad32864bcf0e40888ae178d93d6a04e5f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="360" endline="363">SDC.QuestionItemBaseType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1ad32864bcf0e40888ae178d93d6a04e5f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.QuestionItemBaseType.LoadFromFile</definition>
+        <argsstring>(string fileName, out QuestionItemBaseType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="360" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="360" bodyend="363"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1a75d5213bd6bfc5f4f47dec782c81d309" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="344" endline="358">SDC.QuestionItemBaseType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a57d34203fd7fcdf951d2f32eb3d3b13a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.QuestionItemBaseType.LoadFromFile</definition>
+        <argsstring>(string fileName, out QuestionItemBaseType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="365" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="365" bodyend="369"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1a75d5213bd6bfc5f4f47dec782c81d309" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="344" endline="358">SDC.QuestionItemBaseType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1acb7196807c35932803a298de62cce5a8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+        <definition>static QuestionItemBaseType SDC.QuestionItemBaseType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="371" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="371" bodyend="374"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1a75d5213bd6bfc5f4f47dec782c81d309" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="344" endline="358">SDC.QuestionItemBaseType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a4551345c03916a317207d683fc0ae10d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+        <definition>static new QuestionItemBaseType SDC.QuestionItemBaseType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" line="376" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/QuestionItemBaseType.cs" bodystart="376" bodyend="400"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1aed4a64e83d5b8059bb6cc7d3c49ef748" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="242" endline="256">SDC.QuestionItemBaseType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1ab1fa7ba809797b2bf5018be51168f82f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.QuestionItemBaseType.Deserialize</definition>
+        <argsstring>(string input, out QuestionItemBaseType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="308" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="308" bodyend="322"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1aed4a64e83d5b8059bb6cc7d3c49ef748" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="242" endline="256">SDC.QuestionItemBaseType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a89b7c066ed770fc258e02e7e5796f8a6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.QuestionItemBaseType.Deserialize</definition>
+        <argsstring>(string input, out QuestionItemBaseType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="324" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="324" bodyend="328"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1aed4a64e83d5b8059bb6cc7d3c49ef748" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="242" endline="256">SDC.QuestionItemBaseType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a56026924bd19dbd3ae0f72c62af4ba80" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+        <definition>static new QuestionItemBaseType SDC.QuestionItemBaseType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="330" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="330" bodyend="345"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1a375876d95a58c05abe39ac6ed82732df" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="164">SDC.QuestionItemBaseType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1ac2a2e437366b7ba20318e5de7cdfeb71" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+        <definition>static QuestionItemBaseType SDC.QuestionItemBaseType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="347" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="347" bodyend="350"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1a375876d95a58c05abe39ac6ed82732df" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="164">SDC.QuestionItemBaseType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a5c0fb3c032f1161353c7e83ecd50466c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.QuestionItemBaseType.LoadFromFile</definition>
+        <argsstring>(string fileName, out QuestionItemBaseType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="401" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="401" bodyend="415"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1a75d5213bd6bfc5f4f47dec782c81d309" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="344" endline="358">SDC.QuestionItemBaseType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1a57d34203fd7fcdf951d2f32eb3d3b13a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.QuestionItemBaseType.LoadFromFile</definition>
+        <argsstring>(string fileName, out QuestionItemBaseType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="417" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="417" bodyend="421"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1a75d5213bd6bfc5f4f47dec782c81d309" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="344" endline="358">SDC.QuestionItemBaseType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_question_item_base_type_1ac235bafc21b1add3599df3ff1a4c3173" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+        <definition>static new QuestionItemBaseType SDC.QuestionItemBaseType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" line="423" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/QuestionItemBaseType.cs" bodystart="423" bodyend="447"/>
+        <references refid="class_s_d_c_1_1_question_item_base_type_1aed4a64e83d5b8059bb6cc7d3c49ef748" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_question_item_base_type_8cs" startline="242" endline="256">SDC.QuestionItemBaseType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents questions. Parent items may be Section, Question, and ListItem. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7074">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="7075" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7071">
+        <label>DisplayedType</label>
+        <link refid="class_s_d_c_1_1_displayed_type"/>
+        <childnode refid="7072" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7072" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7076" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7076" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7070">
+        <label>RepeatingType</label>
+        <link refid="class_s_d_c_1_1_repeating_type"/>
+        <childnode refid="7071" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7071" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7075">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="7077">
+        <label>SDC.QuestionItemType</label>
+        <link refid="class_s_d_c_1_1_question_item_type"/>
+        <childnode refid="7069" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7069" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7069">
+        <label>SDC.QuestionItemBaseType</label>
+        <link refid="class_s_d_c_1_1_question_item_base_type"/>
+        <childnode refid="7070" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7070" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7072">
+        <label>IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="7073" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7073" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7073">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="7074" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7074" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7076">
+        <label>IDisplayedType</label>
+        <link refid="interface_s_d_c_1_1_i_displayed_type"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7099">
+        <label>PredicateType</label>
+        <link refid="class_s_d_c_1_1_predicate_type"/>
+        <childnode refid="7082" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7094" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="7095" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="7105" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="7083">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="7084" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7085" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="7093" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="7094" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="7095" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7080">
+        <label>DisplayedType</label>
+        <link refid="class_s_d_c_1_1_displayed_type"/>
+        <childnode refid="7081" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7081" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7096" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7096" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7097" relation="usage">
+          <edgelabel>_deActivateIf</edgelabel>
+          <edgelabel>_activateIf</edgelabel>
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7079">
+        <label>RepeatingType</label>
+        <link refid="class_s_d_c_1_1_repeating_type"/>
+        <childnode refid="7080" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7080" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7090">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="7088" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7084">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="7088">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="7087">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="7088" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7093">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="7102">
+        <label>SDC.ExceptionType</label>
+        <link refid="class_s_d_c_1_1_exception_type"/>
+        <childnode refid="7082" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7095" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="7100">
+        <label>ReturnBoolType</label>
+        <link refid="class_s_d_c_1_1_return_bool_type"/>
+        <childnode refid="7101" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7103" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="7078">
+        <label>SDC.QuestionItemBaseType</label>
+        <link refid="class_s_d_c_1_1_question_item_base_type"/>
+        <childnode refid="7079" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7079" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7095" relation="usage">
+          <edgelabel>_responseTypeEnum</edgelabel>
+          <edgelabel>_responseStatusEnum</edgelabel>
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="7105" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="7101">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="7082" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7102" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="7081">
+        <label>IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="7082" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7082" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7092">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="7104">
+        <label>boolean_Stype</label>
+        <link refid="class_s_d_c_1_1boolean___stype"/>
+        <childnode refid="7083" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7083" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7095" relation="usage">
+          <edgelabel>_val</edgelabel>
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7086">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="7084" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7087" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="7089" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="7090" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="7091" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="7097">
+        <label>SDC.WatchedPropertyType</label>
+        <link refid="class_s_d_c_1_1_watched_property_type"/>
+        <childnode refid="7098" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7098" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7095">
+        <label>System</label>
+      </node>
+      <node id="7105">
+        <label>SDC.ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="7083" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7083" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7089">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="7088" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7085">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="7082" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7082" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7082">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="7083" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7083" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7091">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="7092" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7098">
+        <label>IfType</label>
+        <link refid="class_s_d_c_1_1_if_type"/>
+        <childnode refid="7082" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7099" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="7105" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="7096">
+        <label>IDisplayedType</label>
+        <link refid="interface_s_d_c_1_1_i_displayed_type"/>
+      </node>
+      <node id="7103">
+        <label>SDC.boolean_DEtype</label>
+        <link refid="class_s_d_c_1_1boolean___d_etype"/>
+        <childnode refid="7104" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7104" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7094">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="7084" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7085" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="7093" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="7094" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="7095" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="7086" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="256" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="255" bodyend="288"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a818e8689a36726a6e1e438f7fb2c23f8" prot="private" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>_item</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1aba98fb0774e13ee822bd393941f76665" prot="private" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>_readOnly</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1ad3d00b5ab96c993ede238f75f51edf4b" prot="private" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>_responseHistory</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a2cb2f76d7b5d6ec98ea8dd7eb3929bbb" prot="private" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>_responseStatusEnum</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a3f747d31f6a85d29769378d293fd74e3" prot="private" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>_responseStatusEnum</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a227c50c39ed880d77c6ecc9ac9cf2425" prot="private" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>_responseTypeEnum</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a7f9e16ab98aff20c6ae7806565d61163" prot="private" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>_responseTypeEnum</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1aa82fc2d8c030c990402e6383b636df69" prot="private" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>_shouldSerializereadOnly</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a020336f0bc4be82d95eaab14f4c62a7c" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ActivateIf</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1adba3ddaf21ffd25018f9ab7fbbce014d" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddActivateIf</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a4a37a0de28cd116900756522004723b7" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddActivateIf</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ab86db8a2a2a60f2136f97ac1fe25e997" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddBlob</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a05ac47109b3dd54b036b67415ca816ed" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddBlob</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a3129a24c0749cd5f182bc68d926b1743" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddCoding</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a355374f42dc40bded7cba30c3d41c082" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddCoding</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1aff89a8ecf2fe7ccfdb71844d916e5b7e" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddContact</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ab195a3fb01f28dd775acc923c4ee5702" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddContact</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a8ca75e5b7104df0a4ef5c178de1295ec" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddDeActivateIf</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a4e28f2348b86b678d35d85eb2334a23f" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddDeActivateIf</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1aaa673650f1576338905af4b7fae27337" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddLink</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a9bd87e0173a1887d83e255db82fda613" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddLink</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a5d5d768e1df630eadbdb55417ad49e23" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddOnEnter</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a5828eeb369b077982f239e86a6b09e06" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddOnEnter</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a8f1f256ae4f344aff4da3ab10d6063af" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddOnEvent</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1af468a6122e1f03cf14f31447b84527bd" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddOnEvent</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a378ecc7aebd2f5b0b989b521b05387fa" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddOnExit</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ab351999042ada79d6694dee63f74a7db" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddOnExit</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a09396ab3307af88c469de5932d61b762" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddOtherText</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ad33a4a63a1cdefb1445801bcd55cb746" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>AddProperty</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a14e59e1eabccda686a73a95cbd50ef2c" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>baseURI</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a34e08b18d24e8296e009373ddfae817e" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>BlobContent</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a8532f3fd2218c7ad556b1aec7e0138aa" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>BlobContent</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1acffa5b32485287f5a4d47beb8574e72f" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a9ec5e267b01b55011d4d61f8e8f39079" prot="private" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a09ffb1562a432246b4816a81af36aaa6" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a9b7ebba9ce11fd8376b695bccd6523e4" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>CodedValue</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1aae720489284c6704bbdb7d896f112cfa" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>CodedValue</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a7c9cf6458c1f53623a872a9528a1accb" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Contact</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a100655f1f094705e839b0a2149a39284" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Contact</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a5437fa78ba3803891830a7dfd7d376c5" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>DeActivateIf</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1aed4a64e83d5b8059bb6cc7d3c49ef748" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a89b7c066ed770fc258e02e7e5796f8a6" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a56026924bd19dbd3ae0f72c62af4ba80" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a1e89902a969f3330a7c0e25cf2e60981" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1ab1fa7ba809797b2bf5018be51168f82f" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a89b7c066ed770fc258e02e7e5796f8a6" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a56026924bd19dbd3ae0f72c62af4ba80" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1ac2a2e437366b7ba20318e5de7cdfeb71" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1ad6b860dcaa891c93adbc5b971df864c4" prot="public" virt="non-virtual" ambiguityscope="SDC::RepeatingType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a4c10ec09730ce825ead70de54632d2e4" prot="public" virt="non-virtual" ambiguityscope="SDC::RepeatingType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a0c3d7a0fd2e3e4d803a8ac2687a57473" prot="public" virt="non-virtual" ambiguityscope="SDC::RepeatingType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ac7dc2d07e4f02badf8fcd670b8ad24d9" prot="public" virt="non-virtual" ambiguityscope="SDC::DisplayedType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a6b1a4ec2ed06596a81193ccaa435e058" prot="public" virt="non-virtual" ambiguityscope="SDC::DisplayedType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a612fa0e2f26a52f36f7259cc910c6bdb" prot="public" virt="non-virtual" ambiguityscope="SDC::DisplayedType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1af1c3c0092861d44e9d9bcc621b4b530e" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a91854b7e5833915cd74a1353a0a71363" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ae73b41119462fa46d0fa9593f66944a1" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::QuestionItemBaseType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ae3b3f773c5fb8fd7e63d4b4a374d9e9e" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>DisplayedType</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ab8f87512ebd343cd41ff5657ab5378c0" prot="protected" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>DisplayedType</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ab8f87512ebd343cd41ff5657ab5378c0" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>DisplayedType</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ae55a8102e0335ab188ccea7453e8100b" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>enabled</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1ae8343adbec8de322188e4042a78e4031" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Fill_QuestionItemBaseType</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a11fab2be41868f612d53f625dfd873b4" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Fill_RepeatingType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1aad9ccfd17d48916826c4f3c9861ac490" prot="package" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>FillDisplayedType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aea7c6c02897d9c63669adfd19ab99344" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>FillIdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1af85e7c722ad794b8d76786dd92069cc9" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>FillQuestionItemBase</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aec38ff3687d70ecb4132f26e5ac6e6ab" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ID</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a63cc241892d95761b90b45d0f979f2c1" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>IdentExtNodes</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a1ebea3b2c6e2d7cbb19d58e2d8147f16" prot="protected" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a2e14a8c36871a4845a275d38a8f8f681" prot="protected" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a1ebea3b2c6e2d7cbb19d58e2d8147f16" prot="package" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1afa5cb1f94e9aee6302e549e493c1c6d3" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>instanceGUID</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1ad34656baf870d5bf557511c1f8c8fdfa" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Item</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a731a63d53f013cfa5e18c164340fa7d1" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Link</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a1bbd70dd14b28cc2c4920ecd05dd774d" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Link</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a52647be3ac3b6400f42c46fe6a7c87da" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ListField_Item</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a75d5213bd6bfc5f4f47dec782c81d309" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1ad32864bcf0e40888ae178d93d6a04e5f" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a57d34203fd7fcdf951d2f32eb3d3b13a" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1acb7196807c35932803a298de62cce5a8" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a4551345c03916a317207d683fc0ae10d" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a5c0fb3c032f1161353c7e83ecd50466c" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a57d34203fd7fcdf951d2f32eb3d3b13a" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1ac235bafc21b1add3599df3ff1a4c3173" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1aff82a15bf35d32a0b5672698b9d42154" prot="public" virt="non-virtual" ambiguityscope="SDC::RepeatingType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a2ec271da87b6246e7e230ec0cb35f3c0" prot="public" virt="non-virtual" ambiguityscope="SDC::RepeatingType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a04688fd8a3735a164e6732556053bd61" prot="public" virt="non-virtual" ambiguityscope="SDC::RepeatingType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1ada2cdeb4e156864e8fe5a46dee1e82fd" prot="public" virt="non-virtual" ambiguityscope="SDC::RepeatingType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a800c67423664852f510f13d427a3a09f" prot="public" virt="non-virtual" ambiguityscope="SDC::DisplayedType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ad7abd50da5984a1c518db36991d25cda" prot="public" virt="non-virtual" ambiguityscope="SDC::DisplayedType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ae6ea98de0c6190e49a5240cb68f38e27" prot="public" virt="non-virtual" ambiguityscope="SDC::DisplayedType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ad2bc469e5f001500dbc3673ab003e28e" prot="public" virt="non-virtual" ambiguityscope="SDC::DisplayedType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aa6f5c53d9fecc7eabdb09e2e98a54edc" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ac1bbe4827f3f7103b155d502e8604878" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1abdcccaf607de139ef8991b66ec2a1b34" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a318ef98ae92606615be68b487ed5bb3f" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::QuestionItemBaseType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1af093b28098a2054d82a6faf1d69cee65" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>maxCard</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1af6f4238d08a114c14f72d1e52b7c852a" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>minCard</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a515b8cfa569ea29ad2787e50c8921680" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>mustImplement</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ae2cac2cdffe2416da6c53a25ac997f23" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>OnEnter</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a96ce5f59ab76ae735f1464f8056052fd" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>OnEnter</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a92c8903c3089554e6fb7008da9a6eaaf" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>OnEvent</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a3d9500aa32535fd3a18cbdc38c51a21d" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>OnEvent</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ad324435f43d20b6557fe9d4daf636efd" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>OnExit</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a4f33312437816defe819550f077cd985" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>OnExit</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ad331bce4045f10dd86c61ac0a0f74198" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>OtherText</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a15d6c6856925dba7d0e794c17b7de433" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>parentGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a3d3b1bfcce85d1096dedd11786445f1d" prot="protected" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>QuestionItemBaseType</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1ac0b6cb4e209bb898434165ad2910e936" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>QuestionItemBaseType</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a3d3b1bfcce85d1096dedd11786445f1d" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>QuestionItemBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a70b5d5a81565fac5e720fd5455d7ed18" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>QuestionType</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a31889c88b7c222e422587624f30bf139" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>readOnly</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a1abff389f761029a9b27d6263488677c" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>repeat</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a7b2315b8eb3e4b7ec809080a25e936f7" prot="protected" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>RepeatingType</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a7a6d3206cb40cd95dd684840adef1f8a" prot="protected" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>RepeatingType</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a7b2315b8eb3e4b7ec809080a25e936f7" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>RepeatingType</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a148fdd24c0f0ffd2233b1853882ab360" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ResponseField_Item</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a015de17d58a3a7a9cb3ad60664c09e33" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>ResponseHistory</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1aff48aaf95d71818c397bce47bac614e2" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>responseStatusEnum</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1aa6a78d47be410d0b9b535f605dcd8a1d" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>responseStatusEnum</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1aeadc68452e1b3d83a2496785eff5bcb3" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>responseStatusEnumSpecified</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a85ef27cdcf662120c2688d2322aa7745" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>responseTypeEnum</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a25d3b1c8b073b42b6bc2bf3d11af770f" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>responseTypeEnum</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1af73771cb271cb52e9ba0fea9e2d9ddeb" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>responseTypeEnumSpecified</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1adbc5b9a3de0d45ae2f6d0e13a39a7eec" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a351dc9ea62d55b702d7620e6a3d88482" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a96680921de746072dbffbc4aa15cb8fc" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a46e384a06a31c8febc536203668a6320" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a19979d0785bcb8eb85099529153eef9d" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a96680921de746072dbffbc4aa15cb8fc" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a365d12752d58a0f5baf7033ab96622d3" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1adb0f2d9d1e4e26f9cb4d3138568298e2" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1adb0f2d9d1e4e26f9cb4d3138568298e2" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a375876d95a58c05abe39ac6ed82732df" prot="private" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a125a7f2182ac56a3d264a525cda287cf" prot="private" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a2b7c0eeaa832c312d9053a3d3cde9a4d" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeActivateIf</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a2b7c0eeaa832c312d9053a3d3cde9a4d" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeActivateIf</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a531c1d0860f5b496a249dc4fb8cc166b" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializebaseURI</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a531c1d0860f5b496a249dc4fb8cc166b" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializebaseURI</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1adf6708572f3c63ccd977d7367b60a72b" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeBlobContent</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1affa63b601cad470d9dfd989881be1727" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeCodedValue</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a1410ffc6f0a186a4e3bdbfd8c21b494b" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeContact</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ad1c1ce66c9338ba7f7fe0afcb62eaa89" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeDeActivateIf</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ad1c1ce66c9338ba7f7fe0afcb62eaa89" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeDeActivateIf</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1acd5001394bc0f269006558f12431bcfa" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeenabled</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1acd5001394bc0f269006558f12431bcfa" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeenabled</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ab14d9aff66939f8a1c5fe4e0570b563f" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeID</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ab14d9aff66939f8a1c5fe4e0570b563f" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeID</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1ad6910d03d1f52c7eecbdbcc03cf33331" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeinstanceGUID</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1ad6910d03d1f52c7eecbdbcc03cf33331" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeinstanceGUID</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a7edb0552cd5f6caca2224af956176378" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeItem</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a7edb0552cd5f6caca2224af956176378" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeItem</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a8ba870bc9b0e9e9fbc4cd60a69579584" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeLink</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a0681aabf5242b4d55c928d439be073c5" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializemaxCard</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a0681aabf5242b4d55c928d439be073c5" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializemaxCard</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1afbc54c2785d1aeeb5a50fd40aa48e64f" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeminCard</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1afbc54c2785d1aeeb5a50fd40aa48e64f" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeminCard</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1acf174860538c10c692116f15090f5df3" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializemustImplement</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1acf174860538c10c692116f15090f5df3" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializemustImplement</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a34d29d22c530edda41eaa296ccc74ead" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeOnEnter</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a1c471a9bfe7085fcdc224aea93244715" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeOnEvent</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a7beb5e1d111014d01fd3ee0ac181551f" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeOnExit</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a80517e909e4df0e9a7c67e9cde740263" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeparentGUID</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a80517e909e4df0e9a7c67e9cde740263" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeparentGUID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a51d2ee756c55b48987094d5d9112cead" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializereadOnly</name></member>
+      <member refid="class_s_d_c_1_1_question_item_base_type_1a51d2ee756c55b48987094d5d9112cead" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializereadOnly</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a2928ecdc7266d448081c869f9f2802ca" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializerepeat</name></member>
+      <member refid="class_s_d_c_1_1_repeating_type_1a2928ecdc7266d448081c869f9f2802ca" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializerepeat</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1ac98594f9be1d608fbe3a17a3d1b14c3c" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializeshowInReport</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1aaf504790a74533b48d26a3f58cdd4de7" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializetitle</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1aaf504790a74533b48d26a3f58cdd4de7" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializetitle</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1af9ba78599fee6858798f2907047efa49" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializevisible</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1af9ba78599fee6858798f2907047efa49" prot="public" virt="virtual"><scope>SDC::QuestionItemBaseType</scope><name>ShouldSerializevisible</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1aba42a279b93e9d3a9bf775652d0a0ea3" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>showInReport</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a8aeea02cbef82a663146d3b587c37a53" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>showInReport</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a3b9c60dc15f04ab46fe85e16e28bb01e" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>title</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_displayed_type_1a5636e9eb75db8376f2f0ae9e613688b7" prot="public" virt="non-virtual"><scope>SDC::QuestionItemBaseType</scope><name>visible</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1byte___stype" kind="class" prot="public">
+    <compoundname>SDC::byte_Stype</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_base_type" prot="public" virt="non-virtual">SDC.BaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_base_type" prot="public" virt="non-virtual">SDC.BaseType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1byte___d_etype" prot="public" virt="non-virtual">SDC.byte_DEtype</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1byte___d_etype" prot="public" virt="non-virtual">SDC.byte_DEtype</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1byte___stype_1a04436dba98518573ae0837590f920078" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDC.byte_Stype::_shouldSerializeval</definition>
+        <argsstring></argsstring>
+        <name>_shouldSerializeval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="31" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1byte___stype_1a3e8a9699c2a8f18e71e9fb9799433a8a" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="91" endline="98">SDC.byte_Stype.ShouldSerializeval</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1byte___stype_1a4371ab35b89982518b453596d169e8fe" prot="private" static="no" mutable="no">
+        <type>System.Nullable&lt; sbyte &gt;</type>
+        <definition>System Nullable&lt; sbyte &gt; SDC.byte_Stype::_val</definition>
+        <argsstring></argsstring>
+        <name>_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="34" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1byte___stype_1a3e8a9699c2a8f18e71e9fb9799433a8a" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="91" endline="98">SDC.byte_Stype.ShouldSerializeval</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1byte___stype_1a1b69ba2bc1b2866f6f395c905e3c3459" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.byte_Stype.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="41" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1byte___stype_1a0b7aa613a12f07b55a46513f3e2bd926" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.byte_Stype::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="36" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1byte___stype_1a1d29b974df0b4f897caa17232eabaa99" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>sbyte</type>
+        <definition>sbyte SDC.byte_Stype::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1byte___stype_1abad29fd977c9d592267ce741d8d4c5d2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SDC.byte_Stype::valSpecified</definition>
+        <argsstring></argsstring>
+        <name>valSpecified</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="61" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1byte___stype_1a5fb8697f6ce12e7cc5e36c2678389b86" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.byte_Stype::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="76" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="77" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1byte___stype_1a13f0a95b905399e5250bde0877baa923" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="186" endline="189">SDC.byte_Stype.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1byte___stype_1a6cc87f2d50bdb6d0f2474d410cced1ff" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.byte_Stype.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="104" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a943f991929d341437c1c425af28c4e53" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.byte_Stype.byte_Stype</definition>
+        <argsstring>()</argsstring>
+        <name>byte_Stype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1456" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1456" bodyend="1456"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a5a4d13a62614ab8ef285065cffafb4b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.byte_Stype.byte_Stype</definition>
+        <argsstring>(BaseType parentNode)</argsstring>
+        <name>byte_Stype</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1457" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1457" bodyend="1457"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a3e8a9699c2a8f18e71e9fb9799433a8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.byte_Stype.ShouldSerializeval</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeval</name>
+        <briefdescription>
+<para>Test whether val should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="91" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="91" bodyend="98"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a04436dba98518573ae0837590f920078" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="31">SDC.byte_Stype._shouldSerializeval</references>
+        <references refid="class_s_d_c_1_1byte___stype_1a4371ab35b89982518b453596d169e8fe" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="34">SDC.byte_Stype._val</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1ae90edd23077d0d2fc342bfbc615ffcd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.byte_Stype.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1afde3077d8077d664ce856b276e024e29">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a69f08278da1596ce9b1b29e8efae1486">Serialize</reimplementedby>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="105" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="105" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a580c221a87c3cceb4c613e5036b7f589" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.byte_Stype.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a3400ee9db358cbcae3cc79dc197da12d">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a95c5bc995bffbc41db6f14ee8a0e7451">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a95c5bc995bffbc41db6f14ee8a0e7451">Serialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="135" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="135" bodyend="138"/>
+        <referencedby refid="class_s_d_c_1_1byte___stype_1a4ed5230854a276b5b25ed310d5a87d81" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="223" endline="240">SDC.byte_Stype.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a83a952014b388759cac549f370b418f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.byte_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a8b46ba76827429d75d24ce3789a4fff6">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a1267413f0c247c2b71adb9bed71bff68">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="198" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="198" bodyend="211"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1byte___stype_1ac52d3492d80c7ced72cdb28b30e115ae" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="213" endline="216">SDC.byte_Stype.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1ac52d3492d80c7ced72cdb28b30e115ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.byte_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a64d428388608b02f234edc5c4dfd34fd">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a2f981b078485651251a7aade96aa26d1">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="213" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="213" bodyend="216"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a83a952014b388759cac549f370b418f3" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="198" endline="211">SDC.byte_Stype.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a2f164f8c3522f6705e1c468f4b73788c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.byte_Stype.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a9bee814584762ae3959b96763a9b835f">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a98c4199da08eeda8e54419cce61095cc">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a98c4199da08eeda8e54419cce61095cc">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="218" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="218" bodyend="221"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a83a952014b388759cac549f370b418f3" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="198" endline="211">SDC.byte_Stype.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a4ed5230854a276b5b25ed310d5a87d81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.byte_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1af3e0b63e6bd50eaa6e371588209dda31">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a4696a46d1a8813c176edab5562ef82e8">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="223" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="223" bodyend="240"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1byte___stype_1a580c221a87c3cceb4c613e5036b7f589" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="135" endline="138">SDC.byte_Stype.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a3e8a9699c2a8f18e71e9fb9799433a8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.byte_Stype.ShouldSerializeval</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeval</name>
+        <briefdescription>
+<para>Test whether val should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="119" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="119" bodyend="126"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a04436dba98518573ae0837590f920078" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="31">SDC.byte_Stype._shouldSerializeval</references>
+        <references refid="class_s_d_c_1_1byte___stype_1a4371ab35b89982518b453596d169e8fe" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="34">SDC.byte_Stype._val</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a580c221a87c3cceb4c613e5036b7f589" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.byte_Stype.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a3400ee9db358cbcae3cc79dc197da12d">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a95c5bc995bffbc41db6f14ee8a0e7451">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a95c5bc995bffbc41db6f14ee8a0e7451">Serialize</reimplementedby>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="133" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="133" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1ae7d75f760de85f561b56ca0e9a1c8ba1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.byte_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a274de1f799bf72dd9b7967048cb08d7b">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1ac9ea33f6cd1a429d721a75ac3ff5ea63">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="219" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="219" bodyend="232"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1byte___stype_1a83a952014b388759cac549f370b418f3" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="198" endline="211">SDC.byte_Stype.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a2f164f8c3522f6705e1c468f4b73788c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.byte_Stype.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a9bee814584762ae3959b96763a9b835f">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a98c4199da08eeda8e54419cce61095cc">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a98c4199da08eeda8e54419cce61095cc">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="234" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="234" bodyend="252"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1byte___stype_1a580c221a87c3cceb4c613e5036b7f589" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="135" endline="138">SDC.byte_Stype.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1aa8fe0925bb3221592af7581c91da9816" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+        <definition>virtual byte_Stype SDC.byte_Stype.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a5a537a522c921d03c9d4c55a79c000ab">Clone</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1byte___d_etype_1a966f4ab15ff6355bd3142a91ce8b2029">Clone</reimplementedby>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="313" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="313" bodyend="316"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a78d74f553cecfdfa193053ef4629a96e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.byte_Stype.Deserialize</definition>
+        <argsstring>(string input, out byte_Stype obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="147" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="147" bodyend="161"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1byte___stype_1a006a2acdabd652ebba44547d02cc97c6" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="163" endline="167">SDC.byte_Stype.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1byte___stype_1a6c8d0aac1bfc2a4f22537aca9e1f0d4f" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="281" endline="305">SDC.byte_Stype.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a006a2acdabd652ebba44547d02cc97c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.byte_Stype.Deserialize</definition>
+        <argsstring>(string input, out byte_Stype obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="163" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="163" bodyend="167"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a78d74f553cecfdfa193053ef4629a96e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="147" endline="161">SDC.byte_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1aa1e069724766c34d084943a6a3cf6e37" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+        <definition>static new byte_Stype SDC.byte_Stype.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="169" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="169" bodyend="184"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a13f0a95b905399e5250bde0877baa923" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+        <definition>static byte_Stype SDC.byte_Stype.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="186" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="186" bodyend="189"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a5fb8697f6ce12e7cc5e36c2678389b86" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="77">SDC.byte_Stype.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a6942a80d7636f00c27f9a9b448a80d29" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.byte_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out byte_Stype obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="249" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="249" bodyend="263"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1byte___stype_1aa0b6676168135498ac496f821d456301" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="265" endline="268">SDC.byte_Stype.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1aa0b6676168135498ac496f821d456301" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.byte_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out byte_Stype obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="265" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="265" bodyend="268"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a6942a80d7636f00c27f9a9b448a80d29" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="249" endline="263">SDC.byte_Stype.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a2502c6de81ba408fe5e6ebd6250ef00e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.byte_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out byte_Stype obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="270" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="270" bodyend="274"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a6942a80d7636f00c27f9a9b448a80d29" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="249" endline="263">SDC.byte_Stype.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a71ab01ee28a2e091bd6c21873c3be4db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+        <definition>static byte_Stype SDC.byte_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="276" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="276" bodyend="279"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a6942a80d7636f00c27f9a9b448a80d29" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="249" endline="263">SDC.byte_Stype.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a6c8d0aac1bfc2a4f22537aca9e1f0d4f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+        <definition>static new byte_Stype SDC.byte_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" line="281" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/byte_Stype.cs" bodystart="281" bodyend="305"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a78d74f553cecfdfa193053ef4629a96e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="147" endline="161">SDC.byte_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1af59a8660494b8afc1209b39b3e9d409d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.byte_Stype.Deserialize</definition>
+        <argsstring>(string input, out byte_Stype obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="168" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="168" bodyend="182"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a78d74f553cecfdfa193053ef4629a96e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="147" endline="161">SDC.byte_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a006a2acdabd652ebba44547d02cc97c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.byte_Stype.Deserialize</definition>
+        <argsstring>(string input, out byte_Stype obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="184" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="184" bodyend="188"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a78d74f553cecfdfa193053ef4629a96e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="147" endline="161">SDC.byte_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1aa1e069724766c34d084943a6a3cf6e37" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+        <definition>static new byte_Stype SDC.byte_Stype.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="190" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="190" bodyend="205"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1byte___stype_1a5fb8697f6ce12e7cc5e36c2678389b86" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="77">SDC.byte_Stype.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1ac76f9d588c76660ea34a56660e085824" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+        <definition>static byte_Stype SDC.byte_Stype.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="207" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="207" bodyend="210"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a5fb8697f6ce12e7cc5e36c2678389b86" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="77">SDC.byte_Stype.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a7ce8ee2506d0d583612bdc7fad41e3a0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.byte_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out byte_Stype obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="261" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="261" bodyend="275"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a6942a80d7636f00c27f9a9b448a80d29" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="249" endline="263">SDC.byte_Stype.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a2502c6de81ba408fe5e6ebd6250ef00e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.byte_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out byte_Stype obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="277" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="277" bodyend="281"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a6942a80d7636f00c27f9a9b448a80d29" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="249" endline="263">SDC.byte_Stype.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1byte___stype_1a1ae7f5fd0553e95a7711f6b7d87d2530" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1byte___stype" kindref="compound">byte_Stype</ref></type>
+        <definition>static new byte_Stype SDC.byte_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" line="283" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/byte_Stype.cs" bodystart="283" bodyend="307"/>
+        <references refid="class_s_d_c_1_1byte___stype_1a78d74f553cecfdfa193053ef4629a96e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2byte___stype_8cs" startline="147" endline="161">SDC.byte_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1480">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="1481" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1479">
+        <label>SDC.byte_Stype</label>
+        <link refid="class_s_d_c_1_1byte___stype"/>
+        <childnode refid="1480" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1480" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1481">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="1482">
+        <label>SDC.byte_DEtype</label>
+        <link refid="class_s_d_c_1_1byte___d_etype"/>
+        <childnode refid="1479" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1479" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1484">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="1485" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1486" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="1495" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="1496" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="1497" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="1488" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1483">
+        <label>SDC.byte_Stype</label>
+        <link refid="class_s_d_c_1_1byte___stype"/>
+        <childnode refid="1484" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1484" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1497" relation="usage">
+          <edgelabel>_val</edgelabel>
+        </childnode>
+        <childnode refid="1488" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1492">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="1490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1485">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="1490">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="1489">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="1490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1495">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="1494">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="1488">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="1485" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1489" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="1491" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="1492" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="1493" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="1497">
+        <label>System</label>
+      </node>
+      <node id="1491">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="1490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1486">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="1487" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1487" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1488" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1487">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="1484" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1484" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1488" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="1493">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="1494" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1496">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="1485" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1486" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="1495" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="1496" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="1497" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="1488" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1455" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1454" bodyend="1458"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1byte___stype_1a04436dba98518573ae0837590f920078" prot="private" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>_shouldSerializeval</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a4371ab35b89982518b453596d169e8fe" prot="private" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>_val</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a943f991929d341437c1c425af28c4e53" prot="protected" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>byte_Stype</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a5a4d13a62614ab8ef285065cffafb4b3" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>byte_Stype</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a6cc87f2d50bdb6d0f2474d410cced1ff" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a1b69ba2bc1b2866f6f395c905e3c3459" prot="private" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1aa8fe0925bb3221592af7581c91da9816" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a78d74f553cecfdfa193053ef4629a96e" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a006a2acdabd652ebba44547d02cc97c6" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1aa1e069724766c34d084943a6a3cf6e37" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a13f0a95b905399e5250bde0877baa923" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1af59a8660494b8afc1209b39b3e9d409d" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a006a2acdabd652ebba44547d02cc97c6" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1aa1e069724766c34d084943a6a3cf6e37" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1ac76f9d588c76660ea34a56660e085824" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::byte_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::byte_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::byte_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a6942a80d7636f00c27f9a9b448a80d29" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1aa0b6676168135498ac496f821d456301" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a2502c6de81ba408fe5e6ebd6250ef00e" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a71ab01ee28a2e091bd6c21873c3be4db" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a6c8d0aac1bfc2a4f22537aca9e1f0d4f" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a7ce8ee2506d0d583612bdc7fad41e3a0" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a2502c6de81ba408fe5e6ebd6250ef00e" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a1ae7f5fd0553e95a7711f6b7d87d2530" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::byte_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::byte_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::byte_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::byte_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a83a952014b388759cac549f370b418f3" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1ac52d3492d80c7ced72cdb28b30e115ae" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a2f164f8c3522f6705e1c468f4b73788c" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a4ed5230854a276b5b25ed310d5a87d81" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1ae7d75f760de85f561b56ca0e9a1c8ba1" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a2f164f8c3522f6705e1c468f4b73788c" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1ae90edd23077d0d2fc342bfbc615ffcd5" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a580c221a87c3cceb4c613e5036b7f589" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a580c221a87c3cceb4c613e5036b7f589" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a0b7aa613a12f07b55a46513f3e2bd926" prot="private" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a5fb8697f6ce12e7cc5e36c2678389b86" prot="private" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a3e8a9699c2a8f18e71e9fb9799433a8a" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>ShouldSerializeval</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a3e8a9699c2a8f18e71e9fb9799433a8a" prot="public" virt="virtual"><scope>SDC::byte_Stype</scope><name>ShouldSerializeval</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1a1d29b974df0b4f897caa17232eabaa99" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>val</name></member>
+      <member refid="class_s_d_c_1_1byte___stype_1abad29fd977c9d592267ce741d8d4c5d2" prot="public" virt="non-virtual"><scope>SDC::byte_Stype</scope><name>valSpecified</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

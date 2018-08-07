@@ -1,0 +1,1027 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_act_set_value_bool_type" kind="class" prot="public">
+    <compoundname>SDC::ActSetValueBoolType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_predicate_type" prot="public" virt="non-virtual">SDC.PredicateType</basecompoundref>
+      <sectiondef kind="user-defined">
+      <header>attribute of the referenced element.</header>
+      <description><para>The </para></description>
+      <memberdef kind="property" id="class_s_d_c_1_1_act_set_value_bool_type_1a6c40f3ec60fa82303b2be112a8e3a778" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ActSetValueBoolType.elementName</definition>
+        <argsstring></argsstring>
+        <name>elementName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="74" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_act_set_value_bool_type_1a2ec0178f8f285c33f31fc5fef52fc6c9" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ActSetValueBoolType.X_targetNames</definition>
+        <argsstring></argsstring>
+        <name>X_targetNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="87" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_act_set_value_bool_type_1a1fbeb8c3b8126834cc4e795a6618488b" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.ActSetValueBoolType.Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="99" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1ad46ece2dd17236f63d8be2d79afbe627" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ActSetValueBoolType.ShouldSerializeattributeName</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeattributeName</name>
+        <briefdescription>
+<para>Test whether attributeName should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="114" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a7aca56f7a000fbb20dc58710e7324af6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ActSetValueBoolType.ShouldSerializeelementName</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeelementName</name>
+        <briefdescription>
+<para>Test whether elementName should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="122" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a482d98fccd66ba1a60dbdf97a40716fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ActSetValueBoolType.ShouldSerializeX_targetNames</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeX_targetNames</name>
+        <briefdescription>
+<para>Test whether X_targetNames should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="130" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a212845408b6df010f1edc6ac84b882a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ActSetValueBoolType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_predicate_type_1a92343d7b1ac55d348b41a629a2e2a0b4">Serialize</reimplements>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="140" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="140" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1ac0e18f1fabf6d454eb703d13def6ed89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ActSetValueBoolType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_predicate_type_1a5bb7807b4852641302743b9d222cce48">Serialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="170" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a20f12f4d6bbfd3c21f08e614f56c2117" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ActSetValueBoolType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_predicate_type_1ac618edab95e541b621b7155e958a94a9">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="233" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="233" bodyend="246"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a3876cc796e6e12c15f4b5815f4eca89e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ActSetValueBoolType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_predicate_type_1ab75a30dce50c543b41abe4c46573b6a3">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="248" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="248" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1ac8d7fd62f68ec987edab808885979d65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ActSetValueBoolType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_predicate_type_1a4fffd60ef975c6d084ff9435013dda71">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="253" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="253" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a18589df4c824c6a80da469e2acaa20fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ActSetValueBoolType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_predicate_type_1aefe0a266e61e7e0c9af8265fb7d03e60">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="258" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="258" bodyend="275"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a7fc07fa508e89a109f1db149b28a955a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActSetValueBoolType.Deserialize</definition>
+        <argsstring>(string input, out ActSetValueBoolType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="182" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="182" bodyend="196"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a444c40662e3a988f44fd0a02c2f9f336" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActSetValueBoolType.Deserialize</definition>
+        <argsstring>(string input, out ActSetValueBoolType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="198" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="198" bodyend="202"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a66179121aafd29ecaacc8d1605505e3e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref></type>
+        <definition>static new ActSetValueBoolType SDC.ActSetValueBoolType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="204" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="204" bodyend="219"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a9d96f655af8138a67c997e3863c9db97" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref></type>
+        <definition>static ActSetValueBoolType SDC.ActSetValueBoolType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="221" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a037e3495c3cb491759324b2949bd2869" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActSetValueBoolType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out ActSetValueBoolType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="284" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="284" bodyend="298"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1af798127e834caebbad63c7c4f5c12179" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActSetValueBoolType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ActSetValueBoolType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="300" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="300" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a83188e59c914e5bcd5222ea3621b98d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActSetValueBoolType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ActSetValueBoolType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="305" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="305" bodyend="309"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a8d204fab524e18c2913f5643fa432fd3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref></type>
+        <definition>static ActSetValueBoolType SDC.ActSetValueBoolType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="311" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="311" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1a83b8bf2bd82ca01854d7de575320f26c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref></type>
+        <definition>static new ActSetValueBoolType SDC.ActSetValueBoolType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="316" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="316" bodyend="340"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_act_set_value_bool_type_1ac9a6d05bbefef8903dec333ff3c8e6c3" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.ActSetValueBoolType._attributeName</definition>
+        <argsstring></argsstring>
+        <name>_attributeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="34" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_act_set_value_bool_type_1a86eed0cec9ba86cb093865fd56f7d67e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.ActSetValueBoolType._elementName</definition>
+        <argsstring></argsstring>
+        <name>_elementName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="37" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_act_set_value_bool_type_1af8449c137bb7674c0c69b774c165b12c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.ActSetValueBoolType._x_targetNames</definition>
+        <argsstring></argsstring>
+        <name>_x_targetNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_act_set_value_bool_type_1a71a96a6cc3d3534cacfa74291f7670b7" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer SDC.ActSetValueBoolType.serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="42" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_act_set_value_bool_type_1a020415ab45861f31339b5ffbfb94c01d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ActSetValueBoolType.attributeName</definition>
+        <argsstring></argsstring>
+        <name>attributeName</name>
+        <briefdescription>
+<para>The name of any attribute on a named element. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="58" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_act_set_value_bool_type_1ade2f8476aca877a0897c4a312c25853e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.ActSetValueBoolType.ActSetValueBoolType</definition>
+        <argsstring>()</argsstring>
+        <name>ActSetValueBoolType</name>
+        <briefdescription>
+<para><ref refid="class_s_d_c_1_1_act_set_value_bool_type" kindref="compound">ActSetValueBoolType</ref> class constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="48" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="48" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sets the value of any named attribute. However, it is primarily designed for Response element(s) on a Question or ListItem. The value may be determined by a literal value with a defined data type, the value at another named Response item, an expression written in a specified scripting or programming language, or the value of a named code listed in the same template. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="248">
+        <label>PredicateType</label>
+        <link refid="class_s_d_c_1_1_predicate_type"/>
+        <childnode refid="249" relation="public-inheritance">
+        </childnode>
+        <childnode refid="252" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="251" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="251">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="252">
+        <label>ReturnBoolType</label>
+        <link refid="class_s_d_c_1_1_return_bool_type"/>
+        <childnode refid="253" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="249" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="250" relation="public-inheritance">
+        </childnode>
+        <childnode refid="250" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>SDC.ActSetValueBoolType</label>
+        <link refid="class_s_d_c_1_1_act_set_value_bool_type"/>
+        <childnode refid="248" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="255">
+        <label>PredicateType</label>
+        <link refid="class_s_d_c_1_1_predicate_type"/>
+        <childnode refid="256" relation="public-inheritance">
+        </childnode>
+        <childnode refid="270" relation="public-inheritance">
+        </childnode>
+        <childnode refid="268" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="269" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+        <childnode refid="260" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="275" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="257">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="258" relation="public-inheritance">
+        </childnode>
+        <childnode refid="259" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="267" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="268" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="269" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="260" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="264">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="262" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="262">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="261">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="262" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="272">
+        <label>SDC.ExceptionType</label>
+        <link refid="class_s_d_c_1_1_exception_type"/>
+        <childnode refid="256" relation="public-inheritance">
+        </childnode>
+        <childnode refid="269" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="270">
+        <label>ReturnBoolType</label>
+        <link refid="class_s_d_c_1_1_return_bool_type"/>
+        <childnode refid="271" relation="public-inheritance">
+        </childnode>
+        <childnode refid="273" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="271">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="256" relation="public-inheritance">
+        </childnode>
+        <childnode refid="272" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="266">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="274">
+        <label>boolean_Stype</label>
+        <link refid="class_s_d_c_1_1boolean___stype"/>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+        <childnode refid="269" relation="usage">
+          <edgelabel>_val</edgelabel>
+        </childnode>
+        <childnode refid="260" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="260">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="258" relation="public-inheritance">
+        </childnode>
+        <childnode refid="261" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="263" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="264" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="265" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="269">
+        <label>System</label>
+      </node>
+      <node id="275">
+        <label>SDC.ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+        <childnode refid="260" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="263">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="262" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="256" relation="public-inheritance">
+        </childnode>
+        <childnode refid="256" relation="public-inheritance">
+        </childnode>
+        <childnode refid="260" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="256">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+        <childnode refid="260" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="254">
+        <label>SDC.ActSetValueBoolType</label>
+        <link refid="class_s_d_c_1_1_act_set_value_bool_type"/>
+        <childnode refid="255" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="266" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>SDC.boolean_DEtype</label>
+        <link refid="class_s_d_c_1_1boolean___d_etype"/>
+        <childnode refid="274" relation="public-inheritance">
+        </childnode>
+        <childnode refid="274" relation="public-inheritance">
+        </childnode>
+        <childnode refid="260" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="268">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="258" relation="public-inheritance">
+        </childnode>
+        <childnode refid="259" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="267" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="268" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="269" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="260" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" line="30" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActSetValueBoolType.cs" bodystart="29" bodyend="341"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1ac9a6d05bbefef8903dec333ff3c8e6c3" prot="private" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>_attributeName</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a86eed0cec9ba86cb093865fd56f7d67e" prot="private" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>_elementName</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1af8449c137bb7674c0c69b774c165b12c" prot="private" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>_x_targetNames</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1ade2f8476aca877a0897c4a312c25853e" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>ActSetValueBoolType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a020415ab45861f31339b5ffbfb94c01d" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>attributeName</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a6f8701cf4acf8747c016e185e850ce94" prot="package" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>Between_Item</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a9b27e79f090eac1338d18fd09dedcf5e" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>boolOp</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1add59c82513a282e1c641c36788aaa999" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a334a9f1338a33e558a3409f59c2a2eff" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a37d309d649255b5562400e36c231cbbe" prot="package" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>Compare_Item</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a7fc07fa508e89a109f1db149b28a955a" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a444c40662e3a988f44fd0a02c2f9f336" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a66179121aafd29ecaacc8d1605505e3e" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a9d96f655af8138a67c997e3863c9db97" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a5726a9ef6eb0cfbb8af53a5549e92375" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a336a57f767c14e2606951cff8e283330" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1ac1a8ac35a285e22761f6d03d50c967e2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a8e2acd2527aa0395ae3744e74550bb6f" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a8c44202bc23e7eaee0a53ece9ec4acf9" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a97d6e10eb9d48cf07d6bd898efe1605e" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1acd2a23b52dcbcbd31ebd413821adb5d5" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ab3750255b283fc0144a10ff76180ea53" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a6c40f3ec60fa82303b2be112a8e3a778" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>elementName</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1aedc9a0510bfd1dd20f8ee8533f0699ab" prot="package" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>InList_Item</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1ac7e14696e77458c7cca2cd6503e0084e" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>Item</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1ac6fae5b7125637d7040a18f43af9ab97" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>Item1</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a01dd523735099c7b86f84c7a8b551e96" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>Items</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a3e3120cd231c5db4e6a645fa185fa3fa" prot="package" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>LHS_Expression_Item</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a384339a39c8f942b00eeacc3e125d0e8" prot="package" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>LHS_Extension_Item</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a020bdb5e913da3d41c5db64c71c6a51c" prot="package" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>LHS_GetCode_Item</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a1b2feb03070e623ea183bdc48d5a1078" prot="package" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>LHS_GetResponse_Item</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a037e3495c3cb491759324b2949bd2869" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1af798127e834caebbad63c7c4f5c12179" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a83188e59c914e5bcd5222ea3621b98d6" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a8d204fab524e18c2913f5643fa432fd3" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a83b8bf2bd82ca01854d7de575320f26c" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a7c421cbede83468e0a1b01679a640b0b" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1ae252ffb70c6249c7d73187b6352c3644" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a73f7311d82abdf2bbf288a8ef3c5e712" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1ae2d96b012593b962f4963a214a73c115" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::PredicateType.SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a9f94daaeb01b4a91130b671dd670050c" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1abd716659d3b9c14b40203c5f78afd0f4" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a0a521ece3b1ba41c3dea430b08fd86ef" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae65d856375cc25a45498c3def0a600c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1aab3070073c4d1e10c51ca42ade495371" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1aff817c6fac01be7c19e7180e46b7da67" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActSetValueBoolType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a3630ade0ebe61bb4a4078a9f2fc6219e" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>not</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a5e936414f9b633139b32725297d8f663" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>notSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a36cee9d439372648560308cfc7d25ead" prot="protected" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>PredicateType</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a9bbf18a2bfce53435dc15a497bfd9b65" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>PredicateType</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a36cee9d439372648560308cfc7d25ead" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>PredicateType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1a7c4d5c78fe10e9d5881fca2ef9282241" prot="protected" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>ReturnBaseType</name></member>
+      <member refid="class_s_d_c_1_1_return_base_type_1ae27b5ac45b833727fbf0360af8f2f192" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>ReturnBaseType</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a6e028f6e391aaf355968737e933abd51" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>ReturnBoolType</name></member>
+      <member refid="class_s_d_c_1_1_return_bool_type_1a118ff4a6ed27895b466d42247ef6543f" prot="protected" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>ReturnBoolType</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a20f12f4d6bbfd3c21f08e614f56c2117" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a3876cc796e6e12c15f4b5815f4eca89e" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1ac8d7fd62f68ec987edab808885979d65" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a18589df4c824c6a80da469e2acaa20fb" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a82c446f6943b85fb1655724cc2465056" prot="public" virt="virtual" ambiguityscope="SDC::PredicateType."><scope>SDC::ActSetValueBoolType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a212845408b6df010f1edc6ac84b882a6" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1ac0e18f1fabf6d454eb703d13def6ed89" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a71a96a6cc3d3534cacfa74291f7670b7" prot="private" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a1fbeb8c3b8126834cc4e795a6618488b" prot="private" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1ad46ece2dd17236f63d8be2d79afbe627" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializeattributeName</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a7aca56f7a000fbb20dc58710e7324af6" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializeelementName</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a1a747e6a2956f41ad3152d8e5ae92eec" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializeItem</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a70778c21608f2722b752c7c7c952fa4b" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializeItem1</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1add4781aa9e9217e3d2626201275a328f" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializeItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_predicate_type_1a00a033eed0f22b2f44f3a8c947885f0d" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializenot</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a482d98fccd66ba1a60dbdf97a40716fe" prot="public" virt="virtual"><scope>SDC::ActSetValueBoolType</scope><name>ShouldSerializeX_targetNames</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActSetValueBoolType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual" ambiguityscope="SDC::ReturnBoolType."><scope>SDC::ActSetValueBoolType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_act_set_value_bool_type_1a2ec0178f8f285c33f31fc5fef52fc6c9" prot="public" virt="non-virtual"><scope>SDC::ActSetValueBoolType</scope><name>X_targetNames</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

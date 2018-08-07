@@ -1,0 +1,1297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1base64_binary___stype" kind="class" prot="public">
+    <compoundname>SDC::base64Binary_Stype</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_base_type" prot="public" virt="non-virtual">SDC.BaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_base_type" prot="public" virt="non-virtual">SDC.BaseType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1base64_binary___d_etype" prot="public" virt="non-virtual">SDC.base64Binary_DEtype</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1base64_binary___d_etype" prot="public" virt="non-virtual">SDC.base64Binary_DEtype</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_hash_type" prot="public" virt="non-virtual">SDC.HashType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_hash_type" prot="public" virt="non-virtual">SDC.HashType</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1base64_binary___stype_1acfc135fed1a99c0fa70a4026bd392b18" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.base64Binary_Stype::_base64StringVal</definition>
+        <argsstring></argsstring>
+        <name>_base64StringVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1423" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1base64_binary___stype_1a181acc523abe5e101c421a25ddb14d1e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDC.base64Binary_Stype::_shouldSerializelength</definition>
+        <argsstring></argsstring>
+        <name>_shouldSerializelength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="32" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1base64_binary___stype_1a586f318d6223fc8b08e940a9a4d98a8a" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="170" endline="177">SDC.base64Binary_Stype.ShouldSerializelength</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1base64_binary___stype_1a7477eee3171332f2c88d0db0e260cbd8" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.base64Binary_Stype::_mimeType</definition>
+        <argsstring></argsstring>
+        <name>_mimeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="35" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1base64_binary___stype_1a1ad76547ed31ebc9dc8a6a70bdff7e3d" prot="private" static="no" mutable="no">
+        <type>System.Nullable&lt; <ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa0f5264038205edfb1ac05fbb0e8c5e94" kindref="member">long</ref> &gt;</type>
+        <definition>System Nullable&lt; long &gt; SDC.base64Binary_Stype::_length</definition>
+        <argsstring></argsstring>
+        <name>_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1base64_binary___stype_1a586f318d6223fc8b08e940a9a4d98a8a" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="170" endline="177">SDC.base64Binary_Stype.ShouldSerializelength</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1base64_binary___stype_1a9a34f877604efc23f48390df94576e7c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa40ea57d3ee3c07bf1c102b466e1c3091" kindref="member">byte</ref>[]</type>
+        <definition>byte [] SDC.base64Binary_Stype._val</definition>
+        <argsstring></argsstring>
+        <name>_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="41" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1base64_binary___stype_1a07df700cad82b507e20f886e083b425f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.base64Binary_Stype.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="48" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1base64_binary___stype_1a385dd30385e4b6894a78169335c75133" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.base64Binary_Stype::valBase64</definition>
+        <argsstring></argsstring>
+        <name>valBase64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1429" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1base64_binary___stype_1a91b184aa5f878c580f001cfe765dac67" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.base64Binary_Stype::mimeType</definition>
+        <argsstring></argsstring>
+        <name>mimeType</name>
+        <briefdescription>
+<para>TBD: Must be a valid MIME type </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="50" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1base64_binary___stype_1aa8501775f5a5b624c1a0d4478f3a3346" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="182" endline="185">SDC.base64Binary_Stype.ShouldSerializemimeType</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1base64_binary___stype_1aeb0c8a8e7c27365f3be59829381ee87a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa0f5264038205edfb1ac05fbb0e8c5e94" kindref="member">long</ref></type>
+        <definition>long SDC.base64Binary_Stype::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="63" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1base64_binary___stype_1a0f25842eb72083840502a2ea59128366" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SDC.base64Binary_Stype::lengthSpecified</definition>
+        <argsstring></argsstring>
+        <name>lengthSpecified</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="84" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1base64_binary___stype_1ab22163a782ab291423ef85ae415c3653" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aa40ea57d3ee3c07bf1c102b466e1c3091" kindref="member">byte</ref>[]</type>
+        <definition>virtual byte [] SDC.base64Binary_Stype.val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="100" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1base64_binary___stype_1a6f69c7a9b3cb5631c28009763c501df0" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.base64Binary_Stype::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="112" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="113" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1base64_binary___stype_1a37cdc0c5ffc2449f9d7811bc9d96f0a1" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="249" endline="264">SDC.base64Binary_Stype.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1base64_binary___stype_1aa6d3d1d522aae57b7b0f14eaf7887e98" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.base64Binary_Stype.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="155" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1base64_binary___stype_1a6e90f1b9cb4e80c26b8d9701af8b671c" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.base64Binary_Stype::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="43" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1afd23ef3a1e3d8d90db2093a4c30024a7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.base64Binary_Stype.base64Binary_Stype</definition>
+        <argsstring>()</argsstring>
+        <name>base64Binary_Stype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1425" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1425" bodyend="1425"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1af5d33eb469ab3296a8f9db40ecaaa62a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.base64Binary_Stype.base64Binary_Stype</definition>
+        <argsstring>(BaseType parentNode)</argsstring>
+        <name>base64Binary_Stype</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1426" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1426" bodyend="1426"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1afd23ef3a1e3d8d90db2093a4c30024a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.base64Binary_Stype.base64Binary_Stype</definition>
+        <argsstring>()</argsstring>
+        <name>base64Binary_Stype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="134" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a586f318d6223fc8b08e940a9a4d98a8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.base64Binary_Stype.ShouldSerializelength</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializelength</name>
+        <briefdescription>
+<para>Test whether length should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="127" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="127" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1aa8501775f5a5b624c1a0d4478f3a3346" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.base64Binary_Stype.ShouldSerializemimeType</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializemimeType</name>
+        <briefdescription>
+<para>Test whether mimeType should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="139" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a3280fcee4728eaaf1d62cdc20cb48412" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.base64Binary_Stype.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1afde3077d8077d664ce856b276e024e29">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a7b4bc9f67a462d2d886201d2ac420efa">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1a3bce6a024d2743020bd4a7ba04193dd3">Serialize</reimplementedby>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="149" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="149" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a1e6564ab6d094725227d2ff7803faf19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.base64Binary_Stype.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a3400ee9db358cbcae3cc79dc197da12d">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a2b852023dabed89d656748df399024a4">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a2b852023dabed89d656748df399024a4">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1ad4d8d5a0d30fd8b4ca0f44975e6892a1">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1ad4d8d5a0d30fd8b4ca0f44975e6892a1">Serialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="179" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="179" bodyend="182"/>
+        <referencedby refid="class_s_d_c_1_1base64_binary___stype_1ab3206eaf64d10d376fc93c4bd5ee4a57" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="293" endline="311">SDC.base64Binary_Stype.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a7190e63929252054f63a62e7edb06b2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.base64Binary_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a8b46ba76827429d75d24ce3789a4fff6">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a3dd3299707030bcf0fc82aa15ea7d58f">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1ac2d739f4ab4ab09f74a7a060fa9de7ef">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="242" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="242" bodyend="255"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1base64_binary___stype_1aae22f4c849bd20b26e0286c32451cf49" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="278" endline="291">SDC.base64Binary_Stype.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a9d5c699ab433672d14ce130c28cd4765" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.base64Binary_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a64d428388608b02f234edc5c4dfd34fd">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a54f1f4d3199921a147ae70bba347f94c">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1afd4c49c95503e3cd9e7fb17985959f1a">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="257" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="257" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1ab3206eaf64d10d376fc93c4bd5ee4a57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.base64Binary_Stype.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a9bee814584762ae3959b96763a9b835f">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a416e39c685363d729b3d3c50591c181e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a416e39c685363d729b3d3c50591c181e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1a660b98211bfd92df25ad87ec304adf84">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1a660b98211bfd92df25ad87ec304adf84">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="262" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="262" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1ac508fbffb9727181e4112d33b974f434" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.base64Binary_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1af3e0b63e6bd50eaa6e371588209dda31">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1af5eb06aeb20a7b8c89587d730f5071db">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1a03deb2a5dae332b9308051d682ea387e">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="267" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="267" bodyend="284"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a586f318d6223fc8b08e940a9a4d98a8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.base64Binary_Stype.ShouldSerializelength</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializelength</name>
+        <briefdescription>
+<para>Test whether length should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="170" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="170" bodyend="177"/>
+        <references refid="class_s_d_c_1_1base64_binary___stype_1a1ad76547ed31ebc9dc8a6a70bdff7e3d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2base64_binary___stype_8cs" startline="38">SDC.base64Binary_Stype._length</references>
+        <references refid="class_s_d_c_1_1base64_binary___stype_1a181acc523abe5e101c421a25ddb14d1e" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2base64_binary___stype_8cs" startline="32">SDC.base64Binary_Stype._shouldSerializelength</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1aa8501775f5a5b624c1a0d4478f3a3346" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.base64Binary_Stype.ShouldSerializemimeType</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializemimeType</name>
+        <briefdescription>
+<para>Test whether mimeType should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="182" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="182" bodyend="185"/>
+        <references refid="class_s_d_c_1_1base64_binary___stype_1a91b184aa5f878c580f001cfe765dac67" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2base64_binary___stype_8cs" startline="51">SDC.base64Binary_Stype.mimeType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a1e6564ab6d094725227d2ff7803faf19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.base64Binary_Stype.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a3400ee9db358cbcae3cc79dc197da12d">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a2b852023dabed89d656748df399024a4">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a2b852023dabed89d656748df399024a4">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1ad4d8d5a0d30fd8b4ca0f44975e6892a1">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1ad4d8d5a0d30fd8b4ca0f44975e6892a1">Serialize</reimplementedby>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="192" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="192" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1aae22f4c849bd20b26e0286c32451cf49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.base64Binary_Stype.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a274de1f799bf72dd9b7967048cb08d7b">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a2e814c3658561826dac8541155797fca">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1a304ac6e872d031fb0fcaca5bcd47e729">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="278" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="278" bodyend="291"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1base64_binary___stype_1a7190e63929252054f63a62e7edb06b2c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2base64_binary___stype_8cs" startline="242" endline="255">SDC.base64Binary_Stype.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1ab3206eaf64d10d376fc93c4bd5ee4a57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.base64Binary_Stype.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a9bee814584762ae3959b96763a9b835f">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a416e39c685363d729b3d3c50591c181e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a416e39c685363d729b3d3c50591c181e">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1a660b98211bfd92df25ad87ec304adf84">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1a660b98211bfd92df25ad87ec304adf84">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="293" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="293" bodyend="311"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1base64_binary___stype_1a1e6564ab6d094725227d2ff7803faf19" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2base64_binary___stype_8cs" startline="179" endline="182">SDC.base64Binary_Stype.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a4fcd1479fed20e9c0173c3a7cd23b6b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+        <definition>virtual base64Binary_Stype SDC.base64Binary_Stype.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_base_type_1a5a537a522c921d03c9d4c55a79c000ab">Clone</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_hash_type_1a4d9315e98fa126cfc764f52c82bb3bf0">Clone</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1base64_binary___d_etype_1a36629f1ecba8644295f29bed233d6f88">Clone</reimplementedby>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="372" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="372" bodyend="375"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a35ecc4066702d5e3f260143d4a653212" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.base64Binary_Stype.Deserialize</definition>
+        <argsstring>(string input, out base64Binary_Stype obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="191" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="191" bodyend="205"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1base64_binary___stype_1a9c043b766f822bd358646c71db8194ac" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="227" endline="241">SDC.base64Binary_Stype.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1base64_binary___stype_1a31cd7518a24c4af87c10f926176d811a" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="342" endline="366">SDC.base64Binary_Stype.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1aa061ba6d16c53a711568edaf3861faef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.base64Binary_Stype.Deserialize</definition>
+        <argsstring>(string input, out base64Binary_Stype obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="207" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="207" bodyend="211"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a37cdc0c5ffc2449f9d7811bc9d96f0a1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+        <definition>static new base64Binary_Stype SDC.base64Binary_Stype.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="213" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="213" bodyend="228"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1abd3d569e76463fe8a67b123e13483019" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+        <definition>static base64Binary_Stype SDC.base64Binary_Stype.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="230" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1ab5659b7b554a4d81fd49741e41786f27" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.base64Binary_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out base64Binary_Stype obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="293" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="293" bodyend="307"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1base64_binary___stype_1ab397c750a6ef224c7dc2ea9a6a57e519" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2base64_binary___stype_8cs" startline="320" endline="334">SDC.base64Binary_Stype.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a2268453d721df2b379482a0b6d72be09" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.base64Binary_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out base64Binary_Stype obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="309" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="309" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a958178d1aa3b1da16e4e643d696d2c61" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.base64Binary_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out base64Binary_Stype obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="314" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="314" bodyend="318"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a12e0edc9b9fa1e41c3a9a48e224abb96" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+        <definition>static base64Binary_Stype SDC.base64Binary_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="320" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="320" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1aa73226238c2bb69ded3aa4ee80562715" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+        <definition>static new base64Binary_Stype SDC.base64Binary_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" line="325" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/base64Binary_Stype.cs" bodystart="325" bodyend="349"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a9c043b766f822bd358646c71db8194ac" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.base64Binary_Stype.Deserialize</definition>
+        <argsstring>(string input, out base64Binary_Stype obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="227" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="227" bodyend="241"/>
+        <references refid="class_s_d_c_1_1base64_binary___stype_1a35ecc4066702d5e3f260143d4a653212" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2base64_binary___stype_8cs" startline="191" endline="205">SDC.base64Binary_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1aa061ba6d16c53a711568edaf3861faef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.base64Binary_Stype.Deserialize</definition>
+        <argsstring>(string input, out base64Binary_Stype obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="243" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="243" bodyend="247"/>
+        <references refid="class_s_d_c_1_1base64_binary___stype_1a35ecc4066702d5e3f260143d4a653212" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2base64_binary___stype_8cs" startline="191" endline="205">SDC.base64Binary_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a37cdc0c5ffc2449f9d7811bc9d96f0a1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+        <definition>static new base64Binary_Stype SDC.base64Binary_Stype.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="249" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="249" bodyend="264"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1base64_binary___stype_1a6f69c7a9b3cb5631c28009763c501df0" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2base64_binary___stype_8cs" startline="113">SDC.base64Binary_Stype.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a13545255c2d505ee3506fffa8d307cd0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+        <definition>static base64Binary_Stype SDC.base64Binary_Stype.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="266" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="266" bodyend="269"/>
+        <references refid="class_s_d_c_1_1base64_binary___stype_1a6f69c7a9b3cb5631c28009763c501df0" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2base64_binary___stype_8cs" startline="113">SDC.base64Binary_Stype.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1ab397c750a6ef224c7dc2ea9a6a57e519" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.base64Binary_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out base64Binary_Stype obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="320" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="320" bodyend="334"/>
+        <references refid="class_s_d_c_1_1base64_binary___stype_1ab5659b7b554a4d81fd49741e41786f27" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2base64_binary___stype_8cs" startline="293" endline="307">SDC.base64Binary_Stype.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a958178d1aa3b1da16e4e643d696d2c61" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.base64Binary_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName, out base64Binary_Stype obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="336" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="336" bodyend="340"/>
+        <references refid="class_s_d_c_1_1base64_binary___stype_1ab5659b7b554a4d81fd49741e41786f27" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2base64_binary___stype_8cs" startline="293" endline="307">SDC.base64Binary_Stype.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1base64_binary___stype_1a31cd7518a24c4af87c10f926176d811a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1base64_binary___stype" kindref="compound">base64Binary_Stype</ref></type>
+        <definition>static new base64Binary_Stype SDC.base64Binary_Stype.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" line="342" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/base64Binary_Stype.cs" bodystart="342" bodyend="366"/>
+        <references refid="class_s_d_c_1_1base64_binary___stype_1a35ecc4066702d5e3f260143d4a653212" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2base64_binary___stype_8cs" startline="191" endline="205">SDC.base64Binary_Stype.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="875">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="876">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="874">
+        <label>SDC.base64Binary_Stype</label>
+        <link refid="class_s_d_c_1_1base64_binary___stype"/>
+        <childnode refid="875" relation="public-inheritance">
+        </childnode>
+        <childnode refid="875" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="877">
+        <label>SDC.base64Binary_DEtype</label>
+        <link refid="class_s_d_c_1_1base64_binary___d_etype"/>
+        <childnode refid="874" relation="public-inheritance">
+        </childnode>
+        <childnode refid="874" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="878">
+        <label>SDC.HashType</label>
+        <link refid="class_s_d_c_1_1_hash_type"/>
+        <childnode refid="874" relation="public-inheritance">
+        </childnode>
+        <childnode refid="874" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="880">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="881" relation="public-inheritance">
+        </childnode>
+        <childnode refid="882" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="891" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="892" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="893" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="884" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="888">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="886" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="881">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="886">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="879">
+        <label>SDC.base64Binary_Stype</label>
+        <link refid="class_s_d_c_1_1base64_binary___stype"/>
+        <childnode refid="880" relation="public-inheritance">
+        </childnode>
+        <childnode refid="880" relation="public-inheritance">
+        </childnode>
+        <childnode refid="893" relation="usage">
+          <edgelabel>_length</edgelabel>
+        </childnode>
+        <childnode refid="884" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="885">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="886" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="891">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="890">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="884">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="881" relation="public-inheritance">
+        </childnode>
+        <childnode refid="885" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="887" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="888" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="889" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="893">
+        <label>System</label>
+      </node>
+      <node id="887">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="886" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="882">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="883" relation="public-inheritance">
+        </childnode>
+        <childnode refid="883" relation="public-inheritance">
+        </childnode>
+        <childnode refid="884" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="883">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="880" relation="public-inheritance">
+        </childnode>
+        <childnode refid="880" relation="public-inheritance">
+        </childnode>
+        <childnode refid="884" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="889">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="890" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="892">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="881" relation="public-inheritance">
+        </childnode>
+        <childnode refid="882" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="891" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="892" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="893" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="884" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="1422" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="1421" bodyend="1434"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1acfc135fed1a99c0fa70a4026bd392b18" prot="private" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>_base64StringVal</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a1ad76547ed31ebc9dc8a6a70bdff7e3d" prot="private" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>_length</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a7477eee3171332f2c88d0db0e260cbd8" prot="private" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>_mimeType</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a181acc523abe5e101c421a25ddb14d1e" prot="private" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>_shouldSerializelength</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a9a34f877604efc23f48390df94576e7c" prot="private" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>_val</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1afd23ef3a1e3d8d90db2093a4c30024a7" prot="protected" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>base64Binary_Stype</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1af5d33eb469ab3296a8f9db40ecaaa62a" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>base64Binary_Stype</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1afd23ef3a1e3d8d90db2093a4c30024a7" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>base64Binary_Stype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1aa6d3d1d522aae57b7b0f14eaf7887e98" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a07df700cad82b507e20f886e083b425f" prot="private" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a4fcd1479fed20e9c0173c3a7cd23b6b6" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a35ecc4066702d5e3f260143d4a653212" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1aa061ba6d16c53a711568edaf3861faef" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a37cdc0c5ffc2449f9d7811bc9d96f0a1" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1abd3d569e76463fe8a67b123e13483019" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a9c043b766f822bd358646c71db8194ac" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1aa061ba6d16c53a711568edaf3861faef" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a37cdc0c5ffc2449f9d7811bc9d96f0a1" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a13545255c2d505ee3506fffa8d307cd0" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::base64Binary_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::base64Binary_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::base64Binary_Stype</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1aeb0c8a8e7c27365f3be59829381ee87a" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>length</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a0f25842eb72083840502a2ea59128366" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>lengthSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1ab5659b7b554a4d81fd49741e41786f27" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a2268453d721df2b379482a0b6d72be09" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a958178d1aa3b1da16e4e643d696d2c61" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a12e0edc9b9fa1e41c3a9a48e224abb96" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1aa73226238c2bb69ded3aa4ee80562715" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1ab397c750a6ef224c7dc2ea9a6a57e519" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a958178d1aa3b1da16e4e643d696d2c61" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a31cd7518a24c4af87c10f926176d811a" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::base64Binary_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::base64Binary_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::base64Binary_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::base64Binary_Stype</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a91b184aa5f878c580f001cfe765dac67" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>mimeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a7190e63929252054f63a62e7edb06b2c" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a9d5c699ab433672d14ce130c28cd4765" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1ab3206eaf64d10d376fc93c4bd5ee4a57" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1ac508fbffb9727181e4112d33b974f434" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1aae22f4c849bd20b26e0286c32451cf49" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1ab3206eaf64d10d376fc93c4bd5ee4a57" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a3280fcee4728eaaf1d62cdc20cb48412" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a1e6564ab6d094725227d2ff7803faf19" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a1e6564ab6d094725227d2ff7803faf19" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a6f69c7a9b3cb5631c28009763c501df0" prot="private" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a6e90f1b9cb4e80c26b8d9701af8b671c" prot="private" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a586f318d6223fc8b08e940a9a4d98a8a" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>ShouldSerializelength</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a586f318d6223fc8b08e940a9a4d98a8a" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>ShouldSerializelength</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1aa8501775f5a5b624c1a0d4478f3a3346" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>ShouldSerializemimeType</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1aa8501775f5a5b624c1a0d4478f3a3346" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>ShouldSerializemimeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::base64Binary_Stype</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1ab22163a782ab291423ef85ae415c3653" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>val</name></member>
+      <member refid="class_s_d_c_1_1base64_binary___stype_1a385dd30385e4b6894a78169335c75133" prot="public" virt="non-virtual"><scope>SDC::base64Binary_Stype</scope><name>valBase64</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

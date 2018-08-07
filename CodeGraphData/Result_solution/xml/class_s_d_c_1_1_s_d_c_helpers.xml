@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_s_d_c_helpers" kind="class" prot="public">
+    <compoundname>SDC::SDCHelpers</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_s_d_c_helpers_1adac6192082f5634d69712632e9304a08" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+        <definition>static IdentifiedExtensionType SDC.SDCHelpers.GetParentIETypeNode</definition>
+        <argsstring>(string parentID)</argsstring>
+        <name>GetParentIETypeNode</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>parentID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Given a node, returns the parent item&apos;s node reference as <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> (not the abstract <ref refid="class_s_d_c_1_1_parent_type" kindref="compound">ParentType</ref>). However, the returned node may be cast to <ref refid="class_s_d_c_1_1_parent_type" kindref="compound">ParentType</ref> and implements <ref refid="interface_s_d_c_1_1_i_parent" kindref="compound">IParent</ref> </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDCHelpers.cs" line="13" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDCHelpers.cs" bodystart="13" bodyend="21"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a24b52c9b3ba6edfe1d7b0cc8dd2f5b4d" compoundref="_s_d_c_8_schema_8_s_d_c_tree_builder_8cs" startline="60" endline="283">SDC.SDCTreeBuilder.CreateFormDesignTree</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_s_d_c_helpers_1ad37290f8c46b996ead3f07ac9560358d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+        <definition>static BaseType SDC.SDCHelpers.X_GetParentBaseNode</definition>
+        <argsstring>(int parentObjID)</argsstring>
+        <name>X_GetParentBaseNode</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1aab187c2d778efbdb83441617e75a8a5aafa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>parentObjID</declname>
+        </param>
+        <briefdescription>
+<para>Given a child node, returns the parent item&apos;s node reference as <ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref> (not the abstract <ref refid="class_s_d_c_1_1_parent_type" kindref="compound">ParentType</ref>). However, the returned node may be cast to <ref refid="class_s_d_c_1_1_parent_type" kindref="compound">ParentType</ref> and implements <ref refid="interface_s_d_c_1_1_i_parent" kindref="compound">IParent</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>childNode</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para><para>Given a ParentObjID (not a ParentIETypeID), returns the parent node reference as <ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref>. This &quot;parent&quot; may be any type of XML parent node </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDCHelpers.cs" line="64" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDCHelpers.cs" bodystart="64" bodyend="69"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_s_d_c_helpers_1a64718ed6c2059ef197a5d0c3092ef4d5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+        <definition>static BaseType SDC.SDCHelpers.X_GetParentBaseNode</definition>
+        <argsstring>(BaseType childNode)</argsstring>
+        <name>X_GetParentBaseNode</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>childNode</declname>
+        </param>
+        <briefdescription>
+<para>Given a child node, returns the parent node&apos;s reference as <ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref>. This &quot;parent&quot; may be any type of XML parent node </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>childNode</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDCHelpers.cs" line="75" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDCHelpers.cs" bodystart="75" bodyend="80"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_s_d_c_helpers_1a5aa25def7e694e76c45d13fd4385a090" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Tenum</type>
+        <definition>static Tenum SDC.SDCHelpers.ConvertStringToEnum&lt; Tenum &gt;</definition>
+        <argsstring>(string inputString)</argsstring>
+        <name>ConvertStringToEnum&lt; Tenum &gt;</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>inputString</declname>
+        </param>
+        <briefdescription>
+<para>Converts the string expression of an enum value to the desired type. Example: var qType= reeBuilder.ConvertStringToEnum&lt;ItemType&gt;(&quot;answer&quot;); </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Tenum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The enum type that the inputString will be converted into.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string that must represent one of the Tenum enumerated values; not case sensitive</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDCHelpers.cs" line="88" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDCHelpers.cs" bodystart="88" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDCHelpers.cs" line="7" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDCHelpers.cs" bodystart="6" bodyend="103"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_s_d_c_helpers_1a5aa25def7e694e76c45d13fd4385a090" prot="public" virt="non-virtual"><scope>SDC::SDCHelpers</scope><name>ConvertStringToEnum&lt; Tenum &gt;</name></member>
+      <member refid="class_s_d_c_1_1_s_d_c_helpers_1adac6192082f5634d69712632e9304a08" prot="public" virt="non-virtual"><scope>SDC::SDCHelpers</scope><name>GetParentIETypeNode</name></member>
+      <member refid="class_s_d_c_1_1_s_d_c_helpers_1ad37290f8c46b996ead3f07ac9560358d" prot="public" virt="non-virtual"><scope>SDC::SDCHelpers</scope><name>X_GetParentBaseNode</name></member>
+      <member refid="class_s_d_c_1_1_s_d_c_helpers_1a64718ed6c2059ef197a5d0c3092ef4d5" prot="public" virt="non-virtual"><scope>SDC::SDCHelpers</scope><name>X_GetParentBaseNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

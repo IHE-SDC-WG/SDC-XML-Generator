@@ -1,0 +1,1305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_rich_text_type" kind="class" prot="public">
+    <compoundname>SDC::RichTextType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_act_send_message_type" prot="public" virt="non-virtual">SDC.ActSendMessageType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_act_send_message_type" prot="public" virt="non-virtual">SDC.ActSendMessageType</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_rich_text_type_1addc390e000c26a96857c7dc431d6b83d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_h_t_m_l___stype" kindref="compound">HTML_Stype</ref></type>
+        <definition>HTML_Stype SDC.RichTextType._richText</definition>
+        <argsstring></argsstring>
+        <name>_richText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="35" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_rich_text_type_1acc74d962c3531e64bb6b91bd15f0f7e3" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="84" endline="87">SDC.RichTextType.ShouldSerializeRichText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_rich_text_type_1aedb2714237481d404238eeec2af4a548" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.RichTextType::_val</definition>
+        <argsstring></argsstring>
+        <name>_val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_rich_text_type_1a7ad5a5404fa2bc851cc2a04e93a8126f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_h_t_m_l___stype" kindref="compound">HTML_Stype</ref></type>
+        <definition>HTML_Stype SDC.RichTextType._hTML</definition>
+        <argsstring></argsstring>
+        <name>_hTML</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="41" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_rich_text_type_1a841e4105ecb1c91e4d81cfda90c3bdc9" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_rich_text_type_8cs" startline="127" endline="130">SDC.RichTextType.ShouldSerializeHTML</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_rich_text_type_1a881499de66051cbb95754af95dc7e480" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.RichTextType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="48" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_rich_text_type_1a995f6b4f737ab498e5e8788b2c294278" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.RichTextType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="40" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_rich_text_type_1a1481da586b2764f8f431fbcbcfce4b50" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_h_t_m_l___stype" kindref="compound">HTML_Stype</ref></type>
+        <definition>virtual HTML_Stype SDC.RichTextType.RichText</definition>
+        <argsstring></argsstring>
+        <name>RichText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="44" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_rich_text_type_1ac0f4facbf3d802682b7c2ab5cadf93b3" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.RichTextType::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="57" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_rich_text_type_1a288243de00027d093113fbc04fa520bf" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="92" endline="95">SDC.RichTextType.ShouldSerializeval</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_rich_text_type_1aadb85a3ab31a82dc9890bbef9feef800" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.RichTextType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="69" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_rich_text_type_1ac01170c8a09891fcbe7e2bf4765307a3" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="183" endline="186">SDC.RichTextType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_rich_text_type_1a970a491db887c3645fcc0176fc503120" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_h_t_m_l___stype" kindref="compound">HTML_Stype</ref></type>
+        <definition>virtual HTML_Stype SDC.RichTextType.HTML</definition>
+        <argsstring></argsstring>
+        <name>HTML</name>
+        <briefdescription>
+<para>Contains optional HTML formatting. The HTML must reflect the contents of the UTF8Text element. (Future modelling may include a Schema to restrict the HTML formatting.) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="55" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_rich_text_type_1ae327e339129526fd06c0d49cd94c02a2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.RichTextType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="112" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a48645cabe329f1bd2f2018c96312008e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.RichTextType.RichTextType</definition>
+        <argsstring>(BaseType parentNode)</argsstring>
+        <name>RichTextType</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2511" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2511" bodyend="2511"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a56fb4a4fd84a47fa03140d9a0c64eef5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.RichTextType.RichTextType</definition>
+        <argsstring>()</argsstring>
+        <name>RichTextType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="846" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="846" bodyend="846"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1acc74d962c3531e64bb6b91bd15f0f7e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.RichTextType.ShouldSerializeRichText</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeRichText</name>
+        <briefdescription>
+<para>Test whether RichText should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="84" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="84" bodyend="87"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1addc390e000c26a96857c7dc431d6b83d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="35">SDC.RichTextType._richText</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a288243de00027d093113fbc04fa520bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.RichTextType.ShouldSerializeval</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeval</name>
+        <briefdescription>
+<para>Test whether val should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="92" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="92" bodyend="95"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1ac0f4facbf3d802682b7c2ab5cadf93b3" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="58">SDC.RichTextType.val</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1aee476a9ada18a956d1bb598dd3c274f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.RichTextType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a9ac9c6d560ffe2c300d7796951c22395">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1aa42a1ec9b08c52cafa2d9b804b08d443">Serialize</reimplementedby>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="102" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="102" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a625e39d7add531f0cbb53455fc27aa01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.RichTextType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1adb5ae3880bcedb9df60fab05f4d42540">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1adb5ae3880bcedb9df60fab05f4d42540">Serialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="132" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="132" bodyend="135"/>
+        <referencedby refid="class_s_d_c_1_1_rich_text_type_1a9152bcf9355f1ae5d09fa04e918e14f3" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="220" endline="237">SDC.RichTextType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a17cca081d18269a190f788f66225af4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.RichTextType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1ab1514379cd9bd547d5569548274fceb1">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1ac7b50f9aa82df24754c0113c8fa2992b">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="195" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="195" bodyend="208"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_rich_text_type_1a90b9e64c09cd2e6f0ec247b26e74307d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="210" endline="213">SDC.RichTextType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a90b9e64c09cd2e6f0ec247b26e74307d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.RichTextType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1af03b919560cd67ffe1373d8cef3bb9b8">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1a6c9a34ec0d9b994898f66eba2e29e6ab">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="210" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="210" bodyend="213"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1a17cca081d18269a190f788f66225af4a" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="195" endline="208">SDC.RichTextType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a4f7572762d25f369fbc6ee1a9c4122e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.RichTextType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1a4d714ac3966790ae2f86af3c8a909480">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1a4d714ac3966790ae2f86af3c8a909480">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="215" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="215" bodyend="218"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1a17cca081d18269a190f788f66225af4a" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="195" endline="208">SDC.RichTextType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a9152bcf9355f1ae5d09fa04e918e14f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.RichTextType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5c619ed0e36571d6f4bd992faa3ad282">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1a8e51a81809e7388cb9cb67070c0bf6bd">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="220" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="220" bodyend="237"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_rich_text_type_1a625e39d7add531f0cbb53455fc27aa01" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="132" endline="135">SDC.RichTextType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a841e4105ecb1c91e4d81cfda90c3bdc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.RichTextType.ShouldSerializeHTML</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeHTML</name>
+        <briefdescription>
+<para>Test whether HTML should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="127" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="127" bodyend="130"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1a7ad5a5404fa2bc851cc2a04e93a8126f" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_rich_text_type_8cs" startline="41">SDC.RichTextType._hTML</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a288243de00027d093113fbc04fa520bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.RichTextType.ShouldSerializeval</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeval</name>
+        <briefdescription>
+<para>Test whether val should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="135" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="135" bodyend="138"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1ac0f4facbf3d802682b7c2ab5cadf93b3" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="58">SDC.RichTextType.val</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a625e39d7add531f0cbb53455fc27aa01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.RichTextType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1adb5ae3880bcedb9df60fab05f4d42540">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1adb5ae3880bcedb9df60fab05f4d42540">Serialize</reimplementedby>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="145" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="145" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1af7ef851f213fc79d42fad9614443d500" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.RichTextType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1a96e83a5b9f1172bf96e3b1e0e0505584">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="231" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="231" bodyend="244"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_rich_text_type_1a17cca081d18269a190f788f66225af4a" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="195" endline="208">SDC.RichTextType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a4f7572762d25f369fbc6ee1a9c4122e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.RichTextType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1a4d714ac3966790ae2f86af3c8a909480">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1a4d714ac3966790ae2f86af3c8a909480">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="246" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="246" bodyend="264"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_rich_text_type_1a625e39d7add531f0cbb53455fc27aa01" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="132" endline="135">SDC.RichTextType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a7cbde06a0fcf37158038cd4e24480e04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>virtual RichTextType SDC.RichTextType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3">Clone</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_act_send_message_type_1a11ed6c301ee7327cbfac4f190243a1b2">Clone</reimplementedby>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="325" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="325" bodyend="328"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a56fb4a4fd84a47fa03140d9a0c64eef5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.RichTextType.RichTextType</definition>
+        <argsstring>()</argsstring>
+        <name>RichTextType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2512" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2512" bodyend="2512"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a1f7e7d06e153d81a3069bc98d2866aa5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_h_t_m_l___stype" kindref="compound">HTML_Stype</ref></type>
+        <definition>HTML_Stype SDC.RichTextType.AddHTML</definition>
+        <argsstring>()</argsstring>
+        <name>AddHTML</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2514" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2514" bodyend="2518"/>
+        <references refid="namespace_s_d_c_1af2209f66af49f85f2c41565b139f8efbab2145aac704ce76dbe1ac7adac535b23">SDC.var</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a1f7e7d06e153d81a3069bc98d2866aa5" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_h_t_m_l___stype" kindref="compound">HTML_Stype</ref></type>
+        <definition>HTML_Stype SDC.RichTextType.AddHTML</definition>
+        <argsstring>()</argsstring>
+        <name>AddHTML</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="847" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="847" bodyend="851"/>
+        <references refid="namespace_s_d_c_1af2209f66af49f85f2c41565b139f8efbab2145aac704ce76dbe1ac7adac535b23">SDC.var</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1adf3c411ab1ddffb8b3a31feb0abe1b70" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RichTextType.Deserialize</definition>
+        <argsstring>(string input, out RichTextType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="144" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="144" bodyend="158"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_rich_text_type_1ae72290e3f5c6fcffd5d319cccde6fc92" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="160" endline="164">SDC.RichTextType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_rich_text_type_1a909cc95a75c20cc371fe44d902018b21" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="278" endline="302">SDC.RichTextType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1ae72290e3f5c6fcffd5d319cccde6fc92" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RichTextType.Deserialize</definition>
+        <argsstring>(string input, out RichTextType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="160" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="160" bodyend="164"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1adf3c411ab1ddffb8b3a31feb0abe1b70" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="144" endline="158">SDC.RichTextType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a0331b56cfe82f2c866cc0e50759bef63" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>static new RichTextType SDC.RichTextType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="166" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="166" bodyend="181"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1ac01170c8a09891fcbe7e2bf4765307a3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>static RichTextType SDC.RichTextType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="183" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="183" bodyend="186"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1aadb85a3ab31a82dc9890bbef9feef800" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="70">SDC.RichTextType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a1c618d1e41cbffa3e86d5bac54194c28" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RichTextType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out RichTextType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="246" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="246" bodyend="260"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_rich_text_type_1a3de50b2aae6022d668fbe97e1407ebed" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="262" endline="265">SDC.RichTextType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a3de50b2aae6022d668fbe97e1407ebed" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RichTextType.LoadFromFile</definition>
+        <argsstring>(string fileName, out RichTextType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="262" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="262" bodyend="265"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1a1c618d1e41cbffa3e86d5bac54194c28" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="246" endline="260">SDC.RichTextType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1af6e3226c0f9fc69e01a5bf17aeebf95c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RichTextType.LoadFromFile</definition>
+        <argsstring>(string fileName, out RichTextType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="267" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="267" bodyend="271"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1a1c618d1e41cbffa3e86d5bac54194c28" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="246" endline="260">SDC.RichTextType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a8da22162dce9d1038b63b4564a7d8039" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>static RichTextType SDC.RichTextType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="273" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="273" bodyend="276"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1a1c618d1e41cbffa3e86d5bac54194c28" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="246" endline="260">SDC.RichTextType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a909cc95a75c20cc371fe44d902018b21" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>static new RichTextType SDC.RichTextType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" line="278" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/RichTextType.cs" bodystart="278" bodyend="302"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1adf3c411ab1ddffb8b3a31feb0abe1b70" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="144" endline="158">SDC.RichTextType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a042526cbc72abd35728a951e9dbcdc7b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RichTextType.Deserialize</definition>
+        <argsstring>(string input, out RichTextType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="180" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="180" bodyend="194"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1adf3c411ab1ddffb8b3a31feb0abe1b70" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="144" endline="158">SDC.RichTextType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1ae72290e3f5c6fcffd5d319cccde6fc92" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RichTextType.Deserialize</definition>
+        <argsstring>(string input, out RichTextType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="196" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="196" bodyend="200"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1adf3c411ab1ddffb8b3a31feb0abe1b70" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="144" endline="158">SDC.RichTextType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a0331b56cfe82f2c866cc0e50759bef63" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>static new RichTextType SDC.RichTextType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="202" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="202" bodyend="217"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_rich_text_type_1aadb85a3ab31a82dc9890bbef9feef800" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="70">SDC.RichTextType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a83c7e742546ebd6c0de45f453714b556" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>static RichTextType SDC.RichTextType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="219" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="219" bodyend="222"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1aadb85a3ab31a82dc9890bbef9feef800" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="70">SDC.RichTextType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1a63c37cf92c590d227da5c6cb786c7f29" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RichTextType.LoadFromFile</definition>
+        <argsstring>(string fileName, out RichTextType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="273" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="273" bodyend="287"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1a1c618d1e41cbffa3e86d5bac54194c28" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="246" endline="260">SDC.RichTextType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1af6e3226c0f9fc69e01a5bf17aeebf95c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.RichTextType.LoadFromFile</definition>
+        <argsstring>(string fileName, out RichTextType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="289" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="289" bodyend="293"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1a1c618d1e41cbffa3e86d5bac54194c28" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="246" endline="260">SDC.RichTextType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_rich_text_type_1acc51d9868c22fd478e4c4d119b4a6a86" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>static new RichTextType SDC.RichTextType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" line="295" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/RichTextType.cs" bodystart="295" bodyend="319"/>
+        <references refid="class_s_d_c_1_1_rich_text_type_1adf3c411ab1ddffb8b3a31feb0abe1b70" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_rich_text_type_8cs" startline="144" endline="158">SDC.RichTextType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Representation of plain text with an option for HTML-formatting. Contains optional boilerplate metadata to aid programmatic manipulation. HTML formatting is generally contained in CDATA tags to prevent XML parsing and schema errors. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8596">
+        <label>SDC.ActSendMessageType</label>
+        <link refid="class_s_d_c_1_1_act_send_message_type"/>
+        <childnode refid="8592" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8592" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8594">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="8595" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8595">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="8593">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="8594" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8592">
+        <label>SDC.RichTextType</label>
+        <link refid="class_s_d_c_1_1_rich_text_type"/>
+        <childnode refid="8593" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8593" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8599">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="8600" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8601" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="8609" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="8610" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="8611" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="8602" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="8606">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="8604" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8600">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="8604">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="8603">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="8604" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8609">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="8608">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="8602">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="8600" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8603" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="8605" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="8606" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="8607" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="8611">
+        <label>System</label>
+      </node>
+      <node id="8605">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="8604" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8601">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="8598" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8598" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8602" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="8598">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="8599" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8599" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8602" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="8597">
+        <label>SDC.RichTextType</label>
+        <link refid="class_s_d_c_1_1_rich_text_type"/>
+        <childnode refid="8598" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8598" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8612" relation="usage">
+          <edgelabel>_hTML</edgelabel>
+          <edgelabel>_richText</edgelabel>
+        </childnode>
+        <childnode refid="8602" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="8612">
+        <label>SDC.HTML_Stype</label>
+        <link refid="class_s_d_c_1_1_h_t_m_l___stype"/>
+        <childnode refid="8599" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8599" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8602" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="8607">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="8608" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8610">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="8600" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8601" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="8609" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="8610" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="8611" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="8602" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="2510" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="2509" bodyend="2519"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a7ad5a5404fa2bc851cc2a04e93a8126f" prot="private" virt="non-virtual"><scope>SDC::RichTextType</scope><name>_hTML</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1addc390e000c26a96857c7dc431d6b83d" prot="private" virt="non-virtual"><scope>SDC::RichTextType</scope><name>_richText</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1aedb2714237481d404238eeec2af4a548" prot="private" virt="non-virtual"><scope>SDC::RichTextType</scope><name>_val</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a1f7e7d06e153d81a3069bc98d2866aa5" prot="protected" virt="non-virtual"><scope>SDC::RichTextType</scope><name>AddHTML</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a1f7e7d06e153d81a3069bc98d2866aa5" prot="package" virt="non-virtual"><scope>SDC::RichTextType</scope><name>AddHTML</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::RichTextType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::RichTextType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1ae327e339129526fd06c0d49cd94c02a2" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a881499de66051cbb95754af95dc7e480" prot="private" virt="non-virtual"><scope>SDC::RichTextType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a7cbde06a0fcf37158038cd4e24480e04" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1adf3c411ab1ddffb8b3a31feb0abe1b70" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1ae72290e3f5c6fcffd5d319cccde6fc92" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a0331b56cfe82f2c866cc0e50759bef63" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1ac01170c8a09891fcbe7e2bf4765307a3" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a042526cbc72abd35728a951e9dbcdc7b" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1ae72290e3f5c6fcffd5d319cccde6fc92" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a0331b56cfe82f2c866cc0e50759bef63" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a83c7e742546ebd6c0de45f453714b556" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RichTextType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a970a491db887c3645fcc0176fc503120" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>HTML</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a1c618d1e41cbffa3e86d5bac54194c28" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a3de50b2aae6022d668fbe97e1407ebed" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1af6e3226c0f9fc69e01a5bf17aeebf95c" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a8da22162dce9d1038b63b4564a7d8039" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a909cc95a75c20cc371fe44d902018b21" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a63c37cf92c590d227da5c6cb786c7f29" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1af6e3226c0f9fc69e01a5bf17aeebf95c" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1acc51d9868c22fd478e4c4d119b4a6a86" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::RichTextType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a1481da586b2764f8f431fbcbcfce4b50" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>RichText</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a48645cabe329f1bd2f2018c96312008e" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>RichTextType</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a56fb4a4fd84a47fa03140d9a0c64eef5" prot="protected" virt="non-virtual"><scope>SDC::RichTextType</scope><name>RichTextType</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a56fb4a4fd84a47fa03140d9a0c64eef5" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>RichTextType</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a17cca081d18269a190f788f66225af4a" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a90b9e64c09cd2e6f0ec247b26e74307d" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a4f7572762d25f369fbc6ee1a9c4122e6" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a9152bcf9355f1ae5d09fa04e918e14f3" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1af7ef851f213fc79d42fad9614443d500" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a4f7572762d25f369fbc6ee1a9c4122e6" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::RichTextType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1aee476a9ada18a956d1bb598dd3c274f3" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a625e39d7add531f0cbb53455fc27aa01" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a625e39d7add531f0cbb53455fc27aa01" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a995f6b4f737ab498e5e8788b2c294278" prot="private" virt="non-virtual"><scope>SDC::RichTextType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1aadb85a3ab31a82dc9890bbef9feef800" prot="private" virt="non-virtual"><scope>SDC::RichTextType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a841e4105ecb1c91e4d81cfda90c3bdc9" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializeHTML</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1acc74d962c3531e64bb6b91bd15f0f7e3" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializeRichText</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a288243de00027d093113fbc04fa520bf" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializeval</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1a288243de00027d093113fbc04fa520bf" prot="public" virt="virtual"><scope>SDC::RichTextType</scope><name>ShouldSerializeval</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_rich_text_type_1ac0f4facbf3d802682b7c2ab5cadf93b3" prot="public" virt="non-virtual"><scope>SDC::RichTextType</scope><name>val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

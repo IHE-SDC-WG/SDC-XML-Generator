@@ -1,0 +1,1192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_s_d_c_1_1_i_tree_builder" kind="interface" prot="public">
+    <compoundname>SDC::ITreeBuilder</compoundname>
+    <derivedcompoundref refid="class_s_d_c_1_1_s_d_c_tree_builder" prot="public" virt="non-virtual">SDC.SDCTreeBuilder</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_s_d_c_tree_builder" prot="public" virt="non-virtual">SDC.SDCTreeBuilder</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_s_d_c_tree_builder" prot="public" virt="non-virtual">SDC.SDCTreeBuilder</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a8b6c85c57f267c7631f18f5b91462c21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+        <definition>BaseType SDC.ITreeBuilder.FillBaseTypeItem</definition>
+        <argsstring>(BaseType bt, Boolean fillData=true)</argsstring>
+        <name>FillBaseTypeItem</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a9221b28cd043a28bcd576b9049a69cbf">FillBaseTypeItem</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>bt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a91159c98264ca887d2e600e6b4346823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_extension_base_type" kindref="compound">ExtensionBaseType</ref></type>
+        <definition>ExtensionBaseType SDC.ITreeBuilder.AddFillExtensionBaseTypeItems</definition>
+        <argsstring>(ExtensionBaseType ebt, Boolean fillData=true)</argsstring>
+        <name>AddFillExtensionBaseTypeItems</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a0670c91ef2a52582a7db449bec11c0f5">AddFillExtensionBaseTypeItems</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_extension_base_type" kindref="compound">ExtensionBaseType</ref></type>
+          <declname>ebt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a17568cc99786cc052f1c7bae753a0691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+        <definition>IdentifiedExtensionType SDC.ITreeBuilder.FillIdentifiedTypeItems</definition>
+        <argsstring>(IdentifiedExtensionType iet, Boolean fillData=true)</argsstring>
+        <name>FillIdentifiedTypeItems</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a4c83f6f12a2f5f228e64e1507a3e6151">FillIdentifiedTypeItems</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+          <declname>iet</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a3322c61c67befad8e005105d88b30661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_repeating_type" kindref="compound">RepeatingType</ref></type>
+        <definition>RepeatingType SDC.ITreeBuilder.FillRepeatingTypeItemData</definition>
+        <argsstring>(RepeatingType rt)</argsstring>
+        <name>FillRepeatingTypeItemData</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1acca2bc826e04e231fbc1d7f9ea8262c2">FillRepeatingTypeItemData</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a96eefebd9f568061c9c49a074a6e64e6">FillRepeatingTypeItemData</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_repeating_type" kindref="compound">RepeatingType</ref></type>
+          <declname>rt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a694d5a4f6006512b5c0b0ef6d1e495fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_comment_type" kindref="compound">CommentType</ref></type>
+        <definition>CommentType SDC.ITreeBuilder.AddFillComment</definition>
+        <argsstring>(ExtensionBaseType ebtParent, Boolean fillData=true, string comment=&quot;&quot;)</argsstring>
+        <name>AddFillComment</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a4213887a1c5552eca9bd2fd6a9f30283">AddFillComment</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_extension_base_type" kindref="compound">ExtensionBaseType</ref></type>
+          <declname>ebtParent</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>comment</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a1940f0a3acc600fa32fa6ddbca8f75be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_extension_type" kindref="compound">ExtensionType</ref></type>
+        <definition>ExtensionType SDC.ITreeBuilder.AddFillExtension</definition>
+        <argsstring>(ExtensionBaseType ebt, Boolean fillData=true, string InXML=&quot;&quot;)</argsstring>
+        <name>AddFillExtension</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a3af48d26bb6d0a1f62f28e5af62866fc">AddFillExtension</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1aa5b642c7a4b342fcda97efc4b470f901">AddFillExtension</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_extension_base_type" kindref="compound">ExtensionBaseType</ref></type>
+          <declname>ebt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>InXML</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a1125fef8ef7794f18d6e974d47384768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_property_type" kindref="compound">PropertyType</ref></type>
+        <definition>PropertyType SDC.ITreeBuilder.AddProperty</definition>
+        <argsstring>(IdentifiedExtensionType dtParent, Boolean fillData=true)</argsstring>
+        <name>AddProperty</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1af51057eb16cfb11c801ed3f9af435391">AddProperty</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_identified_extension_type" kindref="compound">IdentifiedExtensionType</ref></type>
+          <declname>dtParent</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a26691e9b9df00399328830e69f26f6b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_property_type" kindref="compound">PropertyType</ref></type>
+        <definition>PropertyType SDC.ITreeBuilder.FillProperty</definition>
+        <argsstring>(PropertyType ot, Boolean fillData=true)</argsstring>
+        <name>FillProperty</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a1773e74198577bca3777da112f482d9a">FillProperty</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a1f64670396b092d7dcd914e58904b87d">FillProperty</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_property_type" kindref="compound">PropertyType</ref></type>
+          <declname>ot</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1ad023656d7e302f2297b32e086145e786" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_link_type" kindref="compound">LinkType</ref></type>
+        <definition>LinkType SDC.ITreeBuilder.FillLinkText</definition>
+        <argsstring>(LinkType lt)</argsstring>
+        <name>FillLinkText</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1ae5c5996b1a7e4b6838d0dffd40b003ee">FillLinkText</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a287dc3a486fba6b272f8e4485c2fb98c">FillLinkText</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_link_type" kindref="compound">LinkType</ref></type>
+          <declname>lt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a08f6207bf606155d4e694a14deb7bbd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_blob_type" kindref="compound">BlobType</ref></type>
+        <definition>BlobType SDC.ITreeBuilder.FillBlob</definition>
+        <argsstring>(BlobType bt)</argsstring>
+        <name>FillBlob</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1acc3215e99b8ea08e2bf425f836d22f34">FillBlob</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a91fec12622993da7598fddaf32a72b00">FillBlob</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_blob_type" kindref="compound">BlobType</ref></type>
+          <declname>bt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a707e0ec85392e03097b69efacf4927dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_link_type" kindref="compound">LinkType</ref></type>
+        <definition>LinkType SDC.ITreeBuilder.AddLink</definition>
+        <argsstring>(DisplayedType dtParent, Boolean fillData=true)</argsstring>
+        <name>AddLink</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1ac30f4ec8f018d245e287da57fd0b5c65">AddLink</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+          <declname>dtParent</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a5c09efabb62815c9f83d833b3215c9e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_blob_type" kindref="compound">BlobType</ref></type>
+        <definition>BlobType SDC.ITreeBuilder.AddBlob</definition>
+        <argsstring>(DisplayedType dtParent, Boolean fillData=true)</argsstring>
+        <name>AddBlob</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a7114f7f56febf89e2a78c7bdfa24a867">AddBlob</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+          <declname>dtParent</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a11a47a332b93a783be7bd9f708061630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_section_item_type" kindref="compound">SectionItemType</ref></type>
+        <definition>SectionItemType SDC.ITreeBuilder.AddHeader</definition>
+        <argsstring>(Boolean fillData=false, string id=null)</argsstring>
+        <name>AddHeader</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a87aa1353c510454b691d99a1fc33e98a">AddHeader</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a6f9a1d7612572c421a9145318bdeb41c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_section_item_type" kindref="compound">SectionItemType</ref></type>
+        <definition>SectionItemType SDC.ITreeBuilder.AddBody</definition>
+        <argsstring>(Boolean fillData=false, string id=null)</argsstring>
+        <name>AddBody</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a5a0d429a188a64ec03c30ae5d3be2425">AddBody</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a25c0a24914f26c3540e313ce8d0afd21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_section_item_type" kindref="compound">SectionItemType</ref></type>
+        <definition>SectionItemType SDC.ITreeBuilder.AddFooter</definition>
+        <argsstring>(Boolean fillData=false, string id=null)</argsstring>
+        <name>AddFooter</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1ac758bcdad99c08e08829c824401d2636">AddFooter</reimplementedby>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a33665e3fe4e2ec358137397a210a0e8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_section_item_type" kindref="compound">SectionItemType</ref></type>
+        <definition>SectionItemType SDC.ITreeBuilder.AddSection&lt; T &gt;</definition>
+        <argsstring>(T T_Parent, Boolean fillData=true, string id=null)</argsstring>
+        <name>AddSection&lt; T &gt;</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a69b10ea0811c4c981cf0bf6b4d9bb1d2">AddSection&lt; T &gt;</reimplementedby>
+        <param>
+          <type>T</type>
+          <declname>T_Parent</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a7ff91c2cbe92ce7b4639434bd3cb1ac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_section_base_type" kindref="compound">SectionBaseType</ref></type>
+        <definition>SectionBaseType SDC.ITreeBuilder.FillSectionBase</definition>
+        <argsstring>(SectionBaseType s)</argsstring>
+        <name>FillSectionBase</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a7d8f42bd57ab79992a02305477c2960d">FillSectionBase</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1aa011b5d58a78cdcf63d49bfad55d4fb9">FillSectionBase</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_section_base_type" kindref="compound">SectionBaseType</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a2ac8ee7758708c08f592c6641d1f97f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_inject_form_type" kindref="compound">InjectFormType</ref></type>
+        <definition>InjectFormType SDC.ITreeBuilder.FillInjectedForm</definition>
+        <argsstring>(InjectFormType injForm)</argsstring>
+        <name>FillInjectedForm</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a233f2b9acd1a6d4b1c0ab60212bd7ef4">FillInjectedForm</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a34a4953f3406a3d5457abf12e15dd74f">FillInjectedForm</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_inject_form_type" kindref="compound">InjectFormType</ref></type>
+          <declname>injForm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a89cf1796f9c9ba89da039198220ae101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+        <definition>DisplayedType SDC.ITreeBuilder.AddDisplayedItem&lt; T &gt;</definition>
+        <argsstring>(T T_Parent, Boolean fillData=true, string id=null)</argsstring>
+        <name>AddDisplayedItem&lt; T &gt;</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1ac94502a8c4dcce87cfb742da5dc4749d">AddDisplayedItem&lt; T &gt;</reimplementedby>
+        <param>
+          <type>T</type>
+          <declname>T_Parent</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a8dbf77a94aefd8e8b8188151096a362b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+        <definition>DisplayedType SDC.ITreeBuilder.FillDisplayedTypeItems</definition>
+        <argsstring>(DisplayedType dt, Boolean fillData=true)</argsstring>
+        <name>FillDisplayedTypeItems</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a42ef87341ab2f5d803cb65be1832b8e1">FillDisplayedTypeItems</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a963368e9ef88f9923f94a6f4a0d189ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_repeating_type" kindref="compound">RepeatingType</ref></type>
+        <definition>RepeatingType SDC.ITreeBuilder.FillRepeatingTypeItems</definition>
+        <argsstring>(RepeatingType rt, Boolean fillData=true)</argsstring>
+        <name>FillRepeatingTypeItems</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1adbdd35f77f9902fa7d4efefe3d502f76">FillRepeatingTypeItems</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_repeating_type" kindref="compound">RepeatingType</ref></type>
+          <declname>rt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a02a6e092eddad409f1715b8d72b37f3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_button_item_type" kindref="compound">ButtonItemType</ref></type>
+        <definition>ButtonItemType SDC.ITreeBuilder.AddButtonAction&lt; T &gt;</definition>
+        <argsstring>(T T_Parent, Boolean fillData=true, string id=null)</argsstring>
+        <name>AddButtonAction&lt; T &gt;</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a021f2e62c79331f686156d8450396e7c">AddButtonAction&lt; T &gt;</reimplementedby>
+        <param>
+          <type>T</type>
+          <declname>T_Parent</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a617afb91ef8e88e2386987ee188256aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_inject_form_type" kindref="compound">InjectFormType</ref></type>
+        <definition>InjectFormType SDC.ITreeBuilder.AddInjectedForm&lt; T &gt;</definition>
+        <argsstring>(T T_Parent, Boolean fillData=true, string id=null)</argsstring>
+        <name>AddInjectedForm&lt; T &gt;</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a90a9fd81b8a357aee650d434dd7f81b9">AddInjectedForm&lt; T &gt;</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a4770252be8dc75287828f7bad6cbf986">AddInjectedForm&lt; T &gt;</reimplementedby>
+        <param>
+          <type>T</type>
+          <declname>T_Parent</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1acd0bfeee2ecad64360da74bc8e430b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_question_item_type" kindref="compound">QuestionItemType</ref></type>
+        <definition>QuestionItemType SDC.ITreeBuilder.AddQuestion&lt; T &gt;</definition>
+        <argsstring>(T T_Parent, QuestionEnum qType, Boolean fillData=true, string id=null)</argsstring>
+        <name>AddQuestion&lt; T &gt;</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a02cd269fec2d6c121f9639d1e7606d27">AddQuestion&lt; T &gt;</reimplementedby>
+        <param>
+          <type>T</type>
+          <declname>T_Parent</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ad2700ab1d7d4dafbdc31f52ea1a175bb" kindref="member">QuestionEnum</ref></type>
+          <declname>qType</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a074d188a015e697e0c13cd96d0e1ea9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+        <definition>QuestionItemBaseType SDC.ITreeBuilder.FillQuestionItemBase</definition>
+        <argsstring>(QuestionItemBaseType q)</argsstring>
+        <name>FillQuestionItemBase</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1acb82301b617c32f239c6c1107e1745c1">FillQuestionItemBase</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a57b2099b73d7d74ab2c505b89c28aa4f">FillQuestionItemBase</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_question_item_base_type" kindref="compound">QuestionItemBaseType</ref></type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1afd2e1311f3730d110008e4ba859cd79c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+        <definition>ListFieldType SDC.ITreeBuilder.FillListField</definition>
+        <argsstring>(ListFieldType lf)</argsstring>
+        <name>FillListField</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a2143c7833c5e307d14e0de1fb77a7ec7">FillListField</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1ac4d3509febf1e9b8e8c3b59654d2625e">FillListField</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_list_field_type" kindref="compound">ListFieldType</ref></type>
+          <declname>lf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1ae0da333e37603548f341d3433ca07a2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_list_item_base_type" kindref="compound">ListItemBaseType</ref></type>
+        <definition>ListItemBaseType SDC.ITreeBuilder.FillListItemBase</definition>
+        <argsstring>(ListItemBaseType li)</argsstring>
+        <name>FillListItemBase</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a7713cc3064838abf70bb729e274a7ffb">FillListItemBase</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a2c9caea730f842c5d3ea99e8a022110b">FillListItemBase</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_list_item_base_type" kindref="compound">ListItemBaseType</ref></type>
+          <declname>li</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a71df0968a7dc769b81c4bab7d989fd2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_list_item_response_field_type" kindref="compound">ListItemResponseFieldType</ref></type>
+        <definition>ListItemResponseFieldType SDC.ITreeBuilder.AddListItemResponseField</definition>
+        <argsstring>(ListItemBaseType li, Boolean fillData=true)</argsstring>
+        <name>AddListItemResponseField</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a873cc8a7181ee3f608c3358ce627abe6">AddListItemResponseField</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_list_item_base_type" kindref="compound">ListItemBaseType</ref></type>
+          <declname>li</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1afd5d4a899384ee74b81e0145a5ade884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_list_item_response_field_type" kindref="compound">ListItemResponseFieldType</ref></type>
+        <definition>ListItemResponseFieldType SDC.ITreeBuilder.FillListItemResponseField</definition>
+        <argsstring>(ListItemResponseFieldType lirf)</argsstring>
+        <name>FillListItemResponseField</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a2a08c50d890f62fe640a963e25097aba">FillListItemResponseField</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a06a893eb225193491797a6102f43a595">FillListItemResponseField</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_list_item_response_field_type" kindref="compound">ListItemResponseFieldType</ref></type>
+          <declname>lirf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a5a32cbe1cfc05017af168d70d522b79d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_lookup_end_point_type" kindref="compound">LookupEndPointType</ref></type>
+        <definition>LookupEndPointType SDC.ITreeBuilder.FillLookupEndpoint</definition>
+        <argsstring>(LookupEndPointType lep)</argsstring>
+        <name>FillLookupEndpoint</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a17e1c60bee4d27eef6ddb432336e3116">FillLookupEndpoint</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1ab5e86c74d2c0b6605ce2797bbacd9911">FillLookupEndpoint</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_lookup_end_point_type" kindref="compound">LookupEndPointType</ref></type>
+          <declname>lep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1aa13767b1a37996b36b633bb7aa63b48e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_units_type" kindref="compound">UnitsType</ref></type>
+        <definition>UnitsType SDC.ITreeBuilder.FillUnits</definition>
+        <argsstring>(UnitsType ut)</argsstring>
+        <name>FillUnits</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a226b405aa8995273395e39723d18f957">FillUnits</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a958a7e419d3f9e3fc3d09c1d888394eb">FillUnits</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_units_type" kindref="compound">UnitsType</ref></type>
+          <declname>ut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a6f78bb14035da1bf70da0a9709098b3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_coding_type" kindref="compound">CodingType</ref></type>
+        <definition>CodingType SDC.ITreeBuilder.AddCodedValue</definition>
+        <argsstring>(DisplayedType dt, Boolean fillData=true)</argsstring>
+        <name>AddCodedValue</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a0403c04735a74d07aaaacaffa2bf03bb">AddCodedValue</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a31f3ddcfcfc11c7058cea19329ca60d7">AddCodedValue</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a6783efa405f5d04f0de98d79c3a0f6fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_coding_type" kindref="compound">CodingType</ref></type>
+        <definition>CodingType SDC.ITreeBuilder.AddCodedValue</definition>
+        <argsstring>(LookupEndPointType lep, Boolean fillData=true)</argsstring>
+        <name>AddCodedValue</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a9722bac4ffca12f9e98102be31485c00">AddCodedValue</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a3637fea7039f6af7c76b9bfc2133ee0e">AddCodedValue</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_lookup_end_point_type" kindref="compound">LookupEndPointType</ref></type>
+          <declname>lep</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1ad1e6fd4894ac9aa49eb47d46a20a82af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_code_system_type" kindref="compound">CodeSystemType</ref></type>
+        <definition>CodeSystemType SDC.ITreeBuilder.FillCodeSystemItems</definition>
+        <argsstring>(CodeSystemType cs)</argsstring>
+        <name>FillCodeSystemItems</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1abba07a3661826893e6af723b6d8c226a">FillCodeSystemItems</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a9831ebd329e6b3d2a4cc72641cf42668">FillCodeSystemItems</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_code_system_type" kindref="compound">CodeSystemType</ref></type>
+          <declname>cs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1adbe1af69308df7ece9bac71e4feddd40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_watched_property_type" kindref="compound">WatchedPropertyType</ref></type>
+        <definition>WatchedPropertyType SDC.ITreeBuilder.AddActivateIf</definition>
+        <argsstring>(DisplayedType dt, Boolean fillData=true)</argsstring>
+        <name>AddActivateIf</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a5af6380ddfb017840842f1d3b25ff786">AddActivateIf</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a10f45ebda223bbeedeacf5a0925828ed">AddActivateIf</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a7a8711b63b2f43fec18da5f52e9169b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_watched_property_type" kindref="compound">WatchedPropertyType</ref></type>
+        <definition>WatchedPropertyType SDC.ITreeBuilder.AddDeActivateIf</definition>
+        <argsstring>(DisplayedType dt, Boolean fillData=true)</argsstring>
+        <name>AddDeActivateIf</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1adb7824028bda16381e7aeb9d2f77dc4a">AddDeActivateIf</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1ab8aa1c5e9903f1fa660d5c8de357041e">AddDeActivateIf</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1afbacd16c07caa8415ef580e26578ecf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_if_then_type" kindref="compound">IfThenType</ref></type>
+        <definition>IfThenType SDC.ITreeBuilder.AddOnEnter</definition>
+        <argsstring>(DisplayedType dt, Boolean fillData=true)</argsstring>
+        <name>AddOnEnter</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a1057d5bf92c03e1f26fcf29ea5c0bc4e">AddOnEnter</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a4c042cc9176836603059fa67a1f8c285">AddOnEnter</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1acefa5c5137e75056764b25388cf433a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_if_then_type" kindref="compound">IfThenType</ref></type>
+        <definition>IfThenType SDC.ITreeBuilder.AddOnEvent</definition>
+        <argsstring>(DisplayedType dt, Boolean fillData=true)</argsstring>
+        <name>AddOnEvent</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a482bfafb6cc741a3bd394e9888e35b2a">AddOnEvent</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a4b7dccf200e0a887c440c1e1710ead0a">AddOnEvent</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a2db578fefb9e448f79e075ec8e43f368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref></type>
+        <definition>OnEventType SDC.ITreeBuilder.AddOnExit</definition>
+        <argsstring>(DisplayedType dt, Boolean fillData=true)</argsstring>
+        <name>AddOnExit</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a001eadf7a6531c176cd96531e17ca3b8">AddOnExit</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1ad98050cd467ac5a4ccdf6ecfc107fcdd">AddOnExit</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1ac24a672d0c637161da70e78d86c08bf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_contact_type" kindref="compound">ContactType</ref></type>
+        <definition>ContactType SDC.ITreeBuilder.AddContact</definition>
+        <argsstring>(DisplayedType dt, Boolean fillData=true)</argsstring>
+        <name>AddContact</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1ad6e7623cec54f7917f202f41c31b3cc4">AddContact</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1afe9e1d8a25b3b069eed08f70ef990bdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_contact_type" kindref="compound">ContactType</ref></type>
+        <definition>ContactType SDC.ITreeBuilder.AddContact</definition>
+        <argsstring>(FileType ft, Boolean fillData=true)</argsstring>
+        <name>AddContact</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a20607e25d47ad487691ee9632593946b">AddContact</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_file_type" kindref="compound">FileType</ref></type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1aeef9f0214eacdcf0fb9dee09aae680f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+        <definition>OrganizationType SDC.ITreeBuilder.AddFillOrganization</definition>
+        <argsstring>(ContactType contact, Boolean fillData=true)</argsstring>
+        <name>AddFillOrganization</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a759c9ab8f01a9cd114655b3205143ffb">AddFillOrganization</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_contact_type" kindref="compound">ContactType</ref></type>
+          <declname>contact</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1ad96c7cb2a40635a64ed3fc9739d96335" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+        <definition>OrganizationType SDC.ITreeBuilder.AddFillOrganization</definition>
+        <argsstring>(JobType job, Boolean fillData=true)</argsstring>
+        <name>AddFillOrganization</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a2977bc04163a0ff7261a10a34d5914bb">AddFillOrganization</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_job_type" kindref="compound">JobType</ref></type>
+          <declname>job</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a8d76e3e744cc61fcec5732bb9c4e3a39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+        <definition>OrganizationType SDC.ITreeBuilder.AddFillOrganizationItems</definition>
+        <argsstring>(OrganizationType ot, Boolean fillData=true)</argsstring>
+        <name>AddFillOrganizationItems</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a65e54927032757b0b7f7491837384b3e">AddFillOrganizationItems</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a723489059138e756b55685d51060faa8">AddFillOrganizationItems</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_organization_type" kindref="compound">OrganizationType</ref></type>
+          <declname>ot</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a23f8bd48c1cec70213c2ef0ad9a4f4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+        <definition>PersonType SDC.ITreeBuilder.AddPerson</definition>
+        <argsstring>(ContactType contact)</argsstring>
+        <name>AddPerson</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1aa3e69dca002dfd347daec0a781c5649c">AddPerson</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1ac6fa08e122aa7d4cae494177beedb551">AddPerson</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1ac6fa08e122aa7d4cae494177beedb551">AddPerson</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_contact_type" kindref="compound">ContactType</ref></type>
+          <declname>contact</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1ab6e2338984d103dbe860ffdd36bfd30d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_person_type" kindref="compound">PersonType</ref></type>
+        <definition>PersonType SDC.ITreeBuilder.AddPerson</definition>
+        <argsstring>(DisplayedType dt)</argsstring>
+        <name>AddPerson</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a9f14b54c797797832df65591feb61e6d">AddPerson</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a24dc791d9e691ce809c73a7d5389d08d">AddPerson</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a24dc791d9e691ce809c73a7d5389d08d">AddPerson</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_displayed_type" kindref="compound">DisplayedType</ref></type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1a26336c269f28594a8fc705cb6e688387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_h_t_m_l___stype" kindref="compound">HTML_Stype</ref></type>
+        <definition>HTML_Stype SDC.ITreeBuilder.AddFillHTML</definition>
+        <argsstring>(RichTextType rt, Boolean fillData=true, string InXhtml=&quot;&quot;)</argsstring>
+        <name>AddFillHTML</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a2df7c435576d25d9a5df6de8809338e6">AddFillHTML</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a8bf7f8eedc0a3246734773f24736a090">AddFillHTML</reimplementedby>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+          <declname>rt</declname>
+        </param>
+        <param>
+          <type>Boolean</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>InXhtml</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_s_d_c_1_1_i_tree_builder_1aeefc5bf33b74e212d93a0fceee2f46d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String SDC.ITreeBuilder.SerializeFormDesignTree</definition>
+        <argsstring>()</argsstring>
+        <name>SerializeFormDesignTree</name>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a22dd73d0a73e0e2d7619550c8a55958b">SerializeFormDesignTree</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a248d041f85b0f8bfeba8a771d8bb4117">SerializeFormDesignTree</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1a248d041f85b0f8bfeba8a771d8bb4117">SerializeFormDesignTree</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="100" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Top-level public methods used to build <ref refid="namespace_s_d_c" kindref="compound">SDC</ref> tree in SDC.Schema.PartialClasses </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5338">
+        <label>SDC.SDCTreeBuilderEcc</label>
+        <link refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc"/>
+        <childnode refid="5337" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5337" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5336">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="5337">
+        <label>SDC.SDCTreeBuilder</label>
+        <link refid="class_s_d_c_1_1_s_d_c_tree_builder"/>
+        <childnode refid="5336" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5336" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5336" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" line="9" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/ITreeBuilder.cs" bodystart="8" bodyend="108"/>
+    <listofallmembers>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1adbe1af69308df7ece9bac71e4feddd40" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddActivateIf</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a5c09efabb62815c9f83d833b3215c9e6" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddBlob</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a6f9a1d7612572c421a9145318bdeb41c" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddBody</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a02a6e092eddad409f1715b8d72b37f3b" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddButtonAction&lt; T &gt;</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a6f78bb14035da1bf70da0a9709098b3d" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddCodedValue</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a6783efa405f5d04f0de98d79c3a0f6fa" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddCodedValue</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1ac24a672d0c637161da70e78d86c08bf3" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddContact</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1afe9e1d8a25b3b069eed08f70ef990bdf" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddContact</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a7a8711b63b2f43fec18da5f52e9169b2" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddDeActivateIf</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a89cf1796f9c9ba89da039198220ae101" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddDisplayedItem&lt; T &gt;</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a694d5a4f6006512b5c0b0ef6d1e495fe" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddFillComment</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a1940f0a3acc600fa32fa6ddbca8f75be" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddFillExtension</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a91159c98264ca887d2e600e6b4346823" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddFillExtensionBaseTypeItems</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a26336c269f28594a8fc705cb6e688387" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddFillHTML</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1aeef9f0214eacdcf0fb9dee09aae680f1" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddFillOrganization</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1ad96c7cb2a40635a64ed3fc9739d96335" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddFillOrganization</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a8d76e3e744cc61fcec5732bb9c4e3a39" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddFillOrganizationItems</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a25c0a24914f26c3540e313ce8d0afd21" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddFooter</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a11a47a332b93a783be7bd9f708061630" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddHeader</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a617afb91ef8e88e2386987ee188256aa" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddInjectedForm&lt; T &gt;</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a707e0ec85392e03097b69efacf4927dd" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddLink</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a71df0968a7dc769b81c4bab7d989fd2e" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddListItemResponseField</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1afbacd16c07caa8415ef580e26578ecf6" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddOnEnter</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1acefa5c5137e75056764b25388cf433a0" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddOnEvent</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a2db578fefb9e448f79e075ec8e43f368" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddOnExit</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a23f8bd48c1cec70213c2ef0ad9a4f4ba" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddPerson</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1ab6e2338984d103dbe860ffdd36bfd30d" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddPerson</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a1125fef8ef7794f18d6e974d47384768" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddProperty</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1acd0bfeee2ecad64360da74bc8e430b8e" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddQuestion&lt; T &gt;</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a33665e3fe4e2ec358137397a210a0e8b" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>AddSection&lt; T &gt;</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a8b6c85c57f267c7631f18f5b91462c21" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillBaseTypeItem</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a08f6207bf606155d4e694a14deb7bbd4" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillBlob</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1ad1e6fd4894ac9aa49eb47d46a20a82af" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillCodeSystemItems</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a8dbf77a94aefd8e8b8188151096a362b" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillDisplayedTypeItems</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a17568cc99786cc052f1c7bae753a0691" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillIdentifiedTypeItems</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a2ac8ee7758708c08f592c6641d1f97f6" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillInjectedForm</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1ad023656d7e302f2297b32e086145e786" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillLinkText</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1afd2e1311f3730d110008e4ba859cd79c" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillListField</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1ae0da333e37603548f341d3433ca07a2c" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillListItemBase</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1afd5d4a899384ee74b81e0145a5ade884" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillListItemResponseField</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a5a32cbe1cfc05017af168d70d522b79d" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillLookupEndpoint</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a26691e9b9df00399328830e69f26f6b6" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillProperty</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a074d188a015e697e0c13cd96d0e1ea9a" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillQuestionItemBase</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a3322c61c67befad8e005105d88b30661" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillRepeatingTypeItemData</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a963368e9ef88f9923f94a6f4a0d189ff" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillRepeatingTypeItems</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1a7ff91c2cbe92ce7b4639434bd3cb1ac4" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillSectionBase</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1aa13767b1a37996b36b633bb7aa63b48e" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>FillUnits</name></member>
+      <member refid="interface_s_d_c_1_1_i_tree_builder_1aeefc5bf33b74e212d93a0fceee2f46d8" prot="public" virt="non-virtual"><scope>SDC::ITreeBuilder</scope><name>SerializeFormDesignTree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

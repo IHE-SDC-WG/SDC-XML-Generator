@@ -1,0 +1,878 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_object_change_tracker" kind="class" prot="public">
+    <compoundname>SDC::ObjectChangeTracker</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">INotifyPropertyChanged</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_object_change_tracker_1a7fc50dcb9ac4becd067d61b7e520cf1f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDC.ObjectChangeTracker.isDeserializingField</definition>
+        <argsstring></argsstring>
+        <name>isDeserializingField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="29" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a5c842e529c68db0dfaec4613fe800bb6" compoundref="_object_change_tracker_8cs" startline="406" endline="409">SDC.ObjectChangeTracker.OnDeserializedMethod</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a709e7b109cb5db78f2f6caba0efe78f6" compoundref="_object_change_tracker_8cs" startline="400" endline="403">SDC.ObjectChangeTracker.OnDeserializingMethod</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_object_change_tracker_1a8bd1288e67a39145bbf5219889cccc72" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1a19c72d240be716303eec4e0b44eb0979" kindref="member">ObjectState</ref></type>
+        <definition>ObjectState SDC.ObjectChangeTracker.originalobjectStateField</definition>
+        <argsstring></argsstring>
+        <name>originalobjectStateField</name>
+        <initializer>= ObjectState.Added</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="30" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a02f91766cc837117048f16fc0cc2c958" compoundref="_object_change_tracker_8cs" startline="200" endline="212">SDC.ObjectChangeTracker.ResetTracking</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a1bb305cec710d70b81e1c78b8dfd32a0" compoundref="_object_change_tracker_8cs" startline="85" endline="149">SDC.ObjectChangeTracker.UpdateChangeState</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_object_change_tracker_1a097e581f0662210dfbaea3b09a3bab77" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDC.ObjectChangeTracker.isInitilizedField</definition>
+        <argsstring></argsstring>
+        <name>isInitilizedField</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="31" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a196c09a6cc9380dbe1a6f8c0af8bad8d" compoundref="_object_change_tracker_8cs" startline="216" endline="264">SDC.ObjectChangeTracker.InitOriginalValue</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a622e92961f3dc1df7edc64ec4ac9e56b" compoundref="_object_change_tracker_8cs" startline="269" endline="306">SDC.ObjectChangeTracker.ResetOriginalValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_object_change_tracker_1ab9a505ffb4c60c629e146b88c05de0bd" prot="private" static="no" mutable="no">
+        <type>readonly ObservableCollection&lt; <ref refid="class_s_d_c_1_1_property_value_state" kindref="compound">PropertyValueState</ref> &gt;</type>
+        <definition>readonly ObservableCollection&lt;PropertyValueState&gt; SDC.ObjectChangeTracker.changeSetsField</definition>
+        <argsstring></argsstring>
+        <name>changeSetsField</name>
+        <initializer>= new ObservableCollection&lt;<ref refid="class_s_d_c_1_1_property_value_state" kindref="compound">PropertyValueState</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="32" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_object_change_tracker_1a537a78c019837db62a9c151e75504383" prot="private" static="no" mutable="no">
+        <type>Delegate</type>
+        <definition>Delegate SDC.ObjectChangeTracker.collectionChangedDelegateField</definition>
+        <argsstring></argsstring>
+        <name>collectionChangedDelegateField</name>
+        <initializer>= <ref refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd" kindref="member">null</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="33" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a196c09a6cc9380dbe1a6f8c0af8bad8d" compoundref="_object_change_tracker_8cs" startline="216" endline="264">SDC.ObjectChangeTracker.InitOriginalValue</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a622e92961f3dc1df7edc64ec4ac9e56b" compoundref="_object_change_tracker_8cs" startline="269" endline="306">SDC.ObjectChangeTracker.ResetOriginalValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_object_change_tracker_1a4cab02390140690cdebde240c511676f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDC.ObjectChangeTracker.objectTrackingEnabledField</definition>
+        <argsstring></argsstring>
+        <name>objectTrackingEnabledField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="35" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a719aab06eff5e3ba8d56a7019928bb67" compoundref="_object_change_tracker_8cs" startline="477" endline="503">SDC.ObjectChangeTracker.RecordAdditionToCollectionProperties</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1aaa620c7f0c45453cdac47d3e6def94eb" compoundref="_object_change_tracker_8cs" startline="417" endline="448">SDC.ObjectChangeTracker.RecordCurrentValue</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a8a274c0173bdca273f8dfc446f0734ae" compoundref="_object_change_tracker_8cs" startline="455" endline="469">SDC.ObjectChangeTracker.RecordOriginalToCollectionProperties</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1aeb0a8bfba0edf1ae319b6827918de943" compoundref="_object_change_tracker_8cs" startline="510" endline="539">SDC.ObjectChangeTracker.RecordRemovalFromCollectionProperties</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a02f91766cc837117048f16fc0cc2c958" compoundref="_object_change_tracker_8cs" startline="200" endline="212">SDC.ObjectChangeTracker.ResetTracking</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1adae97557a716bd5aebd3f12408fba80d" compoundref="_object_change_tracker_8cs" startline="173" endline="177">SDC.ObjectChangeTracker.StartTracking</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a7a34caf829a068be43db9e6b949d6fba" compoundref="_object_change_tracker_8cs" startline="192" endline="195">SDC.ObjectChangeTracker.StopTracking</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_object_change_tracker_1a05b2a40c47b9bb0183e2eea7420b626d" prot="private" static="no" mutable="no">
+        <type>readonly object</type>
+        <definition>readonly object SDC.ObjectChangeTracker.trackedObjectField</definition>
+        <argsstring></argsstring>
+        <name>trackedObjectField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="36" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a196c09a6cc9380dbe1a6f8c0af8bad8d" compoundref="_object_change_tracker_8cs" startline="216" endline="264">SDC.ObjectChangeTracker.InitOriginalValue</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a4ee24b9f7ac730df6f908ebef3759c5a" compoundref="_object_change_tracker_8cs" startline="46" endline="49">SDC.ObjectChangeTracker.ObjectChangeTracker</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a622e92961f3dc1df7edc64ec4ac9e56b" compoundref="_object_change_tracker_8cs" startline="269" endline="306">SDC.ObjectChangeTracker.ResetOriginalValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_object_change_tracker_1acf33b6c08876c6b148f9239a7b7444da" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_property_value_states_dictionary" kindref="compound">PropertyValueStatesDictionary</ref></type>
+        <definition>PropertyValueStatesDictionary SDC.ObjectChangeTracker.propertyValueStatesFields</definition>
+        <argsstring></argsstring>
+        <name>propertyValueStatesFields</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_object_change_tracker_1af63da24fbbbfbc895b48f0cee37fe264" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_objects_added_to_collection_properties" kindref="compound">ObjectsAddedToCollectionProperties</ref></type>
+        <definition>ObjectsAddedToCollectionProperties SDC.ObjectChangeTracker.objectsAddedToCollectionsField</definition>
+        <argsstring></argsstring>
+        <name>objectsAddedToCollectionsField</name>
+        <initializer>= new <ref refid="class_s_d_c_1_1_objects_added_to_collection_properties" kindref="compound">ObjectsAddedToCollectionProperties</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="41" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_object_change_tracker_1afd2ccb905c75ef9d1b159df5ab55c84e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_objects_removed_from_collection_properties" kindref="compound">ObjectsRemovedFromCollectionProperties</ref></type>
+        <definition>ObjectsRemovedFromCollectionProperties SDC.ObjectChangeTracker.objectsRemovedFromCollectionsField</definition>
+        <argsstring></argsstring>
+        <name>objectsRemovedFromCollectionsField</name>
+        <initializer>= new <ref refid="class_s_d_c_1_1_objects_removed_from_collection_properties" kindref="compound">ObjectsRemovedFromCollectionProperties</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="42" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_object_change_tracker_1aa35c1822546c00d989b6c8f066795266" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_objects_original_from_collection_properties" kindref="compound">ObjectsOriginalFromCollectionProperties</ref></type>
+        <definition>ObjectsOriginalFromCollectionProperties SDC.ObjectChangeTracker.objectsOriginalFromCollectionsField</definition>
+        <argsstring></argsstring>
+        <name>objectsOriginalFromCollectionsField</name>
+        <initializer>= new <ref refid="class_s_d_c_1_1_objects_original_from_collection_properties" kindref="compound">ObjectsOriginalFromCollectionProperties</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="43" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_object_change_tracker_1a84af5313420fe6dc25f5114874bc62d2" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1a19c72d240be716303eec4e0b44eb0979" kindref="member">ObjectState</ref></type>
+        <definition>ObjectState SDC.ObjectChangeTracker.stateField</definition>
+        <argsstring></argsstring>
+        <name>stateField</name>
+        <briefdescription>
+<para>indicate current state </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="68" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="68" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a1bb305cec710d70b81e1c78b8dfd32a0" compoundref="_object_change_tracker_8cs" startline="85" endline="149">SDC.ObjectChangeTracker.UpdateChangeState</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_s_d_c_1_1_object_change_tracker_1a9cab5a289fd5a7305fdaf55bb2f81454" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>EventHandler&lt; <ref refid="class_s_d_c_1_1_object_state_changing_event_args" kindref="compound">ObjectStateChangingEventArgs</ref> &gt;</type>
+        <definition>EventHandler&lt;ObjectStateChangingEventArgs&gt; SDC.ObjectChangeTracker.ObjectStateChanging</definition>
+        <argsstring></argsstring>
+        <name>ObjectStateChanging</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="53" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1ad538045b578fa4cf89782a743a6d7dde" compoundref="_object_change_tracker_8cs" startline="57" endline="63">SDC.ObjectChangeTracker.OnObjectStateChanging</referencedby>
+      </memberdef>
+      <memberdef kind="event" id="class_s_d_c_1_1_object_change_tracker_1adb08f9e731a08de5eacfea6f7439f046" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>PropertyChangedEventHandler</type>
+        <definition>PropertyChangedEventHandler SDC.ObjectChangeTracker.PropertyChanged</definition>
+        <argsstring></argsstring>
+        <name>PropertyChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="542" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="542" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1ae05c338071bf7bad1b507a22fa35f956" compoundref="_object_change_tracker_8cs" startline="548" endline="555">SDC.ObjectChangeTracker.OnPropertyChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_object_change_tracker_1a24808a8671934456023bc3d8f7520f9a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="namespace_s_d_c_1a19c72d240be716303eec4e0b44eb0979" kindref="member">ObjectState</ref></type>
+        <definition>ObjectState SDC.ObjectChangeTracker.State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <briefdescription>
+<para>Gets the state. </para>        </briefdescription>
+        <detaileddescription>
+<para>The state.</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="74" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="75" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1aaa620c7f0c45453cdac47d3e6def94eb" compoundref="_object_change_tracker_8cs" startline="417" endline="448">SDC.ObjectChangeTracker.RecordCurrentValue</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a1bb305cec710d70b81e1c78b8dfd32a0" compoundref="_object_change_tracker_8cs" startline="85" endline="149">SDC.ObjectChangeTracker.UpdateChangeState</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_object_change_tracker_1a037b1e850bf130669d7d9e09195b2289" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>ObservableCollection&lt; <ref refid="class_s_d_c_1_1_property_value_state" kindref="compound">PropertyValueState</ref> &gt;</type>
+        <definition>ObservableCollection&lt;PropertyValueState&gt; SDC.ObjectChangeTracker.ChangeSets</definition>
+        <argsstring></argsstring>
+        <name>ChangeSets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="151" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="152" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a1bb305cec710d70b81e1c78b8dfd32a0" compoundref="_object_change_tracker_8cs" startline="85" endline="149">SDC.ObjectChangeTracker.UpdateChangeState</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_object_change_tracker_1ab042471a84a9842f1417d39d9858a258" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool SDC.ObjectChangeTracker.ObjectTrackingEnabled</definition>
+        <argsstring></argsstring>
+        <name>ObjectTrackingEnabled</name>
+        <briefdescription>
+<para>Gets or sets a value indicating whether [change tracking enabled]. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>true</computeroutput> if [change tracking enabled]; otherwise, <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="165" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_object_change_tracker_1a99f7830f8f176bd81b8e812a26e3336f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_objects_removed_from_collection_properties" kindref="compound">ObjectsRemovedFromCollectionProperties</ref></type>
+        <definition>ObjectsRemovedFromCollectionProperties SDC.ObjectChangeTracker.ObjectsRemovedFromCollectionProperties</definition>
+        <argsstring></argsstring>
+        <name>ObjectsRemovedFromCollectionProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="374" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_object_change_tracker_1a1bf223588d182fe04ecd31fe5e0520b5" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_property_value_states_dictionary" kindref="compound">PropertyValueStatesDictionary</ref></type>
+        <definition>PropertyValueStatesDictionary SDC.ObjectChangeTracker.PropertyValueStates</definition>
+        <argsstring></argsstring>
+        <name>PropertyValueStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="380" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="381" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a1bb305cec710d70b81e1c78b8dfd32a0" compoundref="_object_change_tracker_8cs" startline="85" endline="149">SDC.ObjectChangeTracker.UpdateChangeState</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_object_change_tracker_1a2350ee1a7e83a23b9a2d710495a15337" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_objects_added_to_collection_properties" kindref="compound">ObjectsAddedToCollectionProperties</ref></type>
+        <definition>ObjectsAddedToCollectionProperties SDC.ObjectChangeTracker.ObjectsAddedToCollectionProperties</definition>
+        <argsstring></argsstring>
+        <name>ObjectsAddedToCollectionProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="386" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_object_change_tracker_1a163bf1670c075183c270e0ac30854fa4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_objects_original_from_collection_properties" kindref="compound">ObjectsOriginalFromCollectionProperties</ref></type>
+        <definition>ObjectsOriginalFromCollectionProperties SDC.ObjectChangeTracker.ObjectsOriginalFromCollectionProperties</definition>
+        <argsstring></argsstring>
+        <name>ObjectsOriginalFromCollectionProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="392" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1a4ee24b9f7ac730df6f908ebef3759c5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.ObjectChangeTracker.ObjectChangeTracker</definition>
+        <argsstring>(object trackedObject)</argsstring>
+        <name>ObjectChangeTracker</name>
+        <param>
+          <type>object</type>
+          <declname>trackedObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="46" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="46" bodyend="49"/>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a05b2a40c47b9bb0183e2eea7420b626d" compoundref="_object_change_tracker_8cs" startline="36">SDC.ObjectChangeTracker.trackedObjectField</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1adae97557a716bd5aebd3f12408fba80d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.StartTracking</definition>
+        <argsstring>()</argsstring>
+        <name>StartTracking</name>
+        <briefdescription>
+<para>Starts record changes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="173" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="173" bodyend="177"/>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a4cab02390140690cdebde240c511676f" compoundref="_object_change_tracker_8cs" startline="35">SDC.ObjectChangeTracker.objectTrackingEnabledField</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a02f91766cc837117048f16fc0cc2c958" compoundref="_object_change_tracker_8cs" startline="200" endline="212">SDC.ObjectChangeTracker.ResetTracking</references>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a2c7eda6c8a3270911d55daa6e1f3a891" compoundref="_object_change_tracker_8cs" startline="182" endline="187">SDC.ObjectChangeTracker.StartTracking</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1a2c7eda6c8a3270911d55daa6e1f3a891" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.StartTracking</definition>
+        <argsstring>(bool keepLastRecords)</argsstring>
+        <name>StartTracking</name>
+        <param>
+          <type>bool</type>
+          <declname>keepLastRecords</declname>
+        </param>
+        <briefdescription>
+<para>Starts record changes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="182" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="182" bodyend="187"/>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a4cab02390140690cdebde240c511676f" compoundref="_object_change_tracker_8cs" startline="35">SDC.ObjectChangeTracker.objectTrackingEnabledField</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1adae97557a716bd5aebd3f12408fba80d" compoundref="_object_change_tracker_8cs" startline="173" endline="177">SDC.ObjectChangeTracker.StartTracking</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1a7a34caf829a068be43db9e6b949d6fba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.StopTracking</definition>
+        <argsstring>()</argsstring>
+        <name>StopTracking</name>
+        <briefdescription>
+<para>Starts record changes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="192" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="192" bodyend="195"/>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a4cab02390140690cdebde240c511676f" compoundref="_object_change_tracker_8cs" startline="35">SDC.ObjectChangeTracker.objectTrackingEnabledField</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1a02f91766cc837117048f16fc0cc2c958" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.ResetTracking</definition>
+        <argsstring>()</argsstring>
+        <name>ResetTracking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="200" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="200" bodyend="212"/>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a196c09a6cc9380dbe1a6f8c0af8bad8d" compoundref="_object_change_tracker_8cs" startline="216" endline="264">SDC.ObjectChangeTracker.InitOriginalValue</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a4cab02390140690cdebde240c511676f" compoundref="_object_change_tracker_8cs" startline="35">SDC.ObjectChangeTracker.objectTrackingEnabledField</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a8bd1288e67a39145bbf5219889cccc72" compoundref="_object_change_tracker_8cs" startline="30">SDC.ObjectChangeTracker.originalobjectStateField</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a622e92961f3dc1df7edc64ec4ac9e56b" compoundref="_object_change_tracker_8cs" startline="269" endline="306">SDC.ObjectChangeTracker.ResetOriginalValue</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a1bb305cec710d70b81e1c78b8dfd32a0" compoundref="_object_change_tracker_8cs" startline="85" endline="149">SDC.ObjectChangeTracker.UpdateChangeState</references>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1adae97557a716bd5aebd3f12408fba80d" compoundref="_object_change_tracker_8cs" startline="173" endline="177">SDC.ObjectChangeTracker.StartTracking</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1a709e7b109cb5db78f2f6caba0efe78f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.OnDeserializingMethod</definition>
+        <argsstring>(StreamingContext context)</argsstring>
+        <name>OnDeserializingMethod</name>
+        <param>
+          <type>StreamingContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="400" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="400" bodyend="403"/>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a7fc50dcb9ac4becd067d61b7e520cf1f" compoundref="_object_change_tracker_8cs" startline="29">SDC.ObjectChangeTracker.isDeserializingField</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1a5c842e529c68db0dfaec4613fe800bb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.OnDeserializedMethod</definition>
+        <argsstring>(StreamingContext context)</argsstring>
+        <name>OnDeserializedMethod</name>
+        <param>
+          <type>StreamingContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="406" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="406" bodyend="409"/>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a7fc50dcb9ac4becd067d61b7e520cf1f" compoundref="_object_change_tracker_8cs" startline="29">SDC.ObjectChangeTracker.isDeserializingField</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1aaa620c7f0c45453cdac47d3e6def94eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.RecordCurrentValue</definition>
+        <argsstring>(string propertyName, object value)</argsstring>
+        <name>RecordCurrentValue</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>propertyName</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Captures the original value for a property that is changing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>propertyName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="417" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="417" bodyend="448"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a4cab02390140690cdebde240c511676f" compoundref="_object_change_tracker_8cs" startline="35">SDC.ObjectChangeTracker.objectTrackingEnabledField</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a24808a8671934456023bc3d8f7520f9a" compoundref="_object_change_tracker_8cs" startline="75">SDC.ObjectChangeTracker.State</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a1bb305cec710d70b81e1c78b8dfd32a0" compoundref="_object_change_tracker_8cs" startline="85" endline="149">SDC.ObjectChangeTracker.UpdateChangeState</references>
+        <references refid="namespace_s_d_c_1af2209f66af49f85f2c41565b139f8efbab2145aac704ce76dbe1ac7adac535b23">SDC.var</references>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a196c09a6cc9380dbe1a6f8c0af8bad8d" compoundref="_object_change_tracker_8cs" startline="216" endline="264">SDC.ObjectChangeTracker.InitOriginalValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1ae05c338071bf7bad1b507a22fa35f956" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ObjectChangeTracker.OnPropertyChanged</definition>
+        <argsstring>(string info)</argsstring>
+        <name>OnPropertyChanged</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Called when [property changed]. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The info.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="548" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="548" bodyend="555"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1adb08f9e731a08de5eacfea6f7439f046" compoundref="_object_change_tracker_8cs" startline="542">SDC.ObjectChangeTracker.PropertyChanged</references>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a1bb305cec710d70b81e1c78b8dfd32a0" compoundref="_object_change_tracker_8cs" startline="85" endline="149">SDC.ObjectChangeTracker.UpdateChangeState</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1ad538045b578fa4cf89782a743a6d7dde" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ObjectChangeTracker.OnObjectStateChanging</definition>
+        <argsstring>(ObjectState newState)</argsstring>
+        <name>OnObjectStateChanging</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1a19c72d240be716303eec4e0b44eb0979" kindref="member">ObjectState</ref></type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="57" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="57" bodyend="63"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a9cab5a289fd5a7305fdaf55bb2f81454" compoundref="_object_change_tracker_8cs" startline="53">SDC.ObjectChangeTracker.ObjectStateChanging</references>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a1bb305cec710d70b81e1c78b8dfd32a0" compoundref="_object_change_tracker_8cs" startline="85" endline="149">SDC.ObjectChangeTracker.UpdateChangeState</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1a1bb305cec710d70b81e1c78b8dfd32a0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.UpdateChangeState</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateChangeState</name>
+        <briefdescription>
+<para>Updates the state of the change. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="85" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="85" bodyend="149"/>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a037b1e850bf130669d7d9e09195b2289" compoundref="_object_change_tracker_8cs" startline="152">SDC.ObjectChangeTracker.ChangeSets</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1ad538045b578fa4cf89782a743a6d7dde" compoundref="_object_change_tracker_8cs" startline="57" endline="63">SDC.ObjectChangeTracker.OnObjectStateChanging</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1ae05c338071bf7bad1b507a22fa35f956" compoundref="_object_change_tracker_8cs" startline="548" endline="555">SDC.ObjectChangeTracker.OnPropertyChanged</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a8bd1288e67a39145bbf5219889cccc72" compoundref="_object_change_tracker_8cs" startline="30">SDC.ObjectChangeTracker.originalobjectStateField</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a1bf223588d182fe04ecd31fe5e0520b5" compoundref="_object_change_tracker_8cs" startline="381">SDC.ObjectChangeTracker.PropertyValueStates</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a24808a8671934456023bc3d8f7520f9a" compoundref="_object_change_tracker_8cs" startline="75">SDC.ObjectChangeTracker.State</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a84af5313420fe6dc25f5114874bc62d2" compoundref="_object_change_tracker_8cs" startline="68">SDC.ObjectChangeTracker.stateField</references>
+        <references refid="namespace_s_d_c_1af2209f66af49f85f2c41565b139f8efbab2145aac704ce76dbe1ac7adac535b23">SDC.var</references>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1aaa620c7f0c45453cdac47d3e6def94eb" compoundref="_object_change_tracker_8cs" startline="417" endline="448">SDC.ObjectChangeTracker.RecordCurrentValue</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a02f91766cc837117048f16fc0cc2c958" compoundref="_object_change_tracker_8cs" startline="200" endline="212">SDC.ObjectChangeTracker.ResetTracking</referencedby>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1ad49b4c7e6b3b8f83facb24f203365d1d" compoundref="_object_change_tracker_8cs" startline="314" endline="370">SDC.ObjectChangeTracker.TrackableCollectionChanged</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1a196c09a6cc9380dbe1a6f8c0af8bad8d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.InitOriginalValue</definition>
+        <argsstring>()</argsstring>
+        <name>InitOriginalValue</name>
+        <briefdescription>
+<para>Inits the original value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="216" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="216" bodyend="264"/>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a537a78c019837db62a9c151e75504383" compoundref="_object_change_tracker_8cs" startline="33">SDC.ObjectChangeTracker.collectionChangedDelegateField</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a097e581f0662210dfbaea3b09a3bab77" compoundref="_object_change_tracker_8cs" startline="31">SDC.ObjectChangeTracker.isInitilizedField</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1aaa620c7f0c45453cdac47d3e6def94eb" compoundref="_object_change_tracker_8cs" startline="417" endline="448">SDC.ObjectChangeTracker.RecordCurrentValue</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a8a274c0173bdca273f8dfc446f0734ae" compoundref="_object_change_tracker_8cs" startline="455" endline="469">SDC.ObjectChangeTracker.RecordOriginalToCollectionProperties</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a05b2a40c47b9bb0183e2eea7420b626d" compoundref="_object_change_tracker_8cs" startline="36">SDC.ObjectChangeTracker.trackedObjectField</references>
+        <references refid="namespace_s_d_c_1af2209f66af49f85f2c41565b139f8efbab2145aac704ce76dbe1ac7adac535b23">SDC.var</references>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a02f91766cc837117048f16fc0cc2c958" compoundref="_object_change_tracker_8cs" startline="200" endline="212">SDC.ObjectChangeTracker.ResetTracking</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1a622e92961f3dc1df7edc64ec4ac9e56b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.ResetOriginalValue</definition>
+        <argsstring>()</argsstring>
+        <name>ResetOriginalValue</name>
+        <briefdescription>
+<para>Resets the original value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="269" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="269" bodyend="306"/>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a537a78c019837db62a9c151e75504383" compoundref="_object_change_tracker_8cs" startline="33">SDC.ObjectChangeTracker.collectionChangedDelegateField</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a097e581f0662210dfbaea3b09a3bab77" compoundref="_object_change_tracker_8cs" startline="31">SDC.ObjectChangeTracker.isInitilizedField</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a05b2a40c47b9bb0183e2eea7420b626d" compoundref="_object_change_tracker_8cs" startline="36">SDC.ObjectChangeTracker.trackedObjectField</references>
+        <references refid="namespace_s_d_c_1af2209f66af49f85f2c41565b139f8efbab2145aac704ce76dbe1ac7adac535b23">SDC.var</references>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a02f91766cc837117048f16fc0cc2c958" compoundref="_object_change_tracker_8cs" startline="200" endline="212">SDC.ObjectChangeTracker.ResetTracking</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1ad49b4c7e6b3b8f83facb24f203365d1d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.TrackableCollectionChanged</definition>
+        <argsstring>(object sender, NotifyCollectionChangedEventArgs e, string propertyName)</argsstring>
+        <name>TrackableCollectionChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>NotifyCollectionChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>propertyName</declname>
+        </param>
+        <briefdescription>
+<para>Trackables the collection changed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sender.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The NotifyTrackableCollectionChangedEventArgs instance containing the event data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>propertyName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="314" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="314" bodyend="370"/>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a719aab06eff5e3ba8d56a7019928bb67" compoundref="_object_change_tracker_8cs" startline="477" endline="503">SDC.ObjectChangeTracker.RecordAdditionToCollectionProperties</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1aeb0a8bfba0edf1ae319b6827918de943" compoundref="_object_change_tracker_8cs" startline="510" endline="539">SDC.ObjectChangeTracker.RecordRemovalFromCollectionProperties</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a1bb305cec710d70b81e1c78b8dfd32a0" compoundref="_object_change_tracker_8cs" startline="85" endline="149">SDC.ObjectChangeTracker.UpdateChangeState</references>
+        <references refid="namespace_s_d_c_1af2209f66af49f85f2c41565b139f8efbab2145aac704ce76dbe1ac7adac535b23">SDC.var</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1a8a274c0173bdca273f8dfc446f0734ae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.RecordOriginalToCollectionProperties</definition>
+        <argsstring>(string propertyName, object value)</argsstring>
+        <name>RecordOriginalToCollectionProperties</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>propertyName</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Records original items value of collection to collection valued properties on SelfTracking Entities. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>propertyName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="455" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="455" bodyend="469"/>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a4cab02390140690cdebde240c511676f" compoundref="_object_change_tracker_8cs" startline="35">SDC.ObjectChangeTracker.objectTrackingEnabledField</references>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1a196c09a6cc9380dbe1a6f8c0af8bad8d" compoundref="_object_change_tracker_8cs" startline="216" endline="264">SDC.ObjectChangeTracker.InitOriginalValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1a719aab06eff5e3ba8d56a7019928bb67" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.RecordAdditionToCollectionProperties</definition>
+        <argsstring>(string propertyName, object value)</argsstring>
+        <name>RecordAdditionToCollectionProperties</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>propertyName</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Records an addition to collection valued properties on SelfTracking Entities. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>propertyName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="477" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="477" bodyend="503"/>
+        <references refid="namespace_s_d_c_1a9cefed2227762f1e9eb02e875ca4b224ae93f994f01c537c4e2f7d8528c3eb5e9">SDC.Count</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a4cab02390140690cdebde240c511676f" compoundref="_object_change_tracker_8cs" startline="35">SDC.ObjectChangeTracker.objectTrackingEnabledField</references>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1ad49b4c7e6b3b8f83facb24f203365d1d" compoundref="_object_change_tracker_8cs" startline="314" endline="370">SDC.ObjectChangeTracker.TrackableCollectionChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_object_change_tracker_1aeb0a8bfba0edf1ae319b6827918de943" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SDC.ObjectChangeTracker.RecordRemovalFromCollectionProperties</definition>
+        <argsstring>(string propertyName, object value)</argsstring>
+        <name>RecordRemovalFromCollectionProperties</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>propertyName</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Records a removal to collection valued properties on SelfTracking Entities. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>propertyName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="510" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="510" bodyend="539"/>
+        <references refid="namespace_s_d_c_1a9cefed2227762f1e9eb02e875ca4b224ae93f994f01c537c4e2f7d8528c3eb5e9">SDC.Count</references>
+        <references refid="class_s_d_c_1_1_object_change_tracker_1a4cab02390140690cdebde240c511676f" compoundref="_object_change_tracker_8cs" startline="35">SDC.ObjectChangeTracker.objectTrackingEnabledField</references>
+        <referencedby refid="class_s_d_c_1_1_object_change_tracker_1ad49b4c7e6b3b8f83facb24f203365d1d" compoundref="_object_change_tracker_8cs" startline="314" endline="370">SDC.ObjectChangeTracker.TrackableCollectionChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6596">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="6595">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="6596" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6602">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="6600" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6598">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="6600">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="6599">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="6600" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6604">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="6597">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="6598" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6599" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="6601" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="6602" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="6603" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="6601">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="6600" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6603">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="6604" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" line="26" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ObjectChangeTracker.cs" bodystart="25" bodyend="556"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a037b1e850bf130669d7d9e09195b2289" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>ChangeSets</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1ab9a505ffb4c60c629e146b88c05de0bd" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>changeSetsField</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a537a78c019837db62a9c151e75504383" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>collectionChangedDelegateField</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a196c09a6cc9380dbe1a6f8c0af8bad8d" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>InitOriginalValue</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a7fc50dcb9ac4becd067d61b7e520cf1f" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>isDeserializingField</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a097e581f0662210dfbaea3b09a3bab77" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>isInitilizedField</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a4ee24b9f7ac730df6f908ebef3759c5a" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>ObjectChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a2350ee1a7e83a23b9a2d710495a15337" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>ObjectsAddedToCollectionProperties</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1af63da24fbbbfbc895b48f0cee37fe264" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>objectsAddedToCollectionsField</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a163bf1670c075183c270e0ac30854fa4" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>ObjectsOriginalFromCollectionProperties</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1aa35c1822546c00d989b6c8f066795266" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>objectsOriginalFromCollectionsField</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a99f7830f8f176bd81b8e812a26e3336f" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>ObjectsRemovedFromCollectionProperties</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1afd2ccb905c75ef9d1b159df5ab55c84e" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>objectsRemovedFromCollectionsField</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a9cab5a289fd5a7305fdaf55bb2f81454" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>ObjectStateChanging</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1ab042471a84a9842f1417d39d9858a258" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>ObjectTrackingEnabled</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a4cab02390140690cdebde240c511676f" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>objectTrackingEnabledField</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a5c842e529c68db0dfaec4613fe800bb6" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>OnDeserializedMethod</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a709e7b109cb5db78f2f6caba0efe78f6" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>OnDeserializingMethod</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1ad538045b578fa4cf89782a743a6d7dde" prot="protected" virt="virtual"><scope>SDC::ObjectChangeTracker</scope><name>OnObjectStateChanging</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1ae05c338071bf7bad1b507a22fa35f956" prot="public" virt="virtual"><scope>SDC::ObjectChangeTracker</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a8bd1288e67a39145bbf5219889cccc72" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>originalobjectStateField</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1adb08f9e731a08de5eacfea6f7439f046" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a1bf223588d182fe04ecd31fe5e0520b5" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>PropertyValueStates</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1acf33b6c08876c6b148f9239a7b7444da" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>propertyValueStatesFields</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a719aab06eff5e3ba8d56a7019928bb67" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>RecordAdditionToCollectionProperties</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1aaa620c7f0c45453cdac47d3e6def94eb" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>RecordCurrentValue</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a8a274c0173bdca273f8dfc446f0734ae" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>RecordOriginalToCollectionProperties</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1aeb0a8bfba0edf1ae319b6827918de943" prot="package" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>RecordRemovalFromCollectionProperties</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a622e92961f3dc1df7edc64ec4ac9e56b" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>ResetOriginalValue</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a02f91766cc837117048f16fc0cc2c958" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>ResetTracking</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1adae97557a716bd5aebd3f12408fba80d" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>StartTracking</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a2c7eda6c8a3270911d55daa6e1f3a891" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>StartTracking</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a24808a8671934456023bc3d8f7520f9a" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>State</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a84af5313420fe6dc25f5114874bc62d2" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>stateField</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a7a34caf829a068be43db9e6b949d6fba" prot="public" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>StopTracking</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1ad49b4c7e6b3b8f83facb24f203365d1d" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>TrackableCollectionChanged</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a05b2a40c47b9bb0183e2eea7420b626d" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>trackedObjectField</name></member>
+      <member refid="class_s_d_c_1_1_object_change_tracker_1a1bb305cec710d70b81e1c78b8dfd32a0" prot="private" virt="non-virtual"><scope>SDC::ObjectChangeTracker</scope><name>UpdateChangeState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1593 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_act_inject_type" kind="class" prot="public">
+    <compoundname>SDC::ActInjectType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_inject_form_type" prot="public" virt="non-virtual">SDC.InjectFormType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_inject_form_type" prot="public" virt="non-virtual">SDC.InjectFormType</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_act_inject_type_1a12f18aa1f4b3bb5d37185864bc0cf456" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.ActInjectType::_targetNames</definition>
+        <argsstring></argsstring>
+        <name>_targetNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="34" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_act_inject_type_1a3ff5d16db81f7b6f510c3263713c5508" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.ActInjectType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_act_inject_type_1a45aef60163dee8e490f8c00b7c7328e4" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.ActInjectType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="36" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_act_inject_type_1a1e9bb5a42eade5eb477ddcb1adf14f3c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>string SDC.ActInjectType::targetNames</definition>
+        <argsstring></argsstring>
+        <name>targetNames</name>
+        <briefdescription>
+<para>The names of the parent items that will have the form (or form section) injected as child node(s). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="43" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_act_inject_type_1a07d0ed30a0ebcfeaf0419e429b4fcece" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_act_inject_type_8cs" startline="94" endline="97">SDC.ActInjectType.ShouldSerializetargetNames</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_act_inject_type_1a6aa6b9d50490e0bcd6b230ad7d0a53c8" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.ActInjectType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="55" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_act_inject_type_1ab85722ff94196f98a33e3bdbf5ee901a" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_act_inject_type_8cs" startline="161" endline="176">SDC.ActInjectType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_act_inject_type_1af907e80cb2a798adbed1d1cae6398f39" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.ActInjectType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="79" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1ac1ac3d72223c48a4d98539c0ca35e935" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.ActInjectType.ActInjectType</definition>
+        <argsstring>()</argsstring>
+        <name>ActInjectType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="151" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="151" bodyend="151"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a60bcaa1f4c3e0d3e6a6539c6663b8609" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.ActInjectType.ActInjectType</definition>
+        <argsstring>(ThenType parentNode)</argsstring>
+        <name>ActInjectType</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_then_type" kindref="compound">ThenType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="152" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="152" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a07d0ed30a0ebcfeaf0419e429b4fcece" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ActInjectType.ShouldSerializetargetNames</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializetargetNames</name>
+        <briefdescription>
+<para>Test whether targetNames should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="70" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1aeabc9ef5de2c0787d1c2c4491d85af2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ActInjectType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_inject_form_type_1ac8f02477d7d9ce863f26af1272f370ce">Serialize</reimplements>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="80" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="80" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a1d390ae6db03ce5d8a2a648541df6a49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ActInjectType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_inject_form_type_1a09c3f5a9b049b230f961ff3974945794">Serialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="110" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="110" bodyend="113"/>
+        <referencedby refid="class_s_d_c_1_1_act_inject_type_1aff3aee643ddea6e779a800f0d822ef5a" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_act_inject_type_8cs" startline="205" endline="223">SDC.ActInjectType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a7e425d1114873ab7341a0baf45f8dc13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ActInjectType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_inject_form_type_1a3708ea11582b64b105546ccfefc91319">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="173" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="173" bodyend="186"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_act_inject_type_1a3930bde77666cfb6c0c20bafd72522a2" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_act_inject_type_8cs" startline="190" endline="203">SDC.ActInjectType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1abf18ea8edcfcadbae59fa07f161421f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ActInjectType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_inject_form_type_1a3b7ae5eb9885a30fdeb81b1a7aece344">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="188" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1aff3aee643ddea6e779a800f0d822ef5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ActInjectType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_inject_form_type_1ac2c045605bea3309a100e30e6c66905b">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="193" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a2c2b4b09eea080bc86f233465ea52653" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ActInjectType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_inject_form_type_1a1d35106c11aca50895534dc89d8acf98">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="198" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="198" bodyend="215"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a07d0ed30a0ebcfeaf0419e429b4fcece" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ActInjectType.ShouldSerializetargetNames</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializetargetNames</name>
+        <briefdescription>
+<para>Test whether targetNames should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="94" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="94" bodyend="97"/>
+        <references refid="class_s_d_c_1_1_act_inject_type_1a1e9bb5a42eade5eb477ddcb1adf14f3c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_act_inject_type_8cs" startline="44">SDC.ActInjectType.targetNames</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a1d390ae6db03ce5d8a2a648541df6a49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ActInjectType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_inject_form_type_1a09c3f5a9b049b230f961ff3974945794">Serialize</reimplements>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="104" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="104" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a3930bde77666cfb6c0c20bafd72522a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ActInjectType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_inject_form_type_1ab27c22dffce868ea8bdfa32d20ffd49e">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="190" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="190" bodyend="203"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_act_inject_type_1a7e425d1114873ab7341a0baf45f8dc13" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_act_inject_type_8cs" startline="173" endline="186">SDC.ActInjectType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1aff3aee643ddea6e779a800f0d822ef5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ActInjectType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_inject_form_type_1ac2c045605bea3309a100e30e6c66905b">SaveToFile</reimplements>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="205" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="205" bodyend="223"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_act_inject_type_1a1d390ae6db03ce5d8a2a648541df6a49" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_act_inject_type_8cs" startline="110" endline="113">SDC.ActInjectType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a005ebe237b730b09abdb44ca426aaaf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+        <definition>virtual ActInjectType SDC.ActInjectType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_inject_form_type_1ac71bdd0a1797820543684884a8f9f4f0">Clone</reimplements>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="284" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="284" bodyend="287"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a97f0a5241e57c27b7f125f95c1c45a0c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActInjectType.Deserialize</definition>
+        <argsstring>(string input, out ActInjectType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="122" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="122" bodyend="136"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_act_inject_type_1a7f3a1ffe17be94e643c097f5f0ab1a97" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_act_inject_type_8cs" startline="139" endline="153">SDC.ActInjectType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_act_inject_type_1a07fd68e800244a5539b291840ded24ab" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_act_inject_type_8cs" startline="254" endline="278">SDC.ActInjectType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a59e600ff04364d2ef84c54cb11b979ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActInjectType.Deserialize</definition>
+        <argsstring>(string input, out ActInjectType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="138" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="138" bodyend="142"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1ab85722ff94196f98a33e3bdbf5ee901a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+        <definition>static new ActInjectType SDC.ActInjectType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="144" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="144" bodyend="159"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a3a195d5c82c9fc8196751745409dd782" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+        <definition>static ActInjectType SDC.ActInjectType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="161" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a4ba5fefee71c286780b04e44d96772b5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActInjectType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out ActInjectType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="224" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="224" bodyend="238"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_act_inject_type_1ad434f93f2b1a1f7fa390a2f2403a84d9" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_act_inject_type_8cs" startline="232" endline="246">SDC.ActInjectType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1af15515af4596763949edc87a70597ac5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActInjectType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ActInjectType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="240" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a092fc856fcfd40f224a0fb67566c4fc7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActInjectType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ActInjectType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="245" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="245" bodyend="249"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1aca0a60088d7ec85e8fc337b0d428ebe7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+        <definition>static ActInjectType SDC.ActInjectType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="251" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="251" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a06f2d509b58d27f1f15ead4654c92b06" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+        <definition>static new ActInjectType SDC.ActInjectType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" line="256" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ActInjectType.cs" bodystart="256" bodyend="280"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a7f3a1ffe17be94e643c097f5f0ab1a97" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActInjectType.Deserialize</definition>
+        <argsstring>(string input, out ActInjectType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="139" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="139" bodyend="153"/>
+        <references refid="class_s_d_c_1_1_act_inject_type_1a97f0a5241e57c27b7f125f95c1c45a0c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_act_inject_type_8cs" startline="122" endline="136">SDC.ActInjectType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a59e600ff04364d2ef84c54cb11b979ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActInjectType.Deserialize</definition>
+        <argsstring>(string input, out ActInjectType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="155" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="155" bodyend="159"/>
+        <references refid="class_s_d_c_1_1_act_inject_type_1a97f0a5241e57c27b7f125f95c1c45a0c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_act_inject_type_8cs" startline="122" endline="136">SDC.ActInjectType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1ab85722ff94196f98a33e3bdbf5ee901a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+        <definition>static new ActInjectType SDC.ActInjectType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="161" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="161" bodyend="176"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_act_inject_type_1a6aa6b9d50490e0bcd6b230ad7d0a53c8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_act_inject_type_8cs" startline="56">SDC.ActInjectType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1aee91e2aa0f151a73281faaea8eb243e9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+        <definition>static ActInjectType SDC.ActInjectType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="178" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="178" bodyend="181"/>
+        <references refid="class_s_d_c_1_1_act_inject_type_1a6aa6b9d50490e0bcd6b230ad7d0a53c8" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_act_inject_type_8cs" startline="56">SDC.ActInjectType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1ad434f93f2b1a1f7fa390a2f2403a84d9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActInjectType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ActInjectType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="232" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="232" bodyend="246"/>
+        <references refid="class_s_d_c_1_1_act_inject_type_1a4ba5fefee71c286780b04e44d96772b5" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_act_inject_type_8cs" startline="224" endline="238">SDC.ActInjectType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a092fc856fcfd40f224a0fb67566c4fc7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ActInjectType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ActInjectType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="248" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="248" bodyend="252"/>
+        <references refid="class_s_d_c_1_1_act_inject_type_1a4ba5fefee71c286780b04e44d96772b5" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_act_inject_type_8cs" startline="224" endline="238">SDC.ActInjectType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_act_inject_type_1a07fd68e800244a5539b291840ded24ab" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_act_inject_type" kindref="compound">ActInjectType</ref></type>
+        <definition>static new ActInjectType SDC.ActInjectType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" line="254" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ActInjectType.cs" bodystart="254" bodyend="278"/>
+        <references refid="class_s_d_c_1_1_act_inject_type_1a97f0a5241e57c27b7f125f95c1c45a0c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_act_inject_type_8cs" startline="122" endline="136">SDC.ActInjectType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Inject a form or part of a form at the specified location. The injected section may come from the current form. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="75">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="72">
+        <label>FormDesignType</label>
+        <link refid="class_s_d_c_1_1_form_design_type"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>SDC.ActInjectType</label>
+        <link refid="class_s_d_c_1_1_act_inject_type"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>InjectFormType</label>
+        <link refid="class_s_d_c_1_1_inject_form_type"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="105">
+        <label>PredicateType</label>
+        <link refid="class_s_d_c_1_1_predicate_type"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+        <childnode refid="93" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="94" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="111" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="96">
+        <label>SDC.RulesType</label>
+        <link refid="class_s_d_c_1_1_rules_type"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="97" relation="usage">
+          <edgelabel>_items</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="82">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+        <childnode refid="84" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="92" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="93" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="94" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="101">
+        <label>DisplayedType</label>
+        <link refid="class_s_d_c_1_1_displayed_type"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+        <childnode refid="103" relation="usage">
+          <edgelabel>_deActivateIf</edgelabel>
+          <edgelabel>_activateIf</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="100">
+        <label>RepeatingType</label>
+        <link refid="class_s_d_c_1_1_repeating_type"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="89">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="87">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="114">
+        <label>SDC.ChildItemsType</label>
+        <link refid="class_s_d_c_1_1_child_items_type"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="79">
+        <label>FormDesignType</label>
+        <link refid="class_s_d_c_1_1_form_design_type"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+        <childnode refid="95" relation="usage">
+          <edgelabel>_beforeCloseForm</edgelabel>
+          <edgelabel>_beforeShowForm</edgelabel>
+          <edgelabel>_beforeLoadData</edgelabel>
+          <edgelabel>_beforeLoadForm</edgelabel>
+          <edgelabel>_beforeDataSubmit</edgelabel>
+        </childnode>
+        <childnode refid="96" relation="usage">
+          <edgelabel>_rules</edgelabel>
+        </childnode>
+        <childnode refid="98" relation="usage">
+          <edgelabel>_body</edgelabel>
+          <edgelabel>_footer</edgelabel>
+          <edgelabel>_header</edgelabel>
+        </childnode>
+        <childnode refid="94" relation="usage">
+          <edgelabel>_responseTypeEnum</edgelabel>
+          <edgelabel>_responseStatusEnum</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="86">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="97">
+        <label>SDC.RulesCollectionType</label>
+        <link refid="class_s_d_c_1_1_rules_collection_type"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>SDC.ExceptionType</label>
+        <link refid="class_s_d_c_1_1_exception_type"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="94" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="95">
+        <label>SDC.EventType</label>
+        <link refid="class_s_d_c_1_1_event_type"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>IParent</label>
+        <link refid="interface_s_d_c_1_1_i_parent"/>
+      </node>
+      <node id="106">
+        <label>ReturnBoolType</label>
+        <link refid="class_s_d_c_1_1_return_bool_type"/>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+        <childnode refid="109" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="107">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="108" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="80">
+        <label>IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="91">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="110">
+        <label>boolean_Stype</label>
+        <link refid="class_s_d_c_1_1boolean___stype"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="94" relation="usage">
+          <edgelabel>_val</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="85">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+        <childnode refid="86" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="89" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="90" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="103">
+        <label>SDC.WatchedPropertyType</label>
+        <link refid="class_s_d_c_1_1_watched_property_type"/>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="94">
+        <label>System</label>
+      </node>
+      <node id="99">
+        <label>SectionBaseType</label>
+        <link refid="class_s_d_c_1_1_section_base_type"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="94" relation="usage">
+          <edgelabel>_responseTypeEnum</edgelabel>
+          <edgelabel>_responseStatusEnum</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="111">
+        <label>SDC.ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="88">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>SDC.ActInjectType</label>
+        <link refid="class_s_d_c_1_1_act_inject_type"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="84">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="81">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="98">
+        <label>SDC.SectionItemType</label>
+        <link refid="class_s_d_c_1_1_section_item_type"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+        <childnode refid="114" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="90">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="91" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>InjectFormType</label>
+        <link refid="class_s_d_c_1_1_inject_form_type"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+        <childnode refid="84" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="104">
+        <label>IfType</label>
+        <link refid="class_s_d_c_1_1_if_type"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="111" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="112">
+        <label>IChildItems</label>
+      </node>
+      <node id="102">
+        <label>IDisplayedType</label>
+        <link refid="interface_s_d_c_1_1_i_displayed_type"/>
+      </node>
+      <node id="109">
+        <label>SDC.boolean_DEtype</label>
+        <link refid="class_s_d_c_1_1boolean___d_etype"/>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="93">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+        <childnode refid="84" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="92" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="93" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="94" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="150" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="149" bodyend="153"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a12f18aa1f4b3bb5d37185864bc0cf456" prot="private" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>_targetNames</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1ac1ac3d72223c48a4d98539c0ca35e935" prot="protected" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>ActInjectType</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a60bcaa1f4c3e0d3e6a6539c6663b8609" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>ActInjectType</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a108c28a40850833a8d5d4e6e1d0c928e" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>AddBody</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a1d7edea2ed169c72698efd8cd2a62fb3" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>AddBody</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a4b65dab3574ee5bf0c1f10fe84fd17e1" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>AddFooter</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a1d560726bfd43d931345a50dcdd3f696" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>AddFooter</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a5b30227adbba2b192afd52c67f564435" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>AddHeader</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a5be93643dd4cb7f9b900a6d65c0002c6" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>AddHeader</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a4a15a15afee7c1cd58b957fa4d27c0a9" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>AddRules</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a4a15a15afee7c1cd58b957fa4d27c0a9" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>AddRules</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a81701efb96fd7ca5703a8e551b42520f" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>basedOnURI</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual" ambiguityscope="SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a14e59e1eabccda686a73a95cbd50ef2c" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>baseURI</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a14e59e1eabccda686a73a95cbd50ef2c" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>baseURI</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1ad265dada19c8cfb0fcd5e7fb666cb6ae" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>BeforeCloseForm</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1af1640e2ab1f22547caab4ded76b805d6" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>BeforeDataSubmit</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a7e7000aec27df95ffb4c38de77842351" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>BeforeLoadData</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1af0e7bb84a2d421cc78763fe66149a295" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>BeforeLoadForm</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1aed019c4557df87c971af6aed9f18c3b1" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>BeforeShowForm</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1aac8051ad3d9019aedcbc9f7360eaf0ee" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Body</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1af907e80cb2a798adbed1d1cae6398f39" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a3ff5d16db81f7b6f510c3263713c5508" prot="private" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a005ebe237b730b09abdb44ca426aaaf3" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual" ambiguityscope="SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a97f0a5241e57c27b7f125f95c1c45a0c" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a59e600ff04364d2ef84c54cb11b979ea" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1ab85722ff94196f98a33e3bdbf5ee901a" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a3a195d5c82c9fc8196751745409dd782" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a7f3a1ffe17be94e643c097f5f0ab1a97" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a59e600ff04364d2ef84c54cb11b979ea" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1ab85722ff94196f98a33e3bdbf5ee901a" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1aee91e2aa0f151a73281faaea8eb243e9" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a9f5efb91631d58c672276b59e35b207a" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a0f9e4c987851a6141f97a454968f1b94" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a42e2718cbeb23b381f4a669154ec856f" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1ad3a16093c5235037ad4e04e9ee5962be" prot="public" virt="non-virtual" ambiguityscope="SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a0ae74358faf661fb87c3feb9c40709a0" prot="public" virt="non-virtual" ambiguityscope="SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1aafbbee4a84617e4510b6e652d87c0062" prot="public" virt="non-virtual" ambiguityscope="SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1af1c3c0092861d44e9d9bcc621b4b530e" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a91854b7e5833915cd74a1353a0a71363" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ae73b41119462fa46d0fa9593f66944a1" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::BaseType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::BaseType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::BaseType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1af1c3c0092861d44e9d9bcc621b4b530e" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a91854b7e5833915cd74a1353a0a71363" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ae73b41119462fa46d0fa9593f66944a1" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActInjectType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual" ambiguityscope="SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual" ambiguityscope="SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a7b3dac8cd1b8b7333dc958b5a684c44e" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>filename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aea7c6c02897d9c63669adfd19ab99344" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>FillIdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aea7c6c02897d9c63669adfd19ab99344" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>FillIdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1ab304a43b4eb171ef686e185ea4236f3d" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Footer</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a2c6f2ba66637d95a087fd33d20e2e5e7" prot="protected" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>FormDesignType</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a678313ffb6527896d0f1a791172a2b32" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>FormDesignType</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1aecb80b8d8e0cdffd3407deb062ee7d74" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>formInstanceURI</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a0ea5c39f30957155913169a4a5f21a46" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>formInstanceVersionURI</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1ab18d8d4d78a4094f3842134cffb257a0" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>formPreviousInstanceVersionURI</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1ace875ae3396f53f81db9c238212c90c4" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>formTitle</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a0145fcf4e0f516982be3faba6ddf12e9" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>fullURI</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a12ef4b283f1bee890611a84906016520" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Header</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aec38ff3687d70ecb4132f26e5ac6e6ab" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ID</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aec38ff3687d70ecb4132f26e5ac6e6ab" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>ID</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a63cc241892d95761b90b45d0f979f2c1" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>IdentExtNodes</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a63cc241892d95761b90b45d0f979f2c1" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>IdentExtNodes</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a1ebea3b2c6e2d7cbb19d58e2d8147f16" prot="protected" virt="non-virtual" ambiguityscope="SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a2e14a8c36871a4845a275d38a8f8f681" prot="protected" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a1ebea3b2c6e2d7cbb19d58e2d8147f16" prot="package" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a2e14a8c36871a4845a275d38a8f8f681" prot="protected" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>IdentifiedExtensionType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a5e163092b56b8eca2af4327e9e9654f9" prot="protected" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>InjectFormType</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a7d266ab651b3ed2db7dfde7dfdc9c7a1" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>InjectFormType</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a5e163092b56b8eca2af4327e9e9654f9" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>InjectFormType</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a3619a9dccf2844bc5c7a531ee9890a19" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>injectionID</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a32418544e454a2fca56e5753f961e030" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>InjectTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a361b3337f88debdab961a71d3971e16a" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Item</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a15090dd1d9f5ce613e3a0fbbcf990d45" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>lineage</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a4ba5fefee71c286780b04e44d96772b5" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1af15515af4596763949edc87a70597ac5" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a092fc856fcfd40f224a0fb67566c4fc7" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1aca0a60088d7ec85e8fc337b0d428ebe7" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a06f2d509b58d27f1f15ead4654c92b06" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1ad434f93f2b1a1f7fa390a2f2403a84d9" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a092fc856fcfd40f224a0fb67566c4fc7" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a07fd68e800244a5539b291840ded24ab" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a4940ab5301da421282a607f47f965dca" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1acfaf5bf98838660ac2bad2f6e64d3f8b" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1af8c4fd983dce34f3393b2b441ca19a2a" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1aa95ebab6082e649da240f55c7d74bb4f" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1aa02cb1bdd3778d04f7f7f653ab6a2d14" prot="public" virt="non-virtual" ambiguityscope="SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1adcde3a44da4595befe8b6f3b5e4f12b9" prot="public" virt="non-virtual" ambiguityscope="SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a933eb707c45bea61062ff4b1e5e5495c" prot="public" virt="non-virtual" ambiguityscope="SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a880fec3dee096d7f646b70e3f11c350f" prot="public" virt="non-virtual" ambiguityscope="SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aa6f5c53d9fecc7eabdb09e2e98a54edc" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ac1bbe4827f3f7103b155d502e8604878" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1abdcccaf607de139ef8991b66ec2a1b34" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a318ef98ae92606615be68b487ed5bb3f" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::BaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::BaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::BaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::BaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1aa6f5c53d9fecc7eabdb09e2e98a54edc" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ac1bbe4827f3f7103b155d502e8604878" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1abdcccaf607de139ef8991b66ec2a1b34" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a318ef98ae92606615be68b487ed5bb3f" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ActInjectType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a19e17aef32d9ac0a6e914e673241c842" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>packageID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a258fe4a054ecba095b6aa32d67d19f37" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>prevVersionURI</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a4a0b1431ede306104b882e850daa5e63" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>responseStatusEnum</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a5da02460cb467c4faac4e2421efca6db" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>responseStatusEnum</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a81dc74729b203b71e10fbae029570e88" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>responseStatusEnumSpecified</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a96bd35a7cfd0e4c9249665c87f665f17" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>responseTypeEnum</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a53504dc10ddd18f1a9d9558263549ac6" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>responseTypeEnum</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1ae0223a71720c6eba65531391916ab0d8" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>responseTypeEnumSpecified</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1afdd857ea2bddd9d6160dea2105f36bf5" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>rootItemID</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a780e99cfa8616860805f74891407dfe8" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Rules</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a7e425d1114873ab7341a0baf45f8dc13" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1abf18ea8edcfcadbae59fa07f161421f7" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1aff3aee643ddea6e779a800f0d822ef5a" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a2c2b4b09eea080bc86f233465ea52653" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a3930bde77666cfb6c0c20bafd72522a2" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1aff3aee643ddea6e779a800f0d822ef5a" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1aeabc9ef5de2c0787d1c2c4491d85af2e" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a1d390ae6db03ce5d8a2a648541df6a49" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a1d390ae6db03ce5d8a2a648541df6a49" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a45aef60163dee8e490f8c00b7c7328e4" prot="private" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a6aa6b9d50490e0bcd6b230ad7d0a53c8" prot="private" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1ad1834817c11326a0d1113fa19d935bd2" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializebasedOnURI</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a531c1d0860f5b496a249dc4fb8cc166b" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializebaseURI</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1a531c1d0860f5b496a249dc4fb8cc166b" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializebaseURI</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1af664f33dcae933722d023cd4e4df6351" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeBeforeCloseForm</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a8a98f1df7205b89f5ae88a6af4e4d74e" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeBeforeDataSubmit</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1ab1b5c56095c0055e07b38eb985c924af" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeBeforeLoadData</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a26d5a439f70920d44f2c97f456599a6d" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeBeforeLoadForm</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1ab433cb940ea8ff2759a3d2364024e1b6" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeBeforeShowForm</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a0f3800acd4dd687b76a44faf7cebdb4b" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeBody</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a0f3800acd4dd687b76a44faf7cebdb4b" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeBody</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a4e3d6909a9c470ee2d8d71d7a6f89259" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializefilename</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a58e98a5588959aa3a7deec9a6906c1d7" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeFooter</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a58e98a5588959aa3a7deec9a6906c1d7" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeFooter</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1aa28474e7e1794838d8bd5818cccac43f" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeformInstanceURI</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1aa28474e7e1794838d8bd5818cccac43f" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeformInstanceURI</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a6f7d1a1bd6d537d85184e034c2ca15a3" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeformInstanceVersionURI</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a6f7d1a1bd6d537d85184e034c2ca15a3" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeformInstanceVersionURI</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a63c11cd092197c48bcaea5e70bf17014" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeformPreviousInstanceVersionURI</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a6441a0d4fc24a82068b86455ad13dda9" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeformTitle</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1af5c2dd2363cf45f9bab176b006a0175e" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializefullURI</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a8559928679de1440cadbf2caaebb4e13" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeHeader</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a8559928679de1440cadbf2caaebb4e13" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeHeader</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ab14d9aff66939f8a1c5fe4e0570b563f" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeID</name></member>
+      <member refid="class_s_d_c_1_1_identified_extension_type_1ab14d9aff66939f8a1c5fe4e0570b563f" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeID</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a2a29f79294bbdf219cf59c712f94933c" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeinjectionID</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a2a29f79294bbdf219cf59c712f94933c" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeinjectionID</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1ad138dedd257401c92d6fa55137db9a93" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeItem</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1af56c3dd0df345c2311581603dd87ce7a" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializelineage</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a4e9b5a73113b4eb8c59c2f40533f4f26" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializepackageID</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a4e9b5a73113b4eb8c59c2f40533f4f26" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializepackageID</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a572e5a5c40740ecb37af601a59885b15" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeprevVersionURI</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a3e06d0a4b461a5a84c02b59418a725f0" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializerootItemID</name></member>
+      <member refid="class_s_d_c_1_1_inject_form_type_1a3e06d0a4b461a5a84c02b59418a725f0" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializerootItemID</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a6eb1023b056284bb3e0e5d580ca2398e" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeRules</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a6eb1023b056284bb3e0e5d580ca2398e" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeRules</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a07d0ed30a0ebcfeaf0419e429b4fcece" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializetargetNames</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a07d0ed30a0ebcfeaf0419e429b4fcece" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializetargetNames</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a1314f528792bf90e2bb9e6c9ca833145" prot="public" virt="virtual"><scope>SDC::ActInjectType</scope><name>ShouldSerializeversion</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_act_inject_type_1a1e9bb5a42eade5eb477ddcb1adf14f3c" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>targetNames</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual" ambiguityscope="SDC::InjectFormType.SDC::FormDesignType."><scope>SDC::ActInjectType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual" ambiguityscope="SDC::IdentifiedExtensionType."><scope>SDC::ActInjectType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_form_design_type_1a8a83db48d5309f6c07f9ce735ebdb4da" prot="public" virt="non-virtual"><scope>SDC::ActInjectType</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

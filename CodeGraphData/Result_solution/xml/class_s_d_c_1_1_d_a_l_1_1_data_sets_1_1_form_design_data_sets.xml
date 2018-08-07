@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets" kind="class" prot="public">
+    <compoundname>SDC::DAL::DataSets::FormDesignDataSets</compoundname>
+    <basecompoundref refid="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets" prot="public" virt="non-virtual">SDC.DAL.DataSets.IFormDesignDataSets</basecompoundref>
+    <basecompoundref refid="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets" prot="public" virt="non-virtual">SDC.DAL.DataSets.IFormDesignDataSets</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1ad540e80f0b2fe131102c8d45b22705e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.FormDesignDataSets.dtGetFormDesign</definition>
+        <argsstring>(Decimal versionCkey)</argsstring>
+        <name>dtGetFormDesign</name>
+        <param>
+          <type>Decimal</type>
+          <declname>versionCkey</declname>
+        </param>
+        <briefdescription>
+<para>Gets all template items for a specific template </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>versionCkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version ckey of the specific template</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>All template items for the specific template</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/SDC.DAL.DataSets.SQL.cs" line="22" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/SDC.DAL.DataSets.SQL.cs" bodystart="22" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a2fc02167ac0a6258d9d791fa75122c2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.FormDesignDataSets.dtGetFormDesignMetadata</definition>
+        <argsstring>(Decimal versionCkey)</argsstring>
+        <name>dtGetFormDesignMetadata</name>
+        <param>
+          <type>Decimal</type>
+          <declname>versionCkey</declname>
+        </param>
+        <briefdescription>
+<para>Gets all necessary information of a checklist template version </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>versionCkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the specific version ckey of the checklist template version</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Information about a checklist template version</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/SDC.DAL.DataSets.SQL.cs" line="259" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/SDC.DAL.DataSets.SQL.cs" bodystart="259" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a9e65ca616227059a870738655552a45c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.FormDesignDataSets.GetChecklistVersionProcedures</definition>
+        <argsstring>(Decimal versionCkey)</argsstring>
+        <name>GetChecklistVersionProcedures</name>
+        <param>
+          <type>Decimal</type>
+          <declname>versionCkey</declname>
+        </param>
+        <briefdescription>
+<para>Gets all procedures for specified checklist template version </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>versionCkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version ckey of the checklist template version</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>all procedures for a checklist template version</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/SDC.DAL.DataSets.SQL.cs" line="356" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/SDC.DAL.DataSets.SQL.cs" bodystart="356" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a55cf71af7276d94bf2443fb4e964524d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.FormDesignDataSets.dtGetTemplateList</definition>
+        <argsstring>(Decimal versionCkey)</argsstring>
+        <name>dtGetTemplateList</name>
+        <param>
+          <type>Decimal</type>
+          <declname>versionCkey</declname>
+        </param>
+        <briefdescription>
+<para>Gets all the active checklist from the database where filename exist </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>all the active checklist and filename map to generate xml and html</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/SDC.DAL.DataSets.SQL.cs" line="372" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/SDC.DAL.DataSets.SQL.cs" bodystart="372" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1ad540e80f0b2fe131102c8d45b22705e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.FormDesignDataSets.dtGetFormDesign</definition>
+        <argsstring>(Decimal versionCkey)</argsstring>
+        <name>dtGetFormDesign</name>
+        <param>
+          <type>Decimal</type>
+          <declname>versionCkey</declname>
+        </param>
+        <briefdescription>
+<para>Gets all template items for a specific template </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>versionCkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version ckey of the specific template</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>All template items for the specific template</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.MSTest/SDC.DAL.DataSets.SQL.cs" line="22" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.MSTest/SDC.DAL.DataSets.SQL.cs" bodystart="22" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a2fc02167ac0a6258d9d791fa75122c2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.FormDesignDataSets.dtGetFormDesignMetadata</definition>
+        <argsstring>(Decimal versionCkey)</argsstring>
+        <name>dtGetFormDesignMetadata</name>
+        <param>
+          <type>Decimal</type>
+          <declname>versionCkey</declname>
+        </param>
+        <briefdescription>
+<para>Gets all necessary information of a checklist template version </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>versionCkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the specific version ckey of the checklist template version</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Information about a checklist template version</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.MSTest/SDC.DAL.DataSets.SQL.cs" line="258" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.MSTest/SDC.DAL.DataSets.SQL.cs" bodystart="258" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a9e65ca616227059a870738655552a45c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.FormDesignDataSets.GetChecklistVersionProcedures</definition>
+        <argsstring>(Decimal versionCkey)</argsstring>
+        <name>GetChecklistVersionProcedures</name>
+        <param>
+          <type>Decimal</type>
+          <declname>versionCkey</declname>
+        </param>
+        <briefdescription>
+<para>Gets all procedures for specified checklist template version </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>versionCkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version ckey of the checklist template version</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>all procedures for a checklist template version</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.MSTest/SDC.DAL.DataSets.SQL.cs" line="350" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.MSTest/SDC.DAL.DataSets.SQL.cs" bodystart="350" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a55cf71af7276d94bf2443fb4e964524d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.FormDesignDataSets.dtGetTemplateList</definition>
+        <argsstring>(Decimal versionCkey)</argsstring>
+        <name>dtGetTemplateList</name>
+        <param>
+          <type>Decimal</type>
+          <declname>versionCkey</declname>
+        </param>
+        <briefdescription>
+<para>Gets all the active checklist from the database where filename exist </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>all the active checklist and filename map to generate xml and html</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.MSTest/SDC.DAL.DataSets.SQL.cs" line="366" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.MSTest/SDC.DAL.DataSets.SQL.cs" bodystart="366" bodyend="378"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a3e995d134b227c2e9260eadb35fb5f10" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.FormDesignDataSets.CreateDataTable</definition>
+        <argsstring>(decimal CTV_Ckey, string sql)</argsstring>
+        <name>CreateDataTable</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2abdaa3c20a3e3851599514f7c6be5f62f" kindref="member">decimal</ref></type>
+          <declname>CTV_Ckey</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>sql</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/SDC.DAL.DataSets.SQL.cs" line="385" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/SDC.DAL.DataSets.SQL.cs" bodystart="385" bodyend="403"/>
+        <references refid="namespace_s_d_c_1af2209f66af49f85f2c41565b139f8efbab2145aac704ce76dbe1ac7adac535b23">SDC.var</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a3e995d134b227c2e9260eadb35fb5f10" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DataTable</type>
+        <definition>DataTable SDC.DAL.DataSets.FormDesignDataSets.CreateDataTable</definition>
+        <argsstring>(decimal CTV_Ckey, string sql)</argsstring>
+        <name>CreateDataTable</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2abdaa3c20a3e3851599514f7c6be5f62f" kindref="member">decimal</ref></type>
+          <declname>CTV_Ckey</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>sql</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.MSTest/SDC.DAL.DataSets.SQL.cs" line="379" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.MSTest/SDC.DAL.DataSets.SQL.cs" bodystart="379" bodyend="397"/>
+        <references refid="namespace_s_d_c_1af2209f66af49f85f2c41565b139f8efbab2145aac704ce76dbe1ac7adac535b23">SDC.var</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data access object for checklist template </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3493">
+        <label>SDC.DAL.DataSets.FormDesignDataSets</label>
+        <link refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets"/>
+        <childnode refid="3494" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3494" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3494">
+        <label>IFormDesignDataSets</label>
+        <link refid="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3495">
+        <label>SDC.DAL.DataSets.FormDesignDataSets</label>
+        <link refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets"/>
+        <childnode refid="3496" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3496" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3496">
+        <label>IFormDesignDataSets</label>
+        <link refid="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/SDC.DAL.DataSets.SQL.cs" line="16" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.DAL.DataModel/SDC.DAL.DataSets.SQL.cs" bodystart="15" bodyend="405"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a3e995d134b227c2e9260eadb35fb5f10" prot="private" virt="non-virtual"><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>CreateDataTable</name></member>
+      <member refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a3e995d134b227c2e9260eadb35fb5f10" prot="private" virt="non-virtual"><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>CreateDataTable</name></member>
+      <member refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1ad540e80f0b2fe131102c8d45b22705e7" prot="public" virt="non-virtual"><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>dtGetFormDesign</name></member>
+      <member refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1ad540e80f0b2fe131102c8d45b22705e7" prot="public" virt="non-virtual"><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>dtGetFormDesign</name></member>
+      <member refid="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets_1a0aec8758a61e44749e95589bcacdbe9a" prot="public" virt="non-virtual" ambiguityscope="SDC::DAL::DataSets::IFormDesignDataSets."><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>dtGetFormDesign</name></member>
+      <member refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a2fc02167ac0a6258d9d791fa75122c2e" prot="public" virt="non-virtual"><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>dtGetFormDesignMetadata</name></member>
+      <member refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a2fc02167ac0a6258d9d791fa75122c2e" prot="public" virt="non-virtual"><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>dtGetFormDesignMetadata</name></member>
+      <member refid="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets_1a9747a8691777383e569795500cfc7bd5" prot="public" virt="non-virtual" ambiguityscope="SDC::DAL::DataSets::IFormDesignDataSets."><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>dtGetFormDesignMetadata</name></member>
+      <member refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a55cf71af7276d94bf2443fb4e964524d" prot="public" virt="non-virtual"><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>dtGetTemplateList</name></member>
+      <member refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a55cf71af7276d94bf2443fb4e964524d" prot="public" virt="non-virtual"><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>dtGetTemplateList</name></member>
+      <member refid="interface_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_i_form_design_data_sets_1af5f547fdefd5ffc79aa37726743ad0e1" prot="public" virt="non-virtual" ambiguityscope="SDC::DAL::DataSets::IFormDesignDataSets."><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>dtGetTemplateList</name></member>
+      <member refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a9e65ca616227059a870738655552a45c" prot="public" virt="non-virtual"><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>GetChecklistVersionProcedures</name></member>
+      <member refid="class_s_d_c_1_1_d_a_l_1_1_data_sets_1_1_form_design_data_sets_1a9e65ca616227059a870738655552a45c" prot="public" virt="non-virtual"><scope>SDC::DAL::DataSets::FormDesignDataSets</scope><name>GetChecklistVersionProcedures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

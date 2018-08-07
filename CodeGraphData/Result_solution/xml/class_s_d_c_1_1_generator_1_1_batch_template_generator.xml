@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_generator_1_1_batch_template_generator" kind="class" prot="public">
+    <compoundname>SDC::Generator::BatchTemplateGenerator</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_generator_1_1_batch_template_generator_1a393a607d88917185590685d0cde190dd" prot="private" static="no" mutable="no">
+        <type>IDictionary&lt; String, String &gt;</type>
+        <definition>IDictionary&lt; String, String &gt; SDC.Generator.BatchTemplateGenerator::_templatesMap</definition>
+        <argsstring></argsstring>
+        <name>_templatesMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" line="17" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_generator_1_1_batch_template_generator_1a2620c9910ea729c6249bf517d1e63387" prot="private" static="no" mutable="no">
+        <type>SrTemplateBuilder</type>
+        <definition>SrTemplateBuilder SDC.Generator.BatchTemplateGenerator._templateBuilder</definition>
+        <argsstring></argsstring>
+        <name>_templateBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" line="20" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_generator_1_1_batch_template_generator_1aa8c8ea53225a69925e6c88c87f1d9675" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SDC.Generator.BatchTemplateGenerator::_templateGeneratorPath</definition>
+        <argsstring></argsstring>
+        <name>_templateGeneratorPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" line="21" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_generator_1_1_batch_template_generator_1ab835dbcaf7eeefac4f6ca62b0a0a768d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc" kindref="compound">SDC.SDCTreeBuilderEcc</ref></type>
+        <definition>SDC.SDCTreeBuilderEcc SDC.Generator.BatchTemplateGenerator._templateBuilder</definition>
+        <argsstring></argsstring>
+        <name>_templateBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema.Adaptor/SDC.Generator.cs" line="20" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema.Adaptor/SDC.Generator.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_generator_1_1_batch_template_generator_1ae56781064305ac492464d753f3ee7aa2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>IDictionary&lt; String, String &gt;</type>
+        <definition>IDictionary&lt; String, String &gt; SDC.Generator.BatchTemplateGenerator::TemplatesMap</definition>
+        <argsstring></argsstring>
+        <name>TemplatesMap</name>
+        <briefdescription>
+<para>Template dictionary to map all the checklist template version keys for generation </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" line="26" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_generator_1_1_batch_template_generator_1a1816ebc4d1491d6fd3ac14495658d7e7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>SrTemplateBuilder</type>
+        <definition>SrTemplateBuilder SDC.Generator.BatchTemplateGenerator.TemplateBuilder</definition>
+        <argsstring></argsstring>
+        <name>TemplateBuilder</name>
+        <briefdescription>
+<para>Template builder for building the templates. This can be any class that implements the IChecklistTemplateGenerator interface </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" line="36" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_generator_1_1_batch_template_generator_1ab6ed83cf79544847cb7ff87951e6b698" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>String</type>
+        <definition>String SDC.Generator.BatchTemplateGenerator::TemplateGeneratorPath</definition>
+        <argsstring></argsstring>
+        <name>TemplateGeneratorPath</name>
+        <briefdescription>
+<para>Directory file path to put generated checklist template xml files </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" line="45" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_generator_1_1_batch_template_generator_1a0b05863c467b22b2771e8291ef354fbf" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc" kindref="compound">SDCTreeBuilderEcc</ref></type>
+        <definition>SDCTreeBuilderEcc SDC.Generator.BatchTemplateGenerator.TemplateBuilder</definition>
+        <argsstring></argsstring>
+        <name>TemplateBuilder</name>
+        <briefdescription>
+<para>Template builder for building the templates. This can be any class that implements the IChecklistTemplateGenerator interface </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema.Adaptor/SDC.Generator.cs" line="36" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema.Adaptor/SDC.Generator.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_generator_1_1_batch_template_generator_1a487851557757c2a29ac92d9ddd15311d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SDC.Generator.BatchTemplateGenerator.Generate</definition>
+        <argsstring>()</argsstring>
+        <name>Generate</name>
+        <briefdescription>
+<para>Generates all of the templates listed in the TemplatesMap dictionary </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" line="54" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" bodystart="54" bodyend="81"/>
+        <references refid="namespace_s_d_c_1a8f0fcf27f72dd34d152f63d5eff93f98ace2c8aed9c2fa0cfbed56cbda4d8bf07">SDC.Empty</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_generator_1_1_batch_template_generator_1a487851557757c2a29ac92d9ddd15311d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String SDC.Generator.BatchTemplateGenerator.Generate</definition>
+        <argsstring>()</argsstring>
+        <name>Generate</name>
+        <briefdescription>
+<para>Generates all of the templates listed in the TemplatesMap dictionary </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema.Adaptor/SDC.Generator.cs" line="54" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema.Adaptor/SDC.Generator.cs" bodystart="54" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template <ref refid="namespace_s_d_c_1_1_generator" kindref="compound">Generator</ref> to generate a batch of checklist templates using the available generators </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1284">
+        <label>SDC</label>
+      </node>
+      <node id="1283">
+        <label>SDC.Generator.BatchTemplateGenerator</label>
+        <link refid="class_s_d_c_1_1_generator_1_1_batch_template_generator"/>
+        <childnode refid="1284" relation="usage">
+          <edgelabel>_templateBuilder</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" line="16" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Generator.cs" bodystart="15" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_generator_1_1_batch_template_generator_1a2620c9910ea729c6249bf517d1e63387" prot="private" virt="non-virtual"><scope>SDC::Generator::BatchTemplateGenerator</scope><name>_templateBuilder</name></member>
+      <member refid="class_s_d_c_1_1_generator_1_1_batch_template_generator_1ab835dbcaf7eeefac4f6ca62b0a0a768d" prot="private" virt="non-virtual"><scope>SDC::Generator::BatchTemplateGenerator</scope><name>_templateBuilder</name></member>
+      <member refid="class_s_d_c_1_1_generator_1_1_batch_template_generator_1aa8c8ea53225a69925e6c88c87f1d9675" prot="private" virt="non-virtual"><scope>SDC::Generator::BatchTemplateGenerator</scope><name>_templateGeneratorPath</name></member>
+      <member refid="class_s_d_c_1_1_generator_1_1_batch_template_generator_1a393a607d88917185590685d0cde190dd" prot="private" virt="non-virtual"><scope>SDC::Generator::BatchTemplateGenerator</scope><name>_templatesMap</name></member>
+      <member refid="class_s_d_c_1_1_generator_1_1_batch_template_generator_1a487851557757c2a29ac92d9ddd15311d" prot="public" virt="non-virtual"><scope>SDC::Generator::BatchTemplateGenerator</scope><name>Generate</name></member>
+      <member refid="class_s_d_c_1_1_generator_1_1_batch_template_generator_1a487851557757c2a29ac92d9ddd15311d" prot="public" virt="non-virtual"><scope>SDC::Generator::BatchTemplateGenerator</scope><name>Generate</name></member>
+      <member refid="class_s_d_c_1_1_generator_1_1_batch_template_generator_1a1816ebc4d1491d6fd3ac14495658d7e7" prot="public" virt="non-virtual"><scope>SDC::Generator::BatchTemplateGenerator</scope><name>TemplateBuilder</name></member>
+      <member refid="class_s_d_c_1_1_generator_1_1_batch_template_generator_1a0b05863c467b22b2771e8291ef354fbf" prot="public" virt="non-virtual"><scope>SDC::Generator::BatchTemplateGenerator</scope><name>TemplateBuilder</name></member>
+      <member refid="class_s_d_c_1_1_generator_1_1_batch_template_generator_1ab6ed83cf79544847cb7ff87951e6b698" prot="public" virt="non-virtual"><scope>SDC::Generator::BatchTemplateGenerator</scope><name>TemplateGeneratorPath</name></member>
+      <member refid="class_s_d_c_1_1_generator_1_1_batch_template_generator_1ae56781064305ac492464d753f3ee7aa2" prot="public" virt="non-virtual"><scope>SDC::Generator::BatchTemplateGenerator</scope><name>TemplatesMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

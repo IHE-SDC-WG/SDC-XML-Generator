@@ -1,0 +1,1739 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_d_c_1_1_response_field_type" kind="class" prot="public">
+    <compoundname>SDC::ResponseFieldType</compoundname>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+    <basecompoundref refid="class_s_d_c_1_1_extension_base_type" prot="public" virt="non-virtual">SDC.ExtensionBaseType</basecompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_list_item_response_field_type" prot="public" virt="non-virtual">SDC.ListItemResponseFieldType</derivedcompoundref>
+    <derivedcompoundref refid="class_s_d_c_1_1_list_item_response_field_type" prot="public" virt="non-virtual">SDC.ListItemResponseFieldType</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1ac0d29c0f84c1663997c06cd36e1cf677" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_data_types___d_e_type" kindref="compound">DataTypes_DEType</ref></type>
+        <definition>DataTypes_DEType SDC.ResponseFieldType::_response</definition>
+        <argsstring></argsstring>
+        <name>_response</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="35" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1a15f5bbf9ee63f489c62416c7fca49e47" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="200" endline="203">SDC.ResponseFieldType.ShouldSerializeResponse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1a220c5ee968c786bf5c84a614f37ee132" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_any_functions_any_type" kindref="compound">AnyFunctionsAnyType</ref></type>
+        <definition>AnyFunctionsAnyType SDC.ResponseFieldType._setValue</definition>
+        <argsstring></argsstring>
+        <name>_setValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="38" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1af5b738234d23a822ce4e1b0e4f4f936a" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="208" endline="211">SDC.ResponseFieldType.ShouldSerializeSetValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1a0b164ed054c514ad8ded34bcdd2183c7" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_extension_type" kindref="compound">ExtensionType</ref> &gt;</type>
+        <definition>List&lt;ExtensionType&gt; SDC.ResponseFieldType._x_Extension</definition>
+        <argsstring></argsstring>
+        <name>_x_Extension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="41" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1a81e11c311fbd530cbd5d17006781c99d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>RichTextType SDC.ResponseFieldType::_textAfterResponse</definition>
+        <argsstring></argsstring>
+        <name>_textAfterResponse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="44" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1adcb84ad3e4c13a83114cec0c31efbf60" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="216" endline="219">SDC.ResponseFieldType.ShouldSerializeTextAfterResponse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1a34b60f57e27cdeb50bf4656722627d21" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_units_type" kindref="compound">UnitsType</ref></type>
+        <definition>UnitsType SDC.ResponseFieldType::_responseUnits</definition>
+        <argsstring></argsstring>
+        <name>_responseUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="47" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1a1b835368a4a7af6a9c3a5c36250fbc5a" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="224" endline="227">SDC.ResponseFieldType.ShouldSerializeResponseUnits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1a13b40c725fd82f05bdb2a8c96d8ffdd7" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_event_type" kindref="compound">EventType</ref> &gt;</type>
+        <definition>List&lt;EventType&gt; SDC.ResponseFieldType._afterChange</definition>
+        <argsstring></argsstring>
+        <name>_afterChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="50" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1a219d3dcba29aa94721c9638424e1281c" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> &gt;</type>
+        <definition>List&lt;OnEventType&gt; SDC.ResponseFieldType._onEvent</definition>
+        <argsstring></argsstring>
+        <name>_onEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="53" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1ad9eb7f44fc9493af2e6bebe9abab3217" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_extension_type" kindref="compound">ExtensionType</ref> &gt;</type>
+        <definition>BindingList&lt;ExtensionType&gt; SDC.ResponseFieldType._extension1</definition>
+        <argsstring></argsstring>
+        <name>_extension1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="41" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1a967036dc58c248eb384b2f68c9157d9f" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_if_then_type" kindref="compound">IfThenType</ref> &gt;</type>
+        <definition>BindingList&lt;IfThenType&gt; SDC.ResponseFieldType._afterChange</definition>
+        <argsstring></argsstring>
+        <name>_afterChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="50" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1a678d575725830d60b6451ca1d0258221" prot="private" static="no" mutable="no">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> &gt;</type>
+        <definition>BindingList&lt;OnEventType&gt; SDC.ResponseFieldType._onEvent</definition>
+        <argsstring></argsstring>
+        <name>_onEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="53" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1a452d27ce98e46acaec4d23617164aae0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_expression_type" kindref="compound">ExpressionType</ref></type>
+        <definition>ExpressionType SDC.ResponseFieldType._setResponseValue</definition>
+        <argsstring></argsstring>
+        <name>_setResponseValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="56" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1af8fbbb67e695834d293fc1332ff8ad7e" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_response_field_type_8cs" startline="287" endline="290">SDC.ResponseFieldType.ShouldSerializeSetResponseValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1a12975a8b3bea71164e8b574e1c80616c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.ResponseFieldType.changeTrackerField</definition>
+        <argsstring></argsstring>
+        <name>changeTrackerField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="60" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_d_c_1_1_response_field_type_1a330854f116022fbc3f2a208bb1df3dc2" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.ResponseFieldType::serializer</definition>
+        <argsstring></argsstring>
+        <name>serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="55" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1a1ce84b1f0ad856fb44c689a686fcb92e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_data_types___d_e_type" kindref="compound">DataTypes_DEType</ref></type>
+        <definition>DataTypes_DEType SDC.ResponseFieldType::Response</definition>
+        <argsstring></argsstring>
+        <name>Response</name>
+        <briefdescription>
+<para>W3C Schema data type details </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="62" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="63" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1acb93a351e3b8d8f06e36baf5525399a3" compoundref="_x___s_d_c_8_schema_8_tree_builder_8_ecc_8cs" startline="280" endline="880">SDC.SDCTreeBuilderEcc.AddDataTypesDE</referencedby>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_1af992c949a06e93c8a033ff70808cdb22" compoundref="_s_d_c_8_schema_8_s_d_c_tree_builder_8cs" startline="486" endline="795">SDC.SDCTreeBuilder.AddDataTypesDE</referencedby>
+        <referencedby refid="class_s_d_c_1_1_s_d_c_tree_builder_ecc_1a1fce48d12dc5b1ea7cf689adf16a6b12" compoundref="_s_d_c_8_schema_8_tree_builder_8_ecc_8cs" startline="932" endline="1544">SDC.SDCTreeBuilderEcc.AddFillDataTypesDE</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1a66fafc0f1533e55fde0f8dbd76afcd86" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_any_functions_any_type" kindref="compound">AnyFunctionsAnyType</ref></type>
+        <definition>virtual AnyFunctionsAnyType SDC.ResponseFieldType.SetValue</definition>
+        <argsstring></argsstring>
+        <name>SetValue</name>
+        <briefdescription>
+<para>NEW </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="78" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1aa1a9714cd21c49b1901b68833ea64a72" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_extension_type" kindref="compound">ExtensionType</ref> &gt;</type>
+        <definition>virtual List&lt;ExtensionType&gt; SDC.ResponseFieldType.X_Extension</definition>
+        <argsstring></argsstring>
+        <name>X_Extension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="91" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="92" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1a41c71d19eb9dba6732cce60b88db5f36" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="176" endline="179">SDC.ResponseFieldType.ShouldSerializeX_Extension</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1ae38ec2fa7c88d60a8ed9430c426f9603" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_rich_text_type" kindref="compound">RichTextType</ref></type>
+        <definition>RichTextType SDC.ResponseFieldType::TextAfterResponse</definition>
+        <argsstring></argsstring>
+        <name>TextAfterResponse</name>
+        <briefdescription>
+<para>TextAfterResponse is fixed text that appears after (to the right of) the user&apos;s response on the data entry form. This may be text for units such as &quot;mm&quot;, &quot;cm&quot;, etc. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="107" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1ad1beccb03365b144f49e2ce15ea13084" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_units_type" kindref="compound">UnitsType</ref></type>
+        <definition>UnitsType SDC.ResponseFieldType::ResponseUnits</definition>
+        <argsstring></argsstring>
+        <name>ResponseUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="120" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1aa53ca1c03bfb4e9a000b91825af19e85" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_event_type" kindref="compound">EventType</ref> &gt;</type>
+        <definition>virtual List&lt;EventType&gt; SDC.ResponseFieldType.AfterChange</definition>
+        <argsstring></argsstring>
+        <name>AfterChange</name>
+        <briefdescription>
+<para>Event that occurs after the Response value is changed, usually fired after a user leaves the Response field. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="136" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="137" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1a88660b9eea99c1e0335ee95ace33a247" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="184" endline="187">SDC.ResponseFieldType.ShouldSerializeAfterChange</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1a22300388d6432a796d48e5e655526c64" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> &gt;</type>
+        <definition>virtual List&lt;OnEventType&gt; SDC.ResponseFieldType.OnEvent</definition>
+        <argsstring></argsstring>
+        <name>OnEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="149" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="150" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1a4e4b41d891ee9851ce54f318ffb78af2" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="192" endline="195">SDC.ResponseFieldType.ShouldSerializeOnEvent</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1aef5cc0e6d4ee47ad06858f6692c4ce38" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>XmlSerializer</type>
+        <definition>static XmlSerializer SDC.ResponseFieldType::Serializer</definition>
+        <argsstring></argsstring>
+        <name>Serializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="161" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="162" bodyend="-1"/>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1a2e194a17b79e2fe0edb6d7d1f50712bf" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="315" endline="318">SDC.ResponseFieldType.Deserialize</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1a88524c0995703766ee087f3b8c9f230e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_extension_type" kindref="compound">ExtensionType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;ExtensionType&gt; SDC.ResponseFieldType.Extension1</definition>
+        <argsstring></argsstring>
+        <name>Extension1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="90" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1a0a03f96def7d990218eb8d940b452153" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_if_then_type" kindref="compound">IfThenType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;IfThenType&gt; SDC.ResponseFieldType.AfterChange</definition>
+        <argsstring></argsstring>
+        <name>AfterChange</name>
+        <briefdescription>
+<para>Event that occurs after the Response value is changed, usually fired after a user leaves the Response field. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="165" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1a6665b302b751be56097927520533b1ca" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>BindingList&lt; <ref refid="class_s_d_c_1_1_on_event_type" kindref="compound">OnEventType</ref> &gt;</type>
+        <definition>virtual BindingList&lt;OnEventType&gt; SDC.ResponseFieldType.OnEvent</definition>
+        <argsstring></argsstring>
+        <name>OnEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="188" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1a6c4be66144ba321e3b84d820e54a3909" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_s_d_c_1_1_expression_type" kindref="compound">ExpressionType</ref></type>
+        <definition>virtual ExpressionType SDC.ResponseFieldType.SetResponseValue</definition>
+        <argsstring></argsstring>
+        <name>SetResponseValue</name>
+        <briefdescription>
+<para>Expression that is used to automaticaly set the Response value </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="214" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_s_d_c_1_1_response_field_type_1a12d8d8cf2532e6bedba5b0eb70ba3011" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_s_d_c_1_1_object_change_tracker" kindref="compound">ObjectChangeTracker</ref></type>
+        <definition>ObjectChangeTracker SDC.ResponseFieldType.ChangeTracker</definition>
+        <argsstring></argsstring>
+        <name>ChangeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="248" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a871eabecc5d208812e4460716967746e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.ResponseFieldType.ResponseFieldType</definition>
+        <argsstring>()</argsstring>
+        <name>ResponseFieldType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="543" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="543" bodyend="543"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a6c572ae6f82157241bef22221a4c90f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.ResponseFieldType.ResponseFieldType</definition>
+        <argsstring>(BaseType parentNode, bool fillData=true)</argsstring>
+        <name>ResponseFieldType</name>
+        <param>
+          <type><ref refid="class_s_d_c_1_1_base_type" kindref="compound">BaseType</ref></type>
+          <declname>parentNode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fillData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="544" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="544" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a871eabecc5d208812e4460716967746e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SDC.ResponseFieldType.ResponseFieldType</definition>
+        <argsstring>()</argsstring>
+        <name>ResponseFieldType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" line="890" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/X_SDC.Schema.PartialClasses.cs" bodystart="890" bodyend="890"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a41c71d19eb9dba6732cce60b88db5f36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.ShouldSerializeX_Extension</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeX_Extension</name>
+        <briefdescription>
+<para>Test whether X_Extension should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="176" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="176" bodyend="179"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_response_field_type_1aa1a9714cd21c49b1901b68833ea64a72" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="92">SDC.ResponseFieldType.X_Extension</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a88660b9eea99c1e0335ee95ace33a247" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.ShouldSerializeAfterChange</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeAfterChange</name>
+        <briefdescription>
+<para>Test whether AfterChange should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="184" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="184" bodyend="187"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1aa53ca1c03bfb4e9a000b91825af19e85" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="137">SDC.ResponseFieldType.AfterChange</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a4e4b41d891ee9851ce54f318ffb78af2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.ShouldSerializeOnEvent</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeOnEvent</name>
+        <briefdescription>
+<para>Test whether OnEvent should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="192" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="192" bodyend="195"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_response_field_type_1a22300388d6432a796d48e5e655526c64" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="150">SDC.ResponseFieldType.OnEvent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a15f5bbf9ee63f489c62416c7fca49e47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.ShouldSerializeResponse</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeResponse</name>
+        <briefdescription>
+<para>Test whether Response should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="200" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="200" bodyend="203"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1ac0d29c0f84c1663997c06cd36e1cf677" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="35">SDC.ResponseFieldType._response</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1af5b738234d23a822ce4e1b0e4f4f936a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.ShouldSerializeSetValue</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeSetValue</name>
+        <briefdescription>
+<para>Test whether SetValue should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="208" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="208" bodyend="211"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a220c5ee968c786bf5c84a614f37ee132" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="38">SDC.ResponseFieldType._setValue</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1adcb84ad3e4c13a83114cec0c31efbf60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.ShouldSerializeTextAfterResponse</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeTextAfterResponse</name>
+        <briefdescription>
+<para>Test whether TextAfterResponse should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="216" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="216" bodyend="219"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a81e11c311fbd530cbd5d17006781c99d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="44">SDC.ResponseFieldType._textAfterResponse</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a1b835368a4a7af6a9c3a5c36250fbc5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.ShouldSerializeResponseUnits</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeResponseUnits</name>
+        <briefdescription>
+<para>Test whether ResponseUnits should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="224" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="224" bodyend="227"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a34b60f57e27cdeb50bf4656722627d21" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="47">SDC.ResponseFieldType._responseUnits</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a1ab64cfc289cb7830aa4f584593eb4af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ResponseFieldType.Serialize</definition>
+        <argsstring>(System.Text.Encoding encoding)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a9ac9c6d560ffe2c300d7796951c22395">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a36eb2065ac31b08b581f857d93781097">Serialize</reimplementedby>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="234" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="234" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a956010209acef9db689f818016fbd780" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ResponseFieldType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a2f060dab6c18514566fbb1a5dd481cc4">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a2f060dab6c18514566fbb1a5dd481cc4">Serialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="264" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="264" bodyend="267"/>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1ae4dde2df378977a461d4234578f57891" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="352" endline="369">SDC.ResponseFieldType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a7932e1c1298b7ff32bcedf6ba727a640" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1ab1514379cd9bd547d5569548274fceb1">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a66372e44e34711e8021b2115c7670078">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="327" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="327" bodyend="340"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1afca2a92abb66e91055eab09a172f9e6c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="342" endline="345">SDC.ResponseFieldType.SaveToFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1afca2a92abb66e91055eab09a172f9e6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.SaveToFile</definition>
+        <argsstring>(string fileName, out System.Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1af03b919560cd67ffe1373d8cef3bb9b8">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a3317d784fc66e0126cbd7d666eb2a887">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="342" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="342" bodyend="345"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a7932e1c1298b7ff32bcedf6ba727a640" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="327" endline="340">SDC.ResponseFieldType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1af1b65e456353b8bbcd84c6e1028c8c4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ResponseFieldType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a7022f64f75dff4c336ee5666f86fd875">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a7022f64f75dff4c336ee5666f86fd875">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="347" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="347" bodyend="350"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a7932e1c1298b7ff32bcedf6ba727a640" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="327" endline="340">SDC.ResponseFieldType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1ae4dde2df378977a461d4234578f57891" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ResponseFieldType.SaveToFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5c619ed0e36571d6f4bd992faa3ad282">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a1cdd4e94a21aeb9f1ba91d1693df228d">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="352" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="352" bodyend="369"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_response_field_type_1a956010209acef9db689f818016fbd780" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="264" endline="267">SDC.ResponseFieldType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a15f5bbf9ee63f489c62416c7fca49e47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.ShouldSerializeResponse</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeResponse</name>
+        <briefdescription>
+<para>Test whether Response should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="263" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="263" bodyend="266"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1ac0d29c0f84c1663997c06cd36e1cf677" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="35">SDC.ResponseFieldType._response</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1adcb84ad3e4c13a83114cec0c31efbf60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.ShouldSerializeTextAfterResponse</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeTextAfterResponse</name>
+        <briefdescription>
+<para>Test whether TextAfterResponse should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="271" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="271" bodyend="274"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a81e11c311fbd530cbd5d17006781c99d" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="44">SDC.ResponseFieldType._textAfterResponse</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a1b835368a4a7af6a9c3a5c36250fbc5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.ShouldSerializeResponseUnits</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeResponseUnits</name>
+        <briefdescription>
+<para>Test whether ResponseUnits should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="279" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="279" bodyend="282"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a34b60f57e27cdeb50bf4656722627d21" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="47">SDC.ResponseFieldType._responseUnits</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1af8fbbb67e695834d293fc1332ff8ad7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.ShouldSerializeSetResponseValue</definition>
+        <argsstring>()</argsstring>
+        <name>ShouldSerializeSetResponseValue</name>
+        <briefdescription>
+<para>Test whether <ref refid="class_s_d_c_1_1_set_response_value" kindref="compound">SetResponseValue</ref> should be serialized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="287" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="287" bodyend="290"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a452d27ce98e46acaec4d23617164aae0" compoundref="_schema_gen_test_2_schema_01_test_01_generations_2_response_field_type_8cs" startline="56">SDC.ResponseFieldType._setResponseValue</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a956010209acef9db689f818016fbd780" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+        <definition>virtual string SDC.ResponseFieldType.Serialize</definition>
+        <argsstring>()</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa9f201adb4697f2612e27176e08f0446">Serialize</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a2f060dab6c18514566fbb1a5dd481cc4">Serialize</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a2f060dab6c18514566fbb1a5dd481cc4">Serialize</reimplementedby>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object into an XML string </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string XML value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="297" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="297" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1adc846eb19123a02fa51b2fdb760443eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SDC.ResponseFieldType.SaveToFile</definition>
+        <argsstring>(string fileName, out Exception exception)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1a5d9b00898ba7416843aec7a0dabb0636">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1aaf5417cbb3e6396d4b3827a35cb6b4c3">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Serializes current <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object into file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path of outupt xml file</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if can serialize and save into file; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="383" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="383" bodyend="396"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77ae1671797c52e15f763380b45e841ec32">SDC.e</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_response_field_type_1a7932e1c1298b7ff32bcedf6ba727a640" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="327" endline="340">SDC.ResponseFieldType.SaveToFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1af1b65e456353b8bbcd84c6e1028c8c4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SDC.ResponseFieldType.SaveToFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>SaveToFile</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1afac00b56af84ee6d657a1cfbf4c240ab">SaveToFile</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a7022f64f75dff4c336ee5666f86fd875">SaveToFile</reimplementedby>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a7022f64f75dff4c336ee5666f86fd875">SaveToFile</reimplementedby>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="398" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="398" bodyend="416"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_response_field_type_1a956010209acef9db689f818016fbd780" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="264" endline="267">SDC.ResponseFieldType.Serialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a450323e3290231d0e69433ce0039785b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+        <definition>virtual ResponseFieldType SDC.ResponseFieldType.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_d_c_1_1_extension_base_type_1aa83bdeaf9146ac072776fc1e54a46fe3">Clone</reimplements>
+        <reimplementedby refid="class_s_d_c_1_1_list_item_response_field_type_1a249543d8fa47b3ef5118365527ff7940">Clone</reimplementedby>
+        <briefdescription>
+<para>Create a clone of this <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="477" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="477" bodyend="480"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1ad3c2d1292056326b23bf421f985d065c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseFieldType.Deserialize</definition>
+        <argsstring>(string input, out ResponseFieldType obj, out System.Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="276" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="276" bodyend="290"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1a873830c9515de6734a1b67bd4a214a24" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="292" endline="296">SDC.ResponseFieldType.Deserialize</referencedby>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1a1dc0221e869b0c21bca72140ae1830e5" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="410" endline="434">SDC.ResponseFieldType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a873830c9515de6734a1b67bd4a214a24" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseFieldType.Deserialize</definition>
+        <argsstring>(string input, out ResponseFieldType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="292" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="292" bodyend="296"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1ad3c2d1292056326b23bf421f985d065c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="276" endline="290">SDC.ResponseFieldType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a3ad36b240420b310998a44c31228576a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+        <definition>static new ResponseFieldType SDC.ResponseFieldType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="298" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="298" bodyend="313"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a2e194a17b79e2fe0edb6d7d1f50712bf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+        <definition>static ResponseFieldType SDC.ResponseFieldType.Deserialize</definition>
+        <argsstring>(System.IO.Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>System.IO.Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="315" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="315" bodyend="318"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1aef5cc0e6d4ee47ad06858f6692c4ce38" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="162">SDC.ResponseFieldType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a200af9661387b2a73800a37e8754b996" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding, out ResponseFieldType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="378" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="378" bodyend="392"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <referencedby refid="class_s_d_c_1_1_response_field_type_1abc98a815188c884e4cc9707f4b1d81fa" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="394" endline="397">SDC.ResponseFieldType.LoadFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1abc98a815188c884e4cc9707f4b1d81fa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ResponseFieldType obj, out System.Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out System.Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="394" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="394" bodyend="397"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a200af9661387b2a73800a37e8754b996" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="378" endline="392">SDC.ResponseFieldType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1aa51d1956a96aecd506bfbd5052f16a22" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ResponseFieldType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="399" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="399" bodyend="403"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a200af9661387b2a73800a37e8754b996" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="378" endline="392">SDC.ResponseFieldType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a4b75dd15114b8b94db7c380bcf6bf909" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+        <definition>static ResponseFieldType SDC.ResponseFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="405" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="405" bodyend="408"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a200af9661387b2a73800a37e8754b996" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="378" endline="392">SDC.ResponseFieldType.LoadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a1dc0221e869b0c21bca72140ae1830e5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+        <definition>static new ResponseFieldType SDC.ResponseFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName, System.Text.Encoding encoding)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>System.Text.Encoding</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" line="410" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/M3 Schema Classes/ResponseFieldType.cs" bodystart="410" bodyend="434"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1ad3c2d1292056326b23bf421f985d065c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="276" endline="290">SDC.ResponseFieldType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a7c076f3b01d1f88cf8288cdd5152e0cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseFieldType.Deserialize</definition>
+        <argsstring>(string input, out ResponseFieldType obj, out Exception exception)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes workflow markup into an <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string workflow markup to deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="332" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="332" bodyend="346"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1ad3c2d1292056326b23bf421f985d065c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="276" endline="290">SDC.ResponseFieldType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a873830c9515de6734a1b67bd4a214a24" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseFieldType.Deserialize</definition>
+        <argsstring>(string input, out ResponseFieldType obj)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="348" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="348" bodyend="352"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1ad3c2d1292056326b23bf421f985d065c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="276" endline="290">SDC.ResponseFieldType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a3ad36b240420b310998a44c31228576a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+        <definition>static new ResponseFieldType SDC.ResponseFieldType.Deserialize</definition>
+        <argsstring>(string input)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="354" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="354" bodyend="369"/>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+        <references refid="class_s_d_c_1_1_response_field_type_1aef5cc0e6d4ee47ad06858f6692c4ce38" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="162">SDC.ResponseFieldType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a131d246f11c1f4cc149e9c83c19b1093" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+        <definition>static ResponseFieldType SDC.ResponseFieldType.Deserialize</definition>
+        <argsstring>(Stream s)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>Stream</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="371" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="371" bodyend="374"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1aef5cc0e6d4ee47ad06858f6692c4ce38" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="162">SDC.ResponseFieldType.Serializer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a1439bf4d1836e312dd6e4b0b0dba6136" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ResponseFieldType obj, out Exception exception)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes xml markup from file into an <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string xml file to load and deserialize</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref> object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output Exception value if deserialize failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this Serializer can deserialize the object; otherwise, false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="425" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="425" bodyend="439"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a200af9661387b2a73800a37e8754b996" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="378" endline="392">SDC.ResponseFieldType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1aa51d1956a96aecd506bfbd5052f16a22" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SDC.ResponseFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName, out ResponseFieldType obj)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="441" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="441" bodyend="445"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1a200af9661387b2a73800a37e8754b996" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="378" endline="392">SDC.ResponseFieldType.LoadFromFile</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_d_c_1_1_response_field_type_1a3aee2375ea171c34d588d684a461d211" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>new <ref refid="class_s_d_c_1_1_response_field_type" kindref="compound">ResponseFieldType</ref></type>
+        <definition>static new ResponseFieldType SDC.ResponseFieldType.LoadFromFile</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type><ref refid="namespace_s_d_c_1ac72a76994273fb6309c4207db81af6a2ab45cffe084dd3d20d928bee85e7b0f21" kindref="member">string</ref></type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" line="447" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SchemaGenTest/Schema Test Generations/ResponseFieldType.cs" bodystart="447" bodyend="471"/>
+        <references refid="class_s_d_c_1_1_response_field_type_1ad3c2d1292056326b23bf421f985d065c" compoundref="_s_d_c_8_schema_2_m3_01_schema_01_classes_2_response_field_type_8cs" startline="276" endline="290">SDC.ResponseFieldType.Deserialize</references>
+        <references refid="namespace_s_d_c_1af722ad1ed4c1ec65b0a15a2f29890f77a37a6259cc0c1dae299a7866489dff0bd">SDC.null</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This type is a template for a data entry field that accepts entries (responses or answers) of any data type, including text, numbers, dates, and Base 64 - encoded blobs (images, sounds, video, other binary formats, etc.). This type cannot contain ListItems, but it may be a child of a Question or a ListItem. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7890">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="7891" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7892">
+        <label>SDC.ListItemResponseFieldType</label>
+        <link refid="class_s_d_c_1_1_list_item_response_field_type"/>
+        <childnode refid="7888" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7888" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7891">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="7888">
+        <label>SDC.ResponseFieldType</label>
+        <link refid="class_s_d_c_1_1_response_field_type"/>
+        <childnode refid="7889" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7889" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7889">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="7890" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7890" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7895">
+        <label>BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="7896" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7897" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="7905" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="7906" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="7907" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="7898" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7908">
+        <label>SDC.DataTypes_DEType</label>
+        <link refid="class_s_d_c_1_1_data_types___d_e_type"/>
+        <childnode refid="7894" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7894" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7906" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+        <childnode refid="7898" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7913">
+        <label>string_Stype</label>
+        <link refid="class_s_d_c_1_1string___stype"/>
+        <childnode refid="7895" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7895" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7898" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7902">
+        <label>SDC.ObjectsOriginalFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_original_from_collection_properties"/>
+        <childnode refid="7900" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7896">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="7900">
+        <label>Dictionary&lt; string, ObjectList &gt;</label>
+      </node>
+      <node id="7915">
+        <label>ReturnAtomicOrListType</label>
+        <link refid="class_s_d_c_1_1_return_atomic_or_list_type"/>
+        <childnode refid="7916" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7918" relation="usage">
+          <edgelabel>_item1</edgelabel>
+        </childnode>
+      </node>
+      <node id="7899">
+        <label>SDC.ObjectsRemovedFromCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_removed_from_collection_properties"/>
+        <childnode refid="7900" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7905">
+        <label>SDC.ITreeBuilder</label>
+        <link refid="interface_s_d_c_1_1_i_tree_builder"/>
+      </node>
+      <node id="7917">
+        <label>SDC.ExceptionType</label>
+        <link refid="class_s_d_c_1_1_exception_type"/>
+        <childnode refid="7894" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7907" relation="usage">
+          <edgelabel>_not</edgelabel>
+        </childnode>
+      </node>
+      <node id="7916">
+        <label>ReturnBaseType</label>
+        <link refid="class_s_d_c_1_1_return_base_type"/>
+        <childnode refid="7894" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7917" relation="usage">
+          <edgelabel>_item</edgelabel>
+        </childnode>
+      </node>
+      <node id="7904">
+        <label>Dictionary&lt; string, PropertyValueState &gt;</label>
+      </node>
+      <node id="7898">
+        <label>SDC.ObjectChangeTracker</label>
+        <link refid="class_s_d_c_1_1_object_change_tracker"/>
+        <childnode refid="7896" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7899" relation="usage">
+          <edgelabel>objectsRemovedFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="7901" relation="usage">
+          <edgelabel>objectsAddedToCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="7902" relation="usage">
+          <edgelabel>objectsOriginalFromCollectionsField</edgelabel>
+        </childnode>
+        <childnode refid="7903" relation="usage">
+          <edgelabel>propertyValueStatesFields</edgelabel>
+        </childnode>
+      </node>
+      <node id="7893">
+        <label>SDC.ResponseFieldType</label>
+        <link refid="class_s_d_c_1_1_response_field_type"/>
+        <childnode refid="7894" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7894" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7908" relation="usage">
+          <edgelabel>_response</edgelabel>
+        </childnode>
+        <childnode refid="7909" relation="usage">
+          <edgelabel>_setResponseValue</edgelabel>
+        </childnode>
+        <childnode refid="7910" relation="usage">
+          <edgelabel>_textAfterResponse</edgelabel>
+        </childnode>
+        <childnode refid="7912" relation="usage">
+          <edgelabel>_responseUnits</edgelabel>
+        </childnode>
+        <childnode refid="7898" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+        <childnode refid="7914" relation="usage">
+          <edgelabel>_setValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="7907">
+        <label>System</label>
+      </node>
+      <node id="7912">
+        <label>SDC.UnitsType</label>
+        <link refid="class_s_d_c_1_1_units_type"/>
+        <childnode refid="7913" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7913" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7898" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7918">
+        <label>SDC.ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="7895" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7895" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7898" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7901">
+        <label>SDC.ObjectsAddedToCollectionProperties</label>
+        <link refid="class_s_d_c_1_1_objects_added_to_collection_properties"/>
+        <childnode refid="7900" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7897">
+        <label>SDC.IdentifiedExtensionType</label>
+        <link refid="class_s_d_c_1_1_identified_extension_type"/>
+        <childnode refid="7894" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7894" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7898" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7894">
+        <label>ExtensionBaseType</label>
+        <link refid="class_s_d_c_1_1_extension_base_type"/>
+        <childnode refid="7895" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7895" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7898" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7910">
+        <label>SDC.RichTextType</label>
+        <link refid="class_s_d_c_1_1_rich_text_type"/>
+        <childnode refid="7894" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7894" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7911" relation="usage">
+          <edgelabel>_hTML</edgelabel>
+          <edgelabel>_richText</edgelabel>
+        </childnode>
+        <childnode refid="7898" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7911">
+        <label>SDC.HTML_Stype</label>
+        <link refid="class_s_d_c_1_1_h_t_m_l___stype"/>
+        <childnode refid="7895" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7895" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7898" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7903">
+        <label>SDC.PropertyValueStatesDictionary</label>
+        <link refid="class_s_d_c_1_1_property_value_states_dictionary"/>
+        <childnode refid="7904" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7909">
+        <label>SDC.ExpressionType</label>
+        <link refid="class_s_d_c_1_1_expression_type"/>
+        <childnode refid="7894" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7898" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+      <node id="7914">
+        <label>SDC.AnyFunctionsAnyType</label>
+        <link refid="class_s_d_c_1_1_any_functions_any_type"/>
+        <childnode refid="7915" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7906">
+        <label>SDC.BaseType</label>
+        <link refid="class_s_d_c_1_1_base_type"/>
+        <childnode refid="7896" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7897" relation="usage">
+          <edgelabel>_parentIETypeObject</edgelabel>
+        </childnode>
+        <childnode refid="7905" relation="usage">
+          <edgelabel>sdcTreeBuilder</edgelabel>
+        </childnode>
+        <childnode refid="7906" relation="usage">
+          <edgelabel>_ParentObj</edgelabel>
+        </childnode>
+        <childnode refid="7907" relation="usage">
+          <edgelabel>_order</edgelabel>
+        </childnode>
+        <childnode refid="7898" relation="usage">
+          <edgelabel>changeTrackerField</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" line="542" column="1" bodyfile="C:/Users/rmoldwi/Documents/Visual Studio 2017/Projects/SDC Phase 3/Phase 3.0/SDC.Schema/SDC.Schema.PartialClasses.cs" bodystart="541" bodyend="545"/>
+    <listofallmembers>
+      <member refid="class_s_d_c_1_1_response_field_type_1a13b40c725fd82f05bdb2a8c96d8ffdd7" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>_afterChange</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a967036dc58c248eb384b2f68c9157d9f" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>_afterChange</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1ad9eb7f44fc9493af2e6bebe9abab3217" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>_extension1</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a219d3dcba29aa94721c9638424e1281c" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>_onEvent</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a678d575725830d60b6451ca1d0258221" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>_onEvent</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1ac0d29c0f84c1663997c06cd36e1cf677" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>_response</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a34b60f57e27cdeb50bf4656722627d21" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>_responseUnits</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a452d27ce98e46acaec4d23617164aae0" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>_setResponseValue</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a220c5ee968c786bf5c84a614f37ee132" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>_setValue</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a81e11c311fbd530cbd5d17006781c99d" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>_textAfterResponse</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a0b164ed054c514ad8ded34bcdd2183c7" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>_x_Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a16ddacbce38fad92e43902b8624b10b2" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>AddComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a0a90b941822022ca920cd3972665d0e1" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>AddExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1af3d3f61f036ef546e1294dbfd526cb71" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a85711ba5df03114735272c34e7120f86" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>AddFill</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1addd24fb6e352f9856d299b95f0d81160" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>AddFillComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a8e8294338cc7b83874a84f4de396eada" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>AddFillExtension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a891643fc2f885715c89a760f1c2684aa" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>AddFillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1aa53ca1c03bfb4e9a000b91825af19e85" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>AfterChange</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a0a03f96def7d990218eb8d940b452153" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>AfterChange</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac34402cb28174485d9dfe6078b6c899f" prot="protected" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="protected" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abff0e930473c563bbc0159a8bf03b6d1" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>BaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8cb7a0ce991e442a378bf5a89e95cbe2" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Buttons</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a12d8d8cf2532e6bedba5b0eb70ba3011" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ChangeTracker</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a12975a8b3bea71164e8b574e1c80616c" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>changeTrackerField</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a450323e3290231d0e69433ce0039785b" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>Clone</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a33ec358562a1fb9e98c30eb2f5c0b18f" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ac6be3a0d1c13593d1c0588048c8ebd97" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Comment</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1ad3c2d1292056326b23bf421f985d065c" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a873830c9515de6734a1b67bd4a214a24" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a3ad36b240420b310998a44c31228576a" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a2e194a17b79e2fe0edb6d7d1f50712bf" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a7c076f3b01d1f88cf8288cdd5152e0cc" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a873830c9515de6734a1b67bd4a214a24" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a3ad36b240420b310998a44c31228576a" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a131d246f11c1f4cc149e9c83c19b1093" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a09915b9665aef6f70b08435479543ad8" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adacad29c61ac487c7767f8acbe81c56e" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a801adef27a9c1169f6d673feca5c5982" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a23b8623309a087a0e3d2150800f39cdc" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7e581166126a3bb1141ccc16ee3b80f9" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a47364a24a7852fda3f30053c75d1748c" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseFieldType</scope><name>Deserialize</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a01e68a757ed689cedb9d9346ff737dec" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>DisplayedItems</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a53d84b139a9da8f9dfbabc939a09db05" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a941d3bc370293d6e4e9323c8bf4d2700" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Extension</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a88524c0995703766ee087f3b8c9f230e" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Extension1</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="protected" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ab3eee7c3c832a73604d425de741013db" prot="protected" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1adf885e8a239b556ac8bbc87a6ff30fec" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a831f8242641c87f5909b2528745e1e3b" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>FillBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a75969691e24d62691ce710fd4b9deda0" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>FillBaseTypeItem</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a93688aa7140b647fab1ae7a764af58df" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>FillExtensionBaseType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2e12a0a46fc6bef4001c6fb71b5e81cd" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aeafb63eb7a1a7e17f6879115be1e5315" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>GetParentObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8fb7dee89774c977f9a1a454c9364d07" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>IdentifiedTypes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3242e5d418e98adfc630b9e59e7eb2c2" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>InjectedItems</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a13846a33dbc3874e916ce74cbe702943" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ListItemResponses</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1adcba68f7d7754be4de55fbbf5e0298f0" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ListItemsAll</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a200af9661387b2a73800a37e8754b996" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1abc98a815188c884e4cc9707f4b1d81fa" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1aa51d1956a96aecd506bfbd5052f16a22" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a4b75dd15114b8b94db7c380bcf6bf909" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a1dc0221e869b0c21bca72140ae1830e5" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a1439bf4d1836e312dd6e4b0b0dba6136" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1aa51d1956a96aecd506bfbd5052f16a22" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a3aee2375ea171c34d588d684a461d211" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a7cdbfb38eef8fa4627901fe713ea7f39" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a70b0156e5e8665290967971c26fb7630" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a101b06adf7a2e48992158fc1917863c7" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1af7e7478e4308cf5c5867cf663ac69489" prot="public" virt="non-virtual" ambiguityscope="SDC::ExtensionBaseType."><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aaddd96517d440481c1213f89c6bb6793" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3225131fe4ec36398e05cd3a4ae692c7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a447c495b5242480122c3c67c9e37d1e2" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a16818f089c2b8f7367a56b45d4804ed7" prot="public" virt="non-virtual" ambiguityscope="SDC::BaseType."><scope>SDC::ResponseFieldType</scope><name>LoadFromFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab93abb986c4503dee9b77db19ed44f77" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>name</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a047ada08693937bc4dee3c2bb69f32a2" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>NamedNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab196ee6be4e2f5b6ecdbfd9380add091" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Nodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9836c1e89f67ee79f3092cc6eefae081" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>NodeType</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a60b0679cf42315303ec62d999ded4de2" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ObjectGUID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1aca8fa9a6625a02b5fe546ad9598b170e" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ObjectID</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a22300388d6432a796d48e5e655526c64" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>OnEvent</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a6665b302b751be56097927520533b1ca" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>OnEvent</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a40c28cf0a2a3230343f802405e749495" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>OnPropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ab990b1fef5ff404084bd11e276104b9b" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>order</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ac8bbb7e19b41c6ce20de4a938839a932" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>orderSpecified</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a12b198ae81f3aa283bee9b11c961ddba" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ParentID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a31b5aac80ba8dcaf4853db0e779cc15b" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ParentIETypeID</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a4097162c5cff49fed1cf718a194ae3fb" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ParentIETypeObject</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a0b8ef1d324948b9195860afcc0ef65b9" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ParentNode</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7cf5420099caa67a763fe92867da540a" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a9c74d030732debd9f2beeabd1ca57cda" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ParentObjID</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a323c079883e2b08f61534af967575691" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Property</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a205031f3d1d3e700e7291c9e076f2a3d" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>PropertyChanged</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1abf05cfb99f4cd336d621e14e4b2449da" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Questions</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a1ce84b1f0ad856fb44c689a686fcb92e" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Response</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a871eabecc5d208812e4460716967746e" prot="protected" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ResponseFieldType</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a6c572ae6f82157241bef22221a4c90f1" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ResponseFieldType</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a871eabecc5d208812e4460716967746e" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ResponseFieldType</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1ad1beccb03365b144f49e2ce15ea13084" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>ResponseUnits</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a7932e1c1298b7ff32bcedf6ba727a640" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1afca2a92abb66e91055eab09a172f9e6c" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1af1b65e456353b8bbcd84c6e1028c8c4e" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1ae4dde2df378977a461d4234578f57891" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1adc846eb19123a02fa51b2fdb760443eb" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1af1b65e456353b8bbcd84c6e1028c8c4e" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>SaveToFile</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ae8a940e8a6e9f9c63b93245627f27eea" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>sdcParentNodes</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1addaaf8f6c06f3fe911f1588120396b06" prot="package" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>sdcTreeBuilder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a7d8485e464e8f7d6a36e749baf0ed35c" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Sections</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a1ab64cfc289cb7830aa4f584593eb4af" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a956010209acef9db689f818016fbd780" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a956010209acef9db689f818016fbd780" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>Serialize</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a330854f116022fbc3f2a208bb1df3dc2" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>serializer</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1aef5cc0e6d4ee47ad06858f6692c4ce38" prot="private" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>Serializer</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a6c4be66144ba321e3b84d820e54a3909" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>SetResponseValue</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a66fafc0f1533e55fde0f8dbd76afcd86" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>SetValue</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a88660b9eea99c1e0335ee95ace33a247" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeAfterChange</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a69ee1affbaa50bee3f4a8c73eed0106b" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeComment</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1a554cf4f8e47ee43fcf8049f5245e065b" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeExtension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a8dffb21ec93046f5d5f633590b847f19" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializename</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a4e4b41d891ee9851ce54f318ffb78af2" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeOnEvent</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a2cb091d0bff664c41478be558609ca93" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeorder</name></member>
+      <member refid="class_s_d_c_1_1_extension_base_type_1ad447c1a72067fca654fa0d963a726909" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeProperty</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a15f5bbf9ee63f489c62416c7fca49e47" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeResponse</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a15f5bbf9ee63f489c62416c7fca49e47" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeResponse</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a1b835368a4a7af6a9c3a5c36250fbc5a" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeResponseUnits</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a1b835368a4a7af6a9c3a5c36250fbc5a" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeResponseUnits</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1af8fbbb67e695834d293fc1332ff8ad7e" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeSetResponseValue</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1af5b738234d23a822ce4e1b0e4f4f936a" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeSetValue</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a82668889a16e6160ea0ac73393f81f2d" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializestyleClass</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1adcb84ad3e4c13a83114cec0c31efbf60" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeTextAfterResponse</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1adcb84ad3e4c13a83114cec0c31efbf60" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeTextAfterResponse</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a3a4414e57531d785dafc84d0260e7f00" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializetype</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1a41c71d19eb9dba6732cce60b88db5f36" prot="public" virt="virtual"><scope>SDC::ResponseFieldType</scope><name>ShouldSerializeX_Extension</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1a24db32a60936f081ac07af7d6865a7a7" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>styleClass</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1ae38ec2fa7c88d60a8ed9430c426f9603" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>TextAfterResponse</name></member>
+      <member refid="class_s_d_c_1_1_base_type_1ace331bed50d77150bafba7db127b6900" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>type</name></member>
+      <member refid="class_s_d_c_1_1_response_field_type_1aa1a9714cd21c49b1901b68833ea64a72" prot="public" virt="non-virtual"><scope>SDC::ResponseFieldType</scope><name>X_Extension</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
