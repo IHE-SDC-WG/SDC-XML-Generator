@@ -828,7 +828,7 @@ The default value is "false" indicating that the the rule runs when the "If" con
                </xs:annotation>
             </xs:attribute>
             <xs:attribute name="actVisible" type="xs:boolean"/>
-            <xs:attribute name="actEnabled" type="xs:boolean"/>
+            <xs:attribute name="actEnable" type="xs:boolean"/>
             <xs:attribute name="actMinCard" type="xs:nonNegativeInteger">
                <xs:annotation>
                   <xs:documentation>Controls requirement to answer the question and the minimum number of repeats.</xs:documentation>
@@ -856,7 +856,7 @@ The default value is "false" indicating that the the rule runs when the "If" con
             </xs:attribute>
             <xs:attribute name="actReadOnly" type="xs:boolean">
                <xs:annotation>
-                  <xs:documentation/>
+                  <xs:documentation>Delete any response in a Response field on a question or ListItem.  Not applicable to other item types.</xs:documentation>
                </xs:annotation>
             </xs:attribute>
             <xs:attribute name="actType" type="xs:NMTOKENS">
@@ -1568,11 +1568,6 @@ If the minCard = "0" then isRequired = "false"</xs:documentation>
             <xs:attribute name="isReadOnly" type="xs:boolean"/>
             <xs:attribute name="hasType" type="xs:NMTOKENS"/>
             <xs:attribute name="hasStyleClass" type="xs:NMTOKENS"/>
-            <xs:attribute name="hasResponseGT" type="xs:decimal"/>
-            <xs:attribute name="hasResponseLT" type="xs:decimal"/>
-            <xs:attribute name="hasResponseEQ" type="xs:decimal"/>
-            <xs:attribute name="hasResponseGTE" type="xs:decimal"/>
-            <xs:attribute name="hasResponseLTE" type="xs:decimal"/>
          </xs:extension>
       </xs:complexContent>
    </xs:complexType>
