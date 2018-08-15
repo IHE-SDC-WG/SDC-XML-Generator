@@ -64,7 +64,7 @@ namespace SDC
                 string title = dr["OfficialName"].ToString();
                 string lineage = dr["ChecklistTemplateVersionCkey"].ToString().Replace(".1000043", "");//remove the eCC namespace suffix ".1000043"
                 string version = (dr["VersionID"].ToString()).Replace(".1000043", "") + "." + releaseVersionSuffix;//remove the eCC namespace suffix ".1000043"
-                string id = lineage + "." + version;  //FDF = "Form Design File".  This distinguishes the CTV_Ckey (Forms) from CTI_ Ckeys (Items).
+                string id = lineage + "_" + version + "_sdcFDF";  //FDF = "Form Design File".  This distinguishes the CTV_Ckey (Forms) from CTI_ Ckeys (Items).
                                                                //id - has format like: 129.3.001.001.CTP1 – note the 3 components, and the “.” separator
                 string required = dr["Restrictions"].ToString().Contains("optional") ? "false" : "true"; //determines if accreditation applies
                 string AJCCversion = dr["AJCC_UICC_Version"].ToString();
@@ -84,7 +84,7 @@ namespace SDC
                 fd.version = version;
                 //fullURI - format like: https://www.cap.org/eCC/SDC.3.11/AdrenalRes/129.3.000.001.CTP1            
                 fd.fullURI = fd.baseURI + "/" + fd.ID;  //Note that “/” is used for URI used instead of “_”
-                fd.filename = "SDC.3.11_FDF_" + shortName + "_" + fd.ID; //format like: SDC.3.11_FDF_Adrenal.Res_129.3.001.001.CTP1
+                fd.filename = id + ".xml";  // "SDC.3.11_FDF_" + shortName + "_" + fd.ID; //format like: SDC.3.11_FDF_Adrenal.Res_129.3.001.001.CTP1
                 fd.formTitle = title;
 
 
@@ -102,7 +102,7 @@ namespace SDC
                 CreateStaticProperty(fd, dr["GenericHeaderText"].ToString(), "CAPeCC_static_text", "", "GenericHeaderText", false, string.Empty, null, string.Empty, "GenericHeaderText"); //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["Category"].ToString(), "CAPeCC_meta", string.Empty, "Category", false, string.Empty, null, string.Empty, "Category"); //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["OfficialName"].ToString(), "CAPeCC_meta", string.Empty, "OfficialName", false, string.Empty, null, string.Empty, "OfficialName");  //, "CAPeCC_CAP_Protocol");
-                //CreateStaticProperty(fd, dr["CAPProtocolVersion"].ToString(), "CAPeCC_meta", string.Empty, "CAPProtocolVersion", false, string.Empty, null, string.Empty, "CAPProtocolVersion");  //, "CAPeCC_CAP_Protocol");
+                CreateStaticProperty(fd, dr["CAPProtocolVersion"].ToString(), "CAPeCC_meta", string.Empty, "CAPProtocolVersion", false, string.Empty, null, string.Empty, "CAPProtocolVersion");  //, "CAPeCC_CAP_Protocol");
                 //CreateStaticProperty(fd, dr["SDCSchemaVersion"].ToString(), "CAPeCC_meta", string.Empty, "SDCSchemaVersion", false, string.Empty, null, string.Empty, "SDCSchemaVersion");  //, "CAPeCC_CAP_Protocol");
 
                 CreateStaticProperty(fd, dr["Restrictions"].ToString(), "CAPeCC_meta", string.Empty, "Restrictions", false, string.Empty, null, string.Empty, "Restrictions");  //, "CAPeCC_CAP_Protocol");
@@ -1696,6 +1696,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.val = drFormDesign["ReportText"].ToString();
             if (p.val == "''") p.val = "{no text}";
+            if (p.val.StartsWith("]")) p.val = p.val.Remove(1, 1);  //the leading "]" is a flag for QA queries to ignore this text because it was customized by a modeler.
             p.propName = "reportText";
             p.order = p.ObjectID;
             return p;
