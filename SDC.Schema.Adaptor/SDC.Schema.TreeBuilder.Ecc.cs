@@ -18,6 +18,13 @@ namespace SDC
     public class SDCTreeBuilderEcc : SDCTreeBuilder
     {
 
+        /// <summary>
+        /// resets for each Identified Item Type, and counts each element added under the iet.
+        /// Used to create unique and relatively reproducible name properties for each element 
+        /// </summary>
+        private int ietCounter=0;
+        
+
         #region Rules
 
         //!+Rules
@@ -102,7 +109,7 @@ namespace SDC
                 CreateStaticProperty(fd, dr["GenericHeaderText"].ToString(), "CAPeCC_static_text", "", "GenericHeaderText", false, string.Empty, null, string.Empty, "GenericHeaderText"); //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["Category"].ToString(), "CAPeCC_meta", string.Empty, "Category", false, string.Empty, null, string.Empty, "Category"); //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["OfficialName"].ToString(), "CAPeCC_meta", string.Empty, "OfficialName", false, string.Empty, null, string.Empty, "OfficialName");  //, "CAPeCC_CAP_Protocol");
-                CreateStaticProperty(fd, dr["CAPProtocolVersion"].ToString(), "CAPeCC_meta", string.Empty, "CAPProtocolVersion", false, string.Empty, null, string.Empty, "CAPProtocolVersion");  //, "CAPeCC_CAP_Protocol");
+                //TODO: Need to support this: CreateStaticProperty(fd, dr["CAPProtocolVersion"].ToString(), "CAPeCC_meta", string.Empty, "CAPProtocolVersion", false, string.Empty, null, string.Empty, "CAPProtocolVersion");  //, "CAPeCC_CAP_Protocol");
                 //CreateStaticProperty(fd, dr["SDCSchemaVersion"].ToString(), "CAPeCC_meta", string.Empty, "SDCSchemaVersion", false, string.Empty, null, string.Empty, "SDCSchemaVersion");  //, "CAPeCC_CAP_Protocol");
 
                 CreateStaticProperty(fd, dr["Restrictions"].ToString(), "CAPeCC_meta", string.Empty, "Restrictions", false, string.Empty, null, string.Empty, "Restrictions");  //, "CAPeCC_CAP_Protocol");
@@ -230,11 +237,16 @@ namespace SDC
         {
             if (!bt.GetType().IsSubclassOf(typeof(DisplayedType)))
             {
-                //HACK: Assign names for testing; names need to be fixed strings assigned in the database.
+                
                 IdentifiedExtensionType iet = bt.ParentIETypeObject;
-                string shortText = iet.name;
-                string prefix = "BT";
+                string shortID = TruncateCkey(iet);
+                //return TruncateCkey(iet) + "_" + ++ietCounter;  //use Ckey with a counter suffix
 
+//HACK: Assign names for testing; names need to be fixed strings assigned in the database.
+
+                string shortText = iet.name;
+                string prefix = "";
+                
                 //Console.Write(bt.GetType().ToString());
 
                 if (!string.IsNullOrWhiteSpace(shortText))
@@ -244,9 +256,10 @@ namespace SDC
                         case "SDC.ResponseFieldType":
                             prefix = "rf_";
                             break;
-                        case "SDC.ResponseType":
-                            prefix = "rsp_";
+                        case "SDC.DataTypes_DEType":  //used for Response element and AssociatedValue
+                            prefix = "dt_";
                             break;
+
                         case "SDC.PropertyType":
                             prefix = "p_";
                             break;
@@ -256,6 +269,9 @@ namespace SDC
                             break;
                         case "SDC.ListFieldType":
                             prefix = "lf_";
+                            break;
+                        case "SDC.ListType":
+                            prefix = "lst_";
                             break;
                         case "SDC.string_DEtype":
                             prefix = "str_";
@@ -284,17 +300,28 @@ namespace SDC
 
 
 
+
                         case "":
                         default:
-                            prefix = "_" + bt.GetType().ToString();
+                            var btType = bt.GetType().ToString();
+                            int i; //= btType.IndexOf("Item");
+                            //if (i==0)
+                                i = btType.IndexOf("Type");
+                            //if (i > 0)
+                                btType = btType.Substring(4, i-4);  //strip off leading "SDC." and trailing "Type"
+
+                            prefix = btType;
                             break;
 
                     }
-                    string ancestorID = Decimal.Truncate(Convert.ToDecimal(iet.ID)).ToString();  //could throw errors
-                    string objectCtr = bt.ObjectID.ToString();
-                    return prefix + shortText + "_" + objectCtr + '_' + ancestorID;
+                    //string ancestorID = Decimal.Truncate(Convert.ToDecimal(iet.ID)).ToString();  //could throw errors
+                    //string objectCtr = bt.ObjectID.ToString();
+
+                    //return prefix + shortText + "_" + ++ietCounter;  //objectCtr; //+ '_' + ancestorID;
+                    return prefix + shortID + "_" + ++ietCounter;
                 }
-                else { }
+                else {
+                }
             }
             return bt.name;
         }
@@ -335,8 +362,44 @@ namespace SDC
             //TODO: support baseURI
 
             iet.ID = drFormDesign["ChecklistTemplateItemCKey"].ToString();
-            return iet;
+            iet.name = CreateIETname(iet); 
 
+            return iet;
+        }
+
+        private string CreateIETname(IdentifiedExtensionType iet)
+        {
+            ietCounter = 0;
+            var shortName = (string)drFormDesign["ShortName"];
+            string shortID = TruncateCkey(iet);
+            
+            if (!string.IsNullOrWhiteSpace(shortName))
+            { iet.name = shortName + "_" + shortID; }
+            else
+            { //no shortName present, so use the type name instead
+                var ietType = iet.GetType().ToString();
+                int i;
+                //i = ietType.IndexOf("ItemType");
+                //if (i == 0)
+                i = ietType.IndexOf("Type");
+                if (i > 0) ietType = ietType.Substring(4, i - 4); //strip off leading "SDC." and trailing "Type"
+                iet.name = ietType + "_" + shortID;
+            }
+
+            return iet.name;
+        }
+
+        private static string TruncateCkey(IdentifiedExtensionType iet)
+        {
+            string shortID = "";
+            int i = 0;
+            if (!string.IsNullOrWhiteSpace(iet.ID))
+            {
+                i = iet.ID.ToString().IndexOf(".100004300");
+                if (i > 0)
+                    shortID = iet.ID.ToString().Substring(0, i);
+            }
+            return shortID;
         }
 
         public override RepeatingType FillRepeatingTypeItemData(RepeatingType rt)
@@ -815,6 +878,7 @@ namespace SDC
             prop.order = prop.ObjectID;
             prop.propName = propertyName;
             prop.propClass = propertyClass;
+            prop.name = name;
             //p.RegisterParents(parent);
 
             //if (comment !="") AddRichText<DisplayedType>(parent, xhtml, comment);
@@ -848,18 +912,19 @@ namespace SDC
                     null, null);
                 //f.styleClass = "left";
                 f.ID = "Footer" + "." + FormDesign.ID;
+                f.name = "footer";
             }
         }
 
-        private BaseType CreateStaticBaseItems(BaseType parent, string type, string style, string name)
+        private BaseType CreateStaticBaseItems(BaseType bt, string type, string style, string name)
         {
             //var p = new RichTextType();
             //var p = AddFillOtherText(FormDesign.Header, false);
-            parent.type = type;
-            parent.styleClass = style;
-            parent.name = name;
+            bt.type = type;
+            bt.styleClass = style;
+            bt.name = name;
 
-            return parent;
+            return bt;
         }
 
 
@@ -1550,7 +1615,7 @@ namespace SDC
             }
 
             rfParent.Response.ItemElementName = dataTypeEnum;
-            FillBaseTypeItem(rfParent.Response.DataTypeDE_Item);
+            //FillBaseTypeItem(rfParent.Response.DataTypeDE_Item);
             return rfParent.Response;
 
         }
@@ -1662,6 +1727,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.propName = "altText";
             p.val = drFormDesign["LongText"].ToString();
+            FillProperty(p);
             return p;
         }
 
@@ -1670,6 +1736,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "description";
             p.val = drFormDesign["Description"].ToString();
+            FillProperty(p);
             return p;
         }
 
@@ -1678,7 +1745,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "instruction";
             p.val = drFormDesign["Instruction"].ToString();
-            p.order = p.ObjectID;
+            FillProperty(p);
             return p;
         }
 
@@ -1687,7 +1754,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "popUpText";
             p.val = drFormDesign["PopUpText"].ToString();
-            p.order = p.ObjectID;
+            FillProperty(p);
             return p;
         }
 
@@ -1696,9 +1763,9 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.val = drFormDesign["ReportText"].ToString();
             if (p.val == "''") p.val = "{no text}";
-            if (p.val.StartsWith("]")) p.val = p.val.Remove(1, 1);  //the leading "]" is a flag for QA queries to ignore this text because it was customized by a modeler.
+            if (p.val.StartsWith("]")) p.val = p.val.Remove(0, 1);  //the leading "]" is a flag for QA queries to ignore this text because it was customized by a modeler.
             p.propName = "reportText";
-            p.order = p.ObjectID;
+            FillProperty(p);
             return p;
         }
 
@@ -1707,7 +1774,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "reportTextShort";
             p.val = drFormDesign["ShortText"].ToString();
-            p.order = p.ObjectID;
+            FillProperty(p);
             return p;
         }
 
@@ -1716,7 +1783,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "spanishText";
             p.val = drFormDesign["panishText"].ToString();
-            p.order = p.ObjectID;
+            FillProperty(p);
             return p;
         }
 
@@ -1725,14 +1792,15 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "tooltip";
             p.val = drFormDesign["ControlTip"].ToString();
-            p.order = p.ObjectID;
+            FillProperty(p);
             return p;
         }
 
-        public override PropertyType FillProperty(PropertyType pt, Boolean fillData = true)
+        public override PropertyType FillProperty(PropertyType p, Boolean fillData = true)
         {
-            pt.name = CreateName(pt);
-            return pt;
+            p.order = p.ObjectID;
+            p.name = CreateName(p);
+            return p;
         }
 
         #endregion
@@ -1891,7 +1959,10 @@ namespace SDC
             li.selected = (bool)drFormDesign["locked"]; //TODO: Add "selected" to database and SQL
             li.selectionDeselectsSiblings = (bool)drFormDesign["selectionDeselectsSiblings"];
             li.selectionDisablesChildren = (bool)drFormDesign["selectionDisablesChildren"];
-            li.name = (string)drFormDesign["ShortName"];
+            //var shortName = (string)drFormDesign["ShortName"];
+            //var shortID = shortName.Substring(0, shortName.IndexOf("."));
+            //if (!string.IsNullOrWhiteSpace(shortName))
+            //    li.name = shortName + "." + shortID ;
 
             //For eCC, we need a better way to handle "optional" answers on required questions"
             //need to set mustImplement to true for all ListItems
@@ -2010,16 +2081,12 @@ namespace SDC
 
         public override ListItemResponseFieldType FillListItemResponseField(ListItemResponseFieldType liRF)
         {
-            FillResponseField(liRF);
+            //FillResponseField(liRF);
             liRF.responseRequired = (bool)drFormDesign["responseRequired"];
-
-
-            //FillListItemResponseField(liRF);
-            AddFillResponseUnits(liRF);
 
             var li = (ListItemType)liRF.ParentNode;
 
-            //Special eCC rule
+            //ToDo: remove this special eCC rule, to allow these words on SDC optional answers (e.g., Pending (specify))
             if (li.title.ToLower().Contains("specify") ||
                 li.title.ToLower().Contains("explain") ||
                 li.title.ToLower().Contains("at least")
@@ -2034,6 +2101,18 @@ namespace SDC
         public override ResponseFieldType FillResponseField(ResponseFieldType rf)
         {   //TODO: Add Response, TextAfterResponse (RichTextType), ReponseUnits, SetValueExpression
 
+
+            AddFillDataTypesDE(rf);
+            AddFillTextAfterResponse(rf);
+            AddFillResponseUnits(rf);
+
+
+            return rf;
+        }
+
+
+        public override ResponseFieldType AddFillTextAfterResponse(ResponseFieldType rfParent, Boolean fillData = true)
+        {
             string textAfterResp;
             try
             {
@@ -2047,15 +2126,13 @@ namespace SDC
 
             if (textAfterResp != string.Empty)
             {
-                rf.TextAfterResponse = new RichTextType(rf); //TextAfterResponse type must be initialized
-                rf.TextAfterResponse.val = textAfterResp; //TODO: edit SQL and database to read "TextAfterResponse"
+                rfParent.TextAfterResponse = new RichTextType(rfParent); //TextAfterResponse type must be initialized
+                rfParent.TextAfterResponse.val = textAfterResp; //TODO: edit SQL and database to read "TextAfterResponse"
             }
 
-            return rf;
+            return rfParent;
+
         }
-
-
-
         protected override UnitsType AddFillResponseUnits(ResponseFieldType rf, Boolean fillData = true)
         {
             UnitsType u = null;

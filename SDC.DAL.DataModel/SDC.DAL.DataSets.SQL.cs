@@ -388,25 +388,38 @@ WHERE
             DataTable dt;
             using (var con = new SqlConnection())
             {
-                con.ConnectionString = Properties.Settings.Default.PERC_eCC_Con;
-                using (var cmd = con.CreateCommand())
+                try
                 {
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = sql;
-                    cmd.Parameters.Add("@VersionCkey", SqlDbType.Decimal).Value = CTV_Ckey;
-                    con.Open();
+                    con.ConnectionString = Properties.Settings.Default.PERC_eCC_Con;
+                    using (var cmd = con.CreateCommand())
+                    {
+                        cmd.CommandType = CommandType.Text;
+                        cmd.CommandText = sql;
+                        cmd.Parameters.Add("@VersionCkey", SqlDbType.Decimal).Value = CTV_Ckey;
+                        con.Open();
 
-                    dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
-                    return dt;
+                        dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        return dt;
+                    }
+                }
+                catch
+                { //main DB can't be reached, so use local connection string with local SQL Svr
+                    con.ConnectionString = Properties.Settings.Default.PERC_eCC_Con_local;
+                    using (var cmd = con.CreateCommand())
+                    {
+                        cmd.CommandType = CommandType.Text;
+                        cmd.CommandText = sql;
+                        cmd.Parameters.Add("@VersionCkey", SqlDbType.Decimal).Value = CTV_Ckey;
+                        con.Open();
+
+                        dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        return dt;
+                    }
                 }
             }
         }
-
     }
-
-
-
-
-
 }
+

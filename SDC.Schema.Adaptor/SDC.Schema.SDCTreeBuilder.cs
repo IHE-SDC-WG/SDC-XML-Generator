@@ -101,7 +101,7 @@ namespace SDC
                     case ItemTypeEnum.QuestionMultiple:
                     case ItemTypeEnum.QuestionSingle:
                     case ItemTypeEnum.QuestionGroup:
-                        qType = (QuestionEnum)rowType;  //The more restrictive QuestionEnum is needed fopr AddQuestion below; The 2 Enum types share question enum values
+                        qType = (QuestionEnum)rowType;  //The more restrictive QuestionEnum is needed for AddQuestion below; The 2 Enum types share question enum values
                         parentIETnode = SDCHelpers.GetParentIETypeNode(parURI);
 
                         if (parentIETnode == null)
@@ -122,7 +122,7 @@ namespace SDC
 
                                     qi = AddQuestion<SectionItemType>((SectionItemType)parentIETnode, qType);
                                     //var t = SDCtypes.SectionItemType;
-                                    parentIETnode.AddFill(SDCtypes.SectionItemType, true);
+                                    //parentIETnode.AddFill(SDCtypes.SectionItemType, true); //ToDo: this function does nothing - delete it
                                     break;
                                 case ItemTypeEnum.ListItemFillin:
                                 case ItemTypeEnum.ListItem:
@@ -1392,13 +1392,8 @@ namespace SDC
         //!+Create Response Items
         protected virtual ResponseFieldType AddQuestionResponseField(QuestionItemType qParent, Boolean fillData = true)
         {
-            //Add Response, TextAfterResponse (RichTextType), ReponseUnits, SetValueExpression
             var rf = new ResponseFieldType(qParent);
-            AddResponseFieldItems(rf, fillData);
             qParent.ResponseField_Item = rf;
-
-            //if (fillData) FillResponseField(rf);
-            //AddFillResponseUnits(rf, fillData);
 
             return rf;
         }
@@ -1407,24 +1402,23 @@ namespace SDC
         {
             var liRF = new ListItemResponseFieldType(liParent);
             liParent.ListItemResponseField = liRF;
-            AddResponseFieldItems(liRF, fillData);
-
-            //if (fillData) FillListItemResponseField(liRF);
-            //AddFillResponseUnits(liRF, fillData);
 
             return liRF;
         }
-        protected virtual ResponseFieldType AddResponseFieldItems(ResponseFieldType rfParent, Boolean fillData = true)
+        protected virtual ResponseFieldType X_AddResponseFieldItems(ResponseFieldType rfParent, Boolean fillData = true)
         {
             if (fillData) AddFillDataTypesDE(rfParent);
             //!+TODO: AddTextAfterResponse()  //and remove code from FillResponseField
-            //TextfterResponse is added too early (out of sequence) inside FillResponseField
+            //TextAfterResponse is added too early (out of sequence) inside FillResponseField
 
             //if (fillData) FillResponseField(rfParent);
-            AddUnits(rfParent, fillData);
+
+            //AddTextAfterResponse(rfParent, fillData);
+            //AddUnits(rfParent, fillData);
 
             return rfParent;
         }
+        public abstract ResponseFieldType AddFillTextAfterResponse(ResponseFieldType rfParent, Boolean fillData = true);
         public abstract ResponseFieldType FillResponseField(ResponseFieldType rf);
         public abstract ListItemResponseFieldType FillListItemResponseField(ListItemResponseFieldType lirf);  //, ListItemBaseType li);
 

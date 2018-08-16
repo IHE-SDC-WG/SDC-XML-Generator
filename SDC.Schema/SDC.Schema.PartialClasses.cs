@@ -512,6 +512,7 @@ namespace SDC
         public ListItemResponseFieldType(BaseType parentNode, bool fillData = true) : base(parentNode, fillData)
         {
             this._responseRequired = false;
+            //if (fillData) AddFillDataTypesDE(parentNode);
             if (fillData) sdcTreeBuilder.FillListItemResponseField(this);
         }
         protected ListItemResponseFieldType() { }
