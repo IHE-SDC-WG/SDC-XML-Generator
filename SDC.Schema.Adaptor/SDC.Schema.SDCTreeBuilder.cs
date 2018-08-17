@@ -106,7 +106,7 @@ namespace SDC
 
                         if (parentIETnode == null)
                         {
-                            var body = FormDesign.AddBody();
+                            var body = FormDesign.AddBody();                            
                             //parentIETnode = body;
                             qi = body.AddQuestion(qType);
 
@@ -341,8 +341,9 @@ namespace SDC
 
                 // entity strings being passed thru by the serializer
                 // specifically apos and quot, need to be fixed
-                formDesignXml = formDesignXml.Replace("&amp;quot", "&quot");
-                formDesignXml = formDesignXml.Replace("&amp;apos", "&apos");
+
+                //formDesignXml = formDesignXml.Replace("&amp;quot", "&quot");
+                //formDesignXml = formDesignXml.Replace("&amp;apos", "&apos");
                 return formDesignXml;
             }
             return String.Empty;
@@ -353,6 +354,7 @@ namespace SDC
             if (FormDesign.Body == null)
             {
                 FormDesign.Body = new SectionItemType(FormDesign, fillData, FormDesign.ID + "_Body");  //Set a default ID, in case the database template does not have a body
+                FormDesign.Body.name = "Body";
             }
             return FormDesign.Body;
         }

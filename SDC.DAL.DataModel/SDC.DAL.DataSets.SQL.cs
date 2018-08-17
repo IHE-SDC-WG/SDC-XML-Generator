@@ -261,89 +261,91 @@ WHERE     (i.ChecklistTemplateVersionCKey = @VersionCkey)
         {
             #region SQL
             const string getChecklistVersion = @"SELECT
-    @VersionCkey AS ChecklistTemplateVersionCkey ,
-    CTV.VisibleText ,
-    CTV.OfficialName AS longText ,
-    COALESCE(Chk.FullySpecifiedName , '') AS FSN ,
-    COALESCE(Chk.ConceptID , '') AS ConceptId ,
-    COALESCE(Chk.LegacyCode , '') AS LegacyCode ,
-    COALESCE(Chk.GID , '') AS GID ,
-    '' AS LOINC ,
-    1 AS ItemTypeKey ,
-    Chk.ChecklistCKey AS ChecklistCkey ,
-    Chk.ShortName,
-    1 AS SortOrder ,
-    CTV.VersionID ,
-    --ExtVer.AJCC_UICC_VersionNum ,
-    AJCC.AJCC_UICC_Version ,
-    CTV.Restrictions ,
-    CTV.WebPostingDate ,
-    CTV.RevisionDate ,
-    CTV.EffectiveDate ,
-    CTV.RetireDate ,
-    CTV.ApprovalStatus ,
-    CTV.Description ,
-    COALESCE(Cat.Category , '') AS Category ,
-    CTV.GenericHeaderText ,
-    FIGO.FIGO_Version ,
-    CS.CS_Version ,
-    --CTV.CS_SchemaNum ,
-    Src.Source ,
-    COALESCE(LORT.ReleaseVersionSuffix, 'UNK') AS ReleaseVersionSuffix ,  --UNK = unknown status
-    CTV.OfficialName ,
-    CTV.CurrentFileName
-FROM
-    ChecklistTemplateVersions AS CTV WITH ( NOLOCK ) 
-    LEFT OUTER JOIN Checklists AS Chk WITH ( NOLOCK )
-    ON  CTV.ChecklistCkey = Chk.ChecklistCKey 
-    LEFT OUTER JOIN ListOfAJCC_UICC_Versions AS ExtVer WITH ( NOLOCK )
-    ON  CTV.AJCC_UICC_Version = ExtVer.AJCC_UICC_VersionKey 
-    LEFT OUTER JOIN ListOfChecklistCategories AS Cat WITH ( NOLOCK )
-    ON  Chk.CategoryCKey = Cat.CategoryCkey 
-    LEFT OUTER JOIN ListOfSources AS Src WITH ( NOLOCK )
-    ON  CTV.ChecklistSourceCKey = Src.SourceCkey
-    LEFT OUTER JOIN ListofReleaseTypes AS LORT WITH ( NOLOCK )
-    ON  CTV.ReleaseTypeCKey = LORT.ReleaseTypeCkey
+                @VersionCkey AS ChecklistTemplateVersionCkey ,
+                CTV.VisibleText ,
+                --CTV.OfficialName AS longText ,
+                --COALESCE(Chk.FullySpecifiedName , '') AS FSN ,
+                --COALESCE(Chk.ConceptID , '') AS ConceptId ,
+                --COALESCE(Chk.LegacyCode , '') AS LegacyCode ,
+                --COALESCE(Chk.GID , '') AS GID ,
+                --'' AS LOINC ,
+                --1 AS ItemTypeKey ,
+                Chk.ChecklistCKey AS ChecklistCkey ,
+                Chk.ShortName,
+                --1 AS SortOrder ,
+                CTV.VersionID ,
+                --ExtVer.AJCC_UICC_VersionNum ,
+                AJCC.AJCC_UICC_Version ,
+                CTV.Restrictions ,
+                CTV.WebPostingDate ,
+                CTV.RevisionDate ,
+                CTV.EffectiveDate ,
+                CTV.RetireDate ,
+                CTV.ApprovalStatus ,
+                CTV.Description ,
+                COALESCE(Cat.Category , '') AS Category ,
+                CTV.GenericHeaderText ,
+                FIGO.FIGO_Version ,
+                CS.CS_Version ,
+                --CTV.CS_SchemaNum ,
+                --Src.Source ,
+                COALESCE(LORT.ReleaseVersionSuffix, 'UNK') AS ReleaseVersionSuffix ,  --UNK = unknown status
+                CTV.OfficialName ,
+                CTV.CurrentFileName,
+                CTV.CAP_ProtocolName,
+                CTV.CAP_ProtocolVersion
+            FROM
+                ChecklistTemplateVersions AS CTV WITH ( NOLOCK ) 
+                LEFT OUTER JOIN Checklists AS Chk WITH ( NOLOCK )
+                ON  CTV.ChecklistCkey = Chk.ChecklistCKey 
+                LEFT OUTER JOIN ListOfAJCC_UICC_Versions AS ExtVer WITH ( NOLOCK )
+                ON  CTV.AJCC_UICC_Version = ExtVer.AJCC_UICC_VersionKey 
+                LEFT OUTER JOIN ListOfChecklistCategories AS Cat WITH ( NOLOCK )
+                ON  Chk.CategoryCKey = Cat.CategoryCkey 
+                LEFT OUTER JOIN ListOfSources AS Src WITH ( NOLOCK )
+                ON  CTV.ChecklistSourceCKey = Src.SourceCkey
+                LEFT OUTER JOIN ListofReleaseTypes AS LORT WITH ( NOLOCK )
+                ON  CTV.ReleaseTypeCKey = LORT.ReleaseTypeCkey
 
-    LEFT OUTER JOIN 
-    (
-        Select CTV.ChecklistTemplateVersionCKey, EV.ExternalVersion + 'th Edition' AS 'AJCC_UICC_Version'  FROM 
-        dbo.ChecklistTemplateVersions CTV
-        INNER JOIN 
-        dbo.ChecklistVersion_ExternalVersion CVEV ON CTV.ChecklistTemplateVersionCKey = CVEV.ChecklistTemplateVersionCKey
-        INNER JOIN
-        dbo.ListOfExternalVersions EV ON EV.ExternalVersionCKey = CVEV.ExternalVersionCKey
-        WHERE EV.OrganizationName = 'AJCC-UICC'
-        ) AS AJCC
-ON AJCC.ChecklistTemplateVersionCKey=CTV.ChecklistTemplateVersionCKey
+                LEFT OUTER JOIN 
+                (
+                    Select CTV.ChecklistTemplateVersionCKey, EV.ExternalVersion + 'th Edition' AS 'AJCC_UICC_Version'  FROM 
+                    dbo.ChecklistTemplateVersions CTV
+                    INNER JOIN 
+                    dbo.ChecklistVersion_ExternalVersion CVEV ON CTV.ChecklistTemplateVersionCKey = CVEV.ChecklistTemplateVersionCKey
+                    INNER JOIN
+                    dbo.ListOfExternalVersions EV ON EV.ExternalVersionCKey = CVEV.ExternalVersionCKey
+                    WHERE EV.OrganizationName = 'AJCC-UICC'
+                    ) AS AJCC
+            ON AJCC.ChecklistTemplateVersionCKey=CTV.ChecklistTemplateVersionCKey
 
-LEFT OUTER JOIN 
-(
-    Select CTV.ChecklistTemplateVersionCKey, 'Version ' + EV.ExternalVersion AS 'CS_Version'  FROM 
-        dbo.ChecklistTemplateVersions CTV
-    INNER JOIN 
-        dbo.ChecklistVersion_ExternalVersion CVEV ON CTV.ChecklistTemplateVersionCKey = CVEV.ChecklistTemplateVersionCKey
-    INNER JOIN 
-        dbo.ListOfExternalVersions EV ON EV.ExternalVersionCKey = CVEV.ExternalVersionCKey
-    WHERE EV.OrganizationName = 'Collaborative Staging'
-    )   AS CS
+            LEFT OUTER JOIN 
+            (
+                Select CTV.ChecklistTemplateVersionCKey, 'Version ' + EV.ExternalVersion AS 'CS_Version'  FROM 
+                    dbo.ChecklistTemplateVersions CTV
+                INNER JOIN 
+                    dbo.ChecklistVersion_ExternalVersion CVEV ON CTV.ChecklistTemplateVersionCKey = CVEV.ChecklistTemplateVersionCKey
+                INNER JOIN 
+                    dbo.ListOfExternalVersions EV ON EV.ExternalVersionCKey = CVEV.ExternalVersionCKey
+                WHERE EV.OrganizationName = 'Collaborative Staging'
+                )   AS CS
 
-ON CS.ChecklistTemplateVersionCKey=CTV.ChecklistTemplateVersionCKey
+            ON CS.ChecklistTemplateVersionCKey=CTV.ChecklistTemplateVersionCKey
 
-LEFT OUTER JOIN 
-        (
-        Select CTV.ChecklistTemplateVersionCKey, EV.ExternalVersion AS 'Figo_Version'  FROM 
-        dbo.ChecklistTemplateVersions CTV
-        INNER JOIN 
-        dbo.ChecklistVersion_ExternalVersion CVEV ON CTV.ChecklistTemplateVersionCKey = CVEV.ChecklistTemplateVersionCKey
-        INNER JOIN
-        dbo.ListOfExternalVersions EV ON EV.ExternalVersionCKey = CVEV.ExternalVersionCKey
-        WHERE EV.OrganizationName = 'FIGO'
-        ) AS FIGO
-ON FIGO.ChecklistTemplateVersionCKey=CTV.ChecklistTemplateVersionCKey
+            LEFT OUTER JOIN 
+                    (
+                    Select CTV.ChecklistTemplateVersionCKey, EV.ExternalVersion AS 'Figo_Version'  FROM 
+                    dbo.ChecklistTemplateVersions CTV
+                    INNER JOIN 
+                    dbo.ChecklistVersion_ExternalVersion CVEV ON CTV.ChecklistTemplateVersionCKey = CVEV.ChecklistTemplateVersionCKey
+                    INNER JOIN
+                    dbo.ListOfExternalVersions EV ON EV.ExternalVersionCKey = CVEV.ExternalVersionCKey
+                    WHERE EV.OrganizationName = 'FIGO'
+                    ) AS FIGO
+            ON FIGO.ChecklistTemplateVersionCKey=CTV.ChecklistTemplateVersionCKey
 
-WHERE
-    ( CTV.ChecklistTemplateVersionCkey = @VersionCkey )";
+            WHERE
+                ( CTV.ChecklistTemplateVersionCkey = @VersionCkey )";
             #endregion
 
             return CreateDataTable(versionCkey, getChecklistVersion);

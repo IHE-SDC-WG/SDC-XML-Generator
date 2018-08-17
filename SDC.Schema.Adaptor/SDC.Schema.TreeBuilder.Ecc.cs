@@ -22,8 +22,8 @@ namespace SDC
         /// resets for each Identified Item Type, and counts each element added under the iet.
         /// Used to create unique and relatively reproducible name properties for each element 
         /// </summary>
-        private int ietCounter=0;
-        
+        private int ietCounter = 0;
+
 
         #region Rules
 
@@ -69,11 +69,11 @@ namespace SDC
                 string shortName = dr["ShortName"].ToString().Replace(" ", "");  //used for creating filenames etc..; sample: “Adrenal.Res”; spaces are removed  
                 string releaseVersionSuffix = dr["ReleaseVersionSuffix"].ToString();  //e.g., CTP1, RC2, REL; UNK if a value is missing
                 string title = dr["OfficialName"].ToString();
-                string lineage = dr["ChecklistTemplateVersionCkey"].ToString().Replace(".1000043", "");//remove the eCC namespace suffix ".1000043"
+                string lineage = shortName + "." + dr["ChecklistTemplateVersionCkey"].ToString().Replace(".1000043", "");//remove the eCC namespace suffix ".1000043"
                 string version = (dr["VersionID"].ToString()).Replace(".1000043", "") + "." + releaseVersionSuffix;//remove the eCC namespace suffix ".1000043"
-                string id = lineage + "_" + version + "_sdcFDF";  //FDF = "Form Design File".  This distinguishes the CTV_Ckey (Forms) from CTI_ Ckeys (Items).
-                                                               //id - has format like: 129.3.001.001.CTP1 – note the 3 components, and the “.” separator
-                string required = dr["Restrictions"].ToString().Contains("optional") ? "false" : "true"; //determines if accreditation applies
+                string id = lineage + "_" + version + "_sdcFDF";  //FDF = "Form Design File".
+                bool required = dr["EffectiveDate"].ToString() == "" ? false : true; //ToDo: It would be better to have a database field for required.
+
                 string AJCCversion = dr["AJCC_UICC_Version"].ToString();
                 string FIGOversion = dr["FIGO_Version"].ToString();
 
@@ -83,14 +83,16 @@ namespace SDC
                                        //Note that we have a 2-way reference here:  fd holds a copy of "this" (the eCC tree buiilder), and "this" holds a copy of fd.
                                        //This is a bidirectional dependency injection, allowing fd to call eCC-specific tree builder functions, 
                                        //and "this" (The eCC tree builder) to assemble the eCC tree with fd components, and fill it with eCC content.
-                
+
 
                 //Some basic fd properties
-                fd.baseURI = "https://www.cap.org/eCC/SDC.3.1" + "/" + shortName;  //uses SDC Schema version (3.1) is “SDC.3.1”
+                fd.baseURI = "cap.org";  //uses SDC Schema version (3.1) is “SDC.3.1”
                 fd.lineage = lineage;
                 fd.version = version;
+
                 //fullURI - format like: https://www.cap.org/eCC/SDC.3.11/AdrenalRes/129.3.000.001.CTP1            
-                fd.fullURI = fd.baseURI + "/" + fd.ID;  //Note that “/” is used for URI used instead of “_”
+                //fd.fullURI = fd.baseURI + "/" + fd.ID;  //Note that “/” is used for URI used instead of “_”
+                fd.fullURI = $"_baseURI={fd.baseURI}&_lineage={lineage}&_version={version}&_docType=sdcFDF";
                 fd.filename = id + ".xml";  // "SDC.3.11_FDF_" + shortName + "_" + fd.ID; //format like: SDC.3.11_FDF_Adrenal.Res_129.3.001.001.CTP1
                 fd.formTitle = title;
 
@@ -103,30 +105,29 @@ namespace SDC
                     "(c) " + yr + " College of American Pathologists.  All rights reserved.  License required for use.",  //title
                     "CAPeCC_static_text", "copyright", "Copyright", //type, style, Propertyname
                     false, "The displayed copyright year represents the year that this XML file was generated", //comment
-                    null, null);
+                    null, null, "Copyright");
 
                 //CAPeCC_CAP_Protocol poperties
-                CreateStaticProperty(fd, dr["GenericHeaderText"].ToString(), "CAPeCC_static_text", "", "GenericHeaderText", false, string.Empty, null, string.Empty, "GenericHeaderText"); //, "CAPeCC_CAP_Protocol");
+                CreateStaticProperty(fd, dr["GenericHeaderText"].ToString(), "CAPeCC_static_text", string.Empty, "GenericHeaderText", false, string.Empty, null, string.Empty, "GenericHeaderText"); //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["Category"].ToString(), "CAPeCC_meta", string.Empty, "Category", false, string.Empty, null, string.Empty, "Category"); //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["OfficialName"].ToString(), "CAPeCC_meta", string.Empty, "OfficialName", false, string.Empty, null, string.Empty, "OfficialName");  //, "CAPeCC_CAP_Protocol");
-                //TODO: Need to support this: CreateStaticProperty(fd, dr["CAPProtocolVersion"].ToString(), "CAPeCC_meta", string.Empty, "CAPProtocolVersion", false, string.Empty, null, string.Empty, "CAPProtocolVersion");  //, "CAPeCC_CAP_Protocol");
+                CreateStaticProperty(fd, dr["CAP_ProtocolName"].ToString(), "CAPeCC_meta", string.Empty, "CAP_ProtocolName", false, string.Empty, null, string.Empty, "CAP_ProtocolName");  //, "CAPeCC_CAP_Protocol");
+                CreateStaticProperty(fd, dr["CAP_ProtocolVersion"].ToString(), "CAPeCC_meta", string.Empty, "CAP_ProtocolVersion", false, string.Empty, null, string.Empty, "CAP_ProtocolVersion");  //, "CAPeCC_CAP_Protocol");
                 //CreateStaticProperty(fd, dr["SDCSchemaVersion"].ToString(), "CAPeCC_meta", string.Empty, "SDCSchemaVersion", false, string.Empty, null, string.Empty, "SDCSchemaVersion");  //, "CAPeCC_CAP_Protocol");
 
                 CreateStaticProperty(fd, dr["Restrictions"].ToString(), "CAPeCC_meta", string.Empty, "Restrictions", false, string.Empty, null, string.Empty, "Restrictions");  //, "CAPeCC_CAP_Protocol");
-                CreateStaticProperty(fd, required, "CAPeCC_meta", string.Empty, "CAP_Required", false, string.Empty, null, string.Empty, string.Empty);  //, "CAPeCC_CAP_Protocol");
-                //need CAP Protocol version #
+                CreateStaticProperty(fd, required.ToString().ToLower(), "CAPeCC_meta", string.Empty, "CAP_Required", false, string.Empty, null, string.Empty, "CAP_Required");  //, "CAPeCC_CAP_Protocol");
                 //need SDC Schema version?
 
                 //Dates
-                //Populate database for Effective Date
-                CreateStaticProperty(fd, MapDBNullToDateTime(dr["EffectiveDate"]).ToString(), "CAPeCC_meta dt.dateTime", "", "AccreditationDate", false, string.Empty, null, string.Empty, "AccreditationDate"); //, "CAPeCC_Dates");
-                CreateStaticProperty(fd, MapDBNullToDateTime(dr["WebPostingDate"]).ToString(), "CAPeCC_meta dt.dateTime", "", "WebPostingDate", false, string.Empty, null, string.Empty, "WebPostingDate"); //, "CAPeCC_Dates");
+                CreateStaticProperty(fd, MapDBNullToDateTime(dr["EffectiveDate"]).ToString(), "CAPeCC_meta dt.dateTime", string.Empty, "AccreditationDate", false, string.Empty, null, string.Empty, "AccreditationDate"); //, "CAPeCC_Dates");
+                CreateStaticProperty(fd, MapDBNullToDateTime(dr["WebPostingDate"]).ToString(), "CAPeCC_meta dt.dateTime", string.Empty, "WebPostingDate", false, string.Empty, null, string.Empty, "WebPostingDate"); //, "CAPeCC_Dates");
 
                 //CAPeCC_Data_Sources
                 CreateStaticProperty(fd, shortName, "CAPeCC_meta", string.Empty, "ShortName", false, string.Empty, null, string.Empty, "ShortName"); //, "CAPeCC_Data_Sources");
                 CreateStaticProperty(fd, releaseVersionSuffix, "CAPeCC_meta", string.Empty, "ApprovalStatus", false, string.Empty, null, string.Empty, "ApprovalStatus"); //, "CAPeCC_Data_Sources");
-                if (!string.IsNullOrEmpty(AJCCversion)) CreateStaticProperty(fd, AJCCversion, "CAPeCC_meta", "", "AJCC_Version", false, string.Empty, null, string.Empty, "AJCC_Version"); //, "CAPeCC_Data_Sources");
-                if (!string.IsNullOrEmpty(FIGOversion)) CreateStaticProperty(fd, FIGOversion, "CAPeCC_meta", "", "FIGO_Version", false, string.Empty, null, string.Empty, "FIGO_Version"); //, "CAPeCC_Data_Sources");
+                if (!string.IsNullOrEmpty(AJCCversion)) CreateStaticProperty(fd, AJCCversion, "CAPeCC_meta", string.Empty, "AJCC_Version", false, string.Empty, null, string.Empty, "AJCC_Version"); //, "CAPeCC_Data_Sources");
+                if (!string.IsNullOrEmpty(FIGOversion)) CreateStaticProperty(fd, FIGOversion, "CAPeCC_meta", string.Empty, "FIGO_Version", false, string.Empty, null, string.Empty, "FIGO_Version"); //, "CAPeCC_Data_Sources");
 
             }
 
@@ -237,91 +238,85 @@ namespace SDC
         {
             if (!bt.GetType().IsSubclassOf(typeof(DisplayedType)))
             {
-                
+
                 IdentifiedExtensionType iet = bt.ParentIETypeObject;
-                string shortID = TruncateCkey(iet);
-                //return TruncateCkey(iet) + "_" + ++ietCounter;  //use Ckey with a counter suffix
+                string shortID = TruncateID(iet);
+                if (iet.ID.EndsWith("_Body")) shortID = "Body";
 
-//HACK: Assign names for testing; names need to be fixed strings assigned in the database.
+                //HACK: Assign names for testing; names need to be fixed strings assigned in the database.
 
-                string shortText = iet.name;
+                //string shortText = iet.name;
                 string prefix = "";
-                
+
                 //Console.Write(bt.GetType().ToString());
 
-                if (!string.IsNullOrWhiteSpace(shortText))
+                //if (!string.IsNullOrWhiteSpace(shortText))
+                //{
+                switch (bt.GetType().ToString())
                 {
-                    switch (bt.GetType().ToString())
-                    {
-                        case "SDC.ResponseFieldType":
-                            prefix = "rf_";
-                            break;
-                        case "SDC.DataTypes_DEType":  //used for Response element and AssociatedValue
-                            prefix = "dt_";
-                            break;
+                    case "SDC.ResponseFieldType":
+                        prefix = "rf_";
+                        break;
+                    case "SDC.DataTypes_DEType":  //used for Response element
+                        prefix = "rsp_";
+                        break;
 
-                        case "SDC.PropertyType":
-                            prefix = "p_";
-                            break;
+                    case "SDC.PropertyType":
+                        prefix = "p_";
+                        break;
 
-                        case "SDC.ListItemResponseFieldType":
-                            prefix = "lirf_";
-                            break;
-                        case "SDC.ListFieldType":
-                            prefix = "lf_";
-                            break;
-                        case "SDC.ListType":
-                            prefix = "lst_";
-                            break;
-                        case "SDC.string_DEtype":
-                            prefix = "str_";
-                            break;
-                        case "SDC.integer_DEtype":
-                            prefix = "igr_";
-                            break;
-                        case "SDC.int_DEtype":
-                            prefix = "int_";
-                            break;
-                        case "SDC.long_DEtype":
-                            prefix = "lng_";
-                            break;
-                        case "SDC.decimal_DEtype":
-                            prefix = "dec_";
-                            break;
-                        case "SDC.CodedValueType":
-                            prefix = "cod_";
-                            break;
-                        case "SDC.ContactType":
-                            prefix = "con_";
-                            break;
-                        case "SDC.LinkType":
-                            prefix = "lnk_";
-                            break;
+                    case "SDC.ListItemResponseFieldType":
+                        prefix = "lirf_";
+                        break;
+                    case "SDC.ListFieldType":
+                        prefix = "lf_";
+                        break;
+                    case "SDC.ListType":
+                        prefix = "lst_";
+                        break;
+                    case "SDC.string_DEtype":
+                        prefix = "str_";
+                        break;
+                    case "SDC.integer_DEtype":
+                    case "SDC.int_DEtype":
+                        prefix = "int_";
+                        break;
+                    case "SDC.long_DEtype":
+                        prefix = "lng_";
+                        break;
+                    case "SDC.decimal_DEtype":
+                        prefix = "dec_";
+                        break;
+                    case "SDC.CodedValueType":
+                        prefix = "cval_";
+                        break;
+                    case "SDC.ContactType":
+                        prefix = "con_";
+                        break;
+                    case "SDC.LinkType":
+                        prefix = "lnk_";
+                        break;
+                    case "SDC.ChildItemsType":
+                        prefix = "ch_";
+                        break;
+                    case "":
+                    default:
+                        var btType = bt.GetType().ToString().Substring(4); //strip off "SDC." prefix
+                        int i = btType.IndexOf("Type");
+                        if (i > 0) btType = btType.Substring(0, i);  //strip off  trailing "Type"
 
+                        prefix = btType + "_";
+                        break;
 
-
-
-                        case "":
-                        default:
-                            var btType = bt.GetType().ToString();
-                            int i; //= btType.IndexOf("Item");
-                            //if (i==0)
-                                i = btType.IndexOf("Type");
-                            //if (i > 0)
-                                btType = btType.Substring(4, i-4);  //strip off leading "SDC." and trailing "Type"
-
-                            prefix = btType;
-                            break;
-
-                    }
-                    //string ancestorID = Decimal.Truncate(Convert.ToDecimal(iet.ID)).ToString();  //could throw errors
-                    //string objectCtr = bt.ObjectID.ToString();
-
-                    //return prefix + shortText + "_" + ++ietCounter;  //objectCtr; //+ '_' + ancestorID;
-                    return prefix + shortID + "_" + ++ietCounter;
                 }
-                else {
-                }
+                //string ancestorID = Decimal.Truncate(Convert.ToDecimal(iet.ID)).ToString();  //could throw errors
+                //string objectCtr = bt.ObjectID.ToString();
+
+                //return prefix + shortText + "_" + ++ietCounter;  //objectCtr; //+ '_' + ancestorID;
+                return prefix + shortID + "_" + ++ietCounter;
+                //}
+                //else {
+                //}
             }
             return bt.name;
         }
@@ -362,7 +357,7 @@ namespace SDC
             //TODO: support baseURI
 
             iet.ID = drFormDesign["ChecklistTemplateItemCKey"].ToString();
-            iet.name = CreateIETname(iet); 
+            iet.name = CreateIETname(iet);
 
             return iet;
         }
@@ -371,27 +366,46 @@ namespace SDC
         {
             ietCounter = 0;
             var shortName = (string)drFormDesign["ShortName"];
-            string shortID = TruncateCkey(iet);
-            
+            string shortID = TruncateID(iet);
+
             if (!string.IsNullOrWhiteSpace(shortName))
             { iet.name = shortName + "_" + shortID; }
             else
             { //no shortName present, so use the type name instead
                 var ietType = iet.GetType().ToString();
-                int i;
-                //i = ietType.IndexOf("ItemType");
-                //if (i == 0)
-                i = ietType.IndexOf("Type");
-                if (i > 0) ietType = ietType.Substring(4, i - 4); //strip off leading "SDC." and trailing "Type"
+
+                switch (ietType)
+                {
+                    case "SDC.SectionItemType":
+                        ietType = "S";
+                        break;
+                    case "SDC.QuestionItemType":
+                        ietType = "Q";
+                        break;
+                    case "SDC.ListItemType":
+                        ietType = "LI";
+                        break;
+                    case "SDC.ButtonItemType":
+                        ietType = "B";
+                        break;
+                    case "SDC.InjectFormType":
+                        ietType = "Inj";
+                        break;
+                    default:
+                        int i = ietType.IndexOf("Type");
+                        if (i > 0) ietType = ietType.Substring(4, i - 4); //strip off leading "SDC." and trailing "Type"
+                        break;
+                }
+
                 iet.name = ietType + "_" + shortID;
             }
 
             return iet.name;
         }
 
-        private static string TruncateCkey(IdentifiedExtensionType iet)
+        private static string TruncateID(IdentifiedExtensionType iet)
         {
-            string shortID = "";
+            string shortID = iet.ID;
             int i = 0;
             if (!string.IsNullOrWhiteSpace(iet.ID))
             {
@@ -1171,7 +1185,7 @@ namespace SDC
                         //dt.val = drFormDesign["DefaultValue"] as decimal?;
                         //SDCHelpers.NZ(drFormDesign["DefaultValue"], dt.val);
                         if (drFormDesign["DefaultValue"].ToString() != "") dt.val = (decimal)drFormDesign["DefaultValue"];
-                        
+
                         //TODO: dt.minExclusive = (decimal)drFormDesign["minExclusive"];
                         if (drFormDesign["AnswerMinValue"] != null) dt.minInclusive = (decimal)drFormDesign["AnswerMinValue"];
                         //TODO: dt.maxExclusive = (decimal)drFormDesign["maxExclusive"];
