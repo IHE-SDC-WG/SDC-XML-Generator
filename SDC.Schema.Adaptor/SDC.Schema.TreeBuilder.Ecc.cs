@@ -367,38 +367,41 @@ namespace SDC
             ietCounter = 0;
             var shortName = (string)drFormDesign["ShortName"];
             string shortID = TruncateID(iet);
-
-            if (!string.IsNullOrWhiteSpace(shortName))
-            { iet.name = shortName + "_" + shortID; }
-            else
-            { //no shortName present, so use the type name instead
-                var ietType = iet.GetType().ToString();
-
+            string prefix = "";
+            string ietType = iet.GetType().ToString();
+            //if (!string.IsNullOrWhiteSpace(shortName))
+            //{ iet.name = shortName + "_" + shortID; }
+            //else
+             //no shortName present, so use the type name instead
+                
+                //Create prefix
                 switch (ietType)
                 {
                     case "SDC.SectionItemType":
-                        ietType = "S";
+                        prefix = "S";
                         break;
                     case "SDC.QuestionItemType":
-                        ietType = "Q";
+                        prefix = "Q";
                         break;
                     case "SDC.ListItemType":
-                        ietType = "LI";
+                        prefix = "LI";
                         break;
                     case "SDC.ButtonItemType":
-                        ietType = "B";
+                        prefix = "B";
                         break;
                     case "SDC.InjectFormType":
-                        ietType = "Inj";
+                        prefix = "Inj";
                         break;
                     default:
                         int i = ietType.IndexOf("Type");
-                        if (i > 0) ietType = ietType.Substring(4, i - 4); //strip off leading "SDC." and trailing "Type"
+                        if (i > 0) prefix = ietType.Substring(4, i - 4); //strip off leading "SDC." and trailing "Type"
                         break;
                 }
 
-                iet.name = ietType + "_" + shortID;
-            }
+                if (shortName != "") prefix +=  "_";  //I don't like 2 underscores next to each other.
+
+                iet.name = prefix + shortName + "_" + shortID;
+            
 
             return iet.name;
         }
