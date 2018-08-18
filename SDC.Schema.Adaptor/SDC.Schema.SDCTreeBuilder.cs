@@ -107,7 +107,6 @@ namespace SDC
                         if (parentIETnode == null)
                         {
                             var body = FormDesign.AddBody();                            
-                            //parentIETnode = body;
                             qi = body.AddQuestion(qType);
 
                         }
@@ -395,15 +394,13 @@ namespace SDC
             return dt;
 
             //Each row can have multiple Property, Blobs, Contacts, Codes, Links
-            //Small numbers of these can travel in the same record, but the structured will be relatively simple.
+            //Small numbers of these can travel in the same record, but the structure will be relatively simple.
             //An ORM model will be more capable, enabling any number of each of the above items
             //at any level of complexity.
             //This model does not yet cover extensions, which can occur anywhere
             //Rules not covered here yet - may be out of scope for pilot
             //need style lists
 
-
-            //string type = "";
             //TODO: tooltip, reportText, shortReportText, Description, NoteDEF, NoteReport
             //adjust for multiple OT: ShortNames, Reporting Text, instructions, footnotes, TNM short forms
             //AddProperty(dt);
@@ -973,12 +970,12 @@ namespace SDC
             pt.Phone = new List<PhoneType>();//TODO: Need separate method(s) for this
             pt.Job = new List<JobType>();//TODO: Need separate method(s) for this
 
-            pt.Role = new string_Stype(pt);
+            pt.Role = new string_Stype(pt, fillData, "Role");
 
             pt.StreetAddress = new List<AddressType>();//TODO: Need separate method(s) for this
             pt.Identifier = new List<IdentifierType>();
 
-            pt.Usage = new string_Stype(pt);
+            pt.Usage = new string_Stype(pt, fillData, "Usage");
 
             pt.WebURL = new List<anyURI_Stype>();//TODO: Need separate method(s) for this
 
@@ -1060,19 +1057,9 @@ namespace SDC
             return sNew;
         }
 
-        //public virtual SectionItemType xAddNewSection<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType
-        //{
-        //    var sNew = new SectionItemType(T_Parent, fillData, id);
-        //    //if (fillData) FillSection(sNew);
-
-        //    return sNew;
-        //}
-
         protected abstract SectionItemType FillSection(SectionItemType s);
 
         public abstract SectionBaseType FillSectionBase(SectionBaseType s);
-        //public abstract QuestionItemType AddQuestion<T>(T T_Parent, QuestionEnum qType, Boolean fillData = true) where T : IParent, new();
-
 
         public virtual InjectFormType AddInjectedForm<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new()
         {
@@ -1291,28 +1278,23 @@ namespace SDC
             var childItemsList = AddChildItemsNode(T_Parent);
             var qNew = new QuestionItemType(childItemsList, fillData, id);
             childItemsList.ListOfItems.Add(qNew);
-            //if (fillData) qNew.FillQuestionItemBase();
 
             switch (qType)
             {
                 case QuestionEnum.QuestionSingle:
                     AddListToListField(AddListFieldToQuestion(qNew));
-                    //if (fillData) FillListField(qNew.ListField_Item);
                     break;
                 case QuestionEnum.QuestionMultiple:
                     AddListToListField(AddListFieldToQuestion(qNew));
                     qNew.ListField_Item.maxSelections = 0;
-                    //if (fillData) FillListField(qNew.ListField_Item);
                     break;
                 case QuestionEnum.QuestionFill:
                     AddQuestionResponseField(qNew, fillData);
                     break;
                 case QuestionEnum.QuestionLookup:
                     AddListFieldToQuestion(qNew);
-                    //if (fillData) FillListField(qNew.ListField_Item);
                     //AddEndpointToQuestion(qNew, qNew);
                     throw new NotImplementedException();
-                //break;
                 default:
                     break;
             }
@@ -1352,7 +1334,7 @@ namespace SDC
         }
 
         public abstract ListFieldType FillListField(ListFieldType lf);
-        //protected abstract ListItemType FillListItemBaseType(ListItemType li, QuestionItemType qNode);
+
         public abstract ListItemBaseType FillListItemBase(ListItemBaseType li);
 
 
@@ -1377,16 +1359,6 @@ namespace SDC
 
             return li;
         }
-        public virtual DisplayedType xAddDisplayedItemToList(QuestionItemType qParent, Boolean fillData = true, string id = null)
-        {
-            var list = qParent.ListField_Item.List_Item;
-            var di = new DisplayedType(list, fillData, id);
-            list.Items.Add(di);  //This line should allow DisplayedItems interspersed with ListItems.
-
-            //if (fillData) FillDisplayedTypeListItemData(di, di.title, qParent);
-
-            return di;
-        }
         #endregion
 
 
@@ -1407,19 +1379,7 @@ namespace SDC
 
             return liRF;
         }
-        protected virtual ResponseFieldType X_AddResponseFieldItems(ResponseFieldType rfParent, Boolean fillData = true)
-        {
-            if (fillData) AddFillDataTypesDE(rfParent);
-            //!+TODO: AddTextAfterResponse()  //and remove code from FillResponseField
-            //TextAfterResponse is added too early (out of sequence) inside FillResponseField
 
-            //if (fillData) FillResponseField(rfParent);
-
-            //AddTextAfterResponse(rfParent, fillData);
-            //AddUnits(rfParent, fillData);
-
-            return rfParent;
-        }
         public abstract ResponseFieldType AddFillTextAfterResponse(ResponseFieldType rfParent, Boolean fillData = true);
         public abstract ResponseFieldType FillResponseField(ResponseFieldType rf);
         public abstract ListItemResponseFieldType FillListItemResponseField(ListItemResponseFieldType lirf);  //, ListItemBaseType li);
@@ -1433,12 +1393,6 @@ namespace SDC
             return u ;
                 }
         public abstract UnitsType FillUnits(UnitsType ut);
-
-
-        //protected abstract BaseType AddDataTypeToResponseType(ResponseFieldType rf);
-        //public abstract ResponseFieldType AddResponseItems(ResponseFieldType rf);
-        //public abstract void FillResponseItems();
-        //protected abstract ResponseFieldType FillResponseItems(ResponseFieldType rf);  //already have this function above
 
        #endregion
 
@@ -1530,29 +1484,7 @@ namespace SDC
 
 
         #region Resources
-
-        //protected RichTextType xAddRichText<T>(T t, string strHTML = "", string val = "") where T : BaseType
-        //{
-        //    throw new NotImplementedException();
-
-        //    var rtf = new RichTextType(t);
-        //    //var html = AddFillHTML(rtf);
-
-        //    return rtf;
-        //}
-
-        //protected RichTextType xFillRichText(RichTextType rtParent, string val = "", Boolean fillData = true, string strHTML = "")
-        //{
-        //    throw new NotImplementedException();
-        //    rtParent.val = val;
-
-        //    //var html = AddFillHTML(rtParent, fillData, strHTML);
-
-        //    return rtParent;
-        //}
-
         public abstract HTML_Stype AddFillHTML(RichTextType rt, Boolean fillData = true, string InXhtml = "");
-
 
         #endregion
 

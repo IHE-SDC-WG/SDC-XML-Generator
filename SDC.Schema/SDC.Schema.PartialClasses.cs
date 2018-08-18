@@ -14,8 +14,8 @@ namespace SDC
     {
         protected FormDesignType() { }
         public FormDesignType(ITreeBuilder treeBuilder, BaseType parentNode = null, bool fillData = false, string id = null)
-        : base(parentNode, fillData, id) 
-            //TODO: add lineage, baseURI, version to this constructor
+        : base(parentNode, fillData, id)
+        //TODO: add lineage, baseURI, version to this constructor
         {
             sdcTreeBuilder = treeBuilder;
             //FormDesignTreeBuilder = treeBuilder;
@@ -602,7 +602,7 @@ namespace SDC
     public partial class UnitsType
     {
         protected UnitsType() { }
-        public UnitsType(BaseType parentNode, bool fillData = true) : base(parentNode, fillData)
+        public UnitsType(BaseType parentNode, bool fillData = true) : base(parentNode, fillData, "Units")
         {
             this._unitSystem = "UCUM";
             if (fillData) sdcTreeBuilder.FillUnits(this);
@@ -632,12 +632,25 @@ namespace SDC
         protected ITreeBuilder sdcTreeBuilder;
 
         #endregion
+        /// <summary>
+        /// Some SDC types are used in conjunction with multiple element names.  
+        /// The auto-generated classes do not provide a way to determine the element name form the class instance.
+        /// This property allows the code whichj creates each object to specify the element names that it is adding 
+        /// as each object is creeated in code.  Although it may be possible to achieve this effect by reflection of 
+        /// attributes, this ElementName approach provides more flexibility and is probably more efficient.
+        /// ElementName will be most useful for auto-generating @name attributes for some elements.
+        /// In many cases, ElementName will be assigned through class constructors, but it can also be assigned 
+        /// through this property directly after the object is instantiated
+        /// </summary>
+        [System.Xml.Serialization.XmlIgnore]
+        public string ElementName { get; set; }
 
         protected BaseType(BaseType parentNode, bool fillData = true) //: this()
         {
             ObjectGUID = Guid.NewGuid();
             IsLeafNode = true;
             ParentNode = parentNode;
+            ElementName = GetType().ToString().Replace("Type", ""); //assign default ElementName from the type.
 
             if (parentNode is null)
             {//this is a top level node, and it MUST be of type FormDesignType
@@ -660,8 +673,8 @@ namespace SDC
             ObjectID = FormDesign.MaxObjectID++;
             order = ObjectID;  //added 3/25/2018; this outputs the @order attribute for every element
             RegisterParent(parentNode);
-            
-            
+
+
             FormDesign.Nodes.Add(ObjectID, this);
 
             Debug.WriteLine($"The node with ObjectID: {this.ObjectID} has entered the BaseType ctor. Item type is {this.GetType()}.  " +
@@ -728,7 +741,7 @@ namespace SDC
         }
         [System.Xml.Serialization.XmlIgnore]
         public IdentifiedExtensionType ParentIETypeObject { get; private set; }
-        public virtual void AddFill(SDCtypes sdcType = SDCtypes.BaseType, Boolean fillData = true)
+        public virtual void X_AddFill(SDCtypes sdcType = SDCtypes.BaseType, Boolean fillData = true)
         {
             //var type = new SDCtypes();
             //type = SDCHelpers.ConvertStringToEnum<SDCtypes>(typeName);
@@ -1088,20 +1101,20 @@ namespace SDC
                     break;
             }
         }
-        public virtual void AddFill(string typeName = nameof(BaseType), Boolean fillData = true)
+        public virtual void X_AddFill(string typeName = nameof(BaseType), Boolean fillData = true)
         {
             var sdcType = new SDCtypes();
             try
             {
                 sdcType = SDCHelpers.ConvertStringToEnum<SDCtypes>(typeName);
-                AddFill(sdcType, fillData);
+                //AddFill(sdcType, fillData);
                 return;
             }
             catch (Exception ex)
             {
                 sdcType = SDCtypes.BaseType;
             }
-            AddFill(sdcType, fillData);
+            //AddFill(sdcType, fillData);
         }
         public BaseType FillBaseTypeItem()
         {
@@ -1131,7 +1144,7 @@ namespace SDC
                 }
                 else { _ParentNode = null; }
                 return _ParentNode;
-                
+
 
             }
             private set
@@ -1419,18 +1432,12 @@ namespace SDC
     //    protected MinInclusiveType() { }
     //}
     #endregion
-
-    public partial class anyType_DEtype
-    {
-        public anyType_DEtype(BaseType parentNode) : base(parentNode) { }
-        protected anyType_DEtype() { }
-    }
-
     public partial class DataTypes_DEType
     {
         protected DataTypes_DEType() { }
-        public DataTypes_DEType(ResponseFieldType parentNode, bool fillData = true) : base(parentNode, fillData)
+        public DataTypes_DEType(ResponseFieldType parentNode, bool fillData = true, string elementName = "") : base(parentNode, fillData)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             //if (fillData) sdcTreeBuilder.AddFillDataTypesDE(parentNode);
         }
 
@@ -1445,10 +1452,20 @@ namespace SDC
         }
     }
 
+    public partial class anyType_DEtype
+    {
+        public anyType_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
+        protected anyType_DEtype() { }
+    }
+
+
+
     public partial class DataTypes_SType
     {
         protected DataTypes_SType() { }
-        public DataTypes_SType(BaseType parentNode) : base(parentNode) { }
+        public DataTypes_SType(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
 
         /// <summary>
         /// any *_SType data type
@@ -1464,19 +1481,22 @@ namespace SDC
     public partial class anyURI_DEtype
     {
         protected anyURI_DEtype() { }
-        public anyURI_DEtype(BaseType parentNode) : base(parentNode) { }
+        public anyURI_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class anyURI_Stype
     {
         protected anyURI_Stype() { }
-        public anyURI_Stype(BaseType parentNode) : base(parentNode) { }
+        public anyURI_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class base64Binary_DEtype
     {
         protected base64Binary_DEtype() { }
-        public base64Binary_DEtype(BaseType parentNode) : base(parentNode) { }
+        public base64Binary_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class base64Binary_Stype
@@ -1484,7 +1504,8 @@ namespace SDC
         string _base64StringVal;
 
         protected base64Binary_Stype() { }
-        public base64Binary_Stype(BaseType parentNode) : base(parentNode) { }
+        public base64Binary_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
 
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "string")] //changed to string
         public string valBase64
@@ -1497,39 +1518,44 @@ namespace SDC
     public partial class boolean_DEtype
     {
         protected boolean_DEtype() { }
-        public boolean_DEtype(BaseType parentNode) : base(parentNode) { }
+        public boolean_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class boolean_Stype
     {
         protected boolean_Stype() { }
-        public boolean_Stype(BaseType parentNode) : base(parentNode) { }
+        public boolean_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class byte_DEtype
     {
         protected byte_DEtype() { }
-        public byte_DEtype(BaseType parentNode) : base(parentNode) { }
+        public byte_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class byte_Stype
     {
         protected byte_Stype() { }
-        public byte_Stype(BaseType parentNode) : base(parentNode) { }
+        public byte_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class date_DEtype
     {
         protected date_DEtype() { }
-        public date_DEtype(BaseType parentNode) : base(parentNode) { }
+        public date_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class date_Stype
     {
         protected date_Stype() { }
-        public date_Stype(BaseType parentNode)
-            : base(parentNode)
+        public date_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected date_Stype() { }
@@ -1538,15 +1564,16 @@ namespace SDC
     public partial class dateTime_DEtype
     {
         protected dateTime_DEtype() { }
-        public dateTime_DEtype(BaseType parentNode) : base(parentNode) { }
+        public dateTime_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class dateTime_Stype
     {
         protected dateTime_Stype() { }
-        public dateTime_Stype(BaseType parentNode)
-            : base(parentNode)
+        public dateTime_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected dateTime_Stype() { }
@@ -1555,27 +1582,30 @@ namespace SDC
     public partial class dateTimeStamp_DEtype
     {
         protected dateTimeStamp_DEtype() { }
-        public dateTimeStamp_DEtype(BaseType parentNode) : base(parentNode) { }
+        public dateTimeStamp_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class dateTimeStamp_Stype
     {
         protected dateTimeStamp_Stype() { }
-        public dateTimeStamp_Stype(BaseType parentNode) : base(parentNode) { }
+        public dateTimeStamp_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class dayTimeDuration_DEtype
     {
         protected dayTimeDuration_DEtype() { }
-        public dayTimeDuration_DEtype(BaseType parentNode) : base(parentNode) { }
+        public dayTimeDuration_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class dayTimeDuration_Stype
     {
         protected dayTimeDuration_Stype() { }
-        public dayTimeDuration_Stype(BaseType parentNode)
-            : base(parentNode)
+        public dayTimeDuration_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected dayTimeDuration_Stype() { }
@@ -1584,15 +1614,16 @@ namespace SDC
     public partial class decimal_DEtype
     {
         protected decimal_DEtype() { }
-        public decimal_DEtype(BaseType parentNode) : base(parentNode) { }
+        public decimal_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class decimal_Stype
     {
         protected decimal_Stype() { }
-        public decimal_Stype(BaseType parentNode)
-            : base(parentNode)
+        public decimal_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected decimal_Stype() { }
@@ -1601,15 +1632,16 @@ namespace SDC
     public partial class double_DEtype
     {
         protected double_DEtype() { }
-        public double_DEtype(BaseType parentNode) : base(parentNode) { }
+        public double_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class double_Stype
     {
         protected double_Stype() { }
-        public double_Stype(BaseType parentNode)
-            : base(parentNode)
+        public double_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected double_Stype() { }
@@ -1618,15 +1650,16 @@ namespace SDC
     public partial class duration_DEtype
     {
         public duration_DEtype() { }
-        public duration_DEtype(BaseType parentNode) : base(parentNode) { }
+        public duration_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class duration_Stype
     {
         protected duration_Stype() { }
-        public duration_Stype(BaseType parentNode)
-            : base(parentNode)
+        public duration_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected duration_Stype() { }
@@ -1635,15 +1668,16 @@ namespace SDC
     public partial class float_DEtype
     {
         protected float_DEtype() { }
-        public float_DEtype(BaseType parentNode) : base(parentNode) { }
+        public float_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class float_Stype
     {
         protected float_Stype() { }
-        public float_Stype(BaseType parentNode)
-            : base(parentNode)
+        public float_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected float_Stype() { }
@@ -1652,15 +1686,16 @@ namespace SDC
     public partial class gDay_DEtype
     {
         protected gDay_DEtype() { }
-        public gDay_DEtype(BaseType parentNode) : base(parentNode) { }
+        public gDay_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class gDay_Stype
     {
         protected gDay_Stype() { }
-        public gDay_Stype(BaseType parentNode)
-            : base(parentNode)
+        public gDay_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected gDay_Stype() { }
@@ -1669,15 +1704,16 @@ namespace SDC
     public partial class gMonth_DEtype
     {
         protected gMonth_DEtype() { }
-        public gMonth_DEtype(BaseType parentNode) : base(parentNode) { }
+        public gMonth_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class gMonth_Stype
     {
         protected gMonth_Stype() { }
-        public gMonth_Stype(BaseType parentNode)
-            : base(parentNode)
+        public gMonth_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected gMonth_Stype() { }
@@ -1686,15 +1722,16 @@ namespace SDC
     public partial class gMonthDay_DEtype
     {
         protected gMonthDay_DEtype() { }
-        public gMonthDay_DEtype(BaseType parentNode) : base(parentNode) { }
+        public gMonthDay_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class gMonthDay_Stype
     {
         protected gMonthDay_Stype() { }
-        public gMonthDay_Stype(BaseType parentNode)
-            : base(parentNode)
+        public gMonthDay_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected gMonthDay_Stype() { }
@@ -1703,15 +1740,16 @@ namespace SDC
     public partial class gYear_DEtype
     {
         protected gYear_DEtype() { }
-        public gYear_DEtype(BaseType parentNode) : base(parentNode) { }
+        public gYear_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class gYear_Stype
     {
         protected gYear_Stype() { }
-        public gYear_Stype(BaseType parentNode)
-            : base(parentNode)
+        public gYear_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected gYear_Stype() { }
@@ -1720,14 +1758,16 @@ namespace SDC
     public partial class gYearMonth_DEtype
     {
         protected gYearMonth_DEtype() { }
-        public gYearMonth_DEtype(BaseType parentNode) : base(parentNode) { }
+        public gYearMonth_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class gYearMonth_Stype
     {
         protected gYearMonth_Stype() { }
-        public gYearMonth_Stype(BaseType parentNode) : base(parentNode)
+        public gYearMonth_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected gYearMonth_Stype() { }
@@ -1736,7 +1776,8 @@ namespace SDC
     public partial class hexBinary_DEtype
     {
         protected hexBinary_DEtype() { }
-        public hexBinary_DEtype(BaseType parentNode) : base(parentNode) { }
+        public hexBinary_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
 
     }
 
@@ -1746,7 +1787,8 @@ namespace SDC
         string _hexBinaryStringVal;
 
         protected hexBinary_Stype() { }
-        public hexBinary_Stype(BaseType parentNode) : base(parentNode) { }
+        public hexBinary_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
 
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "string")] //changed to string
         public string valHex
@@ -1760,32 +1802,39 @@ namespace SDC
     {
         protected HTML_DEtype()
         { this.Any = new List<System.Xml.XmlElement>(); }
-        public HTML_DEtype(BaseType parentNode)
-            : base(parentNode)
-        { this.Any = new List<System.Xml.XmlElement>(); }
+        public HTML_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        {
+            if (elementName.Length > 0) ElementName = elementName;
+            this.Any = new List<System.Xml.XmlElement>();
+        }
     }
 
     public partial class HTML_Stype
     {
         protected HTML_Stype()
         { this.Any = new List<System.Xml.XmlElement>(); }
-        public HTML_Stype(BaseType parentNode)
-            : base(parentNode)
-        { this.Any = new List<System.Xml.XmlElement>(); }
+        public HTML_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
+        {
+            if (elementName.Length > 0) ElementName = elementName;
+            this.Any = new List<System.Xml.XmlElement>();
+        }
 
     }
+
 
     public partial class int_DEtype
     {
         protected int_DEtype() { }
-        public int_DEtype(BaseType parentNode) : base(parentNode) { }
+        public int_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class int_Stype
     {
         protected int_Stype() { }
-        public int_Stype(BaseType parentNode) : base(parentNode)
+        public int_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected int_Stype() { }
@@ -1794,14 +1843,16 @@ namespace SDC
     public partial class integer_DEtype
     {
         protected integer_DEtype() { }
-        public integer_DEtype(BaseType parentNode) : base(parentNode) { }
+        public integer_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class integer_Stype
     {
         protected integer_Stype() { }
-        public integer_Stype(BaseType parentNode) : base(parentNode)
+        public integer_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected integer_Stype() { }
@@ -1863,7 +1914,8 @@ namespace SDC
     public partial class negativeInteger_DEtype
     {
         protected negativeInteger_DEtype() { }
-        public negativeInteger_DEtype(BaseType parentNode) : base(parentNode) { }
+        public negativeInteger_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class negativeInteger_Stype
@@ -1879,14 +1931,16 @@ namespace SDC
     public partial class nonNegativeInteger_DEtype
     {
         protected nonNegativeInteger_DEtype() { }
-        public nonNegativeInteger_DEtype(BaseType parentNode) : base(parentNode) { }
+        public nonNegativeInteger_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class nonNegativeInteger_Stype
     {
         protected nonNegativeInteger_Stype() { }
-        public nonNegativeInteger_Stype(BaseType parentNode) : base(parentNode)
+        public nonNegativeInteger_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected nonNegativeInteger_Stype() { }
@@ -1895,14 +1949,16 @@ namespace SDC
     public partial class nonPositiveInteger_DEtype
     {
         protected nonPositiveInteger_DEtype() { }
-        public nonPositiveInteger_DEtype(BaseType parentNode) : base(parentNode) { }
+        public nonPositiveInteger_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class nonPositiveInteger_Stype
     {
         protected nonPositiveInteger_Stype() { }
-        public nonPositiveInteger_Stype(BaseType parentNode) : base(parentNode)
+        public nonPositiveInteger_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected nonPositiveInteger_Stype() { }
@@ -1911,14 +1967,16 @@ namespace SDC
     public partial class positiveInteger_DEtype
     {
         protected positiveInteger_DEtype() { }
-        public positiveInteger_DEtype(BaseType parentNode) : base(parentNode) { }
+        public positiveInteger_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class positiveInteger_Stype
     {
         protected positiveInteger_Stype() { }
-        public positiveInteger_Stype(BaseType parentNode) : base(parentNode)
+        public positiveInteger_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected positiveInteger_Stype() { }
@@ -1927,14 +1985,16 @@ namespace SDC
     public partial class short_DEtype
     {
         protected short_DEtype() { }
-        public short_DEtype(BaseType parentNode) : base(parentNode) { }
+        public short_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class short_Stype
     {
         protected short_Stype() { }
-        public short_Stype(BaseType parentNode) : base(parentNode)
+        public short_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected short_Stype() { }
@@ -1943,19 +2003,22 @@ namespace SDC
     public partial class string_DEtype
     {
         protected string_DEtype() { }
-        public string_DEtype(BaseType parentNode) : base(parentNode) { }
+        public string_DEtype(BaseType parentNode, bool fillData = true, string elementName = "") : base(parentNode, fillData, elementName)
+        { } //{if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class string_Stype
     {
         protected string_Stype() { }
-        public string_Stype(BaseType parentNode, bool fillData = true) : base(parentNode, fillData) { }
+        public string_Stype(BaseType parentNode, bool fillData, string elementName) : base(parentNode, fillData)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class time_DEtype
     {
         protected time_DEtype() { }
-        public time_DEtype(BaseType parentNode) : base(parentNode) { }
+        public time_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class time_Stype
@@ -1971,14 +2034,16 @@ namespace SDC
     public partial class unsignedByte_DEtype
     {
         protected unsignedByte_DEtype() { }
-        public unsignedByte_DEtype(BaseType parentNode) : base(parentNode) { }
+        public unsignedByte_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class unsignedByte_Stype
     {
         protected unsignedByte_Stype() { }
-        public unsignedByte_Stype(BaseType parentNode) : base(parentNode)
+        public unsignedByte_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected unsignedByte_Stype() { }
@@ -1987,14 +2052,16 @@ namespace SDC
     public partial class unsignedInt_DEtype
     {
         protected unsignedInt_DEtype() { }
-        public unsignedInt_DEtype(BaseType parentNode) : base(parentNode) { }
+        public unsignedInt_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class unsignedInt_Stype
     {
         protected unsignedInt_Stype() { }
-        public unsignedInt_Stype(BaseType parentNode) : base(parentNode)
+        public unsignedInt_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected unsignedInt_Stype() { }
@@ -2003,14 +2070,16 @@ namespace SDC
     public partial class unsignedLong_DEtype
     {
         protected unsignedLong_DEtype() { }
-        public unsignedLong_DEtype(BaseType parentNode) : base(parentNode) { }
+        public unsignedLong_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class unsignedLong_Stype
     {
         protected unsignedLong_Stype() { }
-        public unsignedLong_Stype(BaseType parentNode) : base(parentNode)
+        public unsignedLong_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected unsignedLong_Stype() { }
@@ -2019,14 +2088,16 @@ namespace SDC
     public partial class unsignedShort_DEtype
     {
         protected unsignedShort_DEtype() { }
-        public unsignedShort_DEtype(BaseType parentNode) : base(parentNode) { }
+        public unsignedShort_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class unsignedShort_Stype
     {
         protected unsignedShort_Stype() { }
-        public unsignedShort_Stype(BaseType parentNode) : base(parentNode)
+        public unsignedShort_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected unsignedShort_Stype() { }
@@ -2036,29 +2107,37 @@ namespace SDC
     {
         protected XML_DEtype()
         { this.Any = new List<XmlElement>(); }
-        public XML_DEtype(BaseType parentNode) : base(parentNode)
-        { this.Any = new List<XmlElement>(); }
+        public XML_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        {
+            if (elementName.Length > 0) ElementName = elementName;
+            this.Any = new List<XmlElement>();
+        }
     }
 
     public partial class XML_Stype
     {
         protected XML_Stype()
         { this.Any = new List<XmlElement>(); }
-        public XML_Stype(BaseType parentNode) : base(parentNode)
-        { this.Any = new List<XmlElement>(); }
+        public XML_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
+        {
+            if (elementName.Length > 0) ElementName = elementName;
+            this.Any = new List<XmlElement>();
+        }
     }
 
     public partial class yearMonthDuration_DEtype
     {
         protected yearMonthDuration_DEtype() { }
-        public yearMonthDuration_DEtype(BaseType parentNode) : base(parentNode) { }
+        public yearMonthDuration_DEtype(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class yearMonthDuration_Stype
     {
         protected yearMonthDuration_Stype() { }
-        public yearMonthDuration_Stype(BaseType parentNode) : base(parentNode)
+        public yearMonthDuration_Stype(BaseType parentNode, string elementName = "") : base(parentNode)
         {
+            if (elementName.Length > 0) ElementName = elementName;
             this._quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected yearMonthDuration_Stype() { }
@@ -2169,7 +2248,8 @@ namespace SDC
     public partial class NameType
     {
         protected NameType() { }
-        public NameType(BaseType parentNode) : base(parentNode) { }
+        public NameType(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
 
@@ -2183,19 +2263,22 @@ namespace SDC
     public partial class TargetItemIDType
     {
         protected TargetItemIDType() { }
-        public TargetItemIDType(BaseType parentNode) : base(parentNode) { }
+        public TargetItemIDType(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class TargetItemNameType
     {
         protected TargetItemNameType() { }
-        public TargetItemNameType(BaseType parentNode) : base(parentNode) { }
+        public TargetItemNameType(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class TargetItemXPathType
     {
         protected TargetItemXPathType() { }
-        public TargetItemXPathType(BaseType parentNode) : base(parentNode) { }
+        public TargetItemXPathType(BaseType parentNode, bool fillData = true, string elementName = "") : base(parentNode, fillData, elementName)
+        { } //{if (elementName.Length > 0) ElementName = elementName; }
     }
     //public partial class ExclusiveItemPairsType
     //{
@@ -2228,13 +2311,15 @@ namespace SDC
     public partial class RulesType
     {
         protected RulesType() { }
-        public RulesType(BaseType parentNode) : base(parentNode) { }
+        public RulesType(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
     public partial class ScriptCodeAnyType
     {
         protected ScriptCodeAnyType() { }
-        public ScriptCodeAnyType(BaseType parentNode) : base(parentNode) { }
+        public ScriptCodeAnyType(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
     }
 
 
@@ -2442,13 +2527,13 @@ namespace SDC
             this._not = false;
             this._boolOp = BoolListTypeBoolOp.AND;
         }
-        //+-------------------Item1----------------------------
+        //+-------------------Item1-------------------------
+
+        /// <summary>---
         ///
         //"Between", typeof(PredicateBetweenType),
         //"Compare", typeof(PredicateCompareType),
         //"InList", typeof(PredicateInListType)
-
-        /// <summary>
         ///
         ///"Between", typeof(PredicateBetweenType),
         /// </summary>
@@ -2653,7 +2738,8 @@ namespace SDC
     public partial class LanguageCodeISO6393_Type
     {
         protected LanguageCodeISO6393_Type() { }
-        public LanguageCodeISO6393_Type(BaseType parentNode) : base(parentNode) { }
+        public LanguageCodeISO6393_Type(BaseType parentNode, bool fillData = true, string elementName = "") : base(parentNode, fillData, elementName)
+        { }
     }
 
     public partial class LanguageType
@@ -2693,7 +2779,8 @@ namespace SDC
 
     public partial class ContactsType
     {
-        public ContactsType(BaseType parentNode) : base(parentNode) { }
+        public ContactsType(BaseType parentNode, string elementName = "") : base(parentNode)
+        { if (elementName.Length > 0) ElementName = elementName; }
         protected ContactsType() { }
     }
 
@@ -2762,7 +2849,8 @@ namespace SDC
     public partial class AcceptabilityType
     {
         protected AcceptabilityType() { }
-        public AcceptabilityType(BaseType parentNode) : base(parentNode) { }
+        public AcceptabilityType(BaseType parentNode, bool fillData = true, string elementName = "") : base(parentNode, fillData, elementName)
+        { }
     }
 
 
@@ -2775,7 +2863,8 @@ namespace SDC
     public partial class FileHashType
     {
         protected FileHashType() { }
-        public FileHashType(BaseType parentNode) : base(parentNode) { }
+        public FileHashType(BaseType parentNode, bool fillData = true, string elementName = "") : base(parentNode, fillData, elementName)
+        { }
     }
 
     public partial class FileType
