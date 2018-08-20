@@ -24,7 +24,7 @@ namespace MSTests
         public void SerializeAll()
         {    //rlm 2017/08/31
             Dictionary<String, String> templatesMap = new Dictionary<String, String>();
-            string key="", val="";
+            string key = "", val = "";
 
             var dt = new SDC.DAL.DataSets.FormDesignDataSets();
             DataTable templateDT = dt.dtGetTemplateList(0);  //the decimal parameter is not used
@@ -33,7 +33,7 @@ namespace MSTests
             {
 
                 key = (string)dr.ItemArray[0];
-                val = (string)dr.ItemArray[1] + "_SDC.xml" ;
+                val = (string)dr.ItemArray[1] + "_SDC.xml";
 
                 templatesMap.Add(key, val);
                 Debug.Print(templatesMap[key].ToString());
@@ -46,14 +46,14 @@ namespace MSTests
                 //var fd = stb.FormDesign;
                 //var n = fd.IdentifiedTypes["11.1000043"];
                 //move static classes to FormDesign instance
-            
+
 
 
                 String formDesignXml = stb.FormDesign.Serialize();
                 string orig = "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
                 string fix = orig + "\r\n" + "<?xml-stylesheet type=\"text/xsl\" href=\"sdctemplate.xslt\"?>";
-                
-                formDesignXml =formDesignXml.Replace(orig,fix);
+
+                formDesignXml = formDesignXml.Replace(orig, fix);
                 //Debug.WriteLine(formDesignXml);
                 System.IO.File.WriteAllText("C:\\SDC\\" + val, formDesignXml, System.Text.Encoding.UTF8);
 
@@ -73,8 +73,8 @@ namespace MSTests
 
             var fdd = new FormDesignDataSets();
             SDCTreeBuilderEcc stb;
-            //stb = new SDCTreeBuilderEcc("204.1000043", fdd, "srtemplate.xslt");   //urethra Bx
-            stb = new SDCTreeBuilderEcc("349.1000043", fdd, "srtemplate.xslt");  //vendor testing template
+            stb = new SDCTreeBuilderEcc("204.1000043", fdd, "srtemplate.xslt");   //urethra Bx
+            //stb = new SDCTreeBuilderEcc("349.1000043", fdd, "srtemplate.xslt");  //vendor testing template
 
 
             Debug.WriteLine(System.DateTime.Now);

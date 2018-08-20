@@ -178,8 +178,8 @@ namespace SDC
         { return new ActShowMessageType(tt); }
         //public override ExpressionType AddRunCommand(ThenType tt, Boolean fillData = true)
         //{ return new ExpressionType(tt); }
-        public override FuncType AddShowURL(ThenType tt, Boolean fillData = true)
-        { return new FuncType(tt); }
+        //public override FuncType AddShowURL(ThenType tt, Boolean fillData = true)
+        //{ return new FuncType(tt); }
         public override ActShowFormType AddShowForm(ThenType tt, Boolean fillData = true)
         { return new ActShowFormType(tt); }
         public override ActSaveResponsesType AddSave(ThenType tt, Boolean fillData = true)
@@ -190,10 +190,10 @@ namespace SDC
         { return new ActSendMessageType(tt); }
         public override ActValidateFormType AddValidateForm(ThenType tt, Boolean fillData = true)
         { return new ActValidateFormType(tt); }
-        public override IfThenType AddIfThen(ThenType tt, Boolean fillData = true)
-        { return new IfThenType(tt); }
-        public override ItemNameType AddCallIfThen(ThenType tt, Boolean fillData = true)
-        { return new ItemNameType(tt); }
+        //public override IfThenType AddIfThen(ThenType tt, Boolean fillData = true)
+        //{ return new IfThenType(tt); }
+        //public override ItemNameType AddCallIfThen(ThenType tt, Boolean fillData = true)
+        //{ return new ItemNameType(tt); }
 
 
 
@@ -1878,7 +1878,7 @@ namespace SDC
             blob.Item = bUri;
             blob.order = blob.ObjectID;
 
-            var bin = new base64Binary_DEtype(blob);
+            var bin = new base64Binary_Stype(blob);
             bin.valBase64 = "SGVsbG8=";
             blob.Item = bin;
             //TODO: Note: in code generator for base64Binary_Stype - val is not the string datatype it is a byte array.

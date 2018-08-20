@@ -1211,7 +1211,7 @@ namespace SDC
 
         protected virtual CodeSystemType AddFillCodeSystem(ListFieldType lfParent, Boolean fillData = true)
         {
-            var cs = new CodeSystemType(lfParent);
+            var cs = new CodeSystemType(lfParent, fillData, "DefaultCodeSystem", "defCodSys");
             lfParent.DefaultCodeSystem = cs;
             return cs;
         }
@@ -1461,14 +1461,14 @@ namespace SDC
         public abstract ActInjectType AddInject(ThenType tt, Boolean fillData = true);
         public abstract ActShowMessageType AddShowMessage(ThenType tt, Boolean fillData = true);
         //public abstract ExpressionType AddRunCommand(ThenType tt, Boolean fillData = true);
-        public abstract FuncType AddShowURL(ThenType tt, Boolean fillData = true);
+        //public abstract FuncType AddShowURL(ThenType tt, Boolean fillData = true);
         public abstract ActShowFormType AddShowForm(ThenType tt, Boolean fillData = true);
         public abstract ActSaveResponsesType AddSave(ThenType tt, Boolean fillData = true);
         public abstract ActSendReportType AddShowReport(ThenType tt, Boolean fillData = true);
         public abstract ActSendMessageType AddSendMessage(ThenType tt, Boolean fillData = true);
         public abstract ActValidateFormType AddValidateForm(ThenType tt, Boolean fillData = true);
-        public abstract IfThenType AddIfThen(ThenType tt, Boolean fillData = true);
-        public abstract ItemNameType AddCallIfThen(ThenType tt, Boolean fillData = true);
+        //public abstract IfThenType AddIfThen(ThenType tt, Boolean fillData = true);
+        //public abstract ItemNameType AddCallIfThen(ThenType tt, Boolean fillData = true);
 
         #endregion
 
