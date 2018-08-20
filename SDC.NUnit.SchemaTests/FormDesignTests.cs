@@ -60,8 +60,8 @@ public class SDCTests
         var fdd = new FormDesignDataSets();
         var s =new SDCTreeBuilderEcc("129.1000043", fdd, "srtemplate.xslt");
 
-        var str = s.FormDesign.TreeBuilder.SerializeFormDesignTree();
-        System.Diagnostics.Debug.WriteLine(str);
+        //var str = s.FormDesign.TreeBuilder.SerializeFormDesignTree();
+        //System.Diagnostics.Debug.WriteLine(str);
         //fd.SaveToFile(@"c:tmp\eCC\SDCTestFile" + DateTime.Now.Second.ToString());
         
         //tb.SerializeFormDesignTree;

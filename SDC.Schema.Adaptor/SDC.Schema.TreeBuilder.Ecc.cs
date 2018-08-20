@@ -69,8 +69,9 @@ namespace SDC
                 string shortName = dr["ShortName"].ToString().Replace(" ", "");  //used for creating filenames etc..; sample: “Adrenal.Res”; spaces are removed  
                 string releaseVersionSuffix = dr["ReleaseVersionSuffix"].ToString();  //e.g., CTP1, RC2, REL; UNK if a value is missing
                 string title = dr["OfficialName"].ToString();
-                string lineage = shortName + "." + dr["ChecklistTemplateVersionCkey"].ToString().Replace(".1000043", "");//remove the eCC namespace suffix ".1000043"
-                string version = (dr["VersionID"].ToString()).Replace(".1000043", "") + "." + releaseVersionSuffix;//remove the eCC namespace suffix ".1000043"
+                string CTVcKey = dr["ChecklistTemplateVersionCkey"].ToString();
+                string lineage = shortName + "." + CTVcKey.Replace(".100004300", "");//remove the eCC namespace suffix ".1000043"
+                string version = (dr["VersionID"].ToString()).Replace(".100004300", "") + "." + releaseVersionSuffix;//remove the eCC namespace suffix ".1000043"
                 string id = lineage + "_" + version + "_sdcFDF";  //FDF = "Form Design File".
                 bool required = dr["EffectiveDate"].ToString() != ""; //ToDo: It would be better to have a database field for required.
 
@@ -110,6 +111,8 @@ namespace SDC
                 CreateStaticProperty(fd, dr["OfficialName"].ToString(), "CAPeCC_meta", string.Empty, "OfficialName", false, string.Empty, null, string.Empty, "OfficialName");  //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["CAP_ProtocolName"].ToString(), "CAPeCC_meta", string.Empty, "CAP_ProtocolName", false, string.Empty, null, string.Empty, "CAP_ProtocolName");  //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["CAP_ProtocolVersion"].ToString(), "CAPeCC_meta", string.Empty, "CAP_ProtocolVersion", false, string.Empty, null, string.Empty, "CAP_ProtocolVersion");  //, "CAPeCC_CAP_Protocol");
+                CreateStaticProperty(fd, CTVcKey, "CAPeCC_meta", string.Empty, "TemplateID", false, string.Empty, null, string.Empty, "TemplateID"); 
+
                 //CreateStaticProperty(fd, dr["SDCSchemaVersion"].ToString(), "CAPeCC_meta", string.Empty, "SDCSchemaVersion", false, string.Empty, null, string.Empty, "SDCSchemaVersion");  //, "CAPeCC_CAP_Protocol");
 
                 CreateStaticProperty(fd, dr["Restrictions"].ToString(), "CAPeCC_meta", string.Empty, "Restrictions", false, string.Empty, null, string.Empty, "Restrictions");  //, "CAPeCC_CAP_Protocol");
@@ -252,15 +255,17 @@ namespace SDC
             {
                 IdentifiedExtensionType iet = bt.ParentIETypeObject;
                 shortID = TruncateID(iet) + "_";
-
-                if (iet.ID.EndsWith("_Body"))
-                    shortID = "Body";
-
                 shortName = bt.BaseName;
                 prefix = bt.ElementPrefix;
                 if (shortName.Length > 0) shortName += "_";
                 if (prefix.Length > 0) prefix += "_";
 
+
+                if (iet.ID.EndsWith("_Body"))
+                {
+                    shortID = "Body";
+                    return prefix + shortName + shortID;
+                }
 
                 return prefix + shortName + shortID + bt.SubIETcounter.ToString();
             }
@@ -1743,6 +1748,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "instruction";
             p.val = drFormDesign["Instruction"].ToString();
+            p.BaseName = "instr";
             FillProperty(p);
             return p;
         }
@@ -1763,6 +1769,7 @@ namespace SDC
             if (p.val == "''") p.val = "{no text}";
             if (p.val.StartsWith("]")) p.val = p.val.Remove(0, 1);  //the leading "]" is a flag for QA queries to ignore this text because it was customized by a modeler.
             p.propName = "reportText";
+            p.BaseName = "rptTxt";
             FillProperty(p);
             return p;
         }
@@ -1797,7 +1804,7 @@ namespace SDC
         public override PropertyType FillProperty(PropertyType p, Boolean fillData = true)
         {
             p.order = p.ObjectID;
-            //p.name = CreateName(p);
+            p.name = CreateName(p);
             return p;
         }
 

@@ -259,7 +259,7 @@ namespace SDC
                         }
                         catch (Exception ex)
                         {
-                            System.Windows.Forms.MessageBox.Show("The ListItem title is: ", "Error converting the parent item to a question type", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            System.Windows.Forms.MessageBox.Show($"ParURI:{parURI} ", "Error converting the parent item to a question type", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                             System.Diagnostics.Debug.Print(drFormDesign["ChecklistTemplateItemCkey"].ToString());
                         }
                         di = AddListNoteToQuestion(qi);
