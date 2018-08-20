@@ -1485,7 +1485,7 @@ namespace SDC
 
         #region Resources
         public abstract HTML_Stype AddFillHTML(RichTextType rt, Boolean fillData = true, string InXhtml = "");
-
+        public abstract string CreateName(BaseType bt);
         #endregion
 
     }

@@ -205,7 +205,7 @@ namespace SDC
         {
             bt.type = (string)drFormDesign["type"];
             bt.styleClass = (string)drFormDesign["styleClass"];
-            bt.name = CreateName(bt);
+            //bt.name = CreateName(bt);
             //bt.order = bt.ObjectID;  //removed 3/25/2018; added to BaseType constructor so that all subclasses output @order 
 
 
@@ -230,101 +230,41 @@ namespace SDC
         /// <param name="bt">an object of type BaseType</param>
         /// <returns></returns>
 
-        protected string CreateName(BaseType bt)
+        public override string CreateName(BaseType bt)
         {
-            if (!bt.GetType().IsSubclassOf(typeof(DisplayedType)))
+            string shortID = "";
+            string prefix = "";
+            string shortName = "";
+
+            if (bt.GetType().IsSubclassOf(typeof(DisplayedType)))
+            {
+                //ietCounter = 0;
+                shortID = TruncateID((IdentifiedExtensionType)bt);
+                prefix = bt.ElementPrefix;
+                bt.BaseName = (string)drFormDesign["ShortName"];
+                shortName = bt.BaseName;
+                if (shortName.Length > 0) shortName += "_";  //I don't like 2 underscores next to each other.
+                if (prefix.Length > 0) prefix += "_";
+                return prefix + shortName + shortID;
+
+            }
+                else
             {
                 IdentifiedExtensionType iet = bt.ParentIETypeObject;
-                string shortID = TruncateID(iet);
+                shortID = TruncateID(iet) + "_";
+
                 if (iet.ID.EndsWith("_Body"))
                     shortID = "Body";
-                
-                string prefix = "";
-                switch (bt.GetType().ToString())
-                {
-                    case "SDC.ResponseFieldType":
-                        prefix = "rf_";
-                        break;
-                    case "SDC.DataTypes_DEType":  //used for Response element 
-                        prefix = "rsp_";
-                        break;
 
-                    case "SDC.PropertyType":
-                        prefix = "p_";
-                        break;
+                shortName = bt.BaseName;
+                prefix = bt.ElementPrefix;
+                if (shortName.Length > 0) shortName += "_";
+                if (prefix.Length > 0) prefix += "_";
 
-                    case "SDC.ListItemResponseFieldType":
-                        prefix = "lirf_";
-                        break;
-                    case "SDC.ListFieldType":
-                        prefix = "lf_";
-                        break;
-                    case "SDC.ListType":
-                        prefix = "lst_";
-                        break;
-                    case "SDC.string_DEtype":
-                        prefix = "str_";
-                        break;
-                    case "SDC.integer_DEtype":
-                    case "SDC.int_DEtype":
-                        prefix = "int_";
-                        break;
-                    case "SDC.long_DEtype":
-                        prefix = "lng_";
-                        break;
-                    case "SDC.decimal_DEtype":
-                        prefix = "dec_";
-                        break;
-                    case "SDC.CodedValueType":
-                        prefix = "cval_";
-                        break;
-                    case "SDC.ContactType":
-                        prefix = "con_";
-                        break;
-                    case "SDC.BlobType":
-                        prefix = "blb_";
-                        break;
-                    case "SDC.LinkType":
-                        prefix = "lnk_";
-                        break;
-                    case "SDC.EventType":
-                        prefix = "evt_";
-                        break;
-                    case "SDC.OnEventType":
-                        prefix = "oev_";
-                        break;
-                    case "SDC.GuardType":
-                        prefix = "grd_";
-                        break;
-                    case "SDC.ChildItemsType":
-                        prefix = "ch_";
-                        break;
-                    case "SDC.RichTextType":
-                        prefix = "rt_";
-                        break;
-                    case "SDC.UnitsType":
-                        prefix = "un_";
-                        break;
-                    case "":
-                    default:
-                        var btType = bt.GetType().ToString().Substring(4); //strip off "SDC." prefix
-                        int i = btType.IndexOf("Type");
-                        if (i > 0) btType = btType.Substring(0, i);  //strip off  trailing "Type"
 
-                        prefix = btType + "_";
-                        break;
-
-                }
-                //string ancestorID = Decimal.Truncate(Convert.ToDecimal(iet.ID)).ToString();  //could throw errors
-                //string objectCtr = bt.ObjectID.ToString();
-
-                //return prefix + shortText + "_" + ++ietCounter;  //objectCtr; //+ '_' + ancestorID;
-                return prefix + shortID + "_" + ++ietCounter;
-                //}
-                //else {
-                //}
+                return prefix + shortName + shortID + bt.SubIETcounter.ToString();
             }
-            return bt.name;
+
         }
 
         protected override CommentType FillCommentData(BaseType bt, string comment)
@@ -363,53 +303,53 @@ namespace SDC
             //TODO: support baseURI
 
             iet.ID = drFormDesign["ChecklistTemplateItemCKey"].ToString();
-            iet.name = CreateIETname(iet);
+            //iet.name = CreateName(iet);
 
             return iet;
         }
 
-        private string CreateIETname(IdentifiedExtensionType iet)
-        {
-            ietCounter = 0;
-            var shortName = (string)drFormDesign["ShortName"];
-            string shortID = TruncateID(iet);
-            string prefix = "";
-            string ietType = iet.GetType().ToString();
+        //private string CreateIETname(IdentifiedExtensionType iet)
+        //{
+        //    ietCounter = 0;
+        //    var shortName = (string)drFormDesign["ShortName"];
+        //    string shortID = TruncateID(iet);
+        //    string prefix = "";
+        //    string ietType = iet.GetType().ToString();
 
-            //Create prefix
-            switch (ietType)
-            {
-                case "SDC.SectionItemType":
-                    prefix = "S";
-                    break;
-                case "SDC.QuestionItemType":
-                    prefix = "Q";
-                    break;
-                case "SDC.ListItemType":
-                    prefix = "LI";
-                    break;
-                case "SDC.DisplayedType":
-                    prefix = "D";
-                    break;
-                case "SDC.ButtonItemType":
-                    prefix = "B";
-                    break;
-                case "SDC.InjectFormType":
-                    prefix = "Inj";
-                    break;
-                default:
-                    int i = ietType.IndexOf("Type");
-                    if (i > 0) prefix = ietType.Substring(4, i - 4); //strip off leading "SDC." and trailing "Type"
-                    break;
-            }
+        //    //Create prefix
+        //    switch (ietType)
+        //    {
+        //        case "SDC.SectionItemType":
+        //            prefix = "S";
+        //            break;
+        //        case "SDC.QuestionItemType":
+        //            prefix = "Q";
+        //            break;
+        //        case "SDC.ListItemType":
+        //            prefix = "LI";
+        //            break;
+        //        case "SDC.DisplayedType":
+        //            prefix = "D";
+        //            break;
+        //        case "SDC.ButtonItemType":
+        //            prefix = "B";
+        //            break;
+        //        case "SDC.InjectFormType":
+        //            prefix = "Inj";
+        //            break;
+        //        default:
+        //            int i = ietType.IndexOf("Type");
+        //            if (i > 0) prefix = ietType.Substring(4, i - 4); //strip off leading "SDC." and trailing "Type"
+        //            break;
+        //    }
 
-            if (shortName != "") prefix +=  "_";  //I don't like 2 underscores next to each other.
+        //    if (shortName != "") prefix +=  "_";  //I don't like 2 underscores next to each other.
 
-                iet.name = prefix + shortName + "_" + shortID;
-            
+        //        iet.name = prefix + shortName + "_" + shortID;
+        //    
 
-            return iet.name;
-        }
+        //    return iet.name;
+        //}
 
         private static string TruncateID(IdentifiedExtensionType iet)
         {
@@ -1857,7 +1797,7 @@ namespace SDC
         public override PropertyType FillProperty(PropertyType p, Boolean fillData = true)
         {
             p.order = p.ObjectID;
-            p.name = CreateName(p);
+            //p.name = CreateName(p);
             return p;
         }
 

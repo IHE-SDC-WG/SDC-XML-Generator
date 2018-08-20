@@ -246,6 +246,9 @@ namespace SDC
         internal SectionBaseType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData, id)
         {
             this._ordered = true;
+            ElementName = "Section";
+            ElementPrefix = "S";
+            SetNames(elementName, elementPrefix);
             if (fillData) sdcTreeBuilder.FillSectionBase(this);
         }
 
@@ -259,9 +262,7 @@ namespace SDC
         public SectionItemType() { }
         public SectionItemType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData, id)
         {
-            ElementName = "Section";
-            ElementPrefix = "S";
-            SetNames(elementName, elementPrefix);
+
         }
 
 
@@ -294,9 +295,7 @@ namespace SDC
     {
         public QuestionItemType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData, id)
         {
-            ElementName = "Question";
-            ElementPrefix = "Q";
-            SetNames(elementName, elementPrefix);
+
 
         }
         public QuestionItemType() { }  //need public parameterless constructor to support generics
@@ -328,6 +327,9 @@ namespace SDC
         public QuestionItemBaseType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData, id)
         {
             this._readOnly = false;
+            ElementName = "Question";
+            ElementPrefix = "Q";
+            SetNames(elementName, elementPrefix);
             if (fillData) FillQuestionItemBase();
         }
         //!+Replaced in original class: protected QuestionItemBaseType() { }
@@ -392,9 +394,10 @@ namespace SDC
             this._minSelections = ((ushort)(1));
             this._maxSelections = ((ushort)(1));
             this._ordered = true;
-            if (fillData) sdcTreeBuilder.FillListField(this);
+
             ElementPrefix = "lf";
             SetNames(elementName, elementPrefix);
+            if (fillData) sdcTreeBuilder.FillListField(this);
         }
 
         //!+Replaced in original class: protected  ListFieldType (){}
@@ -427,8 +430,7 @@ namespace SDC
         public ListItemType() { }  //!+Replaced in original class: need public parameterless constructor to support generics
         public ListItemType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData, id)
         {
-            ElementPrefix = "LI";
-            SetNames(elementName, elementPrefix);
+
         }
 
         public ListItemResponseFieldType AddListItemResponseField(ListItemBaseType li)
@@ -479,6 +481,8 @@ namespace SDC
             this._selectionDeselectsSiblings = false;
             this._omitWhenSelected = false;
             this._repeat = "1";
+            ElementPrefix = "LI";
+            SetNames(elementName, elementPrefix);
             if (fillData) sdcTreeBuilder.FillListItemBase(this);
         }
         //!+Replaced in original class: protected  ListItemBaseType (){}
@@ -507,10 +511,10 @@ namespace SDC
         protected LookupEndPointType() { }
         public LookupEndPointType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base()
         {
-            this.includesHeaderRow = false ;
-            if (fillData) sdcTreeBuilder.FillLookupEndpoint(this);
+            this.includesHeaderRow = false;
             ElementPrefix = "LEP";
             SetNames(elementName, elementPrefix);
+            if (fillData) sdcTreeBuilder.FillLookupEndpoint(this);
         }
 
 
@@ -546,9 +550,10 @@ namespace SDC
         {
             this._responseRequired = false;
             //if (fillData) AddFillDataTypesDE(parentNode);
-            if (fillData) sdcTreeBuilder.FillListItemResponseField(this);
+
             ElementPrefix = "lirf";
-            SetNames(elementName, elementPrefix);
+            //SetNames(elementName, elementPrefix); //this was already called by the superType ResponseField.
+            if (fillData) sdcTreeBuilder.FillListItemResponseField(this);
         }
         protected ListItemResponseFieldType() { }
         //!Replaced in original class: protected  ListItemResponseFieldType (){}
@@ -629,9 +634,10 @@ namespace SDC
         public ResponseFieldType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             //if (fillData) sdcTreeBuilder.AddFillDataTypesDE(this);
-            if (fillData) sdcTreeBuilder.FillResponseField(this);
+
             ElementPrefix = "rf";
             SetNames(elementName, elementPrefix);
+            if (fillData) sdcTreeBuilder.FillResponseField(this);
             //sdcTreeBuilder.AddFillResponseUnits(this, fillData);
         }
     }
@@ -645,6 +651,7 @@ namespace SDC
             if (fillData) sdcTreeBuilder.FillUnits(this);
             ElementPrefix = "un";
             SetNames(elementName, elementPrefix);
+
         }
         //!+Replaced in original class: protected UnitsType() { }
 
@@ -664,6 +671,7 @@ namespace SDC
     {
 
         #region  Local Members
+        
         /// <summary>
         /// sdcTreeBuilder is an object instance created and held by the top level FormDesign node, 
         /// but referenced throughout the FormDesign object tree through the BaseType objects
@@ -671,7 +679,30 @@ namespace SDC
         protected ITreeBuilder sdcTreeBuilder;
         private string _elementName = "";
         private string _elementPrefix = "";
+
+        /// <summary>
+        /// Static counter that resets with each new instance of an IdentifiedExtensionType (IET).
+        /// Maintains the sequence of all elements under an IET.
+        /// </summary>
+        [System.Xml.Serialization.XmlIgnore]
+        private static int IETresetCounter { get; set; }
+        /// <summary>
+        /// Field to hold the ordinal position of an object (XML element) under an IdentifiedExtensionType (IET).
+        /// This number is used for creating the name attribute.
+        /// </summary>
+        [System.Xml.Serialization.XmlIgnore]
+        public decimal SubIETcounter { get; private set; }
+
+        /// <summary>
+        /// Used to construct the name property
+        /// </summary>
+        [System.Xml.Serialization.XmlIgnore]
+        public string BaseName { get; set; } = "";
+
+
         #endregion
+
+
         /// <summary>
         /// The name of XML element that is output from this class instance.
         /// Some SDC types are used in conjunction with multiple element names.  
@@ -687,14 +718,14 @@ namespace SDC
         public string ElementName
         {
             get
-            {   
-                if(_elementName.Length==0)
+            {
+                if (_elementName.Length == 0)
                 {//assign default ElementName from the type.  Strip off sufixes that are not used in the actual XML element tag.
                     _elementName = GetType().ToString()
                         .Replace("SDC.", string.Empty)
                         .Replace("Type", string.Empty)
                         .Replace("_Stype", string.Empty)
-                        .Replace("_DEtype", string.Empty);                    
+                        .Replace("_DEtype", string.Empty);
                 }
                 return _elementName;
             }
@@ -713,10 +744,12 @@ namespace SDC
         {
             get
             { //assign default prefix from the ElementName
-                if (_elementPrefix.Length == 0) _elementPrefix = ElementName;
-                //make sure EventHandlerfirst letter is lower case for non-IET types.
-                if (!(GetType().IsSubclassOf(typeof(IdentifiedExtensionType)))) _elementPrefix = _elementPrefix.Substring(0, 1).ToLower() + _elementPrefix.Substring(1);
-                    return _elementPrefix;
+                if (_elementPrefix.Length == 0)
+                {
+                    _elementPrefix = ElementName;                //make sure EventHandlerfirst letter is lower case for non-IET types.
+                    if (!(GetType().IsSubclassOf(typeof(IdentifiedExtensionType)))) _elementPrefix = _elementPrefix.Substring(0, 1).ToLower() + _elementPrefix.Substring(1);
+                }
+                return _elementPrefix;
             }
             set { _elementPrefix = value; }
         }
@@ -726,6 +759,12 @@ namespace SDC
             ObjectGUID = Guid.NewGuid();
             IsLeafNode = true;
             ParentNode = parentNode;
+            //BaseName = "";
+
+            if (GetType().IsSubclassOf(typeof(IdentifiedExtensionType))) IETresetCounter = 0;
+            else IETresetCounter++;
+            SubIETcounter = IETresetCounter;
+
             //ElementName = GetType().ToString().Replace("Type", string.Empty).Replace("type", string.Empty); //assign default ElementName from the type.
             //ElementPrefix = ElementName; //default name prefix - better than nothing, but not great
 
@@ -756,7 +795,7 @@ namespace SDC
 
             Debug.WriteLine($"The node with ObjectID: {this.ObjectID} has entered the BaseType ctor. Item type is {this.GetType()}.  " +
                 $"The parent ObjectID is {this.ParentObjID.ToString()}, ParentIETypeID is: {this.ParentIETypeID}");
-            
+
 
             if (fillData) FillBaseTypeItem();
         }
@@ -788,7 +827,9 @@ namespace SDC
         [System.Xml.Serialization.XmlIgnore]
         public Boolean IsLeafNode { get; private set; }
 
-        public void SetNames(string elementName = "", string elementPrefix = "")
+
+
+        public void SetNames(string elementName = "", string elementPrefix = "", string baseName="")
         {
             if (elementName.Length > 0)
                 ElementName = elementName;
@@ -796,9 +837,17 @@ namespace SDC
 
             if (elementPrefix.Length > 0)
                 ElementPrefix = elementPrefix;
+
+            if (baseName.Length > 0)
+                BaseName = baseName;
             //else if (ElementPrefix.Length == 0) ElementPrefix = ElementName;
 
-            Debug.WriteLine($"Type is ***{GetType()}***, ElementName is ***{ElementName}*** and Prefix is ***{ElementPrefix}***");
+            //if (name.Length == 0)
+            name = sdcTreeBuilder.CreateName(this);
+
+
+
+            Debug.WriteLine($"Type: {GetType()} ElementName: {ElementName} Prefix:{ElementPrefix} name: {name}");
         }
 
         /// <summary>
@@ -1218,7 +1267,7 @@ namespace SDC
             get
             {
                 if (!(_ParentNode is null)) return _ParentNode;  //this works for objects that were created with the parentNode constructor
-                //BaseType outParentNode;
+                                                                 //BaseType outParentNode;
                 if (this.GetType() != typeof(FormDesignType)) //TODO: remove this reflection condition and test for errors
                 {
                     Debug.WriteLine(GetType().ToString());
@@ -1388,10 +1437,10 @@ namespace SDC
             this.visible = true;
             this.mustImplement = true;
             this.showInReport = DisplayedTypeShowInReport.True;
-            sdcTreeBuilder.FillDisplayedTypeItems(this, fillData);
             ElementName = "DisplayedItem";
             ElementPrefix = "DI";
             SetNames(elementName, elementPrefix);
+            sdcTreeBuilder.FillDisplayedTypeItems(this, fillData);
         }
 
         protected DisplayedType() { }
@@ -1631,8 +1680,8 @@ namespace SDC
         protected base64Binary_DEtype() { }
         public base64Binary_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "b64";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "b64";
+            //SetNames(elementName, elementPrefix);
 
         }
     }
@@ -1662,8 +1711,8 @@ namespace SDC
         protected boolean_DEtype() { }
         public boolean_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "bool";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "bool";
+            //SetNames(elementName, elementPrefix);
 
         }
     }
@@ -1684,8 +1733,8 @@ namespace SDC
         protected byte_DEtype() { }
         public byte_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "byte";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "byte";
+            //SetNames(elementName, elementPrefix);
 
         }
     }
@@ -1706,8 +1755,8 @@ namespace SDC
         protected date_DEtype() { }
         public date_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "date";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "date";
+            //SetNames(elementName, elementPrefix);
 
         }
     }
@@ -1729,8 +1778,8 @@ namespace SDC
         protected dateTime_DEtype() { }
         public dateTime_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode)
         {
-            ElementPrefix = "dt";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "dt";
+            //SetNames(elementName, elementPrefix);
 
         }
     }
@@ -1753,8 +1802,8 @@ namespace SDC
 
         public dateTimeStamp_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "dts";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "dts";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -1773,8 +1822,8 @@ namespace SDC
         protected dayTimeDuration_DEtype() { }
         public dayTimeDuration_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "dtdur";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "dtdur";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -1795,8 +1844,8 @@ namespace SDC
         protected decimal_DEtype() { }
         public decimal_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "dec";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "dec";
+            //SetNames(elementName, elementPrefix);
 
         }
     }
@@ -1818,8 +1867,8 @@ namespace SDC
         protected double_DEtype() { }
         public double_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "dbl";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "dbl";
+            //SetNames(elementName, elementPrefix);
 
         }
     }
@@ -1841,8 +1890,8 @@ namespace SDC
         public duration_DEtype() { }
         public duration_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "dur";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "dur";
+            //SetNames(elementName, elementPrefix);
 
         }
     }
@@ -1864,8 +1913,8 @@ namespace SDC
         protected float_DEtype() { }
         public float_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "flt";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "flt";
+            //SetNames(elementName, elementPrefix);
 
         }
     }
@@ -1887,8 +1936,8 @@ namespace SDC
         protected gDay_DEtype() { }
         public gDay_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "day";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "day";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -1908,8 +1957,8 @@ namespace SDC
         protected gMonth_DEtype() { }
         public gMonth_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "mon";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "mon";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -1930,8 +1979,8 @@ namespace SDC
         protected gMonthDay_DEtype() { }
         public gMonthDay_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "mday";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "mday";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -1952,8 +2001,8 @@ namespace SDC
         protected gYear_DEtype() { }
         public gYear_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "y";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "y";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -1974,8 +2023,8 @@ namespace SDC
         protected gYearMonth_DEtype() { }
         public gYearMonth_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "ym";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "ym";
+            //SetNames(elementName, elementPrefix);
         }
     }
     public partial class gYearMonth_Stype
@@ -1995,8 +2044,8 @@ namespace SDC
         protected hexBinary_DEtype() { }
         public hexBinary_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "hexb";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "hexb";
+            //SetNames(elementName, elementPrefix);
         }
 
     }
@@ -2027,9 +2076,9 @@ namespace SDC
         { this.Any = new List<System.Xml.XmlElement>(); }
         public HTML_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "html";
-            SetNames(elementName, elementPrefix);
-            this.Any = new List<System.Xml.XmlElement>();
+            //ElementPrefix = "html";
+            //SetNames(elementName, elementPrefix);
+            //this.Any = new List<System.Xml.XmlElement>();
         }
     }
 
@@ -2052,8 +2101,8 @@ namespace SDC
         protected int_DEtype() { }
         public int_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "int";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "int";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -2074,8 +2123,8 @@ namespace SDC
         protected integer_DEtype() { }
         public integer_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "intr";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "intr";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -2133,8 +2182,8 @@ namespace SDC
         protected long_DEtype() { }
         public long_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "lng";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "lng";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -2155,8 +2204,8 @@ namespace SDC
         protected negativeInteger_DEtype() { }
         public negativeInteger_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "nint";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "nint";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -2177,8 +2226,8 @@ namespace SDC
         protected nonNegativeInteger_DEtype() { }
         public nonNegativeInteger_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "nnint";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "nnint";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -2199,8 +2248,8 @@ namespace SDC
         protected nonPositiveInteger_DEtype() { }
         public nonPositiveInteger_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "npint";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "npint";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -2221,8 +2270,8 @@ namespace SDC
         protected positiveInteger_DEtype() { }
         public positiveInteger_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "pint";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "pint";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -2243,8 +2292,8 @@ namespace SDC
         protected short_DEtype() { }
         public short_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "sh";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "sh";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -2265,8 +2314,8 @@ namespace SDC
         protected string_DEtype() { }
         public string_DEtype(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "str";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "str";
+            //SetNames(elementName, elementPrefix);
         } //{if (elementName.Length > 0) ElementName = elementName; }
     }
 
@@ -2285,8 +2334,8 @@ namespace SDC
         protected time_DEtype() { }
         public time_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "tim";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "tim";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -2307,8 +2356,8 @@ namespace SDC
         protected unsignedByte_DEtype() { }
         public unsignedByte_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "ubyte";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "ubyte";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -2329,8 +2378,8 @@ namespace SDC
         protected unsignedInt_DEtype() { }
         public unsignedInt_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "unint";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "unint";
+            //SetNames(elementName, elementPrefix);
         }
 
     }
@@ -2352,8 +2401,8 @@ namespace SDC
         protected unsignedLong_DEtype() { }
         public unsignedLong_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "ulng";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "ulng";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -2376,8 +2425,8 @@ namespace SDC
         public unsignedShort_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
 
-            ElementPrefix = "ush";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "ush";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -2397,13 +2446,13 @@ namespace SDC
     public partial class XML_DEtype
     {
         protected XML_DEtype()
-        { this.Any = new List<XmlElement>(); }
+        { }//this.Any = new List<XmlElement>(); }
         public XML_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
 
-            ElementPrefix = "xml";
-            SetNames(elementName, elementPrefix);
-            this.Any = new List<XmlElement>();
+            //ElementPrefix = "xml";
+            //SetNames(elementName, elementPrefix);
+            //this.Any = new List<XmlElement>();
         }
     }
 
@@ -2426,8 +2475,8 @@ namespace SDC
         public yearMonthDuration_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
 
-            ElementPrefix = "ymd";
-            SetNames(elementName, elementPrefix);
+            //ElementPrefix = "ymd";
+            //SetNames(elementName, elementPrefix);
         }
     }
 
@@ -3079,8 +3128,8 @@ namespace SDC
         {
             this.ElementPrefix = "cont";
             SetNames(elementName, elementPrefix);
-    }
-    protected ContactsType() { }
+        }
+        protected ContactsType() { }
     }
 
     public partial class CountryCodeType
@@ -3088,7 +3137,7 @@ namespace SDC
         protected CountryCodeType() { }
         public CountryCodeType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "cocd";
+            ElementPrefix = "cocd";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3098,7 +3147,7 @@ namespace SDC
         protected DestinationType() { }
         public DestinationType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "dest";
+            ElementPrefix = "dest";
             SetNames(elementName, elementPrefix);
 
         }
@@ -3110,7 +3159,7 @@ namespace SDC
         protected PhoneNumberType() { }
         public PhoneNumberType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "pn";
+            ElementPrefix = "pn";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3121,7 +3170,7 @@ namespace SDC
         public PhoneType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             ElementName = "PhoneType";
-            this.ElementPrefix = "phn";
+            ElementPrefix = "phn";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3131,7 +3180,7 @@ namespace SDC
         protected JobType() { }
         public JobType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "job";
+            ElementPrefix = "job";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3142,7 +3191,7 @@ namespace SDC
     {
         public EmailAddressType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "emad";
+            ElementPrefix = "emad";
             SetNames(elementName, elementPrefix);
         }
         protected EmailAddressType() { }
@@ -3153,7 +3202,7 @@ namespace SDC
         protected EmailType() { }
         public EmailType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "eml";
+            ElementPrefix = "eml";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3167,7 +3216,7 @@ namespace SDC
     {
         public ApprovalType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "appr";
+            ElementPrefix = "appr";
             SetNames(elementName, elementPrefix);
         }
         protected ApprovalType() { }
@@ -3178,7 +3227,7 @@ namespace SDC
         protected AssociatedFilesType() { }
         public AssociatedFilesType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "asfi";
+            ElementPrefix = "asfi";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3188,7 +3237,7 @@ namespace SDC
         protected AcceptabilityType() { }
         public AcceptabilityType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "acc";
+            ElementPrefix = "acc";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3199,7 +3248,7 @@ namespace SDC
         protected FileDatesType() { }
         public FileDatesType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "fid";
+            ElementPrefix = "fid";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3209,7 +3258,7 @@ namespace SDC
         protected FileHashType() { }
         public FileHashType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "fihsh";
+            ElementPrefix = "fihsh";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3219,7 +3268,7 @@ namespace SDC
         protected FileType() { }
         public FileType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "file";
+            ElementPrefix = "file";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3229,7 +3278,7 @@ namespace SDC
         protected FileUsageType() { }
         public FileUsageType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this.ElementPrefix = "fius";
+            ElementPrefix = "fius";
             SetNames(elementName, elementPrefix);
         }
     }
