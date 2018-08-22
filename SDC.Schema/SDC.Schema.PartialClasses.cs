@@ -552,7 +552,7 @@ namespace SDC
             //if (fillData) AddFillDataTypesDE(parentNode);
 
             ElementPrefix = "lirf";
-            //SetNames(elementName, elementPrefix); //this was already called by the superType ResponseField.
+            SetNames(elementName, elementPrefix); //this was already called by the superType ResponseField.
             if (fillData) sdcTreeBuilder.FillListItemResponseField(this);
         }
         protected ListItemResponseFieldType() { }
