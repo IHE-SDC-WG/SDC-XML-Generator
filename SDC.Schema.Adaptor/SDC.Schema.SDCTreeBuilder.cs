@@ -28,9 +28,6 @@ namespace SDC
         //public decimal FormDesignID { get; set; } //CTV_Ckey
         public string XsltFileName { get; set; }
 
-
-
-
         public FormDesignType FormDesign { get; set; }
         #endregion
 

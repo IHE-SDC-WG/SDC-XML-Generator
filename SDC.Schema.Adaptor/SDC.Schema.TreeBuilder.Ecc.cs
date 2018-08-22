@@ -239,7 +239,7 @@ namespace SDC
             string prefix = "";
             string shortName = "";
 
-            if (bt.GetType().IsSubclassOf(typeof(DisplayedType)))
+            if (bt.GetType().IsSubclassOf(typeof(IdentifiedExtensionType)))
             {
                 //ietCounter = 0;
                 shortID = TruncateID((IdentifiedExtensionType)bt);
