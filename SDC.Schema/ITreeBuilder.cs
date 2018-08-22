@@ -104,6 +104,8 @@ namespace SDC
 
         #region Resources
         HTML_Stype AddFillHTML(RichTextType rt, Boolean fillData = true, string InXhtml = "");
+        string CreateName(BaseType bt);
+
         String SerializeFormDesignTree();
 
         #endregion

@@ -18,6 +18,13 @@ namespace SDC
     public class SDCTreeBuilderEcc : SDCTreeBuilder
     {
 
+        /// <summary>
+        /// resets for each Identified Item Type, and counts each element added under the iet.
+        /// Used to create unique and relatively reproducible name properties for each element 
+        /// </summary>
+        private int ietCounter = 0;
+
+
         #region Rules
 
         //!+Rules
@@ -62,11 +69,12 @@ namespace SDC
                 string shortName = dr["ShortName"].ToString().Replace(" ", "");  //used for creating filenames etc..; sample: “Adrenal.Res”; spaces are removed  
                 string releaseVersionSuffix = dr["ReleaseVersionSuffix"].ToString();  //e.g., CTP1, RC2, REL; UNK if a value is missing
                 string title = dr["OfficialName"].ToString();
-                string lineage = dr["ChecklistTemplateVersionCkey"].ToString().Replace(".1000043", "");//remove the eCC namespace suffix ".1000043"
+                string CTVcKey = dr["ChecklistTemplateVersionCkey"].ToString();
+                string lineage = shortName + "." + CTVcKey.Replace(".100004300", "");//remove the eCC namespace suffix ".1000043"
                 string version = (dr["VersionID"].ToString()).Replace(".1000043", "") + "." + releaseVersionSuffix;//remove the eCC namespace suffix ".1000043"
-                string id = lineage + "." + version;  //FDF = "Form Design File".  This distinguishes the CTV_Ckey (Forms) from CTI_ Ckeys (Items).
-                                                               //id - has format like: 129.3.001.001.CTP1 – note the 3 components, and the “.” separator
-                string required = dr["Restrictions"].ToString().Contains("optional") ? "false" : "true"; //determines if accreditation applies
+                string id = lineage + "_" + version + "_sdcFDF";  //FDF = "Form Design File".
+                bool required = dr["EffectiveDate"].ToString() != ""; //ToDo: It would be better to have a database field for required.
+
                 string AJCCversion = dr["AJCC_UICC_Version"].ToString();
                 string FIGOversion = dr["FIGO_Version"].ToString();
 
@@ -76,15 +84,14 @@ namespace SDC
                                        //Note that we have a 2-way reference here:  fd holds a copy of "this" (the eCC tree buiilder), and "this" holds a copy of fd.
                                        //This is a bidirectional dependency injection, allowing fd to call eCC-specific tree builder functions, 
                                        //and "this" (The eCC tree builder) to assemble the eCC tree with fd components, and fill it with eCC content.
-                
+
 
                 //Some basic fd properties
-                fd.baseURI = "https://www.cap.org/eCC/SDC.3.1" + "/" + shortName;  //uses SDC Schema version (3.1) is “SDC.3.1”
+                fd.baseURI = "cap.org";  //uses SDC Schema version (3.1) is “SDC.3.1”
                 fd.lineage = lineage;
                 fd.version = version;
-                //fullURI - format like: https://www.cap.org/eCC/SDC.3.11/AdrenalRes/129.3.000.001.CTP1            
-                fd.fullURI = fd.baseURI + "/" + fd.ID;  //Note that “/” is used for URI used instead of “_”
-                fd.filename = "SDC.3.11_FDF_" + shortName + "_" + fd.ID; //format like: SDC.3.11_FDF_Adrenal.Res_129.3.001.001.CTP1
+                fd.fullURI = $"_baseURI={fd.baseURI}&_lineage={lineage}&_version={version}&_docType=sdcFDF";
+                fd.filename = id + ".xml";  // "SDC.3.11_FDF_" + shortName + "_" + fd.ID; //format like: SDC.3.11_FDF_Adrenal.Res_129.3.001.001.CTP1
                 fd.formTitle = title;
 
 
@@ -96,30 +103,30 @@ namespace SDC
                     "(c) " + yr + " College of American Pathologists.  All rights reserved.  License required for use.",  //title
                     "CAPeCC_static_text", "copyright", "Copyright", //type, style, Propertyname
                     false, "The displayed copyright year represents the year that this XML file was generated", //comment
-                    null, null);
+                    null, null, "Copyright");
 
                 //CAPeCC_CAP_Protocol poperties
-                CreateStaticProperty(fd, dr["GenericHeaderText"].ToString(), "CAPeCC_static_text", "", "GenericHeaderText", false, string.Empty, null, string.Empty, "GenericHeaderText"); //, "CAPeCC_CAP_Protocol");
+                CreateStaticProperty(fd, dr["GenericHeaderText"].ToString(), "CAPeCC_static_text", string.Empty, "GenericHeaderText", false, string.Empty, null, string.Empty, "GenericHeaderText"); //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["Category"].ToString(), "CAPeCC_meta", string.Empty, "Category", false, string.Empty, null, string.Empty, "Category"); //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["OfficialName"].ToString(), "CAPeCC_meta", string.Empty, "OfficialName", false, string.Empty, null, string.Empty, "OfficialName");  //, "CAPeCC_CAP_Protocol");
-                //CreateStaticProperty(fd, dr["CAPProtocolVersion"].ToString(), "CAPeCC_meta", string.Empty, "CAPProtocolVersion", false, string.Empty, null, string.Empty, "CAPProtocolVersion");  //, "CAPeCC_CAP_Protocol");
+                CreateStaticProperty(fd, dr["CAP_ProtocolName"].ToString(), "CAPeCC_meta", string.Empty, "CAP_ProtocolName", false, string.Empty, null, string.Empty, "CAP_ProtocolName");  //, "CAPeCC_CAP_Protocol");
+                CreateStaticProperty(fd, dr["CAP_ProtocolVersion"].ToString(), "CAPeCC_meta", string.Empty, "CAP_ProtocolVersion", false, string.Empty, null, string.Empty, "CAP_ProtocolVersion");  //, "CAPeCC_CAP_Protocol");
+                CreateStaticProperty(fd, CTVcKey, "CAPeCC_meta", string.Empty, "TemplateID", false, string.Empty, null, string.Empty, "TemplateID"); 
+
                 //CreateStaticProperty(fd, dr["SDCSchemaVersion"].ToString(), "CAPeCC_meta", string.Empty, "SDCSchemaVersion", false, string.Empty, null, string.Empty, "SDCSchemaVersion");  //, "CAPeCC_CAP_Protocol");
 
                 CreateStaticProperty(fd, dr["Restrictions"].ToString(), "CAPeCC_meta", string.Empty, "Restrictions", false, string.Empty, null, string.Empty, "Restrictions");  //, "CAPeCC_CAP_Protocol");
-                CreateStaticProperty(fd, required, "CAPeCC_meta", string.Empty, "CAP_Required", false, string.Empty, null, string.Empty, string.Empty);  //, "CAPeCC_CAP_Protocol");
-                //need CAP Protocol version #
-                //need SDC Schema version?
+                CreateStaticProperty(fd, required.ToString().ToLower(), "CAPeCC_meta", string.Empty, "CAP_Required", false, string.Empty, null, string.Empty, "CAP_Required");  //, "CAPeCC_CAP_Protocol");
 
                 //Dates
-                //Populate database for Effective Date
-                CreateStaticProperty(fd, MapDBNullToDateTime(dr["EffectiveDate"]).ToString(), "CAPeCC_meta dt.dateTime", "", "AccreditationDate", false, string.Empty, null, string.Empty, "AccreditationDate"); //, "CAPeCC_Dates");
-                CreateStaticProperty(fd, MapDBNullToDateTime(dr["WebPostingDate"]).ToString(), "CAPeCC_meta dt.dateTime", "", "WebPostingDate", false, string.Empty, null, string.Empty, "WebPostingDate"); //, "CAPeCC_Dates");
+                CreateStaticProperty(fd, MapDBNullToDateTime(dr["EffectiveDate"]).ToString(), "CAPeCC_meta dt.dateTime", string.Empty, "AccreditationDate", false, string.Empty, null, string.Empty, "AccreditationDate"); //, "CAPeCC_Dates");
+                CreateStaticProperty(fd, MapDBNullToDateTime(dr["WebPostingDate"]).ToString(), "CAPeCC_meta dt.dateTime", string.Empty, "WebPostingDate", false, string.Empty, null, string.Empty, "WebPostingDate"); //, "CAPeCC_Dates");
 
                 //CAPeCC_Data_Sources
                 CreateStaticProperty(fd, shortName, "CAPeCC_meta", string.Empty, "ShortName", false, string.Empty, null, string.Empty, "ShortName"); //, "CAPeCC_Data_Sources");
                 CreateStaticProperty(fd, releaseVersionSuffix, "CAPeCC_meta", string.Empty, "ApprovalStatus", false, string.Empty, null, string.Empty, "ApprovalStatus"); //, "CAPeCC_Data_Sources");
-                if (!string.IsNullOrEmpty(AJCCversion)) CreateStaticProperty(fd, AJCCversion, "CAPeCC_meta", "", "AJCC_Version", false, string.Empty, null, string.Empty, "AJCC_Version"); //, "CAPeCC_Data_Sources");
-                if (!string.IsNullOrEmpty(FIGOversion)) CreateStaticProperty(fd, FIGOversion, "CAPeCC_meta", "", "FIGO_Version", false, string.Empty, null, string.Empty, "FIGO_Version"); //, "CAPeCC_Data_Sources");
+                if (!string.IsNullOrEmpty(AJCCversion)) CreateStaticProperty(fd, AJCCversion, "CAPeCC_meta", string.Empty, "AJCC_Version", false, string.Empty, null, string.Empty, "AJCC_Version"); //, "CAPeCC_Data_Sources");
+                if (!string.IsNullOrEmpty(FIGOversion)) CreateStaticProperty(fd, FIGOversion, "CAPeCC_meta", string.Empty, "FIGO_Version", false, string.Empty, null, string.Empty, "FIGO_Version"); //, "CAPeCC_Data_Sources");
 
             }
 
@@ -174,8 +181,8 @@ namespace SDC
         { return new ActShowMessageType(tt); }
         //public override ExpressionType AddRunCommand(ThenType tt, Boolean fillData = true)
         //{ return new ExpressionType(tt); }
-        public override FuncType AddShowURL(ThenType tt, Boolean fillData = true)
-        { return new FuncType(tt); }
+        //public override FuncType AddShowURL(ThenType tt, Boolean fillData = true)
+        //{ return new FuncType(tt); }
         public override ActShowFormType AddShowForm(ThenType tt, Boolean fillData = true)
         { return new ActShowFormType(tt); }
         public override ActSaveResponsesType AddSave(ThenType tt, Boolean fillData = true)
@@ -186,10 +193,10 @@ namespace SDC
         { return new ActSendMessageType(tt); }
         public override ActValidateFormType AddValidateForm(ThenType tt, Boolean fillData = true)
         { return new ActValidateFormType(tt); }
-        public override IfThenType AddIfThen(ThenType tt, Boolean fillData = true)
-        { return new IfThenType(tt); }
-        public override ItemNameType AddCallIfThen(ThenType tt, Boolean fillData = true)
-        { return new ItemNameType(tt); }
+        //public override IfThenType AddIfThen(ThenType tt, Boolean fillData = true)
+        //{ return new IfThenType(tt); }
+        //public override ItemNameType AddCallIfThen(ThenType tt, Boolean fillData = true)
+        //{ return new ItemNameType(tt); }
 
 
 
@@ -201,7 +208,7 @@ namespace SDC
         {
             bt.type = (string)drFormDesign["type"];
             bt.styleClass = (string)drFormDesign["styleClass"];
-            bt.name = CreateName(bt);
+            //bt.name = CreateName(bt);
             //bt.order = bt.ObjectID;  //removed 3/25/2018; added to BaseType constructor so that all subclasses output @order 
 
 
@@ -226,77 +233,43 @@ namespace SDC
         /// <param name="bt">an object of type BaseType</param>
         /// <returns></returns>
 
-        protected string CreateName(BaseType bt)
+        public override string CreateName(BaseType bt)
         {
-            if (!bt.GetType().IsSubclassOf(typeof(DisplayedType)))
+            string shortID = "";
+            string prefix = "";
+            string shortName = "";
+
+            if (bt.GetType().IsSubclassOf(typeof(DisplayedType)))
             {
-                //HACK: Assign names for testing; names need to be fixed strings assigned in the database.
-                IdentifiedExtensionType iet = bt.ParentIETypeObject;
-                string shortText = iet.name;
-                string prefix = "BT";
+                //ietCounter = 0;
+                shortID = TruncateID((IdentifiedExtensionType)bt);
+                prefix = bt.ElementPrefix;
+                bt.BaseName = (string)drFormDesign["ShortName"];
+                shortName = bt.BaseName;
+                if (shortName.Length > 0) shortName += "_";  //I don't like 2 underscores next to each other.
+                if (prefix.Length > 0) prefix += "_";
+                return prefix + shortName + shortID;
 
-                //Console.Write(bt.GetType().ToString());
-
-                if (!string.IsNullOrWhiteSpace(shortText))
-                {
-                    switch (bt.GetType().ToString())
-                    {
-                        case "SDC.ResponseFieldType":
-                            prefix = "rf_";
-                            break;
-                        case "SDC.ResponseType":
-                            prefix = "rsp_";
-                            break;
-                        case "SDC.PropertyType":
-                            prefix = "p_";
-                            break;
-
-                        case "SDC.ListItemResponseFieldType":
-                            prefix = "lirf_";
-                            break;
-                        case "SDC.ListFieldType":
-                            prefix = "lf_";
-                            break;
-                        case "SDC.string_DEtype":
-                            prefix = "str_";
-                            break;
-                        case "SDC.integer_DEtype":
-                            prefix = "igr_";
-                            break;
-                        case "SDC.int_DEtype":
-                            prefix = "int_";
-                            break;
-                        case "SDC.long_DEtype":
-                            prefix = "lng_";
-                            break;
-                        case "SDC.decimal_DEtype":
-                            prefix = "dec_";
-                            break;
-                        case "SDC.CodedValueType":
-                            prefix = "cod_";
-                            break;
-                        case "SDC.ContactType":
-                            prefix = "con_";
-                            break;
-                        case "SDC.LinkType":
-                            prefix = "lnk_";
-                            break;
-
-
-
-                        case "":
-                        default:
-                            prefix = "_" + bt.GetType().ToString();
-                            break;
-
-                    }
-                    string ancestorID = Decimal.Truncate(Convert.ToDecimal(iet.ID)).ToString();  //could throw errors
-                    string objectCtr = bt.ObjectID.ToString();
-                    return prefix + shortText + "_" + objectCtr + '_' + ancestorID;
-                }
-                else { }
             }
-            return bt.name;
+                else
+            {
+                IdentifiedExtensionType iet = bt.ParentIETypeObject;
+                shortID = TruncateID(iet) + "_";
+                shortName = bt.BaseName;
+                prefix = bt.ElementPrefix;
+                if (shortName.Length > 0) shortName += "_";
+                if (prefix.Length > 0) prefix += "_";
+
+
+                if (iet.ID.EndsWith("_Body"))
+                {
+                    shortID = "Body";
+                    return prefix + shortName + shortID;
+                }
+
+                return prefix + shortName + shortID + bt.SubIETcounter.ToString();
+            }
+
         }
 
         protected override CommentType FillCommentData(BaseType bt, string comment)
@@ -335,8 +308,65 @@ namespace SDC
             //TODO: support baseURI
 
             iet.ID = drFormDesign["ChecklistTemplateItemCKey"].ToString();
-            return iet;
+            //iet.name = CreateName(iet);
 
+            return iet;
+        }
+
+        //private string CreateIETname(IdentifiedExtensionType iet)
+        //{
+        //    ietCounter = 0;
+        //    var shortName = (string)drFormDesign["ShortName"];
+        //    string shortID = TruncateID(iet);
+        //    string prefix = "";
+        //    string ietType = iet.GetType().ToString();
+
+        //    //Create prefix
+        //    switch (ietType)
+        //    {
+        //        case "SDC.SectionItemType":
+        //            prefix = "S";
+        //            break;
+        //        case "SDC.QuestionItemType":
+        //            prefix = "Q";
+        //            break;
+        //        case "SDC.ListItemType":
+        //            prefix = "LI";
+        //            break;
+        //        case "SDC.DisplayedType":
+        //            prefix = "D";
+        //            break;
+        //        case "SDC.ButtonItemType":
+        //            prefix = "B";
+        //            break;
+        //        case "SDC.InjectFormType":
+        //            prefix = "Inj";
+        //            break;
+        //        default:
+        //            int i = ietType.IndexOf("Type");
+        //            if (i > 0) prefix = ietType.Substring(4, i - 4); //strip off leading "SDC." and trailing "Type"
+        //            break;
+        //    }
+
+        //    if (shortName != "") prefix +=  "_";  //I don't like 2 underscores next to each other.
+
+        //        iet.name = prefix + shortName + "_" + shortID;
+        //    
+
+        //    return iet.name;
+        //}
+
+        private static string TruncateID(IdentifiedExtensionType iet)
+        {
+            string shortID = iet.ID;
+            int i = 0;
+            if (!string.IsNullOrWhiteSpace(iet.ID))
+            {
+                i = iet.ID.ToString().IndexOf(".100004300");
+                if (i > 0)
+                    shortID = iet.ID.ToString().Substring(0, i);
+            }
+            return shortID;
         }
 
         public override RepeatingType FillRepeatingTypeItemData(RepeatingType rt)
@@ -525,9 +555,9 @@ namespace SDC
 
         public override OrganizationType AddFillOrganizationItems(OrganizationType ot, Boolean fillData = true)
         {
-            ot.OrgName = new string_Stype(ot);
-            ot.Usage = new string_Stype(ot);
-            ot.Department = new string_Stype(ot);
+            ot.OrgName = new string_Stype(ot, fillData, "OrgName");
+            ot.Usage = new string_Stype(ot, fillData, "Usage");
+            ot.Department = new string_Stype(ot, fillData, "Department");
 
             var person = AddContactPerson(ot);  //This function will add all the person details to the Person list
 
@@ -543,12 +573,12 @@ namespace SDC
             ot.Phone.Add(ph1);
 
             ot.Role = new List<string_Stype>();
-            var role = new string_Stype(ot);
+            var role = new string_Stype(ot, fillData, "Role");
             ot.Role.Add(role);
 
             var address1 = AddFillAddress(ot);
             address1.AddressLine = new List<string_Stype>();
-            var addrLine1 = new string_Stype(ot);
+            var addrLine1 = new string_Stype(ot, fillData, "AddressLine");
             address1.AddressLine.Add(addrLine1);
             ot.Identifier = new List<IdentifierType>();
 
@@ -815,6 +845,7 @@ namespace SDC
             prop.order = prop.ObjectID;
             prop.propName = propertyName;
             prop.propClass = propertyClass;
+            prop.name = name;
             //p.RegisterParents(parent);
 
             //if (comment !="") AddRichText<DisplayedType>(parent, xhtml, comment);
@@ -848,18 +879,19 @@ namespace SDC
                     null, null);
                 //f.styleClass = "left";
                 f.ID = "Footer" + "." + FormDesign.ID;
+                f.name = "footer";
             }
         }
 
-        private BaseType CreateStaticBaseItems(BaseType parent, string type, string style, string name)
+        private BaseType CreateStaticBaseItems(BaseType bt, string type, string style, string name)
         {
             //var p = new RichTextType();
             //var p = AddFillOtherText(FormDesign.Header, false);
-            parent.type = type;
-            parent.styleClass = style;
-            parent.name = name;
+            bt.type = type;
+            bt.styleClass = style;
+            bt.name = name;
 
-            return parent;
+            return bt;
         }
 
 
@@ -928,7 +960,7 @@ namespace SDC
         #region Data Types
 
         protected override DataTypes_DEType AddFillDataTypesDE(ListFieldType lft, SectionBaseTypeResponseTypeEnum dataType)
-        {   //DefaultListItemDataType
+        {   
             throw new NotImplementedException();
         }
 
@@ -937,7 +969,7 @@ namespace SDC
             rfParent.Response = new DataTypes_DEType(rfParent);
 
             var dataTypeEnum = new ItemChoiceType();
-            //RF.Response.ItemElementName = dataType;
+            
             string itemDataType = drFormDesign["DataType"].ToString();
 
             switch (itemDataType)
@@ -947,6 +979,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new HTML_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.Any = new List<XmlElement>();
                         //TODO: dt.Any.Add((XmlElement)drFormDesign["xml"]);  //TODO: replace with real data
                         dt.AnyAttr = new List<XmlAttribute>();
@@ -962,6 +995,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new XML_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.Any = new List<XmlElement>();
                         //TODO: dt.Any.Add((XmlElement)drFormDesign["xml"]);  //TODO: missing
                         //dt.AnyAttr = new List<System.Xml.XmlAttribute>();
@@ -978,6 +1012,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new anyType_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.Any = new List<XmlElement>();
                         //TODO: dt.Any.Add((XmlElement)drFormDesign["xml"]);  //TODO: missing
                         dt.AnyAttr = new List<XmlAttribute>();
@@ -995,6 +1030,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new anyURI_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (string)drFormDesign["DefaultValue"];
                         //TODO: dt.length = (long)drFormDesign["length"];  //TODO: missing - calculated value
                         dt.maxLength = (long)drFormDesign["AnswerMaxChars"];
@@ -1010,6 +1046,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new base64Binary_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (byte[])drFormDesign["DefaultValue"];
                         //TODO: dt.valBase64 = (string)drFormDesign["val_string"];
                         //TODO: dt.length = (long)drFormDesign["length"];  //TODO: missing
@@ -1026,6 +1063,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new boolean_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (bool)drFormDesign["DefaultValue"];
 
                         rfParent.Response.DataTypeDE_Item = dt;
@@ -1036,6 +1074,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new byte_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (sbyte)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (sbyte)drFormDesign["minExclusive"];//TODO: missing
                         dt.minInclusive = (sbyte)drFormDesign["AnswerMinValue"];//TODO: missing
@@ -1053,6 +1092,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new date_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (DateTime)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (DateTime)drFormDesign["minExclusive"];
                         dt.minInclusive = (DateTime)drFormDesign["AnswerMinValue"];
@@ -1070,6 +1110,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new dateTime_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (DateTime)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (DateTime)drFormDesign["minExclusive"];
                         dt.minInclusive = (DateTime)drFormDesign["AnswerMinValue"];
@@ -1086,6 +1127,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new dateTimeStamp_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (DateTime)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (DateTime)drFormDesign["minExclusive"];
                         dt.minInclusive = (DateTime)drFormDesign["AnswerMinValue"];
@@ -1103,10 +1145,11 @@ namespace SDC
                     if (true)
                     {
                         var dt = new decimal_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         //dt.val = drFormDesign["DefaultValue"] as decimal?;
                         //SDCHelpers.NZ(drFormDesign["DefaultValue"], dt.val);
                         if (drFormDesign["DefaultValue"].ToString() != "") dt.val = (decimal)drFormDesign["DefaultValue"];
-                        
+
                         //TODO: dt.minExclusive = (decimal)drFormDesign["minExclusive"];
                         if (drFormDesign["AnswerMinValue"] != null) dt.minInclusive = (decimal)drFormDesign["AnswerMinValue"];
                         //TODO: dt.maxExclusive = (decimal)drFormDesign["maxExclusive"];
@@ -1131,6 +1174,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new double_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         if (drFormDesign["DefaultValue"] != null) dt.val = (double)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (double)drFormDesign["minExclusive"];
                         dt.minInclusive = (double)drFormDesign["AnswerMinValue"];
@@ -1149,6 +1193,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new duration_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (string)drFormDesign["DefaultValue"];   //TODO:  bug in xsdCode++ - wrong data type
                         //TODO: dt.minExclusive = (string)drFormDesign["minExclusive"];
                         dt.minInclusive = (string)drFormDesign["AnswerMinValue"];
@@ -1165,6 +1210,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new float_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (float)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (float)drFormDesign["minExclusive"];
                         dt.minInclusive = (float)drFormDesign["AnswerMinValue"];
@@ -1183,6 +1229,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new gDay_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (string)drFormDesign["DefaultValue"]; ;  //TODO:  bug in xsdCode++ - wrong data type
                         //TODO: dt.minExclusive = (string)drFormDesign["minExclusive"];
                         dt.minInclusive = (string)drFormDesign["AnswerMinValue"];
@@ -1199,6 +1246,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new gMonth_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (string)drFormDesign["DefaultValue"];  //TODO:  bug in xsdCode++ - wrong data type
                         //TODO: dt.minExclusive = (string)drFormDesign["minExclusive"];
                         dt.minInclusive = (string)drFormDesign["AnswerMinValue"];
@@ -1215,6 +1263,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new gMonthDay_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (string)drFormDesign["DefaultValue"]; ;  //TODO:  bug in xsdCode++ - wrong data type
                         //TODO: dt.minExclusive = (string)drFormDesign["minExclusive"];
                         dt.minInclusive = (string)drFormDesign["AnswerMinValue"];
@@ -1231,6 +1280,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new gYear_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (string)drFormDesign["DefaultValue"]; ;  //TODO:  bug in xsdCode++ - wrong data type
                         //TODO: dt.minExclusive = (string)drFormDesign["minExclusive"];
                         dt.minInclusive = (string)drFormDesign["AnswerMinValue"];
@@ -1247,6 +1297,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new gYearMonth_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (string)drFormDesign["DefaultValue"]; ;  //TODO:  bug in xsdCode++ - wrong data type
                         //TODO: dt.minExclusive = (string)drFormDesign["minExclusive"];
                         dt.minInclusive = (string)drFormDesign["AnswerMinValue"];
@@ -1263,6 +1314,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new hexBinary_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (byte[])drFormDesign["DefaultValue"];
                         //TODO: dt.valHex = (string)drFormDesign["val_string"];//TODO: missing
                         dt.length = (long)drFormDesign["length"];
@@ -1279,6 +1331,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new int_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (int)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (int)drFormDesign["minExclusive"];
                         dt.minInclusive = (int)drFormDesign["AnswerMinValue"];
@@ -1300,6 +1353,7 @@ namespace SDC
                         //TODO:  bug in xsdCode++ - uses wrong data type - uses string because there is no integer (truncated decimal) format in .NET
                         //However, we test to ensure that the database value is a long- it would be better to test against a truncated decimal
                         var dt = new integer_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         if (drFormDesign["DefaultValue"] is decimal) dt.val = decimal.Truncate((decimal)drFormDesign["DefaultValue"]).ToString();  //dt.valDec = (decimal)drFormDesign["DefaultValue"];
                         //dt.val= Convert.ToDecimal(drFormDesign["DefaultValue"]);   //TODO:  bug in xsdCode++ - wrong data type
 
@@ -1323,6 +1377,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new long_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (long)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (long)drFormDesign["minExclusive"];
                         dt.minInclusive = (long)drFormDesign["AnswerMinValue"];
@@ -1340,6 +1395,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new negativeInteger_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = drFormDesign["DefaultValue"].ToString(); ;  //TODO:  bug in xsdCode++ - wrong data type
                         //TODO: dt.minExclusive = (System.Nullable<decimal>)drFormDesign["minExclusive"];
                         dt.minInclusive = drFormDesign["AnswerMinValue"].ToString();
@@ -1357,6 +1413,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new nonNegativeInteger_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = drFormDesign["DefaultValue"].ToString();   //TODO:  bug in xsdCode++ - wrong data type
                         //TODO: dt.minExclusive = (System.Nullable<decimal>)drFormDesign["minExclusive"];
                         dt.minInclusive = drFormDesign["AnswerMinValue"].ToString();
@@ -1374,6 +1431,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new nonPositiveInteger_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = drFormDesign["DefaultValue"].ToString(); ;  //TODO:  bug in xsdCode++ - wrong data type
                         //TODO: dt.minExclusive = (System.Nullable<decimal>)drFormDesign["minExclusive"];
                         dt.minInclusive = drFormDesign["AnswerMinValue"].ToString();
@@ -1391,6 +1449,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new positiveInteger_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = drFormDesign["DefaultValue"].ToString(); ;  //TODO:  bug in xsdCode++ - wrong data type
                         //TODO: dt.minExclusive = (System.Nullable<decimal>)drFormDesign["minExclusive"];
                         dt.minInclusive = drFormDesign["AnswerMinValue"].ToString();
@@ -1408,6 +1467,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new short_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (short)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (short)drFormDesign["minExclusive"];
                         dt.minInclusive = (short)drFormDesign["AnswerMinValue"];
@@ -1426,6 +1486,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new @string_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (string)drFormDesign["DefaultValue"];
                         dt.maxLength = Convert.ToInt64((drFormDesign["AnswerMaxChars"] is DBNull) ? 80L : drFormDesign["AnswerMaxChars"]);
                         //TODO: dt.minLength = (long)drFormDesign["minLength"];
@@ -1440,6 +1501,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new time_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (DateTime)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (DateTime)drFormDesign["minExclusive"];
                         dt.minInclusive = (DateTime)drFormDesign["AnswerMinValue"];
@@ -1456,6 +1518,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new unsignedByte_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (byte)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (byte)drFormDesign["minExclusive"];
                         dt.minInclusive = (byte)drFormDesign["AnswerMinValue"];
@@ -1473,6 +1536,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new unsignedInt_DEtype(rfParent.Response);
+                            dt.ElementName = itemDataType;
                         dt.val = (uint)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (uint)drFormDesign["minExclusive"];
                         dt.minInclusive = (uint)drFormDesign["AnswerMinValue"];
@@ -1490,6 +1554,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new unsignedLong_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (ulong)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (ulong)drFormDesign["minExclusive"];
                         dt.minInclusive = (ulong)drFormDesign["AnswerMinValue"];
@@ -1507,6 +1572,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new unsignedShort_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (ushort)drFormDesign["DefaultValue"];
                         //TODO: dt.minExclusive = (ushort)drFormDesign["minExclusive"];
                         dt.minInclusive = (ushort)drFormDesign["AnswerMinValue"];
@@ -1524,6 +1590,7 @@ namespace SDC
                     if (true)
                     {
                         var dt = new yearMonthDuration_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (String)drFormDesign["DefaultValue"]; ;  //TODO:  bug in xsdCode++ - wrong data type
                         //TODO: dt.minExclusive = (String)drFormDesign["minExclusive"];
                         dt.minInclusive = (String)drFormDesign["AnswerMinValue"];
@@ -1539,6 +1606,7 @@ namespace SDC
                     dataTypeEnum = ItemChoiceType.@string;
                     {
                         var dt = new @string_DEtype(rfParent.Response);
+                        dt.ElementName = itemDataType;
                         dt.val = (string)drFormDesign["DefaultValue"];
                         dt.maxLength = Convert.ToInt64((drFormDesign["AnswerMaxChars"] is DBNull) ? 80L : drFormDesign["AnswerMaxChars"]);
                         //TODO: dt.minLength = (long)drFormDesign["minLength"];
@@ -1550,7 +1618,7 @@ namespace SDC
             }
 
             rfParent.Response.ItemElementName = dataTypeEnum;
-            FillBaseTypeItem(rfParent.Response.DataTypeDE_Item);
+            //FillBaseTypeItem(rfParent.Response.DataTypeDE_Item);
             return rfParent.Response;
 
         }
@@ -1662,6 +1730,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.propName = "altText";
             p.val = drFormDesign["LongText"].ToString();
+            FillProperty(p);
             return p;
         }
 
@@ -1670,6 +1739,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "description";
             p.val = drFormDesign["Description"].ToString();
+            FillProperty(p);
             return p;
         }
 
@@ -1678,7 +1748,8 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "instruction";
             p.val = drFormDesign["Instruction"].ToString();
-            p.order = p.ObjectID;
+            p.BaseName = "instr";
+            FillProperty(p);
             return p;
         }
 
@@ -1687,7 +1758,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "popUpText";
             p.val = drFormDesign["PopUpText"].ToString();
-            p.order = p.ObjectID;
+            FillProperty(p);
             return p;
         }
 
@@ -1696,8 +1767,10 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.val = drFormDesign["ReportText"].ToString();
             if (p.val == "''") p.val = "{no text}";
+            if (p.val.StartsWith("]")) p.val = p.val.Remove(0, 1);  //the leading "]" is a flag for QA queries to ignore this text because it was customized by a modeler.
             p.propName = "reportText";
-            p.order = p.ObjectID;
+            p.BaseName = "rptTxt";
+            FillProperty(p);
             return p;
         }
 
@@ -1706,7 +1779,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "reportTextShort";
             p.val = drFormDesign["ShortText"].ToString();
-            p.order = p.ObjectID;
+            FillProperty(p);
             return p;
         }
 
@@ -1715,7 +1788,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "spanishText";
             p.val = drFormDesign["panishText"].ToString();
-            p.order = p.ObjectID;
+            FillProperty(p);
             return p;
         }
 
@@ -1724,14 +1797,15 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "tooltip";
             p.val = drFormDesign["ControlTip"].ToString();
-            p.order = p.ObjectID;
+            FillProperty(p);
             return p;
         }
 
-        public override PropertyType FillProperty(PropertyType pt, Boolean fillData = true)
+        public override PropertyType FillProperty(PropertyType p, Boolean fillData = true)
         {
-            pt.name = CreateName(pt);
-            return pt;
+            p.order = p.ObjectID;
+            p.name = CreateName(p);
+            return p;
         }
 
         #endregion
@@ -1751,7 +1825,7 @@ namespace SDC
             blob.Item = bUri;
             blob.order = blob.ObjectID;
 
-            var bin = new base64Binary_DEtype(blob);
+            var bin = new base64Binary_Stype(blob);
             bin.valBase64 = "SGVsbG8=";
             blob.Item = bin;
             //TODO: Note: in code generator for base64Binary_Stype - val is not the string datatype it is a byte array.
@@ -1857,24 +1931,6 @@ namespace SDC
             else
                 di.mustImplement = false;
 
-
-
-
-
-            //TODO: Why are we looking at @name here???  Why are we changing @name???  removed 3/25/2018
-            //Probably need to delete this block
-
-            //var n = di.name;
-            //var t = di.title;
-            //if (!string.IsNullOrWhiteSpace(t) &&
-            //    !string.IsNullOrWhiteSpace(n) &&
-            //    t.Substring(1, 1) == "+")
-            //    di.name = n.Substring(1, n.Length - 1);
-            ////di.name = n.Substring(2, n.Length);
-
-
-
-
             //handle "optional answers" inside a required question
             var t = di.title;
             if (!string.IsNullOrWhiteSpace(t) &&
@@ -1890,39 +1946,6 @@ namespace SDC
             li.selected = (bool)drFormDesign["locked"]; //TODO: Add "selected" to database and SQL
             li.selectionDeselectsSiblings = (bool)drFormDesign["selectionDeselectsSiblings"];
             li.selectionDisablesChildren = (bool)drFormDesign["selectionDisablesChildren"];
-            li.name = (string)drFormDesign["ShortName"];
-
-            //For eCC, we need a better way to handle "optional" answers on required questions"
-            //need to set mustImplement to true for all ListItems
-            //var dt = (DisplayedType)li.GetParentIETypeNode;
-
-            //TODO: mustImplement kludge  //removed 3/25/2018
-            //var qNode = (QuestionItemType)li.GetParentIETypeNode;
-
-            //if (qNode.mustImplement == true)
-            //    li.mustImplement = true;
-            //else
-            //    li.mustImplement = false;
-
-
-
-
-
-
-            //TODO: Why are we looking at @name here???  Why are we changing @name???  removed 3/25/2018
-            //Probably need to delete this block
-
-            //var n = li.name;
-            //var t = li.title;
-            //if (!string.IsNullOrWhiteSpace(t) &&
-            //    !string.IsNullOrWhiteSpace(n) &&
-            //    t.Substring(0, 1) == "+")
-            //    li.name = n.Substring(1, n.Length-1);
-            //    //li.name = n.Substring(2, n.Length);
-
-
-
-
 
             //handle "optional answers" inside a required question
             var t = li.title;
@@ -1995,30 +2018,14 @@ namespace SDC
 
         #region Response
 
-        //protected override ReplacedResponseType FillReplacedResponse(ReplacedResponseType replResp)
-        //{
-        //    MessageBox.Show("FillReplacedResponse not implemented yet");
-        //    return replResp;
-        //}
-
-        //protected override ResponseChangeType FillResponseChange(ResponseChangeType respChange)
-        //{
-        //    MessageBox.Show("FillResponseChange not implemented yet");
-        //    return respChange;
-        //}
-
         public override ListItemResponseFieldType FillListItemResponseField(ListItemResponseFieldType liRF)
         {
-            FillResponseField(liRF);
+            //FillResponseField(liRF);
             liRF.responseRequired = (bool)drFormDesign["responseRequired"];
-
-
-            //FillListItemResponseField(liRF);
-            AddFillResponseUnits(liRF);
 
             var li = (ListItemType)liRF.ParentNode;
 
-            //Special eCC rule
+            //ToDo: remove this special eCC rule, to allow these words on SDC optional answers (e.g., Pending (specify))
             if (li.title.ToLower().Contains("specify") ||
                 li.title.ToLower().Contains("explain") ||
                 li.title.ToLower().Contains("at least")
@@ -2033,6 +2040,18 @@ namespace SDC
         public override ResponseFieldType FillResponseField(ResponseFieldType rf)
         {   //TODO: Add Response, TextAfterResponse (RichTextType), ReponseUnits, SetValueExpression
 
+
+            AddFillDataTypesDE(rf);
+            AddFillTextAfterResponse(rf);
+            AddFillResponseUnits(rf);
+
+
+            return rf;
+        }
+
+
+        public override ResponseFieldType AddFillTextAfterResponse(ResponseFieldType rfParent, Boolean fillData = true)
+        {
             string textAfterResp;
             try
             {
@@ -2046,15 +2065,13 @@ namespace SDC
 
             if (textAfterResp != string.Empty)
             {
-                rf.TextAfterResponse = new RichTextType(rf); //TextAfterResponse type must be initialized
-                rf.TextAfterResponse.val = textAfterResp; //TODO: edit SQL and database to read "TextAfterResponse"
+                rfParent.TextAfterResponse = new RichTextType(rfParent); //TextAfterResponse type must be initialized
+                rfParent.TextAfterResponse.val = textAfterResp; //TODO: edit SQL and database to read "TextAfterResponse"
             }
 
-            return rf;
+            return rfParent;
+
         }
-
-
-
         protected override UnitsType AddFillResponseUnits(ResponseFieldType rf, Boolean fillData = true)
         {
             UnitsType u = null;
@@ -2157,15 +2174,12 @@ namespace SDC
 
         #endregion
 
-        //protected override UnitsType FillUnits(UnitsType ut)
-        //{ throw new NotImplementedException(); }
-
         #region Template Builder
 
         public static ItemTypeEnum GetEccRowTypeEnum(Int32 rowType)
         {
             /*
-                 --List of in- use eCC ItemTypeKeys
+                 --List of in-use eCC ItemTypeKeys
                 --Key	TypeName
                 --4		Q Question - Single-Select (Combo/Option)
                 --6		A Answer
@@ -2279,16 +2293,6 @@ namespace SDC
             return se;
         }
 
-        //protected internal override SectionItemType AddHeader(SectionItemType header)
-        //{   //Uses CTV data
-        //    throw new NotImplementedException();
-        //}
-
-        //protected internal override SectionItemType AddFooter(SectionItemType footer)
-        //{   //Uses CTV data
-        //    throw new NotImplementedException();
-        //}
-
         /// <summary>
         /// Gets template by Ckey
         /// </summary>
@@ -2321,7 +2325,6 @@ namespace SDC
 
         internal override void InitRow(out ItemTypeEnum rowType, out string parentID, out string type)
         {
-            //questionType = GetQuestionType(drFormDesign["ItemTypeKey"].ToString());
             rowType = GetEccRowTypeEnum((int)drFormDesign["ItemTypeKey"]);
 
             if (rowType == ItemTypeEnum.DisplayedItem && (drFormDesign["HasChildren"].ToString().Equals("true")))
