@@ -56,7 +56,7 @@ namespace MSTests
 
                 formDesignXml = formDesignXml.Replace(orig, fix);
                 //Debug.WriteLine(formDesignXml);
-                System.IO.File.WriteAllText("C:\\SDC\\" + filename, formDesignXml, System.Text.Encoding.UTF8);
+                System.IO.File.WriteAllText("C:\\SDC\\release\\" + filename, formDesignXml, System.Text.Encoding.UTF8);
 
 
             }
