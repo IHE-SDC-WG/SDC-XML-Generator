@@ -10,29 +10,27 @@ using System.Xml;
 //!Handling Item and Items generic types derived from the xsd2Code++ code generator
 namespace SDC
 {
-    public partial class FormDesignType
-    {
+    public partial class FormDesignType    {
         protected FormDesignType() { }
+
         public FormDesignType(ITreeBuilder treeBuilder, BaseType parentNode = null, bool fillData = false, string id = null)
         : base(parentNode, fillData, id)
-        //TODO: add lineage, baseURI, version to this constructor
+        //TODO: add ID, lineage, baseURI, version, etc to this constructor? (only ID is required)
         {
             sdcTreeBuilder = treeBuilder;
-            //FormDesignTreeBuilder = treeBuilder;
-            //TODO: move treebuilder reference out of BaseClass to FormDesign, and remove static modifier
             //if (fillData) FillBaseTypeItem();  //this must be run after sdcTreeBuilder is assigned, and all sdcTreeBuilder data objects are initialized.
         }
 
-        public SectionItemType AddBody(bool fillData = false, string id = null)
+        public SectionItemType AddBody(bool fillData = false, string id = "")
         {
             return sdcTreeBuilder.AddBody(fillData, id);
         }
-        public SectionItemType AddFooter(bool fillData = false, string id = null)
+        public SectionItemType AddFooter(bool fillData = false, string id = "")
         {
             return sdcTreeBuilder.AddFooter(fillData, id);
         }
 
-        public SectionItemType AddHeader(bool fillData = false, string id = null)
+        public SectionItemType AddHeader(bool fillData = false, string id = "")
         {
             return sdcTreeBuilder.AddHeader(fillData, id);
         }
@@ -46,7 +44,6 @@ namespace SDC
         }
         [System.Xml.Serialization.XmlIgnore]
         public int MaxObjectID { get; internal set; }  //save the highest object counter value for the current FormDesign tree
-        //internal readonly ITreeBuilder FormDesignTreeBuilder;
         #region Dictionaries
         /// <summary>
         /// Dictionary.  Given an Node ID (int), returns the Node's object reference.
@@ -633,12 +630,9 @@ namespace SDC
         protected ResponseFieldType() { }
         public ResponseFieldType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            //if (fillData) sdcTreeBuilder.AddFillDataTypesDE(this);
-
             ElementPrefix = "rf";
             SetNames(elementName, elementPrefix);
             if (fillData) sdcTreeBuilder.FillResponseField(this);
-            //sdcTreeBuilder.AddFillResponseUnits(this, fillData);
         }
     }
 
@@ -647,16 +641,11 @@ namespace SDC
         protected UnitsType() { }
         public UnitsType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this._unitSystem = "UCUM";
+            unitSystem = "UCUM";
             if (fillData) sdcTreeBuilder.FillUnits(this);
             ElementPrefix = "un";
             SetNames(elementName, elementPrefix);
-
         }
-        //!+Replaced in original class: protected UnitsType() { }
-
-        //public UnitsType FillUnitsType()
-        //{ return sdcTreeBuilder.FillUnits(this); }
     }
 
     #endregion
@@ -712,7 +701,7 @@ namespace SDC
         /// attributes, this ElementName approach provides more flexibility and is probably more efficient.
         /// ElementName will be most useful for auto-generating @name attributes for some elements.
         /// In many cases, ElementName will be assigned through class constructors, but it can also be assigned 
-        /// through this property directly after the object is instantiated
+        /// through this property after the object is instantiated
         /// </summary>
         [System.Xml.Serialization.XmlIgnore]
         public string ElementName
@@ -813,6 +802,7 @@ namespace SDC
             //TODO: delete all child nodes here - lower descendants will delete their own child nodes
             //TODO: Remove this node from all FormDesign dictionaries
             //TODO: Reset IsLeafNode to false for the parent of this node
+            //TODO: Remove references from FormDesign Dictionaries
         }
         [System.Xml.Serialization.XmlIgnore]
         [NonSerialized]

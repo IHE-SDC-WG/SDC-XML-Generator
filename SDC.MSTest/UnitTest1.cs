@@ -55,6 +55,7 @@ namespace MSTests
                 string fix = orig + "\r\n" + "<?xml-stylesheet type=\"text/xsl\" href=\"sdctemplate.xslt\"?>";
 
                 formDesignXml = formDesignXml.Replace(orig, fix);
+                //formDesignXml = formDesignXml.Replace("&amp;", "&");
                 //Debug.WriteLine(formDesignXml);
                 System.IO.File.WriteAllText("C:\\SDC\\release\\" + filename, formDesignXml, System.Text.Encoding.UTF8);
 

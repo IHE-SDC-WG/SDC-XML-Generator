@@ -22,8 +22,6 @@ namespace SDC
         /// resets for each Identified Item Type, and counts each element added under the iet.
         /// Used to create unique and relatively reproducible name properties for each element 
         /// </summary>
-        private int ietCounter = 0;
-
 
         #region Rules
 
@@ -229,7 +227,7 @@ namespace SDC
         /// then we can it's name and ID to name non-repeating child elements such as ResponseField
         /// 
         /// </summary>
-        /// <param name="prefix">prefix iindicating the type of object to name. The default is "BT" for BaseType</param>
+        /// <param name="prefix">prefix indicating the type of object to name. The default is "BT" for BaseType</param>
         /// <param name="bt">an object of type BaseType</param>
         /// <returns></returns>
 
@@ -241,10 +239,9 @@ namespace SDC
 
             if (bt.GetType().IsSubclassOf(typeof(IdentifiedExtensionType)))
             {
-                //ietCounter = 0;
                 shortID = TruncateID((IdentifiedExtensionType)bt);
                 prefix = bt.ElementPrefix;
-                bt.BaseName = (string)drFormDesign["ShortName"];
+                bt.BaseName = ((string)drFormDesign["ShortName"]).Replace(" ", "_");
                 shortName = bt.BaseName;
                 if (shortName.Length > 0) shortName += "_";  //I don't like 2 underscores next to each other.
                 if (prefix.Length > 0) prefix += "_";
@@ -255,7 +252,7 @@ namespace SDC
             {
                 IdentifiedExtensionType iet = bt.ParentIETypeObject;
                 shortID = TruncateID(iet) + "_";
-                shortName = bt.BaseName;
+                shortName = bt.BaseName.Replace(" ", "_");
                 prefix = bt.ElementPrefix;
                 if (shortName.Length > 0) shortName += "_";
                 if (prefix.Length > 0) prefix += "_";
@@ -312,49 +309,6 @@ namespace SDC
 
             return iet;
         }
-
-        //private string CreateIETname(IdentifiedExtensionType iet)
-        //{
-        //    ietCounter = 0;
-        //    var shortName = (string)drFormDesign["ShortName"];
-        //    string shortID = TruncateID(iet);
-        //    string prefix = "";
-        //    string ietType = iet.GetType().ToString();
-
-        //    //Create prefix
-        //    switch (ietType)
-        //    {
-        //        case "SDC.SectionItemType":
-        //            prefix = "S";
-        //            break;
-        //        case "SDC.QuestionItemType":
-        //            prefix = "Q";
-        //            break;
-        //        case "SDC.ListItemType":
-        //            prefix = "LI";
-        //            break;
-        //        case "SDC.DisplayedType":
-        //            prefix = "D";
-        //            break;
-        //        case "SDC.ButtonItemType":
-        //            prefix = "B";
-        //            break;
-        //        case "SDC.InjectFormType":
-        //            prefix = "Inj";
-        //            break;
-        //        default:
-        //            int i = ietType.IndexOf("Type");
-        //            if (i > 0) prefix = ietType.Substring(4, i - 4); //strip off leading "SDC." and trailing "Type"
-        //            break;
-        //    }
-
-        //    if (shortName != "") prefix +=  "_";  //I don't like 2 underscores next to each other.
-
-        //        iet.name = prefix + shortName + "_" + shortID;
-        //    
-
-        //    return iet.name;
-        //}
 
         private static string TruncateID(IdentifiedExtensionType iet)
         {
