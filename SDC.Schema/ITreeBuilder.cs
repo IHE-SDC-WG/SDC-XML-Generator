@@ -40,22 +40,22 @@ namespace SDC.Schema
 
         #region Other Main Items
 
-        SectionItemType AddSection<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new();
+        SectionItemType AddSection<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent; //, new();
         SectionBaseType FillSectionBase(SectionBaseType s);
         InjectFormType FillInjectedForm(InjectFormType injForm);
 
-        DisplayedType AddDisplayedItem<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new();
+        DisplayedType AddDisplayedItem<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent; //, new();
         DisplayedType FillDisplayedTypeItems(DisplayedType dt, Boolean fillData = true);
         RepeatingType FillRepeatingTypeItems(RepeatingType rt, Boolean fillData = true);
         //DisplayedType AddDisplayedItemToList(ListType list);
 
-        ButtonItemType AddButtonAction<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new();
-        InjectFormType AddInjectedForm<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new();
+        ButtonItemType AddButtonAction<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent; //, new();
+        InjectFormType AddInjectedForm<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent; //, new();
 
         #endregion
 
         #region QAS
-        QuestionItemType AddQuestion<T>(T T_Parent, QuestionEnum qType, Boolean fillData = true, string id = null) where T : BaseType, IParent, new();
+        QuestionItemType AddQuestion<T>(T T_Parent, QuestionEnum qType, Boolean fillData = true, string id = null) where T : BaseType, IParent; //, new();
         QuestionItemBaseType FillQuestionItemBase(QuestionItemBaseType q);
 
         ListFieldType FillListField(ListFieldType lf);

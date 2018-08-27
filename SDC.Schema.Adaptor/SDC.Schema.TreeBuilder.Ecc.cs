@@ -69,7 +69,7 @@ namespace SDC
                 string releaseVersionSuffix = dr["ReleaseVersionSuffix"].ToString();  //e.g., CTP1, RC2, REL; UNK if a value is missing
                 string title = dr["OfficialName"].ToString();
                 string CTVcKey = dr["ChecklistTemplateVersionCkey"].ToString();
-                string lineage = shortName + "." + CTVcKey.Replace(".100004300", "");//remove the eCC namespace suffix ".1000043"
+                string lineage = shortName + "." + CTVcKey.Replace(".1000043", "");//remove the eCC namespace suffix ".1000043"
                 string version = (dr["VersionID"].ToString()).Replace(".1000043", "") + "." + releaseVersionSuffix;//remove the eCC namespace suffix ".1000043"
                 string id = lineage + "_" + version + "_sdcFDF";  //FDF = "Form Design File".
                 bool required = dr["EffectiveDate"].ToString() != ""; //ToDo: It would be better to have a database field for required.
@@ -80,9 +80,9 @@ namespace SDC
                 var fd = new FormDesignType(this, null, false, id); //create the form with the new id. Inject "this" SDCTreeBuilderEcc object into the form;
 
                 this.FormDesign = fd;  //This eCC-specific tree builder needs a copy of the new form object.
-                                       //Note that we have a 2-way reference here:  fd holds a copy of "this" (the eCC tree buiilder), and "this" holds a copy of fd.
-                                       //This is a bidirectional dependency injection, allowing fd to call eCC-specific tree builder functions, 
-                                       //and "this" (The eCC tree builder) to assemble the eCC tree with fd components, and fill it with eCC content.
+                //Note that we have a 2-way reference here:  fd holds an instance of "this" (the eCC tree buiilder class), and "this" holds an instance of FormDesign (fd).
+                //This is a bidirectional dependency injection, allowing fd to call eCC-specific tree builder functions, 
+                //and "this" (The eCC tree builder) to assemble the eCC tree with fd components, and fill it with eCC content.
 
 
                 //Some basic fd properties
@@ -1952,13 +1952,12 @@ namespace SDC
             lep.Security.val = string.Empty;
 
 
-            //if (lep.Parameter == null) lep.Parameter = new List<GetParameterFromPropertyType>();
-            if (lep.ParameterRef == null) lep.ParameterRef = new List<ParameterItemType>();
-            var p = new ParameterItemType();
+            if (lep.Items == null) lep.Items = new List<ExtensionBaseType>();
+            var p = new ParameterItemType(lep);
             p.paramName = string.Empty;
             p.sourceItemName = "";
             p.SourceItemAttribute = "val";
-            lep.ParameterRef.Add(p);
+            lep.Items.Add(p);
             lep.Function.val = drFormDesign["LookupEndpoint"].ToString();
 
             //AddParameterToLookupEndpoint(LookupEndPointType lep)

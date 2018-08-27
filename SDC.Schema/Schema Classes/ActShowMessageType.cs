@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -30,16 +31,16 @@ public partial class ActShowMessageType : ExtensionBaseType
     
     private static XmlSerializer serializer;
     
-        [System.Xml.Serialization.XmlElementAttribute("Message")]
-        public List<RichTextType> Message { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("Message", Order=0)]
+        public virtual List<RichTextType> Message { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string alertLevel { get; set; }
+        public virtual string alertLevel { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string alertType { get; set; }
+        public virtual string alertType { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string messageType { get; set; }
+        public virtual string messageType { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string messageCode { get; set; }
+        public virtual string messageCode { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -53,12 +54,52 @@ public partial class ActShowMessageType : ExtensionBaseType
         }
     }
     
+    /// <summary>
+    /// Test whether Message should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeMessage()
+    {
+        return Message != null && Message.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether alertLevel should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializealertLevel()
+    {
+        return !string.IsNullOrEmpty(alertLevel);
+    }
+    
+    /// <summary>
+    /// Test whether alertType should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializealertType()
+    {
+        return !string.IsNullOrEmpty(alertType);
+    }
+    
+    /// <summary>
+    /// Test whether messageType should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializemessageType()
+    {
+        return !string.IsNullOrEmpty(messageType);
+    }
+    
+    /// <summary>
+    /// Test whether messageCode should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializemessageCode()
+    {
+        return !string.IsNullOrEmpty(messageCode);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current ActShowMessageType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -66,11 +107,13 @@ public partial class ActShowMessageType : ExtensionBaseType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -84,6 +127,11 @@ public partial class ActShowMessageType : ExtensionBaseType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -144,12 +192,12 @@ public partial class ActShowMessageType : ExtensionBaseType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -159,14 +207,23 @@ public partial class ActShowMessageType : ExtensionBaseType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -186,13 +243,13 @@ public partial class ActShowMessageType : ExtensionBaseType
     /// <param name="obj">Output ActShowMessageType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out ActShowMessageType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ActShowMessageType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(ActShowMessageType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -202,20 +259,30 @@ public partial class ActShowMessageType : ExtensionBaseType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out ActShowMessageType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out ActShowMessageType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static ActShowMessageType LoadFromFile(string fileName)
+    public static ActShowMessageType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static ActShowMessageType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

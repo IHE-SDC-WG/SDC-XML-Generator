@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -29,55 +30,68 @@ using System.Collections.Generic;
 public partial class FormDesignType : IdentifiedExtensionType
 {
     
+    private bool _shouldSerializeresponseStatusEnum;
+    
+    private bool _shouldSerializeresponseTypeEnum;
+    
     private static XmlSerializer serializer;
     
     /// <summary>
     /// NEW:
     /// This event is fired before the page is loaded into memory, and before stored form data is loaded.  It may be used, e.g., for authentication, to retrieve/prepare stored data, and/or to control form rendering according to user preferences.
     /// </summary>
-        public EventType BeforeLoadForm { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public virtual EventType BeforeLoadForm { get; set; }
     /// <summary>
     /// NEW:
     /// This event is fired after the page is loaded into memory, before stored form data is loaded, and before the form is visible.  For example, It may be used to determine the data to be loaded and to perform the data loading.
     /// </summary>
-        public EventType BeforeLoadData { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        public virtual EventType BeforeLoadData { get; set; }
     /// <summary>
     /// NEW:
     /// This event is fired after the page is loaded is memory, after the data is loaded into the form, but before the form is displayed.  It may be used to perform form activities that are controlled by the loaded data.
     /// </summary>
-        public EventType BeforeShowForm { get; set; }
-        public EventType BeforeDataSubmit { get; set; }
-        public EventType BeforeCloseForm { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public virtual EventType BeforeShowForm { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        public virtual EventType BeforeDataSubmit { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        public virtual EventType BeforeCloseForm { get; set; }
     /// <summary>
     /// Generic event handler - eventName must be specified.
     /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("OnEvent")]
-        public List<OnEventType> OnEvent { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("OnEvent", Order=5)]
+        public virtual List<OnEventType> OnEvent { get; set; }
     /// <summary>
     /// Optional Section that stays at the top of a form.
     /// </summary>
-        public SectionItemType Header { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        public virtual SectionItemType Header { get; set; }
     /// <summary>
     /// Main Section of form
     /// </summary>
-        public SectionItemType Body { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        public virtual SectionItemType Body { get; set; }
     /// <summary>
     /// Optional Section that stays at the bottom of a form.
     /// </summary>
-        public SectionItemType Footer { get; set; }
-        public RulesType Rules { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        public virtual SectionItemType Footer { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        public virtual RulesType Rules { get; set; }
     /// <summary>
     /// NEW: human readable title for display when choosing forms. Added 4/27/16
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string formTitle { get; set; }
+        public virtual string formTitle { get; set; }
     /// <summary>
     /// NEW: filename to use when the current FormDesign instance is saved as a file.
     /// For forms containing responses, the filename may include the formInstanceVersionURI,
     /// but the naming convention may be use-case-specific.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string filename { get; set; }
+        public virtual string filename { get; set; }
     /// <summary>
     /// NEW: URI used to identify the form that that this FormDesign is based upon.  In most cases, this should be a standard form that is modified and/or extended by the current FormDesign.
     /// 
@@ -86,48 +100,52 @@ public partial class FormDesignType : IdentifiedExtensionType
     /// 5/11/17:  Relying on data element mapping may be a better and more flexible approach than @basedOnURI. In this way, forms could compare data elements to determine if they contain semantic matches, and this is supported better with a more robust code map section.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string basedOnURI { get; set; }
+        public virtual string basedOnURI { get; set; }
     /// <summary>
     /// NEW: A text identifier that is used to group multiple versions of a single form.  The lineage is constant for all versions of a single kind of form.
     /// 
     /// When appended to @baseURI, it can be used to retrieve all versions of one particular form.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string lineage { get; set; }
+        public virtual string lineage { get; set; }
     /// <summary>
     /// NEW: @version contains the version text for the current form.  It is designed to be used in conjuction with @baseURI and @lineage.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string version { get; set; }
+        public virtual string version { get; set; }
     /// <summary>
     /// NEW: The full URI that uniquely identifies the current form.   It is created by concatenating @baseURI + lineage + version.  Each of the componenets is separated by a single forward slash.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string fullURI { get; set; }
+        public virtual string fullURI { get; set; }
     /// <summary>
     /// NEW: The full URI used to identify the form that is the immediate previous version of the current FormDesign
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string prevVersionURI { get; set; }
+        public virtual string prevVersionURI { get; set; }
     /// <summary>
     /// NEW: Unique URI used to identify a unique instance of a form.  Used for tracking form responses across time and across multiple episodes of editing by end-users.  This URI does not change for each edit session of a form instance.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string formInstanceURI { get; set; }
+        public virtual string formInstanceURI { get; set; }
     /// <summary>
     /// NEW: Unique URI used to identify a unique instance of a form's saved responses.  It is used for tracking form responses across time and across multiple episodes of editing by end-users.  This URI must change for each edit/save session of a form instance.  It may be e.g., a new GUID, or a repeat of the formInstanceID followed by a version number.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string formInstanceVersionURI { get; set; }
+        public virtual string formInstanceVersionURI { get; set; }
     /// <summary>
     /// NEW: Unique URI used to identify the immediate previous instance of a form containing responses.  This is the @formInstanceVersionURI that represents the instance of the form that the user opened up before beginning a new cycle of edit/save.  This attribute is used for tracking form responses across time and across multiple episodes of editing by end-users.  This URI must change for each edit session of a form instance.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string formPreviousInstanceVersionURI { get; set; }
+        public virtual string formPreviousInstanceVersionURI { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public SectionBaseTypeResponseTypeEnum responseTypeEnum { get; set; }
+        public virtual SectionBaseTypeResponseTypeEnum responseTypeEnum { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool responseTypeEnumSpecified { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public SectionBaseTypeResponseStatusEnum responseStatusEnum { get; set; }
+        public virtual SectionBaseTypeResponseStatusEnum responseStatusEnum { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool responseStatusEnumSpecified { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -141,12 +159,196 @@ public partial class FormDesignType : IdentifiedExtensionType
         }
     }
     
+    /// <summary>
+    /// Test whether OnEvent should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeOnEvent()
+    {
+        return OnEvent != null && OnEvent.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether responseTypeEnum should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeresponseTypeEnum()
+    {
+        if (_shouldSerializeresponseTypeEnum)
+        {
+            return true;
+        }
+        return (responseTypeEnum != default(SectionBaseTypeResponseTypeEnum));
+    }
+    
+    /// <summary>
+    /// Test whether responseStatusEnum should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeresponseStatusEnum()
+    {
+        if (_shouldSerializeresponseStatusEnum)
+        {
+            return true;
+        }
+        return (responseStatusEnum != default(SectionBaseTypeResponseStatusEnum));
+    }
+    
+    /// <summary>
+    /// Test whether BeforeLoadForm should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeBeforeLoadForm()
+    {
+        return (BeforeLoadForm != null);
+    }
+    
+    /// <summary>
+    /// Test whether BeforeLoadData should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeBeforeLoadData()
+    {
+        return (BeforeLoadData != null);
+    }
+    
+    /// <summary>
+    /// Test whether BeforeShowForm should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeBeforeShowForm()
+    {
+        return (BeforeShowForm != null);
+    }
+    
+    /// <summary>
+    /// Test whether BeforeDataSubmit should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeBeforeDataSubmit()
+    {
+        return (BeforeDataSubmit != null);
+    }
+    
+    /// <summary>
+    /// Test whether BeforeCloseForm should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeBeforeCloseForm()
+    {
+        return (BeforeCloseForm != null);
+    }
+    
+    /// <summary>
+    /// Test whether Header should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeHeader()
+    {
+        return (Header != null);
+    }
+    
+    /// <summary>
+    /// Test whether Body should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeBody()
+    {
+        return (Body != null);
+    }
+    
+    /// <summary>
+    /// Test whether Footer should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeFooter()
+    {
+        return (Footer != null);
+    }
+    
+    /// <summary>
+    /// Test whether Rules should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeRules()
+    {
+        return (Rules != null);
+    }
+    
+    /// <summary>
+    /// Test whether formTitle should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeformTitle()
+    {
+        return !string.IsNullOrEmpty(formTitle);
+    }
+    
+    /// <summary>
+    /// Test whether filename should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializefilename()
+    {
+        return !string.IsNullOrEmpty(filename);
+    }
+    
+    /// <summary>
+    /// Test whether basedOnURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializebasedOnURI()
+    {
+        return !string.IsNullOrEmpty(basedOnURI);
+    }
+    
+    /// <summary>
+    /// Test whether lineage should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializelineage()
+    {
+        return !string.IsNullOrEmpty(lineage);
+    }
+    
+    /// <summary>
+    /// Test whether version should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeversion()
+    {
+        return !string.IsNullOrEmpty(version);
+    }
+    
+    /// <summary>
+    /// Test whether fullURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializefullURI()
+    {
+        return !string.IsNullOrEmpty(fullURI);
+    }
+    
+    /// <summary>
+    /// Test whether prevVersionURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeprevVersionURI()
+    {
+        return !string.IsNullOrEmpty(prevVersionURI);
+    }
+    
+    /// <summary>
+    /// Test whether formInstanceURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeformInstanceURI()
+    {
+        return !string.IsNullOrEmpty(formInstanceURI);
+    }
+    
+    /// <summary>
+    /// Test whether formInstanceVersionURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeformInstanceVersionURI()
+    {
+        return !string.IsNullOrEmpty(formInstanceVersionURI);
+    }
+    
+    /// <summary>
+    /// Test whether formPreviousInstanceVersionURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeformPreviousInstanceVersionURI()
+    {
+        return !string.IsNullOrEmpty(formPreviousInstanceVersionURI);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current FormDesignType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -154,11 +356,13 @@ public partial class FormDesignType : IdentifiedExtensionType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -172,6 +376,11 @@ public partial class FormDesignType : IdentifiedExtensionType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -232,12 +441,12 @@ public partial class FormDesignType : IdentifiedExtensionType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -247,14 +456,23 @@ public partial class FormDesignType : IdentifiedExtensionType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -274,13 +492,13 @@ public partial class FormDesignType : IdentifiedExtensionType
     /// <param name="obj">Output FormDesignType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out FormDesignType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out FormDesignType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(FormDesignType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -290,20 +508,30 @@ public partial class FormDesignType : IdentifiedExtensionType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out FormDesignType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out FormDesignType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static FormDesignType LoadFromFile(string fileName)
+    public static FormDesignType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static FormDesignType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

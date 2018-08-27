@@ -1039,14 +1039,14 @@ namespace SDC
 
         #region Generics
 
-        public virtual DisplayedType AddDisplayedItem<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new()
+        public virtual DisplayedType AddDisplayedItem<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent //, new()
         {
             var childItemsList = AddChildItemsNode(T_Parent);
             var dNew = new DisplayedType(T_Parent, fillData, id);
             childItemsList.ListOfItems.Add(dNew);
             return dNew;
         }
-        public virtual SectionItemType AddSection<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new()
+        public virtual SectionItemType AddSection<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent //, new()
         {
             var childItemsList = AddChildItemsNode(T_Parent);
             var sNew = new SectionItemType(T_Parent, fillData, id);
@@ -1059,7 +1059,7 @@ namespace SDC
 
         public abstract SectionBaseType FillSectionBase(SectionBaseType s);
 
-        public virtual InjectFormType AddInjectedForm<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new()
+        public virtual InjectFormType AddInjectedForm<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent //, new()
         {
             var childItems = AddChildItemsNode(T_Parent);
             var injForm = new InjectFormType(childItems, fillData, id);
@@ -1071,7 +1071,7 @@ namespace SDC
         public abstract InjectFormType FillInjectedForm(InjectFormType injForm);
 
 
-        public ButtonItemType AddButtonAction<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new()
+        public ButtonItemType AddButtonAction<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent //, new()
         {
             var childItems = AddChildItemsNode(T_Parent, fillData);
             var btnNew = new ButtonItemType(childItems, fillData, id);
@@ -1082,7 +1082,7 @@ namespace SDC
         }
         public abstract ButtonItemType FillButton(ButtonItemType button);
 
-        protected virtual ChildItemsType AddChildItemsNode<T>(T T_Parent, bool fillData = true) where T : BaseType, IParent, new()
+        protected virtual ChildItemsType AddChildItemsNode<T>(T T_Parent, bool fillData = true) where T : BaseType, IParent //, new()
         {
             ChildItemsType childItems = null;  //this class contains an "Items" list
             if (T_Parent == null)
@@ -1271,7 +1271,7 @@ namespace SDC
         //#endregion
 
         #region QAS
-        public virtual QuestionItemType AddQuestion<T>(T T_Parent, QuestionEnum qType, Boolean fillData = true, string id = null) where T : BaseType, IParent, new()
+        public virtual QuestionItemType AddQuestion<T>(T T_Parent, QuestionEnum qType, Boolean fillData = true, string id = null) where T : BaseType, IParent //, new()
         {
             var childItemsList = AddChildItemsNode(T_Parent);
             var qNew = new QuestionItemType(childItemsList, fillData, id);

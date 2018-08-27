@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -34,11 +35,6 @@ using System.Collections.Generic;
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(DataTypesDateTime_DEType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(DataTypesNumeric_SType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(DataTypesNumeric_DEType))]
-[System.Xml.Serialization.XmlIncludeAttribute(typeof(RuleAutoSelectType))]
-[System.Xml.Serialization.XmlIncludeAttribute(typeof(RuleAutoActivationType))]
-[System.Xml.Serialization.XmlIncludeAttribute(typeof(RulesType))]
-[System.Xml.Serialization.XmlIncludeAttribute(typeof(ListType))]
-[System.Xml.Serialization.XmlIncludeAttribute(typeof(ListFieldType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ActValidateFormType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ActPreviewReportType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ActShowReportType))]
@@ -46,6 +42,11 @@ using System.Collections.Generic;
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ActShowFormType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ActSendReportType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ActSaveResponsesType))]
+[System.Xml.Serialization.XmlIncludeAttribute(typeof(RuleAutoSelectType))]
+[System.Xml.Serialization.XmlIncludeAttribute(typeof(RuleAutoActivationType))]
+[System.Xml.Serialization.XmlIncludeAttribute(typeof(RulesType))]
+[System.Xml.Serialization.XmlIncludeAttribute(typeof(ListType))]
+[System.Xml.Serialization.XmlIncludeAttribute(typeof(ListFieldType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ScriptCodeAnyType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ActSetAttrValueType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(DataTypes_DEType))]
@@ -57,6 +58,7 @@ using System.Collections.Generic;
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ItemNameAttributeType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ActSetItemAttributeType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ActActionType))]
+[System.Xml.Serialization.XmlIncludeAttribute(typeof(ActionsType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(FuncBoolBaseType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ConditionalGroupActionType))]
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(EventType))]
@@ -134,12 +136,12 @@ public abstract partial class ExtensionBaseType : BaseType
     
     private static XmlSerializer serializer;
     
-        [System.Xml.Serialization.XmlElementAttribute("Comment")]
-        public List<CommentType> Comment { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("Extension")]
-        public List<ExtensionType> Extension { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("Property")]
-        public List<PropertyType> Property { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("Comment", Order=0)]
+        public virtual List<CommentType> Comment { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("Extension", Order=1)]
+        public virtual List<ExtensionType> Extension { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("Property", Order=2)]
+        public virtual List<PropertyType> Property { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -153,12 +155,36 @@ public abstract partial class ExtensionBaseType : BaseType
         }
     }
     
+    /// <summary>
+    /// Test whether Comment should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeComment()
+    {
+        return Comment != null && Comment.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether Extension should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeExtension()
+    {
+        return Extension != null && Extension.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether Property should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeProperty()
+    {
+        return Property != null && Property.Count > 0;
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current ExtensionBaseType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -166,11 +192,13 @@ public abstract partial class ExtensionBaseType : BaseType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -184,6 +212,11 @@ public abstract partial class ExtensionBaseType : BaseType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -244,12 +277,12 @@ public abstract partial class ExtensionBaseType : BaseType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -259,14 +292,23 @@ public abstract partial class ExtensionBaseType : BaseType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -286,13 +328,13 @@ public abstract partial class ExtensionBaseType : BaseType
     /// <param name="obj">Output ExtensionBaseType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out ExtensionBaseType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ExtensionBaseType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(ExtensionBaseType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -302,20 +344,30 @@ public abstract partial class ExtensionBaseType : BaseType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out ExtensionBaseType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out ExtensionBaseType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static ExtensionBaseType LoadFromFile(string fileName)
+    public static ExtensionBaseType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static ExtensionBaseType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

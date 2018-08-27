@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -25,40 +26,52 @@ using System.Collections.Generic;
 public partial class SDCPackageListPackage
 {
     
+    private bool _shouldSerializeresponseStatusEnum;
+    
+    private bool _shouldSerializeresponseTypeEnum;
+    
+    private bool _shouldSerializeformat;
+    
     private static XmlSerializer serializer;
     
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string formManagerURI { get; set; }
+        public virtual string formManagerURI { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public SDCPackageListPackageFormat format { get; set; }
+        public virtual SDCPackageListPackageFormat format { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool formatSpecified { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string packageID { get; set; }
+        public virtual string packageID { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string title { get; set; }
+        public virtual string title { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string baseURI { get; set; }
+        public virtual string baseURI { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string filename { get; set; }
+        public virtual string filename { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string basedOnURI { get; set; }
+        public virtual string basedOnURI { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string lineage { get; set; }
+        public virtual string lineage { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string version { get; set; }
+        public virtual string version { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string fullURI { get; set; }
+        public virtual string fullURI { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string prevVersionURI { get; set; }
+        public virtual string prevVersionURI { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string formInstanceURI { get; set; }
+        public virtual string formInstanceURI { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string formInstanceVersionURI { get; set; }
+        public virtual string formInstanceVersionURI { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string formPreviousInstanceVersionURI { get; set; }
+        public virtual string formPreviousInstanceVersionURI { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public SectionBaseTypeResponseTypeEnum responseTypeEnum { get; set; }
+        public virtual SectionBaseTypeResponseTypeEnum responseTypeEnum { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool responseTypeEnumSpecified { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public SectionBaseTypeResponseStatusEnum responseStatusEnum { get; set; }
+        public virtual SectionBaseTypeResponseStatusEnum responseStatusEnum { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool responseStatusEnumSpecified { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -72,12 +85,152 @@ public partial class SDCPackageListPackage
         }
     }
     
+    /// <summary>
+    /// Test whether format should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeformat()
+    {
+        if (_shouldSerializeformat)
+        {
+            return true;
+        }
+        return (format != default(SDCPackageListPackageFormat));
+    }
+    
+    /// <summary>
+    /// Test whether responseTypeEnum should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeresponseTypeEnum()
+    {
+        if (_shouldSerializeresponseTypeEnum)
+        {
+            return true;
+        }
+        return (responseTypeEnum != default(SectionBaseTypeResponseTypeEnum));
+    }
+    
+    /// <summary>
+    /// Test whether responseStatusEnum should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeresponseStatusEnum()
+    {
+        if (_shouldSerializeresponseStatusEnum)
+        {
+            return true;
+        }
+        return (responseStatusEnum != default(SectionBaseTypeResponseStatusEnum));
+    }
+    
+    /// <summary>
+    /// Test whether formManagerURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeformManagerURI()
+    {
+        return !string.IsNullOrEmpty(formManagerURI);
+    }
+    
+    /// <summary>
+    /// Test whether packageID should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializepackageID()
+    {
+        return !string.IsNullOrEmpty(packageID);
+    }
+    
+    /// <summary>
+    /// Test whether title should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializetitle()
+    {
+        return !string.IsNullOrEmpty(title);
+    }
+    
+    /// <summary>
+    /// Test whether baseURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializebaseURI()
+    {
+        return !string.IsNullOrEmpty(baseURI);
+    }
+    
+    /// <summary>
+    /// Test whether filename should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializefilename()
+    {
+        return !string.IsNullOrEmpty(filename);
+    }
+    
+    /// <summary>
+    /// Test whether basedOnURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializebasedOnURI()
+    {
+        return !string.IsNullOrEmpty(basedOnURI);
+    }
+    
+    /// <summary>
+    /// Test whether lineage should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializelineage()
+    {
+        return !string.IsNullOrEmpty(lineage);
+    }
+    
+    /// <summary>
+    /// Test whether version should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeversion()
+    {
+        return !string.IsNullOrEmpty(version);
+    }
+    
+    /// <summary>
+    /// Test whether fullURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializefullURI()
+    {
+        return !string.IsNullOrEmpty(fullURI);
+    }
+    
+    /// <summary>
+    /// Test whether prevVersionURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeprevVersionURI()
+    {
+        return !string.IsNullOrEmpty(prevVersionURI);
+    }
+    
+    /// <summary>
+    /// Test whether formInstanceURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeformInstanceURI()
+    {
+        return !string.IsNullOrEmpty(formInstanceURI);
+    }
+    
+    /// <summary>
+    /// Test whether formInstanceVersionURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeformInstanceVersionURI()
+    {
+        return !string.IsNullOrEmpty(formInstanceVersionURI);
+    }
+    
+    /// <summary>
+    /// Test whether formPreviousInstanceVersionURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeformPreviousInstanceVersionURI()
+    {
+        return !string.IsNullOrEmpty(formPreviousInstanceVersionURI);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current SDCPackageListPackage object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -85,11 +238,13 @@ public partial class SDCPackageListPackage
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -103,6 +258,11 @@ public partial class SDCPackageListPackage
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -163,12 +323,12 @@ public partial class SDCPackageListPackage
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -178,14 +338,23 @@ public partial class SDCPackageListPackage
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -205,13 +374,13 @@ public partial class SDCPackageListPackage
     /// <param name="obj">Output SDCPackageListPackage object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out SDCPackageListPackage obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out SDCPackageListPackage obj, out System.Exception exception)
     {
         exception = null;
         obj = default(SDCPackageListPackage);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -219,6 +388,11 @@ public partial class SDCPackageListPackage
             exception = ex;
             return false;
         }
+    }
+    
+    public static bool LoadFromFile(string fileName, out SDCPackageListPackage obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
     }
     
     public static bool LoadFromFile(string fileName, out SDCPackageListPackage obj)
@@ -229,12 +403,17 @@ public partial class SDCPackageListPackage
     
     public static SDCPackageListPackage LoadFromFile(string fileName)
     {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public static SDCPackageListPackage LoadFromFile(string fileName, System.Text.Encoding encoding)
+    {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

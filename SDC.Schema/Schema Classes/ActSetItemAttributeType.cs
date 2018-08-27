@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -28,81 +29,105 @@ using System.Collections.Generic;
 public partial class ActSetItemAttributeType : ExtensionBaseType
 {
     
+    private bool _shouldSerializeactReadOnly;
+    
+    private bool _shouldSerializeactDeleteResponse;
+    
+    private bool _shouldSerializeactSelect;
+    
+    private bool _shouldSerializeactActivate;
+    
+    private bool _shouldSerializeactEnable;
+    
+    private bool _shouldSerializeactVisible;
+    
     private static XmlSerializer serializer;
     
     /// <summary>
     /// The names of the items affected by property actions
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="NMTOKENS")]
-        public string targetNames { get; set; }
+        public virtual string targetNames { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool actVisible { get; set; }
+        public virtual bool actVisible { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool actVisibleSpecified { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool actEnable { get; set; }
+        public virtual bool actEnable { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool actEnableSpecified { get; set; }
     /// <summary>
     /// Controls requirement to answer the question and the minimum number of repeats.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
-        public string actMinCard { get; set; }
+        public virtual string actMinCard { get; set; }
     /// <summary>
     /// Controls requirement to answer the question
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
-        public string actMaxCard { get; set; }
+        public virtual string actMaxCard { get; set; }
     /// <summary>
     /// Toggle visible and enabled together.  Setting this to false will de-activate all descendents but will not change their enabled or visible properties.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool actActivate { get; set; }
+        public virtual bool actActivate { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool actActivateSpecified { get; set; }
     /// <summary>
     /// Toggle selection of a List Item; not applicable to other items.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool actSelect { get; set; }
+        public virtual bool actSelect { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool actSelectSpecified { get; set; }
     /// <summary>
     /// Delete any response in a Response field on a question or ListItem.  Not applicable to other item types.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool actDeleteResponse { get; set; }
+        public virtual bool actDeleteResponse { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool actDeleteResponseSpecified { get; set; }
     /// <summary>
     /// Delete any response in a Response field on a question or ListItem.  Not applicable to other item types.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool actReadOnly { get; set; }
+        public virtual bool actReadOnly { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool actReadOnlySpecified { get; set; }
     /// <summary>
     /// Set the @type attribute value
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="NMTOKENS")]
-        public string actType { get; set; }
+        public virtual string actType { get; set; }
     /// <summary>
     /// Set the @styleClass attribute value
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="NMTOKENS")]
-        public string actStyleClass { get; set; }
+        public virtual string actStyleClass { get; set; }
     /// <summary>
     /// Set the @title text on an item.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string actSetTitleText { get; set; }
+        public virtual string actSetTitleText { get; set; }
     /// <summary>
     /// Set HTML as base-64-encoded binary
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="base64Binary")]
-        public byte[] actSetBase64HTML { get; set; }
+        public virtual byte[] actSetBase64HTML { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string actSetCode { get; set; }
+        public virtual string actSetCode { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string actSetCodeSystem { get; set; }
+        public virtual string actSetCodeSystem { get; set; }
     /// <summary>
     /// Set a @val attribute.  The correct data type must be used if applicable.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string actSetVal { get; set; }
+        public virtual string actSetVal { get; set; }
     /// <summary>
     /// Set @associatedValue attribute of a ListItem.  The correct data type must be used if applicable.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string actSetAssociatedValue { get; set; }
+        public virtual string actSetAssociatedValue { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -116,12 +141,164 @@ public partial class ActSetItemAttributeType : ExtensionBaseType
         }
     }
     
+    /// <summary>
+    /// Test whether actVisible should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactVisible()
+    {
+        if (_shouldSerializeactVisible)
+        {
+            return true;
+        }
+        return (actVisible != default(bool));
+    }
+    
+    /// <summary>
+    /// Test whether actEnable should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactEnable()
+    {
+        if (_shouldSerializeactEnable)
+        {
+            return true;
+        }
+        return (actEnable != default(bool));
+    }
+    
+    /// <summary>
+    /// Test whether actActivate should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactActivate()
+    {
+        if (_shouldSerializeactActivate)
+        {
+            return true;
+        }
+        return (actActivate != default(bool));
+    }
+    
+    /// <summary>
+    /// Test whether actSelect should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactSelect()
+    {
+        if (_shouldSerializeactSelect)
+        {
+            return true;
+        }
+        return (actSelect != default(bool));
+    }
+    
+    /// <summary>
+    /// Test whether actDeleteResponse should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactDeleteResponse()
+    {
+        if (_shouldSerializeactDeleteResponse)
+        {
+            return true;
+        }
+        return (actDeleteResponse != default(bool));
+    }
+    
+    /// <summary>
+    /// Test whether actReadOnly should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactReadOnly()
+    {
+        if (_shouldSerializeactReadOnly)
+        {
+            return true;
+        }
+        return (actReadOnly != default(bool));
+    }
+    
+    /// <summary>
+    /// Test whether targetNames should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializetargetNames()
+    {
+        return !string.IsNullOrEmpty(targetNames);
+    }
+    
+    /// <summary>
+    /// Test whether actMinCard should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactMinCard()
+    {
+        return !string.IsNullOrEmpty(actMinCard);
+    }
+    
+    /// <summary>
+    /// Test whether actMaxCard should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactMaxCard()
+    {
+        return !string.IsNullOrEmpty(actMaxCard);
+    }
+    
+    /// <summary>
+    /// Test whether actType should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactType()
+    {
+        return !string.IsNullOrEmpty(actType);
+    }
+    
+    /// <summary>
+    /// Test whether actStyleClass should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactStyleClass()
+    {
+        return !string.IsNullOrEmpty(actStyleClass);
+    }
+    
+    /// <summary>
+    /// Test whether actSetTitleText should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactSetTitleText()
+    {
+        return !string.IsNullOrEmpty(actSetTitleText);
+    }
+    
+    /// <summary>
+    /// Test whether actSetCode should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactSetCode()
+    {
+        return !string.IsNullOrEmpty(actSetCode);
+    }
+    
+    /// <summary>
+    /// Test whether actSetCodeSystem should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactSetCodeSystem()
+    {
+        return !string.IsNullOrEmpty(actSetCodeSystem);
+    }
+    
+    /// <summary>
+    /// Test whether actSetVal should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactSetVal()
+    {
+        return !string.IsNullOrEmpty(actSetVal);
+    }
+    
+    /// <summary>
+    /// Test whether actSetAssociatedValue should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeactSetAssociatedValue()
+    {
+        return !string.IsNullOrEmpty(actSetAssociatedValue);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current ActSetItemAttributeType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -129,11 +306,13 @@ public partial class ActSetItemAttributeType : ExtensionBaseType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -147,6 +326,11 @@ public partial class ActSetItemAttributeType : ExtensionBaseType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -207,12 +391,12 @@ public partial class ActSetItemAttributeType : ExtensionBaseType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -222,14 +406,23 @@ public partial class ActSetItemAttributeType : ExtensionBaseType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -249,13 +442,13 @@ public partial class ActSetItemAttributeType : ExtensionBaseType
     /// <param name="obj">Output ActSetItemAttributeType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out ActSetItemAttributeType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ActSetItemAttributeType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(ActSetItemAttributeType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -265,20 +458,30 @@ public partial class ActSetItemAttributeType : ExtensionBaseType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out ActSetItemAttributeType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out ActSetItemAttributeType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static ActSetItemAttributeType LoadFromFile(string fileName)
+    public static ActSetItemAttributeType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static ActSetItemAttributeType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

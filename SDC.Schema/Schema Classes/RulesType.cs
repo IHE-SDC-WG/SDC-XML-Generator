@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -42,20 +43,21 @@ public partial class RulesType : ExtensionBaseType
     
     private static XmlSerializer serializer;
     
-        public RulesTypeValidation Validation { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("AutoActivation")]
-        public List<RuleAutoActivationType> AutoActivation { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("AutoSelection")]
-        public List<RuleAutoSelectType> AutoSelection { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("ConditionalGroupActions")]
-        public List<ConditionalGroupActionType> ConditionalGroupActions { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("ScriptedRule")]
-        public List<ScriptCodeAnyType> ScriptedRule { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public virtual RulesTypeValidation Validation { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("AutoActivation", Order=1)]
+        public virtual List<RuleAutoActivationType> AutoActivation { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("AutoSelection", Order=2)]
+        public virtual List<RuleAutoSelectType> AutoSelection { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("ConditionalGroupActions", Order=3)]
+        public virtual List<ConditionalGroupActionType> ConditionalGroupActions { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("ScriptedRule", Order=4)]
+        public virtual List<ScriptCodeAnyType> ScriptedRule { get; set; }
     /// <summary>
     /// Rules that are called (by referencing the rule's @name attribute) from another place in the form.
     /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("ExternalRule")]
-        public List<CallFuncType> ExternalRule { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("ExternalRule", Order=5)]
+        public virtual List<CallFuncType> ExternalRule { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -69,12 +71,60 @@ public partial class RulesType : ExtensionBaseType
         }
     }
     
+    /// <summary>
+    /// Test whether AutoActivation should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeAutoActivation()
+    {
+        return AutoActivation != null && AutoActivation.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether AutoSelection should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeAutoSelection()
+    {
+        return AutoSelection != null && AutoSelection.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether ConditionalGroupActions should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeConditionalGroupActions()
+    {
+        return ConditionalGroupActions != null && ConditionalGroupActions.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether ScriptedRule should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeScriptedRule()
+    {
+        return ScriptedRule != null && ScriptedRule.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether ExternalRule should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeExternalRule()
+    {
+        return ExternalRule != null && ExternalRule.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether Validation should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeValidation()
+    {
+        return (Validation != null);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current RulesType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -82,11 +132,13 @@ public partial class RulesType : ExtensionBaseType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -100,6 +152,11 @@ public partial class RulesType : ExtensionBaseType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -160,12 +217,12 @@ public partial class RulesType : ExtensionBaseType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -175,14 +232,23 @@ public partial class RulesType : ExtensionBaseType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -202,13 +268,13 @@ public partial class RulesType : ExtensionBaseType
     /// <param name="obj">Output RulesType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out RulesType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out RulesType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(RulesType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -218,20 +284,30 @@ public partial class RulesType : ExtensionBaseType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out RulesType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out RulesType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static RulesType LoadFromFile(string fileName)
+    public static RulesType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static RulesType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

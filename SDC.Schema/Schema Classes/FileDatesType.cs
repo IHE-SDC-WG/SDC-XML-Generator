@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -30,16 +31,22 @@ public partial class FileDatesType : ExtensionBaseType
     
     private static XmlSerializer serializer;
     
-        public dateTime_Stype FileDate { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("PreviousRevisionDate")]
-        public List<dateTime_Stype> PreviousRevisionDate { get; set; }
-        public dateTime_Stype ReleaseDate { get; set; }
-        public dateTime_Stype EffectiveDate { get; set; }
-        public dateTime_Stype FirstReleaseDate { get; set; }
-        public dateTime_Stype UsageStartDate { get; set; }
-        public dateTime_Stype RetirementDate { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("OtherDate")]
-        public List<dateTime_Stype> OtherDate { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public virtual dateTime_Stype FileDate { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("PreviousRevisionDate", Order=1)]
+        public virtual List<dateTime_Stype> PreviousRevisionDate { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public virtual dateTime_Stype ReleaseDate { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        public virtual dateTime_Stype EffectiveDate { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        public virtual dateTime_Stype FirstReleaseDate { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        public virtual dateTime_Stype UsageStartDate { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        public virtual dateTime_Stype RetirementDate { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("OtherDate", Order=7)]
+        public virtual List<dateTime_Stype> OtherDate { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -53,12 +60,76 @@ public partial class FileDatesType : ExtensionBaseType
         }
     }
     
+    /// <summary>
+    /// Test whether PreviousRevisionDate should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializePreviousRevisionDate()
+    {
+        return PreviousRevisionDate != null && PreviousRevisionDate.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether OtherDate should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeOtherDate()
+    {
+        return OtherDate != null && OtherDate.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether FileDate should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeFileDate()
+    {
+        return (FileDate != null);
+    }
+    
+    /// <summary>
+    /// Test whether ReleaseDate should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeReleaseDate()
+    {
+        return (ReleaseDate != null);
+    }
+    
+    /// <summary>
+    /// Test whether EffectiveDate should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeEffectiveDate()
+    {
+        return (EffectiveDate != null);
+    }
+    
+    /// <summary>
+    /// Test whether FirstReleaseDate should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeFirstReleaseDate()
+    {
+        return (FirstReleaseDate != null);
+    }
+    
+    /// <summary>
+    /// Test whether UsageStartDate should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeUsageStartDate()
+    {
+        return (UsageStartDate != null);
+    }
+    
+    /// <summary>
+    /// Test whether RetirementDate should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeRetirementDate()
+    {
+        return (RetirementDate != null);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current FileDatesType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -66,11 +137,13 @@ public partial class FileDatesType : ExtensionBaseType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -84,6 +157,11 @@ public partial class FileDatesType : ExtensionBaseType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -144,12 +222,12 @@ public partial class FileDatesType : ExtensionBaseType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -159,14 +237,23 @@ public partial class FileDatesType : ExtensionBaseType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -186,13 +273,13 @@ public partial class FileDatesType : ExtensionBaseType
     /// <param name="obj">Output FileDatesType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out FileDatesType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out FileDatesType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(FileDatesType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -202,20 +289,30 @@ public partial class FileDatesType : ExtensionBaseType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out FileDatesType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out FileDatesType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static FileDatesType LoadFromFile(string fileName)
+    public static FileDatesType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static FileDatesType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

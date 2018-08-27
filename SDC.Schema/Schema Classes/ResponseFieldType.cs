@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -34,22 +35,25 @@ public partial class ResponseFieldType : ExtensionBaseType
     /// <summary>
     /// W3C Schema data type details
     /// </summary>
-        public DataTypes_DEType Response { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("CallSetValue", typeof(CallFuncType))]
-        [System.Xml.Serialization.XmlElementAttribute("SetValue", typeof(ScriptCodeAnyType))]
-        public ExtensionBaseType Item { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public virtual DataTypes_DEType Response { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("CallSetValue", typeof(CallFuncType), Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("SetValue", typeof(ScriptCodeAnyType), Order=1)]
+        public virtual ExtensionBaseType Item { get; set; }
     /// <summary>
     /// TextAfterResponse is fixed text that appears after (to the right of) the user's response on the data entry form.  This may be text for units such as "mm", "cm", etc.
     /// </summary>
-        public RichTextType TextAfterResponse { get; set; }
-        public UnitsType ResponseUnits { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public virtual RichTextType TextAfterResponse { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        public virtual UnitsType ResponseUnits { get; set; }
     /// <summary>
     /// Event that occurs after the Response value is changed, usually fired after a user leaves the Response field.
     /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("AfterChange")]
-        public List<EventType> AfterChange { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("OnEvent")]
-        public List<OnEventType> OnEvent { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("AfterChange", Order=4)]
+        public virtual List<EventType> AfterChange { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("OnEvent", Order=5)]
+        public virtual List<OnEventType> OnEvent { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -63,12 +67,60 @@ public partial class ResponseFieldType : ExtensionBaseType
         }
     }
     
+    /// <summary>
+    /// Test whether AfterChange should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeAfterChange()
+    {
+        return AfterChange != null && AfterChange.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether OnEvent should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeOnEvent()
+    {
+        return OnEvent != null && OnEvent.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether Response should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeResponse()
+    {
+        return (Response != null);
+    }
+    
+    /// <summary>
+    /// Test whether Item should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeItem()
+    {
+        return (Item != null);
+    }
+    
+    /// <summary>
+    /// Test whether TextAfterResponse should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeTextAfterResponse()
+    {
+        return (TextAfterResponse != null);
+    }
+    
+    /// <summary>
+    /// Test whether ResponseUnits should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeResponseUnits()
+    {
+        return (ResponseUnits != null);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current ResponseFieldType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -76,11 +128,13 @@ public partial class ResponseFieldType : ExtensionBaseType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -94,6 +148,11 @@ public partial class ResponseFieldType : ExtensionBaseType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -154,12 +213,12 @@ public partial class ResponseFieldType : ExtensionBaseType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -169,14 +228,23 @@ public partial class ResponseFieldType : ExtensionBaseType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -196,13 +264,13 @@ public partial class ResponseFieldType : ExtensionBaseType
     /// <param name="obj">Output ResponseFieldType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out ResponseFieldType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ResponseFieldType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(ResponseFieldType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -212,20 +280,30 @@ public partial class ResponseFieldType : ExtensionBaseType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out ResponseFieldType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out ResponseFieldType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static ResponseFieldType LoadFromFile(string fileName)
+    public static ResponseFieldType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static ResponseFieldType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

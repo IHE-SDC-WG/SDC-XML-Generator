@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -29,6 +30,8 @@ using System.Collections.Generic;
 public partial class CallFuncType : ExtensionBaseType
 {
     
+    private bool _shouldSerializereturnList;
+    
     private static XmlSerializer serializer;
     
     /// <summary>
@@ -36,32 +39,33 @@ public partial class CallFuncType : ExtensionBaseType
     /// 
     /// The function must understand the parameters and return an appropriate response of the correct data type.  Guidelines for URI construction syntax will be defined external to this Schema, and may be use-case and implementation-specific.
     /// </summary>
-        public anyURI_Stype Function { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public virtual anyURI_Stype Function { get; set; }
     /// <summary>
     /// Information about securly accessing the web service.  More detailed service patterns may be required.
     /// </summary>
-        public RichTextType Security { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("ParameterRef")]
-        public List<ParameterItemType> ParameterRef { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("ParameterValue")]
-        public List<ParameterValueType> ParameterValue { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        public virtual RichTextType Security { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("ParameterRef", typeof(ParameterItemType), Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("ParameterValue", typeof(ParameterValueType), Order=2)]
+        public virtual List<ExtensionBaseType> Items { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute(Form=System.Xml.Schema.XmlSchemaForm.Qualified)]
-        public List<string> dataTypeListAll { get; set; }
+        public virtual List<string> dataTypeListAll { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(false)]
-        public bool returnList { get; set; }
+        public virtual bool returnList { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string objectTypeName { get; set; }
+        public virtual string objectTypeName { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string objectFormat { get; set; }
+        public virtual string objectFormat { get; set; }
     
-    /// <summary>
-    /// CallFuncType class constructor
-    /// </summary>
-    public CallFuncType()
-    {
-        this.returnList = false;
-    }
+    ///// <summary>
+    ///// CallFuncType class constructor
+    ///// </summary>
+    //public CallFuncType()
+    //{
+    //    this.returnList = false;
+    //}
     
     private static XmlSerializer Serializer
     {
@@ -75,12 +79,72 @@ public partial class CallFuncType : ExtensionBaseType
         }
     }
     
+    /// <summary>
+    /// Test whether Items should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeItems()
+    {
+        return Items != null && Items.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether dataTypeListAll should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializedataTypeListAll()
+    {
+        return dataTypeListAll != null && dataTypeListAll.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether returnList should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializereturnList()
+    {
+        if (_shouldSerializereturnList)
+        {
+            return true;
+        }
+        return (returnList != default(bool));
+    }
+    
+    /// <summary>
+    /// Test whether Function should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeFunction()
+    {
+        return (Function != null);
+    }
+    
+    /// <summary>
+    /// Test whether Security should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeSecurity()
+    {
+        return (Security != null);
+    }
+    
+    /// <summary>
+    /// Test whether objectTypeName should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeobjectTypeName()
+    {
+        return !string.IsNullOrEmpty(objectTypeName);
+    }
+    
+    /// <summary>
+    /// Test whether objectFormat should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeobjectFormat()
+    {
+        return !string.IsNullOrEmpty(objectFormat);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current CallFuncType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -88,11 +152,13 @@ public partial class CallFuncType : ExtensionBaseType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -106,6 +172,11 @@ public partial class CallFuncType : ExtensionBaseType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -166,12 +237,12 @@ public partial class CallFuncType : ExtensionBaseType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -181,14 +252,23 @@ public partial class CallFuncType : ExtensionBaseType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -208,13 +288,13 @@ public partial class CallFuncType : ExtensionBaseType
     /// <param name="obj">Output CallFuncType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out CallFuncType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out CallFuncType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(CallFuncType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -224,20 +304,30 @@ public partial class CallFuncType : ExtensionBaseType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out CallFuncType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out CallFuncType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static CallFuncType LoadFromFile(string fileName)
+    public static CallFuncType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static CallFuncType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

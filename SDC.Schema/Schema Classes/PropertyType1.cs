@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -45,14 +46,14 @@ public partial class PropertyType1 : DataTypes_SType
     /// NEW
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="NMTOKEN")]
-        public string propName { get; set; }
+        public virtual string propName { get; set; }
     /// <summary>
     /// NEW
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="NMTOKENS")]
-        public string propClass { get; set; }
+        public virtual string propClass { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string val { get; set; }
+        public virtual string val { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -66,12 +67,36 @@ public partial class PropertyType1 : DataTypes_SType
         }
     }
     
+    /// <summary>
+    /// Test whether propName should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializepropName()
+    {
+        return !string.IsNullOrEmpty(propName);
+    }
+    
+    /// <summary>
+    /// Test whether propClass should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializepropClass()
+    {
+        return !string.IsNullOrEmpty(propClass);
+    }
+    
+    /// <summary>
+    /// Test whether val should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeval()
+    {
+        return !string.IsNullOrEmpty(val);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current PropertyType1 object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -79,11 +104,13 @@ public partial class PropertyType1 : DataTypes_SType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -97,6 +124,11 @@ public partial class PropertyType1 : DataTypes_SType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -157,12 +189,12 @@ public partial class PropertyType1 : DataTypes_SType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -172,14 +204,23 @@ public partial class PropertyType1 : DataTypes_SType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -199,13 +240,13 @@ public partial class PropertyType1 : DataTypes_SType
     /// <param name="obj">Output PropertyType1 object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out PropertyType1 obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out PropertyType1 obj, out System.Exception exception)
     {
         exception = null;
         obj = default(PropertyType1);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -215,20 +256,30 @@ public partial class PropertyType1 : DataTypes_SType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out PropertyType1 obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out PropertyType1 obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static PropertyType1 LoadFromFile(string fileName)
+    public static PropertyType1 LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static PropertyType1 LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

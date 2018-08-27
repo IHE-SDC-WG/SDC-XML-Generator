@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -28,17 +29,17 @@ public partial class DataElementType : IdentifiedExtensionType
     
     private static XmlSerializer serializer;
     
-        [System.Xml.Serialization.XmlElementAttribute("ButtonAction", typeof(ButtonItemType))]
-        [System.Xml.Serialization.XmlElementAttribute("DisplayedItem", typeof(DisplayedType))]
-        [System.Xml.Serialization.XmlElementAttribute("InjectForm", typeof(InjectFormType))]
-        [System.Xml.Serialization.XmlElementAttribute("Question", typeof(QuestionItemType))]
-        [System.Xml.Serialization.XmlElementAttribute("Section", typeof(SectionItemType))]
-        public List<IdentifiedExtensionType> Items { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("ButtonAction", typeof(ButtonItemType), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("DisplayedItem", typeof(DisplayedType), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("InjectForm", typeof(InjectFormType), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Question", typeof(QuestionItemType), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Section", typeof(SectionItemType), Order=0)]
+        public virtual List<IdentifiedExtensionType> Items { get; set; }
     /// <summary>
     /// NEW: URI used to identify the form that is the immediate previous version of the current FormDesign
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string prevVersionURI { get; set; }
+        public virtual string prevVersionURI { get; set; }
     /// <summary>
     /// URI used to identify the original DE that that this DE is based upon.
     /// 
@@ -47,17 +48,17 @@ public partial class DataElementType : IdentifiedExtensionType
     /// Relying on a CodedValue, mapping file or table may be a better and more flexible approach than @basedOnURI. In this way, users could compare data elements to determine if they contain semantic matches, and this is supported better with a more robust code map section.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string basedOnURI { get; set; }
+        public virtual string basedOnURI { get; set; }
     /// <summary>
     /// Filename to use when the current DE XML is saved as a file.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string filename { get; set; }
+        public virtual string filename { get; set; }
     /// <summary>
     /// Human readable title for display when choosing DEs
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string title { get; set; }
+        public virtual string title { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -71,12 +72,52 @@ public partial class DataElementType : IdentifiedExtensionType
         }
     }
     
+    /// <summary>
+    /// Test whether Items should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeItems()
+    {
+        return Items != null && Items.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether prevVersionURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeprevVersionURI()
+    {
+        return !string.IsNullOrEmpty(prevVersionURI);
+    }
+    
+    /// <summary>
+    /// Test whether basedOnURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializebasedOnURI()
+    {
+        return !string.IsNullOrEmpty(basedOnURI);
+    }
+    
+    /// <summary>
+    /// Test whether filename should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializefilename()
+    {
+        return !string.IsNullOrEmpty(filename);
+    }
+    
+    /// <summary>
+    /// Test whether title should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializetitle()
+    {
+        return !string.IsNullOrEmpty(title);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current DataElementType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -84,11 +125,13 @@ public partial class DataElementType : IdentifiedExtensionType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -102,6 +145,11 @@ public partial class DataElementType : IdentifiedExtensionType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -162,12 +210,12 @@ public partial class DataElementType : IdentifiedExtensionType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -177,14 +225,23 @@ public partial class DataElementType : IdentifiedExtensionType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -204,13 +261,13 @@ public partial class DataElementType : IdentifiedExtensionType
     /// <param name="obj">Output DataElementType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out DataElementType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out DataElementType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(DataElementType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -220,20 +277,30 @@ public partial class DataElementType : IdentifiedExtensionType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out DataElementType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out DataElementType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static DataElementType LoadFromFile(string fileName)
+    public static DataElementType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static DataElementType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

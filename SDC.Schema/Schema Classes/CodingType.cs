@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -35,8 +36,8 @@ public partial class CodingType : ExtensionBaseType
     /// A standard code, or a local value from a custom coding system, that can be used to consistently identify, or provide a
     /// standard value for, the coded item.
     /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string_Stype Code { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=0)]
+        public virtual string_Stype Code { get; set; }
     /// <summary>
     /// Data type enumeration derived from W3C XML Schema. If
     /// the code is derived from a local value system (e.g., numbered answer
@@ -45,23 +46,29 @@ public partial class CodingType : ExtensionBaseType
     /// here. This may be important if the code value will need to me
     /// manipulated mathematically.
     /// </summary>
-        public DataTypes_SType TypedValue { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        public virtual DataTypes_SType TypedValue { get; set; }
     /// <summary>
     /// The human readable text that accompanies the assigned code and represents the code's precise meaning (semantics) or
     /// usage.
     /// </summary>
-        public RichTextType CodeText { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public virtual RichTextType CodeText { get; set; }
     /// <summary>
     /// Degree of match between the mapped item and the assigned code - @codeMatchType holds an entry from an enumerated
     /// list of match types.
     /// </summary>
-        public CodeMatchType CodeMatch { get; set; }
-        public CodeSystemType CodeSystem { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        public virtual CodeMatchType CodeMatch { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        public virtual CodeSystemType CodeSystem { get; set; }
     /// <summary>
     /// NEW: Web resource that provides information about the code
     /// </summary>
-        public anyURI_Stype CodeURI { get; set; }
-        public UnitsType Units { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        public virtual anyURI_Stype CodeURI { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        public virtual UnitsType Units { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -75,12 +82,68 @@ public partial class CodingType : ExtensionBaseType
         }
     }
     
+    /// <summary>
+    /// Test whether Code should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeCode()
+    {
+        return (Code != null);
+    }
+    
+    /// <summary>
+    /// Test whether TypedValue should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeTypedValue()
+    {
+        return (TypedValue != null);
+    }
+    
+    /// <summary>
+    /// Test whether CodeText should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeCodeText()
+    {
+        return (CodeText != null);
+    }
+    
+    /// <summary>
+    /// Test whether CodeMatch should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeCodeMatch()
+    {
+        return (CodeMatch != null);
+    }
+    
+    /// <summary>
+    /// Test whether CodeSystem should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeCodeSystem()
+    {
+        return (CodeSystem != null);
+    }
+    
+    /// <summary>
+    /// Test whether CodeURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeCodeURI()
+    {
+        return (CodeURI != null);
+    }
+    
+    /// <summary>
+    /// Test whether Units should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeUnits()
+    {
+        return (Units != null);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current CodingType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -88,11 +151,13 @@ public partial class CodingType : ExtensionBaseType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -106,6 +171,11 @@ public partial class CodingType : ExtensionBaseType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -166,12 +236,12 @@ public partial class CodingType : ExtensionBaseType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -181,14 +251,23 @@ public partial class CodingType : ExtensionBaseType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -208,13 +287,13 @@ public partial class CodingType : ExtensionBaseType
     /// <param name="obj">Output CodingType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out CodingType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out CodingType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(CodingType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -224,20 +303,30 @@ public partial class CodingType : ExtensionBaseType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out CodingType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out CodingType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static CodingType LoadFromFile(string fileName)
+    public static CodingType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static CodingType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

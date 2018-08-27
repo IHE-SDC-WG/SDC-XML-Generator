@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -30,40 +31,46 @@ public partial class AddressType : ExtensionBaseType
     
     private static XmlSerializer serializer;
     
-        [System.Xml.Serialization.XmlElementAttribute("AddressType")]
-        public string_Stype AddressType1 { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("AddressType", Order=0)]
+        public virtual string_Stype AddressType1 { get; set; }
     /// <summary>
     /// Address instructions for directing mail within an organizations buildings or corporate
     /// infrastructure.
     /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("InternalAddress")]
-        public List<string_Stype> InternalAddress { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("InternalAddress", Order=1)]
+        public virtual List<string_Stype> InternalAddress { get; set; }
     /// <summary>
     /// Address instructions for directing mail to a street address.
     /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("AddressLine")]
-        public List<string_Stype> AddressLine { get; set; }
-        public string_Stype City { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("AddressLine", Order=2)]
+        public virtual List<string_Stype> AddressLine { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        public virtual string_Stype City { get; set; }
     /// <summary>
     /// Other optional locale identifier.
     /// </summary>
-        public string_Stype Jurisdiction { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        public virtual string_Stype Jurisdiction { get; set; }
     /// <summary>
     /// State, Province, etc.
     /// </summary>
-        public string_Stype State { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        public virtual string_Stype State { get; set; }
     /// <summary>
     /// Local postal code, e.g., zip code.
     /// </summary>
-        public string_Stype PostalCode { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        public virtual string_Stype PostalCode { get; set; }
     /// <summary>
     /// **Need list of official country codes or text?
     /// </summary>
-        public string_Stype Country { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        public virtual string_Stype Country { get; set; }
     /// <summary>
     /// When this address should be used
     /// </summary>
-        public string_Stype Usage { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        public virtual string_Stype Usage { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -77,12 +84,84 @@ public partial class AddressType : ExtensionBaseType
         }
     }
     
+    /// <summary>
+    /// Test whether InternalAddress should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeInternalAddress()
+    {
+        return InternalAddress != null && InternalAddress.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether AddressLine should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeAddressLine()
+    {
+        return AddressLine != null && AddressLine.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether AddressType1 should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeAddressType1()
+    {
+        return (AddressType1 != null);
+    }
+    
+    /// <summary>
+    /// Test whether City should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeCity()
+    {
+        return (City != null);
+    }
+    
+    /// <summary>
+    /// Test whether Jurisdiction should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeJurisdiction()
+    {
+        return (Jurisdiction != null);
+    }
+    
+    /// <summary>
+    /// Test whether State should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeState()
+    {
+        return (State != null);
+    }
+    
+    /// <summary>
+    /// Test whether PostalCode should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializePostalCode()
+    {
+        return (PostalCode != null);
+    }
+    
+    /// <summary>
+    /// Test whether Country should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeCountry()
+    {
+        return (Country != null);
+    }
+    
+    /// <summary>
+    /// Test whether Usage should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeUsage()
+    {
+        return (Usage != null);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current AddressType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -90,11 +169,13 @@ public partial class AddressType : ExtensionBaseType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -108,6 +189,11 @@ public partial class AddressType : ExtensionBaseType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -168,12 +254,12 @@ public partial class AddressType : ExtensionBaseType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -183,14 +269,23 @@ public partial class AddressType : ExtensionBaseType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -210,13 +305,13 @@ public partial class AddressType : ExtensionBaseType
     /// <param name="obj">Output AddressType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out AddressType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out AddressType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(AddressType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -226,20 +321,30 @@ public partial class AddressType : ExtensionBaseType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out AddressType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out AddressType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static AddressType LoadFromFile(string fileName)
+    public static AddressType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static AddressType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

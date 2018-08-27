@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -25,18 +26,34 @@ using System.Collections.Generic;
 public partial class dateTimeStamp_DEtype : dateTimeStamp_Stype
 {
     
+    private bool _shouldSerializeminInclusive;
+    
+    private bool _shouldSerializemaxInclusive;
+    
+    private bool _shouldSerializeminExclusive;
+    
+    private bool _shouldSerializemaxExclusive;
+    
     private static XmlSerializer serializer;
     
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public System.DateTime maxExclusive { get; set; }
+        public virtual System.DateTime maxExclusive { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool maxExclusiveSpecified { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public System.DateTime minExclusive { get; set; }
+        public virtual System.DateTime minExclusive { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool minExclusiveSpecified { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public System.DateTime maxInclusive { get; set; }
+        public virtual System.DateTime maxInclusive { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool maxInclusiveSpecified { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public System.DateTime minInclusive { get; set; }
+        public virtual System.DateTime minInclusive { get; set; }
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public virtual bool minInclusiveSpecified { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string mask { get; set; }
+        public virtual string mask { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -50,12 +67,68 @@ public partial class dateTimeStamp_DEtype : dateTimeStamp_Stype
         }
     }
     
+    /// <summary>
+    /// Test whether maxExclusive should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializemaxExclusive()
+    {
+        if (_shouldSerializemaxExclusive)
+        {
+            return true;
+        }
+        return (maxExclusive != default(System.DateTime));
+    }
+    
+    /// <summary>
+    /// Test whether minExclusive should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeminExclusive()
+    {
+        if (_shouldSerializeminExclusive)
+        {
+            return true;
+        }
+        return (minExclusive != default(System.DateTime));
+    }
+    
+    /// <summary>
+    /// Test whether maxInclusive should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializemaxInclusive()
+    {
+        if (_shouldSerializemaxInclusive)
+        {
+            return true;
+        }
+        return (maxInclusive != default(System.DateTime));
+    }
+    
+    /// <summary>
+    /// Test whether minInclusive should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeminInclusive()
+    {
+        if (_shouldSerializeminInclusive)
+        {
+            return true;
+        }
+        return (minInclusive != default(System.DateTime));
+    }
+    
+    /// <summary>
+    /// Test whether mask should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializemask()
+    {
+        return !string.IsNullOrEmpty(mask);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current dateTimeStamp_DEtype object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -63,11 +136,13 @@ public partial class dateTimeStamp_DEtype : dateTimeStamp_Stype
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -81,6 +156,11 @@ public partial class dateTimeStamp_DEtype : dateTimeStamp_Stype
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -141,12 +221,12 @@ public partial class dateTimeStamp_DEtype : dateTimeStamp_Stype
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -156,14 +236,23 @@ public partial class dateTimeStamp_DEtype : dateTimeStamp_Stype
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -183,13 +272,13 @@ public partial class dateTimeStamp_DEtype : dateTimeStamp_Stype
     /// <param name="obj">Output dateTimeStamp_DEtype object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out dateTimeStamp_DEtype obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out dateTimeStamp_DEtype obj, out System.Exception exception)
     {
         exception = null;
         obj = default(dateTimeStamp_DEtype);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -199,20 +288,30 @@ public partial class dateTimeStamp_DEtype : dateTimeStamp_Stype
         }
     }
     
+    public static bool LoadFromFile(string fileName, out dateTimeStamp_DEtype obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out dateTimeStamp_DEtype obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static dateTimeStamp_DEtype LoadFromFile(string fileName)
+    public static dateTimeStamp_DEtype LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static dateTimeStamp_DEtype LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

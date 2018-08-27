@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -36,30 +37,30 @@ public partial class InjectFormType : IdentifiedExtensionType
     
     private static XmlSerializer serializer;
     
-        [System.Xml.Serialization.XmlElementAttribute("FormDesign", typeof(FormDesignType))]
-        [System.Xml.Serialization.XmlElementAttribute("Question", typeof(QuestionItemType))]
-        [System.Xml.Serialization.XmlElementAttribute("Section", typeof(SectionItemType))]
-        public IdentifiedExtensionType Item { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("FormDesign", typeof(FormDesignType), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Question", typeof(QuestionItemType), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Section", typeof(SectionItemType), Order=0)]
+        public virtual IdentifiedExtensionType Item { get; set; }
     /// <summary>
     /// This ID represents the Package that contains the form to be injected.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string packageID { get; set; }
+        public virtual string packageID { get; set; }
     /// <summary>
     /// If the ID does not use the default base URI (namespace), then the local baseURI goes here. Note that all IDs must be unique within a form, even if they do not have the same baseURI.   Ideally, the baseURI + ID should combine to form a *globally* unique identifier, that uniquely identifies an item in a particular form.  The same baseURI and ID may be reused in derived or versioned forms, as long as the context stays the same, and any affected data elements remain unchanged in context and semantics.  Following this approach is likely to simplify analytics based on form content.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string packageBaseURI { get; set; }
+        public virtual string packageBaseURI { get; set; }
     /// <summary>
     /// The rootItemID is the ID of the form part that will be injected.  If empty, then the entre form should be injected as the FormDesign element node.  If not empty, it must point to a valid Section or Question.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string rootItemID { get; set; }
+        public virtual string rootItemID { get; set; }
     /// <summary>
     /// Unique ID (GUID) to distinguish multiple instances of the same injected node.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string injectionID { get; set; }
+        public virtual string injectionID { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -73,12 +74,52 @@ public partial class InjectFormType : IdentifiedExtensionType
         }
     }
     
+    /// <summary>
+    /// Test whether Item should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeItem()
+    {
+        return (Item != null);
+    }
+    
+    /// <summary>
+    /// Test whether packageID should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializepackageID()
+    {
+        return !string.IsNullOrEmpty(packageID);
+    }
+    
+    /// <summary>
+    /// Test whether packageBaseURI should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializepackageBaseURI()
+    {
+        return !string.IsNullOrEmpty(packageBaseURI);
+    }
+    
+    /// <summary>
+    /// Test whether rootItemID should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializerootItemID()
+    {
+        return !string.IsNullOrEmpty(rootItemID);
+    }
+    
+    /// <summary>
+    /// Test whether injectionID should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeinjectionID()
+    {
+        return !string.IsNullOrEmpty(injectionID);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current InjectFormType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -86,11 +127,13 @@ public partial class InjectFormType : IdentifiedExtensionType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -104,6 +147,11 @@ public partial class InjectFormType : IdentifiedExtensionType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -164,12 +212,12 @@ public partial class InjectFormType : IdentifiedExtensionType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -179,14 +227,23 @@ public partial class InjectFormType : IdentifiedExtensionType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -206,13 +263,13 @@ public partial class InjectFormType : IdentifiedExtensionType
     /// <param name="obj">Output InjectFormType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out InjectFormType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out InjectFormType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(InjectFormType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -222,20 +279,30 @@ public partial class InjectFormType : IdentifiedExtensionType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out InjectFormType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out InjectFormType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static InjectFormType LoadFromFile(string fileName)
+    public static InjectFormType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static InjectFormType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

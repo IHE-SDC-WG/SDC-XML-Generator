@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -31,19 +32,27 @@ public partial class ChangeLogType : ExtensionBaseType
     
     private static XmlSerializer serializer;
     
-        public ChangedFieldType ChangedField { get; set; }
-        public DataTypes_SType ChangedTo { get; set; }
-        public DataTypes_SType ChangedFrom { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("ChangeType")]
-        public List<string_Stype> ChangeType { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public virtual ChangedFieldType ChangedField { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        public virtual DataTypes_SType ChangedTo { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public virtual DataTypes_SType ChangedFrom { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("ChangeType", Order=3)]
+        public virtual List<string_Stype> ChangeType { get; set; }
     /// <summary>
     /// The retired/deprecated item that is being replaced.
     /// </summary>
-        public ReplacedIDsType Replaces { get; set; }
-        public dateTime_Stype ChangeDate { get; set; }
-        public string_Stype ChangeDescription { get; set; }
-        public ContactsType Editors { get; set; }
-        public ChangeTrackingType ChangeTracking { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        public virtual ReplacedIDsType Replaces { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        public virtual dateTime_Stype ChangeDate { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        public virtual string_Stype ChangeDescription { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        public virtual ContactsType Editors { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        public virtual ChangeTrackingType ChangeTracking { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -57,12 +66,84 @@ public partial class ChangeLogType : ExtensionBaseType
         }
     }
     
+    /// <summary>
+    /// Test whether ChangeType should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeChangeType()
+    {
+        return ChangeType != null && ChangeType.Count > 0;
+    }
+    
+    /// <summary>
+    /// Test whether ChangedField should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeChangedField()
+    {
+        return (ChangedField != null);
+    }
+    
+    /// <summary>
+    /// Test whether ChangedTo should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeChangedTo()
+    {
+        return (ChangedTo != null);
+    }
+    
+    /// <summary>
+    /// Test whether ChangedFrom should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeChangedFrom()
+    {
+        return (ChangedFrom != null);
+    }
+    
+    /// <summary>
+    /// Test whether Replaces should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeReplaces()
+    {
+        return (Replaces != null);
+    }
+    
+    /// <summary>
+    /// Test whether ChangeDate should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeChangeDate()
+    {
+        return (ChangeDate != null);
+    }
+    
+    /// <summary>
+    /// Test whether ChangeDescription should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeChangeDescription()
+    {
+        return (ChangeDescription != null);
+    }
+    
+    /// <summary>
+    /// Test whether Editors should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeEditors()
+    {
+        return (Editors != null);
+    }
+    
+    /// <summary>
+    /// Test whether ChangeTracking should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeChangeTracking()
+    {
+        return (ChangeTracking != null);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current ChangeLogType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -70,11 +151,13 @@ public partial class ChangeLogType : ExtensionBaseType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -88,6 +171,11 @@ public partial class ChangeLogType : ExtensionBaseType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -148,12 +236,12 @@ public partial class ChangeLogType : ExtensionBaseType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -163,14 +251,23 @@ public partial class ChangeLogType : ExtensionBaseType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -190,13 +287,13 @@ public partial class ChangeLogType : ExtensionBaseType
     /// <param name="obj">Output ChangeLogType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out ChangeLogType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ChangeLogType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(ChangeLogType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -206,20 +303,30 @@ public partial class ChangeLogType : ExtensionBaseType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out ChangeLogType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out ChangeLogType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static ChangeLogType LoadFromFile(string fileName)
+    public static ChangeLogType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static ChangeLogType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

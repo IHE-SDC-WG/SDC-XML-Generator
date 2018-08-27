@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -30,18 +31,18 @@ public partial class RegistrySummaryType : ExtensionBaseType
     
     private static XmlSerializer serializer;
     
-        [System.Xml.Serialization.XmlElementAttribute("Contact", typeof(ContactType))]
-        [System.Xml.Serialization.XmlElementAttribute("Manual", typeof(FileType))]
-        [System.Xml.Serialization.XmlElementAttribute("ReferenceStandardIdentifier", typeof(string_Stype))]
-        [System.Xml.Serialization.XmlElementAttribute("RegistryInterface", typeof(InterfaceType))]
-        [System.Xml.Serialization.XmlElementAttribute("RegistryName", typeof(string_Stype))]
-        [System.Xml.Serialization.XmlElementAttribute("RegistryPurpose", typeof(FileType))]
-        [System.Xml.Serialization.XmlElementAttribute("ServiceLevelAgreement", typeof(FileType))]
+        [System.Xml.Serialization.XmlElementAttribute("Contact", typeof(ContactType), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Manual", typeof(FileType), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("ReferenceStandardIdentifier", typeof(string_Stype), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("RegistryInterface", typeof(InterfaceType), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("RegistryName", typeof(string_Stype), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("RegistryPurpose", typeof(FileType), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("ServiceLevelAgreement", typeof(FileType), Order=0)]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
-        public BaseType[] Items { get; set; }
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
+        public virtual BaseType[] Items { get; set; }
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public ItemsChoiceType1[] ItemsElementName { get; set; }
+        public virtual ItemsChoiceType1[] ItemsElementName { get; set; }
     
     private static XmlSerializer Serializer
     {
@@ -60,7 +61,7 @@ public partial class RegistrySummaryType : ExtensionBaseType
     /// Serializes current RegistrySummaryType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -68,11 +69,13 @@ public partial class RegistrySummaryType : ExtensionBaseType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -86,6 +89,11 @@ public partial class RegistrySummaryType : ExtensionBaseType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -146,12 +154,12 @@ public partial class RegistrySummaryType : ExtensionBaseType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -161,14 +169,23 @@ public partial class RegistrySummaryType : ExtensionBaseType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -188,13 +205,13 @@ public partial class RegistrySummaryType : ExtensionBaseType
     /// <param name="obj">Output RegistrySummaryType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out RegistrySummaryType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out RegistrySummaryType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(RegistrySummaryType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -204,20 +221,30 @@ public partial class RegistrySummaryType : ExtensionBaseType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out RegistrySummaryType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out RegistrySummaryType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static RegistrySummaryType LoadFromFile(string fileName)
+    public static RegistrySummaryType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static RegistrySummaryType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();

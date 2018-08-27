@@ -14,6 +14,7 @@ using System.Xml.Schema;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 using System.Xml;
 using System.Collections.Generic;
 
@@ -36,13 +37,23 @@ using System.Collections.Generic;
 public partial class RuleAutoActivationType : ExtensionBaseType
 {
     
+    private bool _shouldSerializesetExpanded;
+    
+    private bool _shouldSerializesetEnabled;
+    
+    private bool _shouldSerializesetVisibility;
+    
+    private bool _shouldSerializeremoveResponsesWhenDeactivated;
+    
+    private bool _shouldSerializeonlyIf;
+    
     private static XmlSerializer serializer;
     
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="NMTOKENS")]
-        public string selectedItemSet { get; set; }
+        public virtual string selectedItemSet { get; set; }
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(false)]
-        public bool onlyIf { get; set; }
+        public virtual bool onlyIf { get; set; }
     /// <summary>
     /// This list contains the @names of Identified Items that will be automatically activated or deactivated when the @selectedItemSet evaluates to true.
     /// 
@@ -51,31 +62,31 @@ public partial class RuleAutoActivationType : ExtensionBaseType
     /// If @onlyIf is true, then the above rule is reversed when @selectedItemSet evaluates to false.  In other words, named items will be deactivated, and hyphen-prefixed items will be activated when @selectedItemSet is false.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="NCName")]
-        public string targetNameActivationList { get; set; }
+        public virtual string targetNameActivationList { get; set; }
     /// <summary>
     /// Make target items visible when activated and vice versa.  Default = false.  All descendants are affected in the same way.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(toggleType.@true)]
-        public toggleType setVisibility { get; set; }
+        public virtual toggleType setVisibility { get; set; }
     /// <summary>
     /// Make target items enabled when activated and vice versa.  Default = true.  All descendants are affected in the same way.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(toggleType.@true)]
-        public toggleType setEnabled { get; set; }
+        public virtual toggleType setEnabled { get; set; }
     /// <summary>
     /// Expand target items when activated and collapse item when deactivated.  Default = false.  All descendants are affected in the same way.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(toggleType.@true)]
-        public toggleType setExpanded { get; set; }
+        public virtual toggleType setExpanded { get; set; }
     /// <summary>
     /// Delete all user selections, responses and comments when the item is deactivated.  Applies to all descendant items as well.  User should be warned before deleting anything, with an option to preserve the responses in the disabled items.  Disabled item responses should not be saved with the form data.
     /// </summary>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(false)]
-        public bool removeResponsesWhenDeactivated { get; set; }
+        public virtual bool removeResponsesWhenDeactivated { get; set; }
     
     /// <summary>
     /// RuleAutoActivationType class constructor
@@ -101,12 +112,88 @@ public partial class RuleAutoActivationType : ExtensionBaseType
         }
     }
     
+    /// <summary>
+    /// Test whether onlyIf should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeonlyIf()
+    {
+        if (_shouldSerializeonlyIf)
+        {
+            return true;
+        }
+        return (onlyIf != default(bool));
+    }
+    
+    /// <summary>
+    /// Test whether removeResponsesWhenDeactivated should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeremoveResponsesWhenDeactivated()
+    {
+        if (_shouldSerializeremoveResponsesWhenDeactivated)
+        {
+            return true;
+        }
+        return (removeResponsesWhenDeactivated != default(bool));
+    }
+    
+    /// <summary>
+    /// Test whether setVisibility should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializesetVisibility()
+    {
+        if (_shouldSerializesetVisibility)
+        {
+            return true;
+        }
+        return (setVisibility != default(toggleType));
+    }
+    
+    /// <summary>
+    /// Test whether setEnabled should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializesetEnabled()
+    {
+        if (_shouldSerializesetEnabled)
+        {
+            return true;
+        }
+        return (setEnabled != default(toggleType));
+    }
+    
+    /// <summary>
+    /// Test whether setExpanded should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializesetExpanded()
+    {
+        if (_shouldSerializesetExpanded)
+        {
+            return true;
+        }
+        return (setExpanded != default(toggleType));
+    }
+    
+    /// <summary>
+    /// Test whether selectedItemSet should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializeselectedItemSet()
+    {
+        return !string.IsNullOrEmpty(selectedItemSet);
+    }
+    
+    /// <summary>
+    /// Test whether targetNameActivationList should be serialized
+    /// </summary>
+    public virtual bool ShouldSerializetargetNameActivationList()
+    {
+        return !string.IsNullOrEmpty(targetNameActivationList);
+    }
+    
     #region Serialize/Deserialize
     /// <summary>
     /// Serializes current RuleAutoActivationType object into an XML string
     /// </summary>
     /// <returns>string XML value</returns>
-    public virtual string Serialize()
+    public virtual string Serialize(System.Text.Encoding encoding)
     {
         System.IO.StreamReader streamReader = null;
         System.IO.MemoryStream memoryStream = null;
@@ -114,11 +201,13 @@ public partial class RuleAutoActivationType : ExtensionBaseType
         {
             memoryStream = new System.IO.MemoryStream();
             System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.NewLineOnAttributes = true;
+            xmlWriterSettings.Encoding = encoding;
+            xmlWriterSettings.Indent = true;
+            xmlWriterSettings.IndentChars = " ";
             System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
             Serializer.Serialize(xmlWriter, this);
             memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream);
+            streamReader = new System.IO.StreamReader(memoryStream, encoding);
             return streamReader.ReadToEnd();
         }
         finally
@@ -132,6 +221,11 @@ public partial class RuleAutoActivationType : ExtensionBaseType
                 memoryStream.Dispose();
             }
         }
+    }
+    
+    public virtual string Serialize()
+    {
+        return Serialize(System.Text.Encoding.UTF8);
     }
     
     /// <summary>
@@ -192,12 +286,12 @@ public partial class RuleAutoActivationType : ExtensionBaseType
     /// <param name="fileName">full path of outupt xml file</param>
     /// <param name="exception">output Exception value if failed</param>
     /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
     {
         exception = null;
         try
         {
-            SaveToFile(fileName);
+            SaveToFile(fileName, encoding);
             return true;
         }
         catch (System.Exception e)
@@ -207,14 +301,23 @@ public partial class RuleAutoActivationType : ExtensionBaseType
         }
     }
     
+    public virtual bool SaveToFile(string fileName, out System.Exception exception)
+    {
+        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+    }
+    
     public virtual void SaveToFile(string fileName)
+    {
+        SaveToFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.StreamWriter streamWriter = null;
         try
         {
-            string xmlString = Serialize();
-            System.IO.FileInfo xmlFile = new System.IO.FileInfo(fileName);
-            streamWriter = xmlFile.CreateText();
+            string xmlString = Serialize(encoding);
+            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
             streamWriter.WriteLine(xmlString);
             streamWriter.Close();
         }
@@ -234,13 +337,13 @@ public partial class RuleAutoActivationType : ExtensionBaseType
     /// <param name="obj">Output RuleAutoActivationType object</param>
     /// <param name="exception">output Exception value if deserialize failed</param>
     /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, out RuleAutoActivationType obj, out System.Exception exception)
+    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out RuleAutoActivationType obj, out System.Exception exception)
     {
         exception = null;
         obj = default(RuleAutoActivationType);
         try
         {
-            obj = LoadFromFile(fileName);
+            obj = LoadFromFile(fileName, encoding);
             return true;
         }
         catch (System.Exception ex)
@@ -250,20 +353,30 @@ public partial class RuleAutoActivationType : ExtensionBaseType
         }
     }
     
+    public static bool LoadFromFile(string fileName, out RuleAutoActivationType obj, out System.Exception exception)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+    }
+    
     public static bool LoadFromFile(string fileName, out RuleAutoActivationType obj)
     {
         System.Exception exception = null;
         return LoadFromFile(fileName, out obj, out exception);
     }
     
-    public new static RuleAutoActivationType LoadFromFile(string fileName)
+    public static RuleAutoActivationType LoadFromFile(string fileName)
+    {
+        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+    }
+    
+    public new static RuleAutoActivationType LoadFromFile(string fileName, System.Text.Encoding encoding)
     {
         System.IO.FileStream file = null;
         System.IO.StreamReader sr = null;
         try
         {
             file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file);
+            sr = new System.IO.StreamReader(file, encoding);
             string xmlString = sr.ReadToEnd();
             sr.Close();
             file.Close();
