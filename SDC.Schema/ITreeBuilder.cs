@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SDC
+namespace SDC.Schema
 {
     /// <summary>
     /// Top-level public methods used to build SDC tree in SDC.Schema.PartialClasses
@@ -84,11 +84,11 @@ namespace SDC
         #endregion
 
         #region Events
-        WatchedPropertyType AddActivateIf(DisplayedType dt, Boolean fillData = true);
-        WatchedPropertyType AddDeActivateIf(DisplayedType dt, Boolean fillData = true);
-        IfThenType AddOnEnter(DisplayedType dt, Boolean fillData = true);
-        IfThenType AddOnEvent(DisplayedType dt, Boolean fillData = true);
-        OnEventType AddOnExit(DisplayedType dt, Boolean fillData = true);
+        GuardType AddActivateIf(DisplayedType dt, Boolean fillData = true);
+        GuardType AddDeActivateIf(DisplayedType dt, Boolean fillData = true);
+        EventType AddOnEnter(DisplayedType dt, Boolean fillData = true);
+        OnEventType AddOnEvent(DisplayedType dt, Boolean fillData = true);
+        EventType AddOnExit(DisplayedType dt, Boolean fillData = true);
         #endregion
 
         #region Contacts

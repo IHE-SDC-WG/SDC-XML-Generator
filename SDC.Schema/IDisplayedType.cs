@@ -1,5 +1,5 @@
 ﻿using System;
-namespace SDC
+namespace SDC.Schema
 {
     public interface IDisplayedType
     {
@@ -8,11 +8,11 @@ namespace SDC
         BlobType AddBlob(Boolean fillData = true);
         ContactType AddContact(Boolean fillData = true);
         CodingType AddCoding(Boolean fillData = true);
-        WatchedPropertyType AddActivateIf(Boolean fillData = true);
-        WatchedPropertyType AddDeActivateIf(Boolean fillData = true);
-        IfThenType AddOnEnter(Boolean fillData = true);
-        IfThenType AddOnEvent(Boolean fillData = true);
-        OnEventType AddOnExit(Boolean fillData = true);
+        GuardType AddActivateIf(Boolean fillData = true);
+        GuardType AddDeActivateIf(Boolean fillData = true);
+        EventType AddOnEnter(Boolean fillData = true);
+        OnEventType AddOnEvent(Boolean fillData = true);
+        EventType AddOnExit(Boolean fillData = true);
 
     }
 }

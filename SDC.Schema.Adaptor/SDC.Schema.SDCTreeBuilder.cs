@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using SDC.Schema;
 
 //using
 
@@ -461,8 +462,8 @@ namespace SDC
 
         #region Data Types
 
-        protected abstract FuncType AddFillWebService(LookupEndPointType lepParent, Boolean fillData = true);
-        protected abstract FuncType FillWebService(FuncType wst);
+        protected abstract CallFuncType AddFillWebService(LookupEndPointType lepParent, Boolean fillData = true);
+        protected abstract CallFuncType FillWebService(CallFuncType ws);
         protected abstract DataTypes_SType AddFillDataTypesS(CodingType codingParent);
         protected abstract DataTypes_DEType AddFillDataTypesDE(ResponseFieldType rfParent);
         protected abstract DataTypes_DEType AddFillDataTypesDE(ListFieldType lftParent, SectionBaseTypeResponseTypeEnum dataType);
@@ -1132,44 +1133,44 @@ namespace SDC
 
         public abstract LinkType FillLinkText(LinkType lt);
 
-        public virtual SDC.BlobType AddBlob(DisplayedType dtParent, Boolean fillData = true)
+        public virtual SDC.Schema.BlobType AddBlob(DisplayedType dtParent, Boolean fillData = true)
         {
             var blob = new BlobType(dtParent);
-            if (dtParent.BlobContent == null) dtParent.BlobContent = new List<SDC.BlobType>();
+            if (dtParent.BlobContent == null) dtParent.BlobContent = new List<SDC.Schema.BlobType>();
             dtParent.BlobContent.Add(blob);
             return blob;
         }
         public abstract BlobType FillBlob(BlobType bt);
 
-        public virtual IfThenType AddOnEvent(DisplayedType dtParent, Boolean fillData = true)
+        public virtual OnEventType AddOnEvent(DisplayedType dtParent, Boolean fillData = true)
         {
             throw new NotImplementedException();
         }
-        protected abstract IfThenType FillOnEvent(IfThenType oe);
+        protected abstract OnEventType FillOnEvent(OnEventType oe);
 
-        public virtual IfThenType AddOnEnter(DisplayedType dtParent, Boolean fillData = true)
+        public virtual EventType AddOnEnter(DisplayedType dtParent, Boolean fillData = true)
         {
             throw new NotImplementedException();
         }
-        protected abstract IfThenType FillOnEnter(IfThenType oe);
+        protected abstract EventType FillOnEnter(EventType oe);
 
-        public virtual OnEventType AddOnExit(DisplayedType dtParent, Boolean fillData = true)
+        public virtual EventType AddOnExit(DisplayedType dtParent, Boolean fillData = true)
         {
             throw new NotImplementedException();
         }
-        protected abstract OnEventType FillOnExit(OnEventType oe);
+        protected abstract EventType FillOnExit(EventType oe);
 
-        public virtual WatchedPropertyType AddActivateIf(DisplayedType dtParent, Boolean fillData = true)
+        public virtual GuardType AddActivateIf(DisplayedType dtParent, Boolean fillData = true)
         {
             throw new NotImplementedException();
         }
-        protected abstract WatchedPropertyType FillActivateIf(WatchedPropertyType oe);
+        protected abstract GuardType FillActivateIf(GuardType oe);
 
-        public virtual WatchedPropertyType AddDeActivateIf(DisplayedType dtParent, Boolean fillData = true)
+        public virtual GuardType AddDeActivateIf(DisplayedType dtParent, Boolean fillData = true)
         {
             throw new NotImplementedException();
         }
-        protected abstract WatchedPropertyType FillDeActivateIf(WatchedPropertyType oeParent);
+        protected abstract GuardType FillDeActivateIf(GuardType oeParent);
 
         #endregion
 
@@ -1253,21 +1254,21 @@ namespace SDC
 
         #endregion
 
-        #region IfThen
-        protected virtual void AddFillActionToThenType(ThenType thenType, Boolean fillData = true)
-        {
+        //#region IfThen
+        //protected virtual void AddFillActionToThenType(ThenType thenType, Boolean fillData = true)
+        //{
 
-            throw new NotImplementedException();
-            //AddExtensionBaseTypeItems(thenType, false);
-            //Add @onlyIf
-            //Add PropertyAction
-            //Add If LIstItemStatus
-            //Add IfPredicate
-            //Add IfGroup
-        }
+        //    throw new NotImplementedException();
+        //    //AddExtensionBaseTypeItems(thenType, false);
+        //    //Add @onlyIf
+        //    //Add PropertyAction
+        //    //Add If LIstItemStatus
+        //    //Add IfPredicate
+        //    //Add IfGroup
+        //}
 
 
-        #endregion
+        //#endregion
 
         #region QAS
         public virtual QuestionItemType AddQuestion<T>(T T_Parent, QuestionEnum qType, Boolean fillData = true, string id = null) where T : BaseType, IParent, new()
@@ -1450,22 +1451,22 @@ namespace SDC
 
         #region Actions
 
-        public abstract ActSendMessageType AddFillActSendMessage(ThenType tt, Boolean fillData = true);
-        public abstract ActActionType AddAction(ThenType tt, Boolean fillData = true);
-        //public abstract ActSetPropertyType AddSetProperty(ThenType tt, Boolean fillData = true);
-        public abstract ActAddCodeType AddAddCode(ThenType tt, Boolean fillData = true);
-        //public abstract ActSetValueType AddSetValue(ThenType tt, Boolean fillData = true);
-        public abstract ActInjectType AddInject(ThenType tt, Boolean fillData = true);
-        public abstract ActShowMessageType AddShowMessage(ThenType tt, Boolean fillData = true);
-        //public abstract ExpressionType AddRunCommand(ThenType tt, Boolean fillData = true);
-        //public abstract FuncType AddShowURL(ThenType tt, Boolean fillData = true);
-        public abstract ActShowFormType AddShowForm(ThenType tt, Boolean fillData = true);
-        public abstract ActSaveResponsesType AddSave(ThenType tt, Boolean fillData = true);
-        public abstract ActSendReportType AddShowReport(ThenType tt, Boolean fillData = true);
-        public abstract ActSendMessageType AddSendMessage(ThenType tt, Boolean fillData = true);
-        public abstract ActValidateFormType AddValidateForm(ThenType tt, Boolean fillData = true);
-        //public abstract IfThenType AddIfThen(ThenType tt, Boolean fillData = true);
-        //public abstract ItemNameType AddCallIfThen(ThenType tt, Boolean fillData = true);
+        public abstract ActSendMessageType AddFillActSendMessage(ActionsType at, Boolean fillData = true);
+        public abstract ActActionType AddAction(ActionsType at, Boolean fillData = true);
+        //public abstract ActSetPropertyType AddSetProperty(ActionsType at, Boolean fillData = true);
+        public abstract ActAddCodeType AddAddCode(ActionsType at, Boolean fillData = true);
+        //public abstract ActSetValueType AddSetValue(ActionsType at, Boolean fillData = true);
+        public abstract ActInjectType AddInject(ActionsType at, Boolean fillData = true);
+        public abstract ActShowMessageType AddShowMessage(ActionsType at, Boolean fillData = true);
+        //public abstract ExpressionType AddRunCommand(ActionsType at, Boolean fillData = true);
+        //public abstract FuncType AddShowURL(ActionsType at, Boolean fillData = true);
+        public abstract ActShowFormType AddShowForm(ActionsType at, Boolean fillData = true);
+        public abstract ActSaveResponsesType AddSave(ActionsType at, Boolean fillData = true);
+        public abstract ActSendReportType AddShowReport(ActionsType at, Boolean fillData = true);
+        public abstract ActSendMessageType AddSendMessage(ActionsType at, Boolean fillData = true);
+        public abstract ActValidateFormType AddValidateForm(ActionsType at, Boolean fillData = true);
+        //public abstract IfThenType AddIfThen(ActionsType at, Boolean fillData = true);
+        //public abstract ItemNameType AddCallIfThen(ActionsType at, Boolean fillData = true);
 
         #endregion
 
