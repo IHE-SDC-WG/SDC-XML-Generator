@@ -17,7 +17,7 @@ namespace MSTests
         [TestMethod]
         public void TestMethod1()
         {
-            var serializer = new XmlSerializer(typeof(SDC.BaseType));
+            var serializer = new XmlSerializer(typeof(SDC.Schema.BaseType));
         }
 
         [TestMethod]
@@ -38,7 +38,7 @@ namespace MSTests
                 templatesMap.Add(key, val);
                 Debug.Print(templatesMap[key].ToString());
 
-                var ser = new XmlSerializer(typeof(FormDesignType));
+                var ser = new XmlSerializer(typeof(SDC.Schema.FormDesignType));
                 var fdd = new FormDesignDataSets();
                 SDCTreeBuilderEcc stb;
                 stb = new SDCTreeBuilderEcc(key, fdd, "srtemplate.xslt");
@@ -71,7 +71,7 @@ namespace MSTests
         public void TestSerializer()
         {
 
-            var ser = new XmlSerializer(typeof(FormDesignType));
+            var ser = new XmlSerializer(typeof(SDC.Schema.FormDesignType));
 
             var fdd = new FormDesignDataSets();
             SDCTreeBuilderEcc stb;

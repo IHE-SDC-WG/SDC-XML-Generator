@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SDC
+namespace SDC.Schema
 {
     /// <summary>
     /// Top-level public methods used to build SDC tree in SDC.Schema.PartialClasses
@@ -40,22 +40,22 @@ namespace SDC
 
         #region Other Main Items
 
-        SectionItemType AddSection<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new();
+        SectionItemType AddSection<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent; //, new();
         SectionBaseType FillSectionBase(SectionBaseType s);
         InjectFormType FillInjectedForm(InjectFormType injForm);
 
-        DisplayedType AddDisplayedItem<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new();
+        DisplayedType AddDisplayedItem<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent; //, new();
         DisplayedType FillDisplayedTypeItems(DisplayedType dt, Boolean fillData = true);
         RepeatingType FillRepeatingTypeItems(RepeatingType rt, Boolean fillData = true);
         //DisplayedType AddDisplayedItemToList(ListType list);
 
-        ButtonItemType AddButtonAction<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new();
-        InjectFormType AddInjectedForm<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent, new();
+        ButtonItemType AddButtonAction<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent; //, new();
+        InjectFormType AddInjectedForm<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent; //, new();
 
         #endregion
 
         #region QAS
-        QuestionItemType AddQuestion<T>(T T_Parent, QuestionEnum qType, Boolean fillData = true, string id = null) where T : BaseType, IParent, new();
+        QuestionItemType AddQuestion<T>(T T_Parent, QuestionEnum qType, Boolean fillData = true, string id = null) where T : BaseType, IParent; //, new();
         QuestionItemBaseType FillQuestionItemBase(QuestionItemBaseType q);
 
         ListFieldType FillListField(ListFieldType lf);
@@ -84,11 +84,11 @@ namespace SDC
         #endregion
 
         #region Events
-        WatchedPropertyType AddActivateIf(DisplayedType dt, Boolean fillData = true);
-        WatchedPropertyType AddDeActivateIf(DisplayedType dt, Boolean fillData = true);
-        IfThenType AddOnEnter(DisplayedType dt, Boolean fillData = true);
-        IfThenType AddOnEvent(DisplayedType dt, Boolean fillData = true);
-        OnEventType AddOnExit(DisplayedType dt, Boolean fillData = true);
+        GuardType AddActivateIf(DisplayedType dt, Boolean fillData = true);
+        GuardType AddDeActivateIf(DisplayedType dt, Boolean fillData = true);
+        EventType AddOnEnter(DisplayedType dt, Boolean fillData = true);
+        OnEventType AddOnEvent(DisplayedType dt, Boolean fillData = true);
+        EventType AddOnExit(DisplayedType dt, Boolean fillData = true);
         #endregion
 
         #region Contacts

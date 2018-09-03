@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
 using System.Xml;
+using SDC.Schema;
 
 
 
@@ -68,7 +69,7 @@ namespace SDC
                 string releaseVersionSuffix = dr["ReleaseVersionSuffix"].ToString();  //e.g., CTP1, RC2, REL; UNK if a value is missing
                 string title = dr["OfficialName"].ToString();
                 string CTVcKey = dr["ChecklistTemplateVersionCkey"].ToString();
-                string lineage = shortName + "." + CTVcKey.Replace(".100004300", "");//remove the eCC namespace suffix ".1000043"
+                string lineage = shortName + "." + CTVcKey.Replace(".1000043", "");//remove the eCC namespace suffix ".1000043"
                 string version = (dr["VersionID"].ToString()).Replace(".1000043", "") + "." + releaseVersionSuffix;//remove the eCC namespace suffix ".1000043"
                 string id = lineage + "_" + version + "_sdcFDF";  //FDF = "Form Design File".
                 bool required = dr["EffectiveDate"].ToString() != ""; //ToDo: It would be better to have a database field for required.
@@ -79,9 +80,9 @@ namespace SDC
                 var fd = new FormDesignType(this, null, false, id); //create the form with the new id. Inject "this" SDCTreeBuilderEcc object into the form;
 
                 this.FormDesign = fd;  //This eCC-specific tree builder needs a copy of the new form object.
-                                       //Note that we have a 2-way reference here:  fd holds a copy of "this" (the eCC tree buiilder), and "this" holds a copy of fd.
-                                       //This is a bidirectional dependency injection, allowing fd to call eCC-specific tree builder functions, 
-                                       //and "this" (The eCC tree builder) to assemble the eCC tree with fd components, and fill it with eCC content.
+                //Note that we have a 2-way reference here:  fd holds an instance of "this" (the eCC tree buiilder class), and "this" holds an instance of FormDesign (fd).
+                //This is a bidirectional dependency injection, allowing fd to call eCC-specific tree builder functions, 
+                //and "this" (The eCC tree builder) to assemble the eCC tree with fd components, and fill it with eCC content.
 
 
                 //Some basic fd properties
@@ -138,18 +139,18 @@ namespace SDC
 
         #region Actions
 
-        public override ActSendMessageType AddFillActSendMessage(ThenType tt, Boolean fillData = true)
+        public override ActSendMessageType AddFillActSendMessage(ActionsType at, Boolean fillData = true)
         {
-            var asmt = new ActSendMessageType(tt);
-            if (tt.Items != null) tt.Items = new SDC.ExtensionBaseType[25]; //xsd2code generated an array instead of a list here.  
+            var asmt = new ActSendMessageType(at);
+            if (at.Items != null) at.Items = new SDC.Schema.ExtensionBaseType[25]; //xsd2code generated an array instead of a list here.  
                                                                             //It's not clear if sizing the array at 25 will generate an error for the null entries ????  
                                                                             //It will probably work, but it's not clear.
                                                                             //TODO: Consider a function to auto-resize the array 
                                                                             //TODO: Follow up bug report with xsd2code - this should be a List, not an array
-            tt.Items[tt.Items.Length] = asmt;
+            at.Items[at.Items.Length] = asmt;
 
             var p = new PropertyType(asmt);
-            var html = new SDC.HTML_Stype(asmt);
+            var html = new SDC.Schema.HTML_Stype(asmt);
             p.TypedValue.Item = html;
 
             asmt.Property.Add(p);
@@ -165,35 +166,35 @@ namespace SDC
             return asmt;
 
         }
-        public override ActActionType AddAction(ThenType tt, Boolean fillData = true)
-        { return new ActActionType(tt); }
-        //public override ActSetPropertyType AddSetProperty(ThenType tt, Boolean fillData = true)
-        //{ return new ActSetPropertyType(tt) ; }
-        public override ActAddCodeType AddAddCode(ThenType tt, Boolean fillData = true)
-        { return new ActAddCodeType(tt); }
-        //public override ActSetValueType AddSetValue(ThenType tt, Boolean fillData = true)
-        //{ return new ActSetValueType(tt); }
-        public override ActInjectType AddInject(ThenType tt, Boolean fillData = true)
-        { return new ActInjectType(tt); }
-        public override ActShowMessageType AddShowMessage(ThenType tt, Boolean fillData = true)
-        { return new ActShowMessageType(tt); }
-        //public override ExpressionType AddRunCommand(ThenType tt, Boolean fillData = true)
-        //{ return new ExpressionType(tt); }
-        //public override FuncType AddShowURL(ThenType tt, Boolean fillData = true)
-        //{ return new FuncType(tt); }
-        public override ActShowFormType AddShowForm(ThenType tt, Boolean fillData = true)
-        { return new ActShowFormType(tt); }
-        public override ActSaveResponsesType AddSave(ThenType tt, Boolean fillData = true)
-        { return new ActSaveResponsesType(tt); }
-        public override ActSendReportType AddShowReport(ThenType tt, Boolean fillData = true)
-        { return new ActSendReportType(tt); }
-        public override ActSendMessageType AddSendMessage(ThenType tt, Boolean fillData = true)
-        { return new ActSendMessageType(tt); }
-        public override ActValidateFormType AddValidateForm(ThenType tt, Boolean fillData = true)
-        { return new ActValidateFormType(tt); }
-        //public override IfThenType AddIfThen(ThenType tt, Boolean fillData = true)
+        public override ActActionType AddAction(ActionsType at, Boolean fillData = true)
+        { return new ActActionType(at); }
+        //public override ActSetPropertyType AddSetProperty(ActionsType at, Boolean fillData = true)
+        //{ return new ActSetPropertyType(at) ; }
+        public override ActAddCodeType AddAddCode(ActionsType at, Boolean fillData = true)
+        { return new ActAddCodeType(at); }
+        //public override ActSetValueType AddSetValue(ActionsType at, Boolean fillData = true)
+        //{ return new ActSetValueType(at); }
+        public override ActInjectType AddInject(ActionsType at, Boolean fillData = true)
+        { return new ActInjectType(at); }
+        public override ActShowMessageType AddShowMessage(ActionsType at, Boolean fillData = true)
+        { return new ActShowMessageType(at); }
+        //public override ExpressionType AddRunCommand(ActionsType at, Boolean fillData = true)
+        //{ return new ExpressionType(at); }
+        //public override FuncType AddShowURL(ActionsType at, Boolean fillData = true)
+        //{ return new FuncType(at); }
+        public override ActShowFormType AddShowForm(ActionsType at, Boolean fillData = true)
+        { return new ActShowFormType(at); }
+        public override ActSaveResponsesType AddSave(ActionsType at, Boolean fillData = true)
+        { return new ActSaveResponsesType(at); }
+        public override ActSendReportType AddShowReport(ActionsType at, Boolean fillData = true)
+        { return new ActSendReportType(at); }
+        public override ActSendMessageType AddSendMessage(ActionsType at, Boolean fillData = true)
+        { return new ActSendMessageType(at); }
+        public override ActValidateFormType AddValidateForm(ActionsType at, Boolean fillData = true)
+        { return new ActValidateFormType(at); }
+        //public override IfThenType AddIfThen(ActionsType at, Boolean fillData = true)
         //{ return new IfThenType(tt); }
-        //public override ItemNameType AddCallIfThen(ThenType tt, Boolean fillData = true)
+        //public override ItemNameType AddCallIfThen(ActionsType at, Boolean fillData = true)
         //{ return new ItemNameType(tt); }
 
 
@@ -1271,7 +1272,7 @@ namespace SDC
                         dt.ElementName = itemDataType;
                         dt.val = (byte[])drFormDesign["DefaultValue"];
                         //TODO: dt.valHex = (string)drFormDesign["val_string"];//TODO: missing
-                        dt.length = (long)drFormDesign["length"];
+                        //dt.length = (long)drFormDesign["length"];
                         dt.maxLength = (long)drFormDesign["AnswerMaxChars"];//AnswerMaxChars
                         //TODO: dt.mimeType = (string)drFormDesign["mimeType"];//TODO: missing
                         dt.minLength = (long)drFormDesign["minLength"];
@@ -1618,7 +1619,7 @@ namespace SDC
 
         }
 
-        protected override FuncType AddFillWebService(LookupEndPointType lep, Boolean fillData = true)
+        protected override CallFuncType AddFillWebService(LookupEndPointType lep, Boolean fillData = true)
         { throw new NotImplementedException(); }
 
         protected override string FillQuantifier()
@@ -1636,7 +1637,7 @@ namespace SDC
             return q;
         }
 
-        protected override FuncType FillWebService(FuncType wst)
+        protected override CallFuncType FillWebService(CallFuncType wst)
         { throw new NotImplementedException(); }
 
         #endregion
@@ -1645,34 +1646,34 @@ namespace SDC
 
         #region DisplayedType Events
 
-        public override WatchedPropertyType AddActivateIf(DisplayedType dt, Boolean fillData = true)
+        public override GuardType AddActivateIf(DisplayedType dt, Boolean fillData = true)
         { throw new NotImplementedException(); }
 
-        public override WatchedPropertyType AddDeActivateIf(DisplayedType dt, Boolean fillData = true)
+        public override GuardType AddDeActivateIf(DisplayedType dt, Boolean fillData = true)
         { throw new NotImplementedException(); }
 
-        public override IfThenType AddOnEnter(DisplayedType dt, Boolean fillData = true)
+        public override EventType AddOnEnter(DisplayedType dt, Boolean fillData = true)
         { throw new NotImplementedException(); }
 
-        public override IfThenType AddOnEvent(DisplayedType dt, Boolean fillData = true)
+        public override OnEventType AddOnEvent(DisplayedType dt, Boolean fillData = true)
         { throw new NotImplementedException(); }
 
-        public override OnEventType AddOnExit(DisplayedType dt, Boolean fillData = true)
+        public override EventType AddOnExit(DisplayedType dt, Boolean fillData = true)
         { throw new NotImplementedException(); }
 
-        protected override WatchedPropertyType FillActivateIf(WatchedPropertyType oe)
+        protected override GuardType FillActivateIf(GuardType oe)
         { throw new NotImplementedException(); }
 
-        protected override WatchedPropertyType FillDeActivateIf(WatchedPropertyType oe)
+        protected override GuardType FillDeActivateIf(GuardType oe)
         { throw new NotImplementedException(); }
 
-        protected override IfThenType FillOnEnter(IfThenType oe)
+        protected override EventType FillOnEnter(EventType oe)
         { throw new NotImplementedException(); }
 
-        protected override IfThenType FillOnEvent(IfThenType oe)
+        protected override OnEventType FillOnEvent(OnEventType oe)
         { throw new NotImplementedException(); }
 
-        protected override OnEventType FillOnExit(OnEventType oe)
+        protected override EventType FillOnExit(EventType oe)
         { throw new NotImplementedException(); }
 
         #endregion
@@ -1951,9 +1952,8 @@ namespace SDC
             lep.Security.val = string.Empty;
 
 
-            //if (lep.Parameter == null) lep.Parameter = new List<GetParameterFromPropertyType>();
             if (lep.Items == null) lep.Items = new List<ExtensionBaseType>();
-            var p = new ParameterItemType111();
+            var p = new ParameterItemType(lep);
             p.paramName = string.Empty;
             p.sourceItemName = "";
             p.SourceItemAttribute = "val";

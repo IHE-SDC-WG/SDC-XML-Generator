@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace SDC
+namespace SDC.Schema
 {
     public static class SDCHelpers
     {
