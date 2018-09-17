@@ -183,8 +183,8 @@ public partial class ListFieldType : ExtensionBaseType
     /// Test whether maxSelections should be serialized
     /// </summary>
     public virtual bool ShouldSerializemaxSelections()
-    {
-        if (_shouldSerializemaxSelections)
+        {
+            if (_shouldSerializemaxSelections)
         {
             return true;
         }
