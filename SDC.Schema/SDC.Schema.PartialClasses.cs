@@ -560,8 +560,8 @@ namespace SDC.Schema
             #region  Local Members
 
             /// <summary>
-            /// sdcTreeBuilder is an object instance created and held by the top level FormDesign node, 
-            /// but referenced throughout the FormDesign object tree through the BaseType objects
+            /// sdcTreeBuilder is an object created and held by the top level FormDesign node, 
+            /// but referenced throughout the FormDesign object tree through the BaseType class
             /// </summary>
             protected ITreeBuilder sdcTreeBuilder;
             private string _elementName = "";
@@ -569,19 +569,19 @@ namespace SDC.Schema
 
             /// <summary>
             /// Static counter that resets with each new instance of an IdentifiedExtensionType (IET).
-            /// Maintains the sequence of all elements under an IET.
+            /// Maintains the sequence of all elements nested under an IET-derived element.
             /// </summary>
             [System.Xml.Serialization.XmlIgnore]
             private static int IETresetCounter { get; set; }
             /// <summary>
-            /// Field to hold the ordinal position of an object (XML element) under an IdentifiedExtensionType (IET).
-            /// This number is used for creating the name attribute.
+            /// Field to hold the ordinal position of an object (XML element) under an IdentifiedExtensionType (IET)-derived object.
+            /// This number is used for creating the name attribute suffix.
             /// </summary>
             [System.Xml.Serialization.XmlIgnore]
             public decimal SubIETcounter { get; private set; }
 
             /// <summary>
-            /// Used to construct the name property
+            /// The root text ("shortName") used to construct the name property.  The code may add a prefix and/or suffix to BaseName
             /// </summary>
             [System.Xml.Serialization.XmlIgnore]
             public string BaseName { get; set; } = "";
@@ -633,7 +633,8 @@ namespace SDC.Schema
                 { //assign default prefix from the ElementName
                     if (_elementPrefix.Length == 0)
                     {
-                        _elementPrefix = ElementName;                //make sure EventHandlerfirst letter is lower case for non-IET types.
+                        _elementPrefix = ElementName;   
+                        //make sure EventHandlerfirst letter is lower case for non-IET types:
                         if (!(GetType().IsSubclassOf(typeof(IdentifiedExtensionType)))) _elementPrefix = _elementPrefix.Substring(0, 1).ToLower() + _elementPrefix.Substring(1);
                     }
                     return _elementPrefix;
@@ -2452,7 +2453,7 @@ namespace SDC.Schema
             protected CountryCodeType() { }
             public CountryCodeType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
             {
-                ElementPrefix = "cocd";
+                ElementPrefix = "cycd";
                 SetNames(elementName, elementPrefix);
             }
         }
@@ -2474,7 +2475,7 @@ namespace SDC.Schema
             protected PhoneNumberType() { }
             public PhoneNumberType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
             {
-                ElementPrefix = "pn";
+                ElementPrefix = "phn";
                 SetNames(elementName, elementPrefix);
             }
         }
@@ -2485,7 +2486,7 @@ namespace SDC.Schema
             public PhoneType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
             {
                 ElementName = "PhoneType";
-                ElementPrefix = "phn";
+                ElementPrefix = "pht";
                 SetNames(elementName, elementPrefix);
             }
         }
@@ -2545,7 +2546,7 @@ namespace SDC.Schema
             protected AssociatedFilesType() { }
             public AssociatedFilesType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
             {
-                ElementPrefix = "asfi";
+                ElementPrefix = "asfils";
                 SetNames(elementName, elementPrefix);
             }
         }
@@ -2566,7 +2567,7 @@ namespace SDC.Schema
             protected FileDatesType() { }
             public FileDatesType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
             {
-                ElementPrefix = "fid";
+                ElementPrefix = "fildts";
                 SetNames(elementName, elementPrefix);
             }
         }
@@ -2576,7 +2577,7 @@ namespace SDC.Schema
             protected FileHashType() { }
             public FileHashType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
             {
-                ElementPrefix = "fihsh";
+                ElementPrefix = "filhsh";
                 SetNames(elementName, elementPrefix);
             }
         }
@@ -2596,7 +2597,7 @@ namespace SDC.Schema
             protected FileUsageType() { }
             public FileUsageType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
             {
-                ElementPrefix = "fius";
+                ElementPrefix = "filus";
                 SetNames(elementName, elementPrefix);
             }
         }

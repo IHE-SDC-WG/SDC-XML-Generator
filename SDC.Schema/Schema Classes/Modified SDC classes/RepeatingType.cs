@@ -90,8 +90,8 @@ public abstract partial class RepeatingType : DisplayedType
         {
             return true;
         }
-        return (minCard != default(ushort));
-    }
+        return (minCard != 1);  // default(ushort));  BUG fix
+        }
     
     /// <summary>
     /// Test whether maxCard should be serialized
@@ -102,8 +102,8 @@ public abstract partial class RepeatingType : DisplayedType
         {
             return true;
         }
-        return (maxCard != default(ushort));
-    }
+        return (maxCard != 1);  // default(ushort));  BUG fix
+        }
     
     /// <summary>
     /// Test whether repeat should be serialized

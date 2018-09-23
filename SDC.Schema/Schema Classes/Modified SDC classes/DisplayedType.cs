@@ -208,8 +208,8 @@ public partial class DisplayedType : IdentifiedExtensionType
         {
             return true;
         }
-        return (enabled != default(bool));
-    }
+        return (enabled != true); // default(bool));  BUG fix
+        }
     
     /// <summary>
     /// Test whether visible should be serialized
@@ -220,8 +220,8 @@ public partial class DisplayedType : IdentifiedExtensionType
         {
             return true;
         }
-        return (visible != default(bool));
-    }
+        return (visible != true); // default(bool));  BUG fix
+        }
     
     /// <summary>
     /// Test whether mustImplement should be serialized
@@ -232,7 +232,7 @@ public partial class DisplayedType : IdentifiedExtensionType
         {
             return true;
         }
-        return (mustImplement != default(bool));
+            return (mustImplement != true); // default(bool));  BUG fix
     }
     
     /// <summary>

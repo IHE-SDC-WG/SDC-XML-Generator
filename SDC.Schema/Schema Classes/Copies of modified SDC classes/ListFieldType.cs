@@ -176,8 +176,8 @@ public partial class ListFieldType : ExtensionBaseType
         {
             return true;
         }
-        return (minSelections != default(ushort));
-    }
+        return (minSelections != 1);  // default(ushort));  BUG fix
+        }
     
     /// <summary>
     /// Test whether maxSelections should be serialized
@@ -188,7 +188,7 @@ public partial class ListFieldType : ExtensionBaseType
         {
             return true;
         }
-        return (maxSelections != default(ushort));
+            return (maxSelections != 1);  // default(ushort));  BUG fix
     }
     
     /// <summary>

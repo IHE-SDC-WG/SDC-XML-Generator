@@ -295,6 +295,10 @@ namespace SDC
             var repText = drFormDesign["reportText"].ToString();
             if (!string.IsNullOrWhiteSpace(repText)) AddPropertyReportText(dt);
 
+            var altText = drFormDesign["longText"].ToString();
+            if (!string.IsNullOrWhiteSpace(altText)) AddPropertyAltText(dt);
+
+
             return dt;
             //addDisplayedTypeToChildItems(rt);
             //Add @ordered
