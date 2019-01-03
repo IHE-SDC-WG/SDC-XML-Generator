@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function resetAnswer(questionId) {
+            var answers = document.getElementsByClassName(questionId);
+            for (var i = 0; i < answers.length; i++) {
+                answers[i].checked = false;
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function toggle_visibility(className) {
+            var divs = document.getElementsByClassName(className)
+
+            var newClass = 'inline'
+            if (divs[0].style.display == 'inline')
+            { var newClass = 'none' }
+
+            for (var i = 0; i < divs.length; i++)
+            { divs[i].style.display == newClass }
+        }
+    </script>
+
+
+    <script>
+        function toggle_deprecated() {
+            var divs = document.getElementsByClassName('TopHeader')
+            var searchText = "(Deprecated Items)"
+            var display = 'none'
+
+            for (var i = 0; i < divs.length; i++) {
+                if (divs[i].textContent.includes(searchText)) {
+                    alert('display:' + divs[i].styledisplay.toString)
+                    if (divs[i].style.display.toString != '') {
+                        if (divs[0].style.display == 'inline') { display = 'none' }
+                        else { display = 'inline' }
+                    }
+
+                    divs[i].style.display = display
+                    divs[i].id = divs[0].style.display
+                    break;
+                }
+            }
+        }
+    </script>
+
+    <script>
+        function toggle_metadata() {
+            var divsMD = document.getElementsByClassName('MetadataDisplay')
+            var divsMDH = document.getElementsByClassName('MetadataDisplayHeader')
+
+
+            var display = 'none'
+            if (divsMD[0].style.display) {
+                if (divsMD[0].style.display == 'inline')
+                { display = 'none' }
+                else
+                { display = 'inline' }
+            }
+
+            for (var i = 0; i < divsMD.length; i++)
+            { divsMD[i].style.display = display }
+            for (var i = 0; i < divsMDH.length; i++)
+            { divsMDH[i].style.display = display }
+
+
+            //Toggle ids too
+            var divs = document.getElementsByClassName('idDisplay')
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = display
+            }
+
+            //Toggle deprecated items
+            var dis = document.getElementsByClassName('TopHeader')
+            var searchText = "(Deprecated Items)"
+
+            for (var i = 0; i < dis.length; i++) {
+                if (dis[i].textContent.indexOf(searchText) >= 0) {
+                    var divHeader = dis[i].parentElement.parentElement.parentElement //the tbody element
+                    if (display == 'inline') { display = '' }
+                    divHeader.style.display = display
+                    break;
+                }
+            }
+        }
+    </script>
+
+
+    <script>
+        // -*- coding: utf-8 -*-
+        // 2010-03-10, 2014-04-10
+        // http://xahlee.info/js/moving_block.html
+        // change the position of a “div#myFloatingThing” element.
+
+        (function () {
+
+            var offsetFromTop = window.innerHeight / 2; // number of pixels of the widget should be from top of the window
+            var updateFrequency = 50; //milisecond. The smaller the value, smooth the animation.
+            var chaseFactor = .05; // the closing-in factor. Smaller makes it smoother.
+
+            var yMoveTo = 0;
+            var yDiff = 0;
+
+            var movingWidget = document.getElementById("myFloatingThing");
+            movingWidget.style.position = "absolute";
+            movingWidget.style.zIndex = "2";
+            movingWidget.style.top = offsetFromTop.toString() + "px";
+            movingWidget.style.left = "1ex";
+
+            function ff() {
+                // compute the distance user has scrolled the window
+                yDiff = (navigator.appName === "Microsoft Internet Explorer") ? (yMoveTo - document.documentElement.scrollTop) : (yMoveTo - window.pageYOffset);
+
+                if (Math.abs(yDiff) > 9) {
+
+                    // turn off now, prevent the event repeatedly fired when user scroll repeatedly
+                    window.removeEventListener("scroll", ff);
+
+                    yMoveTo -= yDiff * chaseFactor;
+                    movingWidget.style.top = (yMoveTo + offsetFromTop).toString() + "px";
+                    setTimeout(ff, updateFrequency); // calls itself again
+                } else {
+                    window.addEventListener("scroll", ff, false); // turn back on
+                }
+            }
+
+            window.addEventListener("scroll", ff, false);
+
+        })();
+    </script>
+
+    <script>
+        function toggle_metadata() {
+            var divsMD = document.getElementsByClassName('MetadataDisplay')
+            var divsMDH = document.getElementsByClassName('MetadataDisplayHeader')
+
+            var yPos = window.pageYOffset;
+
+            var display = 'none'
+            if (divsMD[0].style.display)
+            {
+                if (divsMD[0].style.display == 'inline' )
+                { display = 'none' }
+                else
+                { display = 'inline' }
+            }
+
+            for (var i = 0; i < divsMD.length; i++)
+            { divsMD[i].style.display = display }
+            for (var i = 0; i < divsMDH.length; i++)
+            { divsMDH[i].style.display = display }
+
+
+            //Toggle ids too
+            var divs = document.getElementsByClassName('idDisplay')
+            for (var i = 0; i < divs.length; i++)
+            {
+                divs[i].style.display = display
+            }
+
+            //Toggle deprecated items
+            var dis = document.getElementsByClassName('TopHeader')
+            var searchText = "(Deprecated Items)"
+
+            for (var i = 0; i < dis.length; i++)
+            {
+                if (dis[i].textContent.indexOf(searchText) >=0)
+                {
+                    var divHeader = dis[i].parentElement.parentElement.parentElement //the tbody element
+                    if (display == 'inline') {display = ''}
+                    divHeader.style.display = display
+                    break;
+                }
+            }
+            window.scrollTo (yPos)
+        }
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
