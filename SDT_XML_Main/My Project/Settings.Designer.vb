@@ -137,7 +137,7 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("Data Source=PappeCC;Initial Catalog=PERC_eCC;Integrated Security=True")>  _
     Public Property DataSourceConnectionString() As String
         Get
             Return CType(Me("DataSourceConnectionString"),String)

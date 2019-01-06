@@ -1628,15 +1628,17 @@ namespace SDC
 
         protected override string FillQuantifier()
         {
-            string q;
-            try
-            {
-                q = (string)drFormDesign["quantifier"];
-            }
-            catch (Exception ex)
-            {
-                q = "EQ";
-            }
+            string q = "EQ";
+
+            //TODO: fix quantifiers in database
+            //try
+            //{
+            //    q = (string)drFormDesign["quantifier"];
+            //}
+            //catch (Exception ex)
+            //{
+            //    q = "EQ";
+            //}
 
             return q;
         }

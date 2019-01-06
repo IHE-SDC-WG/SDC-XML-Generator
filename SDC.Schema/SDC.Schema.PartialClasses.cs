@@ -652,9 +652,10 @@ namespace SDC.Schema
                 ObjectGUID = Guid.NewGuid();
                 IsLeafNode = true;
                 ParentNode = parentNode;
-                //BaseName = "";
+                orderSpecified = true;  //rlm: added 1/2/2019 to force output of order attribute
+                                                  //BaseName = "";
 
-                if (GetType().IsSubclassOf(typeof(IdentifiedExtensionType))) IETresetCounter = 0;
+            if (GetType().IsSubclassOf(typeof(IdentifiedExtensionType))) IETresetCounter = 0;
                 else IETresetCounter++;
                 SubIETcounter = IETresetCounter;
 
