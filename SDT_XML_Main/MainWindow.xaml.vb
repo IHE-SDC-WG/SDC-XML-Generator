@@ -113,7 +113,9 @@ Partial Public Class MainWindow
     End Sub
 
     Private Sub txtID_KeyDown(sender As Object, e As KeyEventArgs) Handles txtID.KeyDown
-        If e.Key = Key.Enter Then
+
+
+        If e.Key = Input.Key.Enter Then
             btnGenerate_Click(sender, e)
             txtID.SelectAll()
         End If
@@ -130,7 +132,11 @@ Partial Public Class MainWindow
 
             Dim key = Split(cellText, ".", 2)
             txtID.Text = key(0)
+            'txtID.UpdateLayout()
             txtNamespace.Text = key(1)
+
+            'Conside inmplementing a DoEvents on main UI thread here, to update the UI
+
             btnGenerate_Click(sender, e)
             gridControl1.Cursor = Cursors.Arrow
         ElseIf col.VisibleIndex = 2 Then
@@ -146,6 +152,14 @@ Partial Public Class MainWindow
     Protected Overrides Sub Finalize()
         MyBase.Finalize()
         TEinterop.Dispose()
+    End Sub
+
+    Private Sub gridControl1_GotFocus(sender As Object, e As RoutedEventArgs) Handles gridControl1.GotFocus
+        Dim cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
+        Dim CTVkey = Split(cellText, ".", 2)
+        txtID.Text = CTVkey(0)
+        Debug.WriteLine(sender.ToString, e.ToString)
+
     End Sub
 End Class
 

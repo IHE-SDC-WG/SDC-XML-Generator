@@ -2,23 +2,11 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings" UseMySettingsClassName="true">
   <Profiles />
   <Settings>
-    <Setting Name="FilePath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\tmp\eCC</Value>
-    </Setting>
-    <Setting Name="XslFileName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">srtemplate.xslt</Value>
-    </Setting>
-    <Setting Name="TEpath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\rmoldwi\Desktop\TE\eCC_TE_2.9.2.adp</Value>
-    </Setting>
     <Setting Name="BrowserPath64" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Program Files (x86)\Mozilla Firefox\firefox.exe</Value>
     </Setting>
     <Setting Name="BrowserPath32" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Program Files\Mozilla Firefox\firefox.exe</Value>
-    </Setting>
-    <Setting Name="SDCfilePath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">c:\tmp\SDC\eCC</Value>
     </Setting>
     <Setting Name="PERC_eCC_Con" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
@@ -30,6 +18,18 @@
     </Setting>
     <Setting Name="DataSourceConnectionString" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=PappeCC;Initial Catalog=PERC_eCC;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="FilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\SDC</Value>
+    </Setting>
+    <Setting Name="XslFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sdctemplate.xslt</Value>
+    </Setting>
+    <Setting Name="TEpath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\%USERNAME%\Desktop\TE\eCC_TE_2.30.adp</Value>
+    </Setting>
+    <Setting Name="SDCfilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\SDC</Value>
     </Setting>
   </Settings>
 </SettingsFile>

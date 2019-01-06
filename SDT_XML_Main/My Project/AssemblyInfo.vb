@@ -11,11 +11,11 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Enahnced eCC XML Generator")>
-<Assembly: AssemblyDescription("Generate enhanced eCC XML")>
-<Assembly: AssemblyCompany("College of American Pathologists")> 
-<Assembly: AssemblyProduct("SDT_XML_Main")> 
-<Assembly: AssemblyCopyright("Copyright @ College of American Pathologists 2013-16")> 
+<Assembly: AssemblyTitle("SDC XML Generator")>
+<Assembly: AssemblyDescription("Generate eCC templates in IHE SDC format")>
+<Assembly: AssemblyCompany("College of American Pathologists")>
+<Assembly: AssemblyProduct("SDC_XML_Generator")>
+<Assembly: AssemblyCopyright("Copyright @ College of American Pathologists 2013-19")>
 <Assembly: AssemblyTrademark("")> 
 <Assembly: ComVisible(False)> 
 
@@ -55,5 +55,5 @@ Imports System.Windows
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.2017.01.07")>
-<Assembly: AssemblyFileVersion("1.2017.01.07")>
+<Assembly: AssemblyVersion("1.2019.01.07")>
+<Assembly: AssemblyFileVersion("1.2019.01.07")>

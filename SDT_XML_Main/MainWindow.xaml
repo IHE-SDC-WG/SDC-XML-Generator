@@ -14,7 +14,7 @@
     xmlns:eCC_DataSetTableAdapters="clr-namespace:SDT_XML_Main.eCC_DataSetTableAdapters"
     xmlns:local="clr-namespace:SDT_XML_Main"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title=" eCC Enhanced XML Generator 2018.01.07"
+    Title=" SDC Generator 2019.01.07"
     Width="974"
     Height="700"
     dx:ThemeManager.ThemeName="DeepBlue"
@@ -218,13 +218,11 @@
                                     ItemsSource="{Binding Data, Source={StaticResource TypedSimpleSource}}"
                                     SelectionMode="Cell"
                                     ShowBorder="False">
-                                    <dxg:GridControl.Columns>
-                                        <dxg:GridColumn FieldName="ChecklistTemplateVersionCkey" IsSmart="True" />
-                                        <dxg:GridColumn FieldName="VisibleText" IsSmart="True" />
-                                        <dxg:GridColumn FieldName="CurrentFileName" IsSmart="True" />
-                                    </dxg:GridControl.Columns>
+                                    <dxg:GridColumn x:Name="Key" FieldName="ChecklistTemplateVersionCkey" IsSmart="True" Width="15" Header="Key"/>
+                                    <dxg:GridColumn FieldName="VisibleText" IsSmart="True" Width="65" SortOrder="Ascending" SortIndex="0"/>
+                                    <dxg:GridColumn FieldName="CurrentFileName" IsSmart="True" Width="20"/>
                                     <dxg:GridControl.View>
-                                        <dxg:TreeListView x:Name="TreeListView1" ShowCheckboxes="True" />
+                                        <dxg:TreeListView x:Name="TreeListView1" ShowCheckboxes="True" AutoWidth="True" />
                                     </dxg:GridControl.View>
                                 </dxg:GridControl>
                                 <dxlc:LayoutControl
