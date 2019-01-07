@@ -1,67 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="eCC_DataSet"
-           targetNamespace="http://tempuri.org/eCC_DataSet.xsd"
-           xmlns:mstns="http://tempuri.org/eCC_DataSet.xsd"
-           xmlns="http://tempuri.org/eCC_DataSet.xsd"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
-           xmlns:msprop="urn:schemas-microsoft-com:xml-msprop"
-           attributeFormDefault="qualified"
-           elementFormDefault="qualified">
+<xs:schema id="eCC_DataSet" targetNamespace="http://tempuri.org/eCC_DataSet.xsd" xmlns:mstns="http://tempuri.org/eCC_DataSet.xsd" xmlns="http://tempuri.org/eCC_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="1"
-                  FunctionsComponentName="QueriesTableAdapter"
-                  Modifier="AutoLayout, AnsiClass, Class, Public"
-                  SchemaSerializationMode="IncludeSchema"
-                  xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <!--<Connection AppSettingsObjectName="MySettings"
-                      AppSettingsPropertyName="PERC_eCC_Con"
-                      ConnectionStringObject=""
-                      IsAppSettingsProperty="true"
-                      Modifier="Assembly"
-                      Name="PERC_eCC_Con (MySettings)"
-                      ParameterPrefix="@"
-                      PropertyReference="ApplicationSettings.SDT_XML_Main.MySettings.GlobalReference.Default.PERC_eCC_Con"
-                      Provider="System.Data.SqlClient" />-->
-          <Connection AppSettingsObjectName="MySettings"
-                      AppSettingsPropertyName="DataSourceConnectionString"
-                      ConnectionStringObject=""
-                      IsAppSettingsProperty="true"
-                      Modifier="Assembly"
-                      Name="DataSourceConnectionString (MySettings)"
-                      ParameterPrefix="@"
-                      PropertyReference="ApplicationSettings.SDT_XML_Main.MySettings.GlobalReference.Default.DataSourceConnectionString"
-                      Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DataSourceConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="DataSourceConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SDC.Gen.UI.WPF.MySettings.GlobalReference.Default.DataSourceConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component"
-                        DataAccessorModifier="AutoLayout, AnsiClass, Class, Public"
-                        DataAccessorName="ChecklistTemplateVersionsTableAdapter"
-                        GeneratorDataComponentClassName="ChecklistTemplateVersionsTableAdapter"
-                        Name="ChecklistTemplateVersions"
-                        UserDataComponentName="ChecklistTemplateVersionsTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ChecklistTemplateVersionsTableAdapter" GeneratorDataComponentClassName="ChecklistTemplateVersionsTableAdapter" Name="ChecklistTemplateVersions" UserDataComponentName="ChecklistTemplateVersionsTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DataSourceConnectionString (MySettings)"
-                        DbObjectName="PERC_eCC.dbo.ChecklistTemplateVersions"
-                        DbObjectType="Table"
-                        FillMethodModifier="Public"
-                        FillMethodName="Fill"
-                        GenerateMethods="Both"
-                        GenerateShortCommands="false"
-                        GeneratorGetMethodName="GetData"
-                        GeneratorSourceName="Fill"
-                        GetMethodModifier="Public"
-                        GetMethodName="GetData"
-                        QueryType="Rowset"
-                        ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-                        UseOptimisticConcurrency="false"
-                        UserGetMethodName="GetData"
-                        UserSourceName="Fill">
+              <DbSource ConnectionRef="DataSourceConnectionString (MySettings)" DbObjectName="PERC_eCC.dbo.ChecklistTemplateVersions" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
-                  <DbCommand CommandType="Text"
-                             ModifiedByUser="true">
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>
                       SELECT        ChecklistTemplateVersionCkey, VisibleText, CurrentFileName
                       FROM            ChecklistTemplateVersions
@@ -74,12 +24,9 @@
               </DbSource>
             </MainSource>
             <Mappings>
-              <Mapping SourceColumn="ChecklistTemplateVersionCkey"
-                       DataSetColumn="ChecklistTemplateVersionCkey" />
-              <Mapping SourceColumn="VisibleText"
-                       DataSetColumn="VisibleText" />
-              <Mapping SourceColumn="CurrentFileName"
-                       DataSetColumn="CurrentFileName" />
+              <Mapping SourceColumn="ChecklistTemplateVersionCkey" DataSetColumn="ChecklistTemplateVersionCkey" />
+              <Mapping SourceColumn="VisibleText" DataSetColumn="VisibleText" />
+              <Mapping SourceColumn="CurrentFileName" DataSetColumn="CurrentFileName" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -88,54 +35,21 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="eCC_DataSet"
-              msdata:IsDataSet="true"
-              msdata:UseCurrentLocale="true"
-              msprop:EnableTableAdapterManager="True"
-              msprop:Generator_DataSetName="eCC_DataSet"
-              msprop:Generator_UserDSName="eCC_DataSet">
+  <xs:element name="eCC_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="eCC_DataSet" msprop:Generator_UserDSName="eCC_DataSet">
     <xs:complexType>
-      <xs:choice minOccurs="0"
-                 maxOccurs="unbounded">
-        <xs:element name="ChecklistTemplateVersions"
-                    msprop:Generator_TableClassName="ChecklistTemplateVersionsDataTable"
-                    msprop:Generator_TableVarName="tableChecklistTemplateVersions"
-                    msprop:Generator_TablePropName="ChecklistTemplateVersions"
-                    msprop:Generator_RowDeletingName="ChecklistTemplateVersionsRowDeleting"
-                    msprop:Generator_RowChangingName="ChecklistTemplateVersionsRowChanging"
-                    msprop:Generator_RowEvHandlerName="ChecklistTemplateVersionsRowChangeEventHandler"
-                    msprop:Generator_RowDeletedName="ChecklistTemplateVersionsRowDeleted"
-                    msprop:Generator_UserTableName="ChecklistTemplateVersions"
-                    msprop:Generator_RowChangedName="ChecklistTemplateVersionsRowChanged"
-                    msprop:Generator_RowEvArgName="ChecklistTemplateVersionsRowChangeEvent"
-                    msprop:Generator_RowClassName="ChecklistTemplateVersionsRow">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ChecklistTemplateVersions" msprop:Generator_TableClassName="ChecklistTemplateVersionsDataTable" msprop:Generator_TableVarName="tableChecklistTemplateVersions" msprop:Generator_RowChangedName="ChecklistTemplateVersionsRowChanged" msprop:Generator_TablePropName="ChecklistTemplateVersions" msprop:Generator_RowDeletingName="ChecklistTemplateVersionsRowDeleting" msprop:Generator_RowChangingName="ChecklistTemplateVersionsRowChanging" msprop:Generator_RowEvHandlerName="ChecklistTemplateVersionsRowChangeEventHandler" msprop:Generator_RowDeletedName="ChecklistTemplateVersionsRowDeleted" msprop:Generator_RowClassName="ChecklistTemplateVersionsRow" msprop:Generator_UserTableName="ChecklistTemplateVersions" msprop:Generator_RowEvArgName="ChecklistTemplateVersionsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ChecklistTemplateVersionCkey"
-                          msdata:ReadOnly="true"
-                          msprop:Generator_ColumnVarNameInTable="columnChecklistTemplateVersionCkey"
-                          msprop:Generator_ColumnPropNameInRow="ChecklistTemplateVersionCkey"
-                          msprop:Generator_ColumnPropNameInTable="ChecklistTemplateVersionCkeyColumn"
-                          msprop:Generator_UserColumnName="ChecklistTemplateVersionCkey"
-                          type="xs:decimal"
-                          minOccurs="0" />
-              <xs:element name="VisibleText"
-                          msprop:Generator_ColumnVarNameInTable="columnVisibleText"
-                          msprop:Generator_ColumnPropNameInRow="VisibleText"
-                          msprop:Generator_ColumnPropNameInTable="VisibleTextColumn"
-                          msprop:Generator_UserColumnName="VisibleText">
+              <xs:element name="ChecklistTemplateVersionCkey" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnChecklistTemplateVersionCkey" msprop:Generator_ColumnPropNameInRow="ChecklistTemplateVersionCkey" msprop:Generator_ColumnPropNameInTable="ChecklistTemplateVersionCkeyColumn" msprop:Generator_UserColumnName="ChecklistTemplateVersionCkey" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VisibleText" msprop:Generator_ColumnVarNameInTable="columnVisibleText" msprop:Generator_ColumnPropNameInRow="VisibleText" msprop:Generator_ColumnPropNameInTable="VisibleTextColumn" msprop:Generator_UserColumnName="VisibleText">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="4000" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="CurrentFileName"
-                          msprop:Generator_ColumnVarNameInTable="columnCurrentFileName"
-                          msprop:Generator_ColumnPropNameInRow="CurrentFileName"
-                          msprop:Generator_ColumnPropNameInTable="CurrentFileNameColumn"
-                          msprop:Generator_UserColumnName="CurrentFileName"
-                          minOccurs="0">
+              <xs:element name="CurrentFileName" msprop:Generator_ColumnVarNameInTable="columnCurrentFileName" msprop:Generator_ColumnPropNameInRow="CurrentFileName" msprop:Generator_ColumnPropNameInTable="CurrentFileNameColumn" msprop:Generator_UserColumnName="CurrentFileName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="80" />

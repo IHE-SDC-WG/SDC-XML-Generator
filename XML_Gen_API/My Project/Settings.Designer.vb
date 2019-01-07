@@ -73,9 +73,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.XML_Gen_API.My.MySettings
+        Friend ReadOnly Property Settings() As Global.SDC.Gen.API.My.MySettings
             Get
-                Return Global.XML_Gen_API.My.MySettings.Default
+                Return Global.SDC.Gen.API.My.MySettings.Default
             End Get
         End Property
     End Module

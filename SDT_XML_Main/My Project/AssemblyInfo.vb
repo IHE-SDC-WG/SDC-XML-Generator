@@ -14,7 +14,7 @@ Imports System.Windows
 <Assembly: AssemblyTitle("SDC XML Generator")>
 <Assembly: AssemblyDescription("Generate eCC templates in IHE SDC format")>
 <Assembly: AssemblyCompany("College of American Pathologists")>
-<Assembly: AssemblyProduct("SDC_XML_Generator")>
+<Assembly: AssemblyProduct("SDC_Gen_UI_WPF")>
 <Assembly: AssemblyCopyright("Copyright @ College of American Pathologists 2013-19")>
 <Assembly: AssemblyTrademark("")> 
 <Assembly: ComVisible(False)> 

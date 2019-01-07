@@ -11,15 +11,15 @@
     xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
     xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
     xmlns:dxnb="http://schemas.devexpress.com/winfx/2008/xaml/navbar"
-    xmlns:eCC_DataSetTableAdapters="clr-namespace:SDT_XML_Main.eCC_DataSetTableAdapters"
-    xmlns:local="clr-namespace:SDT_XML_Main"
+    xmlns:eCC_DataSetTableAdapters="clr-namespace:SDC.Gen.UI.WPF.eCC_DataSetTableAdapters"
+    xmlns:local="clr-namespace:SDC.Gen.UI.WPF"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title=" SDC Generator 2019.01.07"
     Width="974"
     Height="700"
     dx:ThemeManager.ThemeName="DeepBlue"
     BorderEffect="Default"
-    Icon="pack://application:,,,/SDT_XML_Main;component/New.ico"
+    Icon="pack://application:,,,/SDC_Gen_UI;component/New.ico"
     IsAeroMode="True"
     SnapsToDevicePixels="True"
     UseLayoutRounding="True"
@@ -218,11 +218,27 @@
                                     ItemsSource="{Binding Data, Source={StaticResource TypedSimpleSource}}"
                                     SelectionMode="Cell"
                                     ShowBorder="False">
-                                    <dxg:GridColumn x:Name="Key" FieldName="ChecklistTemplateVersionCkey" IsSmart="True" Width="15" Header="Key"/>
-                                    <dxg:GridColumn FieldName="VisibleText" IsSmart="True" Width="65" SortOrder="Ascending" SortIndex="0"/>
-                                    <dxg:GridColumn FieldName="CurrentFileName" IsSmart="True" Width="20"/>
+                                    <dxg:GridColumn
+                                        x:Name="Key"
+                                        Width="15"
+                                        FieldName="ChecklistTemplateVersionCkey"
+                                        Header="Key"
+                                        IsSmart="True" />
+                                    <dxg:GridColumn
+                                        Width="65"
+                                        FieldName="VisibleText"
+                                        IsSmart="True"
+                                        SortIndex="0"
+                                        SortOrder="Ascending" />
+                                    <dxg:GridColumn
+                                        Width="20"
+                                        FieldName="CurrentFileName"
+                                        IsSmart="True" />
                                     <dxg:GridControl.View>
-                                        <dxg:TreeListView x:Name="TreeListView1" ShowCheckboxes="True" AutoWidth="True" />
+                                        <dxg:TreeListView
+                                            x:Name="TreeListView1"
+                                            AutoWidth="True"
+                                            ShowCheckboxes="True" />
                                     </dxg:GridControl.View>
                                 </dxg:GridControl>
                                 <dxlc:LayoutControl
