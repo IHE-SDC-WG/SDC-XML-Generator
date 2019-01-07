@@ -34,7 +34,7 @@ namespace MSTests
 
                 key = (string)dr.ItemArray[0];
                 val = (string)dr.ItemArray[1] + "_SDC.xml";
-                
+
                 templatesMap.Add(key, val);
                 Debug.Print(templatesMap[key].ToString());
 
@@ -81,32 +81,53 @@ namespace MSTests
             //stb = new SDCTreeBuilderEcc("349.1000043", fdd, "srtemplate.xslt");  //vendor testing template
             //stb = new SDCTreeBuilderEcc("117.1000043", fdd, "srtemplate.xslt");   //Endometrium Inv Bx
             //stb = new SDCTreeBuilderEcc("359.1000043", fdd, "srtemplate.xslt");   //Staging
-            stb = new SDCTreeBuilderEcc("129.1000043", fdd, "srtemplate.xslt");   //Adrenal
+            //stb = new SDCTreeBuilderEcc("129.1000043", fdd, "srtemplate.xslt");   //Adrenal
+
+            var keys = new string[] {
+                "360.100004300", "211.100004300", "362.100004300",
+                "189.100004300", "129.100004300", "175.100004300",
+                "128.100004300", "190.100004300", "171.100004300",
+                "172.100004300", "202.100004300","180.100004300",
+                "373.100004300","354.100004300", "372.100004300",
+                "209.100004300", "161.100004300", "369.100004300",
+                "212.100004300","363.100004300","147.100004300",
+                "364.100004300", "153.100004300","365.100004300",
+                "164.100004300","188.100004300","366.100004300"
+            };
+
+            String formDesignXml;
+            foreach (string key in keys)
+            {
+
+                stb = new SDCTreeBuilderEcc(key, fdd, "sdctemplate.xslt");   //Adrenal
 
 
-            var filename = stb.FormDesign.filename;  
+                var filename = stb.FormDesign.filename;
+
+
+                formDesignXml = stb.FormDesign.Serialize();
+                string orig = "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
+                string fix = orig + "\r\n" + "<?xml-stylesheet type=\"text/xsl\" href=\"sdctemplate.xslt\"?>";
+                formDesignXml = formDesignXml.Replace(orig, fix);
+                System.IO.File.WriteAllText("C:\\SDC\\" + filename, formDesignXml, System.Text.Encoding.UTF8);
+
+                Debug.WriteLine(System.DateTime.Now);
+                Debug.WriteLine(formDesignXml);
+
+                //Console.Write(stb.FormDesign.Serialize());
+            }
+                return;
+
+                //alternate approach
+                var ns = new XmlSerializerNamespaces();
+                ns.Add("", @"http://healthIT.gov/sdc");
+
+
+                var writer = new System.IO.StringWriter();
+                ser.Serialize(writer, stb.FormDesign, ns);
+                formDesignXml = writer.ToString();
+                Debug.Print(formDesignXml);
             
-
-            String formDesignXml = stb.FormDesign.Serialize();
-            string orig = "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
-            string fix = orig + "\r\n" + "<?xml-stylesheet type=\"text/xsl\" href=\"sdctemplate.xslt\"?>";
-            formDesignXml = formDesignXml.Replace(orig, fix);
-            System.IO.File.WriteAllText("C:\\SDC\\" + filename, formDesignXml, System.Text.Encoding.UTF8);
-
-            Debug.WriteLine(System.DateTime.Now);
-            Debug.WriteLine(formDesignXml);
-
-            //Console.Write(stb.FormDesign.Serialize());
-            return;
-            //alternate approach
-            var ns = new XmlSerializerNamespaces();
-            ns.Add("", @"http://healthIT.gov/sdc");
-
-
-            var writer = new System.IO.StringWriter();
-            ser.Serialize(writer, stb.FormDesign, ns);
-            formDesignXml = writer.ToString();
-            Debug.Print(formDesignXml);
 
         }
 

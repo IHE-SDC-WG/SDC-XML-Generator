@@ -52,7 +52,7 @@ Partial Public Class MainWindow
                 templatesMap.Add(dataRowView(0).ToString, dataRowView(2).ToString) 'cols 0 & 3
             Next
 
-            Dim Gen As New XML_Gen_API.GenXDT(filePath, My.Settings.XslFileName)
+            Dim Gen As New SDC.Gen.API.GenXDT(filePath, My.Settings.XslFileName)
             Gen.MakeXDTsFromTemplateMap(templatesMap, filePath, CBool(chkCreateHTML.IsChecked))
         Else
             Beep()
@@ -80,7 +80,7 @@ Partial Public Class MainWindow
 
             key = (String.Format("{0}.{1}", key, ns))
             'TODO: Need to cache this generator, since it takes time to create it new each time.
-            Dim Gen As New XML_Gen_API.GenXDT(filePath, My.Settings.XslFileName)
+            Dim Gen As New SDC.Gen.API.GenXDT(filePath, My.Settings.XslFileName)
             Gen.MakeOneXDT(key, fileName, filePath, showBrowser, browserPath, outputHTML)
         Else
             Beep()
@@ -113,7 +113,9 @@ Partial Public Class MainWindow
     End Sub
 
     Private Sub txtID_KeyDown(sender As Object, e As KeyEventArgs) Handles txtID.KeyDown
-        If e.Key = Key.Enter Then
+
+
+        If e.Key = Input.Key.Enter Then
             btnGenerate_Click(sender, e)
             txtID.SelectAll()
         End If
@@ -130,7 +132,15 @@ Partial Public Class MainWindow
 
             Dim key = Split(cellText, ".", 2)
             txtID.Text = key(0)
+            'txtID.UpdateLayout()
             txtNamespace.Text = key(1)
+
+            'Conside inmplementing a DoEvents on main UI thread here, to update the UI
+            'https://www.devexpress.com/Support/Center/Question/Details/Q322288/gridcontrol-how-to-force-cell-errors-redraw-idxdataerrorinfo
+            'https://stackoverflow.com/questions/4502037/where-is-the-application-doevents-in-wpf
+            'http://geekswithblogs.net/NewThingsILearned/archive/2008/08/25/refresh--update-wpf-controls.aspx
+            'https://www.meziantou.net/2011/06/22/refresh-a-wpf-control
+
             btnGenerate_Click(sender, e)
             gridControl1.Cursor = Cursors.Arrow
         ElseIf col.VisibleIndex = 2 Then
@@ -146,6 +156,14 @@ Partial Public Class MainWindow
     Protected Overrides Sub Finalize()
         MyBase.Finalize()
         TEinterop.Dispose()
+    End Sub
+
+    Private Sub gridControl1_GotFocus(sender As Object, e As RoutedEventArgs) Handles gridControl1.GotFocus
+        Dim cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
+        Dim CTVkey = Split(cellText, ".", 2)
+        txtID.Text = CTVkey(0)
+        Debug.WriteLine(sender.ToString, e.ToString)
+
     End Sub
 End Class
 

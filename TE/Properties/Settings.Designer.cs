@@ -25,7 +25,7 @@ namespace TE.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\rmoldwi\\Desktop\\TE\\eCC_TE_2.9.2.adp")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\%USERNAME%\\Desktop\\TE\\eCC_TE_2.30.adp")]
         public string AccessPath {
             get {
                 return ((string)(this["AccessPath"]));

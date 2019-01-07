@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SDT_XML_Main</RootNamespace>
-    <AssemblyName>SDT_XML_Main</AssemblyName>
+    <RootNamespace>SDC.Gen.UI.WPF</RootNamespace>
+    <AssemblyName>SDC_Gen_UI_WPF</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -149,6 +149,7 @@
     <Reference Include="DevExpress.Xpf.Grid.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpf.Layout.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpf.NavBar.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Themes.VS2010.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System" />
@@ -286,9 +287,9 @@
       <Project>{68f2743e-a7ae-40bb-9113-7844e53ddd90}</Project>
       <Name>TE</Name>
     </ProjectReference>
-    <ProjectReference Include="..\XML_Gen_API\XML_Gen_API.vbproj">
+    <ProjectReference Include="..\XML_Gen_API\SDC.Gen.API.vbproj">
       <Project>{4c65261d-8e27-4b97-a365-f67c1287e20c}</Project>
-      <Name>XML_Gen_API</Name>
+      <Name>SDC.Gen.API</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

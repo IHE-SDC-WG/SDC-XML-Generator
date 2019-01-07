@@ -55,42 +55,6 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("C:\tmp\eCC")>  _
-    Public Property FilePath() As String
-        Get
-            Return CType(Me("FilePath"),String)
-        End Get
-        Set
-            Me("FilePath") = value
-        End Set
-    End Property
-    
-    <Global.System.Configuration.UserScopedSettingAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("srtemplate.xslt")>  _
-    Public Property XslFileName() As String
-        Get
-            Return CType(Me("XslFileName"),String)
-        End Get
-        Set
-            Me("XslFileName") = value
-        End Set
-    End Property
-    
-    <Global.System.Configuration.UserScopedSettingAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("C:\Users\rmoldwi\Desktop\TE\eCC_TE_2.9.2.adp")>  _
-    Public Property TEpath() As String
-        Get
-            Return CType(Me("TEpath"),String)
-        End Get
-        Set
-            Me("TEpath") = value
-        End Set
-    End Property
-    
-    <Global.System.Configuration.UserScopedSettingAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("C:\Program Files (x86)\Mozilla Firefox\firefox.exe")>  _
     Public Property BrowserPath64() As String
         Get
@@ -113,18 +77,6 @@ Partial Friend NotInheritable Class MySettings
         End Set
     End Property
     
-    <Global.System.Configuration.UserScopedSettingAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("c:\tmp\SDC\eCC")>  _
-    Public Property SDCfilePath() As String
-        Get
-            Return CType(Me("SDCfilePath"),String)
-        End Get
-        Set
-            Me("SDCfilePath") = value
-        End Set
-    End Property
-    
     <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
@@ -137,13 +89,61 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("Data Source=PappeCC;Initial Catalog=PERC_eCC;Integrated Security=True")>  _
     Public Property DataSourceConnectionString() As String
         Get
             Return CType(Me("DataSourceConnectionString"),String)
         End Get
         Set
             Me("DataSourceConnectionString") = value
+        End Set
+    End Property
+    
+    <Global.System.Configuration.UserScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("C:\SDC")>  _
+    Public Property FilePath() As String
+        Get
+            Return CType(Me("FilePath"),String)
+        End Get
+        Set
+            Me("FilePath") = value
+        End Set
+    End Property
+    
+    <Global.System.Configuration.UserScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("sdctemplate.xslt")>  _
+    Public Property XslFileName() As String
+        Get
+            Return CType(Me("XslFileName"),String)
+        End Get
+        Set
+            Me("XslFileName") = value
+        End Set
+    End Property
+    
+    <Global.System.Configuration.UserScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("C:\Users\%USERNAME%\Desktop\TE\eCC_TE_2.30.adp")>  _
+    Public Property TEpath() As String
+        Get
+            Return CType(Me("TEpath"),String)
+        End Get
+        Set
+            Me("TEpath") = value
+        End Set
+    End Property
+    
+    <Global.System.Configuration.UserScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("c:\SDC")>  _
+    Public Property SDCfilePath() As String
+        Get
+            Return CType(Me("SDCfilePath"),String)
+        End Get
+        Set
+            Me("SDCfilePath") = value
         End Set
     End Property
 End Class
@@ -156,9 +156,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.SDT_XML_Main.MySettings
+        Friend ReadOnly Property Settings() As Global.SDC.Gen.UI.WPF.MySettings
             Get
-                Return Global.SDT_XML_Main.MySettings.Default
+                Return Global.SDC.Gen.UI.WPF.MySettings.Default
             End Get
         End Property
     End Module

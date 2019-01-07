@@ -60,6 +60,7 @@ namespace TE
             {
                 _oAccess = new Microsoft.Office.Interop.Access.Application();
                 _oAccess.Visible = false;
+                AccessPath = AccessPath.Replace("%USERNAME%", System.Environment.UserName);
                 _oAccess.OpenCurrentDatabase(AccessPath);
             }
 
