@@ -26,7 +26,7 @@ namespace TE
         public TEinterop(string accessPath)
         {
             _AccessPath = accessPath;
-            
+
             if (accessPath == "")
             {
                 Properties.Settings.Default.Reload(); //probably does nothing
@@ -58,10 +58,23 @@ namespace TE
         {
             if (_oAccess == null)
             {
-                _oAccess = new Microsoft.Office.Interop.Access.Application();
-                _oAccess.Visible = false;
-                AccessPath = AccessPath.Replace("%USERNAME%", System.Environment.UserName);
-                _oAccess.OpenCurrentDatabase(AccessPath);
+                try
+                {
+                    _oAccess = new Microsoft.Office.Interop.Access.Application();
+                    _oAccess.Visible = false;
+
+                    string curPath = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+                    AccessPath = $"{curPath}\\{AccessPath}";
+
+                    //AccessPath = AccessPath.Replace("%USERNAME%", System.Environment.UserName);
+                    _oAccess.OpenCurrentDatabase(AccessPath);
+                }
+                catch
+                {
+                    if (!(_oAccess is null)) _oAccess.Visible = true;
+                    MessageBox.Show($"LookupItemByCKey: There was a problem (0) loading the TE or Access at Path: {AccessPath}.  " +
+                        $"You may need to close Access manually.");
+                }
             }
 
             try
@@ -73,9 +86,9 @@ namespace TE
                     {
                         _oAccess.Visible = true;
                         BringToFront();
-                        RunAccessFunction("InvokeLookup", TemplateCKey, ItemCKey);
-                        //RunAccessFunction("cboTemplateRequery", TemplateCKey);
-                    }
+        RunAccessFunction("InvokeLookup", TemplateCKey, ItemCKey);
+        //RunAccessFunction("cboTemplateRequery", TemplateCKey);
+    }
                     catch (Exception ex)
                     {
                         //if exception occurrs here most likely Access instance from this application was closed by the user
@@ -103,80 +116,80 @@ namespace TE
         }
 
         private static void RunAccessFunction(string functionname, string Parameter1, string Parameter2 = "")
-        {
-            object oMissing = System.Reflection.Missing.Value;
-            try
-            {
-                _oAccess.Run(functionname, Parameter1, Parameter2, ref oMissing, ref oMissing,
-                           ref oMissing, ref oMissing, ref oMissing, ref oMissing,
-                           ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing
-                           , ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing
-                           , ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing
-                           , ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing
-                           , ref oMissing, ref oMissing);
-            }
-            catch (Exception ex)
-            {
-                //throw new Exception("Error running function in Access in RunAccessFunction: " + ex.Message);
-                MessageBox.Show("RunAccessFunction: There was a problem quitting the TE: " + ex);
-                _oAccess.Application.Quit(Microsoft.Office.Interop.Access.AcQuitOption.acQuitSaveNone);
-                _oAccess = null;
-            }
-        }
+{
+    object oMissing = System.Reflection.Missing.Value;
+    try
+    {
+        _oAccess.Run(functionname, Parameter1, Parameter2, ref oMissing, ref oMissing,
+                   ref oMissing, ref oMissing, ref oMissing, ref oMissing,
+                   ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing
+                   , ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing
+                   , ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing
+                   , ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing
+                   , ref oMissing, ref oMissing);
+    }
+    catch (Exception ex)
+    {
+        //throw new Exception("Error running function in Access in RunAccessFunction: " + ex.Message);
+        MessageBox.Show("RunAccessFunction: There was a problem quitting the TE: " + ex);
+        _oAccess.Application.Quit(Microsoft.Office.Interop.Access.AcQuitOption.acQuitSaveNone);
+        _oAccess = null;
+    }
+}
 
-        public static void Close()
-        {
-            if (_oAccess != null)
-            {
-                _oAccess.CloseCurrentDatabase();
-                _oAccess.Quit();
-            }
-        }
+public static void Close()
+{
+    if (_oAccess != null)
+    {
+        _oAccess.CloseCurrentDatabase();
+        _oAccess.Quit();
+    }
+}
 
-        public static void Hide()
-        {
-            if (_oAccess != null)
-                _oAccess.Visible = false;
-        }
+public static void Hide()
+{
+    if (_oAccess != null)
+        _oAccess.Visible = false;
+}
 
-        public static void Show()
-        {
-            if (_oAccess != null)
-                _oAccess.Visible = true;
-        }
+public static void Show()
+{
+    if (_oAccess != null)
+        _oAccess.Visible = true;
+}
 
-        public static void BringToFront()
+public static void BringToFront()
+{
+    System.Diagnostics.Process[] bProcess = System.Diagnostics.Process.GetProcessesByName("MSACCESS");
+    int handle = _oAccess.hWndAccessApp();
+    foreach (System.Diagnostics.Process p in bProcess)
+    {
+        IntPtr hWnd = p.MainWindowHandle;
+        if (hWnd.ToInt32() == handle)
         {
-            System.Diagnostics.Process[] bProcess = System.Diagnostics.Process.GetProcessesByName("MSACCESS");
-            int handle = _oAccess.hWndAccessApp();
-            foreach (System.Diagnostics.Process p in bProcess)
+            if (IsIconic(hWnd))
             {
-                IntPtr hWnd = p.MainWindowHandle;
-                if (hWnd.ToInt32() == handle)
-                {
-                    if (IsIconic(hWnd))
-                    {
-                        ShowWindowAsync(hWnd, (int)ShowWindowEnum.Restore);
-                    }
-                    SetForegroundWindow(hWnd);
-                }
+                ShowWindowAsync(hWnd, (int)ShowWindowEnum.Restore);
             }
+            SetForegroundWindow(hWnd);
         }
+    }
+}
 
-        public void Dispose()
+public void Dispose()
+{
+    if (_oAccess != null)
+    {
+        try
         {
-            if (_oAccess != null)
-            {
-                try
-            {
-                _oAccess.Application.Quit(Microsoft.Office.Interop.Access.AcQuitOption.acQuitSaveNone);
-                _oAccess.Quit();// TODO: does this force unload from RAM?
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Dispose: There was a problem quitting the TE: " + ex.InnerException);
-            }
+            _oAccess.Application.Quit(Microsoft.Office.Interop.Access.AcQuitOption.acQuitSaveNone);
+            _oAccess.Quit();// TODO: does this force unload from RAM?
         }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Dispose: There was a problem quitting the TE: " + ex.InnerException);
         }
+    }
+}
     }
 }
