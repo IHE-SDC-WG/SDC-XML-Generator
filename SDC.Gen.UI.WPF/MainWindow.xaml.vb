@@ -26,6 +26,7 @@ Partial Public Class MainWindow
 
     Private BrowserPath As String
     Private TEinterop As TE.TEinterop
+    Private FilePath As String
 
 
     Public Sub New()
@@ -33,16 +34,31 @@ Partial Public Class MainWindow
         InitializeComponent()
         DataContext = New DataSource()
         TEinterop = New TE.TEinterop(My.Settings.TEpath)
+
+        FilePath = txtFilePath.Text.Trim
+        If filePath = "" Then
+            filePath = My.Settings.FilePath  'filePath, when set here,  will override settings files from other components
+            If Not My.Computer.FileSystem.DirectoryExists(filePath) Then
+
+                Try
+                    My.Computer.FileSystem.CreateDirectory(filePath)
+                Catch ex As Exception
+                    MsgBox("Unable to create the file path: " + FilePath & vbCrLf & ex.Message + vbCrLf + ex.Data.ToString(), MsgBoxStyle.Exclamation, "SDC Folder was not created")
+                End Try
+            End If
+        End If
     End Sub
 
     Private Sub btnGenAll_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles btnGenAllChecked.Click
-        Dim filePath = txtFilePath.Text.Trim
-        If filePath = "" Then
-            filePath = My.Settings.FilePath  'filePath, when set here,  will override settings files from other components
-        End If
+
+        Dim cur = Application.Current.MainWindow.Cursor
+
 
         If FileIO.FileSystem.DirectoryExists(filePath) Then
             Dim templatesMap As New Dictionary(Of String, String)
+
+            Application.Current.MainWindow.Cursor = Cursors.Wait
+
 
             For Each node In Me.TreeListView1.Nodes.Where(Function(n) CBool(n.IsChecked))
 
@@ -56,8 +72,10 @@ Partial Public Class MainWindow
             Gen.MakeXDTsFromTemplateMap(templatesMap, filePath, CBool(chkCreateHTML.IsChecked))
         Else
             Beep()
-            MsgBox("You must select templates and provide a valid file path to save teh XML file(s)", MsgBoxStyle.Exclamation, "Invalid Entry")
+            MsgBox("The file path (for saving SDC XML files) does not exist: " & FilePath, MsgBoxStyle.Exclamation, "Folder does not exist")
         End If
+
+        Application.Current.MainWindow.Cursor = cur
 
     End Sub
 
@@ -70,21 +88,19 @@ Partial Public Class MainWindow
         Dim browserPath = txtBrowserPath.Text.Trim
         Dim ns As String = txtNamespace.Text.Trim
 
-        Dim filePath = txtFilePath.Text.Trim
-        If filePath = "" Then
-            filePath = My.Settings.FilePath  'filePath, when set here,  will override settings files from other components
-        End If
-
-        If key > "" AndAlso ns > "" AndAlso
-            FileIO.FileSystem.DirectoryExists(filePath) Then
-
-            key = (String.Format("{0}.{1}", key, ns))
-            'TODO: Need to cache this generator, since it takes time to create it new each time.
-            Dim Gen As New SDC.Gen.API.GenXDT(filePath, My.Settings.XslFileName)
-            Gen.MakeOneXDT(key, fileName, filePath, showBrowser, browserPath, outputHTML)
+        If FileIO.FileSystem.DirectoryExists(FilePath) Then
+            If key > "" AndAlso ns > "" Then
+                key = (String.Format("{0}.{1}", key, ns))
+                'TODO: Need to cache this generator, since it takes time to create it new each time.
+                Dim Gen As New SDC.Gen.API.GenXDT(FilePath, My.Settings.XslFileName)
+                Gen.MakeOneXDT(key, fileName, FilePath, showBrowser, browserPath, outputHTML)
+            Else
+                Beep()
+                MsgBox("You must enter valid values for template Key (ID), Namespace, and Filepath", MsgBoxStyle.Exclamation, "Invalid Entry")
+            End If
         Else
             Beep()
-            MsgBox("You must enter valid values for template Key (ID), Namespace, and Filepath", MsgBoxStyle.Exclamation, "Invalid Entry")
+            MsgBox("The file path (for saving SDC XML files) does not exist: " & FilePath, MsgBoxStyle.Exclamation, "Folder does not exist")
         End If
 
     End Sub

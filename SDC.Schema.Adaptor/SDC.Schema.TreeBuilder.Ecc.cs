@@ -69,7 +69,7 @@ namespace SDC
                 string releaseVersionSuffix = dr["ReleaseVersionSuffix"].ToString();  //e.g., CTP1, RC2, REL; UNK if a value is missing
                 string title = dr["OfficialName"].ToString();
                 string CTVcKey = dr["ChecklistTemplateVersionCkey"].ToString();
-                string lineage = shortName + "." + CTVcKey.Replace(".100004300", "");//remove the eCC namespace suffix ".1000043"
+                string lineage = dr["Lineage"].ToString() + "." + CTVcKey.Replace(".100004300", ""); //remove the eCC namespace suffix ".100004300"
                 string version = (dr["VersionID"].ToString()).Replace(".1000043", "") + "." + releaseVersionSuffix;//remove the eCC namespace suffix ".1000043"
                 string id = lineage + "_" + version + "_sdcFDF";  //FDF = "Form Design File".
                 bool required = dr["EffectiveDate"].ToString() != ""; //ToDo: It would be better to have a database field for required.
@@ -86,12 +86,13 @@ namespace SDC
 
 
                 //Some basic fd properties
-                fd.baseURI = "cap.org";  //uses SDC Schema version (3.1) is “SDC.3.1”
+                fd.baseURI = "www.cap.org/eCC";  //uses SDC Schema version (3.1) is “SDC.3.1”
                 fd.lineage = lineage;
                 fd.version = version;
                 fd.fullURI = $"_baseURI={fd.baseURI}&_lineage={lineage}&_version={version}&_docType=sdcFDF";
-                fd.filename = id + ".xml";  // "SDC.3.11_FDF_" + shortName + "_" + fd.ID; //format like: SDC.3.11_FDF_Adrenal.Res_129.3.001.001.CTP1
+                fd.filename = id + ".xml";  // "SDC.3.11_FDF_" + lineage + "_" + fd.ID; //format like: SDC.3.11_FDF_Adrenal.Res_129.3.001.001.CTP1
                 fd.formTitle = title;
+                
 
 
                 //+PROPERTIES
@@ -109,6 +110,7 @@ namespace SDC
                 CreateStaticProperty(fd, dr["Category"].ToString(), "CAPeCC_meta", string.Empty, "Category", false, string.Empty, null, string.Empty, "Category"); //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["OfficialName"].ToString(), "CAPeCC_meta", string.Empty, "OfficialName", false, string.Empty, null, string.Empty, "OfficialName");  //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["CAP_ProtocolName"].ToString(), "CAPeCC_meta", string.Empty, "CAP_ProtocolName", false, string.Empty, null, string.Empty, "CAP_ProtocolName");  //, "CAPeCC_CAP_Protocol");
+                CreateStaticProperty(fd, shortName, "CAPeCC_meta", string.Empty, "CAP_ProtocolShortName", false, string.Empty, null, string.Empty, "CAP_ProtocolShortName"); //, "CAPeCC_Data_Sources");
                 CreateStaticProperty(fd, dr["CAP_ProtocolVersion"].ToString(), "CAPeCC_meta", string.Empty, "CAP_ProtocolVersion", false, string.Empty, null, string.Empty, "CAP_ProtocolVersion");  //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, CTVcKey, "CAPeCC_meta", string.Empty, "TemplateID", false, string.Empty, null, string.Empty, "TemplateID"); 
 
@@ -118,11 +120,15 @@ namespace SDC
                 CreateStaticProperty(fd, required.ToString().ToLower(), "CAPeCC_meta", string.Empty, "CAP_Required", false, string.Empty, null, string.Empty, "CAP_Required");  //, "CAPeCC_CAP_Protocol");
 
                 //Dates
-                CreateStaticProperty(fd, MapDBNullToDateTime(dr["EffectiveDate"]).ToString(), "CAPeCC_meta dt.dateTime", string.Empty, "AccreditationDate", false, string.Empty, null, string.Empty, "AccreditationDate"); //, "CAPeCC_Dates");
-                CreateStaticProperty(fd, MapDBNullToDateTime(dr["WebPostingDate"]).ToString(), "CAPeCC_meta dt.dateTime", string.Empty, "WebPostingDate", false, string.Empty, null, string.Empty, "WebPostingDate"); //, "CAPeCC_Dates");
+                DateTime.TryParse(dr["EffectiveDate"].ToString(), out DateTime ed);
+                if (ed != default(DateTime))
+                    CreateStaticProperty(fd, ed.ToString("M/d/yyyy"), "CAPeCC_meta dt.dateTime", string.Empty, "AccreditationDate", false, string.Empty, null, string.Empty, "AccreditationDate"); //, "CAPeCC_Dates");
+
+                DateTime.TryParse(dr["WebPostingDate"].ToString(), out DateTime wpd);
+                if (wpd != default(DateTime))
+                    CreateStaticProperty(fd, wpd.ToString("M/d/yyyy"), "CAPeCC_meta dt.dateTime", string.Empty, "WebPostingDate", false, string.Empty, null, string.Empty, "WebPostingDate"); //, "CAPeCC_Dates");
 
                 //CAPeCC_Data_Sources
-                CreateStaticProperty(fd, shortName, "CAPeCC_meta", string.Empty, "ShortName", false, string.Empty, null, string.Empty, "ShortName"); //, "CAPeCC_Data_Sources");
                 CreateStaticProperty(fd, releaseVersionSuffix, "CAPeCC_meta", string.Empty, "ReleaseStatus", false, string.Empty, null, string.Empty, "ApprovalStatus"); //, "CAPeCC_Data_Sources");
                 if (!string.IsNullOrEmpty(AJCCversion)) CreateStaticProperty(fd, AJCCversion, "CAPeCC_meta", string.Empty, "AJCC_Version", false, string.Empty, null, string.Empty, "AJCC_Version"); //, "CAPeCC_Data_Sources");
                 if (!string.IsNullOrEmpty(FIGOversion)) CreateStaticProperty(fd, FIGOversion, "CAPeCC_meta", string.Empty, "FIGO_Version", false, string.Empty, null, string.Empty, "FIGO_Version"); //, "CAPeCC_Data_Sources");
@@ -242,9 +248,10 @@ namespace SDC
             {
                 shortID = TruncateID((IdentifiedExtensionType)bt);
                 prefix = bt.ElementPrefix;
-                bt.BaseName = ((string)drFormDesign["ShortName"]).Replace(" ", "_");
-                shortName = bt.BaseName;
-                if (shortName.Length > 0) shortName += "_";  //I don't like 2 underscores next to each other.
+                //TODO: shortName is commented out until we have a chance to QA the names
+                //bt.BaseName = ((string)drFormDesign["ShortName"]).Replace(" ", "_");
+                //shortName = bt.BaseName;
+                //if (shortName.Length > 0) shortName += "_";  //I don't like 2 underscores next to each other.
                 if (prefix.Length > 0) prefix += "_";
                 return prefix + shortName + shortID;
 
@@ -1691,6 +1698,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.propName = "altText";
             p.val = drFormDesign["LongText"].ToString();
+            p.BaseName = "altTxt";
             FillProperty(p);
             return p;
         }
@@ -1700,6 +1708,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "description";
             p.val = drFormDesign["Description"].ToString();
+            p.BaseName = "desc";
             FillProperty(p);
             return p;
         }
@@ -1719,6 +1728,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "popUpText";
             p.val = drFormDesign["PopUpText"].ToString();
+            p.BaseName = "popUp";
             FillProperty(p);
             return p;
         }
@@ -1740,6 +1750,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "reportTextShort";
             p.val = drFormDesign["ShortText"].ToString();
+            p.BaseName = "shortTxt";
             FillProperty(p);
             return p;
         }
@@ -1749,6 +1760,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "spanishText";
             p.val = drFormDesign["panishText"].ToString();
+            p.BaseName = "spanTxt";
             FillProperty(p);
             return p;
         }
@@ -1758,6 +1770,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "tooltip";
             p.val = drFormDesign["ControlTip"].ToString();
+            p.BaseName = "tooltip";
             FillProperty(p);
             return p;
         }

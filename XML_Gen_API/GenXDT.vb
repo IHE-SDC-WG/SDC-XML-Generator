@@ -41,16 +41,18 @@ Public Class GenXDT
         'TemplateDataMapper = New Capx.Apps.ChecklistTemplateGenerator.SrTemplateDataMapper
         If RootFilePath = "" Then
             RootFilePath = My.MySettings.Default.FilePath
-            If RootFilePath = "" Then RootFilePath = "C:\tmp\"
+            If RootFilePath = "" Then RootFilePath = "C:\"
             If RootFilePath = "" OrElse Not FileIO.FileSystem.DirectoryExists(RootFilePath) Then
                 Beep()
-                MsgBox("The File Path is not valid. Enter a valid File Path.", MsgBoxStyle.OkOnly, "Error!")
+                MsgBox("The File Path is not valid. Enter a valid File Path in the File Path field (right panel).", MsgBoxStyle.OkOnly, "Error!")
+                Return
             End If
         End If
         Me.FilePath = RootFilePath
         DefaultXslFileName = defaultFileNameXSL
 
 
+#Region "junk"
         ''TODO: This initialization should be done in an XML settings file
         ''!Create array of Reference Implementation (RI) folders
         'ReDim RI_Folder(MaxXslIndex)
@@ -70,10 +72,19 @@ Public Class GenXDT
         'XslFileName(3) = DefaultXslFileName
         'XslFileName(4) = DefaultXslFileName
         ''TODO: check for existance of all these xslt's in the appropriate folders, and skip or report error if they don't exist
+#End Region
 
         Dim settings As New XsltSettings 'required to allow use of Document() function in XSL file
-        settings.EnableDocumentFunction = True
-        settings.EnableScript = False
+
+        Try
+            settings.EnableDocumentFunction = True
+            settings.EnableScript = False
+        Catch ex As Exception
+            MsgBox("Error setting xslt settings." & vbCrLf & ex.Message, MsgBoxStyle.OkOnly, "Error!")
+        End Try
+
+
+#Region "junk"
 
         'ReDim Transform(MaxXslIndex) 'Create an array of compiled xsl transforms, one for each RI folder
 
@@ -86,12 +97,21 @@ Public Class GenXDT
         '    Transform(i).Load(xslFile, settings, New Xml.XmlUrlResolver) 'Compile the XSLT only once for each batch of files to transform
         'Next
         'Dim xslFile = String.Format("{0}\{1}\{2}", RootFilePath, RI_Folder(i), XslFileName(i))
+#End Region
 
         Dim xslFile = String.Format("{0}\{1}", RootFilePath, DefaultXslFileName)
-        If Transform Is Nothing Then  'TODO: for now we reuse a single xslt for all forms.  This may change...
-            Transform = New XslCompiledTransform()
-            Transform.Load(xslFile, settings, New Xml.XmlUrlResolver) 'Compile the XSLT only once for each batch of files to transform
-        End If
+        Try
+            If Transform Is Nothing Then  'TODO: for now we reuse a single xslt for all forms.  This may change...
+                Transform = New XslCompiledTransform()
+                Transform.Load(xslFile, settings, New Xml.XmlUrlResolver) 'Compile the XSLT only once for each batch of files to transform
+            End If
+        Catch ex As Exception
+            MsgBox("Error setting compiling xslt file." & vbCrLf & ex.Message, MsgBoxStyle.OkOnly, "Error!")
+        End Try
+
+
+
+
 
     End Sub
 #End Region
@@ -128,7 +148,7 @@ Public Class GenXDT
         Dim templateXML As String
         For Each file In templatesMap
             templateXML = MakeXDT(file.Key)
-            If String.IsNullOrWhiteSpace(templateXML) Then ' > "" Then
+            If Not String.IsNullOrWhiteSpace(templateXML) Then ' > "" Then
                 If createHTML Then MakeHTML()
             Else
                 MsgBox("The template with ID [ " & file.Key & " ] was not found", MsgBoxStyle.Exclamation, "Template not found")
@@ -159,30 +179,7 @@ Public Class GenXDT
         System.IO.File.WriteAllText(FullXMLfilePath, formDesignXml, System.Text.Encoding.UTF8)
 
 
-        'Dim templateXml As String = TemplateDataMapper.CreateOneTemplateByCkey(key, userFileName)
-        'Dim templateXml As DataTable = (New SDC.DAL.DataSets.FormDesignDataSets()).dtGetFormDesign(CDec(key))
-        'If formDesignXml = "" Then
-        '    filename = ""
-        '    userFileName = ""
-        '    XMLfileName = ""
-        '    HTMLfileName = ""
-        '    FullXMLfilePath = ""
-        'Else
-        '    If Not String.IsNullOrWhiteSpace(userFileName) Then filename = userFileName
-        '    If Not String.IsNullOrWhiteSpace(filename) Then XMLfileName = filename                  '& "_enh.xml" '"enh" means "enhanced eCC"
-        '    HTMLfileName = FileName & ".html"       '& "_enh.html"
-        '    FullXMLfilePath = String.Format("{0}\{1}", FilePath, XMLfileName)
 
-        '    '!Save the XML file:
-        '    System.IO.File.WriteAllText(FullXMLfilePath, formDesignXml, System.Text.Encoding.UTF8)
-        '    'Debug.Assert(My.Computer.FileSystem.FileExists(fullXmlFilePath))
-
-        '    '!Copy the xml files to all the Reference Implementation (RI) folders
-        '    'For i = 0 To MaxXslIndex 'Copy xml files to RI folders
-        '    '    Dim target = String.Format("{0}\{1}\{2}", FilePath, RI_Folder(i), XMLfileName)
-        '    '    My.Computer.FileSystem.CopyFile(FullXMLfilePath, target, overwrite:=True)
-        '    'Next
-        'End If
         Return formDesignXml
     End Function
 

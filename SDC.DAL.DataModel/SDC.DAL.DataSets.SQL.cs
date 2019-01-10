@@ -277,10 +277,10 @@ WHERE     (i.ChecklistTemplateVersionCKey = @VersionCkey)
                 --ExtVer.AJCC_UICC_VersionNum ,
                 AJCC.AJCC_UICC_Version ,
                 CTV.Restrictions ,
-                CTV.WebPostingDate ,
-                CTV.RevisionDate ,
-                CTV.EffectiveDate ,
-                CTV.RetireDate ,
+                CONVERT (date, CTV.WebPostingDate) AS WebPostingDate,
+                CONVERT (date, CTV.RevisionDate) AS RevisionDate,
+                CONVERT (date, CTV.EffectiveDate) AS EffectiveDate,
+                CONVERT (date, CTV.RetireDate) AS RetireDate,
                 CTV.ApprovalStatus ,
                 CTV.Description ,
                 COALESCE(Cat.Category , '') AS Category ,
@@ -293,7 +293,8 @@ WHERE     (i.ChecklistTemplateVersionCKey = @VersionCkey)
                 CTV.OfficialName ,
                 CTV.CurrentFileName,
                 CTV.CAP_ProtocolName,
-                CTV.CAP_ProtocolVersion
+                CTV.CAP_ProtocolVersion ,
+                CTV.Lineage
             FROM
                 ChecklistTemplateVersions AS CTV WITH ( NOLOCK ) 
                 LEFT OUTER JOIN Checklists AS Chk WITH ( NOLOCK )

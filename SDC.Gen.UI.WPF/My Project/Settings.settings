@@ -1,0 +1,35 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="BrowserPath64" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files (x86)\Mozilla Firefox\firefox.exe</Value>
+    </Setting>
+    <Setting Name="BrowserPath32" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\Mozilla Firefox\firefox.exe</Value>
+    </Setting>
+    <Setting Name="PERC_eCC_Con" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=PappeCC;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=PappeCC;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="DataSourceConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=PappeCC;Initial Catalog=PERC_eCC;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="FilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\SDC</Value>
+    </Setting>
+    <Setting Name="XslFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sdctemplate.xslt</Value>
+    </Setting>
+    <Setting Name="TEpath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\%USERNAME%\Desktop\TE\eCC_TE_2.30.adp</Value>
+    </Setting>
+    <Setting Name="SDCfilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\SDC</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
