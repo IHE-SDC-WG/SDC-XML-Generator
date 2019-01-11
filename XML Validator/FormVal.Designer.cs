@@ -66,6 +66,7 @@ namespace XML_Validator
             this.txtValMsg.Size = new System.Drawing.Size(653, 331);
             this.txtValMsg.TabIndex = 6;
             this.txtValMsg.Text = "Validation Message";
+            this.txtValMsg.TextChanged += new System.EventHandler(this.txtValMsg_TextChanged);
             // 
             // txtSchema
             // 

@@ -33,7 +33,7 @@ namespace XML_Validator
                 txtSchema.Text = schema.Replace("\"", "");
                 txtFile.Text = xml.Replace("\"", "");
             }
-            catch (Exception ex) { }//nothing to do here 
+            catch (Exception ex) { txtValMsg.Text = ex.Message.ToString(); }//nothing to do here 
             
         }
 
@@ -42,21 +42,31 @@ namespace XML_Validator
             //ref: https://stackoverflow.com/questions/751511/validating-an-xml-against-referenced-xsd-in-c-sharp 
             XmlSchemaSet schemas = new XmlSchemaSet();
             var doc = new XDocument();
+            var err = false;
+
             try {
                 schemas.Add("urn:ihe:qrph:sdc:2016", txtSchema.Text.Replace("\"",""));
                 doc = XDocument.Load(txtFile.Text.Replace("\"", ""));
-            } catch (Exception ex) { txtValMsg.Text = ex.Message; };
+            } catch (Exception ex) {
+                err = true;
+                txtValMsg.Text = ex.Message.ToString();
+            };
 
             string msg = "";
 
-            try {
-
-                txtValMsg.Text = (msg == "" ? "Document is valid" : "Document invalid: \r\n\r\n" + msg);
+            if (!err) try {
+                    doc.Validate(schemas, (o, args) => { msg += args.Message + Environment.NewLine; });
+                    txtValMsg.Text = (msg == "" ? "Document is valid" : "Document invalid: \r\n\r\n" + msg);
             }
             catch (Exception ex)
-            { txtValMsg.Text = ex.Message; }
+            { txtValMsg.Text = ex.Message.ToString(); }
 
 
+
+        }
+
+        private void txtValMsg_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
