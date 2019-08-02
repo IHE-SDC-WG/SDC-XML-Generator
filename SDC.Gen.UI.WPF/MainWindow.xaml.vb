@@ -24,37 +24,40 @@ Partial Public Class MainWindow
     Inherits DXWindow
     'Implements IDisposable
 
-    Private BrowserPath As String
+    Private Property BrowserPath As String
     Private TEinterop As TE.TEinterop
-    Private FilePath As String
+    Private Property FilePath As String
 
 
     Public Sub New()
-        BrowserPath = ""
+
         InitializeComponent()
         DataContext = New DataSource()
         TEinterop = New TE.TEinterop(My.Settings.TEpath)
 
-        FilePath = txtFilePath.Text.Trim
-        If filePath = "" Then
-            filePath = My.Settings.FilePath  'filePath, when set here,  will override settings files from other components
-            If Not My.Computer.FileSystem.DirectoryExists(filePath) Then
 
-                Try
-                    My.Computer.FileSystem.CreateDirectory(filePath)
-                Catch ex As Exception
-                    MsgBox("Unable to create the file path: " + FilePath & vbCrLf & ex.Message + vbCrLf + ex.Data.ToString(), MsgBoxStyle.Exclamation, "SDC Folder was not created")
-                End Try
-            End If
-        End If
+        'If filePath = "" Then
+        '    filePath = My.Settings.FilePath  'filePath, when set here,  will override settings files from other components
+        '    If Not My.Computer.FileSystem.DirectoryExists(filePath) Then
+
+        '        Try
+        '            My.Computer.FileSystem.CreateDirectory(filePath)
+        '        Catch ex As Exception
+        '            MsgBox("Unable to create the file path: " + FilePath & vbCrLf & ex.Message + vbCrLf + ex.Data.ToString(), MsgBoxStyle.Exclamation, "SDC Folder was not created")
+        '        End Try
+        '    End If
+        'End If
     End Sub
 
     Private Sub btnGenAll_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles btnGenAllChecked.Click
-
+        BrowserPath = txtBrowserPath.Text.Trim
+        'FilePath = txtFilePath.Text.Trim
         Dim cur = Application.Current.MainWindow.Cursor
+        Dim Gen As New SDC.Gen.API.GenXDT(txtFilePath.Text.Trim, My.Settings.XslFileName)
+        FilePath = Gen.XMLfilePath  ' if the UI-supplied txtFilePath does not exist, Gen will try to create a default one.  This reassigns Filepath to the default
+        txtFilePath.Text = FilePath ' makes the same change in the UI
 
-
-        If FileIO.FileSystem.DirectoryExists(filePath) Then
+        If FileIO.FileSystem.DirectoryExists(FilePath) Then
             Dim templatesMap As New Dictionary(Of String, String)
 
             Application.Current.MainWindow.Cursor = Cursors.Wait
@@ -68,11 +71,11 @@ Partial Public Class MainWindow
                 templatesMap.Add(dataRowView(0).ToString, dataRowView(2).ToString) 'cols 0 & 3
             Next
 
-            Dim Gen As New SDC.Gen.API.GenXDT(filePath, My.Settings.XslFileName)
-            Gen.MakeXDTsFromTemplateMap(templatesMap, filePath, CBool(chkCreateHTML.IsChecked))
+
+            Gen.MakeXDTsFromTemplateMap(templatesMap, FilePath, CBool(chkCreateHTML.IsChecked))
         Else
             Beep()
-            MsgBox("The file path (for saving SDC XML files) does not exist: " & FilePath, MsgBoxStyle.Exclamation, "Folder does not exist")
+            MsgBox("The file path for saving SDC XML files does not exist at: " & FilePath, MsgBoxStyle.Exclamation, "Folder does not exist")
         End If
 
         Application.Current.MainWindow.Cursor = cur
@@ -83,24 +86,29 @@ Partial Public Class MainWindow
     Private Sub btnGenerate_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles btnGenerate.Click
         Dim key As String = txtID.Text.Trim
         Dim fileName = txtFileName.Text.Trim
-        Dim showBrowser = CBool(chkShowBrowser.EditValue)
-        Dim outputHTML = CBool(chkCreateHTML.EditValue)
-        Dim browserPath = txtBrowserPath.Text.Trim
+        Dim loadBrowser = CBool(chkShowBrowser.EditValue)
+        Dim createHTML = CBool(chkCreateHTML.EditValue)
+        BrowserPath = txtBrowserPath.Text.Trim
+        'FilePath = txtFilePath.Text.Trim
         Dim ns As String = txtNamespace.Text.Trim
+
+        Dim Gen As New SDC.Gen.API.GenXDT(txtFilePath.Text.Trim, My.Settings.XslFileName)
+        FilePath = Gen.XMLfilePath  ' if the UI-supplied txtFilePath does not exist, Gen will try to create a default one.  This reassigns Filepath to the default
+        txtFilePath.Text = FilePath ' makes the same change in the UI
 
         If FileIO.FileSystem.DirectoryExists(FilePath) Then
             If key > "" AndAlso ns > "" Then
                 key = (String.Format("{0}.{1}", key, ns))
                 'TODO: Need to cache this generator, since it takes time to create it new each time.
-                Dim Gen As New SDC.Gen.API.GenXDT(FilePath, My.Settings.XslFileName)
-                Gen.MakeOneXDT(key, fileName, FilePath, showBrowser, browserPath, outputHTML)
+
+                Gen.MakeOneXDT(key, FilePath, loadBrowser, BrowserPath, createHTML)   ', fileName
             Else
                 Beep()
                 MsgBox("You must enter valid values for template Key (ID), Namespace, and Filepath", MsgBoxStyle.Exclamation, "Invalid Entry")
             End If
         Else
             Beep()
-            MsgBox("The file path (for saving SDC XML files) does not exist: " & FilePath, MsgBoxStyle.Exclamation, "Folder does not exist")
+            MsgBox("The file path for saving SDC XML files does not exist: " & FilePath, MsgBoxStyle.Exclamation, "Folder does not exist")
         End If
 
     End Sub
