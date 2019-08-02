@@ -2,7 +2,7 @@
 using System.Linq;
 
 //using SDC;
-namespace SDC
+namespace SDC.Schema
 {
     /// <summary>
     /// This interface is applied to the partial classes that must support the ChildItems element.

@@ -4,35 +4,38 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Xml;
+//using SDC.Schema;
+//using SDC;
+//using SDC.Schema.Adapter;
 
 //using SDC.DAL.DataModel;
 
 //!Handling Item and Items generic types derived from the xsd2Code++ code generator
-namespace SDC
+namespace SDC.Schema
 {
     public partial class FormDesignType
     {
         protected FormDesignType() { }
         public FormDesignType(ITreeBuilder treeBuilder, BaseType parentNode = null, bool fillData = false, string id = null)
         : base(parentNode, fillData, id)
-        //TODO: add lineage, baseURI, version to this constructor
+        //TODO: add ID, lineage, baseURI, version, etc to this constructor? (only ID is required)
         {
             sdcTreeBuilder = treeBuilder;
-            //FormDesignTreeBuilder = treeBuilder;
-            //TODO: move treebuilder reference out of BaseClass to FormDesign, and remove static modifier
+            IdentExtNodes = new Dictionary<String, IdentifiedExtensionType>();  //reset this static IdentExtNodes Dictionary of IET IDs for the current form
+
             //if (fillData) FillBaseTypeItem();  //this must be run after sdcTreeBuilder is assigned, and all sdcTreeBuilder data objects are initialized.
         }
 
-        public SectionItemType AddBody(bool fillData = false, string id = null)
+        public SectionItemType AddBody(bool fillData = false, string id = "")
         {
             return sdcTreeBuilder.AddBody(fillData, id);
         }
-        public SectionItemType AddFooter(bool fillData = false, string id = null)
+        public SectionItemType AddFooter(bool fillData = false, string id = "")
         {
             return sdcTreeBuilder.AddFooter(fillData, id);
         }
 
-        public SectionItemType AddHeader(bool fillData = false, string id = null)
+        public SectionItemType AddHeader(bool fillData = false, string id = "")
         {
             return sdcTreeBuilder.AddHeader(fillData, id);
         }
@@ -44,9 +47,9 @@ namespace SDC
             //return r;
             return null;
         }
+
         [System.Xml.Serialization.XmlIgnore]
         public int MaxObjectID { get; internal set; }  //save the highest object counter value for the current FormDesign tree
-        //internal readonly ITreeBuilder FormDesignTreeBuilder;
         #region Dictionaries
         /// <summary>
         /// Dictionary.  Given an Node ID (int), returns the Node's object reference.
@@ -95,13 +98,13 @@ namespace SDC
     #region  Actions
     public partial class ActSendMessageType
     {
-        public ActSendMessageType(ThenType parentNode) : base(parentNode) { }
         protected ActSendMessageType() { }
+        public ActSendMessageType(ActionsType parentNode) : base(parentNode) { }
 
         /// <summary>
         /// List<BaseType> accepts: EmailAddressType, PhoneNumberType, WebServiceType
         /// </summary>
-        internal List<SDC.ExtensionBaseType> Email_Phone_WebSvc_List
+        internal List<ExtensionBaseType> Email_Phone_WebSvc_List
         {
             get { return this.Items; }
             set { this.Items = value; }
@@ -111,7 +114,7 @@ namespace SDC
     public partial class ActSendReportType
     {
         protected ActSendReportType() { }
-        public ActSendReportType(ThenType parentNode) : base(parentNode) { }
+        public ActSendReportType(ActionsType parentNode) : base(parentNode) { }
 
         internal List<ExtensionBaseType> Email_Phone_WebSvc_List
         {
@@ -120,10 +123,10 @@ namespace SDC
         }
     }
 
-    //public partial class ActSetValueType
+    //public partial class ActSetAttrValueType
     //{
-    //    public ActSetValueType(ThenType parentNode) : base(parentNode) { }
-    //    protected ActSetValueType() { }
+    //    protected ActSetAttrValueType() { }
+    //    public ActSetAttrValueType(ActionsType parentNode) : base(parentNode) { }
 
     //    internal GetCodeType Code_Item
     //    {
@@ -153,28 +156,29 @@ namespace SDC
     public partial class ActShowFormType
     {
         protected ActShowFormType() { }
-        public ActShowFormType(ThenType parentNode) : base(parentNode) { }
+        public ActShowFormType(ActionsType parentNode) : base(parentNode) { }
     }
 
     public partial class ActShowMessageType
     {
         protected ActShowMessageType() { }
-        public ActShowMessageType(ThenType parentNode) : base(parentNode) { }
+        public ActShowMessageType(ActionsType parentNode) : base(parentNode) { }
     }
 
     public partial class ActShowReportType
     {
         protected ActShowReportType() { }
-        public ActShowReportType(ThenType parentNode) : base(parentNode) { }
+        public ActShowReportType(ActionsType parentNode) : base(parentNode) { }
     }
 
     public partial class ActValidateFormType
     {
         protected ActValidateFormType() { }
-        public ActValidateFormType(ThenType parentNode) : base(parentNode)
+        public ActValidateFormType(ActionsType parentNode) : base(parentNode)
         {
-            this._validateDataTypes = false;
-            this._validateRules = false;
+            this.validateDataTypes = false;
+            this.validateRules = false;
+            this.validateCompleteness = false;
         }
 
         //!+Replaced in original class: protected ActValidateFormType() { }
@@ -184,32 +188,34 @@ namespace SDC
 
     //public partial class ActSetPropertyType
     //{
-    //    public ActSetPropertyType(ThenType parentNode) : base(parentNode) { }
     //    protected ActSetPropertyType() { }
+    //    public ActSetPropertyType(ActionsType parentNode) : base(parentNode) { }
+
     //}
+
     public partial class ActActionType
     {
         protected ActActionType() { }
-        public ActActionType(ThenType parentNode) : base(parentNode) { }
+        public ActActionType(ActionsType parentNode) : base(parentNode) { }
     }
-    //add creation proc for each Then subtype
+    ////add creation proc for each Then subtype
 
     public partial class ActInjectType
     {
         protected ActInjectType() { }
-        public ActInjectType(ThenType parentNode) : base(parentNode) { }
+        public ActInjectType(ActionsType parentNode) : base(parentNode) { }
     }
 
     public partial class ActSaveResponsesType
     {
         protected ActSaveResponsesType() { }
-        public ActSaveResponsesType(ThenType parentNode) : base(parentNode) { }
+        public ActSaveResponsesType(ActionsType parentNode) : base(parentNode) { }
     }
 
     public partial class ActAddCodeType
     {
         protected ActAddCodeType() { }
-        public ActAddCodeType(ThenType parentNode) : base(parentNode) { }
+        public ActAddCodeType(ActionsType parentNode) : base(parentNode) { }
     }
 
     #endregion
@@ -217,6 +223,7 @@ namespace SDC
     #region Main Types
     public partial class ButtonItemType
     {
+        protected ButtonItemType() { }
         public ButtonItemType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             ElementName = "ButtonAction";
@@ -224,7 +231,7 @@ namespace SDC
             SetNames(elementName, elementPrefix);
             //if (fillData) sdcTreeBuilder.FillButton(this);
         }
-        protected ButtonItemType() { }
+
     }
 
     public partial class InjectFormType
@@ -242,10 +249,10 @@ namespace SDC
 
     public partial class SectionBaseType
     {
-        internal SectionBaseType() { }
+        protected SectionBaseType() { }
         internal SectionBaseType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData, id)
         {
-            this._ordered = true;
+            this.ordered = true;
             ElementName = "Section";
             ElementPrefix = "S";
             SetNames(elementName, elementPrefix);
@@ -261,9 +268,7 @@ namespace SDC
     {
         public SectionItemType() { }
         public SectionItemType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData, id)
-        {
-
-        }
+        { }
 
 
         #region IParent Implementation
@@ -293,12 +298,16 @@ namespace SDC
     #region Question
     public partial class QuestionItemType : IParent
     {
+        public QuestionItemType() { }  //need public parameterless constructor to support generics
         public QuestionItemType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData, id)
         {
-
+            this.readOnly = false;
+            ElementName = "Question";
+            ElementPrefix = "Q";
+            SetNames(elementName, elementPrefix);
+            if (fillData) FillQuestionItemBase();
 
         }
-        public QuestionItemType() { }  //need public parameterless constructor to support generics
 
         #region IChildItems
         [System.Xml.Serialization.XmlIgnore]
@@ -325,14 +334,8 @@ namespace SDC
     {
         protected QuestionItemBaseType() { }
         public QuestionItemBaseType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData, id)
-        {
-            this._readOnly = false;
-            ElementName = "Question";
-            ElementPrefix = "Q";
-            SetNames(elementName, elementPrefix);
-            if (fillData) FillQuestionItemBase();
-        }
-        //!+Replaced in original class: protected QuestionItemBaseType() { }
+        { }
+        ////!+Replaced in original class: protected QuestionItemBaseType() { }
 
         public QuestionItemBaseType FillQuestionItemBase()
         { return sdcTreeBuilder.FillQuestionItemBase(this); }
@@ -340,8 +343,8 @@ namespace SDC
         [System.Xml.Serialization.XmlIgnore]
         public ListFieldType ListField_Item
         {
-            get { return (ListFieldType)this._item; }
-            set { this._item = value; }
+            get { return (ListFieldType)this.Item; }
+            set { this.Item = value; }
         }
 
         [System.Xml.Serialization.XmlIgnore]
@@ -349,8 +352,8 @@ namespace SDC
         [System.Xml.Serialization.XmlIgnore]
         public ResponseFieldType ResponseField_Item
         {
-            get { return (ResponseFieldType)this._item; }
-            set { this._item = value; }
+            get { return (ResponseFieldType)this.Item; }
+            set { this.Item = value; }
         }
 
         //AddListField
@@ -365,12 +368,12 @@ namespace SDC
 
     public partial class ListType
     {
+        protected ListType() { }
         public ListType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             ElementPrefix = "lst";
             SetNames(elementName, elementPrefix);
         }
-        protected ListType() { }
 
         /// <summary>
         /// Replaces Items; ListItem or DisplayedItem
@@ -388,30 +391,24 @@ namespace SDC
         protected ListFieldType() { }
         public ListFieldType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this._colTextDelimiter = "|";
-            this._numCols = ((byte)(1));
-            this._storedCol = ((byte)(1));
-            this._minSelections = ((ushort)(1));
-            this._maxSelections = ((ushort)(1));
-            this._ordered = true;
+            this.colTextDelimiter = "|";
+            this.numCols = ((byte)(1));
+            this.storedCol = ((byte)(1));
+            this.minSelections = ((ushort)(1));
+            this.maxSelections = ((ushort)(1));
+            this.ordered = true;
+
 
             ElementPrefix = "lf";
             SetNames(elementName, elementPrefix);
             if (fillData) sdcTreeBuilder.FillListField(this);
         }
 
-        //!+Replaced in original class: protected  ListFieldType (){}
-        //public ListFieldType FillListFieldType()
-        //{ return sdcTreeBuilder.FillListField(this); }
-
-        ///// <summary>
-        ///// ListType to group ListItems
-        ///// </summary>
         [System.Xml.Serialization.XmlIgnore]
         public ListType List_Item
         {
-            get { return (ListType)this._item; }
-            set { this._item = value; }
+            get { return (ListType)this.Item; }
+            set { this.Item = value; }
         }
         /// <summary>
         /// Replaces Item
@@ -419,18 +416,25 @@ namespace SDC
         [System.Xml.Serialization.XmlIgnore]
         public LookupEndPointType LookupEndpoint_Item
         {
-            get { return (LookupEndPointType)this._item; }
-            set { this._item = value; }
+            get { return (LookupEndPointType)this.Item; }
+            set { this.Item = value; }
         }
 
     }
 
     public partial class ListItemType : IParent
     {
-        public ListItemType() { }  //!+Replaced in original class: need public parameterless constructor to support generics
+        protected ListItemType() { }  //!+Replaced in original class: need PUBLIC parameterless constructor to support generics
         public ListItemType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData, id)
         {
-
+            this.selected = false;
+            this.selectionDisablesChildren = false;
+            this.selectionDeselectsSiblings = false;
+            this.omitWhenSelected = false;
+            this.repeat = "1";
+            ElementPrefix = "LI";
+            SetNames(elementName, elementPrefix);
+            if (fillData) sdcTreeBuilder.FillListItemBase(this);
         }
 
         public ListItemResponseFieldType AddListItemResponseField(ListItemBaseType li)
@@ -472,19 +476,8 @@ namespace SDC
     public partial class ListItemBaseType
     {
         protected ListItemBaseType() { }
-
-
         public ListItemBaseType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData, id)
-        {
-            this._selected = false;
-            this._selectionDisablesChildren = false;
-            this._selectionDeselectsSiblings = false;
-            this._omitWhenSelected = false;
-            this._repeat = "1";
-            ElementPrefix = "LI";
-            SetNames(elementName, elementPrefix);
-            if (fillData) sdcTreeBuilder.FillListItemBase(this);
-        }
+        { }
         //!+Replaced in original class: protected  ListItemBaseType (){}
 
         //public ListItemBaseType FillListItemBase()
@@ -495,16 +488,6 @@ namespace SDC
         public Dictionary<string, ListItemType> ListItems;
 
     }
-
-
-
-    //public partial class FuncType
-    //{
-    //    public FuncType(BaseType parentNode, bool fillData = true) : base(parentNode) { }
-    //    public FuncType() { }
-    //}
-
-
 
     public partial class LookupEndPointType  //TODO: fix base class in Schema update
     {
@@ -525,120 +508,32 @@ namespace SDC
         //{ return sdcTreeBuilder.FillLookupEndpoint(this); }
     }
 
-    //public partial class WebServiceType
-    //{
-    //    public WebServiceType(BaseType parentNode) : base(parentNode) { }
-    //    protected WebServiceType() { }
-
-    //}
-
-    //public partial class GetParameterFromPropertyType
-    //{
-    //    public GetParameterFromPropertyType(BaseType parentNode) : base(parentNode)
-    //    { }
-    //    protected GetParameterFromPropertyType() { }
-
-    //}
-
     #endregion
 
     #region Responses
 
     public partial class ListItemResponseFieldType
     {
+        protected ListItemResponseFieldType() { }
         public ListItemResponseFieldType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this._responseRequired = false;
+            this.responseRequired = false;
             //if (fillData) AddFillDataTypesDE(parentNode);
 
             ElementPrefix = "lirf";
-            //SetNames(elementName, elementPrefix); //this was already called by the superType ResponseField.
+            SetNames(elementName, elementPrefix); //this was already called by the superType ResponseField.
             if (fillData) sdcTreeBuilder.FillListItemResponseField(this);
         }
-        protected ListItemResponseFieldType() { }
-        //!Replaced in original class: protected  ListItemResponseFieldType (){}
-
-        //public ListItemResponseFieldType FillListItemResponseFieldType()
-        //{ return sdcTreeBuilder.FillListItemResponseField(this); }
-
-        //public ResponseFieldType GetResponseField()
-        //{ return (ResponseFieldType)this; }
-
     }
-
-
-    //public partial class ReplacedResponseType
-    //{
-
-    //    /// <summary>
-    //    /// "Response", typeof(DataTypes_SType), IsNullable = true,
-    //    /// </summary>
-    //    internal DataTypes_SType Response_Item
-    //    {
-    //        get { return (DataTypes_SType)this._item; }
-    //        set { this._item = value; }
-    //    }
-    //    public ReplacedResponseType(BaseType parentNode) : base(parentNode) { }
-    //    protected ReplacedResponseType() { }
-
-    //    // Replaces Item:
-    //    //"Response", typeof(DataTypes_SType), IsNullable = true,
-    //    //"SelectedItems", typeof(ChangedSelectedItemsType), IsNullable = true
-
-    //    /// <summary>
-    //    ///"SelectedItems", typeof(ChangedSelectedItemsType), IsNullable = true
-    //    /// </summary>
-    //    internal ChangedSelectedItemsType SelectedItems_Item
-    //    {
-    //        get { return (ChangedSelectedItemsType)this._item; }
-    //        set { this._item = value; }
-    //    }
-    //}
-
-    //public partial class ChangedFieldType
-    //{
-    //    //public ChangedFieldType(BaseType parentNode) : base(parentNode) { }
-
-    //    /// <summary>
-    //    /// TargetItemID, TargetItemIDType
-    //    /// </summary>
-    //    internal TargetItemIDType TargetItemID_Item
-    //    {
-    //        get { return (TargetItemIDType)this._item; }
-    //        set { this._item = value; }
-    //    }
-
-
-    //    /// <summary>
-    //    /// TargetItemName, TargetItemNameType
-    //    /// </summary>
-    //    internal TargetItemNameType TargetItemName_Item
-    //    {
-    //        get { return (TargetItemNameType)this._item; }
-    //        set { this._item = value; }
-    //    }
-
-    //    /// <summary>
-    //    /// TargetItemXPath, TargetItemXPathType
-    //    /// </summary>
-    //    internal TargetItemXPathType TargetItemXPath_Item
-    //    {
-    //        get { return (TargetItemXPathType)this._item; }
-    //        set { this._item = value; }
-    //    }
-    //}
 
     public partial class ResponseFieldType
     {
         protected ResponseFieldType() { }
         public ResponseFieldType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            //if (fillData) sdcTreeBuilder.AddFillDataTypesDE(this);
-
             ElementPrefix = "rf";
             SetNames(elementName, elementPrefix);
             if (fillData) sdcTreeBuilder.FillResponseField(this);
-            //sdcTreeBuilder.AddFillResponseUnits(this, fillData);
         }
     }
 
@@ -647,16 +542,11 @@ namespace SDC
         protected UnitsType() { }
         public UnitsType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            this._unitSystem = "UCUM";
+            unitSystem = "UCUM";
             if (fillData) sdcTreeBuilder.FillUnits(this);
             ElementPrefix = "un";
             SetNames(elementName, elementPrefix);
-
         }
-        //!+Replaced in original class: protected UnitsType() { }
-
-        //public UnitsType FillUnitsType()
-        //{ return sdcTreeBuilder.FillUnits(this); }
     }
 
     #endregion
@@ -671,10 +561,10 @@ namespace SDC
     {
 
         #region  Local Members
-        
+
         /// <summary>
-        /// sdcTreeBuilder is an object instance created and held by the top level FormDesign node, 
-        /// but referenced throughout the FormDesign object tree through the BaseType objects
+        /// sdcTreeBuilder is an object created and held by the top level FormDesign node, 
+        /// but referenced throughout the FormDesign object tree through the BaseType class
         /// </summary>
         protected ITreeBuilder sdcTreeBuilder;
         private string _elementName = "";
@@ -682,19 +572,19 @@ namespace SDC
 
         /// <summary>
         /// Static counter that resets with each new instance of an IdentifiedExtensionType (IET).
-        /// Maintains the sequence of all elements under an IET.
+        /// Maintains the sequence of all elements nested under an IET-derived element.
         /// </summary>
         [System.Xml.Serialization.XmlIgnore]
         private static int IETresetCounter { get; set; }
         /// <summary>
-        /// Field to hold the ordinal position of an object (XML element) under an IdentifiedExtensionType (IET).
-        /// This number is used for creating the name attribute.
+        /// Field to hold the ordinal position of an object (XML element) under an IdentifiedExtensionType (IET)-derived object.
+        /// This number is used for creating the name attribute suffix.
         /// </summary>
         [System.Xml.Serialization.XmlIgnore]
         public decimal SubIETcounter { get; private set; }
 
         /// <summary>
-        /// Used to construct the name property
+        /// The root text ("shortName") used to construct the name property.  The code may add a prefix and/or suffix to BaseName
         /// </summary>
         [System.Xml.Serialization.XmlIgnore]
         public string BaseName { get; set; } = "";
@@ -712,7 +602,7 @@ namespace SDC
         /// attributes, this ElementName approach provides more flexibility and is probably more efficient.
         /// ElementName will be most useful for auto-generating @name attributes for some elements.
         /// In many cases, ElementName will be assigned through class constructors, but it can also be assigned 
-        /// through this property directly after the object is instantiated
+        /// through this property after the object is instantiated
         /// </summary>
         [System.Xml.Serialization.XmlIgnore]
         public string ElementName
@@ -746,12 +636,18 @@ namespace SDC
             { //assign default prefix from the ElementName
                 if (_elementPrefix.Length == 0)
                 {
-                    _elementPrefix = ElementName;                //make sure EventHandlerfirst letter is lower case for non-IET types.
+                    _elementPrefix = ElementName;
+                    //make sure EventHandlerfirst letter is lower case for non-IET types:
                     if (!(GetType().IsSubclassOf(typeof(IdentifiedExtensionType)))) _elementPrefix = _elementPrefix.Substring(0, 1).ToLower() + _elementPrefix.Substring(1);
                 }
                 return _elementPrefix;
             }
             set { _elementPrefix = value; }
+        }
+        protected BaseType()
+        {
+            Debug.WriteLine($"A node has entered the BaseType default ctor. Item type is {this.GetType()}");
+            throw new System.InvalidOperationException("BaseType objects must use the constructor with a parentNode parameter");
         }
 
         protected BaseType(BaseType parentNode, bool fillData = true) //: this()
@@ -759,7 +655,8 @@ namespace SDC
             ObjectGUID = Guid.NewGuid();
             IsLeafNode = true;
             ParentNode = parentNode;
-            //BaseName = "";
+            orderSpecified = true;  //rlm: added 1/2/2019 to force output of order attribute
+                                    //BaseName = "";
 
             if (GetType().IsSubclassOf(typeof(IdentifiedExtensionType))) IETresetCounter = 0;
             else IETresetCounter++;
@@ -775,12 +672,16 @@ namespace SDC
                     FormDesign = (FormDesignType)this;   //TopNode.FormDesign;
                 }
                 else
-                { throw new InvalidOperationException("The top level node must be FormDesignType"); }
+                {
+                    throw new InvalidOperationException("The top level node must be FormDesignType");
+                }
             }
             else
             {//a parent node is present, and it must NOT be of type FormDesign
                 if (this.GetType() == typeof(FormDesignType))
-                { throw new InvalidOperationException("Only the top level node can be FormDesignType"); }
+                {
+                    throw new InvalidOperationException("Only the top level node can be FormDesignType");
+                }
                 FormDesign = ParentNode.FormDesign;
                 sdcTreeBuilder = FormDesign.sdcTreeBuilder;
                 ParentNode.IsLeafNode = false;
@@ -800,11 +701,6 @@ namespace SDC
             if (fillData) FillBaseTypeItem();
         }
 
-        protected BaseType()
-        {
-            Debug.WriteLine($"A node has entered the BaseType default ctor. Item type is {this.GetType()}");
-            throw new System.InvalidOperationException("BaseType objects must use the constructor with a parentNode parameter");
-        }
         ~BaseType() //destructor
         {
             FormDesign = null;
@@ -813,6 +709,7 @@ namespace SDC
             //TODO: delete all child nodes here - lower descendants will delete their own child nodes
             //TODO: Remove this node from all FormDesign dictionaries
             //TODO: Reset IsLeafNode to false for the parent of this node
+            //TODO: Remove references from FormDesign Dictionaries
         }
         [System.Xml.Serialization.XmlIgnore]
         [NonSerialized]
@@ -829,7 +726,7 @@ namespace SDC
 
 
 
-        public void SetNames(string elementName = "", string elementPrefix = "", string baseName="")
+        public void SetNames(string elementName = "", string elementPrefix = "", string baseName = "")
         {
             if (elementName.Length > 0)
                 ElementName = elementName;
@@ -875,361 +772,11 @@ namespace SDC
         public IdentifiedExtensionType ParentIETypeObject { get; private set; }
         public virtual void X_AddFill(SDCtypes sdcType = SDCtypes.BaseType, Boolean fillData = true)
         {
-            //var type = new SDCtypes();
-            //type = SDCHelpers.ConvertStringToEnum<SDCtypes>(typeName);
 
             switch (sdcType)
             {
 
-                case SDCtypes.AcceptabilityType:
-                    break;
-                case SDCtypes.ActInjectType:
-                    break;
-                case SDCtypes.ActSaveResponsesType:
-                    break;
-                case SDCtypes.ActSendMessageType:
-                    break;
-                case SDCtypes.ActSendReportType:
-                    break;
-                case SDCtypes.ActSetValueType:
-                    break;
-                case SDCtypes.ActShowFormType:
-                    break;
-                case SDCtypes.ActShowMessageType:
-                    break;
-                case SDCtypes.ActShowReportType:
-                    break;
-                case SDCtypes.ActValidateFormType:
-                    break;
-                case SDCtypes.AddressType:
-                    break;
-                case SDCtypes.anyType_DEtype:
-                    break;
-                case SDCtypes.anyURI_DEtype:
-                    break;
-                case SDCtypes.anyURI_Stype:
-                    break;
-                case SDCtypes.ApprovalType:
-                    break;
-                case SDCtypes.AreaCodeType:
-                    break;
-                case SDCtypes.AssociatedFilesType:
-                    break;
-                case SDCtypes.base64Binary_DEtype:
-                    break;
-                case SDCtypes.base64Binary_Stype:
-                    break;
-                case SDCtypes.BlobType:
-                    break;
-                case SDCtypes.boolean_DEtype:
-                    break;
-                case SDCtypes.boolean_Stype:
-                    break;
-                case SDCtypes.ButtonItemType:
-                    break;
-                case SDCtypes.byte_DEtype:
-                    break;
-                case SDCtypes.byte_Stype:
-                    break;
-                case SDCtypes.ChangedFieldType:
-                    break;
-                case SDCtypes.ChangedListItemType:
-                    break;
-                case SDCtypes.ChangedSelectedItemsType:
-                    break;
-                case SDCtypes.ChangeLogType:
-                    break;
-                case SDCtypes.ChangeTrackingType:
-                    break;
-                case SDCtypes.ChangeType:
-                    break;
-                case SDCtypes.ChildItemsType:
-                    break;
-                case SDCtypes.CodeMatchType:
-                    break;
-                case SDCtypes.CodeSystemType:
-                    break;
-                case SDCtypes.CodingType:
-                    break;
-                case SDCtypes.CommentType:
-                    break;
-                case SDCtypes.ComplianceRuleType:
-                    break;
-                case SDCtypes.ContactsType:
-                    break;
-                case SDCtypes.ContactType:
-                    break;
-                case SDCtypes.CountryCodeType:
-                    break;
-                case SDCtypes.DataTypes_DEType:
-                    break;
-                case SDCtypes.DataTypes_SType:
-                    break;
-                case SDCtypes.date_DEtype:
-                    break;
-                case SDCtypes.date_Stype:
-                    break;
-                case SDCtypes.dateTime_DEtype:
-                    break;
-                case SDCtypes.dateTime_Stype:
-                    break;
-                case SDCtypes.dateTimeStamp_DEtype:
-                    break;
-                case SDCtypes.dateTimeStamp_Stype:
-                    break;
-                case SDCtypes.dayTimeDuration_DEtype:
-                    break;
-                case SDCtypes.dayTimeDuration_Stype:
-                    break;
-                case SDCtypes.decimal_DEtype:
-                    break;
-                case SDCtypes.decimal_Stype:
-                    break;
-                case SDCtypes.DestinationType:
-                    break;
-                case SDCtypes.DisplayedType:
-                    break;
-                case SDCtypes.double_DEtype:
-                    break;
-                case SDCtypes.double_Stype:
-                    break;
-                case SDCtypes.duration_DEtype:
-                    break;
-                case SDCtypes.duration_Stype:
-                    break;
-                case SDCtypes.EmailAddressType:
-                    break;
-                case SDCtypes.EmailType:
-                    break;
-                case SDCtypes.ExclusiveItemPairsType:
-                    break;
-                case SDCtypes.ExpressionType:
-                    break;
-                case SDCtypes.ExtensionBaseType:
-                    break;
-                case SDCtypes.ExtensionType:
-                    break;
-                case SDCtypes.FileDatesType:
-                    break;
-                case SDCtypes.FileHashType:
-                    break;
-                case SDCtypes.FileType:
-                    break;
-                case SDCtypes.FileUsageType:
-                    break;
-                case SDCtypes.float_DEtype:
-                    break;
-                case SDCtypes.float_Stype:
-                    break;
-                case SDCtypes.FormDesignType:
-                    break;
-                case SDCtypes.gDay_DEtype:
-                    break;
-                case SDCtypes.gDay_Stype:
-                    break;
-                case SDCtypes.GetCodeType:
-                    break;
-                case SDCtypes.GetPropertyValuesType:
-                    break;
-                case SDCtypes.gMonth_DEtype:
-                    break;
-                case SDCtypes.gMonth_Stype:
-                    break;
-                case SDCtypes.gMonthDay_DEtype:
-                    break;
-                case SDCtypes.gMonthDay_Stype:
-                    break;
-                case SDCtypes.gYear_DEtype:
-                    break;
-                case SDCtypes.gYear_Stype:
-                    break;
-                case SDCtypes.gYearMonth_DEtype:
-                    break;
-                case SDCtypes.gYearMonth_Stype:
-                    break;
-                case SDCtypes.HashType:
-                    break;
-                case SDCtypes.hexBinary_DEtype:
-                    break;
-                case SDCtypes.hexBinary_Stype:
-                    break;
-                case SDCtypes.HTML_DEtype:
-                    break;
-                case SDCtypes.HTML_Stype:
-                    break;
-                case SDCtypes.IdentifiedExtensionType:
-                    break;
-                case SDCtypes.IdentifierType:
-                    break;
-                case SDCtypes.IfBoolCompareType:
-                    break;
-                case SDCtypes.IfThenType:
-                    break;
-                case SDCtypes.IfType:
-                    break;
-                case SDCtypes.InjectFormType:
-                    break;
-                case SDCtypes.int_DEtype:
-                    break;
-                case SDCtypes.int_Stype:
-                    break;
-                case SDCtypes.integer_DEtype:
-                    break;
-                case SDCtypes.integer_Stype:
-                    break;
-                case SDCtypes.ItemNameType:
-                    break;
-                case SDCtypes.JobType:
-                    break;
-                case SDCtypes.LanguageCodeISO6393_Type:
-                    break;
-                case SDCtypes.LanguageType:
-                    break;
-                case SDCtypes.LinkType:
-                    break;
-                case SDCtypes.ListFieldType:
-                    break;
-                case SDCtypes.ListItemBaseType:
-                    break;
-                case SDCtypes.ListItemResponseFieldType:
-                    break;
-                case SDCtypes.ListItemType:
-                    break;
-                case SDCtypes.ListType:
-                    break;
-                case SDCtypes.long_DEtype:
-                    break;
-                case SDCtypes.long_Stype:
-                    break;
-                case SDCtypes.LookupEndPointType:
-                    break;
-                case SDCtypes.MaxExclusiveType:
-                    break;
-                case SDCtypes.MaxInclusiveType:
-                    break;
-                case SDCtypes.MinExclusiveType:
-                    break;
-                case SDCtypes.MinInclusiveType:
-                    break;
-                case SDCtypes.NameType:
-                    break;
-                case SDCtypes.negativeInteger_DEtype:
-                    break;
-                case SDCtypes.negativeInteger_Stype:
-                    break;
-                case SDCtypes.nonNegativeInteger_DEtype:
-                    break;
-                case SDCtypes.nonNegativeInteger_Stype:
-                    break;
-                case SDCtypes.nonPositiveInteger_DEtype:
-                    break;
-                case SDCtypes.nonPositiveInteger_Stype:
-                    break;
-                case SDCtypes.OnEventType:
-                    break;
-                case SDCtypes.OrganizationType:
-                    break;
-                case SDCtypes.ParameterType:
-                    break;
-                case SDCtypes.PersonType:
-                    break;
-                case SDCtypes.PhoneNumberType:
-                    break;
-                case SDCtypes.PhoneType:
-                    break;
-                case SDCtypes.positiveInteger_DEtype:
-                    break;
-                case SDCtypes.positiveInteger_Stype:
-                    break;
-                case SDCtypes.PredicateBetweenType:
-                    break;
-                case SDCtypes.PredicateCompareType:
-                    break;
-                case SDCtypes.PredicateInListType:
-                    break;
-                case SDCtypes.PredicateType:
-                    break;
-                case SDCtypes.ProvenanceType:
-                    break;
-                case SDCtypes.QuestionItemBaseType:
-                    break;
-                case SDCtypes.QuestionItemType:
-                    break;
-                case SDCtypes.RepeatingType:
-                    break;
-                case SDCtypes.ReplacedIDsType:
-                    break;
-                case SDCtypes.ReplacedResponseType:
-                    break;
-                case SDCtypes.ResponseChangeType:
-                    break;
-                case SDCtypes.ResponseFieldType:
-                    break;
-                case SDCtypes.RichTextType:
-                    break;
-                case SDCtypes.RulesType:
-                    break;
-                case SDCtypes.ScriptCodeType:
-                    break;
-                case SDCtypes.SectionBaseType:
-                    break;
-                case SDCtypes.SectionItemType:
-                    break;
-                case SDCtypes.SetPropertyType:
-                    break;
-                case SDCtypes.short_DEtype:
-                    break;
-                case SDCtypes.short_Stype:
-                    break;
-                case SDCtypes.string_DEtype:
-                    break;
-                case SDCtypes.string_Stype:
-                    break;
-                case SDCtypes.SubmissionRuleType:
-                    break;
-                case SDCtypes.TargetItemIDType:
-                    break;
-                case SDCtypes.TargetItemNameType:
-                    break;
-                case SDCtypes.TargetItemXPathType:
-                    break;
-                case SDCtypes.ThenType:
-                    break;
-                case SDCtypes.time_DEtype:
-                    break;
-                case SDCtypes.time_Stype:
-                    break;
-                case SDCtypes.UnitsType:
-                    break;
-                case SDCtypes.unsignedByte_DEtype:
-                    break;
-                case SDCtypes.unsignedByte_Stype:
-                    break;
-                case SDCtypes.unsignedInt_DEtype:
-                    break;
-                case SDCtypes.unsignedInt_Stype:
-                    break;
-                case SDCtypes.unsignedLong_DEtype:
-                    break;
-                case SDCtypes.unsignedLong_Stype:
-                    break;
-                case SDCtypes.unsignedShort_DEtype:
-                    break;
-                case SDCtypes.unsignedShort_Stype:
-                    break;
-                case SDCtypes.VersionType:
-                    break;
-                case SDCtypes.WatchedPropertyType:
-                    break;
-                case SDCtypes.WebServiceType:
-                    break;
-                case SDCtypes.XML_DEtype:
-                    break;
-                case SDCtypes.XML_Stype:
-                    break;
-                case SDCtypes.yearMonthDuration_DEtype:
-                    break;
-                case SDCtypes.yearMonthDuration_Stype:
+                case SDCtypes.AcceptabilityType:  //just an example
                     break;
             }
         }
@@ -1317,7 +864,7 @@ namespace SDC
     public partial class ExtensionBaseType
     {
         protected ExtensionBaseType() { }
-        protected ExtensionBaseType(BaseType parentNode, bool fillData = true) : base(parentNode, fillData)
+        public ExtensionBaseType(BaseType parentNode, bool fillData = true) : base(parentNode, fillData)
         {
             if (fillData) AddFillExtensionBaseType(fillData);
         }
@@ -1378,33 +925,21 @@ namespace SDC
             { Debug.WriteLine($"The node with ObjectID: {this.ObjectID} and ID: {this.ID} was NOT added to the IdentExtNodes dictionary.  Item type is {this.GetType()}"); }
         }
 
-        //public IdentifiedExtensionType AddFillIdentifiedExtensionType(Boolean fillData = true)
-        ////TODO: This function is not used
-        //{
-        //    //this.LastIdentifiedTypeID = this.ID;  //this allows sub-objects to access the parent identified item (type iet)
-        //    base.LastDisplayedTypeObject = this;  //this allows sub-objects to access the parent identified item by the auto-assigned sequential number (ObjectID)
-
-        //    var iet = sdcTreeBuilder.FillIdentifiedTypeItems(this, fillData);
-        //    return iet;
-        //}
-
     }
 
     public partial class RepeatingType //this is an SDC abstract class
     {
         protected RepeatingType() { }
-
         protected RepeatingType(BaseType parentNode, bool fillData = true, string id = null) : base(parentNode, fillData, id)
         {
-            this._minCard = ((ushort)(1));
-            this._maxCard = ((ushort)(1));
-            this._repeat = "1";
+            this.minCard = ((ushort)(1));
+            this.maxCard = ((ushort)(1));
+            this.repeat = "1";
             sdcTreeBuilder.FillRepeatingTypeItems(this, fillData);
         }
         //!+Replaced in original class: protected RepeatingType() { }
 
     }
-
 
     public partial class ChildItemsType
     {
@@ -1418,8 +953,8 @@ namespace SDC
         [System.Xml.Serialization.XmlIgnore]
         public List<IdentifiedExtensionType> ListOfItems
         {
-            get { return this._items; }
-            set { this._items = value; }
+            get { return this.Items; }
+            set { this.Items = value; }
         }
     }
 
@@ -1431,6 +966,7 @@ namespace SDC
 
     public partial class DisplayedType : IDisplayedType
     {
+        protected DisplayedType() { }
         public DisplayedType(BaseType parentNode, bool fillData = true, string id = null, string elementName = "", string elementPrefix = "") : base(parentNode, fillData, id)
         {
             this.enabled = true;
@@ -1442,12 +978,6 @@ namespace SDC
             SetNames(elementName, elementPrefix);
             sdcTreeBuilder.FillDisplayedTypeItems(this, fillData);
         }
-
-        protected DisplayedType() { }
-        //!+Replaced in original class: protected DisplayedType() { }
-
-        //internal DisplayedType FillDisplayedType(Boolean fillData = true)
-        //{ return sdcTreeBuilder.FillDisplayedTypeItems(this, fillData); }
 
         #region IDisplayedType
         public PropertyType AddProperty(Boolean fillData = true)
@@ -1462,15 +992,15 @@ namespace SDC
         { return sdcTreeBuilder.AddCodedValue(this, fillData); }
 
         #region DisplayedType Events
-        public IfThenType AddOnEvent(Boolean fillData = true)
+        public OnEventType AddOnEvent(Boolean fillData = true)
         { return sdcTreeBuilder.AddOnEvent(this, fillData); }
-        public IfThenType AddOnEnter(Boolean fillData = true)
+        public EventType AddOnEnter(Boolean fillData = true)
         { return sdcTreeBuilder.AddOnEnter(this, fillData); }
-        public OnEventType AddOnExit(Boolean fillData = true)
+        public EventType AddOnExit(Boolean fillData = true)
         { return sdcTreeBuilder.AddOnExit(this, fillData); }
-        public WatchedPropertyType AddActivateIf(Boolean fillData = true)
+        public GuardType AddActivateIf(Boolean fillData = true)
         { return sdcTreeBuilder.AddActivateIf(this, fillData); }
-        public WatchedPropertyType AddDeActivateIf(Boolean fillData = true)
+        public GuardType AddDeActivateIf(Boolean fillData = true)
         { return sdcTreeBuilder.AddDeActivateIf(this, fillData); }
         #endregion
 
@@ -1506,7 +1036,7 @@ namespace SDC
 
         protected HTML_Stype AddHTML()
         {
-            var rtf = new SDC.RichTextType(this);
+            var rtf = new RichTextType(this);
             var h = sdcTreeBuilder.AddFillHTML(rtf);
             return h;
         }
@@ -1547,7 +1077,8 @@ namespace SDC
             ElementName = "CodeMatch";
             ElementPrefix = "cmat";
             SetNames(elementName, elementPrefix);
-            this._codeMatchEnum = CodeMatchTypeCodeMatchEnum.ExactCodeMatch;
+            this.codeMatchEnum = CodeMatchTypeCodeMatchEnum.ExactCodeMatch;
+
         }
         //!+Replaced in original class: protected CodeMatchType() { }
     }
@@ -1571,34 +1102,8 @@ namespace SDC
 
     #endregion
 
+
     #region DataTypes
-    #region Numeric metadata attributes
-
-
-    //public partial class MaxExclusiveType
-    //{
-    //    public MaxExclusiveType(BaseType parentNode) : base(parentNode) { }
-    //    protected MaxExclusiveType() { }
-    //}
-
-    //public partial class MaxInclusiveType
-    //{
-    //    public MaxInclusiveType(BaseType parentNode) : base(parentNode) { }
-    //    protected MaxInclusiveType() { }
-    //}
-
-    //public partial class MinExclusiveType
-    //{
-    //    public MinExclusiveType(BaseType parentNode) : base(parentNode) { }
-    //    protected MinExclusiveType() { }
-    //}
-
-    //public partial class MinInclusiveType
-    //{
-    //    public MinInclusiveType(BaseType parentNode) : base(parentNode) { }
-    //    protected MinInclusiveType() { }
-    //}
-    #endregion
     public partial class DataTypes_DEType
     {
         protected DataTypes_DEType() { }
@@ -1616,21 +1121,20 @@ namespace SDC
         [System.Xml.Serialization.XmlIgnore]
         public BaseType DataTypeDE_Item
         {
-            get { return this._item; }
-            set { this._item = value; }
+            get { return this.Item; }
+            set { this.Item = value; }
         }
     }
 
     public partial class anyType_DEtype
     {
+        protected anyType_DEtype() { }
         public anyType_DEtype(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             ElementPrefix = "any";
             SetNames(elementName, elementPrefix);
         }
-        protected anyType_DEtype() { }
     }
-
 
 
     public partial class DataTypes_SType
@@ -1648,8 +1152,8 @@ namespace SDC
         [System.Xml.Serialization.XmlIgnore]
         public BaseType DataTypeS_Item
         {
-            get { return this._item; }
-            set { this._item = value; }
+            get { return this.Item; }
+            set { this.Item = value; }
         }
     }
 
@@ -1660,7 +1164,6 @@ namespace SDC
         {
             ElementPrefix = "uri";
             SetNames(elementName, elementPrefix);
-
         }
     }
 
@@ -1688,8 +1191,6 @@ namespace SDC
 
     public partial class base64Binary_Stype
     {
-        string _base64StringVal;
-
         protected base64Binary_Stype() { }
         public base64Binary_Stype(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
@@ -1699,11 +1200,7 @@ namespace SDC
         }
 
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "string")] //changed to string
-        public string valBase64
-        {
-            get { return _base64StringVal; }
-            set { _base64StringVal = value; }
-        }
+        public string valBase64 { get; set; }
     }
 
     public partial class boolean_DEtype
@@ -1733,6 +1230,11 @@ namespace SDC
         protected byte_DEtype() { }
         public byte_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "byte";
             //SetNames(elementName, elementPrefix);
 
@@ -1746,7 +1248,7 @@ namespace SDC
         {
             ElementPrefix = "byte";
             SetNames(elementName, elementPrefix);
-            //this._quantEnum = dtQuantEnum.EQ;
+            //this.quantEnum = dtQuantEnum.EQ;
         }
     }
 
@@ -1755,6 +1257,11 @@ namespace SDC
         protected date_DEtype() { }
         public date_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "date";
             //SetNames(elementName, elementPrefix);
 
@@ -1768,9 +1275,8 @@ namespace SDC
         {
             ElementPrefix = "date";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected date_Stype() { }
     }
 
     public partial class dateTime_DEtype
@@ -1778,6 +1284,11 @@ namespace SDC
         protected dateTime_DEtype() { }
         public dateTime_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "dt";
             //SetNames(elementName, elementPrefix);
 
@@ -1791,15 +1302,13 @@ namespace SDC
         {
             ElementPrefix = "dt";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected dateTime_Stype() { }
     }
 
     public partial class dateTimeStamp_DEtype
     {
         protected dateTimeStamp_DEtype() { }
-
         public dateTimeStamp_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             //ElementPrefix = "dts";
@@ -1822,6 +1331,11 @@ namespace SDC
         protected dayTimeDuration_DEtype() { }
         public dayTimeDuration_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "dtdur";
             //SetNames(elementName, elementPrefix);
         }
@@ -1834,9 +1348,8 @@ namespace SDC
         {
             ElementPrefix = "dtdur";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected dayTimeDuration_Stype() { }
     }
 
     public partial class decimal_DEtype
@@ -1844,6 +1357,11 @@ namespace SDC
         protected decimal_DEtype() { }
         public decimal_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "dec";
             //SetNames(elementName, elementPrefix);
 
@@ -1857,9 +1375,8 @@ namespace SDC
         {
             ElementPrefix = "dec";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected decimal_Stype() { }
     }
 
     public partial class double_DEtype
@@ -1867,6 +1384,11 @@ namespace SDC
         protected double_DEtype() { }
         public double_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "dbl";
             //SetNames(elementName, elementPrefix);
 
@@ -1880,16 +1402,20 @@ namespace SDC
         {
             ElementPrefix = "dbl";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected double_Stype() { }
     }
 
     public partial class duration_DEtype
     {
-        public duration_DEtype() { }
+        protected duration_DEtype() { }
         public duration_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "dur";
             //SetNames(elementName, elementPrefix);
 
@@ -1903,9 +1429,8 @@ namespace SDC
         {
             ElementPrefix = "";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected duration_Stype() { }
     }
 
     public partial class float_DEtype
@@ -1913,6 +1438,11 @@ namespace SDC
         protected float_DEtype() { }
         public float_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "flt";
             //SetNames(elementName, elementPrefix);
 
@@ -1926,9 +1456,8 @@ namespace SDC
         {
             ElementPrefix = "flt";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected float_Stype() { }
     }
 
     public partial class gDay_DEtype
@@ -1936,6 +1465,11 @@ namespace SDC
         protected gDay_DEtype() { }
         public gDay_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "day";
             //SetNames(elementName, elementPrefix);
         }
@@ -1949,7 +1483,6 @@ namespace SDC
             ElementPrefix = "day";
             SetNames(elementName, elementPrefix);
         }
-        //!+Replaced in original class: protected gDay_Stype() { }
     }
 
     public partial class gMonth_DEtype
@@ -1957,6 +1490,11 @@ namespace SDC
         protected gMonth_DEtype() { }
         public gMonth_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "mon";
             //SetNames(elementName, elementPrefix);
         }
@@ -1969,9 +1507,8 @@ namespace SDC
         {
             ElementPrefix = "mon";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected gMonth_Stype() { }
     }
 
     public partial class gMonthDay_DEtype
@@ -1979,6 +1516,11 @@ namespace SDC
         protected gMonthDay_DEtype() { }
         public gMonthDay_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "mday";
             //SetNames(elementName, elementPrefix);
         }
@@ -1991,9 +1533,8 @@ namespace SDC
         {
             ElementPrefix = "mday";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected gMonthDay_Stype() { }
     }
 
     public partial class gYear_DEtype
@@ -2001,6 +1542,11 @@ namespace SDC
         protected gYear_DEtype() { }
         public gYear_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "y";
             //SetNames(elementName, elementPrefix);
         }
@@ -2013,9 +1559,8 @@ namespace SDC
         {
             ElementPrefix = "y";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected gYear_Stype() { }
     }
 
     public partial class gYearMonth_DEtype
@@ -2023,6 +1568,11 @@ namespace SDC
         protected gYearMonth_DEtype() { }
         public gYearMonth_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "ym";
             //SetNames(elementName, elementPrefix);
         }
@@ -2034,9 +1584,8 @@ namespace SDC
         {
             ElementPrefix = "ym";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected gYearMonth_Stype() { }
     }
 
     public partial class hexBinary_DEtype
@@ -2052,7 +1601,6 @@ namespace SDC
 
     public partial class hexBinary_Stype
     {
-
         string _hexBinaryStringVal;
 
         protected hexBinary_Stype() { }
@@ -2090,7 +1638,7 @@ namespace SDC
         {
             ElementPrefix = "html";
             SetNames(elementName, elementPrefix);
-            this.Any = new List<System.Xml.XmlElement>();
+            //this.Any = new List<System.Xml.XmlElement>();
         }
 
     }
@@ -2101,6 +1649,11 @@ namespace SDC
         protected int_DEtype() { }
         public int_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "int";
             //SetNames(elementName, elementPrefix);
         }
@@ -2113,7 +1666,7 @@ namespace SDC
         {
             ElementPrefix = "int";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected int_Stype() { }
     }
@@ -2123,6 +1676,11 @@ namespace SDC
         protected integer_DEtype() { }
         public integer_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "intr";
             //SetNames(elementName, elementPrefix);
         }
@@ -2135,7 +1693,7 @@ namespace SDC
         {
             ElementPrefix = "intr";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected integer_Stype() { }
 
@@ -2157,23 +1715,18 @@ namespace SDC
         {
             get
             {
-                if (_val != null && _val.Length > 0)
-                { return Convert.ToDecimal(this._val); }
+                if (val != null && val.Length > 0)
+                { return Convert.ToDecimal(this.val); }
                 return null;
             }
             set
             {
                 if (value != null)
-                { this._val = Math.Truncate(value.Value).ToString(); }
-                else this._val = null;
+                { this.val = Math.Truncate(value.Value).ToString(); }
+                else this.val = null;
 
             }
         }
-
-
-
-
-
 
     }
 
@@ -2182,6 +1735,11 @@ namespace SDC
         protected long_DEtype() { }
         public long_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "lng";
             //SetNames(elementName, elementPrefix);
         }
@@ -2194,9 +1752,8 @@ namespace SDC
         {
             ElementPrefix = "lng";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected long_Stype() { }
     }
 
     public partial class negativeInteger_DEtype
@@ -2204,6 +1761,11 @@ namespace SDC
         protected negativeInteger_DEtype() { }
         public negativeInteger_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "nint";
             //SetNames(elementName, elementPrefix);
         }
@@ -2216,9 +1778,8 @@ namespace SDC
         {
             ElementPrefix = "nint";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected negativeInteger_Stype() { }
     }
 
     public partial class nonNegativeInteger_DEtype
@@ -2226,6 +1787,11 @@ namespace SDC
         protected nonNegativeInteger_DEtype() { }
         public nonNegativeInteger_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "nnint";
             //SetNames(elementName, elementPrefix);
         }
@@ -2238,9 +1804,8 @@ namespace SDC
         {
             ElementPrefix = "nnint";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected nonNegativeInteger_Stype() { }
     }
 
     public partial class nonPositiveInteger_DEtype
@@ -2248,6 +1813,11 @@ namespace SDC
         protected nonPositiveInteger_DEtype() { }
         public nonPositiveInteger_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "npint";
             //SetNames(elementName, elementPrefix);
         }
@@ -2260,9 +1830,8 @@ namespace SDC
         {
             ElementPrefix = "npint";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected nonPositiveInteger_Stype() { }
     }
 
     public partial class positiveInteger_DEtype
@@ -2270,6 +1839,11 @@ namespace SDC
         protected positiveInteger_DEtype() { }
         public positiveInteger_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "pint";
             //SetNames(elementName, elementPrefix);
         }
@@ -2282,9 +1856,8 @@ namespace SDC
         {
             ElementPrefix = "pint";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected positiveInteger_Stype() { }
     }
 
     public partial class short_DEtype
@@ -2292,6 +1865,11 @@ namespace SDC
         protected short_DEtype() { }
         public short_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "sh";
             //SetNames(elementName, elementPrefix);
         }
@@ -2304,9 +1882,8 @@ namespace SDC
         {
             ElementPrefix = "sh";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
-        //!+Replaced in original class: protected short_Stype() { }
     }
 
     public partial class string_DEtype
@@ -2334,6 +1911,11 @@ namespace SDC
         protected time_DEtype() { }
         public time_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "tim";
             //SetNames(elementName, elementPrefix);
         }
@@ -2346,7 +1928,7 @@ namespace SDC
         {
             ElementPrefix = "tim";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected time_Stype() { }
     }
@@ -2356,6 +1938,11 @@ namespace SDC
         protected unsignedByte_DEtype() { }
         public unsignedByte_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "ubyte";
             //SetNames(elementName, elementPrefix);
         }
@@ -2368,7 +1955,7 @@ namespace SDC
         {
             ElementPrefix = "ubyte";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected unsignedByte_Stype() { }
     }
@@ -2378,6 +1965,11 @@ namespace SDC
         protected unsignedInt_DEtype() { }
         public unsignedInt_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "unint";
             //SetNames(elementName, elementPrefix);
         }
@@ -2391,7 +1983,7 @@ namespace SDC
         {
             ElementPrefix = "uint";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected unsignedInt_Stype() { }
     }
@@ -2401,6 +1993,11 @@ namespace SDC
         protected unsignedLong_DEtype() { }
         public unsignedLong_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "ulng";
             //SetNames(elementName, elementPrefix);
         }
@@ -2414,7 +2011,7 @@ namespace SDC
 
             ElementPrefix = "ulng";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected unsignedLong_Stype() { }
     }
@@ -2424,6 +2021,11 @@ namespace SDC
         protected unsignedShort_DEtype() { }
         public unsignedShort_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
 
             //ElementPrefix = "ush";
             //SetNames(elementName, elementPrefix);
@@ -2438,7 +2040,7 @@ namespace SDC
 
             ElementPrefix = "ush";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected unsignedShort_Stype() { }
     }
@@ -2474,7 +2076,11 @@ namespace SDC
         protected yearMonthDuration_DEtype() { }
         public yearMonthDuration_DEtype(DataTypes_DEType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-
+            this.allowGT = false;
+            this.allowGTE = false;
+            this.allowLT = false;
+            this.allowLTE = false;
+            this.allowAPPROX = false;
             //ElementPrefix = "ymd";
             //SetNames(elementName, elementPrefix);
         }
@@ -2488,105 +2094,14 @@ namespace SDC
 
             ElementPrefix = "ymd";
             SetNames(elementName, elementPrefix);
-            this._quantEnum = dtQuantEnum.EQ;
+            this.quantEnum = dtQuantEnum.EQ;
         }
         //!+Replaced in original class: protected yearMonthDuration_Stype() { }
     }
     #endregion
 
     #region Rules
-    //public partial class ExpressionType
-    //{
-    //    public ExpressionType(BaseType parentNode) : base(parentNode) { }
-    //    protected ExpressionType() { }
 
-    //    /// <summary>
-    //    /// Replaces Items List<ExtensionBaseType>: Reference,    ScriptCode,     WebService
-    //    /// </summary>
-    //    internal virtual List<ExtensionBaseType> Ref_Script_WebSvc_List
-    //    {
-    //        get { return this._items; }
-    //        set { this._items = value; }
-    //    }
-    //}
-
-    //public partial class GetCodeType
-    //{
-    //    public GetCodeType(BaseType parentNode) : base(parentNode) { }
-    //    protected GetCodeType() { }
-    //}
-
-    //public partial class GetPropertyValuesType
-    //{
-    //    public GetPropertyValuesType(BaseType parentNode) : base(parentNode)
-    //    {
-    //        this._not = false;
-    //        this._boolOp = GetPropertyValuesTypeBoolOp.AND;
-    //    }
-    //    protected GetPropertyValuesType() { }
-    //    //!+Replaced in original class: protected GetPropertyValuesType() { }
-    //}
-
-    //public partial class IfBoolCompareType
-    //{
-    //    public IfBoolCompareType(BaseType parentNode) : base(parentNode)
-    //    {
-    //        this._not = false;
-    //        this.boolOp = GetPropertyValuesTypeBoolOp.AND;
-    //    }
-    //    protected IfBoolCompareType() { }
-    //    //!+Replaced in original class: protected IfBoolCompareType() { }
-    //    public IfBoolCompareType Fill_IfBoolCompareType(BaseType parentNode)
-    //    { return null; }
-    //}
-
-    //public partial class IfType
-    //{
-    //    public IfType(BaseType parentNode, bool fillData = true) : base(parentNode, fillData) { }
-    //    protected IfType() { }
-
-    //    /// <summary>
-    //    /// Replaces Items: BoolCompare (If blocks)
-    //    /// </summary>
-    //    //internal List<IfBoolCompareType> BoolCompare_ItemList
-    //    //{
-    //    //    get { return this._items; }
-    //    //    set { this._items = value; }
-    //    //}
-
-    //    /// <summary>
-    //    /// ExclusiveSelectedItems (ExclusiveItemPairsType)
-    //    /// </summary>
-    //    //internal SelectionSetBoolType SelectionDependencies_Item
-    //    //{
-    //    //    get { return (SelectionSetBoolType)this._item; }
-    //    //    set { this._item = value; }
-    //    //}
-
-    //    /// <summary>
-    //    /// Predicate (PredicateType)
-    //    /// </summary>
-    //    //internal PredicateType Predicate_Item
-    //    //{
-    //    //    get { return (PredicateType)this._item; }
-    //    //    set { this._item = value; }
-    //    //}
-
-    //    /// <summary>
-    //    /// PropertyValues (GetPropertyValuesType)
-    //    /// </summary>
-    //    //internal GetPropertyValuesType PropertyValues_Item
-    //    //{
-    //    //    get { return (GetPropertyValuesType)this._item; }
-    //    //    set { this._item = value; }
-    //    //}
-    //}
-
-    //public partial class IfThenType
-    //{
-    //    protected IfThenType() { }
-    //    public IfThenType(BaseType parentNode) : base(parentNode) { }
-    //}
 
 
     public partial class ItemNameType
@@ -2608,13 +2123,6 @@ namespace SDC
             SetNames(elementName, elementPrefix);
         }
     }
-
-
-    //public partial class PredicateInListType
-    //{
-    //    public PredicateInListType(BaseType parentNode) : base(parentNode) { }
-    //    protected PredicateInListType() { }
-    //}
 
 
     public partial class TargetItemIDType
@@ -2646,36 +2154,39 @@ namespace SDC
             SetNames(elementName, elementPrefix);
         } //{if (elementName.Length > 0) ElementName = elementName; }
     }
-    //public partial class ExclusiveItemPairsType
-    //{
-    //    public ExclusiveItemPairsType(BaseType parentNode) : base(parentNode)
-    //    {
-    //        this._not = false;
-    //    }
-    //    //protected ExclusiveItemPairsType () { }
-    //}
 
-    //public partial class RuleIllegalSelectionSetsType
-    //{
-    //    public RuleIllegalSelectionSetsType(BaseType parentNode) : base(parentNode)
-    //    {
-    //        this._not = false;
-    //    }
-    //    protected RuleIllegalSelectionSetsType() { }
-    //    //!+Replaced in original class: protected RuleIllegalSelectionSetsType () { }
-    //}
+    public partial class ParameterItemType : ExtensionBaseType
+    {
+        protected ParameterItemType() { }
+        public ParameterItemType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
+        {
+            this.SourceItemAttribute = "val";
+        }
+
+    }
+
+    public partial class CallFuncType : ExtensionBaseType
+    {
+        protected CallFuncType() { }
+        public CallFuncType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
+        {
+            this.returnList = false;
+        }
+
+    }
+
 
     #endregion
 
     #region Events
     public partial class OnEventType
     {
+        protected OnEventType() { }
         public OnEventType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             ElementPrefix = "onev";
             SetNames(elementName, elementPrefix);
         }
-        protected OnEventType() { }
     }
 
     public partial class RulesType
@@ -2688,44 +2199,7 @@ namespace SDC
         }
     }
 
-    //public partial class ScriptCodeAnyType
-    //{
-    //    protected ScriptCodeAnyType() { }
-    //        public ScriptCodeAnyType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
-    //        {
-    //            SetNames(elementName, elementPrefix);
-    //        }
-    //    }
-
-
-
-
-
-
-
-
-
-    //public partial class ReturnType
-    //{
-    //    protected ReturnType() { }
-    //    public ReturnType(BaseType parentNode, bool fillData = true) : base(parentNode, fillData) { }
-    //}
-
-    //public partial class ReturnBaseType
-    //{
-    //    protected ReturnBaseType() { }
-    //    public ReturnBaseType(BaseType parentNode, bool fillData = true) : base(parentNode, fillData) { }
-    //}
-
-
-
-
-
-
-
-
-
-    public partial class EventType : ExtensionBaseType
+    public partial class EventType : ConditionalGroupActionType
     {
         protected EventType() { }
         public EventType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
@@ -2735,182 +2209,29 @@ namespace SDC
         }
     }
 
-    //public partial class ThenType
-    //{
-    //    protected ThenType() { }
-    //    public ThenType(BaseType parentNode, bool fillData = true) : base(parentNode, fillData) { }
 
-    //    /// <summary>
-    //    /// Replaces Items List<BaseType>:
-    //    ///"Action", typeof(ExtensionType),
-    //    ///"CallIfThen", typeof(ItemNameType),
-    //    ///"IfThen", typeof(IfThenType),
-    //    ///"Inject", typeof(ActInjectType),
-    //    ///"RunCommand", typeof(ExpressionType),
-    //    ///"Save", typeof(ActSaveResponsesType),
-    //    ///"SetProperty", typeof(SetPropertyType),
-    //    ///"SetValue", typeof(ActSetValueType),
-    //    ///"ShowForm", typeof(ActShowFormType),
-    //    ///"ShowMessage", typeof(ActShowMessageType),
-    //    ///"ShowReport", typeof(ActShowReportType)
-    //    ///"ShowURL", typeof(WebServiceType),
-    //    ///"_SendMessage", typeof(ActSendMessageType),
-    //    ///"_SendReport", typeof(ActSendReportType),
-    //    ///"_ValidateForm", typeof(ActValidateFormType),
-    //    /// </summary>
-    //    internal ExtensionBaseType[] ThenItems_List  //This was changed from List<ExtensionBaseType>, and this may cause trouble since I usuallly work with lists, not arrays.
-    //    {
-    //        get { return this.Items; }
-    //        set { this.Items = value; }
-    //    }
-    //}
+    public partial class ConditionalGroupActionType : FuncBoolBaseType
+    {
+        protected ConditionalGroupActionType() { }
+        public ConditionalGroupActionType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
+        {
+            ElementPrefix = "cga";
+            SetNames(elementName, elementPrefix);
+        }
 
+    }
 
+    public partial class FuncBoolBaseType : ExtensionBaseType
+    {
+        protected FuncBoolBaseType() { }
+        public FuncBoolBaseType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
+        {
+            ElementPrefix = "fbb";
+            SetNames(elementName, elementPrefix);
+        }
 
+    }
 
-
-    //public partial class WatchedPropertyType
-    //{
-    //    protected WatchedPropertyType() { }
-    //        public WatchedPropertyType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
-    //        {
-    //            SetNames(elementName, elementPrefix);
-    //            this._onlyIf = false;
-    //        }
-
-    //}
-
-
-    #region Predicates
-    //public partial class PredicateBetweenType
-    //{
-    //    public PredicateBetweenType(BaseType parentNode) : base(parentNode) { }
-    //    public PredicateBetweenType() { }
-
-    //    /// <summary>
-    //    /// MinExclusive
-    //    /// </summary>
-    //    internal MinExclusiveType MinExclusive_Item
-    //    {
-    //        get { return (MinExclusiveType)this._item; }
-    //        set { this._item = value; }
-    //    }
-
-    //    /// <summary>
-    //    ///  MinInclusive
-    //    /// </summary>
-    //    internal MinInclusiveType MinInclusive_Item
-    //    {
-    //        get { return (MinInclusiveType)this._item; }
-    //        set { this._item = value; }
-    //    }
-
-    //    /// <summary>
-    //    /// MaxExclusive
-    //    /// </summary>
-    //    internal MaxExclusiveType MaxExclusive_Item
-    //    {
-    //        get { return (MaxExclusiveType)this._item1; }
-    //        set { this._item1 = value; }
-    //    }
-
-    //    /// <summary>
-    //    /// MaxInclusive
-    //    /// </summary>
-    //    internal MaxInclusiveType Max_Inclusive_Item
-    //    {
-    //        get { return (MaxInclusiveType)this._item1; }
-    //        set { this._item1 = value; }
-    //    }
-
-    //}
-
-    //public partial class PredicateCompareType
-    //{
-    //    public PredicateCompareType(BaseType parentNode) : base(parentNode) { }
-    //    public PredicateCompareType() { }
-
-    //    //"RHS_Expression", typeof(ExpressionType)
-    //    //"RHS_Extension", typeof(ExtensionBaseType)
-    //    //"RHS_GetCode", typeof(GetCodeType)
-    //    //"RHS_GetResponse", typeof(ItemNameType)
-    //    //"RHS_Value", typeof(DataTypes_SType)
-
-    //    /// <summary>
-    //    /// "RHS_Expression", typeof(ExpressionType)
-    //    /// </summary>
-    //    internal ExpressionType RHS_Expression_Item
-    //    {
-    //        get { return (ExpressionType)this._item; }
-    //        set { this._item = value; }
-    //    }
-    //    /// <summary>
-    //    /// "RHS_Extension", typeof(ExtensionBaseType)
-    //    /// </summary>
-    //    internal ExtensionBaseType RHS_Extension_Item
-    //    {
-    //        get { return (ExtensionBaseType)this._item; }
-    //        set { this._item = value; }
-    //    }
-    //    /// <summary>
-    //    /// "RHS_GetCode", typeof(GetCodeType)
-    //    /// </summary>
-    //    internal GetCodeType RHS_GetCode_Item
-    //    {
-    //        get { return (GetCodeType)this._item; }
-    //        set { this._item = value; }
-    //    }
-    //    /// <summary>
-    //    /// "RHS_GetResponse", typeof(ItemNameType)
-    //    /// </summary>
-    //    internal ItemNameType RHS_GetResponse_Item
-    //    {
-    //        get { return (ItemNameType)this._item; }
-    //        set { this._item = value; }
-    //    }
-    //    /// <summary>
-    //    /// "RHS_Value", typeof(DataTypes_SType)
-    //    /// </summary>
-    //    internal DataTypes_SType RHS_Value_Item
-    //    {
-    //        get { return (DataTypes_SType)this._item; }
-    //        set { this._item = value; }
-    //    }
-
-
-    //}
-
-
-
-
-
-    //public partial class ReturnBoolType
-    //{
-
-    //    public ReturnBoolType(BaseType parentNode, bool fillData = true) : base(parentNode, fillData) { }
-
-    //    protected ReturnBoolType()
-    //    {
-
-    //    }
-    //}
-
-
-
-
-
-    //public partial class PredicateType
-    //{
-    //    protected PredicateType() { }
-    //    public PredicateType(BaseType parentNode, bool fillData = true) : base(parentNode, fillData)
-    //    {
-    //        this._not = false;
-    //        this._boolOp = BoolListTypeBoolOp.AND;
-    //    }
-
-
-    //}
-    #endregion
 
     #endregion
 
@@ -2918,12 +2239,12 @@ namespace SDC
 
     public partial class ContactType
     {
+        protected ContactType() { }
         public ContactType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             this.ElementPrefix = "cont";
             SetNames(elementName, elementPrefix);
         }
-        protected ContactType() { }
 
         public PersonType AddPerson()
         {
@@ -2980,12 +2301,12 @@ namespace SDC
     #region Resources
     public partial class RichTextType
     {
+        protected RichTextType() { }
         public RichTextType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             this.ElementPrefix = "rtt";
             SetNames(elementName, elementPrefix);
         }
-        protected RichTextType() { }
 
         protected HTML_Stype AddHTML()
         {
@@ -3014,12 +2335,12 @@ namespace SDC
     #region RequestForm (Package)
     public partial class ComplianceRuleType
     {
+        protected ComplianceRuleType() { }
         public ComplianceRuleType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             this.ElementPrefix = "cmpr";
             SetNames(elementName, elementPrefix);
         }
-        protected ComplianceRuleType() { }
     }
 
     public partial class SubmissionRuleType
@@ -3123,13 +2444,12 @@ namespace SDC
 
     public partial class ContactsType
     {
-
+        protected ContactsType() { }
         public ContactsType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             this.ElementPrefix = "cont";
             SetNames(elementName, elementPrefix);
         }
-        protected ContactsType() { }
     }
 
     public partial class CountryCodeType
@@ -3137,7 +2457,7 @@ namespace SDC
         protected CountryCodeType() { }
         public CountryCodeType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "cocd";
+            ElementPrefix = "cycd";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3159,7 +2479,7 @@ namespace SDC
         protected PhoneNumberType() { }
         public PhoneNumberType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "pn";
+            ElementPrefix = "phn";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3170,7 +2490,7 @@ namespace SDC
         public PhoneType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             ElementName = "PhoneType";
-            ElementPrefix = "phn";
+            ElementPrefix = "pht";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3189,12 +2509,12 @@ namespace SDC
     #region  Email
     public partial class EmailAddressType
     {
+        protected EmailAddressType() { }
         public EmailAddressType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             ElementPrefix = "emad";
             SetNames(elementName, elementPrefix);
         }
-        protected EmailAddressType() { }
     }
 
     public partial class EmailType
@@ -3204,6 +2524,9 @@ namespace SDC
         {
             ElementPrefix = "eml";
             SetNames(elementName, elementPrefix);
+            //this.Usage = new string_Stype();
+            //this.EmailClass = new string_Stype();
+            //this.EmailAddress = new EmailAddressType();
         }
     }
 
@@ -3214,12 +2537,12 @@ namespace SDC
 
     public partial class ApprovalType
     {
+        protected ApprovalType() { }
         public ApprovalType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
             ElementPrefix = "appr";
             SetNames(elementName, elementPrefix);
         }
-        protected ApprovalType() { }
     }
 
     public partial class AssociatedFilesType
@@ -3227,7 +2550,7 @@ namespace SDC
         protected AssociatedFilesType() { }
         public AssociatedFilesType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "asfi";
+            ElementPrefix = "asfils";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3248,7 +2571,7 @@ namespace SDC
         protected FileDatesType() { }
         public FileDatesType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "fid";
+            ElementPrefix = "fildts";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3258,7 +2581,7 @@ namespace SDC
         protected FileHashType() { }
         public FileHashType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "fihsh";
+            ElementPrefix = "filhsh";
             SetNames(elementName, elementPrefix);
         }
     }
@@ -3278,7 +2601,7 @@ namespace SDC
         protected FileUsageType() { }
         public FileUsageType(BaseType parentNode, bool fillData = true, string elementName = "", string elementPrefix = "") : base(parentNode, fillData)
         {
-            ElementPrefix = "fius";
+            ElementPrefix = "filus";
             SetNames(elementName, elementPrefix);
         }
     }

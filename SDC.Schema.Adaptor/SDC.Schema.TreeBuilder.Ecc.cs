@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
 using System.Xml;
+using SDC.Schema;
 
 
 
@@ -22,8 +23,6 @@ namespace SDC
         /// resets for each Identified Item Type, and counts each element added under the iet.
         /// Used to create unique and relatively reproducible name properties for each element 
         /// </summary>
-        private int ietCounter = 0;
-
 
         #region Rules
 
@@ -70,7 +69,7 @@ namespace SDC
                 string releaseVersionSuffix = dr["ReleaseVersionSuffix"].ToString();  //e.g., CTP1, RC2, REL; UNK if a value is missing
                 string title = dr["OfficialName"].ToString();
                 string CTVcKey = dr["ChecklistTemplateVersionCkey"].ToString();
-                string lineage = shortName + "." + CTVcKey.Replace(".100004300", "");//remove the eCC namespace suffix ".1000043"
+                string lineage = dr["Lineage"].ToString() + "." + CTVcKey.Replace(".100004300", ""); //remove the eCC namespace suffix ".100004300"
                 string version = (dr["VersionID"].ToString()).Replace(".1000043", "") + "." + releaseVersionSuffix;//remove the eCC namespace suffix ".1000043"
                 string id = lineage + "_" + version + "_sdcFDF";  //FDF = "Form Design File".
                 bool required = dr["EffectiveDate"].ToString() != ""; //ToDo: It would be better to have a database field for required.
@@ -81,18 +80,19 @@ namespace SDC
                 var fd = new FormDesignType(this, null, false, id); //create the form with the new id. Inject "this" SDCTreeBuilderEcc object into the form;
 
                 this.FormDesign = fd;  //This eCC-specific tree builder needs a copy of the new form object.
-                                       //Note that we have a 2-way reference here:  fd holds a copy of "this" (the eCC tree buiilder), and "this" holds a copy of fd.
-                                       //This is a bidirectional dependency injection, allowing fd to call eCC-specific tree builder functions, 
-                                       //and "this" (The eCC tree builder) to assemble the eCC tree with fd components, and fill it with eCC content.
+                //Note that we have a 2-way reference here:  fd holds an instance of "this" (the eCC tree buiilder class), and "this" holds an instance of FormDesign (fd).
+                //This is a bidirectional dependency injection, allowing fd to call eCC-specific tree builder functions, 
+                //and "this" (The eCC tree builder) to assemble the eCC tree with fd components, and fill it with eCC content.
 
 
                 //Some basic fd properties
-                fd.baseURI = "cap.org";  //uses SDC Schema version (3.1) is “SDC.3.1”
+                fd.baseURI = "www.cap.org/eCC";  //uses SDC Schema version (3.1) is “SDC.3.1”
                 fd.lineage = lineage;
                 fd.version = version;
                 fd.fullURI = $"_baseURI={fd.baseURI}&_lineage={lineage}&_version={version}&_docType=sdcFDF";
-                fd.filename = id + ".xml";  // "SDC.3.11_FDF_" + shortName + "_" + fd.ID; //format like: SDC.3.11_FDF_Adrenal.Res_129.3.001.001.CTP1
+                fd.filename = id + ".xml";  // "SDC.3.11_FDF_" + lineage + "_" + fd.ID; //format like: SDC.3.11_FDF_Adrenal.Res_129.3.001.001.CTP1
                 fd.formTitle = title;
+                
 
 
                 //+PROPERTIES
@@ -110,6 +110,7 @@ namespace SDC
                 CreateStaticProperty(fd, dr["Category"].ToString(), "CAPeCC_meta", string.Empty, "Category", false, string.Empty, null, string.Empty, "Category"); //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["OfficialName"].ToString(), "CAPeCC_meta", string.Empty, "OfficialName", false, string.Empty, null, string.Empty, "OfficialName");  //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, dr["CAP_ProtocolName"].ToString(), "CAPeCC_meta", string.Empty, "CAP_ProtocolName", false, string.Empty, null, string.Empty, "CAP_ProtocolName");  //, "CAPeCC_CAP_Protocol");
+                CreateStaticProperty(fd, shortName, "CAPeCC_meta", string.Empty, "CAP_ProtocolShortName", false, string.Empty, null, string.Empty, "CAP_ProtocolShortName"); //, "CAPeCC_Data_Sources");
                 CreateStaticProperty(fd, dr["CAP_ProtocolVersion"].ToString(), "CAPeCC_meta", string.Empty, "CAP_ProtocolVersion", false, string.Empty, null, string.Empty, "CAP_ProtocolVersion");  //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, CTVcKey, "CAPeCC_meta", string.Empty, "TemplateID", false, string.Empty, null, string.Empty, "TemplateID"); 
 
@@ -119,12 +120,16 @@ namespace SDC
                 CreateStaticProperty(fd, required.ToString().ToLower(), "CAPeCC_meta", string.Empty, "CAP_Required", false, string.Empty, null, string.Empty, "CAP_Required");  //, "CAPeCC_CAP_Protocol");
 
                 //Dates
-                CreateStaticProperty(fd, MapDBNullToDateTime(dr["EffectiveDate"]).ToString(), "CAPeCC_meta dt.dateTime", string.Empty, "AccreditationDate", false, string.Empty, null, string.Empty, "AccreditationDate"); //, "CAPeCC_Dates");
-                CreateStaticProperty(fd, MapDBNullToDateTime(dr["WebPostingDate"]).ToString(), "CAPeCC_meta dt.dateTime", string.Empty, "WebPostingDate", false, string.Empty, null, string.Empty, "WebPostingDate"); //, "CAPeCC_Dates");
+                DateTime.TryParse(dr["EffectiveDate"].ToString(), out DateTime ed);
+                if (ed != default(DateTime))
+                    CreateStaticProperty(fd, ed.ToString("M/d/yyyy"), "CAPeCC_meta dt.dateTime", string.Empty, "AccreditationDate", false, string.Empty, null, string.Empty, "AccreditationDate"); //, "CAPeCC_Dates");
+
+                DateTime.TryParse(dr["WebPostingDate"].ToString(), out DateTime wpd);
+                if (wpd != default(DateTime))
+                    CreateStaticProperty(fd, wpd.ToString("M/d/yyyy"), "CAPeCC_meta dt.dateTime", string.Empty, "WebPostingDate", false, string.Empty, null, string.Empty, "WebPostingDate"); //, "CAPeCC_Dates");
 
                 //CAPeCC_Data_Sources
-                CreateStaticProperty(fd, shortName, "CAPeCC_meta", string.Empty, "ShortName", false, string.Empty, null, string.Empty, "ShortName"); //, "CAPeCC_Data_Sources");
-                CreateStaticProperty(fd, releaseVersionSuffix, "CAPeCC_meta", string.Empty, "ApprovalStatus", false, string.Empty, null, string.Empty, "ApprovalStatus"); //, "CAPeCC_Data_Sources");
+                CreateStaticProperty(fd, releaseVersionSuffix, "CAPeCC_meta", string.Empty, "ReleaseStatus", false, string.Empty, null, string.Empty, "ApprovalStatus"); //, "CAPeCC_Data_Sources");
                 if (!string.IsNullOrEmpty(AJCCversion)) CreateStaticProperty(fd, AJCCversion, "CAPeCC_meta", string.Empty, "AJCC_Version", false, string.Empty, null, string.Empty, "AJCC_Version"); //, "CAPeCC_Data_Sources");
                 if (!string.IsNullOrEmpty(FIGOversion)) CreateStaticProperty(fd, FIGOversion, "CAPeCC_meta", string.Empty, "FIGO_Version", false, string.Empty, null, string.Empty, "FIGO_Version"); //, "CAPeCC_Data_Sources");
 
@@ -140,18 +145,18 @@ namespace SDC
 
         #region Actions
 
-        public override ActSendMessageType AddFillActSendMessage(ThenType tt, Boolean fillData = true)
+        public override ActSendMessageType AddFillActSendMessage(ActionsType at, Boolean fillData = true)
         {
-            var asmt = new ActSendMessageType(tt);
-            if (tt.Items != null) tt.Items = new SDC.ExtensionBaseType[25]; //xsd2code generated an array instead of a list here.  
+            var asmt = new ActSendMessageType(at);
+            if (at.Items != null) at.Items = new SDC.Schema.ExtensionBaseType[25]; //xsd2code generated an array instead of a list here.  
                                                                             //It's not clear if sizing the array at 25 will generate an error for the null entries ????  
                                                                             //It will probably work, but it's not clear.
                                                                             //TODO: Consider a function to auto-resize the array 
                                                                             //TODO: Follow up bug report with xsd2code - this should be a List, not an array
-            tt.Items[tt.Items.Length] = asmt;
+            at.Items[at.Items.Length] = asmt;
 
             var p = new PropertyType(asmt);
-            var html = new SDC.HTML_Stype(asmt);
+            var html = new SDC.Schema.HTML_Stype(asmt);
             p.TypedValue.Item = html;
 
             asmt.Property.Add(p);
@@ -167,35 +172,35 @@ namespace SDC
             return asmt;
 
         }
-        public override ActActionType AddAction(ThenType tt, Boolean fillData = true)
-        { return new ActActionType(tt); }
-        //public override ActSetPropertyType AddSetProperty(ThenType tt, Boolean fillData = true)
-        //{ return new ActSetPropertyType(tt) ; }
-        public override ActAddCodeType AddAddCode(ThenType tt, Boolean fillData = true)
-        { return new ActAddCodeType(tt); }
-        //public override ActSetValueType AddSetValue(ThenType tt, Boolean fillData = true)
-        //{ return new ActSetValueType(tt); }
-        public override ActInjectType AddInject(ThenType tt, Boolean fillData = true)
-        { return new ActInjectType(tt); }
-        public override ActShowMessageType AddShowMessage(ThenType tt, Boolean fillData = true)
-        { return new ActShowMessageType(tt); }
-        //public override ExpressionType AddRunCommand(ThenType tt, Boolean fillData = true)
-        //{ return new ExpressionType(tt); }
-        //public override FuncType AddShowURL(ThenType tt, Boolean fillData = true)
-        //{ return new FuncType(tt); }
-        public override ActShowFormType AddShowForm(ThenType tt, Boolean fillData = true)
-        { return new ActShowFormType(tt); }
-        public override ActSaveResponsesType AddSave(ThenType tt, Boolean fillData = true)
-        { return new ActSaveResponsesType(tt); }
-        public override ActSendReportType AddShowReport(ThenType tt, Boolean fillData = true)
-        { return new ActSendReportType(tt); }
-        public override ActSendMessageType AddSendMessage(ThenType tt, Boolean fillData = true)
-        { return new ActSendMessageType(tt); }
-        public override ActValidateFormType AddValidateForm(ThenType tt, Boolean fillData = true)
-        { return new ActValidateFormType(tt); }
-        //public override IfThenType AddIfThen(ThenType tt, Boolean fillData = true)
+        public override ActActionType AddAction(ActionsType at, Boolean fillData = true)
+        { return new ActActionType(at); }
+        //public override ActSetPropertyType AddSetProperty(ActionsType at, Boolean fillData = true)
+        //{ return new ActSetPropertyType(at) ; }
+        public override ActAddCodeType AddAddCode(ActionsType at, Boolean fillData = true)
+        { return new ActAddCodeType(at); }
+        //public override ActSetValueType AddSetValue(ActionsType at, Boolean fillData = true)
+        //{ return new ActSetValueType(at); }
+        public override ActInjectType AddInject(ActionsType at, Boolean fillData = true)
+        { return new ActInjectType(at); }
+        public override ActShowMessageType AddShowMessage(ActionsType at, Boolean fillData = true)
+        { return new ActShowMessageType(at); }
+        //public override ExpressionType AddRunCommand(ActionsType at, Boolean fillData = true)
+        //{ return new ExpressionType(at); }
+        //public override FuncType AddShowURL(ActionsType at, Boolean fillData = true)
+        //{ return new FuncType(at); }
+        public override ActShowFormType AddShowForm(ActionsType at, Boolean fillData = true)
+        { return new ActShowFormType(at); }
+        public override ActSaveResponsesType AddSave(ActionsType at, Boolean fillData = true)
+        { return new ActSaveResponsesType(at); }
+        public override ActSendReportType AddShowReport(ActionsType at, Boolean fillData = true)
+        { return new ActSendReportType(at); }
+        public override ActSendMessageType AddSendMessage(ActionsType at, Boolean fillData = true)
+        { return new ActSendMessageType(at); }
+        public override ActValidateFormType AddValidateForm(ActionsType at, Boolean fillData = true)
+        { return new ActValidateFormType(at); }
+        //public override IfThenType AddIfThen(ActionsType at, Boolean fillData = true)
         //{ return new IfThenType(tt); }
-        //public override ItemNameType AddCallIfThen(ThenType tt, Boolean fillData = true)
+        //public override ItemNameType AddCallIfThen(ActionsType at, Boolean fillData = true)
         //{ return new ItemNameType(tt); }
 
 
@@ -229,7 +234,7 @@ namespace SDC
         /// then we can it's name and ID to name non-repeating child elements such as ResponseField
         /// 
         /// </summary>
-        /// <param name="prefix">prefix iindicating the type of object to name. The default is "BT" for BaseType</param>
+        /// <param name="prefix">prefix indicating the type of object to name. The default is "BT" for BaseType</param>
         /// <param name="bt">an object of type BaseType</param>
         /// <returns></returns>
 
@@ -239,14 +244,14 @@ namespace SDC
             string prefix = "";
             string shortName = "";
 
-            if (bt.GetType().IsSubclassOf(typeof(DisplayedType)))
+            if (bt.GetType().IsSubclassOf(typeof(IdentifiedExtensionType)))
             {
-                //ietCounter = 0;
                 shortID = TruncateID((IdentifiedExtensionType)bt);
                 prefix = bt.ElementPrefix;
-                bt.BaseName = (string)drFormDesign["ShortName"];
-                shortName = bt.BaseName;
-                if (shortName.Length > 0) shortName += "_";  //I don't like 2 underscores next to each other.
+                //TODO: shortName is commented out until we have a chance to QA the names
+                //bt.BaseName = ((string)drFormDesign["ShortName"]).Replace(" ", "_");
+                //shortName = bt.BaseName;
+                //if (shortName.Length > 0) shortName += "_";  //I don't like 2 underscores next to each other.
                 if (prefix.Length > 0) prefix += "_";
                 return prefix + shortName + shortID;
 
@@ -255,7 +260,7 @@ namespace SDC
             {
                 IdentifiedExtensionType iet = bt.ParentIETypeObject;
                 shortID = TruncateID(iet) + "_";
-                shortName = bt.BaseName;
+                shortName = bt.BaseName.Replace(" ", "_");
                 prefix = bt.ElementPrefix;
                 if (shortName.Length > 0) shortName += "_";
                 if (prefix.Length > 0) prefix += "_";
@@ -297,6 +302,10 @@ namespace SDC
             var repText = drFormDesign["reportText"].ToString();
             if (!string.IsNullOrWhiteSpace(repText)) AddPropertyReportText(dt);
 
+            var altText = drFormDesign["longText"].ToString();
+            if (!string.IsNullOrWhiteSpace(altText)) AddPropertyAltText(dt);
+
+
             return dt;
             //addDisplayedTypeToChildItems(rt);
             //Add @ordered
@@ -312,49 +321,6 @@ namespace SDC
 
             return iet;
         }
-
-        //private string CreateIETname(IdentifiedExtensionType iet)
-        //{
-        //    ietCounter = 0;
-        //    var shortName = (string)drFormDesign["ShortName"];
-        //    string shortID = TruncateID(iet);
-        //    string prefix = "";
-        //    string ietType = iet.GetType().ToString();
-
-        //    //Create prefix
-        //    switch (ietType)
-        //    {
-        //        case "SDC.SectionItemType":
-        //            prefix = "S";
-        //            break;
-        //        case "SDC.QuestionItemType":
-        //            prefix = "Q";
-        //            break;
-        //        case "SDC.ListItemType":
-        //            prefix = "LI";
-        //            break;
-        //        case "SDC.DisplayedType":
-        //            prefix = "D";
-        //            break;
-        //        case "SDC.ButtonItemType":
-        //            prefix = "B";
-        //            break;
-        //        case "SDC.InjectFormType":
-        //            prefix = "Inj";
-        //            break;
-        //        default:
-        //            int i = ietType.IndexOf("Type");
-        //            if (i > 0) prefix = ietType.Substring(4, i - 4); //strip off leading "SDC." and trailing "Type"
-        //            break;
-        //    }
-
-        //    if (shortName != "") prefix +=  "_";  //I don't like 2 underscores next to each other.
-
-        //        iet.name = prefix + shortName + "_" + shortID;
-        //    
-
-        //    return iet.name;
-        //}
 
         private static string TruncateID(IdentifiedExtensionType iet)
         {
@@ -1317,7 +1283,7 @@ namespace SDC
                         dt.ElementName = itemDataType;
                         dt.val = (byte[])drFormDesign["DefaultValue"];
                         //TODO: dt.valHex = (string)drFormDesign["val_string"];//TODO: missing
-                        dt.length = (long)drFormDesign["length"];
+                        //dt.length = (long)drFormDesign["length"];
                         dt.maxLength = (long)drFormDesign["AnswerMaxChars"];//AnswerMaxChars
                         //TODO: dt.mimeType = (string)drFormDesign["mimeType"];//TODO: missing
                         dt.minLength = (long)drFormDesign["minLength"];
@@ -1664,25 +1630,27 @@ namespace SDC
 
         }
 
-        protected override FuncType AddFillWebService(LookupEndPointType lep, Boolean fillData = true)
+        protected override CallFuncType AddFillWebService(LookupEndPointType lep, Boolean fillData = true)
         { throw new NotImplementedException(); }
 
         protected override string FillQuantifier()
         {
-            string q;
-            try
-            {
-                q = (string)drFormDesign["quantifier"];
-            }
-            catch (Exception ex)
-            {
-                q = "EQ";
-            }
+            string q = "EQ";
+
+            //TODO: fix quantifiers in database
+            //try
+            //{
+            //    q = (string)drFormDesign["quantifier"];
+            //}
+            //catch (Exception ex)
+            //{
+            //    q = "EQ";
+            //}
 
             return q;
         }
 
-        protected override FuncType FillWebService(FuncType wst)
+        protected override CallFuncType FillWebService(CallFuncType wst)
         { throw new NotImplementedException(); }
 
         #endregion
@@ -1691,34 +1659,34 @@ namespace SDC
 
         #region DisplayedType Events
 
-        public override WatchedPropertyType AddActivateIf(DisplayedType dt, Boolean fillData = true)
+        public override GuardType AddActivateIf(DisplayedType dt, Boolean fillData = true)
         { throw new NotImplementedException(); }
 
-        public override WatchedPropertyType AddDeActivateIf(DisplayedType dt, Boolean fillData = true)
+        public override GuardType AddDeActivateIf(DisplayedType dt, Boolean fillData = true)
         { throw new NotImplementedException(); }
 
-        public override IfThenType AddOnEnter(DisplayedType dt, Boolean fillData = true)
+        public override EventType AddOnEnter(DisplayedType dt, Boolean fillData = true)
         { throw new NotImplementedException(); }
 
-        public override IfThenType AddOnEvent(DisplayedType dt, Boolean fillData = true)
+        public override OnEventType AddOnEvent(DisplayedType dt, Boolean fillData = true)
         { throw new NotImplementedException(); }
 
-        public override OnEventType AddOnExit(DisplayedType dt, Boolean fillData = true)
+        public override EventType AddOnExit(DisplayedType dt, Boolean fillData = true)
         { throw new NotImplementedException(); }
 
-        protected override WatchedPropertyType FillActivateIf(WatchedPropertyType oe)
+        protected override GuardType FillActivateIf(GuardType oe)
         { throw new NotImplementedException(); }
 
-        protected override WatchedPropertyType FillDeActivateIf(WatchedPropertyType oe)
+        protected override GuardType FillDeActivateIf(GuardType oe)
         { throw new NotImplementedException(); }
 
-        protected override IfThenType FillOnEnter(IfThenType oe)
+        protected override EventType FillOnEnter(EventType oe)
         { throw new NotImplementedException(); }
 
-        protected override IfThenType FillOnEvent(IfThenType oe)
+        protected override OnEventType FillOnEvent(OnEventType oe)
         { throw new NotImplementedException(); }
 
-        protected override OnEventType FillOnExit(OnEventType oe)
+        protected override EventType FillOnExit(EventType oe)
         { throw new NotImplementedException(); }
 
         #endregion
@@ -1730,6 +1698,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.propName = "altText";
             p.val = drFormDesign["LongText"].ToString();
+            p.BaseName = "altTxt";
             FillProperty(p);
             return p;
         }
@@ -1739,6 +1708,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "description";
             p.val = drFormDesign["Description"].ToString();
+            p.BaseName = "desc";
             FillProperty(p);
             return p;
         }
@@ -1758,6 +1728,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "popUpText";
             p.val = drFormDesign["PopUpText"].ToString();
+            p.BaseName = "popUp";
             FillProperty(p);
             return p;
         }
@@ -1779,6 +1750,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "reportTextShort";
             p.val = drFormDesign["ShortText"].ToString();
+            p.BaseName = "shortTxt";
             FillProperty(p);
             return p;
         }
@@ -1788,6 +1760,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "spanishText";
             p.val = drFormDesign["panishText"].ToString();
+            p.BaseName = "spanTxt";
             FillProperty(p);
             return p;
         }
@@ -1797,6 +1770,7 @@ namespace SDC
             var p = AddProperty(parent, false);
             p.type = "tooltip";
             p.val = drFormDesign["ControlTip"].ToString();
+            p.BaseName = "tooltip";
             FillProperty(p);
             return p;
         }
@@ -1997,9 +1971,8 @@ namespace SDC
             lep.Security.val = string.Empty;
 
 
-            //if (lep.Parameter == null) lep.Parameter = new List<GetParameterFromPropertyType>();
             if (lep.Items == null) lep.Items = new List<ExtensionBaseType>();
-            var p = new ParameterItemType111();
+            var p = new ParameterItemType(lep);
             p.paramName = string.Empty;
             p.sourceItemName = "";
             p.SourceItemAttribute = "val";
@@ -2089,7 +2062,7 @@ namespace SDC
 
         public override UnitsType FillUnits(UnitsType ut)
         {
-            ut.unitSystem = "UCOM";
+            ut.unitSystem = "UCUM";
             ut.val = drFormDesign["AnswerUnits"].ToString();
             return ut;
         }

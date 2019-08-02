@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<project name="Checklist Template Generator" default="build" basedir=".">
+    <target name="clean">
+        <delete file="bin\Capx.Apps.ChecklistTemplateGenerator.dll" />
+    </target>
+    <target name="build">
+        <csc target="library" output="bin\Capx.Apps.ChecklistTemplateGenerator.dll" debug="false">
+            <sources>
+                <include name="cs\*.cs"/>
+            </sources>
+        </csc>
+    </target>
+</project>
