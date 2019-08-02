@@ -1,8 +1,7 @@
-﻿<dx:DXWindow
-    x:Class="MainWindow"
+﻿<dx:DXWindow x:Class="MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:Serialization="clr-namespace:DevExpress.Xpf.LayoutControl.Serialization;assembly=DevExpress.Xpf.LayoutControl.v18.1"
+    xmlns:Serialization="clr-namespace:DevExpress.Xpf.LayoutControl.Serialization;assembly=DevExpress.Xpf.LayoutControl.v19.1"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
     xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
@@ -49,8 +48,7 @@
                 <dx:DesignDataSettings RowCount="5"/>
             </dx:DesignDataManager.DesignData>
         </dx:TypedSimpleSource-->
-        <dx:TypedSimpleSource
-            x:Key="TypedSimpleSource"
+        <dx:TypedSimpleSource x:Key="TypedSimpleSource"
             AdapterType="{x:Type eCC_DataSetTableAdapters:ChecklistTemplateVersionsTableAdapter}"
             ContextType="{x:Type local:eCC_DataSet}"
             Path="ChecklistTemplateVersions">
@@ -68,60 +66,50 @@
             <dxb:BarManagerCategory Name="BuiltIn" />
         </dxb:BarManager.Categories>
         <dxb:BarManager.Items>
-            <dxb:BarButtonItem
-                x:Name="bNew"
+            <dxb:BarButtonItem x:Name="bNew"
                 CategoryName="File"
                 Content="New"
                 Glyph="Images/Icons/new-16x16.png"
                 Hint="New Blank Document"
                 KeyGesture="Ctrl+N" />
-            <dxb:BarButtonItem
-                x:Name="bOpen"
+            <dxb:BarButtonItem x:Name="bOpen"
                 CategoryName="File"
                 Content="Open"
                 Glyph="Images/Icons/open-16x16.png"
                 Hint="Open"
                 KeyGesture="Ctrl+O" />
-            <dxb:BarButtonItem
-                x:Name="bClose"
+            <dxb:BarButtonItem x:Name="bClose"
                 CategoryName="File"
                 Content="Close"
                 Glyph="Images/Icons/close-16x16.png"
                 Hint="Close" />
-            <dxb:BarButtonItem
-                x:Name="bSave"
+            <dxb:BarButtonItem x:Name="bSave"
                 CategoryName="File"
                 Content="Save"
                 Glyph="Images/Icons/save-16x16.png"
                 Hint="Save Document"
                 KeyGesture="Ctrl+S" />
-            <dxb:BarButtonItem
-                x:Name="bSaveAs"
+            <dxb:BarButtonItem x:Name="bSaveAs"
                 CategoryName="File"
                 Content="Save As..."
                 Glyph="Images/Icons/save-as-16x16.png"
                 Hint="Save Document As..." />
-            <dxb:BarButtonItem
-                x:Name="bPrint"
+            <dxb:BarButtonItem x:Name="bPrint"
                 CategoryName="File"
                 Content="Print"
                 Glyph="Images/Icons/print-16x16.png"
                 KeyGesture="Ctrl+P" />
-            <dxb:BarButtonItem
-                x:Name="bExit"
+            <dxb:BarButtonItem x:Name="bExit"
                 CategoryName="File"
                 Content="Exit"
                 KeyGesture="Ctrl+X" />
-            <dxb:BarButtonItem
-                x:Name="bHome"
+            <dxb:BarButtonItem x:Name="bHome"
                 CategoryName="Help"
                 Content="Developer Express on the Web" />
-            <dxb:BarButtonItem
-                x:Name="bAbout"
+            <dxb:BarButtonItem x:Name="bAbout"
                 CategoryName="Help"
                 Content="About" />
-            <dxb:BarSubItem
-                x:Name="smFile"
+            <dxb:BarSubItem x:Name="smFile"
                 CategoryName="BuiltIn"
                 Content="File">
                 <dxb:BarSubItem.ItemLinks>
@@ -137,8 +125,7 @@
                     <dxb:BarButtonItemLink BarItemName="bExit" />
                 </dxb:BarSubItem.ItemLinks>
             </dxb:BarSubItem>
-            <dxb:BarSubItem
-                x:Name="smHelp"
+            <dxb:BarSubItem x:Name="smHelp"
                 CategoryName="BuiltIn"
                 Content="Help">
                 <dxb:BarSubItem.ItemLinks>
@@ -149,8 +136,7 @@
             </dxb:BarSubItem>
         </dxb:BarManager.Items>
         <dxb:BarManager.Bars>
-            <dxb:Bar
-                x:Name="MainMenu"
+            <dxb:Bar x:Name="MainMenu"
                 Caption="MainMenu"
                 IsMainMenu="True"
                 UseWholeRow="True">
@@ -166,12 +152,10 @@
         <dxd:DockLayoutManager DataContext="{Binding}">
             <dxd:DockLayoutManager.AutoHideGroups>
                 <dxd:AutoHideGroup>
-                    <dxd:LayoutPanel
-                        Padding="1"
+                    <dxd:LayoutPanel Padding="1"
                         Caption="Navigation"
                         ItemWidth="200">
-                        <dxnb:NavBarControl
-                            x:Name="navBarControl"
+                        <dxnb:NavBarControl x:Name="navBarControl"
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Stretch">
                             <dxnb:NavBarControl.View>
@@ -198,64 +182,55 @@
                 </dxd:AutoHideGroup>
             </dxd:DockLayoutManager.AutoHideGroups>
             <dxd:LayoutGroup>
-                <dxd:LayoutGroup
-                    ItemHeight="Auto"
+                <dxd:LayoutGroup ItemHeight="Auto"
                     ItemWidth="2*"
                     Orientation="Vertical">
-                    <dxd:DocumentGroup
-                        HasAccent="False"
+                    <dxd:DocumentGroup HasAccent="False"
                         ItemHeight="3*"
                         SelectedTabIndex="0">
                         <dxd:DocumentPanel Caption="Templates" ItemHeight="3*">
-                            <dxlc:LayoutControl
-                                Padding="0"
+                            <dxlc:LayoutControl Padding="0"
                                 ItemSpace="2"
                                 Orientation="Vertical">
-                                <dxg:GridControl
-                                    x:Name="gridControl1"
+                                <dxg:GridControl x:Name="gridControl1"
                                     AutoGenerateColumns="AddNew"
                                     AutoPopulateColumns="True"
                                     ItemsSource="{Binding Data, Source={StaticResource TypedSimpleSource}}"
                                     SelectionMode="Cell"
                                     ShowBorder="False">
-                                    <dxg:GridColumn
-                                        x:Name="Key"
+                                    <dxg:GridColumn x:Name="Key"
                                         Width="15"
                                         FieldName="ChecklistTemplateVersionCkey"
                                         Header="Key"
-                                        IsSmart="True" />
-                                    <dxg:GridColumn
-                                        Width="65"
+                                        IsSmart="True"
+                                        />
+                                    <dxg:GridColumn Width="65"
                                         FieldName="VisibleText"
                                         IsSmart="True"
                                         SortIndex="0"
                                         SortOrder="Ascending" />
-                                    <dxg:GridColumn
-                                        Width="20"
+                                    <dxg:GridColumn Width="20"
                                         FieldName="CurrentFileName"
-                                        IsSmart="True" />
+                                        IsSmart="True"
+                                        />
                                     <dxg:GridControl.View>
-                                        <dxg:TreeListView
-                                            x:Name="TreeListView1"
+                                        <dxg:TreeListView x:Name="TreeListView1"
                                             AutoWidth="True"
                                             ShowCheckboxes="True" />
                                     </dxg:GridControl.View>
                                 </dxg:GridControl>
-                                <dxlc:LayoutControl
-                                    Height="29.2"
+                                <dxlc:LayoutControl Height="29.2"
                                     Margin="0"
                                     Padding="0"
                                     Serialization:SerializableItem.TypeName="LayoutGroup"
                                     dx:ScrollViewerTouchBehavior.IsEnabled="True"
                                     ItemSpace="1">
-                                    <dx:SimpleButton
-                                        x:Name="cbCheckAll"
+                                    <dx:SimpleButton x:Name="cbCheckAll"
                                         Margin="0"
                                         Padding="0,1,0,0"
                                         Content="Check All"
                                         FontSize="14" />
-                                    <dx:SimpleButton
-                                        x:Name="cbUncheckAll"
+                                    <dx:SimpleButton x:Name="cbUncheckAll"
                                         Margin="0"
                                         Padding="0,1,0,0"
                                         Content="Uncheck All"
@@ -265,8 +240,7 @@
                             </dxlc:LayoutControl>
                         </dxd:DocumentPanel>
                         <dxd:DocumentPanel Caption="Document2" ItemHeight="3*">
-                            <dxg:GridControl
-                                x:Name="gridControl2"
+                            <dxg:GridControl x:Name="gridControl2"
                                 AutoPopulateColumns="True"
                                 ItemsSource="{Binding Data}"
                                 ShowBorder="False">
@@ -287,8 +261,7 @@
                 </dxd:LayoutGroup>
                 <dxd:TabbedGroup ItemHeight="Auto" SelectedTabIndex="0">
                     <dxd:LayoutPanel Caption="XDT / HTML Generator" CustomizationCaption="XDT / HTML Generator">
-                        <dxd:LayoutGroup
-                            VerticalAlignment="Stretch"
+                        <dxd:LayoutGroup VerticalAlignment="Stretch"
                             CaptionAlignMode="AutoSize"
                             CaptionVerticalAlignment="Top"
                             Orientation="Vertical"
@@ -296,15 +269,13 @@
                             TextTrimming="CharacterEllipsis"
                             TextWrapping="Wrap">
                             <dxd:LayoutGroup ItemHeight="Auto" LayoutItemInterval="2">
-                                <dxd:LayoutControlItem
-                                    Caption="ID"
+                                <dxd:LayoutControlItem Caption="ID"
                                     CustomizationCaption="ID"
                                     DataContext="{Binding}"
                                     Focusable="False"
                                     ItemWidth="Auto"
                                     ToolTip="Enter the integer part of the CTV Ckey (template-id)">
-                                    <dxe:TextEdit
-                                        x:Name="txtID"
+                                    <dxe:TextEdit x:Name="txtID"
                                         Width="50"
                                         HorizontalAlignment="Stretch"
                                         Mask="9999"
@@ -317,14 +288,12 @@
                                     <Button x:Name="btnGenerate" Content="Generate" />
                                 </dxd:LayoutControlItem>
                             </dxd:LayoutGroup>
-                            <dxd:LayoutControlItem
-                                Caption="Namespace "
+                            <dxd:LayoutControlItem Caption="Namespace "
                                 CustomizationCaption="Namespace"
                                 DataContext="{Binding}"
                                 Focusable="False"
                                 ToolTip="Enter the Namespace (decimal) part of the CTV Ckey (template-id)">
-                                <dxe:TextEdit
-                                    x:Name="txtNamespace"
+                                <dxe:TextEdit x:Name="txtNamespace"
                                     HorizontalAlignment="Stretch"
                                     AllowNullInput="False"
                                     EditValue="100004300"
@@ -335,37 +304,32 @@
                                     MaskType="Simple"
                                     TextWrapping="Wrap" />
                             </dxd:LayoutControlItem>
-                            <dxd:LayoutControlItem
-                                Caption="File Name "
+                            <dxd:LayoutControlItem Caption="File Name "
                                 CustomizationCaption="CTV_Ckey"
                                 DataContext="{Binding}"
                                 Focusable="False"
                                 Foreground="Black"
                                 OpacityMask="#99000000"
                                 ToolTip="If no filename is entered, the database value will be used, if present.">
-                                <dxe:TextEdit
-                                    x:Name="txtFileName"
+                                <dxe:TextEdit x:Name="txtFileName"
                                     Foreground="Black"
                                     NullText="Enter filename without path or extension"
                                     TextWrapping="Wrap" />
                             </dxd:LayoutControlItem>
-                            <dxd:LayoutControlItem
-                                Caption="File Path "
+                            <dxd:LayoutControlItem Caption="File Path "
                                 CustomizationCaption="File path"
                                 DataContext="{Binding}"
                                 Focusable="False"
                                 Foreground="Black"
                                 OpacityMask="#99000000"
                                 ToolTip="If no path is entered, the value from the AppConfig XML file will be used, if present.  If that entry is incorrect or missing, the application's directory will be used.">
-                                <dxe:TextEdit
-                                    x:Name="txtFilePath"
+                                <dxe:TextEdit x:Name="txtFilePath"
                                     Foreground="Black"
                                     NullText="Enter Root Path where files wil be saved."
                                     Text=""
                                     TextWrapping="Wrap" />
                             </dxd:LayoutControlItem>
-                            <dxd:LayoutControlItem
-                                Caption="Browser Path and File Name"
+                            <dxd:LayoutControlItem Caption="Browser Path and File Name"
                                 CaptionAlignMode="Custom"
                                 CaptionWidth="100"
                                 CustomizationCaption="Browser"
@@ -376,8 +340,7 @@
                                 ShowCaption="True"
                                 TextWrapping="Wrap"
                                 ToolTip="If no path is entered, the value from the AppConfig XML file will be used,                                                         if present.  If that entry is incorrect or missing, the application's directory will be used.">
-                                <dxe:TextEdit
-                                    x:Name="txtBrowserPath"
+                                <dxe:TextEdit x:Name="txtBrowserPath"
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch"
                                     HorizontalContentAlignment="Left"
@@ -390,8 +353,7 @@
                                     TextWrapping="Wrap" />
                             </dxd:LayoutControlItem>
                             <dxd:LayoutControlItem CaptionAlignMode="AutoSize">
-                                <dxe:CheckEdit
-                                    x:Name="chkShowBrowser"
+                                <dxe:CheckEdit x:Name="chkShowBrowser"
                                     HorizontalContentAlignment="Left"
                                     Content="Show Browser?"
                                     EditValue="True"

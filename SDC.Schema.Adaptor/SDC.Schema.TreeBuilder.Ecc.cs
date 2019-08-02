@@ -2062,7 +2062,7 @@ namespace SDC
 
         public override UnitsType FillUnits(UnitsType ut)
         {
-            ut.unitSystem = "UCOM";
+            ut.unitSystem = "UCUM";
             ut.val = drFormDesign["AnswerUnits"].ToString();
             return ut;
         }
