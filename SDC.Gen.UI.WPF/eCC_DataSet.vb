@@ -9,3 +9,9 @@
 
     End Class
 End Class
+
+Namespace eCC_DataSetTableAdapters
+
+    Partial Public Class ChecklistTemplateVersionsTableAdapter
+    End Class
+End Namespace

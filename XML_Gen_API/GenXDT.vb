@@ -150,7 +150,7 @@ Public Class GenXDT
     Public Sub New(RootFilePath As String, Optional defaultFileNameXSL As String = "")
         'TemplateDataMapper = New Capx.Apps.ChecklistTemplateGenerator.SrTemplateDataMapper
         Dim dir As DirectoryInfo
-        If RootFilePath.Length = 0 Then RootFilePath = My.MySettings.Default.FilePath
+        If RootFilePath.Length = 0 Then RootFilePath = Environment.ExpandEnvironmentVariables(My.MySettings.Default.FilePath)
 
         If defaultFileNameXSL.Length <> 0 Then
             XslFileName = defaultFileNameXSL
@@ -163,8 +163,9 @@ Public Class GenXDT
                 MsgBox($"An SDC folder was created for you here: {RootFilePath}", MsgBoxStyle.OkOnly)
             Catch ex As Exception
                 Try
-                    My.Computer.FileSystem.CreateDirectory("SDC") 'create SDC folder in the current folder, wherever it is.
-                    dir = My.Computer.FileSystem.GetDirectoryInfo("SDC")
+                    Dim defaultPath = Environment.ExpandEnvironmentVariables("%USERPROFILE%\Desktop\SDC Files")
+                    My.Computer.FileSystem.CreateDirectory(defaultPath) 'create SDC folder in the desktop folder
+                    dir = My.Computer.FileSystem.GetDirectoryInfo(defaultPath)
                     RootFilePath = dir.FullName()
                     MsgBox(
 $"The supplied SDC XML folder location could not be created, so a folder was created for you here: {RootFilePath}  - 
@@ -406,7 +407,7 @@ HTML files cannot be generated until the XSLT file is manually added at this loc
         End If
 
         If My.Computer.FileSystem.FileExists(BrowserPath) Then
-            Process.Start(BrowserPath, FullHTMLfilePath)
+            Process.Start(BrowserPath, """" + FullHTMLfilePath + """")
         Else
             MsgBox(String.Format("Browser filepath not found: {0}", BrowserPath.ToString), MsgBoxStyle.Critical, "File Not Found")
         End If

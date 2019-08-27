@@ -56,7 +56,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\SDC")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("%USERPROFILE%\Desktop\SDC Files")>  _
         Public ReadOnly Property FilePath() As String
             Get
                 Return CType(Me("FilePath"),String)

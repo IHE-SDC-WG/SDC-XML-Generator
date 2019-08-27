@@ -101,7 +101,7 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("C:\SDC")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("%USERPROFILE%\Desktop\SDC Files")>  _
     Public Property FilePath() As String
         Get
             Return CType(Me("FilePath"),String)
@@ -120,18 +120,6 @@ Partial Friend NotInheritable Class MySettings
         End Get
         Set
             Me("XslFileName") = value
-        End Set
-    End Property
-    
-    <Global.System.Configuration.UserScopedSettingAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("C:\SDC")>  _
-    Public Property SDCfilePath() As String
-        Get
-            Return CType(Me("SDCfilePath"),String)
-        End Get
-        Set
-            Me("SDCfilePath") = value
         End Set
     End Property
     
