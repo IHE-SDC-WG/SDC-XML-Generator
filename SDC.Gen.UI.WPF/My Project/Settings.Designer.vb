@@ -14,7 +14,7 @@ Option Explicit On
 
 
 <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
- Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0"),  _
+ Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.2.0.0"),  _
  Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
 Partial Friend NotInheritable Class MySettings
     Inherits Global.System.Configuration.ApplicationSettingsBase
@@ -101,7 +101,7 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("C:\SDC")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("%USERPROFILE%\Desktop\SDC Files")>  _
     Public Property FilePath() As String
         Get
             Return CType(Me("FilePath"),String)
@@ -125,25 +125,13 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("C:\Users\%USERNAME%\Desktop\TE\eCC_TE_2.30.adp")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("eCC_TE_2.32.adp")>  _
     Public Property TEpath() As String
         Get
             Return CType(Me("TEpath"),String)
         End Get
         Set
             Me("TEpath") = value
-        End Set
-    End Property
-    
-    <Global.System.Configuration.UserScopedSettingAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("c:\SDC")>  _
-    Public Property SDCfilePath() As String
-        Get
-            Return CType(Me("SDCfilePath"),String)
-        End Get
-        Set
-            Me("SDCfilePath") = value
         End Set
     End Property
 End Class
