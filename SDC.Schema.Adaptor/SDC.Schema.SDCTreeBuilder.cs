@@ -1,12 +1,11 @@
+using SDC.Schema;
 using System;
-using System.Diagnostics;
 using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
-using SDC.Schema;
 
 //using
 
@@ -104,7 +103,7 @@ namespace SDC
 
                         if (parentIETnode == null)
                         {
-                            var body = FormDesign.AddBody();                            
+                            var body = FormDesign.AddBody();
                             qi = body.AddQuestion(qType);
 
                         }
@@ -240,7 +239,8 @@ namespace SDC
                                 case ItemTypeEnum.QuestionMultiple:
                                 case ItemTypeEnum.QuestionSingle:
                                 case ItemTypeEnum.QuestionGroup:
-                                    di = AddDisplayedItem<QuestionItemType>((QuestionItemType)parentIETnode);
+                                    //di = AddDisplayedItem<QuestionItemType>((QuestionItemType)parentIETnode); //removed 2020_03_07
+                                    di = AddListNoteToQuestion((QuestionItemType)parentIETnode);//added 2020_03_07
                                     break;
                                 default:
                                     //illegal parent for the DisplayedItem, so add it to the main Body section where it will be in an obviously wrong position
@@ -473,7 +473,7 @@ namespace SDC
             object value,
             ItemChoiceType dataTypeEnum = ItemChoiceType.@string,
             //DataTypes_DE_Enum dataTypeEnum = DataTypes_DE_Enum.@string;
-            dtQuantEnum quantifierEnum = dtQuantEnum.EQ, 
+            dtQuantEnum quantifierEnum = dtQuantEnum.EQ,
             bool fillData = false)
         {
             rfParent.Response = new DataTypes_DEType(rfParent, fillData);
@@ -1388,11 +1388,11 @@ namespace SDC
             UnitsType u = new UnitsType(rf);
             rf.ResponseUnits = u;
             if (fillData) FillUnits(u);
-            return u ;
-                }
+            return u;
+        }
         public abstract UnitsType FillUnits(UnitsType ut);
 
-       #endregion
+        #endregion
 
         #region LookupEndpoint
         //!Add LookupEndpoint to Question w ListField
