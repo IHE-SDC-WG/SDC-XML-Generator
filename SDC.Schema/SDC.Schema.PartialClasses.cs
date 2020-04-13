@@ -15,7 +15,9 @@ namespace SDC.Schema
 {
     public partial class FormDesignType
     {
-        protected FormDesignType() { }
+        protected FormDesignType():base() { 
+        
+        }
         public FormDesignType(ITreeBuilder treeBuilder, BaseType parentNode = null, bool fillData = false, string id = null)
         : base(parentNode, fillData, id)
         //TODO: add ID, lineage, baseURI, version, etc to this constructor? (only ID is required)
@@ -50,6 +52,17 @@ namespace SDC.Schema
 
         [System.Xml.Serialization.XmlIgnore]
         public int MaxObjectID { get; internal set; }  //save the highest object counter value for the current FormDesign tree
+
+        public static FormDesignType DeserializeSdcFromPath(string sdcPath)
+        {
+            string sdcXml = System.IO.File.ReadAllText(sdcPath);  // System.Text.Encoding.UTF8);
+            return DeserializeSdcFromXml(sdcXml);
+        }
+        public static FormDesignType DeserializeSdcFromXml(string sdcXML)
+        {
+            return InitializeNodesFromSdcXml(sdcXML);
+        }
+
         #region Dictionaries
         /// <summary>
         /// Dictionary.  Given an Node ID (int), returns the Node's object reference.
@@ -637,7 +650,7 @@ namespace SDC.Schema
                 if (_elementPrefix.Length == 0)
                 {
                     _elementPrefix = ElementName;
-                    //make sure EventHandlerfirst letter is lower case for non-IET types:
+                    //make sure first letter is lower case for non-IET types:
                     if (!(GetType().IsSubclassOf(typeof(IdentifiedExtensionType)))) _elementPrefix = _elementPrefix.Substring(0, 1).ToLower() + _elementPrefix.Substring(1);
                 }
                 return _elementPrefix;
@@ -646,52 +659,65 @@ namespace SDC.Schema
         }
         protected BaseType()
         {
-            Debug.WriteLine($"A node has entered the BaseType default ctor. Item type is {this.GetType()}");
-            throw new System.InvalidOperationException("BaseType objects must use the constructor with a parentNode parameter");
+            //Debug.WriteLine($"A node has entered the BaseType default ctor. Item type is {this.GetType()}");
+
+            ObjectGUID = Guid.NewGuid();
+            IsLeafNode = true;
+            orderSpecified = true;  //force output of order attribute
+            //RegisterParent(parentNode);  //We have to obtain the parent node from the XMLDocument tree
+
+
+            if (GetType().IsSubclassOf(typeof(IdentifiedExtensionType))) IETresetCounter = 0;
+            else IETresetCounter++;
+            SubIETcounter = IETresetCounter;
+
+
+            if (FormDesign is null)
+            {//this is a top level node, so it MUST be of type FormDesignType
+                if (this.GetType() == typeof(FormDesignType))
+                {   FormDesign = (FormDesignType)this;  }
+                else
+                {   throw new InvalidOperationException("The top level node must be a FormDesignType"); }
+            }
+
+            ObjectID = FormDesign.MaxObjectID++;
+            order = ObjectID;
+            FormDesign.Nodes.Add(ObjectID, this);
+
+            //Debug.WriteLine($"The node with ObjectID: {this.ObjectID} has entered the BaseType ctor. Item type is {this.GetType()}.  "
+            //    + $"The parent ObjectID is {this.ParentObjID.ToString()}");
+
         }
 
         protected BaseType(BaseType parentNode, bool fillData = true) //: this()
         {
             ObjectGUID = Guid.NewGuid();
             IsLeafNode = true;
-            ParentNode = parentNode;
-            orderSpecified = true;  //rlm: added 1/2/2019 to force output of order attribute
-                                    //BaseName = "";
+            orderSpecified = true;  //force output of order attribute
+            RegisterParent(parentNode);
+
 
             if (GetType().IsSubclassOf(typeof(IdentifiedExtensionType))) IETresetCounter = 0;
             else IETresetCounter++;
             SubIETcounter = IETresetCounter;
 
-            //ElementName = GetType().ToString().Replace("Type", string.Empty).Replace("type", string.Empty); //assign default ElementName from the type.
-            //ElementPrefix = ElementName; //default name prefix - better than nothing, but not great
-
             if (parentNode is null)
             {//this is a top level node, and it MUST be of type FormDesignType
                 if (this.GetType() == typeof(FormDesignType))
-                {
-                    FormDesign = (FormDesignType)this;   //TopNode.FormDesign;
-                }
+                { FormDesign = (FormDesignType)this; }  //TopNode.FormDesign;
                 else
-                {
-                    throw new InvalidOperationException("The top level node must be FormDesignType");
+                { throw new InvalidOperationException("The top level node must be FormDesignType"); }
                 }
-            }
             else
-            {//a parent node is present, and it must NOT be of type FormDesign
+            {   //a parent node is present, and it must NOT be of type FormDesign
                 if (this.GetType() == typeof(FormDesignType))
-                {
-                    throw new InvalidOperationException("Only the top level node can be FormDesignType");
-                }
-                FormDesign = ParentNode.FormDesign;
+                {   throw new InvalidOperationException("Only the top level node can be FormDesignType");}
+
                 sdcTreeBuilder = FormDesign.sdcTreeBuilder;
-                ParentNode.IsLeafNode = false;
             }
 
             ObjectID = FormDesign.MaxObjectID++;
             order = ObjectID;  //added 3/25/2018; this outputs the @order attribute for every element
-            RegisterParent(parentNode);
-
-
             FormDesign.Nodes.Add(ObjectID, this);
 
             Debug.WriteLine($"The node with ObjectID: {this.ObjectID} has entered the BaseType ctor. Item type is {this.GetType()}.  " +
@@ -701,9 +727,90 @@ namespace SDC.Schema
             if (fillData) FillBaseTypeItem();
         }
 
+        protected internal static FormDesignType InitializeNodesFromSdcXmlPath(string path)
+        {
+            string sdcXml = System.IO.File.ReadAllText(path);  // System.Text.Encoding.UTF8);
+            return InitializeNodesFromSdcXml(sdcXml);
+
+        }
+
+        protected internal static FormDesignType InitializeNodesFromSdcXml(string sdcXml)
+        {
+            //string sdcXml = System.IO.File.ReadAllText(path);  // System.Text.Encoding.UTF8);
+            FormDesignType FD = FormDesignType.Deserialize(sdcXml);
+
+            //read as XMLDocument to walk tree
+            var x = new System.Xml.XmlDocument();
+            x.LoadXml(sdcXml);
+            XmlNodeList xmlNodeList = x.SelectNodes("//*");
+
+            var dX_FD = new Dictionary<int, int>(); //the index is iXmlNode, value is FD ObjectID
+            int iXmlNode = 0;
+            XmlNode xmlNode;
+
+            foreach (BaseType bt in FD.Nodes.Values)
+            {                //As we interate through the nodes, we will need code to skip over any non-element node (using i2), 
+                //and still stay in sync with FD (using iFD). For now, we assume that every nodeList node is an element.
+                //https://docs.microsoft.com/en-us/dotnet/api/system.xml.xmlnodetype?view=netframework-4.8
+                //https://docs.microsoft.com/en-us/dotnet/standard/data/xml/types-of-xml-nodes
+                xmlNode = xmlNodeList[iXmlNode];
+                while (xmlNode.NodeType.ToString() != "Element")
+                {
+                    iXmlNode++;
+                    xmlNode = xmlNodeList[iXmlNode];
+                }
+                //Create a new attribute node to hold the node's index in xmlNodeList
+                XmlAttribute a = x.CreateAttribute("index");
+                a.Value = iXmlNode.ToString();
+                var e = (XmlElement)xmlNode;
+                e.SetAttributeNode(a);
+
+                //Create  dictionary to track the matched indexes of the XML and FD node collections
+                dX_FD[iXmlNode] = bt.ObjectID;
+                //Debug.Print("iXmlNode: " + iXmlNode + ", ObjectID: " + bt.ObjectID);
+
+                //Search for parents:
+                int parIndexXml;
+                int parObjectID;
+                bool parExists;
+                BaseType btPar;
+                XmlNode parNode;
+                parIndexXml = -1;
+                parObjectID = -1;
+                parExists = false;
+                btPar = null;
+
+                parNode = xmlNode.ParentNode;
+                parExists = int.TryParse(parNode?.Attributes?.GetNamedItem("index")?.Value, out parIndexXml);//The index of the parent XML node
+                if (parExists)
+                {
+                    parExists = dX_FD.TryGetValue(parIndexXml, out parObjectID);// find the matching parent FD node Object ID
+                    if (parExists) { parExists = FD.Nodes.TryGetValue(parObjectID, out btPar); } //Find the parent node in FD
+                    if (parExists)
+                    {
+                        bt.IsLeafNode = true;
+                        bt.RegisterParent(btPar);
+                        Debug.WriteLine($"The node with ObjectID: {bt.ObjectID} is leaving InitializeNodesFromSdcXml. Item type is {bt.GetType()}.  " +
+                                    $"The parent ObjectID is {bt.ParentObjID}, ParentIETypeID is: {bt.ParentIETypeID}");
+                    }
+                    else { throw new KeyNotFoundException("No parent object was returned rom the FormDesign tree"); }
+                }
+                else
+                {
+                    bt.IsLeafNode = false;
+                    Debug.WriteLine($"The node with ObjectID: {bt.ObjectID} is leaving InitializeNodesFromSdcXml. Item type is {bt.GetType()}.  " +
+                                    $", No Parent object exists");
+                }
+
+                iXmlNode++;
+            }
+            return FD;
+
+        }
+
         ~BaseType() //destructor
         {
-            FormDesign = null;
+            //FormDesign = null;
             sdcTreeBuilder = null;
             //prevent orphan nodes:
             //TODO: delete all child nodes here - lower descendants will delete their own child nodes
@@ -723,7 +830,15 @@ namespace SDC.Schema
         public ItemTypeEnum NodeType { get; set; }
         [System.Xml.Serialization.XmlIgnore]
         public Boolean IsLeafNode { get; private set; }
-
+        //Properties to mark changed nodes for serialization to database etc.
+        [System.Xml.Serialization.XmlIgnore]
+        public Boolean Added { get; private set; }
+        [System.Xml.Serialization.XmlIgnore]
+        public Boolean Changed { get; private set; }
+        [System.Xml.Serialization.XmlIgnore]
+        public Boolean Deleted { get; private set; }
+        [System.Xml.Serialization.XmlIgnore]
+        public DateTime UpdatedDateTime { get; private set; }
 
 
         public void SetNames(string elementName = "", string elementPrefix = "", string baseName = "")
@@ -826,13 +941,22 @@ namespace SDC.Schema
 
 
             }
-            private set
+            internal set
             {
                 _ParentNode = value;
             }
         }
+        private static FormDesignType formDesign;
         [System.Xml.Serialization.XmlIgnore]
-        public FormDesignType FormDesign { get; private set; }
+        public static FormDesignType FormDesign
+        {
+            get  {return formDesign;}
+            private set  {
+                if (formDesign is null)
+                {  formDesign = value; }
+                else {throw new Exception("FormDesign has already been assigned"); }
+            }
+        }
 
         private void RegisterParent<T>(T inParentNode) where T : BaseType
         {
@@ -840,9 +964,9 @@ namespace SDC.Schema
             {
                 if (inParentNode != null)
                 {   //Register parent node
-                    //ParentNode = inParentNode;
+                    ParentNode = inParentNode;
                     FormDesign.ParentNodes.Add(ObjectID, inParentNode);
-
+                    inParentNode.IsLeafNode = false; //the parent node has a child node, so it can't be a leaf node
                     //Register IdentifiedExtensionType parent node
                     BaseType par = ParentNode;
                     while (par != null) //walk up the parent tree until we find the first IdentifiedExtensionType object
