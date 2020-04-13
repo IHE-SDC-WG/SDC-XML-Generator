@@ -1122,7 +1122,11 @@ namespace SDC
                         //SDCHelpers.NZ(drFormDesign["AnswerMaxValue"], dt.maxInclusive);
                         if (drFormDesign["AnswerMaxValue"] != null) dt.maxInclusive = (decimal)drFormDesign["AnswerMaxValue"];
                         //SDCHelpers.NZ(drFormDesign["AnswerMaxChars"], dt.totalDigits);
-                        if (drFormDesign["AnswerMaxChars"] != null) dt.totalDigits = Convert.ToByte(drFormDesign["AnswerMaxChars"]);//AnswerMaxChars
+                        if (drFormDesign["AnswerMaxChars"] != null) 
+                        {
+                            dt.totalDigits = Convert.ToByte(drFormDesign["AnswerMaxChars"]);//AnswerMaxChars
+                            dt.totalDigitsSpecified = true;
+                        }
                         //SDCHelpers.NZ(drFormDesign["AnswerMaxDecimals"], dt.fractionDigits);
 
                         //TODO:  Need to truncate the fractional digits  according to the fractionDigits number of digits.  This requires converting to string-based properties instead of decimal

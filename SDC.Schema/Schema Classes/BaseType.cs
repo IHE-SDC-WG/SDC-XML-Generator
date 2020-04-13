@@ -218,7 +218,7 @@ using System.Collections.Generic;
 [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExtensionType))]
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
 [System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
+//[System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:ihe:qrph:sdc:2016")]
 public abstract partial class BaseType
