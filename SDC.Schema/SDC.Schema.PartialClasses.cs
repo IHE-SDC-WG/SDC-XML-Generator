@@ -663,7 +663,7 @@ namespace SDC.Schema
 
             ObjectGUID = Guid.NewGuid();
             IsLeafNode = true;
-            orderSpecified = true;  //force output of order attribute
+
             //RegisterParent(parentNode);  //We have to obtain the parent node from the XMLDocument tree
 
 
@@ -681,6 +681,7 @@ namespace SDC.Schema
             }
 
             ObjectID = FormDesign.MaxObjectID++;
+            orderSpecified = true;  //force output of order attribute
             order = ObjectID;
             FormDesign.Nodes.Add(ObjectID, this);
 
@@ -693,9 +694,6 @@ namespace SDC.Schema
         {
             ObjectGUID = Guid.NewGuid();
             IsLeafNode = true;
-            orderSpecified = true;  //force output of order attribute
-            RegisterParent(parentNode);
-
 
             if (GetType().IsSubclassOf(typeof(IdentifiedExtensionType))) IETresetCounter = 0;
             else IETresetCounter++;
@@ -716,9 +714,13 @@ namespace SDC.Schema
                 sdcTreeBuilder = FormDesign.sdcTreeBuilder;
             }
 
+            
             ObjectID = FormDesign.MaxObjectID++;
-            order = ObjectID;  //added 3/25/2018; this outputs the @order attribute for every element
             FormDesign.Nodes.Add(ObjectID, this);
+            orderSpecified = true;  //force output of order attribute
+            order = ObjectID;  //added 3/25/2018; this outputs the @order attribute for every element
+
+            RegisterParent(parentNode);
 
             Debug.WriteLine($"The node with ObjectID: {this.ObjectID} has entered the BaseType ctor. Item type is {this.GetType()}.  " +
                 $"The parent ObjectID is {this.ParentObjID.ToString()}, ParentIETypeID is: {this.ParentIETypeID}");
