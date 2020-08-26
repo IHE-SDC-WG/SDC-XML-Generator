@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Schema Classes\**" />
+    <Compile Remove="Schemas\JSON Generator\**" />
+    <Compile Remove="Schemas\Modified SDC Classes_old\**" />
+    <Compile Remove="Schemas\MsgPack Generator\**" />
+    <Compile Remove="Schemas\Need Base Class in Schema\**" />
+    <Compile Remove="Schemas\Schema Classes\Modified SDC Classes\**" />
+    <EmbeddedResource Remove="Schema Classes\**" />
+    <EmbeddedResource Remove="Schemas\JSON Generator\**" />
+    <EmbeddedResource Remove="Schemas\Modified SDC Classes_old\**" />
+    <EmbeddedResource Remove="Schemas\MsgPack Generator\**" />
+    <EmbeddedResource Remove="Schemas\Need Base Class in Schema\**" />
+    <EmbeddedResource Remove="Schemas\Schema Classes\Modified SDC Classes\**" />
+    <None Remove="Schema Classes\**" />
+    <None Remove="Schemas\JSON Generator\**" />
+    <None Remove="Schemas\Modified SDC Classes_old\**" />
+    <None Remove="Schemas\MsgPack Generator\**" />
+    <None Remove="Schemas\Need Base Class in Schema\**" />
+    <None Remove="Schemas\Schema Classes\Modified SDC Classes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Schemas\Customized classes\DataTypesNumeric_DEType.cs" />
+    <Compile Remove="Schemas\Schema Classes\BaseType.cs" />
+    <Compile Remove="Schemas\Schema Classes\ObjectChangeTracker.cs" />
+    <Compile Remove="Schemas\Schema Classes\ObjectList.cs" />
+    <Compile Remove="Schemas\Schema Classes\ObjectsAddedToCollectionProperties.cs" />
+    <Compile Remove="Schemas\Schema Classes\ObjectsOriginalFromCollectionProperties.cs" />
+    <Compile Remove="Schemas\Schema Classes\ObjectsRemovedFromCollectionProperties.cs" />
+    <Compile Remove="Schemas\Schema Classes\ObjectState.cs" />
+    <Compile Remove="Schemas\Schema Classes\ObjectStateChangingEventArgs.cs" />
+    <Compile Remove="Schemas\Schema Classes\SdcBaseType.cs" />
+    <Compile Remove="Schemas\Schema Classes\SdcEntityBase.cs" />
+    <Compile Remove="Schemas\Schema Classes\SdcSerializer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Schemas\JSON Generator\SdcSerializerJson.cs" />
+    <Compile Include="Schemas\MsgPack Generator\SdcSerializerMsgPack.cs" />
+    <Compile Include="Schemas\MsgPack Generator\SDCBase.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MessagePack" Version="2.1.115" />
+    <PackageReference Include="MsgPack.Cli" Version="1.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Schemas\Schemas\Schema Classes\" />
+  </ItemGroup>
+
+</Project>

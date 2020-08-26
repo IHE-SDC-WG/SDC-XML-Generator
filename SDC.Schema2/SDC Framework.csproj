@@ -1,0 +1,406 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A070F09E-C6BC-4362-B9D7-8FDC5B1984DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>SDC_Framework</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums.cs" />
+    <Compile Include="IBaseType.cs" />
+    <Compile Include="IDisplayedType.cs" />
+    <Compile Include="IParent.cs" />
+    <Compile Include="ITopNode.cs" />
+    <Compile Include="ITreeBuilder.cs" />
+    <Compile Include="ITreeFiller.cs" />
+    <Compile Include="PartialClasses.cs" />
+    <Compile Include="Schemas\Customized classes\NotifyTrackableCollectionChangedEventHandler.cs" />
+    <Compile Include="Schemas\Customized classes\ObjectChangeTracker.cs" />
+    <Compile Include="Schemas\Customized classes\ObjectList.cs" />
+    <Compile Include="Schemas\Customized classes\ObjectsAddedToCollectionProperties.cs" />
+    <Compile Include="Schemas\Customized classes\ObjectsOriginalFromCollectionProperties.cs" />
+    <Compile Include="Schemas\Customized classes\ObjectsRemovedFromCollectionProperties.cs" />
+    <Compile Include="Schemas\Customized classes\ObjectState.cs" />
+    <Compile Include="Schemas\Customized classes\ObjectStateChangingEventArgs.cs" />
+    <Compile Include="Schemas\Customized classes\SdcBaseType.cs" />
+    <Compile Include="Schemas\Customized classes\SdcEntityBase.cs" />
+    <Compile Include="Schemas\Customized classes\SdcSerializer.cs" />
+    <Compile Include="Schemas\Customized classes\X_DataTypesNumeric_DEType.cs" />
+    <Compile Include="Schemas\JSON Generator\SDCBase.Designer.cs" />
+    <Compile Include="Schemas\JSON Generator\SdcSerializerJson.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\ActValidateFormType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\byte_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\byte_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\CallFuncType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\CodeMatchType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\dateTime_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\dateTime_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\date_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\date_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\dayTimeDuration_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\dayTimeDuration_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\decimal_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\decimal_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\DisplayedType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\double_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\double_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\dt.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\duration_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\duration_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\float_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\float_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\FuncBoolBaseType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\gDay_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\gDay_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\gMonthDay_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\gMonthDay_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\gMonth_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\gMonth_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\gYearMonth_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\gYearMonth_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\gYear_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\gYear_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\InjectFormType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\integer_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\integer_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\int_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\int_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\ListFieldType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\ListItemBaseType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\ListItemResponseFieldType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\long_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\long_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\LookupEndPointType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\negativeInteger_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\negativeInteger_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\nonNegativeInteger_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\nonNegativeInteger_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\nonPositiveInteger_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\nonPositiveInteger_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\ParameterItemType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\positiveInteger_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\positiveInteger_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\PredActionType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\QuestionItemBaseType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\RepeatingType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\ScriptCodeAnyType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\ScriptCodeBaseType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\ScriptCodeBoolType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\SectionBaseType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\short_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\short_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\time_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\time_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\UnitsType.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\unsignedByte_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\unsignedByte_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\unsignedInt_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\unsignedInt_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\unsignedLong_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\unsignedLong_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\unsignedShort_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\unsignedShort_Stype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\yearMonthDuration_DEtype.cs" />
+    <Compile Include="Schemas\Modified SDC Classes\yearMonthDuration_Stype.cs" />
+    <Compile Include="Schemas\MsgPack Generator\SDCBase.Designer.cs" />
+    <Compile Include="Schemas\MsgPack Generator\SdcSerializerMsgPack.cs" />
+    <Compile Include="Schemas\Need Base Class in Schema\DataSourceTypeRDF_StoreSPARQL.cs" />
+    <Compile Include="Schemas\Need Base Class in Schema\dt.cs" />
+    <Compile Include="Schemas\Need Base Class in Schema\TemplateAdminTypeDigitalSignaturePackageSignature.cs" />
+    <Compile Include="Schemas\Need Base Class in Schema\TemplateAdminTypeDigitalSignatureSignaturePropertiesImage.cs" />
+    <Compile Include="Schemas\Need Base Class in Schema\TemplateAdminTypeDigitalSignatureSignaturePropertiesSignatureDateTimeStamp.cs" />
+    <Compile Include="Schemas\Need Base Class in Schema\TemplateAdminTypeDigitalSignatureSignaturePropertiesSignatureReason.cs" />
+    <Compile Include="Schemas\Need Base Class in Schema\TemplateAdminTypeDigitalSignatureSignaturePropertiesSignerPublicKeyCertificate.cs" />
+    <Compile Include="Schemas\Need Base Class in Schema\TemplateAdminTypeDigitalSignatureSignaturePropertiesX_CertificateAuthority.cs" />
+    <Compile Include="Schemas\Need Base Class in Schema\TemplateAdminTypeDigitalSignatureSignaturePropertiesX_SignatureAlgorithm.cs" />
+    <Compile Include="Schemas\Need Base Class in Schema\TemplateAdminTypeDigitalSignatureSignaturePropertiesX_SignerPublicKey.cs" />
+    <Compile Include="Schemas\Schema Classes\AcceptabilityType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActActionType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActAddCodeType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActInjectType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActionsType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActPreviewReportType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActSaveResponsesType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActSendMessageType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActSendReportType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActSetAttributeType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActSetAttrValueScriptType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActSetBoolAttributeValueCodeType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActShowFormType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActShowMessageType.cs" />
+    <Compile Include="Schemas\Schema Classes\ActShowReportType.cs" />
+    <Compile Include="Schemas\Schema Classes\AddressType.cs" />
+    <Compile Include="Schemas\Schema Classes\anyType_DEtype.cs" />
+    <Compile Include="Schemas\Schema Classes\anyURI_DEtype.cs" />
+    <Compile Include="Schemas\Schema Classes\anyURI_Stype.cs" />
+    <Compile Include="Schemas\Schema Classes\ApprovalType.cs" />
+    <Compile Include="Schemas\Schema Classes\AreaCodeType.cs" />
+    <Compile Include="Schemas\Schema Classes\AssociatedFilesType.cs" />
+    <Compile Include="Schemas\Schema Classes\AttributeEvalActionType.cs" />
+    <Compile Include="Schemas\Schema Classes\base64Binary_DEtype.cs" />
+    <Compile Include="Schemas\Schema Classes\base64Binary_Stype.cs" />
+    <Compile Include="Schemas\Schema Classes\BasePackageType.cs" />
+    <Compile Include="Schemas\Schema Classes\BasePackageTypeX_approvalStatus.cs" />
+    <Compile Include="Schemas\Schema Classes\BasePackageTypeX_completionStatus.cs" />
+    <Compile Include="Schemas\Schema Classes\BaseType.cs" />
+    <Compile Include="Schemas\Schema Classes\BlobType.cs" />
+    <Compile Include="Schemas\Schema Classes\boolean_DEtype.cs" />
+    <Compile Include="Schemas\Schema Classes\boolean_Stype.cs" />
+    <Compile Include="Schemas\Schema Classes\ButtonItemType.cs" />
+    <Compile Include="Schemas\Schema Classes\CallFuncActionType.cs" />
+    <Compile Include="Schemas\Schema Classes\CallFuncBaseType.cs" />
+    <Compile Include="Schemas\Schema Classes\CallFuncBoolActionType.cs" />
+    <Compile Include="Schemas\Schema Classes\CallFuncBoolType.cs" />
+    <Compile Include="Schemas\Schema Classes\ChangedFieldType.cs" />
+    <Compile Include="Schemas\Schema Classes\ChangeLogType.cs" />
+    <Compile Include="Schemas\Schema Classes\ChangeTrackingType.cs" />
+    <Compile Include="Schemas\Schema Classes\ChangeType.cs" />
+    <Compile Include="Schemas\Schema Classes\ChildItemsType.cs" />
+    <Compile Include="Schemas\Schema Classes\CodeMatchTypeCodeMatchEnum.cs" />
+    <Compile Include="Schemas\Schema Classes\CodeSystemType.cs" />
+    <Compile Include="Schemas\Schema Classes\CodingType.cs" />
+    <Compile Include="Schemas\Schema Classes\CommentType.cs" />
+    <Compile Include="Schemas\Schema Classes\ComplianceRuleType.cs" />
+    <Compile Include="Schemas\Schema Classes\ContactsType.cs" />
+    <Compile Include="Schemas\Schema Classes\ContactType.cs" />
+    <Compile Include="Schemas\Schema Classes\CountryCodeType.cs" />
+    <Compile Include="Schemas\Schema Classes\DataElementType.cs" />
+    <Compile Include="Schemas\Schema Classes\DataSourceType.cs" />
+    <Compile Include="Schemas\Schema Classes\DataSourceTypeDatabase.cs" />
+    <Compile Include="Schemas\Schema Classes\DataSourceTypeRDF_Store.cs" />
+    <Compile Include="Schemas\Schema Classes\DataSourceTypeRDF_StoreSPARQL.cs" />
+    <Compile Include="Schemas\Schema Classes\DataSourceTypeXML.cs" />
+    <Compile Include="Schemas\Schema Classes\DataStoreType.cs" />
+    <Compile Include="Schemas\Schema Classes\DataStoreTypeSecurityInfo.cs" />
+    <Compile Include="Schemas\Schema Classes\DataTypesDateTime_DEType.cs" />
+    <Compile Include="Schemas\Schema Classes\DataTypesDateTime_SType.cs" />
+    <Compile Include="Schemas\Schema Classes\DataTypesNumeric_DEType.cs" />
+    <Compile Include="Schemas\Schema Classes\DataTypesNumeric_SType.cs" />
+    <Compile Include="Schemas\Schema Classes\DataTypes_DEType.cs" />
+    <Compile Include="Schemas\Schema Classes\DataTypes_SType.cs" />
+    <Compile Include="Schemas\Schema Classes\dateTimeStamp_DEtype.cs" />
+    <Compile Include="Schemas\Schema Classes\dateTimeStamp_Stype.cs" />
+    <Compile Include="Schemas\Schema Classes\DemogFormDesignType.cs" />
+    <Compile Include="Schemas\Schema Classes\DestinationType.cs" />
+    <Compile Include="Schemas\Schema Classes\DisplayedTypeShowInReport.cs" />
+    <Compile Include="Schemas\Schema Classes\dtQuantEnum.cs" />
+    <Compile Include="Schemas\Schema Classes\EmailAddressType.cs" />
+    <Compile Include="Schemas\Schema Classes\EmailType.cs" />
+    <Compile Include="Schemas\Schema Classes\EventType.cs" />
+    <Compile Include="Schemas\Schema Classes\ExtensionBaseType.cs" />
+    <Compile Include="Schemas\Schema Classes\ExtensionType.cs" />
+    <Compile Include="Schemas\Schema Classes\FileDatesType.cs" />
+    <Compile Include="Schemas\Schema Classes\FileHashType.cs" />
+    <Compile Include="Schemas\Schema Classes\FileType.cs" />
+    <Compile Include="Schemas\Schema Classes\FileUsageType.cs" />
+    <Compile Include="Schemas\Schema Classes\FormDesignType.cs" />
+    <Compile Include="Schemas\Schema Classes\FormDesignTypeApprovalStatus.cs" />
+    <Compile Include="Schemas\Schema Classes\FormDesignTypeCompletionStatus.cs" />
+    <Compile Include="Schemas\Schema Classes\HashType.cs" />
+    <Compile Include="Schemas\Schema Classes\hexBinary_DEtype.cs" />
+    <Compile Include="Schemas\Schema Classes\hexBinary_Stype.cs" />
+    <Compile Include="Schemas\Schema Classes\HTMLPackageType.cs" />
+    <Compile Include="Schemas\Schema Classes\HTML_DEtype.cs" />
+    <Compile Include="Schemas\Schema Classes\HTML_Stype.cs" />
+    <Compile Include="Schemas\Schema Classes\IdentifiedExtensionType.cs" />
+    <Compile Include="Schemas\Schema Classes\IdentifierType.cs" />
+    <Compile Include="Schemas\Schema Classes\InterfaceType.cs" />
+    <Compile Include="Schemas\Schema Classes\InterfaceTypeDocumentation.cs" />
+    <Compile Include="Schemas\Schema Classes\InterfaceTypeFields.cs" />
+    <Compile Include="Schemas\Schema Classes\InterfaceTypeFieldsField.cs" />
+    <Compile Include="Schemas\Schema Classes\ItemChoiceType.cs" />
+    <Compile Include="Schemas\Schema Classes\ItemChoiceType1.cs" />
+    <Compile Include="Schemas\Schema Classes\ItemChoiceType2.cs" />
+    <Compile Include="Schemas\Schema Classes\ItemChoiceType3.cs" />
+    <Compile Include="Schemas\Schema Classes\ItemMapType.cs" />
+    <Compile Include="Schemas\Schema Classes\ItemNameAttributeType.cs" />
+    <Compile Include="Schemas\Schema Classes\ItemNameType.cs" />
+    <Compile Include="Schemas\Schema Classes\Items1ChoiceType.cs" />
+    <Compile Include="Schemas\Schema Classes\ItemsChoiceType.cs" />
+    <Compile Include="Schemas\Schema Classes\ItemsChoiceType1.cs" />
+    <Compile Include="Schemas\Schema Classes\ItemsChoiceType2.cs" />
+    <Compile Include="Schemas\Schema Classes\JobType.cs" />
+    <Compile Include="Schemas\Schema Classes\LanguageCodeISO6393_Type.cs" />
+    <Compile Include="Schemas\Schema Classes\LanguageType.cs" />
+    <Compile Include="Schemas\Schema Classes\LinkType.cs" />
+    <Compile Include="Schemas\Schema Classes\ListItemParameterType.cs" />
+    <Compile Include="Schemas\Schema Classes\ListItemType.cs" />
+    <Compile Include="Schemas\Schema Classes\ListType.cs" />
+    <Compile Include="Schemas\Schema Classes\MappingType.cs" />
+    <Compile Include="Schemas\Schema Classes\MultiSelectionsActionType.cs" />
+    <Compile Include="Schemas\Schema Classes\NameType.cs" />
+    <Compile Include="Schemas\Schema Classes\OnEventType.cs" />
+    <Compile Include="Schemas\Schema Classes\OrganizationType.cs" />
+    <Compile Include="Schemas\Schema Classes\PackageItemType.cs" />
+    <Compile Include="Schemas\Schema Classes\PackageItemTypeFormat.cs" />
+    <Compile Include="Schemas\Schema Classes\PackageListType.cs" />
+    <Compile Include="Schemas\Schema Classes\ParameterValueType.cs" />
+    <Compile Include="Schemas\Schema Classes\PersonType.cs" />
+    <Compile Include="Schemas\Schema Classes\PhoneNumberType.cs" />
+    <Compile Include="Schemas\Schema Classes\PhoneType.cs" />
+    <Compile Include="Schemas\Schema Classes\PredActionType2.cs" />
+    <Compile Include="Schemas\Schema Classes\PredAlternativesType.cs" />
+    <Compile Include="Schemas\Schema Classes\PredEvalAttribValuesType.cs" />
+    <Compile Include="Schemas\Schema Classes\PredEvalAttribValuesTypeBoolOp.cs" />
+    <Compile Include="Schemas\Schema Classes\PredGuardType.cs" />
+    <Compile Include="Schemas\Schema Classes\PredGuardTypeSelectionSets.cs" />
+    <Compile Include="Schemas\Schema Classes\PredMultiSelectionSetBoolType.cs" />
+    <Compile Include="Schemas\Schema Classes\PredSelectionTestType.cs" />
+    <Compile Include="Schemas\Schema Classes\PredSingleSelectionSetsType.cs" />
+    <Compile Include="Schemas\Schema Classes\PropertyType.cs" />
+    <Compile Include="Schemas\Schema Classes\PropertyType1.cs" />
+    <Compile Include="Schemas\Schema Classes\PropertyValueState.cs" />
+    <Compile Include="Schemas\Schema Classes\PropertyValueStatesDictionary.cs" />
+    <Compile Include="Schemas\Schema Classes\ProvenanceType.cs" />
+    <Compile Include="Schemas\Schema Classes\QuestionItemType.cs" />
+    <Compile Include="Schemas\Schema Classes\RegisteredItemStateType.cs" />
+    <Compile Include="Schemas\Schema Classes\RegisteredItemType.cs" />
+    <Compile Include="Schemas\Schema Classes\RegistrySummaryType.cs" />
+    <Compile Include="Schemas\Schema Classes\RegistryType.cs" />
+    <Compile Include="Schemas\Schema Classes\ReplacedIDsType.cs" />
+    <Compile Include="Schemas\Schema Classes\ResponseFieldType.cs" />
+    <Compile Include="Schemas\Schema Classes\RetrieveFormPackageType.cs" />
+    <Compile Include="Schemas\Schema Classes\RichTextType.cs" />
+    <Compile Include="Schemas\Schema Classes\RuleAutoActivateType.cs" />
+    <Compile Include="Schemas\Schema Classes\RuleAutoSelectType.cs" />
+    <Compile Include="Schemas\Schema Classes\RuleListItemMatchTargetsType.cs" />
+    <Compile Include="Schemas\Schema Classes\RuleListItemMatchTargetsTypeAttributeToMatch.cs" />
+    <Compile Include="Schemas\Schema Classes\RuleSelectMatchingListItemsType.cs" />
+    <Compile Include="Schemas\Schema Classes\RulesType.cs" />
+    <Compile Include="Schemas\Schema Classes\ScriptBoolFuncActionType.cs" />
+    <Compile Include="Schemas\Schema Classes\SectionItemType.cs" />
+    <Compile Include="Schemas\Schema Classes\SelectionSetsActionType.cs" />
+    <Compile Include="Schemas\Schema Classes\SelectionTestActionType.cs" />
+    <Compile Include="Schemas\Schema Classes\SQL_Type.cs" />
+    <Compile Include="Schemas\Schema Classes\string_DEtype.cs" />
+    <Compile Include="Schemas\Schema Classes\string_Stype.cs" />
+    <Compile Include="Schemas\Schema Classes\SubmissionRuleType.cs" />
+    <Compile Include="Schemas\Schema Classes\TargetItemIDType.cs" />
+    <Compile Include="Schemas\Schema Classes\TargetItemNameType.cs" />
+    <Compile Include="Schemas\Schema Classes\TargetItemXPathType.cs" />
+    <Compile Include="Schemas\Schema Classes\TemplateAdminType.cs" />
+    <Compile Include="Schemas\Schema Classes\TemplateAdminTypeDigitalSignature.cs" />
+    <Compile Include="Schemas\Schema Classes\TemplateAdminTypeDigitalSignaturePackageSignature.cs" />
+    <Compile Include="Schemas\Schema Classes\TemplateAdminTypeDigitalSignatureSignatureProperties.cs" />
+    <Compile Include="Schemas\Schema Classes\TemplateAdminTypeDigitalSignatureSignaturePropertiesImage.cs" />
+    <Compile Include="Schemas\Schema Classes\TemplateAdminTypeDigitalSignatureSignaturePropertiesSignatureDateTimeStamp.cs" />
+    <Compile Include="Schemas\Schema Classes\TemplateAdminTypeDigitalSignatureSignaturePropertiesSignatureReason.cs" />
+    <Compile Include="Schemas\Schema Classes\TemplateAdminTypeDigitalSignatureSignaturePropertiesSignerPublicKeyCertificate.cs" />
+    <Compile Include="Schemas\Schema Classes\TemplateAdminTypeDigitalSignatureSignaturePropertiesX_CertificateAuthority.cs" />
+    <Compile Include="Schemas\Schema Classes\TemplateAdminTypeDigitalSignatureSignaturePropertiesX_SignatureAlgorithm.cs" />
+    <Compile Include="Schemas\Schema Classes\TemplateAdminTypeDigitalSignatureSignaturePropertiesX_SignerPublicKey.cs" />
+    <Compile Include="Schemas\Schema Classes\TemplateTargetType.cs" />
+    <Compile Include="Schemas\Schema Classes\toggleType.cs" />
+    <Compile Include="Schemas\Schema Classes\TrackableCollection.cs" />
+    <Compile Include="Schemas\Schema Classes\ValidationType.cs" />
+    <Compile Include="Schemas\Schema Classes\ValidationTypeSelectionSets.cs" />
+    <Compile Include="Schemas\Schema Classes\ValidationTypeSelectionTest.cs" />
+    <Compile Include="Schemas\Schema Classes\VersionType.cs" />
+    <Compile Include="Schemas\Schema Classes\VersionTypeChanges.cs" />
+    <Compile Include="Schemas\Schema Classes\XMLPackageType.cs" />
+    <Compile Include="Schemas\Schema Classes\XMLPackageTypeHelperFile.cs" />
+    <Compile Include="Schemas\Schema Classes\XMLPackageTypeReportDesignTemplate.cs" />
+    <Compile Include="Schemas\Schema Classes\XML_DEtype.cs" />
+    <Compile Include="Schemas\Schema Classes\XML_Stype.cs" />
+    <Compile Include="Schemas\Schema Classes\XPathType.cs" />
+    <Compile Include="Schemas\Schema Classes\XQueryType.cs" />
+    <Compile Include="Schemas\Schemas\SDCRetrieveForm.Designer.cs" />
+    <Compile Include="SDCHelpers.cs" />
+    <Compile Include="SDCTreeBuilder.Generic.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\SDC Framework\v16\TestStore\0\000.testlog" />
+    <None Include=".vs\SDC Framework\v16\TestStore\0\testlog.manifest" />
+    <None Include="Schemas\JSON Generator\SDCBase.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\MsgPack Generator\SDCBase.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\SDCBase.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\SDCDataTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\SDCExpressions.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\SDCFormDesign.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\SDCMapping.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\SDCOverrides.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\SDCResources.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\SDCRetrieveForm.Designer.cs.preview" />
+    <None Include="Schemas\Schemas\SDCRetrieveForm.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\SDCRetrieveFormComplex.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\SDCSubmitForm.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\SDCTemplateAdmin.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\SDC_IDR.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\xhtml.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\xml.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas\Schemas\xsd2code.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\Supercharger\SDC Framework\" />
+    <Folder Include="Schemas\Schemas\Schema Classes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

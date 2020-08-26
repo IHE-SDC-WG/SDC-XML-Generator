@@ -792,7 +792,7 @@ namespace SDC.Schema
                     {
                         bt.IsLeafNode = true;
                         bt.RegisterParent(btPar);
-                        Debug.WriteLine($"The node with ObjectID: {bt.ObjectID} is leaving InitializeNodesFromSdcXml. Item type is {bt.GetType()}.  " +
+                        Debug.WriteLine($"The node with ObjectID: {bt.ObjectID} is leaving 'InitializeNodesFromSdcXml'.  Item type is {bt.GetType()}.  " +
                                     $"The parent ObjectID is {bt.ParentObjID}, ParentIETypeID is: {bt.ParentIETypeID}");
                     }
                     else { throw new KeyNotFoundException("No parent object was returned rom the FormDesign tree"); }
@@ -800,7 +800,7 @@ namespace SDC.Schema
                 else
                 {
                     bt.IsLeafNode = false;
-                    Debug.WriteLine($"The node with ObjectID: {bt.ObjectID} is leaving InitializeNodesFromSdcXml. Item type is {bt.GetType()}.  " +
+                    Debug.WriteLine($"The node with ObjectID: {bt.ObjectID} is leaving 'InitializeNodesFromSdcXml'. Item type is {bt.GetType()}.  " +
                                     $", No Parent object exists");
                 }
 

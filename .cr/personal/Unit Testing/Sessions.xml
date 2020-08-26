@@ -36,18 +36,7 @@
       <Item Id="Session1">
         <Filter Type="DevExpress.CodeRush.TestRunner.Data.Filters.SessionFilter" Assembly="DevExpress.CodeRush.TestRunner.Data, Version=19.2.9.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
           <Level LevelType="Test">
-            <Include>
-              <Filter Type="DevExpress.CodeRush.TestRunner.Data.Filters.TestFilterAnd" Assembly="DevExpress.CodeRush.TestRunner.Data, Version=19.2.9.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
-                <Filter Type="DevExpress.CodeRush.TestRunner.Data.Filters.MethodFilter" Assembly="DevExpress.CodeRush.TestRunner.Data, Version=19.2.9.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" AssemblyName="SDC.MSTest">
-                  <Methods>
-                    <Method FullName="MSTests.UnitTest1.DeserializeSdcFromPath" />
-                  </Methods>
-                </Filter>
-                <Filter Type="DevExpress.CodeRush.TestRunner.Data.Filters.TypeFilter" Assembly="DevExpress.CodeRush.TestRunner.Data, Version=19.2.9.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
-                  <Type FullName="MSTests.UnitTest1" />
-                </Filter>
-              </Filter>
-            </Include>
+            <Include />
             <Exclude />
           </Level>
           <Level LevelType="Type">

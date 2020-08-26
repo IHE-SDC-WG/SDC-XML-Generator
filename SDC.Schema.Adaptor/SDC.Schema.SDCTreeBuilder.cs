@@ -346,7 +346,7 @@ namespace SDC
             return String.Empty;
         }
 
-        public virtual SectionItemType AddBody(Boolean fillData = false, string id = null)
+        public virtual SectionItemType AddBody(Boolean fillData = false, string id = "")
         {
             if (FormDesign.Body == null)
             {
@@ -356,7 +356,7 @@ namespace SDC
             return FormDesign.Body;
         }
 
-        public virtual SectionItemType AddHeader(Boolean fillData = false, string id = null)
+        public virtual SectionItemType AddHeader(Boolean fillData = false, string id = "")
         {
             if (FormDesign.Header == null)
             {
@@ -365,7 +365,7 @@ namespace SDC
             return FormDesign.Header;
         }
 
-        public virtual SectionItemType AddFooter(Boolean fillData = false, string id = null)
+        public virtual SectionItemType AddFooter(Boolean fillData = false, string id = "")
         {
             if (FormDesign.Footer == null)
             {
@@ -469,12 +469,12 @@ namespace SDC
         protected abstract DataTypes_DEType AddFillDataTypesDE(ListFieldType lftParent, SectionBaseTypeResponseTypeEnum dataType);
 
         protected virtual DataTypes_DEType AddDataTypesDE(
-            ResponseFieldType rfParent,
-            object value,
-            ItemChoiceType dataTypeEnum = ItemChoiceType.@string,
-            //DataTypes_DE_Enum dataTypeEnum = DataTypes_DE_Enum.@string;
-            dtQuantEnum quantifierEnum = dtQuantEnum.EQ,
-            bool fillData = false)
+			ResponseFieldType rfParent,
+			object value,
+			ItemChoiceType dataTypeEnum = ItemChoiceType.@string,
+			//DataTypes_DE_Enum dataTypeEnum = DataTypes_DE_Enum.@string;
+			dtQuantEnum quantifierEnum = dtQuantEnum.EQ,
+			bool fillData = false)
         {
             rfParent.Response = new DataTypes_DEType(rfParent, fillData);
             //rfParent.Response.ItemElementName = dataTypeEnum;
@@ -1039,14 +1039,14 @@ namespace SDC
 
         #region Generics
 
-        public virtual DisplayedType AddDisplayedItem<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent //, new()
+        public virtual DisplayedType AddDisplayedItem<T>(T T_Parent, Boolean fillData = true, string id = "") where T : BaseType, IParent //, new()
         {
             var childItemsList = AddChildItemsNode(T_Parent);
             var dNew = new DisplayedType(T_Parent, fillData, id);
             childItemsList.ListOfItems.Add(dNew);
             return dNew;
         }
-        public virtual SectionItemType AddSection<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent //, new()
+        public virtual SectionItemType AddSection<T>(T T_Parent, Boolean fillData = true, string id = "") where T : BaseType, IParent //, new()
         {
             var childItemsList = AddChildItemsNode(T_Parent);
             var sNew = new SectionItemType(T_Parent, fillData, id);
@@ -1059,7 +1059,7 @@ namespace SDC
 
         public abstract SectionBaseType FillSectionBase(SectionBaseType s);
 
-        public virtual InjectFormType AddInjectedForm<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent //, new()
+        public virtual InjectFormType AddInjectedForm<T>(T T_Parent, Boolean fillData = true, string id = "") where T : BaseType, IParent //, new()
         {
             var childItems = AddChildItemsNode(T_Parent);
             var injForm = new InjectFormType(childItems, fillData, id);
@@ -1071,7 +1071,7 @@ namespace SDC
         public abstract InjectFormType FillInjectedForm(InjectFormType injForm);
 
 
-        public ButtonItemType AddButtonAction<T>(T T_Parent, Boolean fillData = true, string id = null) where T : BaseType, IParent //, new()
+        public ButtonItemType AddButtonAction<T>(T T_Parent, Boolean fillData = true, string id = "") where T : BaseType, IParent //, new()
         {
             var childItems = AddChildItemsNode(T_Parent, fillData);
             var btnNew = new ButtonItemType(childItems, fillData, id);
@@ -1271,7 +1271,7 @@ namespace SDC
         //#endregion
 
         #region QAS
-        public virtual QuestionItemType AddQuestion<T>(T T_Parent, QuestionEnum qType, Boolean fillData = true, string id = null) where T : BaseType, IParent //, new()
+        public virtual QuestionItemType AddQuestion<T>(T T_Parent, QuestionEnum qType, Boolean fillData = true, string id = "") where T : BaseType, IParent //, new()
         {
             var childItemsList = AddChildItemsNode(T_Parent);
             var qNew = new QuestionItemType(childItemsList, fillData, id);
@@ -1336,7 +1336,7 @@ namespace SDC
         public abstract ListItemBaseType FillListItemBase(ListItemBaseType li);
 
 
-        public virtual DisplayedType AddListNoteToQuestion(QuestionItemType qParent, Boolean fillData = true, string id = null)
+        public virtual DisplayedType AddListNoteToQuestion(QuestionItemType qParent, Boolean fillData = true, string id = "")
         {
             var list = qParent.ListField_Item.List_Item;
             var di = new DisplayedType(list, fillData, id);
@@ -1344,12 +1344,12 @@ namespace SDC
             return di; // AddDisplayedItemToList(qParent, fillData, id);
         }
 
-        public virtual ListItemType AddFillListItemToQuestion(QuestionItemType qParent, Boolean fillData = true, string id = null)
+        public virtual ListItemType AddFillListItemToQuestion(QuestionItemType qParent, Boolean fillData = true, string id = "")
         {
             return AddListItemToList(qParent, fillData, id);
         }
 
-        protected virtual ListItemType AddListItemToList(QuestionItemType qParent, Boolean fillData = true, string id = null)
+        protected virtual ListItemType AddListItemToList(QuestionItemType qParent, Boolean fillData = true, string id = "")
         {
             var list = qParent.ListField_Item.List_Item;
             var li = new ListItemType(list, fillData, id);

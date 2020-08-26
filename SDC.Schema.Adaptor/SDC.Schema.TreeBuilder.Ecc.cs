@@ -374,7 +374,7 @@ namespace SDC
 
         #region Generics
 
-        public override InjectFormType AddInjectedForm<T>(T T_Parent, Boolean fillData = true, string id = null)
+        public override InjectFormType AddInjectedForm<T>(T T_Parent, Boolean fillData = true, string id = "")
         {
             var childItems = AddChildItemsNode(T_Parent);//TODO:need to first instantiate the List
             var injForm = new InjectFormType(childItems);

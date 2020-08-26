@@ -139,6 +139,13 @@ namespace MSTests
             string sdcFile = File.ReadAllText(path, System.Text.Encoding.UTF8);
             SDC.Schema.FormDesignType FD = SDC.Schema.FormDesignType.DeserializeSdcFromPath(path);
             //SDC.Schema.FormDesignType FD = SDC.Schema.FormDesignType.DeserializeSdcFromFile(sdcFile);
+            var myXML = FD.Serialize();
+            TextWriterTraceListener myWriter = new
+            TextWriterTraceListener(System.Console.Out);
+            //Debug.Listeners.Add(myWriter);
+            //Debug.Print(myXML);
+            Debug.WriteLine(myXML);
+            
         }
         [TestMethod]
         public void ReadSDCxml()
