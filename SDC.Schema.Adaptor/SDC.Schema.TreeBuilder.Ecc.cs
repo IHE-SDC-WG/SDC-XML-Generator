@@ -41,17 +41,17 @@ namespace SDC
 
         #region Ctor
 
-        public SDCTreeBuilderEcc(string CTV_Ckey, IFormDesignDataSets dataSets, string xsltPath = "")
+        public SDCTreeBuilderEcc(string TemplateVersionkey, IFormDesignDataSets dataSets, string xsltPath = "")
         {
             this.Order = 0;
             this.XsltFileName = xsltPath;
 
-            decimal decCTV_Ckey;
-            Decimal.TryParse(CTV_Ckey, out decCTV_Ckey);
+            //decimal decCTV_Ckey;
+            //Decimal.TryParse(CTV_Ckey, out decCTV_Ckey);
 
             //First, set up the data for the form.
-            this.dtHeaderDesign = dataSets.dtGetFormDesignMetadata(decCTV_Ckey);
-            this.dtFormDesign = dataSets.dtGetFormDesign(decCTV_Ckey);
+            this.dtHeaderDesign = dataSets.dtGetFormDesignMetadata(TemplateVersionkey);
+            this.dtFormDesign = dataSets.dtGetFormDesign(TemplateVersionkey);
 
             //TODO: could use a dtFooter/Body/Footer instead: modify IFormDesignDataSets
 
@@ -354,16 +354,16 @@ namespace SDC
             }
 
             //!eCC Special handling for Authority Required
-            var authorityRequired = (bool)drFormDesign["authorityRequired"];
-            if (authorityRequired)
-            {
-                //n.required = true;
-                if (rt.minCard == 0) rt.minCard = 1;
-                rt.mustImplement = true;
-            }
-            else
-                //n.required = false;
-                if (rt.minCard > 0) rt.minCard = 0;
+            //var authorityRequired = (bool)drFormDesign["authorityRequired"];
+            //if (authorityRequired)
+            //{
+            //    //n.required = true;
+            //    if (rt.minCard == 0) rt.minCard = 1;
+            //    rt.mustImplement = true;
+            //}
+            //else
+            //    //n.required = false;
+            //    if (rt.minCard > 0) rt.minCard = 0;
 
             return rt;
         }

@@ -11,7 +11,7 @@
     xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
     xmlns:dxnb="http://schemas.devexpress.com/winfx/2008/xaml/navbar"
     
-    xmlns:eCC_DataSetTableAdapters="clr-namespace:SDC.Gen.UI.WPF.eCC_DataSetTableAdapters"
+    xmlns:SSP="clr-namespace:SDC.Gen.UI.WPF"
     xmlns:local="clr-namespace:SDC.Gen.UI.WPF"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Serialization="clr-namespace:DevExpress.Xpf.LayoutControl.Serialization;assembly=DevExpress.Xpf.LayoutControl.v19.1"
@@ -19,47 +19,28 @@
     Height="700"
     mc:Ignorable="d"
     BorderEffect="Default"
-    dx:ThemeManager.ThemeName="DeepBlue"
+    dx:ThemeManager.ThemeName="Office2010Blue"    
     Icon="{dx:DXImage Image=ExportToXML_32x32.png}"
     IsAeroMode="True"
     Name="MainWindow"
     SnapsToDevicePixels="True"
-    Title=" SDC XML/HTML Generator for eCC 2019.08.06"
+    Title=" SSP: SDC XML/HTML Generator 2020.08.27"
     UseLayoutRounding="True">
 
     <dx:DXWindow.Resources>
-        <!--<dx:TypedSimpleSource x:Key="TypedSimpleSource2"
-                              AdapterType="{x:Type _3_31_2016_PERCDataSetTableAdapters:ChecklistTemplateVersionsTableAdapter}"
-                              ContextType="{x:Type local:_3_31_2016_PERCDataSet}"
-                              Path="ChecklistTemplateVersions">
+
+        <!--<dx:TypedSimpleSource
+            x:Key="TypedSimpleSourceSSP"
+            AdapterType="{x:Type SSP:TemplateVersion}"
+            ContextType="{x:Type local:TemplateVersion}"
+            Path="TemplateVersion">
             <dx:DesignDataManager.DesignData>
                 <dx:DesignDataSettings RowCount="5" />
             </dx:DesignDataManager.DesignData>
         </dx:TypedSimpleSource>-->
-        <!--dx:TypedSimpleSource x:Key="TypedSimpleSource" AdapterType="{x:Type DataSet2TableAdapters:ChecklistTemplateVersionsTableAdapter}" ContextType="{x:Type local:eCC_DataSet}" Path="ChecklistTemplateVersions">
-            <dx:DesignDataManager.DesignData>
-                <dx:DesignDataSettings RowCount="5"/>
-            </dx:DesignDataManager.DesignData>
-        </>
-        <dx:TypedSimpleSource x:Key="TypedSimpleSource1" AdapterType="{x:Type DataSet2TableAdapters:ChecklistTemplateVersionsTableAdapter}" ContextType="{x:Type local:eCC_DataSet}" Path="ChecklistTemplateVersions">
-            <dx:DesignDataManager.DesignData>
-                <dx:DesignDataSettings RowCount="5"/>
-            </dx:DesignDataManager.DesignData>
-        </dx:TypedSimpleSource>
-        <dx:TypedSimpleSource x:Key="TypedSimpleSource2" AdapterType="{x:Type DataSet2TableAdapters:ChecklistTemplateVersionsTableAdapter}" ContextType="{x:Type local:eCC_DataSet}" Path="ChecklistTemplateVersions">
-            <dx:DesignDataManager.DesignData>
-                <dx:DesignDataSettings RowCount="5"/>
-            </dx:DesignDataManager.DesignData>
-        </dx:TypedSimpleSource-->
-        <dx:TypedSimpleSource
-            x:Key="TypedSimpleSource"
-            AdapterType="{x:Type eCC_DataSetTableAdapters:ChecklistTemplateVersionsTableAdapter}"
-            ContextType="{x:Type local:eCC_DataSet}"
-            Path="ChecklistTemplateVersions">
-            <dx:DesignDataManager.DesignData>
-                <dx:DesignDataSettings RowCount="5" />
-            </dx:DesignDataManager.DesignData>
-        </dx:TypedSimpleSource>
+
+
+
     </dx:DXWindow.Resources>
 
     <dxb:BarManager x:Name="barManager" CreateStandardLayout="True">
@@ -200,45 +181,45 @@
                 </dxd:AutoHideGroup>
             </dxd:DockLayoutManager.AutoHideGroups>
             <dxd:LayoutGroup>
-                <dxd:LayoutGroup
-                    ItemHeight="Auto"
-                    ItemWidth="2*"
-                    Orientation="Vertical">
-                    <dxd:DocumentGroup
-                        HasAccent="False"
-                        ItemHeight="3*"
+                <dxd:DocumentGroup
+                        ItemWidth="3*"
                         SelectedTabIndex="0">
-                        <dxd:DocumentPanel Caption="Templates" ItemHeight="3*">
-                            <dxlc:LayoutControl
+                    <dxd:DocumentPanel Caption="Templates" ItemHeight="3*" ItemWidth="1.59*">
+                        <dxlc:LayoutControl
                                 ItemSpace="2"
                                 Orientation="Vertical"
                                 Padding="0">
-                                <dxg:GridControl
+                            <dxg:GridControl
                                     x:Name="gridControl1"
                                     AutoGenerateColumns="AddNew"
                                     AutoPopulateColumns="True"
-                                    ItemsSource="{Binding Data, Source={StaticResource TypedSimpleSource}}"
-                                    SelectionMode="Cell"
+                                    SelectionMode="Row"
                                     ShowBorder="False">
-                                    <dxg:GridColumn
+                                <dxg:GridControl.View>
+                                    <dxg:TreeListView
+                                            x:Name="TreeListView1"
+                                            AutoWidth="True"
+                                            ShowCheckboxes="True" AllowEditing="False"  />
+                                </dxg:GridControl.View>
+                                <dxg:GridColumn
                                         x:Name="Key1"
                                         Width="0"
-                                        FieldName="ChecklistTemplateVersionCkey"
+                                        FieldName="TemplateVersionKey"
                                         Header=""
                                         HorizontalHeaderContentAlignment="Center"
                                         IsSmart="True" />
-                                    <dxg:GridColumn
+                                <dxg:GridColumn
                                         x:Name="Key"
-                                        Width="35"
-                                        FieldName="ChecklistTemplateVersionCkey"
+                                        Width="80"
+                                        FieldName="TemplateVersionKey"
                                         Header="Generate"
                                         HorizontalHeaderContentAlignment="Center"
                                         IsSmart="True">
-                                        <!--  ="{Binding GridColumn.FieldName, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=dxg:GridColumn}}"  -->
-                                        <dxg:GridColumn.CellTemplate>
-                                            <DataTemplate x:Name="MyDataTemplate">
-                                                <StackPanel x:Name="MyStackPanel">
-                                                    <Button
+                                    <!--  ="{Binding GridColumn.FieldName, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=dxg:GridColumn}}"  -->
+                                    <dxg:GridColumn.CellTemplate>
+                                        <DataTemplate x:Name="MyDataTemplate">
+                                            <StackPanel x:Name="MyStackPanel">
+                                                <Button
                                                         x:Name="btnKey"
                                                         Margin="1,0,1,0"
                                                         HorizontalAlignment="Stretch"
@@ -246,18 +227,16 @@
                                                         Click="btnLoadTE_Click"
                                                         Content="{Binding Value}"
                                                         FontWeight="DemiBold" />
-                                                </StackPanel>
-                                            </DataTemplate>
-                                        </dxg:GridColumn.CellTemplate>
-                                    </dxg:GridColumn>
-                                    <dxg:GridColumn
-                                        Width="65"
-                                        FieldName="VisibleText"
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </dxg:GridColumn.CellTemplate>
+                                </dxg:GridColumn>
+                                <dxg:GridColumn
+                                        Width="180"
+                                        FieldName="Lineage"
                                         HorizontalHeaderContentAlignment="Center"
-                                        IsSmart="True"
-                                        SortIndex="0"
-                                        SortOrder="Ascending" />
-                                    <dxg:GridColumn Width="22">
+                                        IsSmart="True" />
+                                <!--<dxg:GridColumn Width="0">
                                         <dxg:GridColumn.CellTemplate>
                                             <DataTemplate>
                                                 <StackPanel>
@@ -271,92 +250,91 @@
                                                 </StackPanel>
                                             </DataTemplate>
                                         </dxg:GridColumn.CellTemplate>
-                                    </dxg:GridColumn>
-                                    <dxg:GridColumn
-                                        Width="0"
-                                        FieldName="CurrentFileName"
+                                    </dxg:GridColumn>-->
+                                <dxg:GridColumn
+                                        Width="100"
+                                        FieldName="Version"
                                         IsSmart="True" />
-                                    <dxg:GridControl.View>
-                                        <dxg:TreeListView
-                                            x:Name="TreeListView1"
-                                            AutoWidth="True"
-                                            ShowCheckboxes="True" />
-                                    </dxg:GridControl.View>
-                                </dxg:GridControl>
-                                <dxlc:LayoutControl
+                                <dxg:GridColumn
+                                        Header="State"
+                                        Width="50"
+                                        FieldName="ReleaseVersionSuffix"
+                                        IsSmart="True" />
+                                <dxg:GridColumn
+                                        Header="PT.Key"
+                                        Width="60"
+                                        FieldName="ProtocolTemplateKey"
+                                        IsSmart="True" />
+                                <dxg:GridColumn
+                                        Header="PV.Key"
+                                        Width="60"
+                                        FieldName="ProtocolVersionKey"
+                                        IsSmart="True" />
+                            </dxg:GridControl>
+                            <dxlc:LayoutControl
                                     Height="29.2"
                                     Margin="0"
                                     dx:ScrollViewerTouchBehavior.IsEnabled="True"
                                     ItemSpace="1"
                                     Padding="0"
                                     Serialization:SerializableItem.TypeName="LayoutGroup">
-                                    <dx:SimpleButton
+                                <dx:SimpleButton
                                         x:Name="cbCheckAll"
                                         Margin="0"
                                         Content="Check All"
                                         FontSize="14"
                                         Padding="0,1,0,0" />
-                                    <dx:SimpleButton
+                                <dx:SimpleButton
                                         x:Name="cbUncheckAll"
                                         Margin="0"
                                         Content="Uncheck All"
                                         FontSize="14"
                                         Padding="0,1,0,0" />
-                                </dxlc:LayoutControl>
-                                <!--  ItemsSource="{Binding Data}"  -->
                             </dxlc:LayoutControl>
-                        </dxd:DocumentPanel>
-                        <dxd:DocumentPanel Caption="Document2" ItemHeight="3*">
-                            <dxg:GridControl
+                            <!--  ItemsSource="{Binding Data}"  -->
+                        </dxlc:LayoutControl>
+                    </dxd:DocumentPanel>
+                    <dxd:DocumentPanel Caption="Document2" ItemHeight="3*" ItemWidth="0.41*">
+                        <dxg:GridControl
                                 x:Name="gridControl2"
                                 AutoPopulateColumns="True"
                                 ItemsSource="{Binding Data}"
                                 ShowBorder="False">
-                                <dxg:GridControl.View>
-                                    <dxg:TableView />
-                                </dxg:GridControl.View>
-                            </dxg:GridControl>
-                        </dxd:DocumentPanel>
-                    </dxd:DocumentGroup>
-                    <!--<dxd:LayoutPanel Caption="DetailView" ItemHeight="2*">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
+                            <dxg:GridControl.View>
+                                <dxg:TableView />
+                            </dxg:GridControl.View>
+                        </dxg:GridControl>
+                    </dxd:DocumentPanel>
 
-                            </Grid.ColumnDefinitions>
-                            <TextBox Grid.ColumnSpan="3" BorderThickness="0" />
-                        </Grid>
-                    </dxd:LayoutPanel>-->
-                </dxd:LayoutGroup>
-                <dxd:TabbedGroup ItemHeight="Auto" SelectedTabIndex="0">
-                    <dxd:LayoutPanel Caption="XDT / HTML Generator" CustomizationCaption="XDT / HTML Generator">
+                </dxd:DocumentGroup>
+                <dxd:TabbedGroup >
+                    <dxd:LayoutPanel Caption="XDT / HTML Generator" CustomizationCaption="XDT / HTML Generator" >
                         <dxd:LayoutGroup
-                            VerticalAlignment="Stretch"
                             CaptionAlignMode="AutoSize"
+                            MinWidth="200" 
                             CaptionVerticalAlignment="Top"
                             Orientation="Vertical"
                             ShowCaption="False"
                             TextTrimming="CharacterEllipsis"
-                            TextWrapping="Wrap">
+                            TextWrapping="Wrap" HorizontalAlignment="Stretch" >
                             <dxd:LayoutGroup ItemHeight="Auto" LayoutItemInterval="2">
                                 <dxd:LayoutControlItem
-                                    Caption="ID"
+                                    Caption="TV Key"
+                                    ItemWidth = "0.5*"
                                     CustomizationCaption="ID"
                                     DataContext="{Binding}"
-                                    Focusable="False"
-                                    ItemWidth="Auto"
-                                    ToolTip="Enter the integer part of the CTV Ckey (template-id)">
+                                    Focusable="False"                                    
+                                    ToolTip="Enter the TemplateVersionKey" >
                                     <dxe:TextEdit
                                         x:Name="txtID"
-                                        Width="50"
-                                        HorizontalAlignment="Stretch"
                                         Mask="9999"
                                         MaskPlaceHolder="#"
                                         MaskSaveLiteral="False"
                                         MaskType="Simple"
                                         TextWrapping="Wrap" />
                                 </dxd:LayoutControlItem>
-                                <dxd:LayoutControlItem CaptionAlignMode="AutoSize">
-                                    <Button x:Name="btnGenerate" Content="Generate" />
+                                <dxd:LayoutControlItem CaptionAlignMode="AutoSize" >
+                                    <Button x:Name="btnGenerate" Content="Generate"  />
                                 </dxd:LayoutControlItem>
                             </dxd:LayoutGroup>
                             <dxd:LayoutControlItem
@@ -364,11 +342,9 @@
                                 CustomizationCaption="Namespace"
                                 DataContext="{Binding}"
                                 Focusable="False"
-                                ToolTip="Enter the Namespace (decimal) part of the CTV Ckey (template-id)">
+                                ToolTip="Enter the Namespace">
                                 <dxe:TextEdit
                                     x:Name="txtNamespace"
-                                    HorizontalAlignment="Stretch"
-                                    AllowNullInput="False"
                                     EditValue="100004300"
                                     Foreground="Black"
                                     Mask="999999999"
@@ -379,16 +355,16 @@
                             </dxd:LayoutControlItem>
                             <dxd:LayoutControlItem
                                 Caption="File Name "
-                                CustomizationCaption="CTV_Ckey"
+                                CustomizationCaption="File Name"
                                 DataContext="{Binding}"
                                 Focusable="False"
                                 Foreground="Black"
                                 OpacityMask="#99000000"
-                                ToolTip="If no filename is entered, the database value will be used, if present.">
+                                ToolTip="If no filename is entered, it will be generated automatically.">
                                 <dxe:TextEdit
                                     x:Name="txtFileName"
                                     Foreground="Black"
-                                    NullText="Enter filename without path or extension"
+                                    NullText="Don't add path or extension"
                                     TextWrapping="Wrap" />
                             </dxd:LayoutControlItem>
                             <dxd:LayoutControlItem
@@ -398,11 +374,11 @@
                                 Focusable="False"
                                 Foreground="Black"
                                 OpacityMask="#99000000"
-                                ToolTip="If no path is entered, the value from the AppConfig XML file will be used, if present.  If that entry is incorrect or missing, the application's directory will be used.">
+                                ToolTip="If no path is entered, the value from the AppConfig XML file will be used, if present. If that entry is incorrect or missing, the application's directory will be used.">
                                 <dxe:TextEdit
                                     x:Name="txtFilePath"
                                     Foreground="Black"
-                                    NullText="Enter Root Path where files wil be saved."
+                                    NullText="Path to save files."
                                     Text=""
                                     TextWrapping="Wrap" />
                             </dxd:LayoutControlItem>
@@ -420,7 +396,7 @@
                                 ToolTip="If no path is entered, the value from the AppConfig XML file will be used,                                                         if present.  If that entry is incorrect or missing, the application's directory will be used.">
                                 <dxe:TextEdit
                                     x:Name="txtBrowserPath"
-                                    HorizontalAlignment="Stretch"
+                                    
                                     VerticalAlignment="Stretch"
                                     HorizontalContentAlignment="Left"
                                     VerticalContentAlignment="Top"
@@ -431,10 +407,10 @@
                                     NullText="C:\Path...\Firefox.exe"
                                     TextWrapping="Wrap" />
                             </dxd:LayoutControlItem>
-                            <dxd:LayoutControlItem CaptionAlignMode="AutoSize" ItemWidth="1.17*">
+                            <dxd:LayoutControlItem CaptionAlignMode="AutoSize" >
                                 <dxe:CheckEdit x:Name="chkCreateHTML" Content="Create HTML?" />
                             </dxd:LayoutControlItem>
-                            <dxd:LayoutControlItem CaptionAlignMode="AutoSize" ItemWidth="0.83*">
+                            <dxd:LayoutControlItem CaptionAlignMode="AutoSize" >
                                 <dxe:CheckEdit
                                     x:Name="chkShowBrowser"
                                     Margin="20,0,0,0"

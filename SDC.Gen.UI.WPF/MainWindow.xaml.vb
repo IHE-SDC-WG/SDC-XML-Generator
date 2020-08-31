@@ -25,8 +25,19 @@ Partial Public Class MainWindow
     'Implements IDisposable
 
     Private Property BrowserPath As String
+    Private _gridList As IList
     Private TEinterop As TE.TEinterop
     Private Property FilePath As String
+
+    Property GridList As IList
+        Get
+            Return _gridList
+        End Get
+        Set(ByVal Value As IList)
+            _gridList = Value
+        End Set
+    End Property
+    
 
 
     Public Sub New()
@@ -34,6 +45,27 @@ Partial Public Class MainWindow
         InitializeComponent()
         DataContext = New DataSource()
         TEinterop = New TE.TEinterop(My.Settings.TEpath)
+
+        Dim sspEntities = New SSPEntities()
+        Dim query =
+            From TV In sspEntities.TemplateVersions
+            Join PT In sspEntities.ProtocolTemplates On PT.ProtocolTemplateKey Equals TV.ProtocolTemplateKey
+            Join R In sspEntities.ListReleaseStates On R.ReleaseStateKey Equals TV.ReleaseStateKey
+            Where TV.Active = True AndAlso PT.Active = True AndAlso
+            (
+            R.ReleaseVersionSuffix = "REL" OrElse
+            R.ReleaseVersionSuffix.StartsWith("CPT") OrElse
+            R.ReleaseVersionSuffix.StartsWith("RC") OrElse
+            R.ReleaseVersionSuffix.StartsWith("TEST") OrElse
+            PT.DraftTemplateVerKey = TV.TemplateVersionKey
+            )
+            Order By R.ReleaseVersionSuffix, PT.Lineage
+            Select PT.Lineage, TV.TemplateVersionKey, TV.Version, R.ReleaseVersionSuffix, TV.ProtocolTemplateKey, TV.ProtocolVersionKey
+
+
+
+        GridList = query.ToList()
+        gridControl1.ItemsSource = GridList
 
 
         'If filePath = "" Then
@@ -98,7 +130,7 @@ Partial Public Class MainWindow
 
         If FileIO.FileSystem.DirectoryExists(FilePath) Then
             If key > "" AndAlso ns > "" Then
-                key = (String.Format("{0}.{1}", key, ns))
+                'key = (String.Format("{0}.{1}", key, ns))
                 'TODO: Need to cache this generator, since it takes time to create it new each time.
 
                 Gen.MakeOneXDT(key, FilePath, loadBrowser, BrowserPath, createHTML)   ', fileName
@@ -145,37 +177,37 @@ Partial Public Class MainWindow
         End If
     End Sub
 
-    Private Sub gridControl1_MouseDoubleClick(sender As Object, e As MouseButtonEventArgs) Handles gridControl1.MouseDoubleClick
-        Dim col = gridControl1.CurrentColumn
-        Dim cellText As String
-        'Dim row = TryCast(gridControl1.GetFocusedRow, System.Data.DataRowView)
+    'Private Sub gridControl1_MouseDoubleClick(sender As Object, e As MouseButtonEventArgs) Handles gridControl1.MouseDoubleClick
+    '    Dim col = gridControl1.CurrentColumn
+    '    Dim cellText As String
+    '    'Dim row = TryCast(gridControl1.GetFocusedRow, System.Data.DataRowView)
 
-        If col.VisibleIndex = 0 Then
-            gridControl1.Cursor = Cursors.Wait
-            cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
+    '    If col.VisibleIndex = 0 Then
+    '        gridControl1.Cursor = Cursors.Wait
+    '        cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
 
-            Dim key = Split(cellText, ".", 2)
-            txtID.Text = key(0)
-            'txtID.UpdateLayout()
-            txtNamespace.Text = key(1)
+    '        Dim key = Split(cellText, ".", 2)
+    '        txtID.Text = key(0)
+    '        'txtID.UpdateLayout()
+    '        txtNamespace.Text = key(1)
 
-            'Conside inmplementing a DoEvents on main UI thread here, to update the UI
-            'https://www.devexpress.com/Support/Center/Question/Details/Q322288/gridcontrol-how-to-force-cell-errors-redraw-idxdataerrorinfo
-            'https://stackoverflow.com/questions/4502037/where-is-the-application-doevents-in-wpf
-            'http://geekswithblogs.net/NewThingsILearned/archive/2008/08/25/refresh--update-wpf-controls.aspx
-            'https://www.meziantou.net/2011/06/22/refresh-a-wpf-control
+    '        'Conside inmplementing a DoEvents on main UI thread here, to update the UI
+    '        'https://www.devexpress.com/Support/Center/Question/Details/Q322288/gridcontrol-how-to-force-cell-errors-redraw-idxdataerrorinfo
+    '        'https://stackoverflow.com/questions/4502037/where-is-the-application-doevents-in-wpf
+    '        'http://geekswithblogs.net/NewThingsILearned/archive/2008/08/25/refresh--update-wpf-controls.aspx
+    '        'https://www.meziantou.net/2011/06/22/refresh-a-wpf-control
 
-            btnGenerate_Click(sender, e)
-            gridControl1.Cursor = Cursors.Arrow
-        ElseIf col.VisibleIndex = 2 Then
-            cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
-            'Dim TE = New TE.TEinterop()
+    '        btnGenerate_Click(sender, e)
+    '        gridControl1.Cursor = Cursors.Arrow
+    '    ElseIf col.VisibleIndex = 2 Then
+    '        cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
+    '        'Dim TE = New TE.TEinterop()
 
-            TEinterop.LookupItemByCKey(cellText, "0")
-        End If
+    '        TEinterop.LookupItemByCKey(cellText, "0")
+    '    End If
 
 
-    End Sub
+    'End Sub
 
     Protected Overrides Sub Finalize()
         MyBase.Finalize()

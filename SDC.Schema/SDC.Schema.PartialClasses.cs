@@ -702,7 +702,7 @@ namespace SDC.Schema
             if (parentNode is null)
             {//this is a top level node, and it MUST be of type FormDesignType
                 if (this.GetType() == typeof(FormDesignType))
-                { FormDesign = (FormDesignType)this; }  //TopNode.FormDesign;
+                { formDesign = (FormDesignType)this; }  //TopNode.FormDesign;
                 else
                 { throw new InvalidOperationException("The top level node must be FormDesignType"); }
                 }
