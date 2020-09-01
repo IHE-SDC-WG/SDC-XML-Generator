@@ -26,7 +26,7 @@ Partial Public Class MainWindow
 
     Private Property BrowserPath As String
     Private _gridList As IList
-    Private TEinterop As TE.TEinterop
+    'Private TEinterop As TE.TEinterop
     Private Property FilePath As String
 
     Property GridList As IList
@@ -44,7 +44,7 @@ Partial Public Class MainWindow
 
         InitializeComponent()
         DataContext = New DataSource()
-        TEinterop = New TE.TEinterop(My.Settings.TEpath)
+        'TEinterop = New TE.TEinterop(My.Settings.TEpath)
 
         Dim sspEntities = New SSPEntities()
         Dim query =
@@ -93,14 +93,11 @@ Partial Public Class MainWindow
             Dim templatesMap As New Dictionary(Of String, String)
 
             Application.Current.MainWindow.Cursor = Cursors.Wait
-
+            Dim colTVkey = gridControl1.Columns(0)
+            Dim colLineage = gridControl1.Columns(2)
 
             For Each node In Me.TreeListView1.Nodes.Where(Function(n) CBool(n.IsChecked))
-
-                Dim dataRowView = TryCast(node.Content, System.Data.DataRowView)
-                Debug.Print(dataRowView(0).ToString & vbCrLf & dataRowView(1).ToString() & vbCrLf & dataRowView(2).ToString())
-
-                templatesMap.Add(dataRowView(0).ToString, dataRowView(2).ToString) 'cols 0 & 3
+                templatesMap.Add(TreeListView1.GetNodeValue(node, colTVkey).ToString, TreeListView1.GetNodeValue(node, colLineage).ToString) 'cols 0 & 3
             Next
 
 
@@ -211,7 +208,7 @@ Partial Public Class MainWindow
 
     Protected Overrides Sub Finalize()
         MyBase.Finalize()
-        TEinterop.Dispose()
+        'TEinterop.Dispose()
     End Sub
 
     Private Sub gridControl1_GotFocus(sender As Object, e As RoutedEventArgs) Handles gridControl1.GotFocus
@@ -235,9 +232,6 @@ Partial Public Class MainWindow
                     'btn.Content = "Gen: " + cellText
                     'MsgBox(cellText)
                     btnGenerate_Click(sender, e)
-                End If
-                If btn.Name = "btnLoadTE" Then 'Load TE
-                    TEinterop.LookupItemByCKey(cellText, "0")
                 End If
 
 
