@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>SDC.Gen.UI.WPF</RootNamespace>
     <AssemblyName>SDC.Gen.UI.WPF</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <MyType>Custom</MyType>
@@ -20,6 +20,8 @@
     <SccProvider>SubversionScc</SccProvider>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -34,8 +36,6 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -80,7 +80,8 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>lib\New.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -283,7 +284,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="lib\eCC_TE_2.32.adp" />
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.vb</LastGenOutput>
@@ -357,9 +357,6 @@
       <SubType>Designer</SubType>
     </Resource>
   </ItemGroup-->
-  <ItemGroup>
-    <None Include="lib\New.ico" />
-  </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -502,20 +499,14 @@
     </PublishFile>
   </ItemGroup>
   <ItemGroup>
-    <AdditionalFiles Include="lib\ebCrypt.dll" CopyToOutputDirectory="Always" />
-    <AdditionalFiles Include="lib\Gear.ico" CopyToOutputDirectory="Always" />
-    <AdditionalFiles Include="lib\Register_ebCrypt.bat" CopyToOutputDirectory="Always" />
-    <AdditionalFiles Include="lib\Register_ebCrypt_Admin.bat" CopyToOutputDirectory="Always" />
-    <AdditionalFiles Include="lib\XMLSchema.ico" CopyToOutputDirectory="Always" />
-    <AdditionalFiles Include="lib\ProTrace Stub.log" />
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\Gear.ico" />
+    <Resource Include="Images\XMLSchema.ico" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>

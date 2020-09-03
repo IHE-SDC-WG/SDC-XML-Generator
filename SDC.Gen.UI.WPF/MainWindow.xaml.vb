@@ -283,15 +283,6 @@ Partial Public Class MainWindow
         End If
     End Sub
 
-    Public Shared Async Function GetChildrenAsync(G As GridControl, row As Integer, column As Integer) As System.Threading.Tasks.Task(Of Object)
-        Dim rList As IList = Await (G.GetRowsAsync(0, G.VisibleRowCount))
-        For Each r In rList
-            Dim rc = TryCast(r, RowControl)
-            Dim btn As Button = TryCast(rc.FindName("btnKey"), Button)
-            'btn.Content = rc.
-        Next
-
-    End Function
     Public Sub DumpLogicalTree(ByVal parent As Object, ByVal level As Integer)
         Dim typeName As String = parent.[GetType]().Name
         Dim name As String = Nothing

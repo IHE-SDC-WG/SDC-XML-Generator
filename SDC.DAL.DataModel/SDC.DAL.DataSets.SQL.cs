@@ -253,7 +253,8 @@ namespace SDC.DAL.DataSets
             const string getChecklistItem = @"
                     SELECT  DISTINCT
             --Row metadata
-                    @TemplateVersionKey AS ChecklistTemplateVersionCkey,
+                    @TemplateVersionKey AS TemplateVersionKey,
+                    i.ChecklistTemplateVersionCkey AS ChecklistTemplateVersionCkey,
 			        i.TemplateVersionKey,
                     i.ChecklistTemplateItemCkey, 
 			        i.U_ParentItemCKey,
@@ -538,7 +539,7 @@ namespace SDC.DAL.DataSets
             #endregion
             #region SQL for SSP
             const string getChecklistVersion = @"SELECT
-                    @TemplateVersionKey AS ChecklistTemplateVersionCkey ,
+                    PT.CTV_StaticKey ,
 				    TV.TemplateVersionKey,
 				    PT.Lineage AS ShortName,
                     PT.Lineage,
@@ -550,7 +551,7 @@ namespace SDC.DAL.DataSets
                     TV.VisibleTextProperty AS VisibleText,
                     PT.ProtocolTemplateKey AS ChecklistCkey,
                     
-                    TV.Restrictions,
+                    TV.RestrictionsTextProperty,
                     CONVERT (date, TV.WebPostingDateProperty) AS WebPostingDate,
                     CONVERT (date, TV.RevisionDateProperty) AS RevisionDate,
                     CONVERT (date, TV.AccreditationDeadlineDateProperty) AS EffectiveDate,
