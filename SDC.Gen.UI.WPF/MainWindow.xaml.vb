@@ -37,15 +37,34 @@ Partial Public Class MainWindow
             _gridList = Value
         End Set
     End Property
-    
+
 
 
     Public Sub New()
-
         InitializeComponent()
         DataContext = New DataSource()
         'TEinterop = New TE.TEinterop(My.Settings.TEpath)
 
+
+
+
+        'If filePath = "" Then
+        '    filePath = My.Settings.FilePath  'filePath, when set here,  will override settings files from other components
+        '    If Not My.Computer.FileSystem.DirectoryExists(filePath) Then
+
+        '        Try
+        '            My.Computer.FileSystem.CreateDirectory(filePath)
+        '        Catch ex As Exception
+        '            MsgBox("Unable to create the file path: " + FilePath & vbCrLf & ex.Message + vbCrLf + ex.Data.ToString(), MsgBoxStyle.Exclamation, "SDC Folder was not created")
+        '        End Try
+        '    End If
+        'End If
+    End Sub
+
+    Private Sub button_Click(sender As Object, e As RoutedEventArgs) Handles button.Click
+        FillData()
+    End Sub
+    Private Sub FillData()
         Dim sspEntities = New SSPEntities()
         Dim query =
             From TV In sspEntities.TemplateVersions
@@ -63,23 +82,17 @@ Partial Public Class MainWindow
             Select PT.Lineage, TV.TemplateVersionKey, TV.Version, R.ReleaseVersionSuffix, TV.ProtocolTemplateKey, TV.ProtocolVersionKey
 
 
+        Try
+            GridList = query.ToList()
+            gridControl1.ItemsSource = GridList
+        Catch ex As Exception
+            MessageBox.Show("Dataset could not be loaded.  Check your connection and permissions" & vbCrLf &
+                            "Error: " & vbCrLf & ex.Message & vbCrLf & ex.InnerException.Message)
+        End Try
 
-        GridList = query.ToList()
-        gridControl1.ItemsSource = GridList
 
-
-        'If filePath = "" Then
-        '    filePath = My.Settings.FilePath  'filePath, when set here,  will override settings files from other components
-        '    If Not My.Computer.FileSystem.DirectoryExists(filePath) Then
-
-        '        Try
-        '            My.Computer.FileSystem.CreateDirectory(filePath)
-        '        Catch ex As Exception
-        '            MsgBox("Unable to create the file path: " + FilePath & vbCrLf & ex.Message + vbCrLf + ex.Data.ToString(), MsgBoxStyle.Exclamation, "SDC Folder was not created")
-        '        End Try
-        '    End If
-        'End If
     End Sub
+
 
     Private Sub btnGenAll_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles btnGenAllChecked.Click
         BrowserPath = txtBrowserPath.Text.Trim
@@ -343,6 +356,7 @@ Partial Public Class MainWindow
 
         Return Nothing
     End Function
+
 End Class
 
 

@@ -143,6 +143,7 @@
                     <dxb:BarSubItemLink BarItemName="smFile" />
                     <dxb:BarSubItemLink BarItemName="smHelp" />
                 </dxb:Bar.ItemLinks>
+
             </dxb:Bar>
         </dxb:BarManager.Bars>
         <dxd:DockLayoutManager DataContext="{Binding}">
@@ -173,6 +174,7 @@
                                 <dxnb:NavBarItem Content="Item3" ImageSource="Images/Icons/Item.png" />
                                 <dxnb:NavBarItem Content="Item4" ImageSource="Images/Icons/Item.png" />
                                 <dxnb:NavBarItem Content="Item5" ImageSource="Images/Icons/Item.png" />
+
                             </dxnb:NavBarGroup>
                         </dxnb:NavBarControl>
                     </dxd:LayoutPanel>
@@ -189,6 +191,7 @@
                             Padding="0"
                             ItemSpace="2"
                             Orientation="Vertical">
+
                             <dxg:GridControl
                                 x:Name="gridControl1"
                                 AutoGenerateColumns="AddNew"
@@ -272,6 +275,8 @@
                                     IsSmart="True"
                                     Width="60" />
                             </dxg:GridControl>
+                            <Button x:Name="button" Content="Connect Database" HorizontalAlignment="Stretch" Height="20" VerticalAlignment="Top" />
+
                             <dxlc:LayoutControl
                                 Height="29.2"
                                 Padding="0"
