@@ -658,12 +658,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_AD759907C65A78E4465065A695F70436"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_53383BA21FCD40C8ADDBFC8D29647E68"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -829,6 +823,12 @@
         "OwnerKey" = "8:_CAD74ABF257EA0CA7D2DCC456A843171"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_AD759907C65A78E4465065A695F70436"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -847,6 +847,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -863,6 +879,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -1918,15 +1950,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SSP SDC XML Generator"
-        "ProductCode" = "8:{B8915FF7-50EC-468C-B998-16D6699932A2}"
-        "PackageCode" = "8:{601342F7-E67C-4FC0-AB93-1B6B2BF6639F}"
-        "UpgradeCode" = "8:{CCE8C79D-002B-4E27-999E-D3D4D80EC37B}"
+        "ProductCode" = "8:{F88EB0CB-C1FC-452E-BC48-D3F9BC69C5B7}"
+        "PackageCode" = "8:{F3666B29-1A43-4D28-97E3-E1515E2971E5}"
+        "UpgradeCode" = "8:{6FEDD252-1C5E-4CB7-9C25-7BF28287A57E}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:3.0.0"
+        "ProductVersion" = "8:3.5"
         "Manufacturer" = "8:College of American Pathologists"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

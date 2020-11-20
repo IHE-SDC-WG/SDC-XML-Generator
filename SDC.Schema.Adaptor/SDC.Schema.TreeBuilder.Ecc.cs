@@ -48,7 +48,6 @@ namespace SDC
 
             //decimal decCTV_Ckey;
             //Decimal.TryParse(CTV_Ckey, out decCTV_Ckey);
-
             //First, set up the data for the form.
             this.dtHeaderDesign = dataSets.dtGetFormDesignMetadata(TemplateVersionkey);
             this.dtFormDesign = dataSets.dtGetFormDesign(TemplateVersionkey);
@@ -296,7 +295,9 @@ namespace SDC
             dt.enabled = (bool)drFormDesign["enabled"];
             dt.visible = (bool)drFormDesign["visible"];
             dt.title = (string)drFormDesign["VisibleText"];
-            dt.mustImplement = (bool)drFormDesign["mustImplement"];
+            dt.mustImplement = (bool)drFormDesign["mustImplement"]; 
+            if(dt.GetType() == typeof(DisplayedType)) //temp fix for SSP bug 2020_10_14
+                dt.mustImplement = true; 
             //ToDo: Fix mismatch between bool database value and int enum DisplayedTypeShowInReport
             //dt.showInReport = (DisplayedTypeShowInReport)drFormDesign["showInReport"];
 
@@ -318,6 +319,8 @@ namespace SDC
             //TODO: support baseURI
 
             iet.ID = drFormDesign["ChecklistTemplateItemCKey"].ToString();
+            FormDesign.IdentifiedTypes.Add(drFormDesign["TemplateVersionItemKey"].ToString(), iet);
+            //IdentifiedExtensionType.IdentExtNodesTVI.Add(drFormDesign["TemplateVersionItemKey"].ToString(), iet);
             //iet.name = CreateName(iet);
 
             return iet;
@@ -1115,24 +1118,24 @@ namespace SDC
                         dt.ElementName = itemDataType;
                         //dt.val = drFormDesign["DefaultValue"] as decimal?;
                         //SDCHelpers.NZ(drFormDesign["DefaultValue"], dt.val);
-                        if (drFormDesign["DefaultValue"].ToString() != "") dt.val = (decimal)drFormDesign["DefaultValue"];
+                        if( decimal.TryParse(drFormDesign["DefaultValue"].ToString(), out decimal val)) dt.val = val;
 
                         //TODO: dt.minExclusive = (decimal)drFormDesign["minExclusive"];
-                        if (drFormDesign["AnswerMinValue"] != null) dt.minInclusive = (decimal)drFormDesign["AnswerMinValue"];
+                        if (!drFormDesign.IsNull("AnswerMinValue")) dt.minInclusive = (decimal)drFormDesign["AnswerMinValue"];
                         //TODO: dt.maxExclusive = (decimal)drFormDesign["maxExclusive"];
                         //SDCHelpers.NZ(drFormDesign["AnswerMaxValue"], dt.maxInclusive);
-                        if (drFormDesign["AnswerMaxValue"] != null) dt.maxInclusive = (decimal)drFormDesign["AnswerMaxValue"];
+                        if (!drFormDesign.IsNull("AnswerMaxValue")) dt.maxInclusive = (decimal)drFormDesign["AnswerMaxValue"];
                         //SDCHelpers.NZ(drFormDesign["AnswerMaxChars"], dt.totalDigits);
-                        if (drFormDesign["AnswerMaxChars"] != null) 
+                        if (!drFormDesign.IsNull("AnswerMaxChars")) 
                         {
-                            dt.totalDigits = Convert.ToByte(drFormDesign["AnswerMaxChars"]);//AnswerMaxChars
-                            dt.totalDigitsSpecified = true;
+                            //dt.totalDigits = Convert.ToByte(drFormDesign["AnswerMaxChars"]);//AnswerMaxChars
+                            //dt.totalDigitsSpecified = true;
                         }
                         //SDCHelpers.NZ(drFormDesign["AnswerMaxDecimals"], dt.fractionDigits);
 
                         //TODO:  Need to truncate the fractional digits  according to the fractionDigits number of digits.  This requires converting to string-based properties instead of decimal
                         //see the Integer code for an example
-                        if (drFormDesign["AnswerMaxDecimals"] != null) dt.fractionDigits = Convert.ToByte(drFormDesign["AnswerMaxDecimals"]);//AnswerMaxDecimals
+                        if (!drFormDesign.IsNull("AnswerMaxDecimals")) dt.fractionDigits = Convert.ToByte(drFormDesign["AnswerMaxDecimals"]);//AnswerMaxDecimals
                         //TODO: dt.mask = (string)drFormDesign["mask"];//TODO: missing
                         dt.quantEnum = AssignQuantifier();
 
@@ -2004,11 +2007,17 @@ namespace SDC
             var li = (ListItemType)liRF.ParentNode;
 
             //ToDo: remove this special eCC rule, to allow these words on SDC optional answers (e.g., Pending (specify))
-            if (li.title.ToLower().Contains("specify") ||
-                li.title.ToLower().Contains("explain") ||
-                li.title.ToLower().Contains("at least")
+            //if (liRF.responseRequired = false) System.Diagnostics.Debugger.Break();
+            if (liRF.responseRequired == false && (
+                    li.title.ToLower().Trim() == "(specify)" ||
+                    li.title.ToLower().Trim() == "(explain)" ||
+                    li.title.ToLower().Trim().EndsWith("(specify)") ||
+                    li.title.ToLower().Trim().EndsWith("(explain)") ||
+                    li.title.ToLower().StartsWith("at least")
+                    )
                 )
-                liRF.responseRequired = true;
+                li.title += "_*****ERRORresponseRequired_ERROR*****";
+                //liRF.responseRequired = true;
 
             return liRF;
         }
@@ -2034,7 +2043,7 @@ namespace SDC
             try
             {
                 //this field will not be present in the current datarow when we are filling the form header with read-only data
-                textAfterResp = (string)drFormDesign["TextAfterConcept"];
+                textAfterResp = (string)drFormDesign["TextAfterAnswer"];
             }
             catch (Exception ex)
             {

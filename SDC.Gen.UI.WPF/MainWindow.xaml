@@ -6,10 +6,10 @@
     Icon="{dx:DXImage Image=ExportToXML_32x32.png}"
     IsAeroMode="True"
     SnapsToDevicePixels="True"
-    Title=" SSP: SDC XML/HTML Generator 2020.08.27"
+    Title=" SSP: SDC XML/HTML Generator 2020.10.14, v.3.5"
     UseLayoutRounding="True"
-    Width="1106"
-    dx:ThemeManager.ThemeName="Office2010Blue"
+    Width="1242.5"
+    
     x:Class="MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:SSP="clr-namespace:SDC.Gen.UI.WPF"
@@ -25,6 +25,8 @@
     xmlns:local="clr-namespace:SDC.Gen.UI.WPF"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
 
     <dx:DXWindow.Resources>
 
@@ -182,7 +184,7 @@
                 </dxd:AutoHideGroup>
             </dxd:DockLayoutManager.AutoHideGroups>
             <dxd:LayoutGroup>
-                <dxd:DocumentGroup ItemWidth="3*" SelectedTabIndex="0">
+                <dxd:DocumentGroup ItemWidth="2.85*" SelectedTabIndex="0">
                     <dxd:DocumentPanel
                         Caption="Templates"
                         ItemHeight="3*"
@@ -316,7 +318,7 @@
                     </dxd:DocumentPanel>
 
                 </dxd:DocumentGroup>
-                <dxd:TabbedGroup>
+                <dxd:TabbedGroup ItemWidth="1.15*">
                     <dxd:LayoutPanel Caption="XDT / HTML Generator" CustomizationCaption="XDT / HTML Generator">
                         <dxd:LayoutGroup
                             MinWidth="200"

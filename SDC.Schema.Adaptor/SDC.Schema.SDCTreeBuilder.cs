@@ -2,6 +2,7 @@ using SDC.Schema;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
@@ -69,213 +70,231 @@ namespace SDC
             QuestionItemType qi;
             ListItemType li;
             SectionItemType si;
-
+            //IdentifiedExtensionType.IdentExtNodesTVI.Clear();
 
 
             string parURI;
             //for (int i = 0; i < dtFormDesign.Rows.Count - 1; i++)
             foreach (DataRow dr in dtFormDesign.Rows)
             {
-                drFormDesign = dr;   //dtFormDesign.Rows[i];
-                //BuildFormDesignTree();
-                InitRow(out rowType, out parURI, out type);
-
-                parentIETnode = null; di = null; qi = null;
-                li = null; si = null;
-                //Debug.WriteLine(rowType.ToString() + ":" + drFormDesign["VisibleText"].ToString() + drFormDesign["ChecklistTemplateItemCkey"].ToString());
-                switch (rowType)
-                {
-                    case ItemTypeEnum.FormDesign:
-                        throw new NotImplementedException();  //TODO: decide whether to keep this
-                        break;
-                    case ItemTypeEnum.ListItemFillin:
-                    case ItemTypeEnum.ListItem:
-                        qi = (QuestionItemType)SDCHelpers.GetParentIETypeNode(parURI);
-                        li = AddFillListItemToQuestion(qi);
-                        break;
-                    case ItemTypeEnum.QuestionFill:
-                    case ItemTypeEnum.QuestionLookup:
-                    case ItemTypeEnum.QuestionMultiple:
-                    case ItemTypeEnum.QuestionSingle:
-                    case ItemTypeEnum.QuestionGroup:
-                        qType = (QuestionEnum)rowType;  //The more restrictive QuestionEnum is needed for AddQuestion below; The 2 Enum types share question enum values
-                        parentIETnode = SDCHelpers.GetParentIETypeNode(parURI);
-
-                        if (parentIETnode == null)
-                        {
-                            var body = FormDesign.AddBody();
-                            qi = body.AddQuestion(qType);
-
-                        }
-                        else
-                            switch (parentIETnode.NodeType)
+                try {
+                    drFormDesign = dr;   //dtFormDesign.Rows[i];
+                                         //BuildFormDesignTree();
+                    InitRow(out rowType, out parURI, out type);
+                    parentIETnode = null; 
+                    di = null; qi = null;
+                    li = null; si = null;
+                    FormDesign.IdentifiedTypes.TryGetValue(parURI, out parentIETnode);
+                    
+                    //Debug.WriteLine(rowType.ToString() + ":" + drFormDesign["VisibleText"].ToString() + drFormDesign["ChecklistTemplateItemCkey"].ToString());
+                    switch (rowType)
+                    {
+                        case ItemTypeEnum.FormDesign:
+                            throw new NotImplementedException();  //TODO: decide whether to keep this
+                            break;
+                        case ItemTypeEnum.ListItemFillin:
+                        case ItemTypeEnum.ListItem:
+                            try
                             {
-                                case ItemTypeEnum.Header:
-                                case ItemTypeEnum.Body:
-                                case ItemTypeEnum.Footer:
-                                case ItemTypeEnum.Section:
-                                case ItemTypeEnum.SectionGroup:
-
-                                    qi = AddQuestion<SectionItemType>((SectionItemType)parentIETnode, qType);
-                                    //var t = SDCtypes.SectionItemType;
-                                    //parentIETnode.AddFill(SDCtypes.SectionItemType, true); //ToDo: this function does nothing - delete it
-                                    break;
-                                case ItemTypeEnum.ListItemFillin:
-                                case ItemTypeEnum.ListItem:
-                                    qi = AddQuestion<ListItemType>((ListItemType)parentIETnode, qType);
-                                    break;
-                                case ItemTypeEnum.QuestionFill:
-                                case ItemTypeEnum.QuestionLookup:
-                                case ItemTypeEnum.QuestionMultiple:
-                                case ItemTypeEnum.QuestionSingle:
-                                case ItemTypeEnum.QuestionGroup:
-                                    qi = AddQuestion<QuestionItemType>((QuestionItemType)parentIETnode, qType);
-                                    break;
-                                default:
-                                    //illegal parent for the question, so add it to the main Body section where it will be in an obviously wrong position
-                                    qi = AddQuestion<SectionItemType>(FormDesign.Body, qType);
-                                    var ot = qi.AddProperty(false);
-                                    ot.val = "ERROR: This Question child node has a " + parentIETnode.NodeType.ToString() + " as a parent, but this parent type cannot have child nodes in SDC.  The child node was placed under the main Body node instead, and the order attribute may not be in the correct sequence: ";
-                                    break;
-                            }
-                        break;
-                    case ItemTypeEnum.Header:
-                    case ItemTypeEnum.Body:
-                    case ItemTypeEnum.Footer:
-                    case ItemTypeEnum.Section:
-                    case ItemTypeEnum.SectionGroup:
-                        parentIETnode = SDCHelpers.GetParentIETypeNode(parURI);
-
-                        if (parentIETnode == null)
-                            switch (rowType)
+                                qi = (QuestionItemType)parentIETnode;
+                                li = AddFillListItemToQuestion(qi);
+                            }catch (Exception ex)
                             {
-                                case ItemTypeEnum.Header:
-                                    if (FormDesign.Header == null) si = FormDesign.AddHeader(true);
-                                    else si = FormDesign.Header.AddSection();  //add subsection under main Header
-                                    break;
-                                case ItemTypeEnum.Footer:
-                                    if (FormDesign.Footer == null) si = FormDesign.AddFooter(true);
-                                    else si = FormDesign.Footer.AddSection(); //add subsection under main Footer
-                                    break;
-                                case ItemTypeEnum.Body:
-                                    if (FormDesign.Body == null) si = FormDesign.AddBody(true);
-                                    else si = FormDesign.Body.AddSection();  //can add subsection under main Body
+                                System.Windows.Forms.MessageBox.Show($"ParURI:{parURI} \r\n Error converting the parent item to a question type for node {drFormDesign["ChecklistTemplateItemCkey"]}, {drFormDesign["VisibleText"]}\r\n {ex.Message}",$"ParURI:{parURI}", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                System.Diagnostics.Debug.Print(drFormDesign["ChecklistTemplateItemCkey"].ToString());
 
-                                    break;
-                                case ItemTypeEnum.Section:
-                                case ItemTypeEnum.SectionGroup:
-                                default: //a top-level section (one with no parent) must be a child of Body
-                                    SectionItemType body;
-
-                                    if (FormDesign.Body == null)
-                                    {
-                                        body = FormDesign.AddBody(); //create a body (parent) to hold the new sections
-                                    }
-                                    else body = FormDesign.Body;
-
-                                    si = body.AddSection(); //add new section to the body node
-                                    break;
                             }
-                        else
-                            switch (parentIETnode.NodeType)
+                            break;
+                        case ItemTypeEnum.QuestionFill:
+                        case ItemTypeEnum.QuestionLookup:
+                        case ItemTypeEnum.QuestionMultiple:
+                        case ItemTypeEnum.QuestionSingle:
+                        case ItemTypeEnum.QuestionGroup:
+                            qType = (QuestionEnum)rowType;  //The more restrictive QuestionEnum is needed for AddQuestion below; The 2 Enum types share question enum values
+                            //parentIETnode = SDCHelpers.GetParentIETypeNode(parURI);
+
+                            if (parentIETnode == null)
                             {
-                                case ItemTypeEnum.Header:
-                                case ItemTypeEnum.Body:
-                                case ItemTypeEnum.Footer:
-                                case ItemTypeEnum.Section:
-                                case ItemTypeEnum.SectionGroup:
-                                    si = AddSection<SectionItemType>((SectionItemType)parentIETnode);
-                                    break;
-                                case ItemTypeEnum.ListItemFillin:
-                                case ItemTypeEnum.ListItem:
-                                    si = AddSection<ListItemType>((ListItemType)parentIETnode);
-                                    break;
-                                case ItemTypeEnum.QuestionFill:
-                                case ItemTypeEnum.QuestionLookup:
-                                case ItemTypeEnum.QuestionMultiple:
-                                case ItemTypeEnum.QuestionSingle:
-                                case ItemTypeEnum.QuestionGroup:
-                                    si = AddSection<QuestionItemType>((QuestionItemType)parentIETnode);
-                                    break;
-                                default:
-                                    //illegal parent for the section (e.g., a DisplayedItem), so add it to the main Body section where it will be in an obviously wrong position
-                                    //!This will also cause the elements to be out of order.
-                                    si = AddSection<SectionItemType>(FormDesign.Body);
-                                    var ot = si.AddProperty(false);
-                                    ot.val = "ERROR: This Section child node has a " + parentIETnode.NodeType.ToString() + " as a parent, but this parent type cannot have child nodes in SDC.  The child node was placed under the main Body node instead, and the order attribute may not be in the correct sequence: ";
-                                    break;
-                            }
-                        break;
-                    case ItemTypeEnum.DisplayedItem:
-                        parentIETnode = SDCHelpers.GetParentIETypeNode(parURI);
+                                var body = FormDesign.AddBody();
+                                qi = body.AddQuestion(qType);
 
-                        if (parentIETnode == null)
-                        {
-                            SectionItemType body;
-                            if (FormDesign.Body == null)
-                            {
-                                body = FormDesign.AddBody();
                             }
-                            else body = FormDesign.Body;
+                            else
+                                switch (parentIETnode.NodeType)
+                                {
+                                    case ItemTypeEnum.Header:
+                                    case ItemTypeEnum.Body:
+                                    case ItemTypeEnum.Footer:
+                                    case ItemTypeEnum.Section:
+                                    case ItemTypeEnum.SectionGroup:
 
-                            di = FormDesign.Body.AddDisplayedItem();
-                        }
-                        else
-                            switch (parentIETnode.NodeType)
+                                        qi = AddQuestion<SectionItemType>((SectionItemType)parentIETnode, qType);
+                                        //var t = SDCtypes.SectionItemType;
+                                        //parentIETnode.AddFill(SDCtypes.SectionItemType, true); //ToDo: this function does nothing - delete it
+                                        break;
+                                    case ItemTypeEnum.ListItemFillin:
+                                    case ItemTypeEnum.ListItem:
+                                        qi = AddQuestion<ListItemType>((ListItemType)parentIETnode, qType);
+                                        break;
+                                    case ItemTypeEnum.QuestionFill:
+                                    case ItemTypeEnum.QuestionLookup:
+                                    case ItemTypeEnum.QuestionMultiple:
+                                    case ItemTypeEnum.QuestionSingle:
+                                    case ItemTypeEnum.QuestionGroup:
+                                        qi = AddQuestion<QuestionItemType>((QuestionItemType)parentIETnode, qType);
+                                        break;
+                                    default:
+                                        //illegal parent for the question, so add it to the main Body section where it will be in an obviously wrong position
+                                        qi = AddQuestion<SectionItemType>(FormDesign.Body, qType);
+                                        var ot = qi.AddProperty(false);
+                                        ot.val = "ERROR: This Question child node has a " + parentIETnode.NodeType.ToString() + " as a parent, but this parent type cannot have child nodes in SDC.  The child node was placed under the main Body node instead, and the order attribute may not be in the correct sequence: ";
+                                        break;
+                                }
+                            break;
+                        case ItemTypeEnum.Header:
+                        case ItemTypeEnum.Body:
+                        case ItemTypeEnum.Footer:
+                        case ItemTypeEnum.Section:
+                        case ItemTypeEnum.SectionGroup:
+                            //parentIETnode = SDCHelpers.GetParentIETypeNode(parURI);
+
+                            if (parentIETnode == null)
+                                switch (rowType)
+                                {
+                                    case ItemTypeEnum.Header:
+                                        if (FormDesign.Header == null) si = FormDesign.AddHeader(true);
+                                        else si = FormDesign.Header.AddSection();  //add subsection under main Header
+                                        break;
+                                    case ItemTypeEnum.Footer:
+                                        if (FormDesign.Footer == null) si = FormDesign.AddFooter(true);
+                                        else si = FormDesign.Footer.AddSection(); //add subsection under main Footer
+                                        break;
+                                    case ItemTypeEnum.Body:
+                                        if (FormDesign.Body == null) si = FormDesign.AddBody(true);
+                                        else si = FormDesign.Body.AddSection();  //can add subsection under main Body
+
+                                        break;
+                                    case ItemTypeEnum.Section:
+                                    case ItemTypeEnum.SectionGroup:
+                                    default: //a top-level section (one with no parent) must be a child of Body
+                                        SectionItemType body;
+
+                                        if (FormDesign.Body == null)
+                                        {
+                                            body = FormDesign.AddBody(); //create a body (parent) to hold the new sections
+                                        }
+                                        else body = FormDesign.Body;
+
+                                        si = body.AddSection(); //add new section to the body node
+                                        break;
+                                }
+                            else
+                                switch (parentIETnode.NodeType)
+                                {
+                                    case ItemTypeEnum.Header:
+                                    case ItemTypeEnum.Body:
+                                    case ItemTypeEnum.Footer:
+                                    case ItemTypeEnum.Section:
+                                    case ItemTypeEnum.SectionGroup:
+                                        si = AddSection<SectionItemType>((SectionItemType)parentIETnode);
+                                        break;
+                                    case ItemTypeEnum.ListItemFillin:
+                                    case ItemTypeEnum.ListItem:
+                                        si = AddSection<ListItemType>((ListItemType)parentIETnode);
+                                        break;
+                                    case ItemTypeEnum.QuestionFill:
+                                    case ItemTypeEnum.QuestionLookup:
+                                    case ItemTypeEnum.QuestionMultiple:
+                                    case ItemTypeEnum.QuestionSingle:
+                                    case ItemTypeEnum.QuestionGroup:
+                                        si = AddSection<QuestionItemType>((QuestionItemType)parentIETnode);
+                                        break;
+                                    default:
+                                        //illegal parent for the section (e.g., a DisplayedItem), so add it to the main Body section where it will be in an obviously wrong position
+                                        //!This will also cause the elements to be out of order.
+                                        si = AddSection<SectionItemType>(FormDesign.Body);
+                                        var ot = si.AddProperty(false);
+                                        ot.val = "ERROR: This Section child node has a " + parentIETnode.NodeType.ToString() + " as a parent, but this parent type cannot have child nodes in SDC.  The child node was placed under the main Body node instead, and the order attribute may not be in the correct sequence: ";
+                                        break;
+                                }
+                            break;
+                        case ItemTypeEnum.DisplayedItem:
+                            //parentIETnode = SDCHelpers.GetParentIETypeNode(parURI);
+
+                            if (parentIETnode == null)
                             {
-                                case ItemTypeEnum.Header:
-                                case ItemTypeEnum.Body:
-                                case ItemTypeEnum.Footer:
-                                case ItemTypeEnum.Section:
-                                case ItemTypeEnum.SectionGroup:
-                                    di = AddDisplayedItem<SectionItemType>((SectionItemType)parentIETnode);
-                                    break;
-                                case ItemTypeEnum.ListItemFillin:
-                                case ItemTypeEnum.ListItem:
-                                    di = AddDisplayedItem<ListItemType>((ListItemType)parentIETnode);
-                                    break;
-                                case ItemTypeEnum.QuestionFill:
-                                case ItemTypeEnum.QuestionLookup:
-                                case ItemTypeEnum.QuestionMultiple:
-                                case ItemTypeEnum.QuestionSingle:
-                                case ItemTypeEnum.QuestionGroup:
-                                    //di = AddDisplayedItem<QuestionItemType>((QuestionItemType)parentIETnode); //removed 2020_03_07
-                                    di = AddListNoteToQuestion((QuestionItemType)parentIETnode);//added 2020_03_07
-                                    break;
-                                default:
-                                    //illegal parent for the DisplayedItem, so add it to the main Body section where it will be in an obviously wrong position
-                                    di = AddDisplayedItem<SectionItemType>(FormDesign.Body);
-                                    var ot = di.AddProperty(false);
-                                    ot.val = "ERROR: This DisplayedItem child node has a " + parentIETnode.NodeType.ToString() + " as a parent, but this parent type cannot have child nodes in SDC.  The child node was placed under the main Body node instead, and the order attribute may not be in the correct sequence: ";
-                                    break;
+                                SectionItemType body;
+                                if (FormDesign.Body == null)
+                                {
+                                    body = FormDesign.AddBody();
+                                }
+                                else body = FormDesign.Body;
+
+                                di = FormDesign.Body.AddDisplayedItem();
                             }
-                        break;
-                    case ItemTypeEnum.ListNote:
-                        try
-                        {
-                            qi = (QuestionItemType)SDCHelpers.GetParentIETypeNode(parURI);
-                        }
-                        catch (Exception ex)
-                        {
-                            System.Windows.Forms.MessageBox.Show($"ParURI:{parURI} ", "Error converting the parent item to a question type", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            System.Diagnostics.Debug.Print(drFormDesign["ChecklistTemplateItemCkey"].ToString());
-                        }
-                        di = AddListNoteToQuestion(qi);
-                        break;
-                    case ItemTypeEnum.Rule:
-                        throw new NotImplementedException();
-                        break;
-                    case ItemTypeEnum.Button:
-                        throw new NotImplementedException();
-                        break;
-                    case ItemTypeEnum.InjectForm:
-                        throw new NotImplementedException();
-                        break;
-                    default:
-                        throw new NotImplementedException();
-                        break;
+                            else
+                                switch (parentIETnode.NodeType)
+                                {
+                                    case ItemTypeEnum.Header:
+                                    case ItemTypeEnum.Body:
+                                    case ItemTypeEnum.Footer:
+                                    case ItemTypeEnum.Section:
+                                    case ItemTypeEnum.SectionGroup:
+                                        di = AddDisplayedItem<SectionItemType>((SectionItemType)parentIETnode);
+                                        break;
+                                    case ItemTypeEnum.ListItemFillin:
+                                    case ItemTypeEnum.ListItem:
+                                        di = AddDisplayedItem<ListItemType>((ListItemType)parentIETnode);
+                                        break;
+                                    case ItemTypeEnum.QuestionFill:
+                                    case ItemTypeEnum.QuestionLookup:
+                                    case ItemTypeEnum.QuestionMultiple:
+                                    case ItemTypeEnum.QuestionSingle:
+                                    case ItemTypeEnum.QuestionGroup:
+                                        //di = AddDisplayedItem<QuestionItemType>((QuestionItemType)parentIETnode); //removed 2020_03_07
+                                        di = AddListNoteToQuestion((QuestionItemType)parentIETnode);//added 2020_03_07
+                                        break;
+                                    default:
+                                        //illegal parent for the DisplayedItem, so add it to the main Body section where it will be in an obviously wrong position
+                                        di = AddDisplayedItem<SectionItemType>(FormDesign.Body);
+                                        var ot = di.AddProperty(false);
+                                        ot.val = "ERROR: This DisplayedItem child node has a " + parentIETnode.NodeType.ToString() + " as a parent, but this parent type cannot have child nodes in SDC.  The child node was placed under the main Body node instead, and the order attribute may not be in the correct sequence: ";
+                                        break;
+                                }
+                            break;
+                        case ItemTypeEnum.ListNote:
+                            try
+                            {
+                                qi = (QuestionItemType)parentIETnode;
+                            }
+                            catch (Exception ex)
+                            {
+                                System.Windows.Forms.MessageBox.Show($"ParURI:{parURI} ", "Error converting the parent item to a question type", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                System.Diagnostics.Debug.Print(drFormDesign["ChecklistTemplateItemCkey"].ToString());
+                            }
+                            di = AddListNoteToQuestion(qi);
+                            break;
+                        case ItemTypeEnum.Rule:
+                            throw new NotImplementedException();
+                            break;
+                        case ItemTypeEnum.Button:
+                            throw new NotImplementedException();
+                            break;
+                        case ItemTypeEnum.InjectForm:
+                            throw new NotImplementedException();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    
                 }
-            }
+                catch (Exception e)
+                {
+                    Debug.WriteLine(e.Message + ", " + dr["ChecklistTemplateItemCkey"].ToString());
+                    return null;
+                }
+                }
             return FormDesign;
         }
 

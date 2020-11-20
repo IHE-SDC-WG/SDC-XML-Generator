@@ -17,7 +17,7 @@ namespace SDC.DAL.DataSets
         /// <summary>
         /// Gets all template items for a specific template
         /// </summary>
-        /// <param name="versionCkey">version ckey of the specific template</param>
+        /// <param name= "versionCkey">version ckey of the specific template</param>
         /// <returns>All template items for the specific template</returns>
         public DataTable dtGetFormDesign(string versionCkey)
         {
@@ -251,19 +251,35 @@ namespace SDC.DAL.DataSets
             #endregion
             #region SQL for SSP 8/26/2020
             const string getChecklistItem = @"
-                    SELECT  DISTINCT
+With TrashItems (TemplateVersionItemKey, VisibleText)
+AS
+(
+       SELECT TVI.TemplateVersionItemKey, VisibleText FROM TemplateVersionItem TVI
+       WHERE TemplateVersionKey = @TemplateVersionKey 
+       AND TVI.VisibleText = '(Trash Bin)'
+       UNION ALL
+       --SQL to recurse
+       SELECT TVI2.TemplateVersionItemKey, TVI2.VisibleText 
+       FROM TemplateVersionItem TVI2
+       INNER JOIN TrashItems ON TrashItems.TemplateVersionItemKey = TVI2.ParentTemplateVersionItemKey
+)
+
+
+SELECT  DISTINCT
             --Row metadata
                     @TemplateVersionKey AS TemplateVersionKey,
                     i.ChecklistTemplateVersionCkey AS ChecklistTemplateVersionCkey,
-			        i.TemplateVersionKey,
+                                  i.TemplateVersionKey,
                     i.ChecklistTemplateItemCkey, 
-			        i.U_ParentItemCKey,
-                    COALESCE (i.U_ParentItemCKey, @TemplateVersionkey) AS ParentItemCkey,
+                    i.TemplateVersionItemKey,
+                                  i.ParentTemplateVersionItemKey,
+                    COALESCE (i.ParentTemplateVersionItemKey, @TemplateVersionkey) AS ParentItemCkey,
                     i.ItemTypeKey,      --determines Q, A, AF, H, N
-                    HasChildren=(IIF(kids.U_ParentItemCKey IS NULL, 'false', 'true')),
-			        i.PubOption,
+                    HasChildren=(IIF(kids.ParentTemplateVersionItemKey IS NULL, 'false', 'true')),
+                                  i.PubOption,
             --Question, Answer, Section, Note
-                    i.VisibleText,      --@title for Q, A, H, N;  @text for eCC notes; Title @val in SDC
+                    COALESCE(TRIM(i.VisibleText) + NodeIDs, TRIM(i.VisibleText)) AS VisibleText,      --@title for Q, A, H, N;  @text for eCC notes; Title @val in SDC
+                                            N.NodeIDs,
                     i.longText,         --@alt-text in eCC, OtherText in SDC            
                     i.ReportText,       --@reportText Text to appear on reports; uses 2 single-quotes to indicate that no text should appear in report
                     i.Locked,           --@readOnly in SDC
@@ -296,8 +312,8 @@ namespace SDC.DAL.DataSets
 
             --QF, AF (Responses)
                     COALESCE (LODT.DataType, '') AS DataType,    --@datatype
-                    COALESCE (i.AnswerUnits, '') AS AnswerUnits, --@answer-units
-                    i.TextAfterAnswer,                          --@textAfterResponse
+                    COALESCE (LAU.Units, '') AS AnswerUnits,        --@answer-units
+                    i.TextAfterAnswer,                           --@textAfterResponse
                     i.DefaultValue,
                     i.AnswerMaxChars,
                     i.AnswerMaxDecimals,
@@ -316,16 +332,33 @@ namespace SDC.DAL.DataSets
                     ON i.DataTypeKey = LODT.DataTypeKey
                 LEFT OUTER JOIN  TemplateVersionItem
                     AS p WITH (NOLOCK)
-                    ON i.U_ParentItemCKey = p.ChecklistTemplateItemCkey
+                    ON i.ParentTemplateVersionItemKey = p.ChecklistTemplateItemCkey
                 LEFT OUTER JOIN TemplateVersionItem AS kids ON
-                i.[ChecklistTemplateItemCkey] = kids.U_ParentItemCkey
+                i.[ChecklistTemplateItemCkey] = kids.ParentTemplateVersionItemKey
+                                   LEFT JOIN ListAnswerUnit LAU ON i.AnswerUnitsKey = LAU.AnswerUnitKey
+                                   LEFT JOIN 
+                                   (
+                                            SELECT TVIN.TemplateVersionItemKey,
+                                            CASE 
+                                            WHEN COUNT(PVN.NoteID) > 1 THEN ' (Notes ' + STRING_AGG(TRIM(PVN.NoteID), ', ') WITHIN GROUP (ORDER BY PVN.NoteID ASC) + ')'
+                                            WHEN COUNT(PVN.NoteID) = 1 THEN ' (Note ' + STRING_AGG(TRIM(PVN.NoteID), ', ') WITHIN GROUP (ORDER BY PVN.NoteID ASC) + ')'
+                                            Else ''
+                                            END AS NodeIDs
+                                            FROM TemplateVersionItemNote TVIN 
+                                            LEFT JOIN ProtocolVersionNote PVN 
+                                                     on PVN.ProtocolVersionNoteKey = TVIN.ProtocolVersionNoteKey                                                   
+                                            GROUP BY TVIN.TemplateVersionItemKey, PVN.Active, TVIN.Active
+                                            HAVING PVN.Active = 1 AND TVIN.Active = 1
+                                            ) AS N
+                                            ON N.TemplateVersionItemKey = i.TemplateVersionItemKey
 
-        WHERE	i.TemplateVersionKey = @TemplateVersionKey
-		        AND (i.ItemTypeKey IS NOT NULL)
-		        AND (i.SkipConcept = 0)
-		        AND i.DeprecatedFlag = 0  --is this correct?
-		        AND i.PubOption > 1
-        ORDER BY i.SortOrder
+        WHERE    i.TemplateVersionKey = @TemplateVersionKey
+                         AND (i.ItemTypeKey IS NOT NULL)
+                         AND (i.SkipConcept = 0)
+                         AND i.DeprecatedFlag = 0  --is this correct?
+                         AND i.PubOption > 1
+               and i.TemplateVersionItemKey Not In (SELECT TemplateVersionItemKey From TrashItems)
+        ORDER BY i.SortOrder;
 ";
 
             #region old SQL, retired June 3, 2016 (rlm)
