@@ -64,7 +64,7 @@ namespace SDC
         {
             DataRow dr = dtHeaderDesign.Rows[0];
             {
-                string shortName = dr["ShortName"].ToString().Replace(" ", "");  //used for creating filenames etc..; sample: ìAdrenal.Resî; spaces are removed  
+                string shortName = dr["ShortName"].ToString().Replace(" ", "");  //used for creating filenames etc..; sample: ‚ÄúAdrenal.Res‚Äù; spaces are removed  
                 string releaseVersionSuffix = dr["ReleaseVersionSuffix"].ToString();  //e.g., CTP1, RC2, REL; UNK if a value is missing
                 string title = dr["OfficialName"].ToString();
                 string CTVcKey = dr["CTV_StaticKey"].ToString();
@@ -86,7 +86,7 @@ namespace SDC
 
 
                 //Some basic fd properties
-                fd.baseURI = "www.cap.org/eCC";  //uses SDC Schema version (3.1) is ìSDC.3.1î
+                fd.baseURI = "www.cap.org/eCC";  //uses SDC Schema version (3.1) is ‚ÄúSDC.3.1‚Äù
                 fd.lineage = lineage;
                 fd.version = version;
                 fd.fullURI = $"_baseURI={fd.baseURI}&_lineage={lineage}&_version={version}&_docType=sdcFDF";
