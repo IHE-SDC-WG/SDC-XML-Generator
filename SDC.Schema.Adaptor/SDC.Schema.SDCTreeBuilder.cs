@@ -74,18 +74,20 @@ namespace SDC
 
 
             string parURI;
+            var errorList = new List<string>();
             //for (int i = 0; i < dtFormDesign.Rows.Count - 1; i++)
             foreach (DataRow dr in dtFormDesign.Rows)
             {
-                try {
+                try
+                {
                     drFormDesign = dr;   //dtFormDesign.Rows[i];
                                          //BuildFormDesignTree();
                     InitRow(out rowType, out parURI, out type);
-                    parentIETnode = null; 
+                    parentIETnode = null;
                     di = null; qi = null;
                     li = null; si = null;
                     FormDesign.IdentifiedTypes.TryGetValue(parURI, out parentIETnode);
-                    
+
                     //Debug.WriteLine(rowType.ToString() + ":" + drFormDesign["VisibleText"].ToString() + drFormDesign["ChecklistTemplateItemCkey"].ToString());
                     switch (rowType)
                     {
@@ -98,9 +100,11 @@ namespace SDC
                             {
                                 qi = (QuestionItemType)parentIETnode;
                                 li = AddFillListItemToQuestion(qi);
-                            }catch (Exception ex)
+                            }
+                            catch (Exception ex)
                             {
-                                System.Windows.Forms.MessageBox.Show($"ParURI:{parURI} \r\n Error converting the parent item to a question type for node {drFormDesign["ChecklistTemplateItemCkey"]}, {drFormDesign["VisibleText"]}\r\n {ex.Message}",$"ParURI:{parURI}", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                errorList.Add($"ParURI:{parURI} \r\n Error converting the parent item to a Question type for node {drFormDesign["ChecklistTemplateItemCkey"]}, {drFormDesign["VisibleText"]}\r\n {ex.Message}");
+                                //System.Windows.Forms.MessageBox.Show($"ParURI:{parURI} \r\n Error converting the parent item to a question type for node {drFormDesign["ChecklistTemplateItemCkey"]}, {drFormDesign["VisibleText"]}\r\n {ex.Message}", $"ParURI:{parURI}", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                 System.Diagnostics.Debug.Print(drFormDesign["ChecklistTemplateItemCkey"].ToString());
 
                             }
@@ -144,10 +148,13 @@ namespace SDC
                                         qi = AddQuestion<QuestionItemType>((QuestionItemType)parentIETnode, qType);
                                         break;
                                     default:
-                                        //illegal parent for the question, so add it to the main Body section where it will be in an obviously wrong position
+                                        //illegal parent for the question, so add it to the main Body secton where it will be in an obviously wrong position
                                         qi = AddQuestion<SectionItemType>(FormDesign.Body, qType);
                                         var ot = qi.AddProperty(false);
-                                        ot.val = "ERROR: This Question child node has a " + parentIETnode.NodeType.ToString() + " as a parent, but this parent type cannot have child nodes in SDC.  The child node was placed under the main Body node instead, and the order attribute may not be in the correct sequence: ";
+                                        ot.val = $"ERROR: This Question child node {drFormDesign["ChecklistTemplateItemCkey"]} has a " + 
+                                            parentIETnode.NodeType.ToString() + $" " +
+                                            $"as a parent {parentIETnode.ID}, but this parent type cannot have child nodes in SDC.  The child node was placed under the main Body node instead, and the order attribute may not be in the correct sequence: ";
+                                        errorList.Add(ot.val);
                                         break;
                                 }
                             break;
@@ -214,7 +221,10 @@ namespace SDC
                                         //!This will also cause the elements to be out of order.
                                         si = AddSection<SectionItemType>(FormDesign.Body);
                                         var ot = si.AddProperty(false);
-                                        ot.val = "ERROR: This Section child node has a " + parentIETnode.NodeType.ToString() + " as a parent, but this parent type cannot have child nodes in SDC.  The child node was placed under the main Body node instead, and the order attribute may not be in the correct sequence: ";
+                                        ot.val = $"ERROR: This Section child node {drFormDesign["ChecklistTemplateItemCkey"]} has a " +
+                                            parentIETnode.NodeType.ToString() + $" " +
+                                            $"as a parent {parentIETnode.ID}, but this parent type cannot have child nodes in SDC.  The child node was placed under the main Body node instead, and the order attribute may not be in the correct sequence: ";
+                                        errorList.Add(ot.val);
                                         break;
                                 }
                             break;
@@ -258,7 +268,10 @@ namespace SDC
                                         //illegal parent for the DisplayedItem, so add it to the main Body section where it will be in an obviously wrong position
                                         di = AddDisplayedItem<SectionItemType>(FormDesign.Body);
                                         var ot = di.AddProperty(false);
-                                        ot.val = "ERROR: This DisplayedItem child node has a " + parentIETnode.NodeType.ToString() + " as a parent, but this parent type cannot have child nodes in SDC.  The child node was placed under the main Body node instead, and the order attribute may not be in the correct sequence: ";
+                                        ot.val = $"ERROR: This DisplayedItem child node {drFormDesign["ChecklistTemplateItemCkey"]} has a " +
+                                            parentIETnode.NodeType.ToString() + $" " +
+                                            $"as a parent {parentIETnode.ID}, but this parent type cannot have child nodes in SDC.  The child node was placed under the main Body node instead, and the order attribute may not be in the correct sequence: ";
+                                        errorList.Add(ot.val);
                                         break;
                                 }
                             break;
@@ -269,7 +282,8 @@ namespace SDC
                             }
                             catch (Exception ex)
                             {
-                                System.Windows.Forms.MessageBox.Show($"ParURI:{parURI} ", "Error converting the parent item to a question type", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                errorList.Add($"ParURI:{parURI}; Error converting the parent item to a question type");
+                                //System.Windows.Forms.MessageBox.Show($"ParURI:{parURI} ", "Error converting the parent item to a question type", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                 System.Diagnostics.Debug.Print(drFormDesign["ChecklistTemplateItemCkey"].ToString());
                             }
                             di = AddListNoteToQuestion(qi);
@@ -287,16 +301,30 @@ namespace SDC
                             throw new NotImplementedException();
                             break;
                     }
-                    
+
                 }
                 catch (Exception e)
                 {
-                    Debug.WriteLine(e.Message + ", " + dr["ChecklistTemplateItemCkey"].ToString());
-                    return null;
+                    errorList.Add(e.Message + ", ID:" + dr["ChecklistTemplateItemCkey"].ToString());
+                    Debug.WriteLine(e.Message + ", ID:" + dr["ChecklistTemplateItemCkey"].ToString());
+                    //return null;
                 }
+            }
+                //Display error list
+                if (errorList.Count > 0)
+                {
+                    string msg = "";
+                    foreach (var item in errorList)
+                    {
+                        if (msg != "") msg += "\r\n";
+                        msg += "-->" + item;
+                    }
+                    Debug.Print(msg);
+                    System.Windows.Forms.MessageBox.Show(msg, "ERROR LIST", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-            return FormDesign;
+                return FormDesign;
         }
+
 
 
         /// <summary>

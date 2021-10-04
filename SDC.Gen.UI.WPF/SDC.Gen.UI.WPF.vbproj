@@ -80,8 +80,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
+    <ApplicationIcon>Images\XMLSchema.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -367,7 +366,6 @@
   <ItemGroup>
     <Folder Include="Archive\" />
     <Folder Include="bin\" />
-    <Folder Include="obj\Release\" />
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="DevExpress.Data.v19.1">

@@ -356,7 +356,7 @@ SELECT  DISTINCT
                          AND (i.ItemTypeKey IS NOT NULL)
                          AND (i.SkipConcept = 0)
                          AND i.DeprecatedFlag = 0  --is this correct?
-                         AND i.PubOption > 1
+                         AND i.PubOption <> 2
                and i.TemplateVersionItemKey Not In (SELECT TemplateVersionItemKey From TrashItems)
         ORDER BY i.SortOrder;
 ";

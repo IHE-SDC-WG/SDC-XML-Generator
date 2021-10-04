@@ -15,7 +15,7 @@ Imports System.Windows
 <Assembly: AssemblyDescription("Generate eCC templates in IHE SDC format")>
 <Assembly: AssemblyCompany("College of American Pathologists")>
 <Assembly: AssemblyProduct("SDC.Gen.UI.WPF")>
-<Assembly: AssemblyCopyright("Copyright @ College of American Pathologists 2013-19")>
+<Assembly: AssemblyCopyright("Copyright @ College of American Pathologists 2013-2021")>
 <Assembly: AssemblyTrademark("")> 
 <Assembly: ComVisible(False)> 
 
@@ -55,5 +55,5 @@ Imports System.Windows
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.2019.01.07")>
-<Assembly: AssemblyFileVersion("1.2019.01.07")>
+<Assembly: AssemblyVersion("3.2021.03.08")>
+<Assembly: AssemblyFileVersion("3.2021.03.08")>
