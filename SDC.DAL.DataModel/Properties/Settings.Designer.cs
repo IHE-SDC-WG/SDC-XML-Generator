@@ -12,7 +12,7 @@ namespace SDC.DAL.DataSets.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.7.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,20 +26,21 @@ namespace SDC.DAL.DataSets.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PappeCC;Initial Catalog=PERC_eCC;Integrated Security=True")]
-        public string PERC_eCC_Con {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sdtPRODdb.database.windows.net;Initial Catalog=SSPPROD;Authentication" +
+            "=\"Active Directory Integrated\"")]
+        public string SSP_Con {
             get {
-                return ((string)(this["PERC_eCC_Con"]));
+                return ((string)(this["SSP_Con"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=PERC_eCC;Integrated Security=True")]
-        public string PERC_eCC_Con_local {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=SSP;Integrated Security=True")]
+        public string SSP_Con_local {
             get {
-                return ((string)(this["PERC_eCC_Con_local"]));
+                return ((string)(this["SSP_Con_local"]));
             }
         }
     }

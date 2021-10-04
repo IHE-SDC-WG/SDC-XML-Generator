@@ -1,22 +1,10 @@
-﻿Imports System
-Imports System.Linq
-Imports System.Text
-Imports System.Windows
-Imports System.Windows.Controls
-Imports System.Windows.Data
-Imports System.Windows.Documents
-Imports System.Windows.Input
-Imports System.Windows.Media
-Imports System.Windows.Media.Imaging
-Imports System.Windows.Shapes
-Imports DevExpress.Xpf.Core
+﻿Imports DevExpress.Xpf.Core
 Imports DevExpress.Xpf.Grid
+Imports System
+Imports System.Collections.ObjectModel
 
 Imports System.ComponentModel
-Imports System.Collections.ObjectModel
-Imports System.IO
-'Imports System.Xml
-Imports System.Xml
+Imports System.Linq
 'Imports TE
 
 
@@ -25,15 +13,27 @@ Partial Public Class MainWindow
     'Implements IDisposable
 
     Private Property BrowserPath As String
-    Private TEinterop As TE.TEinterop
+    Private _gridList As IList
+    'Private TEinterop As TE.TEinterop
     Private Property FilePath As String
+
+    Property GridList As IList
+        Get
+            Return _gridList
+        End Get
+        Set(ByVal Value As IList)
+            _gridList = Value
+        End Set
+    End Property
+
 
 
     Public Sub New()
-
         InitializeComponent()
         DataContext = New DataSource()
-        TEinterop = New TE.TEinterop(My.Settings.TEpath)
+        'TEinterop = New TE.TEinterop(My.Settings.TEpath)
+
+
 
 
         'If filePath = "" Then
@@ -49,6 +49,39 @@ Partial Public Class MainWindow
         'End If
     End Sub
 
+    Private Sub button_Click(sender As Object, e As RoutedEventArgs) Handles button.Click
+        FillData()
+    End Sub
+    Private Sub FillData()
+        Dim sspEntities = New SSPEntities()
+        Dim query =
+            From TV In sspEntities.TemplateVersions
+            Join PT In sspEntities.ProtocolTemplates On PT.ProtocolTemplateKey Equals TV.ProtocolTemplateKey
+            Join R In sspEntities.ListReleaseStates On R.ReleaseStateKey Equals TV.ReleaseStateKey
+            Where TV.Active = True AndAlso PT.Active = True AndAlso
+            (
+            R.ReleaseVersionSuffix = "REL" OrElse
+            R.ReleaseVersionSuffix.StartsWith("CPT") OrElse
+            R.ReleaseVersionSuffix.StartsWith("RC") OrElse
+            R.ReleaseVersionSuffix.StartsWith("TEST") OrElse
+            PT.DraftTemplateVerKey = TV.TemplateVersionKey
+            )
+            Order By R.ReleaseVersionSuffix, PT.Lineage
+            Select PT.Lineage, TV.TemplateVersionKey, TV.Version, R.ReleaseVersionSuffix, TV.ProtocolTemplateKey, TV.ProtocolVersionKey
+
+
+        Try
+            GridList = query.ToList()
+            gridControl1.ItemsSource = GridList
+        Catch ex As Exception
+            MessageBox.Show("Dataset could not be loaded.  Check your connection and permissions" & vbCrLf &
+                            "Error: " & vbCrLf & ex.Message & vbCrLf & ex.InnerException.Message)
+        End Try
+
+
+    End Sub
+
+
     Private Sub btnGenAll_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles btnGenAllChecked.Click
         BrowserPath = txtBrowserPath.Text.Trim
         'FilePath = txtFilePath.Text.Trim
@@ -61,14 +94,11 @@ Partial Public Class MainWindow
             Dim templatesMap As New Dictionary(Of String, String)
 
             Application.Current.MainWindow.Cursor = Cursors.Wait
-
+            Dim colTVkey = gridControl1.Columns(0)
+            Dim colLineage = gridControl1.Columns(2)
 
             For Each node In Me.TreeListView1.Nodes.Where(Function(n) CBool(n.IsChecked))
-
-                Dim dataRowView = TryCast(node.Content, System.Data.DataRowView)
-                Debug.Print(dataRowView(0).ToString & vbCrLf & dataRowView(1).ToString() & vbCrLf & dataRowView(2).ToString())
-
-                templatesMap.Add(dataRowView(0).ToString, dataRowView(2).ToString) 'cols 0 & 3
+                templatesMap.Add(TreeListView1.GetNodeValue(node, colTVkey).ToString, TreeListView1.GetNodeValue(node, colLineage).ToString) 'cols 0 & 3
             Next
 
 
@@ -98,7 +128,7 @@ Partial Public Class MainWindow
 
         If FileIO.FileSystem.DirectoryExists(FilePath) Then
             If key > "" AndAlso ns > "" Then
-                key = (String.Format("{0}.{1}", key, ns))
+                'key = (String.Format("{0}.{1}", key, ns))
                 'TODO: Need to cache this generator, since it takes time to create it new each time.
 
                 Gen.MakeOneXDT(key, FilePath, loadBrowser, BrowserPath, createHTML)   ', fileName
@@ -145,41 +175,41 @@ Partial Public Class MainWindow
         End If
     End Sub
 
-    Private Sub gridControl1_MouseDoubleClick(sender As Object, e As MouseButtonEventArgs) Handles gridControl1.MouseDoubleClick
-        Dim col = gridControl1.CurrentColumn
-        Dim cellText As String
-        'Dim row = TryCast(gridControl1.GetFocusedRow, System.Data.DataRowView)
+    'Private Sub gridControl1_MouseDoubleClick(sender As Object, e As MouseButtonEventArgs) Handles gridControl1.MouseDoubleClick
+    '    Dim col = gridControl1.CurrentColumn
+    '    Dim cellText As String
+    '    'Dim row = TryCast(gridControl1.GetFocusedRow, System.Data.DataRowView)
 
-        If col.VisibleIndex = 0 Then
-            gridControl1.Cursor = Cursors.Wait
-            cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
+    '    If col.VisibleIndex = 0 Then
+    '        gridControl1.Cursor = Cursors.Wait
+    '        cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
 
-            Dim key = Split(cellText, ".", 2)
-            txtID.Text = key(0)
-            'txtID.UpdateLayout()
-            txtNamespace.Text = key(1)
+    '        Dim key = Split(cellText, ".", 2)
+    '        txtID.Text = key(0)
+    '        'txtID.UpdateLayout()
+    '        txtNamespace.Text = key(1)
 
-            'Conside inmplementing a DoEvents on main UI thread here, to update the UI
-            'https://www.devexpress.com/Support/Center/Question/Details/Q322288/gridcontrol-how-to-force-cell-errors-redraw-idxdataerrorinfo
-            'https://stackoverflow.com/questions/4502037/where-is-the-application-doevents-in-wpf
-            'http://geekswithblogs.net/NewThingsILearned/archive/2008/08/25/refresh--update-wpf-controls.aspx
-            'https://www.meziantou.net/2011/06/22/refresh-a-wpf-control
+    '        'Conside inmplementing a DoEvents on main UI thread here, to update the UI
+    '        'https://www.devexpress.com/Support/Center/Question/Details/Q322288/gridcontrol-how-to-force-cell-errors-redraw-idxdataerrorinfo
+    '        'https://stackoverflow.com/questions/4502037/where-is-the-application-doevents-in-wpf
+    '        'http://geekswithblogs.net/NewThingsILearned/archive/2008/08/25/refresh--update-wpf-controls.aspx
+    '        'https://www.meziantou.net/2011/06/22/refresh-a-wpf-control
 
-            btnGenerate_Click(sender, e)
-            gridControl1.Cursor = Cursors.Arrow
-        ElseIf col.VisibleIndex = 2 Then
-            cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
-            'Dim TE = New TE.TEinterop()
+    '        btnGenerate_Click(sender, e)
+    '        gridControl1.Cursor = Cursors.Arrow
+    '    ElseIf col.VisibleIndex = 2 Then
+    '        cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
+    '        'Dim TE = New TE.TEinterop()
 
-            TEinterop.LookupItemByCKey(cellText, "0")
-        End If
+    '        TEinterop.LookupItemByCKey(cellText, "0")
+    '    End If
 
 
-    End Sub
+    'End Sub
 
     Protected Overrides Sub Finalize()
         MyBase.Finalize()
-        TEinterop.Dispose()
+        'TEinterop.Dispose()
     End Sub
 
     Private Sub gridControl1_GotFocus(sender As Object, e As RoutedEventArgs) Handles gridControl1.GotFocus
@@ -204,9 +234,6 @@ Partial Public Class MainWindow
                     'MsgBox(cellText)
                     btnGenerate_Click(sender, e)
                 End If
-                If btn.Name = "btnLoadTE" Then 'Load TE
-                    TEinterop.LookupItemByCKey(cellText, "0")
-                End If
 
 
             End If
@@ -215,14 +242,6 @@ Partial Public Class MainWindow
         Finally
             gridControl1.Cursor = Cursors.Arrow
         End Try
-
-    End Sub
-
-    Private Sub gridControl1_AutoGeneratingColumn(sender As Object, e As AutoGeneratingColumnEventArgs)
-
-    End Sub
-
-    Private Sub gridControl1_AutoGeneratedColumns(sender As Object, e As RoutedEventArgs)
 
     End Sub
 
@@ -257,15 +276,6 @@ Partial Public Class MainWindow
         End If
     End Sub
 
-    Public Shared Async Function GetChildrenAsync(G As GridControl, row As Integer, column As Integer) As System.Threading.Tasks.Task(Of Object)
-        Dim rList As IList = Await (G.GetRowsAsync(0, G.VisibleRowCount))
-        For Each r In rList
-            Dim rc = TryCast(r, RowControl)
-            Dim btn As Button = TryCast(rc.FindName("btnKey"), Button)
-            'btn.Content = rc.
-        Next
-
-    End Function
     Public Sub DumpLogicalTree(ByVal parent As Object, ByVal level As Integer)
         Dim typeName As String = parent.[GetType]().Name
         Dim name As String = Nothing
@@ -312,20 +322,7 @@ Partial Public Class MainWindow
             Next
         End If
     End Function
-    Private Function FindVisualChild(Of childItem As DependencyObject)(ByVal obj As DependencyObject) As childItem
-        For i As Integer = 0 To VisualTreeHelper.GetChildrenCount(obj) - 1
-            Dim child As DependencyObject = VisualTreeHelper.GetChild(obj, i)
 
-            If child IsNot Nothing AndAlso TypeOf child Is childItem Then
-                Return CType(child, childItem)
-            Else
-                Dim childOfChild As childItem = FindVisualChild(Of childItem)(child)
-                If childOfChild IsNot Nothing Then Return childOfChild
-            End If
-        Next
-
-        Return Nothing
-    End Function
 End Class
 
 

@@ -361,7 +361,7 @@ HTML files cannot be generated until the XSLT file is manually added at this loc
 
 
         'Dim filename As String = stb.FormDesign.filename
-        XMLfileName = stb.FormDesign.filename
+        XMLfileName = stb.FormDesign.filename.Replace(":", ".")
         HTMLfileName = XMLfileName.Replace(".xml", ".html")
         FileName = XMLfileName.Replace(".xml", "")
 

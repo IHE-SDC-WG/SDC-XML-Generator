@@ -41,17 +41,16 @@ namespace SDC
 
         #region Ctor
 
-        public SDCTreeBuilderEcc(string CTV_Ckey, IFormDesignDataSets dataSets, string xsltPath = "")
+        public SDCTreeBuilderEcc(string TemplateVersionkey, IFormDesignDataSets dataSets, string xsltPath = "")
         {
             this.Order = 0;
             this.XsltFileName = xsltPath;
 
-            decimal decCTV_Ckey;
-            Decimal.TryParse(CTV_Ckey, out decCTV_Ckey);
-
+            //decimal decCTV_Ckey;
+            //Decimal.TryParse(CTV_Ckey, out decCTV_Ckey);
             //First, set up the data for the form.
-            this.dtHeaderDesign = dataSets.dtGetFormDesignMetadata(decCTV_Ckey);
-            this.dtFormDesign = dataSets.dtGetFormDesign(decCTV_Ckey);
+            this.dtHeaderDesign = dataSets.dtGetFormDesignMetadata(TemplateVersionkey);
+            this.dtFormDesign = dataSets.dtGetFormDesign(TemplateVersionkey);
 
             //TODO: could use a dtFooter/Body/Footer instead: modify IFormDesignDataSets
 
@@ -65,11 +64,12 @@ namespace SDC
         {
             DataRow dr = dtHeaderDesign.Rows[0];
             {
-                string shortName = dr["ShortName"].ToString().Replace(" ", "");  //used for creating filenames etc..; sample: “Adrenal.Res”; spaces are removed  
+                string shortName = dr["ShortName"].ToString().Replace(" ", "");  //used for creating filenames etc..; sample: â€œAdrenal.Resâ€; spaces are removed  
                 string releaseVersionSuffix = dr["ReleaseVersionSuffix"].ToString();  //e.g., CTP1, RC2, REL; UNK if a value is missing
                 string title = dr["OfficialName"].ToString();
-                string CTVcKey = dr["ChecklistTemplateVersionCkey"].ToString();
-                string lineage = dr["Lineage"].ToString() + "." + CTVcKey.Replace(".100004300", ""); //remove the eCC namespace suffix ".100004300"
+                string CTVcKey = dr["CTV_StaticKey"].ToString();
+                string lineage = dr["Lineage"].ToString() + "." + CTVcKey;
+                CTVcKey = CTVcKey + ".100004300";
                 string version = (dr["VersionID"].ToString()).Replace(".1000043", "") + "." + releaseVersionSuffix;//remove the eCC namespace suffix ".1000043"
                 string id = lineage + "_" + version + "_sdcFDF";  //FDF = "Form Design File".
                 bool required = dr["EffectiveDate"].ToString() != ""; //ToDo: It would be better to have a database field for required.
@@ -86,7 +86,7 @@ namespace SDC
 
 
                 //Some basic fd properties
-                fd.baseURI = "www.cap.org/eCC";  //uses SDC Schema version (3.1) is “SDC.3.1”
+                fd.baseURI = "www.cap.org/eCC";  //uses SDC Schema version (3.1) is â€œSDC.3.1â€
                 fd.lineage = lineage;
                 fd.version = version;
                 fd.fullURI = $"_baseURI={fd.baseURI}&_lineage={lineage}&_version={version}&_docType=sdcFDF";
@@ -116,7 +116,7 @@ namespace SDC
 
                 //CreateStaticProperty(fd, dr["SDCSchemaVersion"].ToString(), "CAPeCC_meta", string.Empty, "SDCSchemaVersion", false, string.Empty, null, string.Empty, "SDCSchemaVersion");  //, "CAPeCC_CAP_Protocol");
 
-                CreateStaticProperty(fd, dr["Restrictions"].ToString(), "CAPeCC_meta", string.Empty, "Restrictions", false, string.Empty, null, string.Empty, "Restrictions");  //, "CAPeCC_CAP_Protocol");
+                CreateStaticProperty(fd, dr["RestrictionsTextProperty"].ToString(), "CAPeCC_meta", string.Empty, "Restrictions", false, string.Empty, null, string.Empty, "Restrictions");  //, "CAPeCC_CAP_Protocol");
                 CreateStaticProperty(fd, required.ToString().ToLower(), "CAPeCC_meta", string.Empty, "CAP_Required", false, string.Empty, null, string.Empty, "CAP_Required");  //, "CAPeCC_CAP_Protocol");
 
                 //Dates
@@ -295,7 +295,9 @@ namespace SDC
             dt.enabled = (bool)drFormDesign["enabled"];
             dt.visible = (bool)drFormDesign["visible"];
             dt.title = (string)drFormDesign["VisibleText"];
-            dt.mustImplement = (bool)drFormDesign["mustImplement"];
+            dt.mustImplement = (bool)drFormDesign["mustImplement"]; 
+            if(dt.GetType() == typeof(DisplayedType)) //temp fix for SSP bug 2020_10_14
+                dt.mustImplement = true; 
             //ToDo: Fix mismatch between bool database value and int enum DisplayedTypeShowInReport
             //dt.showInReport = (DisplayedTypeShowInReport)drFormDesign["showInReport"];
 
@@ -317,6 +319,8 @@ namespace SDC
             //TODO: support baseURI
 
             iet.ID = drFormDesign["ChecklistTemplateItemCKey"].ToString();
+            FormDesign.IdentifiedTypes.Add(drFormDesign["TemplateVersionItemKey"].ToString(), iet);
+            //IdentifiedExtensionType.IdentExtNodesTVI.Add(drFormDesign["TemplateVersionItemKey"].ToString(), iet);
             //iet.name = CreateName(iet);
 
             return iet;
@@ -354,16 +358,16 @@ namespace SDC
             }
 
             //!eCC Special handling for Authority Required
-            var authorityRequired = (bool)drFormDesign["authorityRequired"];
-            if (authorityRequired)
-            {
-                //n.required = true;
-                if (rt.minCard == 0) rt.minCard = 1;
-                rt.mustImplement = true;
-            }
-            else
-                //n.required = false;
-                if (rt.minCard > 0) rt.minCard = 0;
+            //var authorityRequired = (bool)drFormDesign["authorityRequired"];
+            //if (authorityRequired)
+            //{
+            //    //n.required = true;
+            //    if (rt.minCard == 0) rt.minCard = 1;
+            //    rt.mustImplement = true;
+            //}
+            //else
+            //    //n.required = false;
+            //    if (rt.minCard > 0) rt.minCard = 0;
 
             return rt;
         }
@@ -1114,24 +1118,24 @@ namespace SDC
                         dt.ElementName = itemDataType;
                         //dt.val = drFormDesign["DefaultValue"] as decimal?;
                         //SDCHelpers.NZ(drFormDesign["DefaultValue"], dt.val);
-                        if (drFormDesign["DefaultValue"].ToString() != "") dt.val = (decimal)drFormDesign["DefaultValue"];
+                        if( decimal.TryParse(drFormDesign["DefaultValue"].ToString(), out decimal val)) dt.val = val;
 
                         //TODO: dt.minExclusive = (decimal)drFormDesign["minExclusive"];
-                        if (drFormDesign["AnswerMinValue"] != null) dt.minInclusive = (decimal)drFormDesign["AnswerMinValue"];
+                        if (!drFormDesign.IsNull("AnswerMinValue")) dt.minInclusive = (decimal)drFormDesign["AnswerMinValue"];
                         //TODO: dt.maxExclusive = (decimal)drFormDesign["maxExclusive"];
                         //SDCHelpers.NZ(drFormDesign["AnswerMaxValue"], dt.maxInclusive);
-                        if (drFormDesign["AnswerMaxValue"] != null) dt.maxInclusive = (decimal)drFormDesign["AnswerMaxValue"];
+                        if (!drFormDesign.IsNull("AnswerMaxValue")) dt.maxInclusive = (decimal)drFormDesign["AnswerMaxValue"];
                         //SDCHelpers.NZ(drFormDesign["AnswerMaxChars"], dt.totalDigits);
-                        if (drFormDesign["AnswerMaxChars"] != null) 
+                        if (!drFormDesign.IsNull("AnswerMaxChars")) 
                         {
-                            dt.totalDigits = Convert.ToByte(drFormDesign["AnswerMaxChars"]);//AnswerMaxChars
-                            dt.totalDigitsSpecified = true;
+                            //dt.totalDigits = Convert.ToByte(drFormDesign["AnswerMaxChars"]);//AnswerMaxChars
+                            //dt.totalDigitsSpecified = true;
                         }
                         //SDCHelpers.NZ(drFormDesign["AnswerMaxDecimals"], dt.fractionDigits);
 
                         //TODO:  Need to truncate the fractional digits  according to the fractionDigits number of digits.  This requires converting to string-based properties instead of decimal
                         //see the Integer code for an example
-                        if (drFormDesign["AnswerMaxDecimals"] != null) dt.fractionDigits = Convert.ToByte(drFormDesign["AnswerMaxDecimals"]);//AnswerMaxDecimals
+                        if (!drFormDesign.IsNull("AnswerMaxDecimals")) dt.fractionDigits = Convert.ToByte(drFormDesign["AnswerMaxDecimals"]);//AnswerMaxDecimals
                         //TODO: dt.mask = (string)drFormDesign["mask"];//TODO: missing
                         dt.quantEnum = AssignQuantifier();
 
@@ -2003,11 +2007,17 @@ namespace SDC
             var li = (ListItemType)liRF.ParentNode;
 
             //ToDo: remove this special eCC rule, to allow these words on SDC optional answers (e.g., Pending (specify))
-            if (li.title.ToLower().Contains("specify") ||
-                li.title.ToLower().Contains("explain") ||
-                li.title.ToLower().Contains("at least")
+            //if (liRF.responseRequired = false) System.Diagnostics.Debugger.Break();
+            if (liRF.responseRequired == false && (
+                    li.title.ToLower().Trim() == "(specify)" ||
+                    li.title.ToLower().Trim() == "(explain)" ||
+                    li.title.ToLower().Trim().EndsWith("(specify)") ||
+                    li.title.ToLower().Trim().EndsWith("(explain)") ||
+                    li.title.ToLower().StartsWith("at least")
+                    )
                 )
-                liRF.responseRequired = true;
+                li.title += "_*****ERRORresponseRequired_ERROR*****";
+                //liRF.responseRequired = true;
 
             return liRF;
         }
@@ -2033,7 +2043,7 @@ namespace SDC
             try
             {
                 //this field will not be present in the current datarow when we are filling the form header with read-only data
-                textAfterResp = (string)drFormDesign["TextAfterConcept"];
+                textAfterResp = (string)drFormDesign["TextAfterAnswer"];
             }
             catch (Exception ex)
             {

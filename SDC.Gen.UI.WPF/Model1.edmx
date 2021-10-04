@@ -1,0 +1,1292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SSPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ListProtocolGroup">
+          <Key>
+            <PropertyRef Name="ProtocolGroupKey" />
+          </Key>
+          <Property Name="ProtocolGroupKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NamespaceKey" Type="int" Nullable="false" />
+          <Property Name="ProtocolGroup" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="ProtocolGroupSortName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="URI_Namespace" Type="nvarchar" MaxLength="4000" />
+          <Property Name="ExternalKey" Type="nvarchar" MaxLength="4000" />
+          <Property Name="CreatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="VisibleFlag" Type="bit" Nullable="false" />
+          <Property Name="TS" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ListReleaseState">
+          <Key>
+            <PropertyRef Name="ReleaseStateKey" />
+          </Key>
+          <Property Name="ReleaseStateKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NamespaceKey" Type="int" Nullable="false" />
+          <Property Name="ReleaseState" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="ReleaseStateSortName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ReleaseVersionSuffix" Type="nvarchar" MaxLength="10" />
+          <Property Name="ReleaseDescription" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="StateGroup" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CreatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="VisisbleFlag" Type="bit" Nullable="false" />
+          <Property Name="TS" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Protocol">
+          <Key>
+            <PropertyRef Name="ProtocolKey" />
+          </Key>
+          <Property Name="ProtocolKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NamespaceKey" Type="int" Nullable="false" />
+          <Property Name="ProtocolName" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="ProtocolShortName" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="ProtocolSortName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="TestProtocol" Type="bit" Nullable="false" />
+          <Property Name="ReleasedProtocolVerKey" Type="int" />
+          <Property Name="DraftProtocolVerKey" Type="int" />
+          <Property Name="ReviewedProtocolVerKey" Type="int" />
+          <Property Name="Comments" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IsAccreditationReq" Type="bit" />
+          <Property Name="BioMarker" Type="bit" />
+          <Property Name="FirstReleaseDate" Type="date" />
+          <Property Name="CreatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="TS" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="DeleteFlag" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProtocolGroupMapping">
+          <Key>
+            <PropertyRef Name="ProtocolGroupMappingKey" />
+          </Key>
+          <Property Name="ProtocolGroupMappingKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProtocolsKey" Type="int" Nullable="false" />
+          <Property Name="ProtocolGroupKey" Type="int" Nullable="false" />
+          <Property Name="CreatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="TS" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProtocolTemplate">
+          <Key>
+            <PropertyRef Name="ProtocolTemplateKey" />
+          </Key>
+          <Property Name="ProtocolTemplateKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CTV_StaticKey" Type="int" />
+          <Property Name="NamespaceKey" Type="int" Nullable="false" />
+          <Property Name="Lineage" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ProtocolKey" Type="int" Nullable="false" />
+          <Property Name="ReleasedTemplateVerKey" Type="int" />
+          <Property Name="DraftTemplateVerKey" Type="int" />
+          <Property Name="ReviewedTemplateVerKey" Type="int" />
+          <Property Name="SNOMED_CT_ConceptID" Type="nvarchar" MaxLength="25" />
+          <Property Name="OfficialName" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="VisibleText" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="SortName" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="ShortName" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ProtocolTempDescription" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Restrictions" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Comments" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FirstReleaseDate" Type="datetime" />
+          <Property Name="RetireDate" Type="datetime" />
+          <Property Name="CreatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="TS" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="DeleteFlag" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProtocolVersion">
+          <Key>
+            <PropertyRef Name="ProtocolVersionKey" />
+          </Key>
+          <Property Name="ProtocolVersionKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ImportFlag" Type="bit" Nullable="false" />
+          <Property Name="NamespaceKey" Type="int" Nullable="false" />
+          <Property Name="PrevProtocolVersionKey" Type="int" />
+          <Property Name="ProtocolKey" Type="int" Nullable="false" />
+          <Property Name="ProtocolVersion" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Subtitle" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="ShortTitle" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="CoverDocRaw" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="WebPostingDate" Type="date" />
+          <Property Name="EffectiveDate" Type="date" />
+          <Property Name="AccreditationDate" Type="date" />
+          <Property Name="ReleaseDate" Type="date" />
+          <Property Name="ProtocolWebsiteName" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="TestVersion" Type="bit" Nullable="false" />
+          <Property Name="ReleaseStateKey" Type="int" />
+          <Property Name="ReviewStartDate" Type="datetime" />
+          <Property Name="ReviewEndDate" Type="datetime" />
+          <Property Name="CustomMessage" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="SentToModelersDate" Type="datetime" />
+          <Property Name="SignoffDate" Type="datetime" />
+          <Property Name="SignoffUserKey" Type="int" />
+          <Property Name="CopiedByUserKey" Type="int" />
+          <Property Name="CopiedDateTime" Type="datetime" />
+          <Property Name="CreatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="TS" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="DeleteFlag" Type="bit" Nullable="false" />
+          <Property Name="AccreditationRequirements" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SummaryOfChanges" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Restrictions" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="AccreditationHeader" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Release">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ReleaseCKey" Type="decimal" Precision="20" Scale="9" />
+          <Property Name="ReleaseKey" Type="int" Nullable="false" />
+          <Property Name="Namespace" Type="int" Nullable="false" />
+          <Property Name="SortOrder" Type="int" Nullable="false" />
+          <Property Name="ReleaseDate" Type="date" Nullable="false" />
+          <Property Name="ReleaseHistoryDate" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ReleaseFolderLocation" Type="nvarchar(max)" />
+          <Property Name="ReleaseName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ReleasePackageName" Type="nvarchar(max)" />
+          <Property Name="ReleaseNotes" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Comment" Type="nvarchar(max)" />
+          <Property Name="HistoryFlag" Type="bit" />
+          <Property Name="ReleasePackageHash" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="decimal" Precision="20" Scale="9" />
+          <Property Name="CreatedDt" Type="datetime" />
+          <Property Name="LastUpdated" Type="decimal" Precision="20" Scale="9" />
+          <Property Name="LastUpdatedDt" Type="datetime" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="TS" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TemplateVersion">
+          <Key>
+            <PropertyRef Name="TemplateVersionKey" />
+          </Key>
+          <Property Name="TemplateVersionKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ImportFlagCTI" Type="bit" Nullable="false" />
+          <Property Name="PrevTemplateVersionKey" Type="int" />
+          <Property Name="NamespaceKey" Type="int" Nullable="false" />
+          <Property Name="ProtocolTemplateKey" Type="int" Nullable="false" />
+          <Property Name="ProtocolVersionKey" Type="int" Nullable="false" />
+          <Property Name="ReleaseKey" Type="int" />
+          <Property Name="ReleaseStateKey" Type="int" />
+          <Property Name="Version" Type="nvarchar" MaxLength="255" />
+          <Property Name="SDC_ID" Type="nvarchar" MaxLength="255" />
+          <Property Name="OfficialNameProperty" Type="nvarchar" MaxLength="4000" />
+          <Property Name="VisibleTextProperty" Type="nvarchar" MaxLength="4000" />
+          <Property Name="VersionDescription" Type="nvarchar(max)" />
+          <Property Name="EditorCommentProperty" Type="nvarchar" MaxLength="4000" />
+          <Property Name="GenericHeaderTextProperty" Type="nvarchar" MaxLength="4000" />
+          <Property Name="FootnoteProperty" Type="nvarchar" MaxLength="4000" />
+          <Property Name="TitleNotesProperty" Type="nvarchar" MaxLength="4000" />
+          <Property Name="ReportTitleProperty" Type="nvarchar" MaxLength="4000" />
+          <Property Name="DescriptionProperty" Type="nvarchar" MaxLength="4000" />
+          <Property Name="RestrictionsTextProperty" Type="nvarchar(max)" />
+          <Property Name="L_WebsiteCategoryProperty" Type="nvarchar" MaxLength="4000" />
+          <Property Name="L_FilenameLegacyProperty" Type="nvarchar" MaxLength="4000" />
+          <Property Name="L_AJCC_UICC_VersionProperty" Type="nvarchar" MaxLength="255" />
+          <Property Name="L_FIGO_VersionProperty" Type="nvarchar" MaxLength="255" />
+          <Property Name="L_CAP_ProtocolName" Type="nvarchar" MaxLength="4000" />
+          <Property Name="L_CAP_ProtocolVersion" Type="nvarchar" MaxLength="4000" />
+          <Property Name="CAP_AccreditationProperty" Type="bit" />
+          <Property Name="ElectronicReleaseDateProperty" Type="date" />
+          <Property Name="FirstReleaseDateProperty" Type="date" />
+          <Property Name="WebPostingDateProperty" Type="date" />
+          <Property Name="RevisionDateProperty" Type="date" />
+          <Property Name="EarliestImplementationDateProperty" Type="date" />
+          <Property Name="ImplementByDateProperty" Type="date" />
+          <Property Name="AccreditationDeadlineDateProperty" Type="date" />
+          <Property Name="RetireDateProperty" Type="date" />
+          <Property Name="BlacklistedDateProperty" Type="date" />
+          <Property Name="TestVersion" Type="bit" />
+          <Property Name="eCC_XML_Version" Type="nvarchar" MaxLength="25" />
+          <Property Name="SDC_XML_Version" Type="nvarchar" MaxLength="25" />
+          <Property Name="eCC_XML" Type="nvarchar(max)" />
+          <Property Name="SDC_XML" Type="nvarchar(max)" />
+          <Property Name="CopiedByUserKey" Type="int" />
+          <Property Name="CopiedDateTime" Type="datetime" />
+          <Property Name="CreatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdatedByUserKey" Type="int" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="TS" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="DeleteFlag" Type="bit" Nullable="false" />
+          <Property Name="Restrictions" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Protocol_ProtocolVersion_DraftProtocolVerKey">
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="0..1" />
+          <End Role="Protocol" Type="Self.Protocol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProtocolVersion">
+              <PropertyRef Name="ProtocolVersionKey" />
+            </Principal>
+            <Dependent Role="Protocol">
+              <PropertyRef Name="DraftProtocolVerKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Protocol_ProtocolVersion_ReleasedProtocolVerKey">
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="0..1" />
+          <End Role="Protocol" Type="Self.Protocol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProtocolVersion">
+              <PropertyRef Name="ProtocolVersionKey" />
+            </Principal>
+            <Dependent Role="Protocol">
+              <PropertyRef Name="ReleasedProtocolVerKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Protocol_ProtocolVersion_ReviewedProtocolVerKey">
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="0..1" />
+          <End Role="Protocol" Type="Self.Protocol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProtocolVersion">
+              <PropertyRef Name="ProtocolVersionKey" />
+            </Principal>
+            <Dependent Role="Protocol">
+              <PropertyRef Name="ReviewedProtocolVerKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolGroupMapping_ListProtocolGroup_ProtocolGroupKey">
+          <End Role="ListProtocolGroup" Type="Self.ListProtocolGroup" Multiplicity="1" />
+          <End Role="ProtocolGroupMapping" Type="Self.ProtocolGroupMapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ListProtocolGroup">
+              <PropertyRef Name="ProtocolGroupKey" />
+            </Principal>
+            <Dependent Role="ProtocolGroupMapping">
+              <PropertyRef Name="ProtocolGroupKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolGroupMapping_Protocol_ProtocolsKey">
+          <End Role="Protocol" Type="Self.Protocol" Multiplicity="1" />
+          <End Role="ProtocolGroupMapping" Type="Self.ProtocolGroupMapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Protocol">
+              <PropertyRef Name="ProtocolKey" />
+            </Principal>
+            <Dependent Role="ProtocolGroupMapping">
+              <PropertyRef Name="ProtocolsKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolTemplate_Protocol_ProtocolKey">
+          <End Role="Protocol" Type="Self.Protocol" Multiplicity="1" />
+          <End Role="ProtocolTemplate" Type="Self.ProtocolTemplate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Protocol">
+              <PropertyRef Name="ProtocolKey" />
+            </Principal>
+            <Dependent Role="ProtocolTemplate">
+              <PropertyRef Name="ProtocolKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolTemplate_TemplateVersion_DraftTemplateVerKey">
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="0..1" />
+          <End Role="ProtocolTemplate" Type="Self.ProtocolTemplate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TemplateVersion">
+              <PropertyRef Name="TemplateVersionKey" />
+            </Principal>
+            <Dependent Role="ProtocolTemplate">
+              <PropertyRef Name="DraftTemplateVerKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolTemplate_TemplateVersion_ReleasedTemplateVerKey">
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="0..1" />
+          <End Role="ProtocolTemplate" Type="Self.ProtocolTemplate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TemplateVersion">
+              <PropertyRef Name="TemplateVersionKey" />
+            </Principal>
+            <Dependent Role="ProtocolTemplate">
+              <PropertyRef Name="ReleasedTemplateVerKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolTemplate_TemplateVersion_ReviewedTemplateVerKey">
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="0..1" />
+          <End Role="ProtocolTemplate" Type="Self.ProtocolTemplate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TemplateVersion">
+              <PropertyRef Name="TemplateVersionKey" />
+            </Principal>
+            <Dependent Role="ProtocolTemplate">
+              <PropertyRef Name="ReviewedTemplateVerKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolVersion_ListReleaseState_ReleaseStateKey">
+          <End Role="ListReleaseState" Type="Self.ListReleaseState" Multiplicity="0..1" />
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ListReleaseState">
+              <PropertyRef Name="ReleaseStateKey" />
+            </Principal>
+            <Dependent Role="ProtocolVersion">
+              <PropertyRef Name="ReleaseStateKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolVersion_Protocol_ProtocolKey">
+          <End Role="Protocol" Type="Self.Protocol" Multiplicity="1" />
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Protocol">
+              <PropertyRef Name="ProtocolKey" />
+            </Principal>
+            <Dependent Role="ProtocolVersion">
+              <PropertyRef Name="ProtocolKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolVersion_ProtocolVersion_PrevProtocolVersionKey">
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="0..1" />
+          <End Role="ProtocolVersion1" Type="Self.ProtocolVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProtocolVersion">
+              <PropertyRef Name="ProtocolVersionKey" />
+            </Principal>
+            <Dependent Role="ProtocolVersion1">
+              <PropertyRef Name="PrevProtocolVersionKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TemplateVersion_ListReleaseState_ReleaseStateKey">
+          <End Role="ListReleaseState" Type="Self.ListReleaseState" Multiplicity="0..1" />
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ListReleaseState">
+              <PropertyRef Name="ReleaseStateKey" />
+            </Principal>
+            <Dependent Role="TemplateVersion">
+              <PropertyRef Name="ReleaseStateKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TemplateVersion_ProtocolTemplate_ProtocolTemplateKey">
+          <End Role="ProtocolTemplate" Type="Self.ProtocolTemplate" Multiplicity="1" />
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProtocolTemplate">
+              <PropertyRef Name="ProtocolTemplateKey" />
+            </Principal>
+            <Dependent Role="TemplateVersion">
+              <PropertyRef Name="ProtocolTemplateKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TemplateVersion_ProtocolVersion_ProtocolVersionKey">
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="1" />
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProtocolVersion">
+              <PropertyRef Name="ProtocolVersionKey" />
+            </Principal>
+            <Dependent Role="TemplateVersion">
+              <PropertyRef Name="ProtocolVersionKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TemplateVersion_TemplateVersion_PrevTemplateVersionKey">
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="0..1" />
+          <End Role="TemplateVersion1" Type="Self.TemplateVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TemplateVersion">
+              <PropertyRef Name="TemplateVersionKey" />
+            </Principal>
+            <Dependent Role="TemplateVersion1">
+              <PropertyRef Name="PrevTemplateVersionKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SSPModelStoreContainer">
+          <EntitySet Name="ListProtocolGroup" EntityType="Self.ListProtocolGroup" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ListReleaseState" EntityType="Self.ListReleaseState" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Protocol" EntityType="Self.Protocol" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProtocolGroupMapping" EntityType="Self.ProtocolGroupMapping" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProtocolTemplate" EntityType="Self.ProtocolTemplate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProtocolVersion" EntityType="Self.ProtocolVersion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Release" EntityType="Self.Release" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TemplateVersion" EntityType="Self.TemplateVersion" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Protocol_ProtocolVersion_DraftProtocolVerKey" Association="Self.FK_Protocol_ProtocolVersion_DraftProtocolVerKey">
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersion" />
+            <End Role="Protocol" EntitySet="Protocol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Protocol_ProtocolVersion_ReleasedProtocolVerKey" Association="Self.FK_Protocol_ProtocolVersion_ReleasedProtocolVerKey">
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersion" />
+            <End Role="Protocol" EntitySet="Protocol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Protocol_ProtocolVersion_ReviewedProtocolVerKey" Association="Self.FK_Protocol_ProtocolVersion_ReviewedProtocolVerKey">
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersion" />
+            <End Role="Protocol" EntitySet="Protocol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolGroupMapping_ListProtocolGroup_ProtocolGroupKey" Association="Self.FK_ProtocolGroupMapping_ListProtocolGroup_ProtocolGroupKey">
+            <End Role="ListProtocolGroup" EntitySet="ListProtocolGroup" />
+            <End Role="ProtocolGroupMapping" EntitySet="ProtocolGroupMapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolGroupMapping_Protocol_ProtocolsKey" Association="Self.FK_ProtocolGroupMapping_Protocol_ProtocolsKey">
+            <End Role="Protocol" EntitySet="Protocol" />
+            <End Role="ProtocolGroupMapping" EntitySet="ProtocolGroupMapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolTemplate_Protocol_ProtocolKey" Association="Self.FK_ProtocolTemplate_Protocol_ProtocolKey">
+            <End Role="Protocol" EntitySet="Protocol" />
+            <End Role="ProtocolTemplate" EntitySet="ProtocolTemplate" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolTemplate_TemplateVersion_DraftTemplateVerKey" Association="Self.FK_ProtocolTemplate_TemplateVersion_DraftTemplateVerKey">
+            <End Role="TemplateVersion" EntitySet="TemplateVersion" />
+            <End Role="ProtocolTemplate" EntitySet="ProtocolTemplate" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolTemplate_TemplateVersion_ReleasedTemplateVerKey" Association="Self.FK_ProtocolTemplate_TemplateVersion_ReleasedTemplateVerKey">
+            <End Role="TemplateVersion" EntitySet="TemplateVersion" />
+            <End Role="ProtocolTemplate" EntitySet="ProtocolTemplate" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolTemplate_TemplateVersion_ReviewedTemplateVerKey" Association="Self.FK_ProtocolTemplate_TemplateVersion_ReviewedTemplateVerKey">
+            <End Role="TemplateVersion" EntitySet="TemplateVersion" />
+            <End Role="ProtocolTemplate" EntitySet="ProtocolTemplate" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolVersion_ListReleaseState_ReleaseStateKey" Association="Self.FK_ProtocolVersion_ListReleaseState_ReleaseStateKey">
+            <End Role="ListReleaseState" EntitySet="ListReleaseState" />
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolVersion_Protocol_ProtocolKey" Association="Self.FK_ProtocolVersion_Protocol_ProtocolKey">
+            <End Role="Protocol" EntitySet="Protocol" />
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolVersion_ProtocolVersion_PrevProtocolVersionKey" Association="Self.FK_ProtocolVersion_ProtocolVersion_PrevProtocolVersionKey">
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersion" />
+            <End Role="ProtocolVersion1" EntitySet="ProtocolVersion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TemplateVersion_ListReleaseState_ReleaseStateKey" Association="Self.FK_TemplateVersion_ListReleaseState_ReleaseStateKey">
+            <End Role="ListReleaseState" EntitySet="ListReleaseState" />
+            <End Role="TemplateVersion" EntitySet="TemplateVersion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TemplateVersion_ProtocolTemplate_ProtocolTemplateKey" Association="Self.FK_TemplateVersion_ProtocolTemplate_ProtocolTemplateKey">
+            <End Role="ProtocolTemplate" EntitySet="ProtocolTemplate" />
+            <End Role="TemplateVersion" EntitySet="TemplateVersion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TemplateVersion_ProtocolVersion_ProtocolVersionKey" Association="Self.FK_TemplateVersion_ProtocolVersion_ProtocolVersionKey">
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersion" />
+            <End Role="TemplateVersion" EntitySet="TemplateVersion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TemplateVersion_TemplateVersion_PrevTemplateVersionKey" Association="Self.FK_TemplateVersion_TemplateVersion_PrevTemplateVersionKey">
+            <End Role="TemplateVersion" EntitySet="TemplateVersion" />
+            <End Role="TemplateVersion1" EntitySet="TemplateVersion" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SSPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ListProtocolGroup">
+          <Key>
+            <PropertyRef Name="ProtocolGroupKey" />
+          </Key>
+          <Property Name="ProtocolGroupKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NamespaceKey" Type="Int32" Nullable="false" />
+          <Property Name="ProtocolGroup" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProtocolGroupSortName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="URI_Namespace" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="ExternalKey" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="VisibleFlag" Type="Boolean" Nullable="false" />
+          <Property Name="TS" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="ProtocolGroupMappings" Relationship="Self.FK_ProtocolGroupMapping_ListProtocolGroup_ProtocolGroupKey" FromRole="ListProtocolGroup" ToRole="ProtocolGroupMapping" />
+        </EntityType>
+        <EntityType Name="ListReleaseState">
+          <Key>
+            <PropertyRef Name="ReleaseStateKey" />
+          </Key>
+          <Property Name="ReleaseStateKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NamespaceKey" Type="Int32" Nullable="false" />
+          <Property Name="ReleaseState" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReleaseStateSortName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReleaseVersionSuffix" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ReleaseDescription" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StateGroup" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CreatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="VisisbleFlag" Type="Boolean" Nullable="false" />
+          <Property Name="TS" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="ProtocolVersions" Relationship="Self.FK_ProtocolVersion_ListReleaseState_ReleaseStateKey" FromRole="ListReleaseState" ToRole="ProtocolVersion" />
+          <NavigationProperty Name="TemplateVersions" Relationship="Self.FK_TemplateVersion_ListReleaseState_ReleaseStateKey" FromRole="ListReleaseState" ToRole="TemplateVersion" />
+        </EntityType>
+        <EntityType Name="Protocol">
+          <Key>
+            <PropertyRef Name="ProtocolKey" />
+          </Key>
+          <Property Name="ProtocolKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NamespaceKey" Type="Int32" Nullable="false" />
+          <Property Name="ProtocolName" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProtocolShortName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProtocolSortName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TestProtocol" Type="Boolean" Nullable="false" />
+          <Property Name="ReleasedProtocolVerKey" Type="Int32" />
+          <Property Name="DraftProtocolVerKey" Type="Int32" />
+          <Property Name="ReviewedProtocolVerKey" Type="Int32" />
+          <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsAccreditationReq" Type="Boolean" />
+          <Property Name="BioMarker" Type="Boolean" />
+          <Property Name="FirstReleaseDate" Type="DateTime" Precision="0" />
+          <Property Name="CreatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="TS" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="DeleteFlag" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ProtocolVersion" Relationship="Self.FK_Protocol_ProtocolVersion_DraftProtocolVerKey" FromRole="Protocol" ToRole="ProtocolVersion" />
+          <NavigationProperty Name="ProtocolVersion1" Relationship="Self.FK_Protocol_ProtocolVersion_ReleasedProtocolVerKey" FromRole="Protocol" ToRole="ProtocolVersion" />
+          <NavigationProperty Name="ProtocolVersion2" Relationship="Self.FK_Protocol_ProtocolVersion_ReviewedProtocolVerKey" FromRole="Protocol" ToRole="ProtocolVersion" />
+          <NavigationProperty Name="ProtocolGroupMappings" Relationship="Self.FK_ProtocolGroupMapping_Protocol_ProtocolsKey" FromRole="Protocol" ToRole="ProtocolGroupMapping" />
+          <NavigationProperty Name="ProtocolTemplates" Relationship="Self.FK_ProtocolTemplate_Protocol_ProtocolKey" FromRole="Protocol" ToRole="ProtocolTemplate" />
+          <NavigationProperty Name="ProtocolVersions" Relationship="Self.FK_ProtocolVersion_Protocol_ProtocolKey" FromRole="Protocol" ToRole="ProtocolVersion" />
+        </EntityType>
+        <EntityType Name="ProtocolGroupMapping">
+          <Key>
+            <PropertyRef Name="ProtocolGroupMappingKey" />
+          </Key>
+          <Property Name="ProtocolGroupMappingKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProtocolsKey" Type="Int32" Nullable="false" />
+          <Property Name="ProtocolGroupKey" Type="Int32" Nullable="false" />
+          <Property Name="CreatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TS" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="ListProtocolGroup" Relationship="Self.FK_ProtocolGroupMapping_ListProtocolGroup_ProtocolGroupKey" FromRole="ProtocolGroupMapping" ToRole="ListProtocolGroup" />
+          <NavigationProperty Name="Protocol" Relationship="Self.FK_ProtocolGroupMapping_Protocol_ProtocolsKey" FromRole="ProtocolGroupMapping" ToRole="Protocol" />
+        </EntityType>
+        <EntityType Name="ProtocolTemplate">
+          <Key>
+            <PropertyRef Name="ProtocolTemplateKey" />
+          </Key>
+          <Property Name="ProtocolTemplateKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CTV_StaticKey" Type="Int32" />
+          <Property Name="NamespaceKey" Type="Int32" Nullable="false" />
+          <Property Name="Lineage" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProtocolKey" Type="Int32" Nullable="false" />
+          <Property Name="ReleasedTemplateVerKey" Type="Int32" />
+          <Property Name="DraftTemplateVerKey" Type="Int32" />
+          <Property Name="ReviewedTemplateVerKey" Type="Int32" />
+          <Property Name="SNOMED_CT_ConceptID" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="OfficialName" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VisibleText" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SortName" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ShortName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProtocolTempDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Restrictions" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstReleaseDate" Type="DateTime" Precision="3" />
+          <Property Name="RetireDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="TS" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="DeleteFlag" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Protocol" Relationship="Self.FK_ProtocolTemplate_Protocol_ProtocolKey" FromRole="ProtocolTemplate" ToRole="Protocol" />
+          <NavigationProperty Name="TemplateVersion" Relationship="Self.FK_ProtocolTemplate_TemplateVersion_DraftTemplateVerKey" FromRole="ProtocolTemplate" ToRole="TemplateVersion" />
+          <NavigationProperty Name="TemplateVersion1" Relationship="Self.FK_ProtocolTemplate_TemplateVersion_ReleasedTemplateVerKey" FromRole="ProtocolTemplate" ToRole="TemplateVersion" />
+          <NavigationProperty Name="TemplateVersion2" Relationship="Self.FK_ProtocolTemplate_TemplateVersion_ReviewedTemplateVerKey" FromRole="ProtocolTemplate" ToRole="TemplateVersion" />
+          <NavigationProperty Name="TemplateVersions" Relationship="Self.FK_TemplateVersion_ProtocolTemplate_ProtocolTemplateKey" FromRole="ProtocolTemplate" ToRole="TemplateVersion" />
+        </EntityType>
+        <EntityType Name="ProtocolVersion">
+          <Key>
+            <PropertyRef Name="ProtocolVersionKey" />
+          </Key>
+          <Property Name="ProtocolVersionKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImportFlag" Type="Boolean" Nullable="false" />
+          <Property Name="NamespaceKey" Type="Int32" Nullable="false" />
+          <Property Name="PrevProtocolVersionKey" Type="Int32" />
+          <Property Name="ProtocolKey" Type="Int32" Nullable="false" />
+          <Property Name="ProtocolVersion1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Subtitle" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ShortTitle" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CoverDocRaw" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="WebPostingDate" Type="DateTime" Precision="0" />
+          <Property Name="EffectiveDate" Type="DateTime" Precision="0" />
+          <Property Name="AccreditationDate" Type="DateTime" Precision="0" />
+          <Property Name="ReleaseDate" Type="DateTime" Precision="0" />
+          <Property Name="ProtocolWebsiteName" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TestVersion" Type="Boolean" Nullable="false" />
+          <Property Name="ReleaseStateKey" Type="Int32" />
+          <Property Name="ReviewStartDate" Type="DateTime" Precision="3" />
+          <Property Name="ReviewEndDate" Type="DateTime" Precision="3" />
+          <Property Name="CustomMessage" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SentToModelersDate" Type="DateTime" Precision="3" />
+          <Property Name="SignoffDate" Type="DateTime" Precision="3" />
+          <Property Name="SignoffUserKey" Type="Int32" />
+          <Property Name="CopiedByUserKey" Type="Int32" />
+          <Property Name="CopiedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="CreatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="TS" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="DeleteFlag" Type="Boolean" Nullable="false" />
+          <Property Name="AccreditationRequirements" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SummaryOfChanges" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Restrictions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AccreditationHeader" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ListReleaseState" Relationship="Self.FK_ProtocolVersion_ListReleaseState_ReleaseStateKey" FromRole="ProtocolVersion" ToRole="ListReleaseState" />
+          <NavigationProperty Name="Protocols" Relationship="Self.FK_Protocol_ProtocolVersion_DraftProtocolVerKey" FromRole="ProtocolVersion" ToRole="Protocol" />
+          <NavigationProperty Name="Protocols1" Relationship="Self.FK_Protocol_ProtocolVersion_ReleasedProtocolVerKey" FromRole="ProtocolVersion" ToRole="Protocol" />
+          <NavigationProperty Name="Protocols2" Relationship="Self.FK_Protocol_ProtocolVersion_ReviewedProtocolVerKey" FromRole="ProtocolVersion" ToRole="Protocol" />
+          <NavigationProperty Name="Protocol" Relationship="Self.FK_ProtocolVersion_Protocol_ProtocolKey" FromRole="ProtocolVersion" ToRole="Protocol" />
+          <NavigationProperty Name="ProtocolVersion11" Relationship="Self.FK_ProtocolVersion_ProtocolVersion_PrevProtocolVersionKey" FromRole="ProtocolVersion" ToRole="ProtocolVersion1" />
+          <NavigationProperty Name="ProtocolVersion2" Relationship="Self.FK_ProtocolVersion_ProtocolVersion_PrevProtocolVersionKey" FromRole="ProtocolVersion1" ToRole="ProtocolVersion" />
+          <NavigationProperty Name="TemplateVersions" Relationship="Self.FK_TemplateVersion_ProtocolVersion_ProtocolVersionKey" FromRole="ProtocolVersion" ToRole="TemplateVersion" />
+        </EntityType>
+        <EntityType Name="Release">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ReleaseCKey" Type="Decimal" Precision="20" Scale="9" />
+          <Property Name="ReleaseKey" Type="Int32" Nullable="false" />
+          <Property Name="Namespace" Type="Int32" Nullable="false" />
+          <Property Name="SortOrder" Type="Int32" Nullable="false" />
+          <Property Name="ReleaseDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ReleaseHistoryDate" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ReleaseFolderLocation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ReleaseName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReleasePackageName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ReleaseNotes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="HistoryFlag" Type="Boolean" />
+          <Property Name="ReleasePackageHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="Decimal" Precision="20" Scale="9" />
+          <Property Name="CreatedDt" Type="DateTime" Precision="3" />
+          <Property Name="LastUpdated" Type="Decimal" Precision="20" Scale="9" />
+          <Property Name="LastUpdatedDt" Type="DateTime" Precision="3" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="TS" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="TemplateVersion">
+          <Key>
+            <PropertyRef Name="TemplateVersionKey" />
+          </Key>
+          <Property Name="TemplateVersionKey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImportFlagCTI" Type="Boolean" Nullable="false" />
+          <Property Name="PrevTemplateVersionKey" Type="Int32" />
+          <Property Name="NamespaceKey" Type="Int32" Nullable="false" />
+          <Property Name="ProtocolTemplateKey" Type="Int32" Nullable="false" />
+          <Property Name="ProtocolVersionKey" Type="Int32" Nullable="false" />
+          <Property Name="ReleaseKey" Type="Int32" />
+          <Property Name="ReleaseStateKey" Type="Int32" />
+          <Property Name="Version" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SDC_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="OfficialNameProperty" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="VisibleTextProperty" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="VersionDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EditorCommentProperty" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="GenericHeaderTextProperty" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="FootnoteProperty" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="TitleNotesProperty" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="ReportTitleProperty" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="DescriptionProperty" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="RestrictionsTextProperty" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="L_WebsiteCategoryProperty" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="L_FilenameLegacyProperty" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="L_AJCC_UICC_VersionProperty" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="L_FIGO_VersionProperty" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="L_CAP_ProtocolName" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="L_CAP_ProtocolVersion" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="CAP_AccreditationProperty" Type="Boolean" />
+          <Property Name="ElectronicReleaseDateProperty" Type="DateTime" Precision="0" />
+          <Property Name="FirstReleaseDateProperty" Type="DateTime" Precision="0" />
+          <Property Name="WebPostingDateProperty" Type="DateTime" Precision="0" />
+          <Property Name="RevisionDateProperty" Type="DateTime" Precision="0" />
+          <Property Name="EarliestImplementationDateProperty" Type="DateTime" Precision="0" />
+          <Property Name="ImplementByDateProperty" Type="DateTime" Precision="0" />
+          <Property Name="AccreditationDeadlineDateProperty" Type="DateTime" Precision="0" />
+          <Property Name="RetireDateProperty" Type="DateTime" Precision="0" />
+          <Property Name="BlacklistedDateProperty" Type="DateTime" Precision="0" />
+          <Property Name="TestVersion" Type="Boolean" />
+          <Property Name="eCC_XML_Version" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="SDC_XML_Version" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="eCC_XML" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SDC_XML" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CopiedByUserKey" Type="Int32" />
+          <Property Name="CopiedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="CreatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdatedByUserKey" Type="Int32" Nullable="false" />
+          <Property Name="LastUpdatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="TS" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="DeleteFlag" Type="Boolean" Nullable="false" />
+          <Property Name="Restrictions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ListReleaseState" Relationship="Self.FK_TemplateVersion_ListReleaseState_ReleaseStateKey" FromRole="TemplateVersion" ToRole="ListReleaseState" />
+          <NavigationProperty Name="ProtocolTemplates" Relationship="Self.FK_ProtocolTemplate_TemplateVersion_DraftTemplateVerKey" FromRole="TemplateVersion" ToRole="ProtocolTemplate" />
+          <NavigationProperty Name="ProtocolTemplates1" Relationship="Self.FK_ProtocolTemplate_TemplateVersion_ReleasedTemplateVerKey" FromRole="TemplateVersion" ToRole="ProtocolTemplate" />
+          <NavigationProperty Name="ProtocolTemplates2" Relationship="Self.FK_ProtocolTemplate_TemplateVersion_ReviewedTemplateVerKey" FromRole="TemplateVersion" ToRole="ProtocolTemplate" />
+          <NavigationProperty Name="ProtocolTemplate" Relationship="Self.FK_TemplateVersion_ProtocolTemplate_ProtocolTemplateKey" FromRole="TemplateVersion" ToRole="ProtocolTemplate" />
+          <NavigationProperty Name="ProtocolVersion" Relationship="Self.FK_TemplateVersion_ProtocolVersion_ProtocolVersionKey" FromRole="TemplateVersion" ToRole="ProtocolVersion" />
+          <NavigationProperty Name="TemplateVersion1" Relationship="Self.FK_TemplateVersion_TemplateVersion_PrevTemplateVersionKey" FromRole="TemplateVersion" ToRole="TemplateVersion1" />
+          <NavigationProperty Name="TemplateVersion2" Relationship="Self.FK_TemplateVersion_TemplateVersion_PrevTemplateVersionKey" FromRole="TemplateVersion1" ToRole="TemplateVersion" />
+        </EntityType>
+        <Association Name="FK_ProtocolGroupMapping_ListProtocolGroup_ProtocolGroupKey">
+          <End Role="ListProtocolGroup" Type="Self.ListProtocolGroup" Multiplicity="1" />
+          <End Role="ProtocolGroupMapping" Type="Self.ProtocolGroupMapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ListProtocolGroup">
+              <PropertyRef Name="ProtocolGroupKey" />
+            </Principal>
+            <Dependent Role="ProtocolGroupMapping">
+              <PropertyRef Name="ProtocolGroupKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolVersion_ListReleaseState_ReleaseStateKey">
+          <End Role="ListReleaseState" Type="Self.ListReleaseState" Multiplicity="0..1" />
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ListReleaseState">
+              <PropertyRef Name="ReleaseStateKey" />
+            </Principal>
+            <Dependent Role="ProtocolVersion">
+              <PropertyRef Name="ReleaseStateKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TemplateVersion_ListReleaseState_ReleaseStateKey">
+          <End Role="ListReleaseState" Type="Self.ListReleaseState" Multiplicity="0..1" />
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ListReleaseState">
+              <PropertyRef Name="ReleaseStateKey" />
+            </Principal>
+            <Dependent Role="TemplateVersion">
+              <PropertyRef Name="ReleaseStateKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Protocol_ProtocolVersion_DraftProtocolVerKey">
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="0..1" />
+          <End Role="Protocol" Type="Self.Protocol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProtocolVersion">
+              <PropertyRef Name="ProtocolVersionKey" />
+            </Principal>
+            <Dependent Role="Protocol">
+              <PropertyRef Name="DraftProtocolVerKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Protocol_ProtocolVersion_ReleasedProtocolVerKey">
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="0..1" />
+          <End Role="Protocol" Type="Self.Protocol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProtocolVersion">
+              <PropertyRef Name="ProtocolVersionKey" />
+            </Principal>
+            <Dependent Role="Protocol">
+              <PropertyRef Name="ReleasedProtocolVerKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Protocol_ProtocolVersion_ReviewedProtocolVerKey">
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="0..1" />
+          <End Role="Protocol" Type="Self.Protocol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProtocolVersion">
+              <PropertyRef Name="ProtocolVersionKey" />
+            </Principal>
+            <Dependent Role="Protocol">
+              <PropertyRef Name="ReviewedProtocolVerKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolGroupMapping_Protocol_ProtocolsKey">
+          <End Role="Protocol" Type="Self.Protocol" Multiplicity="1" />
+          <End Role="ProtocolGroupMapping" Type="Self.ProtocolGroupMapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Protocol">
+              <PropertyRef Name="ProtocolKey" />
+            </Principal>
+            <Dependent Role="ProtocolGroupMapping">
+              <PropertyRef Name="ProtocolsKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolTemplate_Protocol_ProtocolKey">
+          <End Role="Protocol" Type="Self.Protocol" Multiplicity="1" />
+          <End Role="ProtocolTemplate" Type="Self.ProtocolTemplate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Protocol">
+              <PropertyRef Name="ProtocolKey" />
+            </Principal>
+            <Dependent Role="ProtocolTemplate">
+              <PropertyRef Name="ProtocolKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolVersion_Protocol_ProtocolKey">
+          <End Role="Protocol" Type="Self.Protocol" Multiplicity="1" />
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Protocol">
+              <PropertyRef Name="ProtocolKey" />
+            </Principal>
+            <Dependent Role="ProtocolVersion">
+              <PropertyRef Name="ProtocolKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolTemplate_TemplateVersion_DraftTemplateVerKey">
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="0..1" />
+          <End Role="ProtocolTemplate" Type="Self.ProtocolTemplate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TemplateVersion">
+              <PropertyRef Name="TemplateVersionKey" />
+            </Principal>
+            <Dependent Role="ProtocolTemplate">
+              <PropertyRef Name="DraftTemplateVerKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolTemplate_TemplateVersion_ReleasedTemplateVerKey">
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="0..1" />
+          <End Role="ProtocolTemplate" Type="Self.ProtocolTemplate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TemplateVersion">
+              <PropertyRef Name="TemplateVersionKey" />
+            </Principal>
+            <Dependent Role="ProtocolTemplate">
+              <PropertyRef Name="ReleasedTemplateVerKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolTemplate_TemplateVersion_ReviewedTemplateVerKey">
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="0..1" />
+          <End Role="ProtocolTemplate" Type="Self.ProtocolTemplate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TemplateVersion">
+              <PropertyRef Name="TemplateVersionKey" />
+            </Principal>
+            <Dependent Role="ProtocolTemplate">
+              <PropertyRef Name="ReviewedTemplateVerKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TemplateVersion_ProtocolTemplate_ProtocolTemplateKey">
+          <End Role="ProtocolTemplate" Type="Self.ProtocolTemplate" Multiplicity="1" />
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProtocolTemplate">
+              <PropertyRef Name="ProtocolTemplateKey" />
+            </Principal>
+            <Dependent Role="TemplateVersion">
+              <PropertyRef Name="ProtocolTemplateKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProtocolVersion_ProtocolVersion_PrevProtocolVersionKey">
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="0..1" />
+          <End Role="ProtocolVersion1" Type="Self.ProtocolVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProtocolVersion">
+              <PropertyRef Name="ProtocolVersionKey" />
+            </Principal>
+            <Dependent Role="ProtocolVersion1">
+              <PropertyRef Name="PrevProtocolVersionKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TemplateVersion_ProtocolVersion_ProtocolVersionKey">
+          <End Role="ProtocolVersion" Type="Self.ProtocolVersion" Multiplicity="1" />
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProtocolVersion">
+              <PropertyRef Name="ProtocolVersionKey" />
+            </Principal>
+            <Dependent Role="TemplateVersion">
+              <PropertyRef Name="ProtocolVersionKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TemplateVersion_TemplateVersion_PrevTemplateVersionKey">
+          <End Role="TemplateVersion" Type="Self.TemplateVersion" Multiplicity="0..1" />
+          <End Role="TemplateVersion1" Type="Self.TemplateVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TemplateVersion">
+              <PropertyRef Name="TemplateVersionKey" />
+            </Principal>
+            <Dependent Role="TemplateVersion1">
+              <PropertyRef Name="PrevTemplateVersionKey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SSPEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ListProtocolGroups" EntityType="Self.ListProtocolGroup" />
+          <EntitySet Name="ListReleaseStates" EntityType="Self.ListReleaseState" />
+          <EntitySet Name="Protocols" EntityType="Self.Protocol" />
+          <EntitySet Name="ProtocolGroupMappings" EntityType="Self.ProtocolGroupMapping" />
+          <EntitySet Name="ProtocolTemplates" EntityType="Self.ProtocolTemplate" />
+          <EntitySet Name="ProtocolVersions" EntityType="Self.ProtocolVersion" />
+          <EntitySet Name="Releases" EntityType="Self.Release" />
+          <EntitySet Name="TemplateVersions" EntityType="Self.TemplateVersion" />
+          <AssociationSet Name="FK_ProtocolGroupMapping_ListProtocolGroup_ProtocolGroupKey" Association="Self.FK_ProtocolGroupMapping_ListProtocolGroup_ProtocolGroupKey">
+            <End Role="ListProtocolGroup" EntitySet="ListProtocolGroups" />
+            <End Role="ProtocolGroupMapping" EntitySet="ProtocolGroupMappings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolVersion_ListReleaseState_ReleaseStateKey" Association="Self.FK_ProtocolVersion_ListReleaseState_ReleaseStateKey">
+            <End Role="ListReleaseState" EntitySet="ListReleaseStates" />
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TemplateVersion_ListReleaseState_ReleaseStateKey" Association="Self.FK_TemplateVersion_ListReleaseState_ReleaseStateKey">
+            <End Role="ListReleaseState" EntitySet="ListReleaseStates" />
+            <End Role="TemplateVersion" EntitySet="TemplateVersions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Protocol_ProtocolVersion_DraftProtocolVerKey" Association="Self.FK_Protocol_ProtocolVersion_DraftProtocolVerKey">
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersions" />
+            <End Role="Protocol" EntitySet="Protocols" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Protocol_ProtocolVersion_ReleasedProtocolVerKey" Association="Self.FK_Protocol_ProtocolVersion_ReleasedProtocolVerKey">
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersions" />
+            <End Role="Protocol" EntitySet="Protocols" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Protocol_ProtocolVersion_ReviewedProtocolVerKey" Association="Self.FK_Protocol_ProtocolVersion_ReviewedProtocolVerKey">
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersions" />
+            <End Role="Protocol" EntitySet="Protocols" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolGroupMapping_Protocol_ProtocolsKey" Association="Self.FK_ProtocolGroupMapping_Protocol_ProtocolsKey">
+            <End Role="Protocol" EntitySet="Protocols" />
+            <End Role="ProtocolGroupMapping" EntitySet="ProtocolGroupMappings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolTemplate_Protocol_ProtocolKey" Association="Self.FK_ProtocolTemplate_Protocol_ProtocolKey">
+            <End Role="Protocol" EntitySet="Protocols" />
+            <End Role="ProtocolTemplate" EntitySet="ProtocolTemplates" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolVersion_Protocol_ProtocolKey" Association="Self.FK_ProtocolVersion_Protocol_ProtocolKey">
+            <End Role="Protocol" EntitySet="Protocols" />
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolTemplate_TemplateVersion_DraftTemplateVerKey" Association="Self.FK_ProtocolTemplate_TemplateVersion_DraftTemplateVerKey">
+            <End Role="TemplateVersion" EntitySet="TemplateVersions" />
+            <End Role="ProtocolTemplate" EntitySet="ProtocolTemplates" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolTemplate_TemplateVersion_ReleasedTemplateVerKey" Association="Self.FK_ProtocolTemplate_TemplateVersion_ReleasedTemplateVerKey">
+            <End Role="TemplateVersion" EntitySet="TemplateVersions" />
+            <End Role="ProtocolTemplate" EntitySet="ProtocolTemplates" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolTemplate_TemplateVersion_ReviewedTemplateVerKey" Association="Self.FK_ProtocolTemplate_TemplateVersion_ReviewedTemplateVerKey">
+            <End Role="TemplateVersion" EntitySet="TemplateVersions" />
+            <End Role="ProtocolTemplate" EntitySet="ProtocolTemplates" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TemplateVersion_ProtocolTemplate_ProtocolTemplateKey" Association="Self.FK_TemplateVersion_ProtocolTemplate_ProtocolTemplateKey">
+            <End Role="ProtocolTemplate" EntitySet="ProtocolTemplates" />
+            <End Role="TemplateVersion" EntitySet="TemplateVersions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProtocolVersion_ProtocolVersion_PrevProtocolVersionKey" Association="Self.FK_ProtocolVersion_ProtocolVersion_PrevProtocolVersionKey">
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersions" />
+            <End Role="ProtocolVersion1" EntitySet="ProtocolVersions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TemplateVersion_ProtocolVersion_ProtocolVersionKey" Association="Self.FK_TemplateVersion_ProtocolVersion_ProtocolVersionKey">
+            <End Role="ProtocolVersion" EntitySet="ProtocolVersions" />
+            <End Role="TemplateVersion" EntitySet="TemplateVersions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TemplateVersion_TemplateVersion_PrevTemplateVersionKey" Association="Self.FK_TemplateVersion_TemplateVersion_PrevTemplateVersionKey">
+            <End Role="TemplateVersion" EntitySet="TemplateVersions" />
+            <End Role="TemplateVersion1" EntitySet="TemplateVersions" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SSPModelStoreContainer" CdmEntityContainer="SSPEntities">
+          <EntitySetMapping Name="ListProtocolGroups">
+            <EntityTypeMapping TypeName="SSPModel.ListProtocolGroup">
+              <MappingFragment StoreEntitySet="ListProtocolGroup">
+                <ScalarProperty Name="ProtocolGroupKey" ColumnName="ProtocolGroupKey" />
+                <ScalarProperty Name="NamespaceKey" ColumnName="NamespaceKey" />
+                <ScalarProperty Name="ProtocolGroup" ColumnName="ProtocolGroup" />
+                <ScalarProperty Name="ProtocolGroupSortName" ColumnName="ProtocolGroupSortName" />
+                <ScalarProperty Name="URI_Namespace" ColumnName="URI_Namespace" />
+                <ScalarProperty Name="ExternalKey" ColumnName="ExternalKey" />
+                <ScalarProperty Name="CreatedByUserKey" ColumnName="CreatedByUserKey" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="LastUpdatedByUserKey" ColumnName="LastUpdatedByUserKey" />
+                <ScalarProperty Name="LastUpdatedDateTime" ColumnName="LastUpdatedDateTime" />
+                <ScalarProperty Name="VisibleFlag" ColumnName="VisibleFlag" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ListReleaseStates">
+            <EntityTypeMapping TypeName="SSPModel.ListReleaseState">
+              <MappingFragment StoreEntitySet="ListReleaseState">
+                <ScalarProperty Name="ReleaseStateKey" ColumnName="ReleaseStateKey" />
+                <ScalarProperty Name="NamespaceKey" ColumnName="NamespaceKey" />
+                <ScalarProperty Name="ReleaseState" ColumnName="ReleaseState" />
+                <ScalarProperty Name="ReleaseStateSortName" ColumnName="ReleaseStateSortName" />
+                <ScalarProperty Name="ReleaseVersionSuffix" ColumnName="ReleaseVersionSuffix" />
+                <ScalarProperty Name="ReleaseDescription" ColumnName="ReleaseDescription" />
+                <ScalarProperty Name="StateGroup" ColumnName="StateGroup" />
+                <ScalarProperty Name="CreatedByUserKey" ColumnName="CreatedByUserKey" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="LastUpdatedByUserKey" ColumnName="LastUpdatedByUserKey" />
+                <ScalarProperty Name="LastUpdatedDateTime" ColumnName="LastUpdatedDateTime" />
+                <ScalarProperty Name="VisisbleFlag" ColumnName="VisisbleFlag" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Protocols">
+            <EntityTypeMapping TypeName="SSPModel.Protocol">
+              <MappingFragment StoreEntitySet="Protocol">
+                <ScalarProperty Name="ProtocolKey" ColumnName="ProtocolKey" />
+                <ScalarProperty Name="NamespaceKey" ColumnName="NamespaceKey" />
+                <ScalarProperty Name="ProtocolName" ColumnName="ProtocolName" />
+                <ScalarProperty Name="ProtocolShortName" ColumnName="ProtocolShortName" />
+                <ScalarProperty Name="ProtocolSortName" ColumnName="ProtocolSortName" />
+                <ScalarProperty Name="TestProtocol" ColumnName="TestProtocol" />
+                <ScalarProperty Name="ReleasedProtocolVerKey" ColumnName="ReleasedProtocolVerKey" />
+                <ScalarProperty Name="DraftProtocolVerKey" ColumnName="DraftProtocolVerKey" />
+                <ScalarProperty Name="ReviewedProtocolVerKey" ColumnName="ReviewedProtocolVerKey" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="IsAccreditationReq" ColumnName="IsAccreditationReq" />
+                <ScalarProperty Name="BioMarker" ColumnName="BioMarker" />
+                <ScalarProperty Name="FirstReleaseDate" ColumnName="FirstReleaseDate" />
+                <ScalarProperty Name="CreatedByUserKey" ColumnName="CreatedByUserKey" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="LastUpdatedByUserKey" ColumnName="LastUpdatedByUserKey" />
+                <ScalarProperty Name="LastUpdatedDateTime" ColumnName="LastUpdatedDateTime" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="DeleteFlag" ColumnName="DeleteFlag" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProtocolGroupMappings">
+            <EntityTypeMapping TypeName="SSPModel.ProtocolGroupMapping">
+              <MappingFragment StoreEntitySet="ProtocolGroupMapping">
+                <ScalarProperty Name="ProtocolGroupMappingKey" ColumnName="ProtocolGroupMappingKey" />
+                <ScalarProperty Name="ProtocolsKey" ColumnName="ProtocolsKey" />
+                <ScalarProperty Name="ProtocolGroupKey" ColumnName="ProtocolGroupKey" />
+                <ScalarProperty Name="CreatedByUserKey" ColumnName="CreatedByUserKey" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="LastUpdatedByUserKey" ColumnName="LastUpdatedByUserKey" />
+                <ScalarProperty Name="LastUpdatedDateTime" ColumnName="LastUpdatedDateTime" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProtocolTemplates">
+            <EntityTypeMapping TypeName="SSPModel.ProtocolTemplate">
+              <MappingFragment StoreEntitySet="ProtocolTemplate">
+                <ScalarProperty Name="ProtocolTemplateKey" ColumnName="ProtocolTemplateKey" />
+                <ScalarProperty Name="CTV_StaticKey" ColumnName="CTV_StaticKey" />
+                <ScalarProperty Name="NamespaceKey" ColumnName="NamespaceKey" />
+                <ScalarProperty Name="Lineage" ColumnName="Lineage" />
+                <ScalarProperty Name="ProtocolKey" ColumnName="ProtocolKey" />
+                <ScalarProperty Name="ReleasedTemplateVerKey" ColumnName="ReleasedTemplateVerKey" />
+                <ScalarProperty Name="DraftTemplateVerKey" ColumnName="DraftTemplateVerKey" />
+                <ScalarProperty Name="ReviewedTemplateVerKey" ColumnName="ReviewedTemplateVerKey" />
+                <ScalarProperty Name="SNOMED_CT_ConceptID" ColumnName="SNOMED_CT_ConceptID" />
+                <ScalarProperty Name="OfficialName" ColumnName="OfficialName" />
+                <ScalarProperty Name="VisibleText" ColumnName="VisibleText" />
+                <ScalarProperty Name="SortName" ColumnName="SortName" />
+                <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+                <ScalarProperty Name="ProtocolTempDescription" ColumnName="ProtocolTempDescription" />
+                <ScalarProperty Name="Restrictions" ColumnName="Restrictions" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="FirstReleaseDate" ColumnName="FirstReleaseDate" />
+                <ScalarProperty Name="RetireDate" ColumnName="RetireDate" />
+                <ScalarProperty Name="CreatedByUserKey" ColumnName="CreatedByUserKey" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="LastUpdatedByUserKey" ColumnName="LastUpdatedByUserKey" />
+                <ScalarProperty Name="LastUpdatedDateTime" ColumnName="LastUpdatedDateTime" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="DeleteFlag" ColumnName="DeleteFlag" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProtocolVersions">
+            <EntityTypeMapping TypeName="SSPModel.ProtocolVersion">
+              <MappingFragment StoreEntitySet="ProtocolVersion">
+                <ScalarProperty Name="ProtocolVersionKey" ColumnName="ProtocolVersionKey" />
+                <ScalarProperty Name="ImportFlag" ColumnName="ImportFlag" />
+                <ScalarProperty Name="NamespaceKey" ColumnName="NamespaceKey" />
+                <ScalarProperty Name="PrevProtocolVersionKey" ColumnName="PrevProtocolVersionKey" />
+                <ScalarProperty Name="ProtocolKey" ColumnName="ProtocolKey" />
+                <ScalarProperty Name="ProtocolVersion1" ColumnName="ProtocolVersion" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Subtitle" ColumnName="Subtitle" />
+                <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+                <ScalarProperty Name="CoverDocRaw" ColumnName="CoverDocRaw" />
+                <ScalarProperty Name="WebPostingDate" ColumnName="WebPostingDate" />
+                <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+                <ScalarProperty Name="AccreditationDate" ColumnName="AccreditationDate" />
+                <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+                <ScalarProperty Name="ProtocolWebsiteName" ColumnName="ProtocolWebsiteName" />
+                <ScalarProperty Name="TestVersion" ColumnName="TestVersion" />
+                <ScalarProperty Name="ReleaseStateKey" ColumnName="ReleaseStateKey" />
+                <ScalarProperty Name="ReviewStartDate" ColumnName="ReviewStartDate" />
+                <ScalarProperty Name="ReviewEndDate" ColumnName="ReviewEndDate" />
+                <ScalarProperty Name="CustomMessage" ColumnName="CustomMessage" />
+                <ScalarProperty Name="SentToModelersDate" ColumnName="SentToModelersDate" />
+                <ScalarProperty Name="SignoffDate" ColumnName="SignoffDate" />
+                <ScalarProperty Name="SignoffUserKey" ColumnName="SignoffUserKey" />
+                <ScalarProperty Name="CopiedByUserKey" ColumnName="CopiedByUserKey" />
+                <ScalarProperty Name="CopiedDateTime" ColumnName="CopiedDateTime" />
+                <ScalarProperty Name="CreatedByUserKey" ColumnName="CreatedByUserKey" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="LastUpdatedByUserKey" ColumnName="LastUpdatedByUserKey" />
+                <ScalarProperty Name="LastUpdatedDateTime" ColumnName="LastUpdatedDateTime" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="DeleteFlag" ColumnName="DeleteFlag" />
+                <ScalarProperty Name="AccreditationRequirements" ColumnName="AccreditationRequirements" />
+                <ScalarProperty Name="SummaryOfChanges" ColumnName="SummaryOfChanges" />
+                <ScalarProperty Name="Restrictions" ColumnName="Restrictions" />
+                <ScalarProperty Name="AccreditationHeader" ColumnName="AccreditationHeader" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Releases">
+            <EntityTypeMapping TypeName="SSPModel.Release">
+              <MappingFragment StoreEntitySet="Release">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ReleaseCKey" ColumnName="ReleaseCKey" />
+                <ScalarProperty Name="ReleaseKey" ColumnName="ReleaseKey" />
+                <ScalarProperty Name="Namespace" ColumnName="Namespace" />
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+                <ScalarProperty Name="ReleaseHistoryDate" ColumnName="ReleaseHistoryDate" />
+                <ScalarProperty Name="ReleaseFolderLocation" ColumnName="ReleaseFolderLocation" />
+                <ScalarProperty Name="ReleaseName" ColumnName="ReleaseName" />
+                <ScalarProperty Name="ReleasePackageName" ColumnName="ReleasePackageName" />
+                <ScalarProperty Name="ReleaseNotes" ColumnName="ReleaseNotes" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="HistoryFlag" ColumnName="HistoryFlag" />
+                <ScalarProperty Name="ReleasePackageHash" ColumnName="ReleasePackageHash" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDt" ColumnName="CreatedDt" />
+                <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+                <ScalarProperty Name="LastUpdatedDt" ColumnName="LastUpdatedDt" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TemplateVersions">
+            <EntityTypeMapping TypeName="SSPModel.TemplateVersion">
+              <MappingFragment StoreEntitySet="TemplateVersion">
+                <ScalarProperty Name="TemplateVersionKey" ColumnName="TemplateVersionKey" />
+                <ScalarProperty Name="ImportFlagCTI" ColumnName="ImportFlagCTI" />
+                <ScalarProperty Name="PrevTemplateVersionKey" ColumnName="PrevTemplateVersionKey" />
+                <ScalarProperty Name="NamespaceKey" ColumnName="NamespaceKey" />
+                <ScalarProperty Name="ProtocolTemplateKey" ColumnName="ProtocolTemplateKey" />
+                <ScalarProperty Name="ProtocolVersionKey" ColumnName="ProtocolVersionKey" />
+                <ScalarProperty Name="ReleaseKey" ColumnName="ReleaseKey" />
+                <ScalarProperty Name="ReleaseStateKey" ColumnName="ReleaseStateKey" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="SDC_ID" ColumnName="SDC_ID" />
+                <ScalarProperty Name="OfficialNameProperty" ColumnName="OfficialNameProperty" />
+                <ScalarProperty Name="VisibleTextProperty" ColumnName="VisibleTextProperty" />
+                <ScalarProperty Name="VersionDescription" ColumnName="VersionDescription" />
+                <ScalarProperty Name="EditorCommentProperty" ColumnName="EditorCommentProperty" />
+                <ScalarProperty Name="GenericHeaderTextProperty" ColumnName="GenericHeaderTextProperty" />
+                <ScalarProperty Name="FootnoteProperty" ColumnName="FootnoteProperty" />
+                <ScalarProperty Name="TitleNotesProperty" ColumnName="TitleNotesProperty" />
+                <ScalarProperty Name="ReportTitleProperty" ColumnName="ReportTitleProperty" />
+                <ScalarProperty Name="DescriptionProperty" ColumnName="DescriptionProperty" />
+                <ScalarProperty Name="RestrictionsTextProperty" ColumnName="RestrictionsTextProperty" />
+                <ScalarProperty Name="L_WebsiteCategoryProperty" ColumnName="L_WebsiteCategoryProperty" />
+                <ScalarProperty Name="L_FilenameLegacyProperty" ColumnName="L_FilenameLegacyProperty" />
+                <ScalarProperty Name="L_AJCC_UICC_VersionProperty" ColumnName="L_AJCC_UICC_VersionProperty" />
+                <ScalarProperty Name="L_FIGO_VersionProperty" ColumnName="L_FIGO_VersionProperty" />
+                <ScalarProperty Name="L_CAP_ProtocolName" ColumnName="L_CAP_ProtocolName" />
+                <ScalarProperty Name="L_CAP_ProtocolVersion" ColumnName="L_CAP_ProtocolVersion" />
+                <ScalarProperty Name="CAP_AccreditationProperty" ColumnName="CAP_AccreditationProperty" />
+                <ScalarProperty Name="ElectronicReleaseDateProperty" ColumnName="ElectronicReleaseDateProperty" />
+                <ScalarProperty Name="FirstReleaseDateProperty" ColumnName="FirstReleaseDateProperty" />
+                <ScalarProperty Name="WebPostingDateProperty" ColumnName="WebPostingDateProperty" />
+                <ScalarProperty Name="RevisionDateProperty" ColumnName="RevisionDateProperty" />
+                <ScalarProperty Name="EarliestImplementationDateProperty" ColumnName="EarliestImplementationDateProperty" />
+                <ScalarProperty Name="ImplementByDateProperty" ColumnName="ImplementByDateProperty" />
+                <ScalarProperty Name="AccreditationDeadlineDateProperty" ColumnName="AccreditationDeadlineDateProperty" />
+                <ScalarProperty Name="RetireDateProperty" ColumnName="RetireDateProperty" />
+                <ScalarProperty Name="BlacklistedDateProperty" ColumnName="BlacklistedDateProperty" />
+                <ScalarProperty Name="TestVersion" ColumnName="TestVersion" />
+                <ScalarProperty Name="eCC_XML_Version" ColumnName="eCC_XML_Version" />
+                <ScalarProperty Name="SDC_XML_Version" ColumnName="SDC_XML_Version" />
+                <ScalarProperty Name="eCC_XML" ColumnName="eCC_XML" />
+                <ScalarProperty Name="SDC_XML" ColumnName="SDC_XML" />
+                <ScalarProperty Name="CopiedByUserKey" ColumnName="CopiedByUserKey" />
+                <ScalarProperty Name="CopiedDateTime" ColumnName="CopiedDateTime" />
+                <ScalarProperty Name="CreatedByUserKey" ColumnName="CreatedByUserKey" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="LastUpdatedByUserKey" ColumnName="LastUpdatedByUserKey" />
+                <ScalarProperty Name="LastUpdatedDateTime" ColumnName="LastUpdatedDateTime" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="DeleteFlag" ColumnName="DeleteFlag" />
+                <ScalarProperty Name="Restrictions" ColumnName="Restrictions" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
