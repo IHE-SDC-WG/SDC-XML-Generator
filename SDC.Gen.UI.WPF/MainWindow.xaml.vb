@@ -13,20 +13,11 @@ Partial Public Class MainWindow
     'Implements IDisposable
 
     Private Property BrowserPath As String
-    Private _gridList As IList
+    Private Property GridList As IList
+    Private Property ConString As String
+    Private Property SdcXmlGenerator As SDC.Gen.API.GenXDT
     'Private TEinterop As TE.TEinterop
     Private Property FilePath As String
-
-    Property GridList As IList
-        Get
-            Return _gridList
-        End Get
-        Set(ByVal Value As IList)
-            _gridList = Value
-        End Set
-    End Property
-
-
 
     Public Sub New()
         InitializeComponent()
@@ -51,9 +42,15 @@ Partial Public Class MainWindow
 
     Private Sub button_Click(sender As Object, e As RoutedEventArgs) Handles button.Click
         FillData()
+        SdcXmlGenerator = Nothing 'clear all Gen variables
     End Sub
     Private Sub FillData()
+        My.Settings.Reload()
+        ConString = My.Settings.EF_Con
         Dim sspEntities = New SSPEntities()
+        'Dim user = System.Environment.UserName
+        'ConString = ConString.Replace("*****", System.Environment.UserName + "@cap.org")
+        sspEntities.Database.Connection.ConnectionString = ConString
         Dim query =
             From TV In sspEntities.TemplateVersions
             Join PT In sspEntities.ProtocolTemplates On PT.ProtocolTemplateKey Equals TV.ProtocolTemplateKey
@@ -67,8 +64,9 @@ Partial Public Class MainWindow
             PT.DraftTemplateVerKey = TV.TemplateVersionKey
             )
             Order By R.ReleaseVersionSuffix, PT.Lineage
-            Select PT.Lineage, TV.TemplateVersionKey, TV.Version, R.ReleaseVersionSuffix, TV.ProtocolTemplateKey, TV.ProtocolVersionKey
+            Select PT.Lineage, TV.TemplateVersionKey, TV.ReleaseKey, TV.Version, R.ReleaseVersionSuffix, TV.ProtocolTemplateKey, TV.ProtocolVersionKey
 
+        'ConString = sspEntities.Database.Connection.ConnectionString
 
         Try
             GridList = query.ToList()
@@ -83,12 +81,18 @@ Partial Public Class MainWindow
 
 
     Private Sub btnGenAll_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles btnGenAllChecked.Click
-        BrowserPath = txtBrowserPath.Text.Trim
-        'FilePath = txtFilePath.Text.Trim
+        'BrowserPath = txtBrowserPath.Text.Trim
         Dim cur = Application.Current.MainWindow.Cursor
-        Dim Gen As New SDC.Gen.API.GenXDT(Environment.ExpandEnvironmentVariables((txtFilePath.Text.Trim)), My.Settings.XslFileName)
-        FilePath = Gen.XMLfilePath  ' if the UI-supplied txtFilePath does not exist, Gen will try to create a default one.  This reassigns Filepath to the default
-        txtFilePath.Text = FilePath ' makes the same change in the UI
+        'Dim Gen As New SDC.Gen.API.GenXDT(Environment.ExpandEnvironmentVariables((txtFilePath.Text.Trim)), My.Settings.XslFileName, ConString, BrowserPath)
+        'FilePath = SdcXmlGenerator.XMLfilePath  ' if the UI-supplied txtFilePath does not exist, Gen will try to create a default one.  This reassigns Filepath to the default
+        'txtFilePath.Text = FilePath ' makes the same change in the UI
+
+        'Dim key As String = Nothing
+        Dim loadBrowser As Boolean = Nothing
+        Dim createHTML As Boolean = Nothing
+        Dim nmspace As String = Nothing
+        Init(loadBrowser, createHTML, nmspace)
+
 
         If FileIO.FileSystem.DirectoryExists(FilePath) Then
             Dim templatesMap As New Dictionary(Of String, String)
@@ -98,11 +102,13 @@ Partial Public Class MainWindow
             Dim colLineage = gridControl1.Columns(2)
 
             For Each node In Me.TreeListView1.Nodes.Where(Function(n) CBool(n.IsChecked))
-                templatesMap.Add(TreeListView1.GetNodeValue(node, colTVkey).ToString, TreeListView1.GetNodeValue(node, colLineage).ToString) 'cols 0 & 3
+                templatesMap.Add(TreeListView1.GetNodeValue(node, colTVkey).ToString, 'col 0
+                                 TreeListView1.GetNodeValue(node, colLineage          'col 3
+                                 ).ToString) 'cols 0 & 3
             Next
 
-
-            Gen.MakeXDTsFromTemplateMap(templatesMap, FilePath, CBool(chkCreateHTML.IsChecked))
+            SdcXmlGenerator.MakeXDTsFromTemplateMap(
+                templatesMap, FilePath, CBool(chkCreateHTML.IsChecked))
         Else
             Beep()
             MsgBox("The file path for saving SDC XML files does not exist at: " & FilePath, MsgBoxStyle.Exclamation, "Folder does not exist")
@@ -114,24 +120,17 @@ Partial Public Class MainWindow
 
 
     Private Sub btnGenerate_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles btnGenerate.Click
-        Dim key As String = txtID.Text.Trim
-        Dim fileName = txtFileName.Text.Trim
-        Dim loadBrowser = CBool(chkShowBrowser.EditValue)
-        Dim createHTML = CBool(chkCreateHTML.EditValue)
-        BrowserPath = txtBrowserPath.Text.Trim
-        'FilePath = txtFilePath.Text.Trim
-        Dim ns As String = txtNamespace.Text.Trim
 
-        Dim Gen As New SDC.Gen.API.GenXDT(Environment.ExpandEnvironmentVariables(txtFilePath.Text.Trim), My.Settings.XslFileName)
-        FilePath = Gen.XMLfilePath  ' if the UI-supplied txtFilePath does not exist, Gen will try to create a default one.  This reassigns Filepath to the default
-        txtFilePath.Text = FilePath ' makes the same change in the UI
+        Dim key As String = Me.txtID.Text.Trim()
+        Dim loadBrowser As Boolean = Nothing
+        Dim createHTML As Boolean = Nothing
+        Dim nmspace As String = Nothing
+        Dim customFileName As String = txtFileName.Text.Trim()
+        Init(loadBrowser, createHTML, nmspace)
 
         If FileIO.FileSystem.DirectoryExists(FilePath) Then
-            If key > "" AndAlso ns > "" Then
-                'key = (String.Format("{0}.{1}", key, ns))
-                'TODO: Need to cache this generator, since it takes time to create it new each time.
-
-                Gen.MakeOneXDT(key, FilePath, loadBrowser, BrowserPath, createHTML)   ', fileName
+            If key > "" AndAlso nmspace > "" Then
+                SdcXmlGenerator.MakeOneXDT(key, FilePath, loadBrowser, BrowserPath, createHTML, customFileName)   ', fileName
             Else
                 Beep()
                 MsgBox("You must enter valid values for template Key (ID), Namespace, and Filepath", MsgBoxStyle.Exclamation, "Invalid Entry")
@@ -143,6 +142,27 @@ Partial Public Class MainWindow
 
     End Sub
 
+    Private Sub Init(ByRef loadBrowser As Boolean, ByRef createHTML As Boolean, ByRef ns As String)
+        loadBrowser = CBool(chkShowBrowser.EditValue)
+        createHTML = CBool(chkCreateHTML.EditValue)
+        ns = txtNamespace.Text.Trim
+
+        If Not String.IsNullOrWhiteSpace(txtFilePath.Text.Trim) Then
+            FilePath = Environment.ExpandEnvironmentVariables(txtFilePath.Text.Trim)
+        ElseIf Not String.IsNullOrWhiteSpace(My.Settings.FilePath) Then
+            FilePath = Environment.ExpandEnvironmentVariables(My.Settings.FilePath.Trim())
+        End If
+
+        If Not String.IsNullOrWhiteSpace(Me.txtBrowserPath.Text.Trim) Then
+            BrowserPath = Environment.ExpandEnvironmentVariables(txtBrowserPath.Text.Trim)
+        ElseIf Not String.IsNullOrWhiteSpace(My.Settings.BrowserPath64) Then
+            BrowserPath = Environment.ExpandEnvironmentVariables(My.Settings.BrowserPath64.Trim())
+        ElseIf Not String.IsNullOrWhiteSpace(My.Settings.BrowserPath32) Then
+            BrowserPath = Environment.ExpandEnvironmentVariables(My.Settings.BrowserPath32.Trim())
+        End If
+
+        If IsNothing(SdcXmlGenerator) Then SdcXmlGenerator = New SDC.Gen.API.GenXDT(FilePath, My.Settings.XslFileName, ConString, BrowserPath)
+    End Sub
 
     Public Shared Function Nstr(InObj As Object, Optional strDefault As String = "") As Object
         If InObj Is Nothing Then Return strDefault 'don't allow an unititialized object to be returned
@@ -189,7 +209,7 @@ Partial Public Class MainWindow
     '        'txtID.UpdateLayout()
     '        txtNamespace.Text = key(1)
 
-    '        'Conside inmplementing a DoEvents on main UI thread here, to update the UI
+    '        'Consider inmplementing a DoEvents on main UI thread here, to update the UI
     '        'https://www.devexpress.com/Support/Center/Question/Details/Q322288/gridcontrol-how-to-force-cell-errors-redraw-idxdataerrorinfo
     '        'https://stackoverflow.com/questions/4502037/where-is-the-application-doevents-in-wpf
     '        'http://geekswithblogs.net/NewThingsILearned/archive/2008/08/25/refresh--update-wpf-controls.aspx
@@ -214,20 +234,19 @@ Partial Public Class MainWindow
 
     Private Sub gridControl1_GotFocus(sender As Object, e As RoutedEventArgs) Handles gridControl1.GotFocus
         Dim cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
-        Dim CTVkey = Split(cellText, ".", 2)
-        txtID.Text = CTVkey(0)
+        Dim ID = Split(cellText, ".", 2)
+        txtID.Text = ID(0)
         Debug.WriteLine(sender.ToString, e.ToString)
 
     End Sub
 
-    Private Sub btnLoadTE_Click(sender As Object, e As RoutedEventArgs) Handles gridControl1.MouseDown
+    Private Sub btnKey_Click(sender As Object, e As RoutedEventArgs) Handles gridControl1.MouseDown
         Try
             Dim btn As Button = TryCast(sender, Button)
+
             If btn IsNot Nothing Then
                 Dim cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
-                Dim CTVkey = Split(cellText, ".", 2)
                 gridControl1.Cursor = Cursors.Wait
-                'txtID.Text = CTVkey(0)
 
                 If btn.Name = "btnKey" Then 'Geneate XML/HTML
                     'btn.Content = "Gen: " + cellText
