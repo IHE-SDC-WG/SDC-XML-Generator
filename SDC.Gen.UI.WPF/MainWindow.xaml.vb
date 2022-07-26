@@ -51,6 +51,7 @@ Partial Public Class MainWindow
         'Dim user = System.Environment.UserName
         'ConString = ConString.Replace("*****", System.Environment.UserName + "@cap.org")
         sspEntities.Database.Connection.ConnectionString = ConString
+        'We could add a field to display the "Initial Catalog=" and "Data Source=" from the ConString in the UI/XAML
         Dim query =
             From TV In sspEntities.TemplateVersions
             Join PT In sspEntities.ProtocolTemplates On PT.ProtocolTemplateKey Equals TV.ProtocolTemplateKey
