@@ -28,10 +28,10 @@ public partial class int_Stype : BaseType
 {
     
     private bool _shouldSerializequantEnum;
-    
-    private bool _shouldSerializeval;
-    
-    private static XmlSerializer serializer;
+        [XmlIgnoreAttribute()]
+        public bool _shouldSerializeval; //Need to allow serializing "0" values, so make this public
+
+        private static XmlSerializer serializer;
     
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public virtual int val { get; set; }

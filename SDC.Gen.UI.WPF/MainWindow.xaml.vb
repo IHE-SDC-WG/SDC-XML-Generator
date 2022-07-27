@@ -51,7 +51,22 @@ Partial Public Class MainWindow
         'Dim user = System.Environment.UserName
         'ConString = ConString.Replace("*****", System.Environment.UserName + "@cap.org")
         sspEntities.Database.Connection.ConnectionString = ConString
-        'We could add a field to display the "Initial Catalog=" and "Data Source=" from the ConString in the UI/XAML
+
+        'We can display the "Initial Catalog=" and "Data Source=" from the ConString in the UI/XAML
+        Dim conBuilder = New System.Data.Common.DbConnectionStringBuilder()
+        conBuilder.ConnectionString = ConString
+
+        Dim server As String
+        Dim db As String
+
+        Dim temp As String = ""
+        temp = conBuilder("Data Source").ToString()
+        If String.IsNullOrWhiteSpace(temp) Then server = "?" Else server = temp
+        temp = conBuilder("Initial Catalog").ToString()
+        If String.IsNullOrWhiteSpace(temp) Then db = "?" Else db = temp
+
+        button.Content = "Connect Database" & "  (Current Server = " & server & ", " & "Database = " & db & ")"
+
         Dim query =
             From TV In sspEntities.TemplateVersions
             Join PT In sspEntities.ProtocolTemplates On PT.ProtocolTemplateKey Equals TV.ProtocolTemplateKey

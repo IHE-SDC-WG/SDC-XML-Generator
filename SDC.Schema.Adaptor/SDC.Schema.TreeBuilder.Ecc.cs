@@ -1125,14 +1125,15 @@ namespace SDC
                         {
                             dt.val = TrimZeros(@DefaultValue);
                             dt.valSpecified = true;
+                            dt._shouldSerializeval = true;
                         }
                         //TODO: dt.minExclusive = (decimal)drFormDesign["minExclusive"];
 
                         if (!drFormDesign.IsNull("AnswerMinValue") && drFormDesign["AnswerMinValue"] is decimal @AnswerMinValue)
                         {
                             dt.minInclusive = TrimZeros(@AnswerMinValue);
-                            dt.minInclusiveSpecified = true; //
-                            dt.ShouldSerializemaxInclusive();
+                            dt.minInclusiveSpecified = true;
+                            dt._shouldSerializeminInclusive = true;
                         }
                         //TODO: dt.maxExclusive = (decimal)drFormDesign["maxExclusive"];
                         //if (!drFormDesign.IsNull("AnswerMaxValue")) dt.maxInclusive = (decimal)drFormDesign["AnswerMaxValue"];
@@ -1140,6 +1141,7 @@ namespace SDC
                         {
                             dt.maxInclusive = TrimZeros(AnswerMaxValue);
                             dt.maxInclusiveSpecified = true;
+                            dt._shouldSerializemaxInclusive = true;
                         }
                         //if (!drFormDesign.IsNull("AnswerMaxValue"))
                         //{
@@ -1165,15 +1167,15 @@ namespace SDC
                             catch { throw new OverflowException("Could not convert AnswerMaxDecimals to byte"); }
                         }
 
-                        if (!drFormDesign.IsNull("AnswerMaxChars") && drFormDesign["AnswerMaxChars"] is int AnswerMaxChars)
-                        {
-                            try
-                            {
-                                dt.totalDigits = Convert.ToByte(AnswerMaxChars);
-                                dt.totalDigitsSpecified = true;
-                            }
-                            catch { throw new OverflowException("Could not convert @AnswerMaxChars to byte"); }
-                        }
+                        //if (!drFormDesign.IsNull("AnswerMaxChars") && drFormDesign["AnswerMaxChars"] is int AnswerMaxChars)
+                        //{
+                        //    try
+                        //    {
+                        //        dt.totalDigits = Convert.ToByte(AnswerMaxChars);
+                        //        dt.totalDigitsSpecified = true;
+                        //    }
+                        //    catch { throw new OverflowException("Could not convert @AnswerMaxChars to byte"); }
+                        //}
 
                         //TODO: dt.mask = (string)drFormDesign["mask"];//TODO: missing
                         dt.quantEnum = AssignQuantifier();
