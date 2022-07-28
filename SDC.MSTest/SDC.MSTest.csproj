@@ -109,10 +109,6 @@
       <Project>{3A26EEFB-B1FB-4832-84F1-053BB55E7DBE}</Project>
       <Name>SDC.Schema.Adaptor</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SDC.Schema\SDC.Schema.csproj">
-      <Project>{3c071543-1e33-4ca3-97fb-808b82d37b5c}</Project>
-      <Name>SDC.Schema</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
