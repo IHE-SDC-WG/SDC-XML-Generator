@@ -12,8 +12,20 @@ namespace SDC.DAL.DataSets
     /// <summary>
     /// Data access object for checklist template
     /// </summary>
-    public class FormDesignDataSets : IFormDesignDataSets
+    public class FormDesignDataSets : IFormDesignDataSets, IDisposable
     {
+
+        private SqlConnection con { get; set; }
+
+        public string conString{ get; set; }
+
+        private bool disposedValue;
+
+        public FormDesignDataSets(string ConnectionString)
+        {
+            conString = ConnectionString;
+        }
+
         /// <summary>
         /// Gets all template items for a specific template
         /// </summary>
@@ -693,42 +705,59 @@ SELECT  DISTINCT
         private DataTable CreateDataTable(string TemplateVersionKey, string sql)
         {
             DataTable dt;
-            using (var con = new SqlConnection())
+            if (con == null)
             {
+                con = new SqlConnection();
+                if(conString.Length > 0) 
+                    con.ConnectionString = conString;
+                else throw new NoNullAllowedException("Connection string is empty or null");
+            }
                 try
-                {
-                    con.ConnectionString = Properties.Settings.Default.SSP_Con;
+                {                    
                     using (var cmd = con.CreateCommand())
                     {
                         cmd.CommandType = CommandType.Text;
                         cmd.CommandText = sql;
-                        if (int.TryParse(TemplateVersionKey, out int result))
+                        if (int.TryParse(TemplateVersionKey, out int result)) //TODO: this requires an int key for now, but the SDC ID does not need to be an int
                             cmd.Parameters.Add("@TemplateVersionkey", SqlDbType.Int).Value = result;
-                        con.Open();
-
+                        if(! (con.State.ToString() == "Open")) con.Open();
+                        
                         dt = new DataTable();
                         dt.Load(cmd.ExecuteReader());
                         return dt;
                     }
                 }
-                catch
-                { //main DB can't be reached, so use local connection string with local SQL Svr
-                    //con.ConnectionString = Properties.Settings.Default.SSP_Con_local;
-                    //using (var cmd = con.CreateCommand())
-                    //{
-                    //    cmd.CommandType = CommandType.Text;
-                    //    cmd.CommandText = sql;
-                    //    cmd.Parameters.Add("@VersionCkey", SqlDbType.Decimal).Value = TemplateVersionKey;
-                    //    con.Open();
+                catch {return null; }
+        }
 
-                    //    dt = new DataTable();
-                    //    dt.Load(cmd.ExecuteReader());
-                    //    return dt;
-                    con.Dispose();
-                    return null;
-                    //}
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    // TODO: dispose managed state (managed objects)
                 }
+
+                // TODO: free unmanaged resources (unmanaged objects) and override finalizer
+                con.Dispose();
+                // TODO: set large fields to null
+                disposedValue = true;
             }
+        }
+
+        // // TODO: override finalizer only if 'Dispose(bool disposing)' has code to free unmanaged resources
+        // ~FormDesignDataSets()
+        // {
+        //     // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+        //     Dispose(disposing: false);
+        // }
+
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
         }
     }
 }

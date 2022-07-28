@@ -1118,28 +1118,78 @@ namespace SDC
                         dt.ElementName = itemDataType;
                         //dt.val = drFormDesign["DefaultValue"] as decimal?;
                         //SDCHelpers.NZ(drFormDesign["DefaultValue"], dt.val);
-                        if( decimal.TryParse(drFormDesign["DefaultValue"].ToString(), out decimal val)) dt.val = val;
+                        //if (decimal.TryParse(drFormDesign["DefaultValue"].ToString(), out decimal val)) dt.val = val;
 
-                        //TODO: dt.minExclusive = (decimal)drFormDesign["minExclusive"];
-                        if (!drFormDesign.IsNull("AnswerMinValue")) dt.minInclusive = (decimal)drFormDesign["AnswerMinValue"];
-                        //TODO: dt.maxExclusive = (decimal)drFormDesign["maxExclusive"];
-                        //SDCHelpers.NZ(drFormDesign["AnswerMaxValue"], dt.maxInclusive);
-                        if (!drFormDesign.IsNull("AnswerMaxValue")) dt.maxInclusive = (decimal)drFormDesign["AnswerMaxValue"];
-                        //SDCHelpers.NZ(drFormDesign["AnswerMaxChars"], dt.totalDigits);
-                        if (!drFormDesign.IsNull("AnswerMaxChars")) 
+                        // #CheckSpecified
+                        if (!drFormDesign.IsNull("DefaultValue") && drFormDesign["DefaultValue"] is decimal @DefaultValue)
                         {
-                            //dt.totalDigits = Convert.ToByte(drFormDesign["AnswerMaxChars"]);//AnswerMaxChars
-                            //dt.totalDigitsSpecified = true;
+                            dt.val = TrimZeros(@DefaultValue);
+                            dt.valSpecified = true;
+                            dt._shouldSerializeval = true;
                         }
-                        //SDCHelpers.NZ(drFormDesign["AnswerMaxDecimals"], dt.fractionDigits);
+                        //TODO: dt.minExclusive = (decimal)drFormDesign["minExclusive"];
 
+                        if (!drFormDesign.IsNull("AnswerMinValue") && drFormDesign["AnswerMinValue"] is decimal @AnswerMinValue)
+                        {
+                            dt.minInclusive = TrimZeros(@AnswerMinValue);
+                            dt.minInclusiveSpecified = true;
+                            dt._shouldSerializeminInclusive = true;
+                        }
+                        //TODO: dt.maxExclusive = (decimal)drFormDesign["maxExclusive"];
+                        //if (!drFormDesign.IsNull("AnswerMaxValue")) dt.maxInclusive = (decimal)drFormDesign["AnswerMaxValue"];
+                        if (!drFormDesign.IsNull("AnswerMaxValue") && drFormDesign["AnswerMaxValue"] is decimal AnswerMaxValue)
+                        {
+                            dt.maxInclusive = TrimZeros(AnswerMaxValue);
+                            dt.maxInclusiveSpecified = true;
+                            dt._shouldSerializemaxInclusive = true;
+                        }
+                        //if (!drFormDesign.IsNull("AnswerMaxValue"))
+                        //{
+                        //    string s = Convert.ToString(drFormDesign["AnswerMaxValue"]);
+                        //    var c = new char[1]; c[0] = '0';
+
+                        //    decimal.TryParse(s.TrimEnd(c), out decimal valD);
+                        //    dt.maxInclusive = valD;
+                        //}
+
+
+                        //SDCHelpers.NZ(drFormDesign["AnswerMaxDecimals"], dt.fractionDigits);
                         //TODO:  Need to truncate the fractional digits  according to the fractionDigits number of digits.  This requires converting to string-based properties instead of decimal
                         //see the Integer code for an example
-                        if (!drFormDesign.IsNull("AnswerMaxDecimals")) dt.fractionDigits = Convert.ToByte(drFormDesign["AnswerMaxDecimals"]);//AnswerMaxDecimals
+
+                        if (!drFormDesign.IsNull("AnswerMaxDecimals") && drFormDesign["AnswerMaxDecimals"] is int AnswerMaxDecimals)
+                        {
+                            try
+                            {
+                                dt.fractionDigits = Convert.ToByte(AnswerMaxDecimals);  //this does appear in the XML output
+                                dt.fractionDigitsSpecified = true;
+                            }
+                            catch { throw new OverflowException("Could not convert AnswerMaxDecimals to byte"); }
+                        }
+
+                        //if (!drFormDesign.IsNull("AnswerMaxChars") && drFormDesign["AnswerMaxChars"] is int AnswerMaxChars)
+                        //{
+                        //    try
+                        //    {
+                        //        dt.totalDigits = Convert.ToByte(AnswerMaxChars);
+                        //        dt.totalDigitsSpecified = true;
+                        //    }
+                        //    catch { throw new OverflowException("Could not convert @AnswerMaxChars to byte"); }
+                        //}
+
                         //TODO: dt.mask = (string)drFormDesign["mask"];//TODO: missing
                         dt.quantEnum = AssignQuantifier();
 
                         rfParent.Response.DataTypeDE_Item = dt;
+
+                        //Remove trailing zeros from decimal XML output.
+                        decimal TrimZeros(decimal dbVal)
+                        {
+                            string s = Convert.ToString(dbVal);
+                            var c = new char[1]; c[0] = '0';
+                            decimal.TryParse(s.TrimEnd(c), out decimal valD);
+                            return valD;
+                        }
                     }
                     break;
                 case "double":
@@ -1158,6 +1208,11 @@ namespace SDC
                         dt.fractionDigits = Convert.ToByte(drFormDesign["AnswerMaxDecimals"]);//AnswerMaxDecimals
                         //TODO: dt.mask = (string)drFormDesign["mask"];//TODO: missing
                         dt.quantEnum = AssignQuantifier();
+
+                        dt.minInclusiveSpecified = true; // #CheckSpecified
+                        dt.maxInclusiveSpecified = true;
+                        dt.totalDigitsSpecified = true;
+                        dt.fractionDigitsSpecified = true;
 
                         rfParent.Response.DataTypeDE_Item = dt;
                     }
@@ -1194,6 +1249,11 @@ namespace SDC
                         dt.fractionDigits = Convert.ToByte(drFormDesign["AnswerMaxDecimals"]);
                         //TODO: dt.mask = (string)drFormDesign["mask"];
                         dt.quantEnum = AssignQuantifier();
+
+                        dt.minInclusiveSpecified = true; // #CheckSpecified
+                        dt.maxInclusiveSpecified = true;
+                        dt.totalDigitsSpecified = true;
+                        dt.fractionDigitsSpecified = true;
 
                         rfParent.Response.DataTypeDE_Item = dt;
                     }
@@ -1315,11 +1375,15 @@ namespace SDC
                         //TODO: dt.mask = (string)drFormDesign["mask"];
                         dt.quantEnum = AssignQuantifier();
 
+                        dt.minInclusiveSpecified = true; // #CheckSpecified
+                        dt.maxInclusiveSpecified = true;
+                        dt.totalDigitsSpecified = true;
+
                         rfParent.Response.DataTypeDE_Item = dt;
                     }
                     break;
-                case "integer":
-                case "Integer":
+                case "X_integer":  //representing W3C "integer" as derived from the 128 bit W3C decimal type is now deprecated.
+                case "X_Integer":
 
                     dataTypeEnum = ItemChoiceType.integer;
                     if (true)
@@ -1334,11 +1398,65 @@ namespace SDC
                         //if (drFormDesign["minExclusive"] is long) dt.minInclusive = (string)drFormDesign["minExclusive"];  //not in table
                         //if (drFormDesign["maxExclusive"] is long) dt.minInclusive = (string)drFormDesign["maxExclusive"];  //not in table
 
-
+                        //minInclusive attribute does appear in XML when set to 0 (default value)
                         if (drFormDesign["AnswerMinValue"] is decimal) dt.minInclusive = decimal.Truncate((decimal)drFormDesign["AnswerMinValue"]).ToString();
                         if (drFormDesign["AnswerMaxValue"] is decimal) dt.maxInclusive = decimal.Truncate((decimal)drFormDesign["AnswerMaxValue"]).ToString();
 
-                        if (drFormDesign["AnswerMaxChars"] is byte) dt.totalDigits = Convert.ToByte(drFormDesign["AnswerMaxChars"]);
+
+                        if (drFormDesign["AnswerMaxChars"] is byte && !((byte)drFormDesign["AnswerMaxChars"] == 0))
+                            if (drFormDesign["AnswerMaxChars"] is byte && !((byte)drFormDesign["AnswerMaxChars"] == 0))
+                            {
+                                dt.totalDigits = Convert.ToByte(drFormDesign["AnswerMaxChars"]);
+                                dt.totalDigitsSpecified = true;  // #CheckSpecified
+                            }
+                        //TODO: dt.mask = (string)drFormDesign["mask"];
+                        dt.quantEnum = AssignQuantifier();
+
+                        //dt.minInclusiveSpecified = true;//these next 2 proprties do not allow the Specify option
+                        //dt.maxInclusiveSpecified = true;
+
+                        rfParent.Response.DataTypeDE_Item = dt;
+                    }
+                    break;
+                case "integer":
+                case "Integer":
+
+                    dataTypeEnum = ItemChoiceType.@int; //The W3C data type was changed here to @int, which is a "normal" 32 bit integer in W3C
+                                                        //integer was 128 bits, which is drived from decimal, and is incorrect for nearly all clinical use cases.
+                                                        //This will cause the generated XML to use <int> instead of <integer>
+                    if (true)
+                    {
+                        //TODO:  bug in xsdCode++ - uses wrong data type - uses string because there is no integer (truncated decimal) format in .NET
+                        //However, we test to ensure that the database value is a long- it would be better to test against a truncated decimal
+                        var dt = new int_DEtype(rfParent.Response);
+                        dt.ElementName = "int";
+                        if (drFormDesign["DefaultValue"] is decimal) dt.val = Convert.ToInt32(drFormDesign["DefaultValue"]); //could over/underflow
+                        //dt.valDec = (decimal)drFormDesign["DefaultValue"];
+                        //dt.val= Convert.ToDecimal(drFormDesign["DefaultValue"]);   //TODO:  bug in xsdCode++ - wrong data type
+
+                        //if (drFormDesign["minExclusive"] is long) dt.minInclusive = (string)drFormDesign["minExclusive"];  //not in table
+                        //if (drFormDesign["maxExclusive"] is long) dt.minInclusive = (string)drFormDesign["maxExclusive"];  //not in table
+
+                        //minInclusive attribute does appear in XML when set to 0 (default value)
+                        if (drFormDesign["AnswerMinValue"] is decimal || drFormDesign["AnswerMinValue"] is int)
+                        {
+                            dt.minInclusive = Convert.ToInt32(drFormDesign["AnswerMinValue"]); //could over/underflow
+                            dt.minInclusiveSpecified = true;
+                            dt._shouldSerializeminInclusive = true;
+                        }
+                        if (drFormDesign["AnswerMaxValue"] is decimal || drFormDesign["AnswerMaxValue"] is int)
+                        {
+                            dt.maxInclusive = Convert.ToInt32(drFormDesign["AnswerMaxValue"]); //could over/underflow
+                            dt.maxInclusiveSpecified = true;
+                            dt._shouldSerializemaxInclusive = true;
+                        }
+
+                        if (drFormDesign["AnswerMaxChars"] is byte && !((byte)drFormDesign["AnswerMaxChars"] == 0))
+                            if (drFormDesign["AnswerMaxChars"] is byte && !((byte)drFormDesign["AnswerMaxChars"] == 0))
+                            {
+                                dt.totalDigits = Convert.ToByte(drFormDesign["AnswerMaxChars"]);
+                                dt.totalDigitsSpecified = true;  // #CheckSpecified
+                            }
                         //TODO: dt.mask = (string)drFormDesign["mask"];
                         dt.quantEnum = AssignQuantifier();
 
@@ -1358,6 +1476,9 @@ namespace SDC
                         //TODO: dt.maxExclusive = (long)drFormDesign["maxExclusive"];
                         dt.maxInclusive = (long)drFormDesign["AnswerMaxValue"];
                         dt.totalDigits = Convert.ToByte(drFormDesign["AnswerMaxChars"]);
+                        dt.minInclusiveSpecified = true; // #CheckSpecified
+                        dt.maxInclusiveSpecified = true;
+                        dt.totalDigitsSpecified = true;
                         //TODO: dt.mask = (string)drFormDesign["mask"];
                         dt.quantEnum = AssignQuantifier();
 
@@ -1462,7 +1583,12 @@ namespace SDC
                         var dt = new @string_DEtype(rfParent.Response);
                         dt.ElementName = itemDataType;
                         dt.val = (string)drFormDesign["DefaultValue"];
-                        dt.maxLength = Convert.ToInt64((drFormDesign["AnswerMaxChars"] is DBNull) ? 80L : drFormDesign["AnswerMaxChars"]);
+                        dt.maxLength = Convert.ToInt64((drFormDesign["AnswerMaxChars"] is DBNull) ? 4000L : drFormDesign["AnswerMaxChars"]);
+                        dt.maxLengthSpecified = true; // #CheckSpecified // maxLength is a long data type.
+                        // maxLengthSpecified does not force the attribute to appear whhen its value is 0 (default for long)
+                        //ShouldSerializemaxLength suppresses the serialization of maxLength default values (0 for long), and overrides dt.maxLengthSpecified.
+                        //Thus, if maxLength = 0 (default), then ShouldSerialize wins, and the maxLength will not appear in the XML output.  
+                        //This same pattern applies to every attribute that supports ShouldSerialize...
                         //TODO: dt.minLength = (long)drFormDesign["minLength"];
                         //TODO: dt.pattern = (string)drFormDesign["pattern"];
 

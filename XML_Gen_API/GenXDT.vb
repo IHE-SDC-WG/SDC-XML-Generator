@@ -1,4 +1,5 @@
 ﻿'Imports System.Runtime.InteropServices
+Imports SDC.DAL.DataSets
 Imports System.Xml.Xsl
 Imports System
 Imports System.IO
@@ -12,128 +13,29 @@ Imports System.Data
 
 
 Public Class GenXDT
-    Private _FileName As String
-
 #Region "Private Fields and Events  "
     Public Event XDT_Ready(XDT As String)
     Public Event HTML_Ready(HTML As String)
     'Define the event
     'Public Event XDT_Ready As XDTchangeDelegate
     'Public Event HTML_Ready As HTMLchangeDelegate
-
-    Public Property FileName As String
-        Get
-            Return _FileName
-        End Get
-        Private Set
-            _FileName = Value
-        End Set
-    End Property
-
-    Dim _xMLfilePath As String
+    ReadOnly Property DatasetBuilder As FormDesignDataSets
+    Private Property FileName As String
     Property XMLfilePath As String
-        Get
-            Return _xMLfilePath
-        End Get
-        Private Set
-            _xMLfilePath = Value
-        End Set
-    End Property
-
-    Dim _hTMLfilePath As String
-    Property HTMLfilePath As String
-        Get
-            Return _hTMLfilePath
-        End Get
-        Private Set
-            _hTMLfilePath = Value
-        End Set
-    End Property
-
-    Dim _hTMLfileName As String
-    Property HTMLfileName As String
-        Get
-            Return _hTMLfileName
-        End Get
-        Private Set
-            _hTMLfileName = Value
-        End Set
-    End Property
-
-    Dim _xMLfileName As String
-    Property XMLfileName As String
-        Get
-            Return _xMLfileName
-        End Get
-        Private Set
-            _xMLfileName = Value
-        End Set
-    End Property
-
-    Dim _fullXMLfilePath As String
-    Property FullXMLfilePath As String
-        Get
-            Return _fullXMLfilePath
-        End Get
-        Private Set
-            _fullXMLfilePath = Value
-        End Set
-    End Property
-
-    Dim _fullHTMLfilePath As String
-    Property FullHTMLfilePath As String
-        Get
-            Return _fullHTMLfilePath
-        End Get
-        Private Set
-            _fullHTMLfilePath = Value
-        End Set
-    End Property
-
-    Dim _browserPath As String
+    Private Property HTMLfilePath As String
+    Private Property HTMLfileName As String
+    Private Property XMLfileName As String
+    Private Property FullXMLfilePath As String
+    Private Property FullHTMLfilePath As String
     Property BrowserPath As String
-        Get
-            Return _browserPath
-        End Get
-        Private Set
-            _browserPath = Value
-        End Set
-    End Property
-
-    Dim _transform As XslCompiledTransform
     'Private Property TemplateDataMapper As Capx.Apps.ChecklistTemplateGenerator.SrTemplateDataMapper
-
     'Private Property Transform() As XslCompiledTransform()
-    Property Transform As XslCompiledTransform
-        Get
-            Return _transform
-        End Get
-        Private Set
-            _transform = Value
-        End Set
-    End Property
-
-    Private Property MaxXslIndex() As Integer = 4
-    Private Property RI_Folder() As String
-    Dim _xslFileName As String
-    Property XslFileName() As String
-        Get
-            Return _xslFileName
-        End Get
-        Private Set
-            _xslFileName = Value
-        End Set
-    End Property
-
-    Dim _fullXSLfilePath As String
-    Property FullXSLfilePath As String
-        Get
-            Return _fullXSLfilePath
-        End Get
-        Private Set(ByVal Value As String)
-            _fullXSLfilePath = Value
-        End Set
-    End Property
+    Private Property Transform As XslCompiledTransform
+    ReadOnly Property MaxXslIndex() As Integer = 4
+    ReadOnly Property RI_Folder() As String
+    ReadOnly Property XslFileName() As String
+    ReadOnly Property FullXSLfilePath As String
+    ReadOnly Property ConString As String
 
     'Dim _defaultXslFileName As String
     'Property DefaultXslFileName As String
@@ -147,16 +49,13 @@ Public Class GenXDT
 #End Region
 
 #Region "ctor"
-    Public Sub New(RootFilePath As String, Optional defaultFileNameXSL As String = "")
-        'TemplateDataMapper = New Capx.Apps.ChecklistTemplateGenerator.SrTemplateDataMapper
-        Dim dir As DirectoryInfo
-        If RootFilePath.Length = 0 Then RootFilePath = Environment.ExpandEnvironmentVariables(My.MySettings.Default.FilePath)
+    Public Sub New(RootFilePath As String, FileNameXSL As String, ConnectionString As String, WebBrowserPath As String)
 
-        If defaultFileNameXSL.Length <> 0 Then
-            XslFileName = defaultFileNameXSL
-        Else XslFileName = My.MySettings.Default.XslFileName
-        End If
-        'Test for existance of the path
+        XslFileName = FileNameXSL
+        DatasetBuilder = New FormDesignDataSets(ConnectionString)
+        BrowserPath = WebBrowserPath
+
+        'Test for existance of the RootFilePath
         If Not My.Computer.FileSystem.DirectoryExists(RootFilePath) Then
             Try
                 My.Computer.FileSystem.CreateDirectory(RootFilePath)
@@ -165,6 +64,7 @@ Public Class GenXDT
                 Try
                     Dim defaultPath = Environment.ExpandEnvironmentVariables("%USERPROFILE%\Desktop\SDC Files")
                     My.Computer.FileSystem.CreateDirectory(defaultPath) 'create SDC folder in the desktop folder
+                    Dim dir As DirectoryInfo
                     dir = My.Computer.FileSystem.GetDirectoryInfo(defaultPath)
                     RootFilePath = dir.FullName()
                     MsgBox(
@@ -195,18 +95,8 @@ XML generation cannot continue" & vbCrLf & ex.Message, MsgBoxStyle.OkOnly, "Erro
 
         End If
 
-
-        'If RootFilePath = "" OrElse Not FileIO.FileSystem.DirectoryExists(RootFilePath) Then
-        '    Beep()
-        '    MsgBox("The File Path is not valid. Enter a valid path in the File Path field (right panel) and try again.", MsgBoxStyle.OkOnly, "Error!")
-        '    Return
-        'End If
-
         XMLfilePath = RootFilePath
         HTMLfilePath = RootFilePath + "\HTML"
-
-        'DefaultXslFileName = defaultFileNameXSL
-        XslFileName = defaultFileNameXSL   'My.MySettings.Default.XslFileName
 
 #Region "junk"
         ''TODO: This initialization should be done in an XML settings file
@@ -239,7 +129,6 @@ XML generation cannot continue" & vbCrLf & ex.Message, MsgBoxStyle.OkOnly, "Erro
             MsgBox("Error setting XSLT compiler options." & vbCrLf & ex.Message, MsgBoxStyle.OkOnly, "Error!")
         End Try
 
-
 #Region "junk"
 
         'ReDim Transform(MaxXslIndex) 'Create an array of compiled xsl transforms, one for each RI folder
@@ -254,7 +143,6 @@ XML generation cannot continue" & vbCrLf & ex.Message, MsgBoxStyle.OkOnly, "Erro
         'Next
         'Dim xslFile = String.Format("{0}\{1}\{2}", RootFilePath, RI_Folder(i), XslFileName(i))
 #End Region
-
 
         FullXSLfilePath = String.Format("{0}\{1}", XMLfilePath, XslFileName)
         If Not My.Computer.FileSystem.FileExists(FullXSLfilePath) Then
@@ -274,10 +162,6 @@ HTML files cannot be generated until the XSLT file is manually added at this loc
             MsgBox($"Error compiling XSLT file at: {FullXSLfilePath}" & vbCrLf & ex.Message, MsgBoxStyle.OkOnly, "Error!")
         End Try
 
-
-
-
-
     End Sub
 #End Region
 #Region "API Functions"
@@ -285,10 +169,8 @@ HTML files cannot be generated until the XSLT file is manually added at this loc
                    Optional path As String = "",
                    Optional loadBrowser As Boolean = True,
                    Optional webBrowserPath As String = "",
-                   Optional outputHTML As Boolean = False) As String
-
-        'userFileName = userFileName.Trim
-        'XMLfilePath = path
+                   Optional outputHTML As Boolean = False,
+                   Optional customFileName As String = "") As String
 
         If webBrowserPath.Length > 0 Then BrowserPath = webBrowserPath
         If path.Length > 0 Then
@@ -297,7 +179,7 @@ HTML files cannot be generated until the XSLT file is manually added at this loc
         End If
 
         Dim templateXML As String
-        templateXML = MakeXDT(key)
+        templateXML = MakeXDT(key, customFileName)
 
         If Not String.IsNullOrWhiteSpace(templateXML) Then ' > "" Then
             If outputHTML Then
@@ -349,21 +231,23 @@ HTML files cannot be generated until the XSLT file is manually added at this loc
 #End Region
 
 #Region "Private Helper Methods"
-    Private Function MakeXDT(key As String) As String
+
+    Private Function MakeXDT(key As String, Optional customFileName As String = "") As String
         '!Create the XML:
-        'TemplateDataMapper.XsltFileName = DefaultXslFileName
 
-        Dim ser = New XmlSerializer(GetType(SDC.DAL.DataSets.FormDesignDataSets))
-        Dim fdd = New SDC.DAL.DataSets.FormDesignDataSets()
         Dim stb As SDC.SDCTreeBuilderEcc =
-            New SDC.SDCTreeBuilderEcc(key, fdd, XMLfilePath + "\" + XslFileName)
-        'New SDC.SDCTreeBuilderEcc(key, fdd, "sdctemplate.xslt")
+            New SDC.SDCTreeBuilderEcc(key, DatasetBuilder, XMLfilePath + "\" + XslFileName)
+        FileName = ""
+        'XMLfileName = stb.FormDesign.filename.Replace(":", ".")
+        'HTMLfileName = XMLfileName.Replace(".xml", ".html")
 
-
-        'Dim filename As String = stb.FormDesign.filename
-        XMLfileName = stb.FormDesign.filename.Replace(":", ".")
-        HTMLfileName = XMLfileName.Replace(".xml", ".html")
-        FileName = XMLfileName.Replace(".xml", "")
+        If customFileName.Length > 0 Then
+            XMLfileName = customFileName + ".xml"
+            HTMLfileName = customFileName + ".html"
+        Else
+            XMLfileName = stb.FormDesign.filename.Replace(":", ".")
+            HTMLfileName = XMLfileName.Replace(".xml", ".html")
+        End If
 
         Dim formDesignXml As String = stb.FormDesign.Serialize()
 

@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Resources;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -10,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("College of American Pathologists")]
 [assembly: AssemblyProduct("SDC.DAL.DataSets")]
-[assembly: AssemblyCopyright("Copyright © College of American Pathologists 2016-2021")]
+[assembly: AssemblyCopyright("Copyright © College of American Pathologists 2016-2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +33,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("3.2021.03.08")]
-[assembly: AssemblyFileVersion("3.2021.01.29")]
+[assembly: AssemblyVersion("4.2022.1.24")]
+[assembly: AssemblyFileVersion("4.2022.1.24")]
+[assembly: NeutralResourcesLanguage("")]
