@@ -27,7 +27,7 @@ namespace MSTests
             string key = "", val = "";
 
             var dt = new SDC.DAL.DataSets.FormDesignDataSets();
-            DataTable templateDT = dt.dtGetTemplateList(0);  //the decimal parameter is not used
+            DataTable templateDT = dt.dtGetTemplateList(key);  //the parameter is not used
 
             foreach (DataRow dr in templateDT.Rows)
             {

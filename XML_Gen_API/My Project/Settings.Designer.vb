@@ -53,27 +53,6 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("%USERPROFILE%\Desktop\SDC Files")>  _
-        Public ReadOnly Property FilePath() As String
-            Get
-                Return CType(Me("FilePath"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("sdctemplate.xslt")>  _
-        Public Property XslFileName() As String
-            Get
-                Return CType(Me("XslFileName"),String)
-            End Get
-            Set
-                Me("XslFileName") = value
-            End Set
-        End Property
     End Class
 End Namespace
 

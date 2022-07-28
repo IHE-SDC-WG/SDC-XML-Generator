@@ -3,35 +3,15 @@
   <Options Language="Neutral">
     <Sessions>
       <Item Id="MainSession">
-        <Filter Type="DevExpress.CodeRush.TestRunner.Data.Filters.SessionFilter" Assembly="DevExpress.CodeRush.TestRunner.Data, Version=19.2.9.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
-          <Level LevelType="Test">
-            <Include />
-            <Exclude />
-          </Level>
-          <Level LevelType="Type">
-            <Include />
-            <Exclude />
-          </Level>
-          <Level LevelType="Namespace">
-            <Include />
-            <Exclude />
-          </Level>
-          <Level LevelType="Assembly">
-            <Include />
-            <Exclude />
-          </Level>
-          <Level LevelType="Category">
-            <Include />
-            <Exclude />
-          </Level>
-        </Filter>
-        <SessionName>Main</SessionName>
         <ShowDuration>True</ShowDuration>
         <ShowFailed>True</ShowFailed>
         <ShowIgnored>True</ShowIgnored>
         <ShowNone>True</ShowNone>
         <ShowPassed>True</ShowPassed>
-        <GroupCaption>Project</GroupCaption>
+      </Item>
+      <Item Id="Session1">
+        <SessionName>Session1</SessionName>
+        <ShowDuration>True</ShowDuration>
       </Item>
       <Item Id="Session1">
         <Filter Type="DevExpress.CodeRush.TestRunner.Data.Filters.SessionFilter" Assembly="DevExpress.CodeRush.TestRunner.Data, Version=19.2.9.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4">
@@ -61,6 +41,5 @@
         <GroupCaption>Project</GroupCaption>
       </Item>
     </Sessions>
-    <ActiveSessionName>Main</ActiveSessionName>
   </Options>
 </Root>

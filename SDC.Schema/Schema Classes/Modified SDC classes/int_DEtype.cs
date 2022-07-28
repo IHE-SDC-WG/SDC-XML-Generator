@@ -6,46 +6,46 @@
 #pragma warning disable
 namespace SDC.Schema
 {
-using System;
-using System.Diagnostics;
-using System.Xml.Serialization;
-using System.Collections;
-using System.Xml.Schema;
-using System.ComponentModel;
-using System.IO;
-using System.Text;
-using System.ComponentModel.DataAnnotations;
-using System.Xml;
-using System.Collections.Generic;
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
+    using System.Diagnostics;
+    using System.IO;
+    using System.Text;
+    using System.Xml;
+    using System.Xml.Schema;
+    using System.Xml.Serialization;
 
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:ihe:qrph:sdc:2016")]
-public partial class int_DEtype : int_Stype
-{
-    
-    private bool _shouldSerializeallowAPPROX;
-    
-    private bool _shouldSerializeallowLTE;
-    
-    private bool _shouldSerializeallowLT;
-    
-    private bool _shouldSerializeallowGTE;
-    
-    private bool _shouldSerializeallowGT;
-    
-    private bool _shouldSerializemaxExclusive;
-    
-    private bool _shouldSerializeminExclusive;
-    
-    private bool _shouldSerializemaxInclusive;
-    
-    private bool _shouldSerializeminInclusive;
-    
-    private static XmlSerializer serializer;
-    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn:ihe:qrph:sdc:2016")]
+    public partial class int_DEtype : int_Stype
+    {
+
+        private bool _shouldSerializeallowAPPROX;
+
+        private bool _shouldSerializeallowLTE;
+
+        private bool _shouldSerializeallowLT;
+
+        private bool _shouldSerializeallowGTE;
+
+        private bool _shouldSerializeallowGT;
+        [XmlIgnoreAttribute()]
+        public bool _shouldSerializemaxExclusive; //Need to allow serializing "0" values, so make this public
+        [XmlIgnoreAttribute()]
+        public bool _shouldSerializeminExclusive; //Need to allow serializing "0" values, so make this public
+        [XmlIgnoreAttribute()]
+        public bool _shouldSerializemaxInclusive; //Need to allow serializing "0" values, so make this public
+        [XmlIgnoreAttribute()]
+        public bool _shouldSerializeminInclusive; //Need to allow serializing "0" values, so make this public
+
+        private static XmlSerializer serializer;
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public virtual int minInclusive { get; set; }
         [System.Xml.Serialization.XmlIgnoreAttribute()]
@@ -83,353 +83,353 @@ public partial class int_DEtype : int_Stype
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(false)]
         public virtual bool allowAPPROX { get; set; }
-    
-    ///// <summary>
-    ///// int_DEtype class constructor
-    ///// </summary>
-    //public int_DEtype()
-    //{
-    //    this.allowGT = false;
-    //    this.allowGTE = false;
-    //    this.allowLT = false;
-    //    this.allowLTE = false;
-    //    this.allowAPPROX = false;
-    //}
-    
-    private static XmlSerializer Serializer
-    {
-        get
+
+        ///// <summary>
+        ///// int_DEtype class constructor
+        ///// </summary>
+        //public int_DEtype()
+        //{
+        //    this.allowGT = false;
+        //    this.allowGTE = false;
+        //    this.allowLT = false;
+        //    this.allowLTE = false;
+        //    this.allowAPPROX = false;
+        //}
+
+        private static XmlSerializer Serializer
         {
-            if ((serializer == null))
+            get
             {
-                serializer = new XmlSerializerFactory().CreateSerializer(typeof(int_DEtype));
-            }
-            return serializer;
-        }
-    }
-    
-    /// <summary>
-    /// Test whether minInclusive should be serialized
-    /// </summary>
-    public virtual bool ShouldSerializeminInclusive()
-    {
-        if (_shouldSerializeminInclusive)
-        {
-            return true;
-        }
-        return (minInclusive != default(int));
-    }
-    
-    /// <summary>
-    /// Test whether maxInclusive should be serialized
-    /// </summary>
-    public virtual bool ShouldSerializemaxInclusive()
-    {
-        if (_shouldSerializemaxInclusive)
-        {
-            return true;
-        }
-        return (maxInclusive != default(int));
-    }
-    
-    /// <summary>
-    /// Test whether minExclusive should be serialized
-    /// </summary>
-    public virtual bool ShouldSerializeminExclusive()
-    {
-        if (_shouldSerializeminExclusive)
-        {
-            return true;
-        }
-        return (minExclusive != default(int));
-    }
-    
-    /// <summary>
-    /// Test whether maxExclusive should be serialized
-    /// </summary>
-    public virtual bool ShouldSerializemaxExclusive()
-    {
-        if (_shouldSerializemaxExclusive)
-        {
-            return true;
-        }
-        return (maxExclusive != default(int));
-    }
-    
-    /// <summary>
-    /// Test whether allowGT should be serialized
-    /// </summary>
-    public virtual bool ShouldSerializeallowGT()
-    {
-        if (_shouldSerializeallowGT)
-        {
-            return true;
-        }
-        return (allowGT != default(bool));
-    }
-    
-    /// <summary>
-    /// Test whether allowGTE should be serialized
-    /// </summary>
-    public virtual bool ShouldSerializeallowGTE()
-    {
-        if (_shouldSerializeallowGTE)
-        {
-            return true;
-        }
-        return (allowGTE != default(bool));
-    }
-    
-    /// <summary>
-    /// Test whether allowLT should be serialized
-    /// </summary>
-    public virtual bool ShouldSerializeallowLT()
-    {
-        if (_shouldSerializeallowLT)
-        {
-            return true;
-        }
-        return (allowLT != default(bool));
-    }
-    
-    /// <summary>
-    /// Test whether allowLTE should be serialized
-    /// </summary>
-    public virtual bool ShouldSerializeallowLTE()
-    {
-        if (_shouldSerializeallowLTE)
-        {
-            return true;
-        }
-        return (allowLTE != default(bool));
-    }
-    
-    /// <summary>
-    /// Test whether allowAPPROX should be serialized
-    /// </summary>
-    public virtual bool ShouldSerializeallowAPPROX()
-    {
-        if (_shouldSerializeallowAPPROX)
-        {
-            return true;
-        }
-        return (allowAPPROX != default(bool));
-    }
-    
-    /// <summary>
-    /// Test whether mask should be serialized
-    /// </summary>
-    public virtual bool ShouldSerializemask()
-    {
-        return !string.IsNullOrEmpty(mask);
-    }
-    
-    #region Serialize/Deserialize
-    /// <summary>
-    /// Serializes current int_DEtype object into an XML string
-    /// </summary>
-    /// <returns>string XML value</returns>
-    public virtual string Serialize(System.Text.Encoding encoding)
-    {
-        System.IO.StreamReader streamReader = null;
-        System.IO.MemoryStream memoryStream = null;
-        try
-        {
-            memoryStream = new System.IO.MemoryStream();
-            System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
-            xmlWriterSettings.Encoding = encoding;
-            xmlWriterSettings.Indent = true;
-            xmlWriterSettings.IndentChars = " ";
-            System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
-            Serializer.Serialize(xmlWriter, this);
-            memoryStream.Seek(0, SeekOrigin.Begin);
-            streamReader = new System.IO.StreamReader(memoryStream, encoding);
-            return streamReader.ReadToEnd();
-        }
-        finally
-        {
-            if ((streamReader != null))
-            {
-                streamReader.Dispose();
-            }
-            if ((memoryStream != null))
-            {
-                memoryStream.Dispose();
+                if ((serializer == null))
+                {
+                    serializer = new XmlSerializerFactory().CreateSerializer(typeof(int_DEtype));
+                }
+                return serializer;
             }
         }
-    }
-    
-    public virtual string Serialize()
-    {
-        return Serialize(System.Text.Encoding.UTF8);
-    }
-    
-    /// <summary>
-    /// Deserializes workflow markup into an int_DEtype object
-    /// </summary>
-    /// <param name="input">string workflow markup to deserialize</param>
-    /// <param name="obj">Output int_DEtype object</param>
-    /// <param name="exception">output Exception value if deserialize failed</param>
-    /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool Deserialize(string input, out int_DEtype obj, out System.Exception exception)
-    {
-        exception = null;
-        obj = default(int_DEtype);
-        try
+
+        /// <summary>
+        /// Test whether minInclusive should be serialized
+        /// </summary>
+        public virtual bool ShouldSerializeminInclusive()
         {
-            obj = Deserialize(input);
-            return true;
-        }
-        catch (System.Exception ex)
-        {
-            exception = ex;
-            return false;
-        }
-    }
-    
-    public static bool Deserialize(string input, out int_DEtype obj)
-    {
-        System.Exception exception = null;
-        return Deserialize(input, out obj, out exception);
-    }
-    
-    public new static int_DEtype Deserialize(string input)
-    {
-        System.IO.StringReader stringReader = null;
-        try
-        {
-            stringReader = new System.IO.StringReader(input);
-            return ((int_DEtype)(Serializer.Deserialize(XmlReader.Create(stringReader))));
-        }
-        finally
-        {
-            if ((stringReader != null))
+            if (_shouldSerializeminInclusive)
             {
-                stringReader.Dispose();
+                return true;
+            }
+            return (minInclusive != default(int));
+        }
+
+        /// <summary>
+        /// Test whether maxInclusive should be serialized
+        /// </summary>
+        public virtual bool ShouldSerializemaxInclusive()
+        {
+            if (_shouldSerializemaxInclusive)
+            {
+                return true;
+            }
+            return (maxInclusive != default(int));
+        }
+
+        /// <summary>
+        /// Test whether minExclusive should be serialized
+        /// </summary>
+        public virtual bool ShouldSerializeminExclusive()
+        {
+            if (_shouldSerializeminExclusive)
+            {
+                return true;
+            }
+            return (minExclusive != default(int));
+        }
+
+        /// <summary>
+        /// Test whether maxExclusive should be serialized
+        /// </summary>
+        public virtual bool ShouldSerializemaxExclusive()
+        {
+            if (_shouldSerializemaxExclusive)
+            {
+                return true;
+            }
+            return (maxExclusive != default(int));
+        }
+
+        /// <summary>
+        /// Test whether allowGT should be serialized
+        /// </summary>
+        public virtual bool ShouldSerializeallowGT()
+        {
+            if (_shouldSerializeallowGT)
+            {
+                return true;
+            }
+            return (allowGT != default(bool));
+        }
+
+        /// <summary>
+        /// Test whether allowGTE should be serialized
+        /// </summary>
+        public virtual bool ShouldSerializeallowGTE()
+        {
+            if (_shouldSerializeallowGTE)
+            {
+                return true;
+            }
+            return (allowGTE != default(bool));
+        }
+
+        /// <summary>
+        /// Test whether allowLT should be serialized
+        /// </summary>
+        public virtual bool ShouldSerializeallowLT()
+        {
+            if (_shouldSerializeallowLT)
+            {
+                return true;
+            }
+            return (allowLT != default(bool));
+        }
+
+        /// <summary>
+        /// Test whether allowLTE should be serialized
+        /// </summary>
+        public virtual bool ShouldSerializeallowLTE()
+        {
+            if (_shouldSerializeallowLTE)
+            {
+                return true;
+            }
+            return (allowLTE != default(bool));
+        }
+
+        /// <summary>
+        /// Test whether allowAPPROX should be serialized
+        /// </summary>
+        public virtual bool ShouldSerializeallowAPPROX()
+        {
+            if (_shouldSerializeallowAPPROX)
+            {
+                return true;
+            }
+            return (allowAPPROX != default(bool));
+        }
+
+        /// <summary>
+        /// Test whether mask should be serialized
+        /// </summary>
+        public virtual bool ShouldSerializemask()
+        {
+            return !string.IsNullOrEmpty(mask);
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current int_DEtype object into an XML string
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                xmlWriterSettings.Indent = true;
+                xmlWriterSettings.IndentChars = " ";
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream, encoding);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(System.Text.Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an int_DEtype object
+        /// </summary>
+        /// <param name="input">string workflow markup to deserialize</param>
+        /// <param name="obj">Output int_DEtype object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string input, out int_DEtype obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(int_DEtype);
+            try
+            {
+                obj = Deserialize(input);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string input, out int_DEtype obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(input, out obj, out exception);
+        }
+
+        public new static int_DEtype Deserialize(string input)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(input);
+                return ((int_DEtype)(Serializer.Deserialize(XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        public static int_DEtype Deserialize(System.IO.Stream s)
+        {
+            return ((int_DEtype)(Serializer.Deserialize(s)));
+        }
+        #endregion
+
+        /// <summary>
+        /// Serializes current int_DEtype object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, System.Text.Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an int_DEtype object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output int_DEtype object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out int_DEtype obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(int_DEtype);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out int_DEtype obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out int_DEtype obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static int_DEtype LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, System.Text.Encoding.UTF8);
+        }
+
+        public new static int_DEtype LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
             }
         }
     }
-    
-    public static int_DEtype Deserialize(System.IO.Stream s)
-    {
-        return ((int_DEtype)(Serializer.Deserialize(s)));
-    }
-    #endregion
-    
-    /// <summary>
-    /// Serializes current int_DEtype object into file
-    /// </summary>
-    /// <param name="fileName">full path of outupt xml file</param>
-    /// <param name="exception">output Exception value if failed</param>
-    /// <returns>true if can serialize and save into file; otherwise, false</returns>
-    public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
-    {
-        exception = null;
-        try
-        {
-            SaveToFile(fileName, encoding);
-            return true;
-        }
-        catch (System.Exception e)
-        {
-            exception = e;
-            return false;
-        }
-    }
-    
-    public virtual bool SaveToFile(string fileName, out System.Exception exception)
-    {
-        return SaveToFile(fileName, System.Text.Encoding.UTF8, out exception);
-    }
-    
-    public virtual void SaveToFile(string fileName)
-    {
-        SaveToFile(fileName, System.Text.Encoding.UTF8);
-    }
-    
-    public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
-    {
-        System.IO.StreamWriter streamWriter = null;
-        try
-        {
-            string xmlString = Serialize(encoding);
-            streamWriter = new System.IO.StreamWriter(fileName, false, encoding);
-            streamWriter.WriteLine(xmlString);
-            streamWriter.Close();
-        }
-        finally
-        {
-            if ((streamWriter != null))
-            {
-                streamWriter.Dispose();
-            }
-        }
-    }
-    
-    /// <summary>
-    /// Deserializes xml markup from file into an int_DEtype object
-    /// </summary>
-    /// <param name="fileName">string xml file to load and deserialize</param>
-    /// <param name="obj">Output int_DEtype object</param>
-    /// <param name="exception">output Exception value if deserialize failed</param>
-    /// <returns>true if this Serializer can deserialize the object; otherwise, false</returns>
-    public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out int_DEtype obj, out System.Exception exception)
-    {
-        exception = null;
-        obj = default(int_DEtype);
-        try
-        {
-            obj = LoadFromFile(fileName, encoding);
-            return true;
-        }
-        catch (System.Exception ex)
-        {
-            exception = ex;
-            return false;
-        }
-    }
-    
-    public static bool LoadFromFile(string fileName, out int_DEtype obj, out System.Exception exception)
-    {
-        return LoadFromFile(fileName, System.Text.Encoding.UTF8, out obj, out exception);
-    }
-    
-    public static bool LoadFromFile(string fileName, out int_DEtype obj)
-    {
-        System.Exception exception = null;
-        return LoadFromFile(fileName, out obj, out exception);
-    }
-    
-    public static int_DEtype LoadFromFile(string fileName)
-    {
-        return LoadFromFile(fileName, System.Text.Encoding.UTF8);
-    }
-    
-    public new static int_DEtype LoadFromFile(string fileName, System.Text.Encoding encoding)
-    {
-        System.IO.FileStream file = null;
-        System.IO.StreamReader sr = null;
-        try
-        {
-            file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
-            sr = new System.IO.StreamReader(file, encoding);
-            string xmlString = sr.ReadToEnd();
-            sr.Close();
-            file.Close();
-            return Deserialize(xmlString);
-        }
-        finally
-        {
-            if ((file != null))
-            {
-                file.Dispose();
-            }
-            if ((sr != null))
-            {
-                sr.Dispose();
-            }
-        }
-    }
-}
 }
 #pragma warning restore

@@ -78,7 +78,8 @@ namespace SDC.Schema
         public Dictionary<int, BaseType> ParentNodes = new Dictionary<int, BaseType>();
         [System.Xml.Serialization.XmlIgnore]
         [NonSerialized]
-        public Dictionary<string, IdentifiedExtensionType> IdentifiedTypes;
+        public Dictionary<string, IdentifiedExtensionType> IdentifiedTypes = new Dictionary<string, IdentifiedExtensionType>();
+
         [System.Xml.Serialization.XmlIgnore]
         [NonSerialized]
         public Dictionary<string, SectionItemType> Sections;
@@ -702,7 +703,7 @@ namespace SDC.Schema
             if (parentNode is null)
             {//this is a top level node, and it MUST be of type FormDesignType
                 if (this.GetType() == typeof(FormDesignType))
-                { FormDesign = (FormDesignType)this; }  //TopNode.FormDesign;
+                { formDesign = (FormDesignType)this; }  //TopNode.FormDesign;
                 else
                 { throw new InvalidOperationException("The top level node must be FormDesignType"); }
                 }
@@ -887,6 +888,7 @@ namespace SDC.Schema
         }
         [System.Xml.Serialization.XmlIgnore]
         public IdentifiedExtensionType ParentIETypeObject { get; private set; }
+
         public virtual void X_AddFill(SDCtypes sdcType = SDCtypes.BaseType, Boolean fillData = true)
         {
 
@@ -1015,6 +1017,8 @@ namespace SDC.Schema
         /// </summary>
         [NonSerialized]
         public static Dictionary<String, IdentifiedExtensionType> IdentExtNodes = new Dictionary<String, IdentifiedExtensionType>();
+        //[NonSerialized]
+        //public static Dictionary<String, IdentifiedExtensionType> IdentExtNodesTVI = new Dictionary<String, IdentifiedExtensionType>();
 
         protected IdentifiedExtensionType() { }
         protected IdentifiedExtensionType(BaseType parentNode, bool fillData = true, string id = null) : base(parentNode, fillData)

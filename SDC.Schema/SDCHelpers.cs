@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace SDC.Schema
 {
@@ -32,15 +33,27 @@ namespace SDC.Schema
         /// </summary>
         /// <param name="node"></param>
         /// <returns></returns>
-        public static IdentifiedExtensionType GetParentIETypeNode(string parentID)
-        {
-            IdentifiedExtensionType parentItemNode = null;
+        /// tag:#IET_Helper
+        //public static IdentifiedExtensionType GetParentIETypeNode(string parentID)
+        //{
+        //    IdentifiedExtensionType parentItemNode = null;
+        //    //Kludge alert
+        //    //based on the TVIKey parameter
+        //    //use the Nodes dictionary - but this uses ObjectID, while IdentifiedTypes uses ObjectGUIID
 
-            if (!string.IsNullOrWhiteSpace(parentID))
-                IdentifiedExtensionType.IdentExtNodes.TryGetValue(parentID, out parentItemNode);//this is the parent of node
 
-            return parentItemNode;
-        }
+        //    if (IdentifiedExtensionType.IdentExtNodesTVI
+        //        .TryGetValue(parentID, out IdentifiedExtensionType iet)) return iet;
+        //    return null;
+
+
+        //    /////Previous code, before SSP bug appeared
+
+        //    if (!string.IsNullOrWhiteSpace(parentID))
+        //        IdentifiedExtensionType.IdentExtNodes.TryGetValue(parentID, out parentItemNode);//this is the parent of node
+
+        //    return parentItemNode;
+        //}
         public static void NZ<T>(T nullTestObject, T ObjectToSet)
         {
             if (nullTestObject == null) return;

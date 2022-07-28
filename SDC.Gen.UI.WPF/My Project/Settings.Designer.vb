@@ -55,7 +55,7 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("C:\Program Files (x86)\Mozilla Firefox\firefox.exe")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("C:\Program Files\Mozilla Firefox\firefox.exe")>  _
     Public Property BrowserPath64() As String
         Get
             Return CType(Me("BrowserPath64"),String)
@@ -67,35 +67,13 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("C:\Program Files\Mozilla Firefox\firefox.exe")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("C:\Program Files (x86)\Mozilla Firefox\firefox.exe")>  _
     Public Property BrowserPath32() As String
         Get
             Return CType(Me("BrowserPath32"),String)
         End Get
         Set
             Me("BrowserPath32") = value
-        End Set
-    End Property
-    
-    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("Data Source=PappeCC;Integrated Security=True")>  _
-    Public ReadOnly Property PERC_eCC_Con() As String
-        Get
-            Return CType(Me("PERC_eCC_Con"),String)
-        End Get
-    End Property
-    
-    <Global.System.Configuration.UserScopedSettingAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("Data Source=PappeCC;Initial Catalog=PERC_eCC;Integrated Security=True")>  _
-    Public Property DataSourceConnectionString() As String
-        Get
-            Return CType(Me("DataSourceConnectionString"),String)
-        End Get
-        Set
-            Me("DataSourceConnectionString") = value
         End Set
     End Property
     
@@ -125,13 +103,14 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("eCC_TE_2.32.adp")>  _
-    Public Property TEpath() As String
+     Global.System.Configuration.DefaultSettingValueAttribute("Data Source=sdtDEVdb.database.windows.net;Initial Catalog=SSPDEV;Authentication=A"& _ 
+        "ctive Directory Integrated; MultipleActiveResultSets=True; App=EntityFramework")>  _
+    Public Property EF_Con() As String
         Get
-            Return CType(Me("TEpath"),String)
+            Return CType(Me("EF_Con"),String)
         End Get
         Set
-            Me("TEpath") = value
+            Me("EF_Con") = value
         End Set
     End Property
 End Class

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fd2b55f03a8f4b8f8b0e65c09572110d" Name="Diagram1" ZoomLevel="73">
+        <EntityTypeShape EntityType="SSPModel.ListProtocolGroup" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSPModel.ListReleaseState" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSPModel.Protocol" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSPModel.ProtocolGroupMapping" Width="1.5" PointX="7.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSPModel.ProtocolTemplate" Width="1.5" PointX="10.5" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSPModel.ProtocolVersion" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSPModel.Release" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSPModel.TemplateVersion" Width="1.5" PointX="12.75" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="SSPModel.FK_ProtocolGroupMapping_ListProtocolGroup_ProtocolGroupKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_ProtocolVersion_ListReleaseState_ReleaseStateKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_TemplateVersion_ListReleaseState_ReleaseStateKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_Protocol_ProtocolVersion_DraftProtocolVerKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_Protocol_ProtocolVersion_ReleasedProtocolVerKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_Protocol_ProtocolVersion_ReviewedProtocolVerKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_ProtocolGroupMapping_Protocol_ProtocolsKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_ProtocolTemplate_Protocol_ProtocolKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_ProtocolVersion_Protocol_ProtocolKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_ProtocolTemplate_TemplateVersion_DraftTemplateVerKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_ProtocolTemplate_TemplateVersion_ReleasedTemplateVerKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_ProtocolTemplate_TemplateVersion_ReviewedTemplateVerKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_TemplateVersion_ProtocolTemplate_ProtocolTemplateKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_ProtocolVersion_ProtocolVersion_PrevProtocolVersionKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_TemplateVersion_ProtocolVersion_ProtocolVersionKey" ManuallyRouted="false" />
+        <AssociationConnector Association="SSPModel.FK_TemplateVersion_TemplateVersion_PrevTemplateVersionKey" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

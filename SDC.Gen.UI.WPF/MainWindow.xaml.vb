@@ -1,22 +1,10 @@
-﻿Imports System
-Imports System.Linq
-Imports System.Text
-Imports System.Windows
-Imports System.Windows.Controls
-Imports System.Windows.Data
-Imports System.Windows.Documents
-Imports System.Windows.Input
-Imports System.Windows.Media
-Imports System.Windows.Media.Imaging
-Imports System.Windows.Shapes
-Imports DevExpress.Xpf.Core
+﻿Imports DevExpress.Xpf.Core
 Imports DevExpress.Xpf.Grid
+Imports System
+Imports System.Collections.ObjectModel
 
 Imports System.ComponentModel
-Imports System.Collections.ObjectModel
-Imports System.IO
-'Imports System.Xml
-Imports System.Xml
+Imports System.Linq
 'Imports TE
 
 
@@ -25,15 +13,18 @@ Partial Public Class MainWindow
     'Implements IDisposable
 
     Private Property BrowserPath As String
-    Private TEinterop As TE.TEinterop
+    Private Property GridList As IList
+    Private Property ConString As String
+    Private Property SdcXmlGenerator As SDC.Gen.API.GenXDT
+    'Private TEinterop As TE.TEinterop
     Private Property FilePath As String
 
-
     Public Sub New()
-
         InitializeComponent()
         DataContext = New DataSource()
-        TEinterop = New TE.TEinterop(My.Settings.TEpath)
+        'TEinterop = New TE.TEinterop(My.Settings.TEpath)
+
+
 
 
         'If filePath = "" Then
@@ -49,30 +40,91 @@ Partial Public Class MainWindow
         'End If
     End Sub
 
+    Private Sub button_Click(sender As Object, e As RoutedEventArgs) Handles button.Click
+        FillData()
+        SdcXmlGenerator = Nothing 'clear all Gen variables
+    End Sub
+    Private Sub FillData()
+        My.Settings.Reload()
+        ConString = My.Settings.EF_Con
+        Dim sspEntities = New SSPEntities()
+        'Dim user = System.Environment.UserName
+        'ConString = ConString.Replace("*****", System.Environment.UserName + "@cap.org")
+        sspEntities.Database.Connection.ConnectionString = ConString
+
+        'We can display the "Initial Catalog=" and "Data Source=" from the ConString in the UI/XAML
+        Dim conBuilder = New System.Data.Common.DbConnectionStringBuilder()
+        conBuilder.ConnectionString = ConString
+
+        Dim server As String
+        Dim db As String
+
+        Dim temp As String = ""
+        temp = conBuilder("Data Source").ToString()
+        If String.IsNullOrWhiteSpace(temp) Then server = "?" Else server = temp
+        temp = conBuilder("Initial Catalog").ToString()
+        If String.IsNullOrWhiteSpace(temp) Then db = "?" Else db = temp
+
+        button.Content = "Connect Database" & "  (Current Server = " & server & ", " & "Database = " & db & ")"
+
+        Dim query =
+            From TV In sspEntities.TemplateVersions
+            Join PT In sspEntities.ProtocolTemplates On PT.ProtocolTemplateKey Equals TV.ProtocolTemplateKey
+            Join R In sspEntities.ListReleaseStates On R.ReleaseStateKey Equals TV.ReleaseStateKey
+            Where TV.Active = True AndAlso PT.Active = True AndAlso
+            (
+            R.ReleaseVersionSuffix = "REL" OrElse
+            R.ReleaseVersionSuffix.StartsWith("CPT") OrElse
+            R.ReleaseVersionSuffix.StartsWith("RC") OrElse
+            R.ReleaseVersionSuffix.StartsWith("TEST") OrElse
+            PT.DraftTemplateVerKey = TV.TemplateVersionKey
+            )
+            Order By R.ReleaseVersionSuffix, PT.Lineage
+            Select PT.Lineage, TV.TemplateVersionKey, TV.ReleaseKey, TV.Version, R.ReleaseVersionSuffix, TV.ProtocolTemplateKey, TV.ProtocolVersionKey
+
+        'ConString = sspEntities.Database.Connection.ConnectionString
+
+        Try
+            GridList = query.ToList()
+            gridControl1.ItemsSource = GridList
+        Catch ex As Exception
+            MessageBox.Show("Dataset could not be loaded.  Check your connection and permissions" & vbCrLf &
+                            "Error: " & vbCrLf & ex.Message & vbCrLf & ex.InnerException.Message)
+        End Try
+
+
+    End Sub
+
+
     Private Sub btnGenAll_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles btnGenAllChecked.Click
-        BrowserPath = txtBrowserPath.Text.Trim
-        'FilePath = txtFilePath.Text.Trim
+        'BrowserPath = txtBrowserPath.Text.Trim
         Dim cur = Application.Current.MainWindow.Cursor
-        Dim Gen As New SDC.Gen.API.GenXDT(Environment.ExpandEnvironmentVariables((txtFilePath.Text.Trim)), My.Settings.XslFileName)
-        FilePath = Gen.XMLfilePath  ' if the UI-supplied txtFilePath does not exist, Gen will try to create a default one.  This reassigns Filepath to the default
-        txtFilePath.Text = FilePath ' makes the same change in the UI
+        'Dim Gen As New SDC.Gen.API.GenXDT(Environment.ExpandEnvironmentVariables((txtFilePath.Text.Trim)), My.Settings.XslFileName, ConString, BrowserPath)
+        'FilePath = SdcXmlGenerator.XMLfilePath  ' if the UI-supplied txtFilePath does not exist, Gen will try to create a default one.  This reassigns Filepath to the default
+        'txtFilePath.Text = FilePath ' makes the same change in the UI
+
+        'Dim key As String = Nothing
+        Dim loadBrowser As Boolean = Nothing
+        Dim createHTML As Boolean = Nothing
+        Dim nmspace As String = Nothing
+        Init(loadBrowser, createHTML, nmspace)
+
 
         If FileIO.FileSystem.DirectoryExists(FilePath) Then
             Dim templatesMap As New Dictionary(Of String, String)
 
             Application.Current.MainWindow.Cursor = Cursors.Wait
-
+            Dim colTVkey = gridControl1.Columns(0)
+            Dim colLineage = gridControl1.Columns(2)
 
             For Each node In Me.TreeListView1.Nodes.Where(Function(n) CBool(n.IsChecked))
-
-                Dim dataRowView = TryCast(node.Content, System.Data.DataRowView)
-                Debug.Print(dataRowView(0).ToString & vbCrLf & dataRowView(1).ToString() & vbCrLf & dataRowView(2).ToString())
-
-                templatesMap.Add(dataRowView(0).ToString, dataRowView(2).ToString) 'cols 0 & 3
+                templatesMap.Add(TreeListView1.GetNodeValue(node, colTVkey).ToString, 'col 0
+                                 TreeListView1.GetNodeValue(node, colLineage          'col 3
+                                 ).ToString) 'cols 0 & 3
             Next
 
-
-            Gen.MakeXDTsFromTemplateMap(templatesMap, FilePath, CBool(chkCreateHTML.IsChecked))
+            SdcXmlGenerator.MakeXDTsFromTemplateMap(
+                templatesMap, FilePath, CBool(chkCreateHTML.IsChecked))
         Else
             Beep()
             MsgBox("The file path for saving SDC XML files does not exist at: " & FilePath, MsgBoxStyle.Exclamation, "Folder does not exist")
@@ -84,24 +136,17 @@ Partial Public Class MainWindow
 
 
     Private Sub btnGenerate_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles btnGenerate.Click
-        Dim key As String = txtID.Text.Trim
-        Dim fileName = txtFileName.Text.Trim
-        Dim loadBrowser = CBool(chkShowBrowser.EditValue)
-        Dim createHTML = CBool(chkCreateHTML.EditValue)
-        BrowserPath = txtBrowserPath.Text.Trim
-        'FilePath = txtFilePath.Text.Trim
-        Dim ns As String = txtNamespace.Text.Trim
 
-        Dim Gen As New SDC.Gen.API.GenXDT(Environment.ExpandEnvironmentVariables(txtFilePath.Text.Trim), My.Settings.XslFileName)
-        FilePath = Gen.XMLfilePath  ' if the UI-supplied txtFilePath does not exist, Gen will try to create a default one.  This reassigns Filepath to the default
-        txtFilePath.Text = FilePath ' makes the same change in the UI
+        Dim key As String = Me.txtID.Text.Trim()
+        Dim loadBrowser As Boolean = Nothing
+        Dim createHTML As Boolean = Nothing
+        Dim nmspace As String = Nothing
+        Dim customFileName As String = txtFileName.Text.Trim()
+        Init(loadBrowser, createHTML, nmspace)
 
         If FileIO.FileSystem.DirectoryExists(FilePath) Then
-            If key > "" AndAlso ns > "" Then
-                key = (String.Format("{0}.{1}", key, ns))
-                'TODO: Need to cache this generator, since it takes time to create it new each time.
-
-                Gen.MakeOneXDT(key, FilePath, loadBrowser, BrowserPath, createHTML)   ', fileName
+            If key > "" AndAlso nmspace > "" Then
+                SdcXmlGenerator.MakeOneXDT(key, FilePath, loadBrowser, BrowserPath, createHTML, customFileName)   ', fileName
             Else
                 Beep()
                 MsgBox("You must enter valid values for template Key (ID), Namespace, and Filepath", MsgBoxStyle.Exclamation, "Invalid Entry")
@@ -113,6 +158,27 @@ Partial Public Class MainWindow
 
     End Sub
 
+    Private Sub Init(ByRef loadBrowser As Boolean, ByRef createHTML As Boolean, ByRef ns As String)
+        loadBrowser = CBool(chkShowBrowser.EditValue)
+        createHTML = CBool(chkCreateHTML.EditValue)
+        ns = txtNamespace.Text.Trim
+
+        If Not String.IsNullOrWhiteSpace(txtFilePath.Text.Trim) Then
+            FilePath = Environment.ExpandEnvironmentVariables(txtFilePath.Text.Trim)
+        ElseIf Not String.IsNullOrWhiteSpace(My.Settings.FilePath) Then
+            FilePath = Environment.ExpandEnvironmentVariables(My.Settings.FilePath.Trim())
+        End If
+
+        If Not String.IsNullOrWhiteSpace(Me.txtBrowserPath.Text.Trim) Then
+            BrowserPath = Environment.ExpandEnvironmentVariables(txtBrowserPath.Text.Trim)
+        ElseIf Not String.IsNullOrWhiteSpace(My.Settings.BrowserPath64) Then
+            BrowserPath = Environment.ExpandEnvironmentVariables(My.Settings.BrowserPath64.Trim())
+        ElseIf Not String.IsNullOrWhiteSpace(My.Settings.BrowserPath32) Then
+            BrowserPath = Environment.ExpandEnvironmentVariables(My.Settings.BrowserPath32.Trim())
+        End If
+
+        If IsNothing(SdcXmlGenerator) Then SdcXmlGenerator = New SDC.Gen.API.GenXDT(FilePath, My.Settings.XslFileName, ConString, BrowserPath)
+    End Sub
 
     Public Shared Function Nstr(InObj As Object, Optional strDefault As String = "") As Object
         If InObj Is Nothing Then Return strDefault 'don't allow an unititialized object to be returned
@@ -145,67 +211,63 @@ Partial Public Class MainWindow
         End If
     End Sub
 
-    Private Sub gridControl1_MouseDoubleClick(sender As Object, e As MouseButtonEventArgs) Handles gridControl1.MouseDoubleClick
-        Dim col = gridControl1.CurrentColumn
-        Dim cellText As String
-        'Dim row = TryCast(gridControl1.GetFocusedRow, System.Data.DataRowView)
+    'Private Sub gridControl1_MouseDoubleClick(sender As Object, e As MouseButtonEventArgs) Handles gridControl1.MouseDoubleClick
+    '    Dim col = gridControl1.CurrentColumn
+    '    Dim cellText As String
+    '    'Dim row = TryCast(gridControl1.GetFocusedRow, System.Data.DataRowView)
 
-        If col.VisibleIndex = 0 Then
-            gridControl1.Cursor = Cursors.Wait
-            cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
+    '    If col.VisibleIndex = 0 Then
+    '        gridControl1.Cursor = Cursors.Wait
+    '        cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
 
-            Dim key = Split(cellText, ".", 2)
-            txtID.Text = key(0)
-            'txtID.UpdateLayout()
-            txtNamespace.Text = key(1)
+    '        Dim key = Split(cellText, ".", 2)
+    '        txtID.Text = key(0)
+    '        'txtID.UpdateLayout()
+    '        txtNamespace.Text = key(1)
 
-            'Conside inmplementing a DoEvents on main UI thread here, to update the UI
-            'https://www.devexpress.com/Support/Center/Question/Details/Q322288/gridcontrol-how-to-force-cell-errors-redraw-idxdataerrorinfo
-            'https://stackoverflow.com/questions/4502037/where-is-the-application-doevents-in-wpf
-            'http://geekswithblogs.net/NewThingsILearned/archive/2008/08/25/refresh--update-wpf-controls.aspx
-            'https://www.meziantou.net/2011/06/22/refresh-a-wpf-control
+    '        'Consider inmplementing a DoEvents on main UI thread here, to update the UI
+    '        'https://www.devexpress.com/Support/Center/Question/Details/Q322288/gridcontrol-how-to-force-cell-errors-redraw-idxdataerrorinfo
+    '        'https://stackoverflow.com/questions/4502037/where-is-the-application-doevents-in-wpf
+    '        'http://geekswithblogs.net/NewThingsILearned/archive/2008/08/25/refresh--update-wpf-controls.aspx
+    '        'https://www.meziantou.net/2011/06/22/refresh-a-wpf-control
 
-            btnGenerate_Click(sender, e)
-            gridControl1.Cursor = Cursors.Arrow
-        ElseIf col.VisibleIndex = 2 Then
-            cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
-            'Dim TE = New TE.TEinterop()
+    '        btnGenerate_Click(sender, e)
+    '        gridControl1.Cursor = Cursors.Arrow
+    '    ElseIf col.VisibleIndex = 2 Then
+    '        cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
+    '        'Dim TE = New TE.TEinterop()
 
-            TEinterop.LookupItemByCKey(cellText, "0")
-        End If
+    '        TEinterop.LookupItemByCKey(cellText, "0")
+    '    End If
 
 
-    End Sub
+    'End Sub
 
     Protected Overrides Sub Finalize()
         MyBase.Finalize()
-        TEinterop.Dispose()
+        'TEinterop.Dispose()
     End Sub
 
     Private Sub gridControl1_GotFocus(sender As Object, e As RoutedEventArgs) Handles gridControl1.GotFocus
         Dim cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
-        Dim CTVkey = Split(cellText, ".", 2)
-        txtID.Text = CTVkey(0)
+        Dim ID = Split(cellText, ".", 2)
+        txtID.Text = ID(0)
         Debug.WriteLine(sender.ToString, e.ToString)
 
     End Sub
 
-    Private Sub btnLoadTE_Click(sender As Object, e As RoutedEventArgs) Handles gridControl1.MouseDown
+    Private Sub btnKey_Click(sender As Object, e As RoutedEventArgs) Handles gridControl1.MouseDown
         Try
             Dim btn As Button = TryCast(sender, Button)
+
             If btn IsNot Nothing Then
                 Dim cellText = gridControl1.GetFocusedRowCellDisplayText(gridControl1.Columns(0)).ToString
-                Dim CTVkey = Split(cellText, ".", 2)
                 gridControl1.Cursor = Cursors.Wait
-                'txtID.Text = CTVkey(0)
 
                 If btn.Name = "btnKey" Then 'Geneate XML/HTML
                     'btn.Content = "Gen: " + cellText
                     'MsgBox(cellText)
                     btnGenerate_Click(sender, e)
-                End If
-                If btn.Name = "btnLoadTE" Then 'Load TE
-                    TEinterop.LookupItemByCKey(cellText, "0")
                 End If
 
 
@@ -215,14 +277,6 @@ Partial Public Class MainWindow
         Finally
             gridControl1.Cursor = Cursors.Arrow
         End Try
-
-    End Sub
-
-    Private Sub gridControl1_AutoGeneratingColumn(sender As Object, e As AutoGeneratingColumnEventArgs)
-
-    End Sub
-
-    Private Sub gridControl1_AutoGeneratedColumns(sender As Object, e As RoutedEventArgs)
 
     End Sub
 
@@ -257,15 +311,6 @@ Partial Public Class MainWindow
         End If
     End Sub
 
-    Public Shared Async Function GetChildrenAsync(G As GridControl, row As Integer, column As Integer) As System.Threading.Tasks.Task(Of Object)
-        Dim rList As IList = Await (G.GetRowsAsync(0, G.VisibleRowCount))
-        For Each r In rList
-            Dim rc = TryCast(r, RowControl)
-            Dim btn As Button = TryCast(rc.FindName("btnKey"), Button)
-            'btn.Content = rc.
-        Next
-
-    End Function
     Public Sub DumpLogicalTree(ByVal parent As Object, ByVal level As Integer)
         Dim typeName As String = parent.[GetType]().Name
         Dim name As String = Nothing
@@ -312,20 +357,7 @@ Partial Public Class MainWindow
             Next
         End If
     End Function
-    Private Function FindVisualChild(Of childItem As DependencyObject)(ByVal obj As DependencyObject) As childItem
-        For i As Integer = 0 To VisualTreeHelper.GetChildrenCount(obj) - 1
-            Dim child As DependencyObject = VisualTreeHelper.GetChild(obj, i)
 
-            If child IsNot Nothing AndAlso TypeOf child Is childItem Then
-                Return CType(child, childItem)
-            Else
-                Dim childOfChild As childItem = FindVisualChild(Of childItem)(child)
-                If childOfChild IsNot Nothing Then Return childOfChild
-            End If
-        Next
-
-        Return Nothing
-    End Function
 End Class
 
 

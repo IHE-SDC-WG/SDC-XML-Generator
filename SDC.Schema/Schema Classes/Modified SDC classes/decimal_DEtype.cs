@@ -35,16 +35,17 @@ public partial class decimal_DEtype : decimal_Stype
     private bool _shouldSerializeallowGTE;
     
     private bool _shouldSerializeallowGT;
-    
-    private bool _shouldSerializemaxExclusive;
-    
-    private bool _shouldSerializeminExclusive;
-    
-    private bool _shouldSerializemaxInclusive;
-    
-    private bool _shouldSerializeminInclusive;
-    
-    private static XmlSerializer serializer;
+        [XmlIgnoreAttribute()]
+        public bool _shouldSerializemaxExclusive; //Need to allow serializing "0" values, so make this public
+
+        [XmlIgnoreAttribute()]
+        public bool _shouldSerializeminExclusive; //Need to allow serializing "0" values, so make this public
+        [XmlIgnoreAttribute()]
+        public bool _shouldSerializemaxInclusive; //Need to allow serializing "0" values, so make this public
+        [XmlIgnoreAttribute()]
+        public bool _shouldSerializeminInclusive; //Need to allow serializing "0" values, so make this public
+
+        private static XmlSerializer serializer;
     
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public virtual decimal minInclusive { get; set; }
